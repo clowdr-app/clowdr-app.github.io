@@ -14,12 +14,18 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "gatsby": "^2.24.79",
+    "@artsy/fresnel": "^1.2.2",
+    "gatsby": "^2.24.85",
+    "gatsby-plugin-ts": "^2.7.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.0"
   },
   "devDependencies": {
-    "prettier": "2.1.2"
+    "eslint-config-react-app": "^6.0.0",
+    "prettier": "2.1.2",
+    "typescript": "^4.0.3"
   },
   "repository": {
     "type": "git",
