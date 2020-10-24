@@ -5,13 +5,18 @@ import MobileContainer from "./MobileContainer"
 
 interface Props {
   children: React.ReactNodeArray
+  heading?: React.ReactNode
 }
 
 export default function ResponsiveContainer(props: Props) {
   return (
     <MediaContextProvider>
-      <DesktopContainer>{props.children}</DesktopContainer>
-      <MobileContainer>{props.children}</MobileContainer>
+      <DesktopContainer heading={props.heading}>
+        {props.children}
+      </DesktopContainer>
+      <MobileContainer heading={props.heading}>
+        {props.children}
+      </MobileContainer>
     </MediaContextProvider>
   )
 }

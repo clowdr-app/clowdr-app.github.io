@@ -11,10 +11,11 @@ import {
 } from "semantic-ui-react"
 import ResponsiveContainer from "../components/ResponsiveContainer"
 import "semantic-ui-css/semantic.min.css"
+import HomepageHeading from "../components/HomepageHeading"
 
 export default function Home() {
   return (
-    <ResponsiveContainer>
+    <ResponsiveContainer heading={<HomepageHeading />}>
       <Segment style={{ padding: "8em 0em" }} vertical>
         <Grid container stackable verticalAlign="middle">
           <Grid.Row>
