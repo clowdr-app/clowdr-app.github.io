@@ -4,7 +4,7 @@ import { DesktopContainer } from "./DesktopContainer"
 import MobileContainer from "./MobileContainer"
 
 interface Props {
-  children: React.ReactNodeArray
+  children: React.ReactNodeArray | React.ReactNode
   heading?: React.ReactNode
 }
 

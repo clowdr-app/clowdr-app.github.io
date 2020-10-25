@@ -4,7 +4,7 @@ import { Media } from "../classes/Media"
 import MenuItems from "./MenuItems"
 
 interface Props {
-  children: React.ReactNodeArray
+  children: React.ReactNodeArray | React.ReactNode
   heading?: React.ReactNode
 }
 

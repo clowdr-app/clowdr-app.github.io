@@ -1,17 +1,20 @@
 import React from "react"
 import {
   Button,
+  Card,
   Container,
   Divider,
   Grid,
   Header,
+  Icon,
   Image,
   List,
   Segment,
 } from "semantic-ui-react"
 import ResponsiveContainer from "../components/ResponsiveContainer"
-import "semantic-ui-css/semantic.min.css"
 import HomepageHeading from "../components/HomepageHeading"
+import Footer from "../components/Footer"
+import "semantic-ui-css/semantic.min.css"
 
 export default function Home() {
   return (
@@ -21,33 +24,79 @@ export default function Home() {
           <Grid.Row>
             <Grid.Column width={8}>
               <Header as="h3" style={{ fontSize: "2em" }}>
-                We Help Companies and Companions
+                Complex virtual conferences made easy
               </Header>
               <p style={{ fontSize: "1.33em" }}>
-                We can give your company superpowers to do things that they
-                never thought possible. Let us delight your customers and
-                empower your needs... through pure data analytics.
+                Clowdr is a open source software suite that makes it easier to
+                run interactive and engaging virtual conferences.
               </p>
-              <Header as="h3" style={{ fontSize: "2em" }}>
-                We Make Bananas That Can Dance
-              </Header>
-              <p style={{ fontSize: "1.33em" }}>
-                Yes that's right, you thought it was the stuff of dreams, but
-                even bananas can be bioengineered.
+              <p>
+                We have supported large academic conferences with many parallel
+                tracks and hundreds of papers across dozens of sessions.
               </p>
+              <p>Clowdr's powerful feature set includes:</p>
+              <List>
+                <List.Item>
+                  <List.Icon name="chat" />
+                  <List.Content>
+                    Text chat and video breakout rooms
+                  </List.Content>
+                </List.Item>
+                <List.Item>
+                  <List.Icon name="table" />
+                  <List.Content>Support for complex programs</List.Content>
+                </List.Item>
+                <List.Item>
+                  <List.Icon name="users" />
+                  <List.Content>Virtual exhibition hall</List.Content>
+                </List.Item>
+              </List>
             </Grid.Column>
             <Grid.Column floated="right" width={6}>
               <Image
                 bordered
                 rounded
                 size="large"
-                src="/images/wireframe/white-image.png"
+                src="https://picsum.photos/400"
               />
             </Grid.Column>
           </Grid.Row>
-          <Grid.Row>
-            <Grid.Column textAlign="center">
-              <Button size="huge">Check Them Out</Button>
+          <Grid.Row columns={1}>
+            <Grid.Column>
+              <Card.Group doubling centered>
+                <Card>
+                  <Card.Content>
+                    <Card.Header>CSCW 2020</Card.Header>
+                    <Card.Meta>October 17-21 2020</Card.Meta>
+                    <Card.Description>
+                      We helped deliver the 23rd ACM Conference on
+                      Computer-Supported Cooperative Work and Social Computing
+                      to 700 users.
+                    </Card.Description>
+                  </Card.Content>
+                </Card>
+                <Card>
+                  <Card.Content>
+                    <Card.Header>ICFP 2020</Card.Header>
+                    <Card.Meta>August 20-28 2020</Card.Meta>
+                    <Card.Description>
+                      Clowdr was used by 1300 attendees at the International
+                      Conference on Functional Programming.
+                    </Card.Description>
+                  </Card.Content>
+                </Card>
+                <Card>
+                  <Card.Content>
+                    <Card.Header>ICSE 2020</Card.Header>
+                    <Card.Meta>July 6-11 2020</Card.Meta>
+                    <Card.Description>
+                      The International Conference on Software Engineering chose
+                      Clowdr to support a virtual conference for 1500 academic
+                      and professional engineers.
+                    </Card.Description>
+                  </Card.Content>
+                </Card>
+              </Card.Group>
             </Grid.Column>
           </Grid.Row>
         </Grid>
@@ -57,20 +106,37 @@ export default function Home() {
         <Grid celled="internally" columns="equal" stackable>
           <Grid.Row textAlign="center">
             <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
+              <Icon name="paper plane outline" style={{ fontSize: "4em" }} />
               <Header as="h3" style={{ fontSize: "2em" }}>
-                "What a Company"
+                Tackle the climate emergency
               </Header>
               <p style={{ fontSize: "1.33em" }}>
-                That is what they all say about us
+                Around 70% of a conference's carbon emissions come from attendee
+                flights alone. Clowdr helps you deliver an equally engaging
+                conference experience at a much lower environmental cost.
               </p>
             </Grid.Column>
             <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
+              <Icon name="handshake outline" style={{ fontSize: "4em" }} />
               <Header as="h3" style={{ fontSize: "2em" }}>
-                "I shouldn't have gone with their competitor."
+                Bring people together - online
               </Header>
               <p style={{ fontSize: "1.33em" }}>
-                <Image avatar src="/images/avatar/large/nan.jpg" />
-                <b>Nan</b> Chief Fun Officer Acme Toys
+                Conferences exist to bring people together, strengthening
+                communities and helping people form new relationships.
+                Encouraging social interaction is a core focus for Clowdr.
+              </p>
+            </Grid.Column>
+            <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
+              <Icon name="smile outline" style={{ fontSize: "4em" }} />
+              <Header as="h3" style={{ fontSize: "2em" }}>
+                Run more inclusive events
+              </Header>
+              <p style={{ fontSize: "1.33em" }}>
+                Physical conferences can be prohibitively expensive or
+                inaccessible for underserved groups. We see conferences using
+                Clowdr benefit from significantly increased, and more diverse,
+                attendance.
               </p>
             </Grid.Column>
           </Grid.Row>
@@ -80,17 +146,17 @@ export default function Home() {
       <Segment style={{ padding: "8em 0em" }} vertical>
         <Container text>
           <Header as="h3" style={{ fontSize: "2em" }}>
-            Breaking The Grid, Grabs Your Attention
+            By the community, for the community
           </Header>
           <p style={{ fontSize: "1.33em" }}>
-            Instead of focusing on content creation and hard work, we have
-            learned how to master the art of doing nothing by providing massive
-            amounts of whitespace and generic content that can seem massive,
-            monolithic and worth your attention.
+            Clowdr was founded by a group of academics with decades of
+            experience organising conferences.
           </p>
-          <Button as="a" size="large">
-            Read More
-          </Button>
+          <p>
+            We are a social enterprise: our mission is to make climate-friendly,
+            socially-engaging and inclusive conferences the default in academia
+            (and beyond!)
+          </p>
 
           <Divider
             as="h4"
@@ -98,59 +164,27 @@ export default function Home() {
             horizontal
             style={{ margin: "3em 0em", textTransform: "uppercase" }}
           >
-            <a href="#">Case Studies</a>
+            Get started now!
           </Divider>
 
           <Header as="h3" style={{ fontSize: "2em" }}>
-            Did We Tell You About Our Bananas?
+            Interested in using Clowdr?
           </Header>
           <p style={{ fontSize: "1.33em" }}>
-            Yes I know you probably disregarded the earlier boasts as
-            non-sequitur filler content, but it's really true. It took years of
-            gene splicing and combinatory DNA research, but our bananas can
-            really dance.
+            We're keen to work with you to deliver a brilliant attendee
+            experience.
           </p>
-          <Button as="a" size="large">
-            I'm Still Quite Interested
+          <p>
+            What new and unique virtual experience would you like to give your
+            attendees?
+          </p>
+          <Button as="a" size="large" href="mailto:hello@clowdr.org" primary>
+            Contact us today
           </Button>
         </Container>
       </Segment>
 
-      <Segment inverted vertical style={{ padding: "5em 0em" }}>
-        <Container>
-          <Grid divided inverted stackable>
-            <Grid.Row>
-              <Grid.Column width={3}>
-                <Header inverted as="h4" content="About" />
-                <List link inverted>
-                  <List.Item as="a">Sitemap</List.Item>
-                  <List.Item as="a">Contact Us</List.Item>
-                  <List.Item as="a">Religious Ceremonies</List.Item>
-                  <List.Item as="a">Gazebo Plans</List.Item>
-                </List>
-              </Grid.Column>
-              <Grid.Column width={3}>
-                <Header inverted as="h4" content="Services" />
-                <List link inverted>
-                  <List.Item as="a">Banana Pre-Order</List.Item>
-                  <List.Item as="a">DNA FAQ</List.Item>
-                  <List.Item as="a">How To Access</List.Item>
-                  <List.Item as="a">Favorite X-Men</List.Item>
-                </List>
-              </Grid.Column>
-              <Grid.Column width={7}>
-                <Header as="h4" inverted>
-                  Footer Header
-                </Header>
-                <p>
-                  Extra space for a call to action inside the footer that could
-                  help re-engage users.
-                </p>
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-        </Container>
-      </Segment>
+      <Footer />
     </ResponsiveContainer>
   )
 }
