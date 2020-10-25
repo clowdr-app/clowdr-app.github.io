@@ -29,7 +29,10 @@ export default function MobileContainer(props: Props) {
           <Segment
             inverted
             textAlign="center"
-            style={{ minHeight: 350, padding: "1em 0em" }}
+            style={{
+              minHeight: props.heading ? 350 : 0,
+              padding: "1em 0em",
+            }}
             vertical
           >
             <Container>

@@ -5,19 +5,12 @@ import { Menu } from "semantic-ui-react"
 export default function MenuItems() {
   return (
     <>
-      <Menu.Item
-        as={Link}
-        to="/"
-        activeClassName="active"
-        style={{
-          fontSize: "1.4em",
-        }}
-      >
-        Clowdr
+      <Menu.Item as={Link} to="/solution" activeClassName="active">
+        Solution
       </Menu.Item>
-      {/* <Menu.Item as={Link} to="/about" activeClassName="active">
+      <Menu.Item as={Link} to="/about" activeClassName="active">
         About
-      </Menu.Item> */}
+      </Menu.Item>
     </>
   )
 }
