@@ -41,7 +41,12 @@ export default function HomepageHeading() {
             centered
           />
           {getHeaders(true)}
-          <Button primary size="huge" as="a" href="mailto:hello@clowdr.org">
+          <Button
+            size="huge"
+            as="a"
+            href="mailto:hello@clowdr.org"
+            color="grey"
+          >
             Contact us to find out more
             <Icon name="arrow right" />
           </Button>

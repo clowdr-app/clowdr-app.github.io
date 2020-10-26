@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React, { useState } from "react"
 import { Container, Icon, Menu, Segment, Sidebar } from "semantic-ui-react"
 import { Media } from "../classes/Media"
@@ -22,6 +23,7 @@ export default function MobileContainer(props: Props) {
           onHide={() => setSidebarOpened(false)}
           vertical
           visible={sidebarOpened}
+          color="green"
         >
           <MenuItems />
         </Sidebar>
@@ -29,6 +31,7 @@ export default function MobileContainer(props: Props) {
         <Sidebar.Pusher dimmed={sidebarOpened}>
           <Segment
             inverted
+            color="green"
             textAlign="center"
             style={{
               minHeight: props.heading ? 350 : 0,
@@ -37,6 +40,17 @@ export default function MobileContainer(props: Props) {
             vertical
           >
             <Container>
+              <Link
+                to="/"
+                style={{
+                  fontSize: "1.4em",
+                  padding: "0 1em",
+                  color: "white",
+                }}
+                activeStyle={{ outline: "none" }}
+              >
+                Clowdr
+              </Link>
               <Menu inverted pointing secondary size="large">
                 <Menu.Item onClick={() => setSidebarOpened(true)}>
                   <Icon name="sidebar" />

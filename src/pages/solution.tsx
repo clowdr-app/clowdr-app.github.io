@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import { Helmet } from "react-helmet"
 import {
@@ -8,6 +9,7 @@ import {
   Header,
   Icon,
   Segment,
+  Statistic,
 } from "semantic-ui-react"
 import ResponsiveContainer from "../components/ResponsiveContainer"
 
@@ -82,6 +84,45 @@ export default function Solution() {
           </Card.Group>
         </Segment>
       </Container>
+
+      <Segment
+        compact
+        color="green"
+        inverted
+        stacked
+        style={{ margin: "0 auto" }}
+      >
+        <Grid>
+          <Grid.Row>
+            <Grid.Column width={4} verticalAlign="middle" textAlign="center">
+              <Statistic inverted>
+                <Statistic.Value>100%</Statistic.Value>
+                <Statistic.Label>Open Source</Statistic.Label>
+              </Statistic>
+            </Grid.Column>
+            <Grid.Column width={12}>
+              <p style={{ fontSize: "1.2em" }}>
+                Clowdr is proudly open-source. As a social enterprise, this is
+                part of how we serve the academic community.
+              </p>
+              <Button
+                as={Link}
+                to="https://github.com/clowdr-app/"
+                floated="left"
+                icon="github"
+                color="black"
+                size="large"
+                style={{ margin: "0 1em" }}
+              />
+              <p>
+                If you want to do-it-yourself, you can run your very own Clowdr.
+                We also support researchers who want to modify Clowdr or use it
+                in their research.
+              </p>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </Segment>
 
       <Grid style={{ padding: "8em 0em" }}>
         <Grid.Row centered>
