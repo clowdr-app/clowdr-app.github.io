@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Container, Icon, Menu, Segment, Sidebar } from "semantic-ui-react"
 import { Media } from "../classes/Media"
+import Footer from "./Footer"
 import MenuItems from "./MenuItems"
 
 interface Props {
@@ -48,6 +49,8 @@ export default function MobileContainer(props: Props) {
           {props.children}
         </Sidebar.Pusher>
       </Sidebar.Pushable>
+
+      <Footer />
     </Media>
   )
 }

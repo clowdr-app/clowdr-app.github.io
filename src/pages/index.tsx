@@ -5,12 +5,12 @@ import {
   Container,
   Grid,
   Header,
+  Icon,
   Segment,
   Statistic,
 } from "semantic-ui-react"
 import ResponsiveContainer from "../components/ResponsiveContainer"
 import HomepageHeading from "../components/HomepageHeading"
-import Footer from "../components/Footer"
 import "semantic-ui-css/semantic.min.css"
 import { Link } from "gatsby"
 
@@ -22,7 +22,68 @@ export default function Home() {
         <title>Clowdr - Virtual conferences that cut carbon emissions</title>
       </Helmet>
 
-      <Container text style={{ paddingTop: "6em" }}>
+      <Grid
+        celled="internally"
+        columns="equal"
+        stackable
+        style={{ marginTop: "4em" }}
+      >
+        <Grid.Row textAlign="center" style={{ padding: "2em 0" }}>
+          <Grid.Column>
+            <Icon
+              name="paper plane outline"
+              style={{ fontSize: "4em" }}
+              color="green"
+            />
+            <Header as="h3" style={{ fontSize: "2em" }}>
+              Tackle the climate emergency
+            </Header>
+            <p style={{ fontSize: "1.33em" }}>
+              Clowdr helps you deliver an engaging conference experience at a
+              much lower environmental cost.
+            </p>
+          </Grid.Column>
+          <Grid.Column>
+            <Icon
+              name="handshake outline"
+              style={{ fontSize: "4em" }}
+              color="purple"
+            />
+            <Header as="h3" style={{ fontSize: "2em" }}>
+              A sociable experience
+            </Header>
+            <p style={{ fontSize: "1.33em" }}>
+              Conferences exist to bring people together. Clowdr is designed to
+              support a sociable and interactive conference experience.
+            </p>
+          </Grid.Column>
+          <Grid.Column>
+            <Icon
+              name="smile outline"
+              style={{ fontSize: "4em" }}
+              color="teal"
+            />
+            <Header as="h3" style={{ fontSize: "2em" }}>
+              More inclusive events
+            </Header>
+            <p style={{ fontSize: "1.33em" }}>
+              Physical conferences can be prohibitively expensive or
+              inaccessible. Clowdr helps you improve diversity and inclusion.
+            </p>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
+
+      <Container textAlign="center" style={{ padding: "2em 0" }}>
+        <Button
+          as={Link}
+          to="/solution"
+          size="massive"
+          content="Learn more about Clowdr"
+        />
+      </Container>
+
+      <Container text style={{ paddingTop: "4em" }}>
         <Header as="h3" style={{ fontSize: "2em" }}>
           The earth is facing a climate emergency
         </Header>
@@ -32,7 +93,12 @@ export default function Home() {
         </p>
       </Container>
 
-      <Segment color="green" inverted compact style={{ margin: "4em auto 0" }}>
+      <Segment
+        color="green"
+        inverted
+        compact
+        style={{ margin: "2em auto 0", padding: "2em 0" }}
+      >
         <Grid container stackable verticalAlign="middle">
           <Grid.Row>
             <Grid.Column width={4}>
@@ -51,11 +117,11 @@ export default function Home() {
         </Grid>
       </Segment>
 
-      <Container text style={{ paddingTop: "6em" }}>
+      <Container text style={{ paddingTop: "2em" }}>
         <p style={{ fontSize: "1.33em" }}>
           Virtual conferences have a much lower environmental impact. And that's
           not all - they can significantly improve diversity and inclusion at
-          your event by making it easier for underserved groups to attend.
+          your event.
         </p>
       </Container>
 
@@ -94,19 +160,22 @@ export default function Home() {
           Interested in using Clowdr?
         </Header>
         <p style={{ fontSize: "1.33em" }}>
-          We're keen to work with you to deliver a brilliant attendee
-          experience.
+          We're keen to work with you to deliver a sociable and engaging
+          attendee experience.
         </p>
         <p style={{ fontSize: "1.33em" }}>
           What new and unique virtual experience would you like to give your
           attendees?
         </p>
-        <Button as="a" size="big" href="mailto:hello@clowdr.org" color="green">
-          Contact us today
-        </Button>
+        <Button
+          as="a"
+          size="big"
+          href="mailto:hello@clowdr.org"
+          color="green"
+          content="Contact us today"
+          icon="mail"
+        />
       </Container>
-
-      <Footer />
     </ResponsiveContainer>
   )
 }

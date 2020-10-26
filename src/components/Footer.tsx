@@ -13,14 +13,16 @@ export default function Footer() {
         <Grid divided inverted stackable>
           <Grid.Row>
             <Grid.Column width={6}>
-              <Header inverted as="h4" content="Clowdr" />
+              <Link to="/">
+                <Header inverted as="h4" content="Clowdr" />
+              </Link>
               <List link inverted>
-                <List.Item as={Link} to="/">
-                  Home
+                <List.Item as={Link} to="/solution">
+                  Solution
                 </List.Item>
-                {/* <List.Item as={Link} to="/about">
+                <List.Item as={Link} to="/about">
                   About
-                </List.Item> */}
+                </List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={7}>
@@ -28,8 +30,8 @@ export default function Footer() {
                 © Clowdr CIC 2020
               </Header>
               <p>
-                Clowdr is created by Jonathan Bell, Crista Lopes and Benjamin
-                Pierce.
+                Clowdr is a social enterprise dedicated to creating sustainable,
+                inclusive and engaging conferences.
               </p>
               <p>
                 Clowdr is made possible thanks to support by the National

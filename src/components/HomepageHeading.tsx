@@ -18,7 +18,7 @@ export default function HomepageHeading() {
         />
         <Header
           as="h2"
-          content="Clowdr helps you slash the CO₂ emitted by your conference."
+          content="Clowdr significantly reduces the CO₂ emitted by your conference."
           inverted
           style={{
             fontSize: small ? "1.5em" : "1.7em",

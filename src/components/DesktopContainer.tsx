@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import React, { useState } from "react"
 import { Container, Menu, Segment, Visibility } from "semantic-ui-react"
 import { Media } from "../classes/Media"
+import Footer from "./Footer"
 import MenuItems from "./MenuItems"
 
 interface Props {
@@ -46,6 +47,7 @@ export function DesktopContainer(props: Props) {
                   padding: "0 1em",
                   color: fixed ? "black" : "white",
                 }}
+                activeStyle={{ outline: "none" }}
               >
                 Clowdr
               </Link>
@@ -57,6 +59,8 @@ export function DesktopContainer(props: Props) {
       </Visibility>
 
       {props.children}
+
+      <Footer />
     </Media>
   )
 }
