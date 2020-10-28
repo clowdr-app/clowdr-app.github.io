@@ -23,14 +23,20 @@ export default function Solution() {
         </title>
       </Helmet>
 
-      <Container>
+      <Container style={{ padding: "4em 0 2em" }}>
         <Header
           as="h2"
-          style={{ fontSize: "3em", padding: "2em 0 1em" }}
+          style={{ fontSize: "3em", marginBottom: "1em" }}
           textAlign="center"
         >
           Everything you need to deliver a great conference
         </Header>
+        <p style={{ fontSize: "1.33em" }}>
+          Clowdr is an all-in-one solution for your next virtual conference. We
+          know how much work it is to organise a conference. Clowdr is designed
+          to make your conference platform 'just work' - so that you can
+          concentrate on the things that really matter.
+        </p>
         <Card.Group itemsPerRow={3} doubling>
           <Card
             raised
@@ -74,6 +80,27 @@ export default function Solution() {
             header="Environmentally friendly"
             description="Reduce CO₂ emissions by cutting out wasteful plane journeys and hotel stays."
           />
+          <Card raised header="and there's more..." description="" />
+          <Card
+            raised
+            header="Audiovisual production"
+            description="Let us handle the complexities of live-streaming and AV production."
+          />
+          <Card
+            raised
+            header="Social features"
+            description="Get your attendees talking and meeting each other with our random pairing."
+          />
+          <Card
+            raised
+            header="Admin controls"
+            description="Monitor and tweak your conference as it happens."
+          />
+          <Card
+            raised
+            header="Expert support"
+            description="Our experienced team is ready to make your conference a success."
+          />
         </Card.Group>
       </Container>
 
@@ -82,7 +109,7 @@ export default function Solution() {
         color="green"
         inverted
         stacked
-        style={{ margin: "4em auto" }}
+        style={{ margin: "2em auto" }}
       >
         <Grid stackable>
           <Grid.Row>
@@ -117,7 +144,7 @@ export default function Solution() {
       </Segment>
 
       <Container>
-        <Grid stackable style={{ padding: "4em 0em" }}>
+        <Grid stackable style={{ padding: "2em 0em" }}>
           <Grid.Row centered>
             <Grid.Column width={4} verticalAlign="middle">
               <Header as="h2" style={{ fontSize: "2em", textAlign: "center" }}>

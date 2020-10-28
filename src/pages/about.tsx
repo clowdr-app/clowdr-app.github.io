@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import { Helmet } from "react-helmet"
 import { Container, Header, Item } from "semantic-ui-react"
@@ -25,10 +26,33 @@ export default function About() {
           to two crises: climate change and the COVID-19 pandemic.
         </p>
         <p>
-          Clowdr incorporated as a Community Interest Company in October 2020,
-          with the goal of serving academic communities by supplying virtual
-          conference software and services.
+          As conference organisers ourselves, we envisaged a conference platform
+          where attendees could video and text chat with one another and easily
+          drift between different conversations in different rooms. We wanted to
+          pull in our our conference program directly from{" "}
+          <Link to="https://conf.researchr.org/">conf.researchr.org</Link>, and
+          let attendees meet other people watching the same content.
         </p>
+        <p>
+          We couldn't find a platform that supported these interactions so, with
+          support from{" "}
+          <Link to="https://www.nsf.gov/">National Science Foundation</Link> and{" "}
+          <Link to="https://www.twilio.org/">Twilio.org</Link>, we built the
+          open-source Clowdr platform.
+        </p>
+        <p>
+          During 2020, we tested Clowdr with thousands of users at multiple
+          conferences - including PLDI, ICSE, ISSTA, VL/HCC, ICFP, ICST and
+          CSCW.
+        </p>
+        <p>
+          Clowdr incorporated as a Community Interest Company in October 2020.
+          Our goal is to serve academic communities by giving them access to
+          great virtual conference software and services.
+        </p>
+        <Header as="h3" style={{ fontSize: "1.5em" }} textAlign="center">
+          Meet the team
+        </Header>
         <Item.Group divided link>
           <Item href="https://www.cis.upenn.edu/~bcpierce/">
             <Item.Image avatar size="small" src="./benjamin-pierce.jpg" />
