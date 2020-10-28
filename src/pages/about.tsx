@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 import { Helmet } from "react-helmet"
 import { Container, Header, Item } from "semantic-ui-react"
+import "semantic-ui-css/semantic.min.css"
 import ResponsiveContainer from "../components/ResponsiveContainer"
 
 export default function About() {
