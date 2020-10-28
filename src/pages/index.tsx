@@ -9,8 +9,6 @@ import {
   Icon,
   Label,
   List,
-  Segment,
-  Statistic,
 } from "semantic-ui-react"
 import ResponsiveContainer from "../components/ResponsiveContainer"
 import HomepageHeading from "../components/HomepageHeading"
@@ -76,19 +74,19 @@ export default function Home() {
             raised
             color="grey"
             header="Audiovisual production"
-            description="Let us handle all those meeting URLs and video streams!"
+            description="We can collect videos from presenters, stitch them together, integrate live Q&amp;A sessions and stream it to your conference."
           />
           <Card
             raised
             color="grey"
             header="Realtime chat"
-            description="Participants can chat and create their own video rooms."
+            description="You and your attendees can create and drift between video and text rooms. Or use our random pairing system to meet someone new!"
           />
           <Card
             raised
             color="grey"
             header="Expert support"
-            description="We're here to help you create a great virtual conference experience."
+            description="We're here to create a great virtual conference experience - whether that means help setting up your conference, virtual on-site support or customisation."
           />
           <Card
             raised
@@ -196,7 +194,7 @@ export default function Home() {
         <Header as="h3" style={{ fontSize: "2em", marginTop: "1em" }}>
           Interested in using Clowdr?
         </Header>
-        <p style={{ fontSize: "1.33em" }}>Our services include</p>
+        <p style={{ fontSize: "1.33em" }}>Our services include:</p>
         <List divided relaxed>
           <List.Item>
             <List.Header>Fully-hosted Clowdr</List.Header>
@@ -225,6 +223,9 @@ export default function Home() {
             </List.Content>
           </List.Item>
         </List>
+        <p style={{ fontSize: "1.33em" }}>
+          If you're interested in using Clowdr, we'd love to hear from you.
+        </p>
         <Button
           as="a"
           size="big"
