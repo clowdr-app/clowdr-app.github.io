@@ -228,7 +228,7 @@ export default function Home() {
         <Button
           as="a"
           size="big"
-          href="mailto:hello@clowdr.org"
+          href="mailto:hello@clowdr.org?subject=I'm%20interested%20in%20using%20Clowdr"
           color="green"
           content="Contact us today"
           icon="mail"

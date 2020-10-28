@@ -287,9 +287,9 @@ export default function Solution() {
 
       <Container text style={{ paddingTop: "2em" }}>
         <p style={{ fontSize: "1.33em" }}>
-          Virtual conferences have a much lower environmental impact. And that's
-          not all - they can significantly improve diversity and inclusion at
-          your event.
+          Virtual conferences have a much lower environmental impact. We have
+          also found that they can significantly improve diversity and inclusion
+          at your event.
         </p>
       </Container>
 
@@ -310,7 +310,7 @@ export default function Solution() {
           <Button.Group>
             <Button
               as="a"
-              href="mailto:hello@clowdr.org"
+              href="mailto:hello@clowdr.org?subject=I'm%20interested%20in%20using%20Clowdr"
               color="green"
               content="Contact us about using Clowdr"
             />

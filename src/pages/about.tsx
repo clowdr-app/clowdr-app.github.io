@@ -100,7 +100,7 @@ export default function About() {
                 Ed is the CEO of Clowdr. He's an experienced developer with a
                 passion for entrepreneurship and technology education. Ed
                 founded his first startup when he was fifteen, created the
-                open-source educational operating system FlingOS and a
+                open-source educational operating system FlingOS and is a
                 researcher in the field of processor architecture.
               </Item.Description>
             </Item.Content>

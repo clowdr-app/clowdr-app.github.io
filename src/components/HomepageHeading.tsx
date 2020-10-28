@@ -41,7 +41,12 @@ export default function HomepageHeading() {
             centered
           />
           {getHeaders(true)}
-          <Button size="huge" as="a" href="mailto:hello@clowdr.org" inverted>
+          <Button
+            size="huge"
+            as="a"
+            href="mailto:hello@clowdr.org?subject=I'm%20interested%20in%20using%20Clowdr"
+            inverted
+          >
             Contact us to find out more
             <Icon name="arrow right" />
           </Button>
@@ -56,7 +61,7 @@ export default function HomepageHeading() {
                 size="huge"
                 floated="right"
                 as="a"
-                href="mailto:hello@clowdr.org"
+                href="mailto:hello@clowdr.org?subject=I'm%20interested%20in%20using%20Clowdr"
                 inverted
               >
                 Request a demo
