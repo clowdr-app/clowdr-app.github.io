@@ -8,17 +8,17 @@ export default function HomepageHeading() {
       <>
         <Header
           as="h1"
-          content="Virtual conferences that cut carbon emissions"
+          content="Great virtual conferences without the heavy lifting"
           inverted
           style={{
-            fontSize: small ? "2em" : "4em",
+            fontSize: small ? "1.8em" : "3.5em",
             fontWeight: "normal",
             marginBottom: 0,
           }}
         />
         <Header
           as="h2"
-          content="Clowdr significantly reduces the CO₂ emitted by your conference."
+          content="Clowdr makes it easy to run an engaging, inclusive and climate-friendly virtual conference - giving you time to focus on the things that matter."
           inverted
           style={{
             fontSize: small ? "1.5em" : "1.7em",
@@ -41,12 +41,7 @@ export default function HomepageHeading() {
             centered
           />
           {getHeaders(true)}
-          <Button
-            size="huge"
-            as="a"
-            href="mailto:hello@clowdr.org"
-            color="grey"
-          >
+          <Button size="huge" as="a" href="mailto:hello@clowdr.org" inverted>
             Contact us to find out more
             <Icon name="arrow right" />
           </Button>
@@ -62,7 +57,7 @@ export default function HomepageHeading() {
                 floated="right"
                 as="a"
                 href="mailto:hello@clowdr.org"
-                color="grey"
+                inverted
               >
                 Request a demo
                 <Icon name="arrow right" />

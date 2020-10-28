@@ -1,0 +1,18 @@
+.quotes {
+    font-size     : 1.33em;
+    font-style    : italic;
+    display       : flex;
+    flex-direction: column;
+
+    div.quotes__quote {
+        margin: 0.2em 0 !important;
+
+        &:nth-child(2n+1) {
+            align-self: flex-start;
+        }
+
+        &:nth-child(2n) {
+            align-self: flex-end;
+        }
+    }
+}
