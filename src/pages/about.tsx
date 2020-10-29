@@ -47,7 +47,7 @@ export default function About() {
           CSCW.
         </p>
         <p>
-          Clowdr incorporated as a Community Interest Company in October 2020.
+          {/* Clowdr incorporated as a Community Interest Company in October 2020. */}
           Our goal is to serve academic communities by giving them access to
           great virtual conference software and services.
         </p>

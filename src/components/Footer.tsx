@@ -27,7 +27,7 @@ export default function Footer() {
             </Grid.Column>
             <Grid.Column width={7}>
               <Header as="h4" inverted>
-                © Clowdr CIC 2020
+                © Clowdr 2020
               </Header>
               <p>
                 Clowdr is a social enterprise dedicated to creating sustainable,
