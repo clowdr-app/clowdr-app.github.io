@@ -36,8 +36,8 @@ export default function HomepageHeading() {
       <Media at="mobile">
         <Container text style={{ marginTop: "2em" }}>
           <Image
-            src="./clowdr-screenshot.png"
-            style={{ marginTop: "1em" }}
+            src="./people-image.svg"
+            style={{ marginTop: "1em", width: "80%", maxHeight: "10em" }}
             centered
           />
           {getHeaders(true)}
@@ -69,8 +69,22 @@ export default function HomepageHeading() {
               </Button>
             </Container>
           </Grid.Column>
-          <Grid.Column>
-            <Image src="./clowdr-screenshot.png" style={{ marginTop: "1em" }} />
+          <Grid.Column textAlign="left">
+            <div
+              style={{
+                margin: "1em",
+                width: "80%",
+                maxHeight: "30em",
+                textAlign: "left",
+              }}
+            >
+              <Image
+                src="./people-table.svg"
+                style={{
+                  height: "30em",
+                }}
+              />
+            </div>
           </Grid.Column>
         </Grid>
       </Media>
