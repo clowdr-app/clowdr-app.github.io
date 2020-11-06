@@ -10,7 +10,7 @@ export default function About() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>
-          Page not found | Clowdr - Virtual conferences that cut carbon
+          Page not found | Clowdr - Virtual conferences that bring people together
           emissions
         </title>
       </Helmet>

@@ -20,7 +20,7 @@ export default function Solution() {
     <ResponsiveContainer>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Solution | Clowdr - Virtual conferences that cut carbon emissions</title>
+        <title>Solution | Clowdr - Virtual conferences that bring people together</title>
       </Helmet>
 
       <Container style={{ padding: "4em 0 2em" }}>

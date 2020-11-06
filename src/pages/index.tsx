@@ -143,14 +143,14 @@ export default function Home() {
           <p style={{ fontSize: "1.33em" }}>We can provide:</p>
           <List divided relaxed>
             <List.Item>
-              <List.Header>Click-and-go Clowdr</List.Header>
-              <List.Content>Let us worry about the technology.</List.Content>
-            </List.Item>
-            <List.Item>
               <List.Header>Do-it-yourself Clowdr</List.Header>
               <List.Content>
-                Want to run the Clowdr software yourself? We can help you with that.
+                Want to run the Clowdr software yourself? It's <a href="https://github.com/clowdr-app/clowdr-web-app">open source and freely available</a>. We can also provide support for your own deployment.
               </List.Content>
+            </List.Item>
+            <List.Item>
+              <List.Header>Click-and-go Clowdr</List.Header>
+              <List.Content>Let us worry about the technology and A/V production details.</List.Content>
             </List.Item>
             <List.Item>
               <List.Header>Expert support</List.Header>
