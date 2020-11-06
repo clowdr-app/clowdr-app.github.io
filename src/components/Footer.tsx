@@ -27,11 +27,18 @@ export default function Footer() {
             </Grid.Column>
             <Grid.Column width={7}>
               <Header as="h4" inverted>
-                © Clowdr 2020
+                © Clowdr CIC 2020
               </Header>
               <p>
                 Clowdr is a social enterprise dedicated to creating sustainable,
                 inclusive and engaging conferences.
+              </p>
+              <p>
+                Clowdr is a Community Interest Company, number{" "}
+                <a href="https://find-and-update.company-information.service.gov.uk/company/12984216">
+                  12984216
+                </a>
+                .
               </p>
               <p>
                 Clowdr is made possible thanks to support by the National
