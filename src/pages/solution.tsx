@@ -36,22 +36,16 @@ export default function Solution() {
         <Card.Group itemsPerRow={3} doubling>
           <Card
             raised
-            color="teal"
-            image="./program.png"
             header="Conference program"
             description="Support for complex conference programs common in large academic conferences."
           />
           <Card
             raised
-            color="yellow"
-            image="./video-chat.png"
             header="Video rooms"
             description="Attendess can create ad-hoc video breakout rooms at the click of a button."
           />
           <Card
             raised
-            color="violet"
-            image="./text-chat.png"
             header="Text chat"
             description="A familiar and interactive chat experience."
           />
@@ -67,34 +61,24 @@ export default function Solution() {
           />
           <Card
             raised
-            color="orange"
-            image="./homepage.png"
             header="Sponsor booths"
             description="Welcome attendees to your conference with a custom homepage."
           />
           <Card
             raised
-            color="blue"
-            image="./exhibition.png"
             header="Exhibition hall"
             description="Create a virtual exhibition hall to show posters or an important collection of conference items."
           />
           <Card
             raised
-            color="orange"
-            image="./homepage.png"
             header="Attendee registration"
             description="Welcome attendees to your conference with a custom homepage."
           />
           <Card
             raised
-            color="orange"
-            image="./homepage.png"
             header="Custom homepage"
             description="Welcome attendees to your conference with a custom homepage."
           />
-          {/* todo: combine items without images */}
-          <Card raised header="and there's more..." description="" />
           <Card
             raised
             header="Admin controls"
@@ -106,9 +90,9 @@ export default function Solution() {
             description="Our experienced team is ready to make your conference a success."
           />
           <Card
-              raised
-              header="Research and Development"
-              description="Virtual conferences are new to us all. We continue to collaborate with other researchers aroudn the world to design new ways to organize virtual conferences."
+            raised
+            header="Research and Development"
+            description="Virtual conferences are new to us all. We continue to collaborate with other researchers aroudn the world to design new ways to organize virtual conferences."
           />
         </Card.Group>
       </Container>
