@@ -30,13 +30,15 @@ export default function About() {
             <a href="https://www.acm.org/">Association for Computing Machinery</a> conferences.
           </p>
           <p>
-            Beginning as a stop-gap measure to organise{" "}
+            Beginning as a stop-gap measure to organise flagship software engineering and programming languages conferences {" "}
             <a href="https://conf.researchr.org/home/icse-2020">ICSE</a> and{" "}
-            <a href="https://conf.researchr.org/home/pldi-2020">PLDI</a>, Clowdr grew to meet the
-            needs of ICFP, CSCW and numerous other conferences throughout the summer and autumn.
+            <a href="https://conf.researchr.org/home/pldi-2020">PLDI</a>, Clowdr received funding from the US's National Science Foundation, allowing it to evolve to meet the
+            needs of <a href="https://icfp20.sigplan.org">ICFP</a>, <a href="https://cscw.acm.org/2020/">CSCW</a> and numerous other conferences throughout the summer and autumn.
           </p>
           <p>
-            After ICFP, our open source project found several new contributors. Now, those
+            The platform has grown dramatically, and
+            has quickly become a <a href="https://github.com/clowdr-app/clowdr-web-app">thriving open source project</a> with features that rival its commercial competitors.
+            After ICFP, our project found several new contributors. Now, those
             contributors include the CEO and CTO of Clowdr CIC - a UK-based Community Interest
             Company founded to continue open source development of Clowdr and provide support to
             conference organisers.
@@ -50,7 +52,7 @@ export default function About() {
           <p>
             Clowdr CIC is here to support conference organisers in these difficult times. If you
             just want a zero-effort way to run a virtual conference, we can provide a completely
-            managed service: we'll load in your conference program, handle A/V production and so on.
+            managed service: we'll load in your conference program, handle A/V production, and provide expert advice.
           </p>
           <p>
             If you want to host the platform yourself, we are here to provide technical support and
@@ -58,7 +60,7 @@ export default function About() {
           </p>
           <p>
             Or if you want to really push the envelope of what is possible, we can turn your ideas
-            into features of the Clowdr platform. Automatic posting to social media? Visualising the
+            into features of the Clowdr platform. Automatic postings announcint talks on social media? Visualising the
             proceedings? Custom live video streams? Integration with VR environments? These are just
             some of the things we're thinking about.
           </p>
@@ -106,9 +108,11 @@ export default function About() {
               <Item.Content>
                 <Item.Header>Jonathan Bell</Item.Header>
                 <Item.Description>
-                  Jon is Assistant Professor of Software Engineering at Northeastern University. Jon
-                  serves on a variety of program committees and was recently co-chair of the PLDI
-                  2020 Artifact Evaluation Committee.
+                  Jon is Assistant Professor of Software Engineering at Northeastern University. He
+                  has been involved in academic conference organization since he was a first-year PhD student,
+                  and based on his experiences, has taken a particular interest in organizing student mentoring workshops (at SPLASH in 2017, 2018,
+                  2019 and 2020; at ICSE in 2022). Jon directs research in software engineering and distributed systems,
+                  bringing a wealth of technical expertise to Clowdr.
                 </Item.Description>
               </Item.Content>
             </Item>

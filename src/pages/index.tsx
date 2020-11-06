@@ -150,7 +150,7 @@ export default function Home() {
             </List.Item>
             <List.Item>
               <List.Header>Click-and-go Clowdr</List.Header>
-              <List.Content>Let us worry about the technology and A/V production details.</List.Content>
+              <List.Content>Let us worry about the technology, so you can focus on your event.</List.Content>
             </List.Item>
             <List.Item>
               <List.Header>Expert support</List.Header>
