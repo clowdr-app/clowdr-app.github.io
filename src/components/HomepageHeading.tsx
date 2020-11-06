@@ -18,7 +18,7 @@ export default function HomepageHeading() {
         />
         <Header
           as="h2"
-          content="Clowdr makes it easy to run an engaging, inclusive and climate-friendly virtual conference - giving you time to focus on the things that matter."
+          content="Clowdr makes it easy to create a socially-engaging virtual conference experience - giving you time to focus on the things that matter."
           inverted
           style={{
             fontSize: small ? "1.5em" : "1.7em",
