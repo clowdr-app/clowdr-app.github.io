@@ -14,38 +14,38 @@ export default function About() {
             Our goal
           </Header>
           <p style={{ fontSize: "1.33em", textAlign: "center" }}>
-            is to make virtual conferences so good that people <em>choose</em> to attend them.
+            Make virtual conferences so good that people <em>choose</em> to attend them.
           </p>
           <p>
-            Clowdr is a complete solution for hosting academic conferences online, designed and
-            built by conference organisers. Clowdr seamlessly combines your structured program of
-            technical presentations with social events, text and video chat. As we learn more about
-            the best practices for virtual conferences, we build them directly into the open source
-            Clowdr platform for the whole academic community to benefit from.
+            Clowdr is a complete solution for hosting virtual conferences, designed and built by
+            conference organisers. Clowdr seamlessly combines your structured program of
+            presentations and exhibitions with social events, text and video chat. As we learn more
+            about the best practices for virtual conferences, we build them into the open source
+            Clowdr software for the benefit of the whole community.
           </p>
           <p>
             Clowdr started at the beginning of the COVID-19 pandemic when Benjamin, Jonathan and
             Cristina - professors of Computer Science and experienced conference organisers -
-            realised that their academic communities needed a rapid solution for organising virtual
-            conferences.
+            realised a rapid solution was needed for organising{" "}
+            <a href="https://www.acm.org/">Association for Computing Machinery</a> conferences.
           </p>
           <p>
             Beginning as a stop-gap measure to organise{" "}
             <a href="https://conf.researchr.org/home/icse-2020">ICSE</a> and{" "}
-            <a href="https://conf.researchr.org/home/pldi-2020">PLDI</a>, Clowdr soon turned into a
-            healthy open source project that powered ICFP, CSCW and numerous other conferences
-            throughout the summer and autumn.
+            <a href="https://conf.researchr.org/home/pldi-2020">PLDI</a>, Clowdr grew to meet the
+            needs of ICFP, CSCW and numerous other conferences throughout the summer and autumn.
           </p>
           <p>
             After ICFP, our open source project found several new contributors. Now, those
-            contributors are the CEO and CTO of Clowdr CIC - a UK-based Community Interest
-            Corporation founded to continue development of Clowdr and provide support to conference
-            organisers.
+            contributors include the CEO and CTO of Clowdr CIC - a UK-based Community Interest
+            Company founded to continue open source development of Clowdr and provide support to
+            conference organisers.
           </p>
           <p>
-            A CIC is similar a US public benefit corporation. The corporate structure ensures that
-            Clowdr remains open source and that the company reinvests almost all of its revenue into
-            improving the platform and serving academic communities.
+            A CIC is similar to a US public benefit corporation. The corporate structure and UK
+            regulation ensure that Clowdr remains open source and for the benefit of the community.
+            The company is required to reinvest almost all of its revenue into improving the
+            platform and thereby serving the academic community it came from.
           </p>
           <p>
             Clowdr CIC is here to support conference organisers in these difficult times. If you
@@ -57,10 +57,10 @@ export default function About() {
             advice.
           </p>
           <p>
-            Or if you want to really push the envelope of what is possible, we can design and
-            implement new features in the Clowdr platform. Automatic posting to social media?
-            Visualising the proceedings? Custom live video streams? Integration with VR
-            environments? These are just some of the things we're thinking about.
+            Or if you want to really push the envelope of what is possible, we can turn your ideas
+            into features of the Clowdr platform. Automatic posting to social media? Visualising the
+            proceedings? Custom live video streams? Integration with VR environments? These are just
+            some of the things we're thinking about.
           </p>
           <Header as="h2" style={{ fontSize: "2em" }} textAlign="center">
             Meet the team
@@ -83,8 +83,8 @@ export default function About() {
               <Item.Content>
                 <Item.Header>Ross Gardiner</Item.Header>
                 <Item.Description>
-                  Ross is the CTO of Clowdr. He's a software engineer who has been all over the
-                  place: medical CAD software, railway operations, e-commerce and even mid-air
+                  Ross is the CTO of Clowdr. He's a software engineer who has worked in multiple
+                  sectors: medical CAD software, railway operations, e-commerce and even mid-air
                   haptics.
                 </Item.Description>
               </Item.Content>

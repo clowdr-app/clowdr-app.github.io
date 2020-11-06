@@ -1,7 +1,17 @@
 import { Link } from "gatsby"
 import React from "react"
 import { Helmet } from "react-helmet"
-import { Button, Card, Container, Grid, Header, Icon, Segment, Statistic } from "semantic-ui-react"
+import {
+  Button,
+  Card,
+  Container,
+  Grid,
+  Header,
+  Icon,
+  List,
+  Segment,
+  Statistic,
+} from "semantic-ui-react"
 import "semantic-ui-css/semantic.min.css"
 import ResponsiveContainer from "../components/ResponsiveContainer"
 
@@ -253,28 +263,62 @@ export default function Solution() {
       </Container> */}
 
       <Container text style={{ padding: "4em 0" }}>
-        <Segment raised compact style={{ margin: "0 auto" }}>
+        <Segment raised style={{ margin: "0 auto" }}>
           <Header as="h2" style={{ fontSize: "2em" }}>
-            We are your friendly conference partners
+            A community-owned platform
           </Header>
           <p style={{ fontSize: "1.33em" }}>
-            Clowdr is a social enterprise dedicated to making conferences better.
+            Clowdr CIC is a social enterprise dedicated to making virtual conferences better for
+            everyone.
           </p>
           <p style={{ fontSize: "1.33em" }}>
-            We have significant experience delivering academic conferences and we're keen to work
-            with you to create a sociable and engaging attendee experience.
+            All improvements we make to Clowdr become part of the open source platform that anybody
+            can use freely.
           </p>
-          <Button.Group>
-            <Button
-              as="a"
-              href="mailto:hello@clowdr.org?subject=I'm%20interested%20in%20using%20Clowdr"
-              color="green"
-              content="Contact us about using Clowdr"
-            />
-            <Button.Or />
-            <Button as="a" href="/about" color="green" content="Meet the Clowdr team" inverted />
-          </Button.Group>
+          <Button
+            as="a"
+            href="/about"
+            color="green"
+            content="Find out more about Clowdr CIC"
+            inverted
+          />
         </Segment>
+        <Header as="h3" style={{ fontSize: "2em", marginTop: "1em" }}>
+          Interested in using Clowdr?
+        </Header>
+        <p style={{ fontSize: "1.33em" }}>We can provide:</p>
+        <List divided relaxed>
+          <List.Item>
+            <List.Header>Click-and-go Clowdr</List.Header>
+            <List.Content>Let us worry about the technology.</List.Content>
+          </List.Item>
+          <List.Item>
+            <List.Header>Do-it-yourself Clowdr</List.Header>
+            <List.Content>
+              Want to run the Clowdr software yourself? We can help you with that.
+            </List.Content>
+          </List.Item>
+          <List.Item>
+            <List.Header>Expert support</List.Header>
+            <List.Content>
+              We'll help you set up your conference and provide virtual on-site support to make sure
+              everything runs smoothly.
+            </List.Content>
+          </List.Item>
+          <List.Item>
+            <List.Header>Advanced customisation</List.Header>
+            <List.Content>
+              Want to wow your attendees with something new? We can design and build it.
+            </List.Content>
+          </List.Item>
+        </List>
+        <Button
+          as="a"
+          size="huge"
+          href="mailto:hello@clowdr.org?subject=I'm%20interested%20in%20using%20Clowdr"
+          color="green"
+          content="Contact us about using Clowdr"
+        />
       </Container>
     </ResponsiveContainer>
   )
