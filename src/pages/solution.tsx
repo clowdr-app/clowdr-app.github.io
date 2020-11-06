@@ -92,7 +92,7 @@ export default function Solution() {
           <Card
             raised
             header="Research and Development"
-            description="Virtual conferences are new to us all. We continue to collaborate with other researchers aroudn the world to design new ways to organize virtual conferences."
+            description="Virtual conferences are new to us all. We continue to collaborate with other researchers around the world to design new ways to organise virtual conferences."
           />
         </Card.Group>
       </Container>
