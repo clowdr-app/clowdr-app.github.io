@@ -5,10 +5,13 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    siteUrl: "https://www.clowdr.org/",
+  },
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-scss-typescript`,
+    `gatsby-plugin-cname`,
   ],
 }
