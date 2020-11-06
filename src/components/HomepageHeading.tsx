@@ -36,7 +36,7 @@ export default function HomepageHeading() {
       <Media at="mobile">
         <Container text style={{ marginTop: "2em" }}>
           <Image
-            src="./people-image.svg"
+            src="./people-table.svg"
             style={{ marginTop: "1em", width: "80%", maxHeight: "10em" }}
             centered
           />
