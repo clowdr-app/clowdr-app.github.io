@@ -98,7 +98,7 @@ export default function Solution() {
       </Container>
 
       <Container>
-        <Segment compact color="green" inverted stacked>
+        <Segment color="green" inverted stacked>
           <Grid stackable>
             <Grid.Row>
               <Grid.Column width={4} verticalAlign="middle" textAlign="center">
@@ -183,13 +183,7 @@ export default function Solution() {
       </Container>
 
       <Container>
-        <Segment
-          color="green"
-          inverted
-          stacked
-          compact
-          style={{ padding: "1em", fontSize: "1.3em" }}
-        >
+        <Segment color="green" inverted stacked style={{ padding: "1em", fontSize: "1.3em" }}>
           <blockquote style={{ position: "relative" }}>
             <span
               style={{
