@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.clowdr.org/",
+    siteUrl: "https://clowdr.org/",
   },
   plugins: [
     `gatsby-plugin-typescript`,
