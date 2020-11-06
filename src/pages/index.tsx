@@ -51,8 +51,8 @@ export default function Home() {
               description="You and your attendees can create and drift between video and text rooms. Or use our random pairing system to meet someone new!"
             />
             <Card raised color="grey">
-              <Card.Header>Expert support</Card.Header>
               <Card.Content>
+                <Card.Header>Expert support</Card.Header>
                 <Card.Description>
                   Our team has years of experience delivering great conferences. Our founders
                   coauthored the{" "}
