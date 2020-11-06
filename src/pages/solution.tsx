@@ -105,6 +105,11 @@ export default function Solution() {
             header="Expert support"
             description="Our experienced team is ready to make your conference a success."
           />
+          <Card
+              raised
+              header="Research and Development"
+              description="Virtual conferences are new to us all. We continue to collaborate with other researchers aroudn the world to design new ways to organize virtual conferences."
+          />
         </Card.Group>
       </Container>
 
