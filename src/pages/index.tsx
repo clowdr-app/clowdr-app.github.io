@@ -96,8 +96,8 @@ export default function Home() {
               </Header>
               <p style={{ fontSize: "1.33em" }}>
                 Clowdr was founded by academics with decades of combined experience organising
-                large, complex academic conferences. It handles everything from seminars through to
-                week-long conferences with many tracks and thousands of attendees.
+                large, complex academic conferences. It handles everything from simple seminars to
+                week-long, multi-track conferences with thousands of attendees.
               </p>
             </Grid.Column>
             <Grid.Column>
