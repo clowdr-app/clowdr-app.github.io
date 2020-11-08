@@ -14,13 +14,13 @@ export default function About() {
             Our goal
           </Header>
           <p style={{ fontSize: "1.33em", textAlign: "center" }}>
-            Make virtual conferences so good that people choose them over physical. 
+            Make virtual conferences so good that people choose them over physical.
           </p>
           <p>
             Clowdr is a complete solution for hosting virtual conferences, designed and built by
             conference organisers. It seamlessly combines your structured program of
-            presentations and exhibitions with social events and with text and video chat. As we learn  
-            about best practices for virtual conferences, we build them into the open source 
+            presentations and exhibitions with social events and with text and video chat. As we learn
+            about best practices for virtual conferences, we build them into the open source
             Clowdr platform for the benefit of the whole community.
           </p>
           <p>
@@ -97,9 +97,13 @@ export default function About() {
                 <Item.Header>Benjamin Pierce</Item.Header>
                 <Item.Description>
                   Benjamin is Henry Salvatori Professor of Computer and Information Science at the
-                  University of Pennsylvania and a Fellow of the ACM. He has extensive experience
-                  from having participated in the program and organising committees of dozens of
-                  conferences.
+                  University of Pennsylvania and a Fellow of the ACM. He was virtualization chair for
+                  the 2020 International Conference on Functional Programming and has extensive experience
+                  with organization of physical conferences.
+                  He is deeply invested in reducing the climate impact of conferences, serving as chair of
+                  ACM SIGPLAN's ad hoc <a href="">committee on climate change</a> and on the UPenn
+                  Faculty Senate Committee on the Institutional Response to the Climate Emergency
+                  (<a href="">https://provost.upenn.edu/senate/circe</a>CIRCE).
                 </Item.Description>
               </Item.Content>
             </Item>
