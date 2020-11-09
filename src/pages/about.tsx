@@ -14,7 +14,7 @@ export default function About() {
             Our goal
           </Header>
           <p style={{ fontSize: "1.33em", textAlign: "center" }}>
-            Make virtual conferences so good that people choose them over physical.
+            Make virtual conferences so good that people choose virtual over physical.
           </p>
           <p>
             Clowdr is a complete solution for hosting virtual conferences, designed and built by
