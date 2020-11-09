@@ -18,22 +18,25 @@ export default function About() {
           </p>
           <p>
             Clowdr is a complete solution for hosting virtual conferences, designed and built by
-            conference organisers. It seamlessly combines your structured program of
-            presentations and exhibitions with social events and with text and video chat. As we learn
-            about best practices for virtual conferences, we build them into the open source
-            Clowdr platform for the benefit of the whole community.
+            conference organisers. It seamlessly combines your structured program of presentations
+            and exhibitions with social events and with text and video chat. As we learn about best
+            practices for virtual conferences, we build them into the open source Clowdr platform
+            for the benefit of the whole community.
           </p>
           <p>
-            Clowdr started at the beginning of the COVID-19 pandemic when Crista, Jonathan, and Benjamin
-            &mdash; professors of Computer Science and experienced conference organisers &mdash;
-            realised a rapid solution was needed for organising{" "}
+            Clowdr started at the beginning of the COVID-19 pandemic when Crista, Jonathan, and
+            Benjamin &mdash; professors of Computer Science and experienced conference organisers
+            &mdash; realised a rapid solution was needed for organising{" "}
             <a href="https://www.acm.org/">Association for Computing Machinery</a> conferences.
           </p>
           <p>
-            Beginning as a stop-gap measure for two flagship software engineering and programming languages conferences {" "}
-            <a href="https://conf.researchr.org/home/icse-2020">ICSE</a> and{" "}
-            <a href="https://conf.researchr.org/home/pldi-2020">PLDI</a>, Clowdr received funding from the US National Science Foundation, allowing it to evolve to meet the
-            needs of <a href="https://icfp20.sigplan.org">ICFP</a>, <a href="https://cscw.acm.org/2020/">CSCW</a> and numerous other conferences throughout the summer and autumn.
+            Beginning as a stop-gap measure for two flagship software engineering and programming
+            languages conferences <a href="https://conf.researchr.org/home/icse-2020">ICSE</a> and{" "}
+            <a href="https://conf.researchr.org/home/pldi-2020">PLDI</a>, Clowdr received funding
+            from the US National Science Foundation, allowing it to evolve to meet the needs of{" "}
+            <a href="https://icfp20.sigplan.org">ICFP</a>,{" "}
+            <a href="https://cscw.acm.org/2020/">CSCW</a> and numerous other conferences throughout
+            the summer and autumn.
           </p>
           <p>
             The platform has grown dramatically, and has quickly become a{" "}
@@ -98,13 +101,13 @@ export default function About() {
                 <Item.Header>Benjamin Pierce</Item.Header>
                 <Item.Description>
                   Benjamin is Henry Salvatori Professor of Computer and Information Science at the
-                  University of Pennsylvania and a Fellow of the ACM. He was virtualization chair for
-                  the 2020 International Conference on Functional Programming and has extensive experience
-                  with organization of physical conferences.
-                  He is deeply invested in reducing the climate impact of conferences, serving as chair of
-                  ACM SIGPLAN's ad hoc <a href="">committee on climate change</a> and on the UPenn
-                  Faculty Senate Committee on the Institutional Response to the Climate Emergency
-                  (<a href="https://provost.upenn.edu/senate/circe">CIRCE</a>).
+                  University of Pennsylvania and a Fellow of the ACM. He was virtualization chair
+                  for the 2020 International Conference on Functional Programming and has extensive
+                  experience with organization of physical conferences. He is deeply invested in
+                  reducing the climate impact of conferences, serving as chair of ACM SIGPLAN's ad
+                  hoc <a href="">committee on climate change</a> and on the UPenn Faculty Senate
+                  Committee on the Institutional Response to the Climate Emergency (
+                  <a href="https://provost.upenn.edu/senate/circe">CIRCE</a>).
                 </Item.Description>
               </Item.Content>
             </Item>
