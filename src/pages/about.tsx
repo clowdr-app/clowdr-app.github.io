@@ -103,7 +103,7 @@ export default function About() {
                   He is deeply invested in reducing the climate impact of conferences, serving as chair of
                   ACM SIGPLAN's ad hoc <a href="">committee on climate change</a> and on the UPenn
                   Faculty Senate Committee on the Institutional Response to the Climate Emergency
-                  (<a href="">https://provost.upenn.edu/senate/circe</a>CIRCE).
+                  (<a href="https://provost.upenn.edu/senate/circe">CIRCE</a>).
                 </Item.Description>
               </Item.Content>
             </Item>
