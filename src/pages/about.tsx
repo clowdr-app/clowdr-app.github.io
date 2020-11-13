@@ -64,7 +64,7 @@ export default function About() {
           </p>
           <p>
             Or if you want to really push the envelope of what is possible, we can turn your ideas
-            into features of the Clowdr platform. Automatic postings announcint talks on social
+            into features of the Clowdr platform. Automatic postings to announce talks on social
             media? Visualising the proceedings? Custom live video streams? Integration with VR
             environments? These are just some of the things we're thinking about.
           </p>
@@ -91,7 +91,8 @@ export default function About() {
                 <Item.Description>
                   Ross is the CTO of Clowdr. He's a software engineer who has worked in multiple
                   sectors: medical CAD software, railway operations, e-commerce and even mid-air
-                  haptics.
+                  haptics. He believes we have barely scratched the surface of remote collaboration
+                  during 2020 and is excited to build its future.
                 </Item.Description>
               </Item.Content>
             </Item>
@@ -101,11 +102,11 @@ export default function About() {
                 <Item.Header>Benjamin Pierce</Item.Header>
                 <Item.Description>
                   Benjamin is Henry Salvatori Professor of Computer and Information Science at the
-                  University of Pennsylvania and a Fellow of the ACM. He has extensive experience organizing
-                  both physical and virtual conferences.
-                  He is also deeply invested in reducing the climate impact of conferences, serving, for example, on the UPenn
-                  Faculty Senate Committee on the Institutional Response to the Climate Emergency
-                  (<a href="https://provost.upenn.edu/senate/circe">CIRCE</a>).
+                  University of Pennsylvania and a Fellow of the ACM. He has extensive experience
+                  organizing both physical and virtual conferences. He is also deeply invested in
+                  reducing the climate impact of conferences, serving, for example, on the UPenn
+                  Faculty Senate Committee on the Institutional Response to the Climate Emergency (
+                  <a href="https://provost.upenn.edu/senate/circe">CIRCE</a>).
                 </Item.Description>
               </Item.Content>
             </Item>
