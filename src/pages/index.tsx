@@ -35,7 +35,7 @@ export default function Home() {
             matters: bringing people together.
           </p>
           <p style={{ fontSize: "1.33em", marginTop: "1em" }}>
-            Here are just a few of our great features:
+            Here are just a few of our features:
           </p>
           <Card.Group itemsPerRow={2} doubling>
             <Card

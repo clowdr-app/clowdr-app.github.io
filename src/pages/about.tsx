@@ -102,11 +102,16 @@ export default function About() {
                 <Item.Header>Benjamin Pierce</Item.Header>
                 <Item.Description>
                   Benjamin is Henry Salvatori Professor of Computer and Information Science at the
-                  University of Pennsylvania and a Fellow of the ACM. He has extensive experience
-                  organizing both physical and virtual conferences. He is also deeply invested in
-                  reducing the climate impact of conferences, serving, for example, on the UPenn
-                  Faculty Senate Committee on the Institutional Response to the Climate Emergency (
-                  <a href="https://provost.upenn.edu/senate/circe">CIRCE</a>).
+                  University of Pennsylvania and a Fellow of the Association for Computing Machinery. He
+                  was virtualization chair for the 2020 International Conference on
+                    Functional Programming and has extensive experience with organization of
+                    physical conferences.  He is deeply invested in reducing the climate
+                    impact of conferences, serving for example as founding chair of the ad hoc <a
+                    href="https://www.sigplan.org/Resources/Climate/">committee on
+                    climate change</a> within ACM's Special Interest Group on Programming
+                    Languages and as a member of the UPenn Faculty Senate
+                    Committee on the Institutional Response to the Climate Emergency (<a
+                    href="https://provost.upenn.edu/senate/circe">CIRCE</a>).
                 </Item.Description>
               </Item.Content>
             </Item>
