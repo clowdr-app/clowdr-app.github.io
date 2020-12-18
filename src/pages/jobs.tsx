@@ -33,7 +33,7 @@ export default function About() {
           <li> Reaching out to conference organizers</li>
           <li> Gathering requirements from organizers via emails and meetings</li>
           <li> Proposal writing</li>
-          <li> Follow-ups / follow-through
+          <li> Follow-ups / follow-through</li>
           </ul>
         </p>
         <p>
@@ -59,7 +59,7 @@ export default function About() {
 
         <h2>Who we're looking for</h2>
           <p>The ideal candidate will have a broad skillset and be capable of picking up new challenges as they present themselves. They will have an understanding of software and software sold as a service. They will be comfortable with common business activities such as proposal writing, contracting, and invoicing, and they will have excellent people skills. </p>
-          <p>This person should be easy to work with and comfortable working remotely, internationally, and at flexible times. The  international nature of our business means meetings can be at a wide range of hours.</p>
+          <p>They should be easy to work with and comfortable working remotely, internationally, and at flexible times. The  international nature of our business means meetings can be at a wide range of hours.</p>
           <p>Ideally they will already be familiar with academic conferences including some familiarity with how conference organizing committees function.</p>
           <p>They should have no conflicts being employed by a UK company (though they needn't be UK resident).</p>
           <p>Starting date as soon as convenient.</p>
@@ -70,7 +70,7 @@ export default function About() {
         <h2>More about Clowdr</h2>
           <p>Clowdr is a UK Community Interest Company focused on delivering virtual conferencing software for the academic community. Our software is fully open source and we sell a turnkey service to reduce the effort for conference organisers.</p>
           <p>Clowdr started as a response to climate change: ~70% of carbon emissions for a physical conference come from flights and hotels. Virtual conferences can dramatically reduce this carbon footprint. In the short term, Clowdr was prompted by the pandemic and the need for the conferences our founding team call "home" to go virtual. </p>
-          <p>Along the way, we've learned that virtual conferences massively expand participation in academic conferences by making them significantly more inclusive for people with disabilities, family responsibilities, caregiving roles, heavy work requirements, or limited financial means.</p>
+          <p>Along the way, we've learned that virtual conferences massively expand participation in academic conferences by making them significantly more inclusive for people with disabilities, family responsibilities, caregiving roles, heavy work requirements, geographical restrictions, or limited financial means.</p>
           <p>The social experience at a virtual conference makes or breaks the event. This is Clowdr's key focus and we have strong targets for accessibility and inclusivity. </p>
           <p>We believe that, by delivering great virtual conference experiences now, we can convince people to continue holding many of their meetings virtually even after the pandemic is over.</p>
         <h2>To apply</h2>
