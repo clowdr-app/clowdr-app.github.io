@@ -9,7 +9,7 @@ export default function MenuItems() {
         Platform
       </Menu.Item>
       <Menu.Item as={Link} to="/about" activeClassName="active">
-        About
+        About Us
       </Menu.Item>
       <Menu.Item as={Link} to="/jobs" activeClassName="active">
         Jobs

@@ -64,7 +64,7 @@ export default function About() {
           <p>They should have no conflicts being employed by a UK company (though they needn't be UK resident).</p>
           <p>Starting date as soon as convenient.</p>
         <h2>What we offer</h2>
-          <p>A leading role in a public-interest, community-focused company that is developing cutting-edge, open-source technology for a super-hot market sector, driven by a passion to combat climate change.</p>
+          <p>A leading role in a public-interest, community-focused company that is developing cutting-edge, open-source technology for a super-hot market sector, driven by a passion to combat climate change while increasing inclusiveness of conferences.</p>
           <p>A friendly, flexible working environment.</p>
           <p>Competitive remuneration.</p>
         <h2>More about Clowdr</h2>

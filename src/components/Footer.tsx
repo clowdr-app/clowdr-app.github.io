@@ -6,6 +6,8 @@ import Header from "semantic-ui-react/dist/commonjs/elements/Header/Header"
 import List from "semantic-ui-react/dist/commonjs/elements/List/List"
 import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment"
 
+// BCP: It's too bad that the list of menu items is repeated here!
+// Bug waiting to happen (again :-)
 export default function Footer() {
   return (
     <Segment inverted vertical style={{ padding: "5em 0em" }}>
@@ -18,10 +20,13 @@ export default function Footer() {
               </Link>
               <List link inverted>
                 <List.Item as={Link} to="/solution">
-                  Solution
+                  Platform
                 </List.Item>
                 <List.Item as={Link} to="/about">
-                  About
+                  About Us
+                </List.Item>
+                <List.Item as={Link} to="/jobs">
+                  Jobs
                 </List.Item>
               </List>
             </Grid.Column>
