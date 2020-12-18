@@ -18,7 +18,8 @@ export default function About() {
           </p>
           <h2>The company</h2>
           <p>
-            Clowdr CIC offers state-of-the-art virtual conferences to the academic community. Our  mission is to slash the climate impact of academia by providing an attractive, effective, and engaging virtual alternative to physical meetings, and by empowering others to address different market segments using our open-source virtual conference platform.
+            Clowdr CIC offers state-of-the-art virtual conferences to the academic community. Our  mission is to slash the climate impact of academia by providing an attractive, effective, and inclusive virtual alternative to physical meetings, and by empowering others to address different market segments using our open-source virtual conference platform.
+
           </p>
 
         <h2>The need</h2>
@@ -30,15 +31,15 @@ export default function About() {
           <ul>
           <li> Identifying suitable conferences that might be interested in our services</li>
           <li> Reaching out to conference organizers</li>
-          <li> Gathering requirements from organizers (via emails/meetings)</li>
+          <li> Gathering requirements from organizers via emails and meetings</li>
           <li> Proposal writing</li>
-          <li> Follow-ups / follow-through ("conversion" / "seal the deal")</li>
+          <li> Follow-ups / follow-through
           </ul>
         </p>
         <p>
         Marketing:
           <ul>
-          <li>Creation of key marketing materials (Website, Email templates, White papers, Demo videos, ...)</li>
+          <li>Creation of key marketing materials (website, email templates, white papers, demo videos, ...)</li>
           <li>Market and competition research</li>
           </ul>
         </p>
@@ -56,8 +57,8 @@ export default function About() {
           <p>Clowdr has 5 founders, all currently contributing to every aspect of the business. Ed and Ross are full time CEO and CTO, respectively. Both are software developers by background though Ed has entrepreneurship training. Benjamin, Jonathan, and Crista remain full-time in their academic positions and contribute as much time as possible to Clowdr. Ed and Ross currently do the bulk of technical development, and the whole team contributes to business development and operations. </p>
           <p>We would like whoever fills this role to rebalance this situation: Ed in particular needs more time to focus on software development, while Benjamin, Crista, and Jonathan would be more effective at finding sales leads if they had marketing materials to support them.</p>
 
-        <h2>What we're looking for</h2>
-          <p>The ideal candidate will have a broad skillset and be capable of picking up new challenges as they present themselves. They will have an understanding of software and software sold as a service. They will be comfortable with common business activities such as proposal writing, contracting, and invoicing. </p>
+        <h2>Who we're looking for</h2>
+          <p>The ideal candidate will have a broad skillset and be capable of picking up new challenges as they present themselves. They will have an understanding of software and software sold as a service. They will be comfortable with common business activities such as proposal writing, contracting, and invoicing, and they will have excellent people skills. </p>
           <p>This person should be easy to work with and comfortable working remotely, internationally, and at flexible times. The  international nature of our business means meetings can be at a wide range of hours.</p>
           <p>Ideally they will already be familiar with academic conferences including some familiarity with how conference organizing committees function.</p>
           <p>They should have no conflicts being employed by a UK company (though they needn't be UK resident).</p>
@@ -68,8 +69,9 @@ export default function About() {
           <p>Competitive remuneration.</p>
         <h2>More about Clowdr</h2>
           <p>Clowdr is a UK Community Interest Company focused on delivering virtual conferencing software for the academic community. Our software is fully open source and we sell a turnkey service to reduce the effort for conference organisers.</p>
-          <p>Clowdr started as a response to climate change: ~70% of carbon emissions for a physical conference come from flights and hotels. Virtual conferences can dramatically reduce this carbon footprint. In the short term, Clowdr was prompted by the pandemic and the need for the conferences our founding team call "home" to go virtual. Along the way, we've learnt that virtual conferences massively expand the attendance of academic conferences, making them significantly more inclusive than physical conferences.</p>
-          <p>The social experience at a virtual conference makes or breaks the event. This is Clowdr's key focus and we have strong targets for accessibility and inclusivity.</p>
+          <p>Clowdr started as a response to climate change: ~70% of carbon emissions for a physical conference come from flights and hotels. Virtual conferences can dramatically reduce this carbon footprint. In the short term, Clowdr was prompted by the pandemic and the need for the conferences our founding team call "home" to go virtual. </p>
+          <p>Along the way, we've learned that virtual conferences massively expand participation in academic conferences by making them significantly more inclusive for people with disabilities, family responsibilities, caregiving roles, heavy work requirements, or limited financial means.</p>
+          <p>The social experience at a virtual conference makes or breaks the event. This is Clowdr's key focus and we have strong targets for accessibility and inclusivity. </p>
           <p>We believe that, by delivering great virtual conference experiences now, we can convince people to continue holding many of their meetings virtually even after the pandemic is over.</p>
         <h2>To apply</h2>
           <p>Please send your CV to <a href="mailto:jobs@clowdr.org">jobs@clowdr.org</a>. Applications will be considered as they arrive.</p>
