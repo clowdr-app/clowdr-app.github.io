@@ -1,17 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import { Helmet } from "react-helmet"
-import {
-  Button,
-  Card,
-  Container,
-  Grid,
-  Header,
-  Icon,
-  List,
-  Segment,
-  Statistic,
-} from "semantic-ui-react"
+import { Button, Card, Container, Grid, Header, List, Segment, Statistic } from "semantic-ui-react"
 import "semantic-ui-css/semantic.min.css"
 import ResponsiveContainer from "../components/ResponsiveContainer"
 
@@ -20,7 +10,7 @@ export default function Solution() {
     <ResponsiveContainer>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Solution | Clowdr - Virtual conferences that bring people together</title>
+        <title>Features | Clowdr - Social virtual conferences</title>
       </Helmet>
 
       <Container style={{ padding: "4em 0 2em" }}>
@@ -32,6 +22,17 @@ export default function Solution() {
           it is to organise a conference. Clowdr is designed to make your conference platform 'just
           work' - so that you can concentrate on the things that really matter.
         </p>
+        <Container textAlign="center" style={{ margin: "2rem" }}>
+          <iframe
+            title="Video introducing Clowdr"
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/RqyHVQUYVI4"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </Container>
         {/* todo: increase text size of headings */}
         <Card.Group itemsPerRow={3} doubling>
           <Card
@@ -141,6 +142,37 @@ export default function Solution() {
             </Grid.Column>
             <Grid.Column width={12}>
               <Card.Group doubling centered itemsPerRow={1}>
+                <Card>
+                  <Card.Content>
+                    <Card.Header>2021 is just around the corner</Card.Header>
+                    <Card.Meta>March 2021 onwards</Card.Meta>
+                    <Card.Description>
+                      We're now providing quotes for conferences from March 2021 onwards. From 50 to
+                      5,000 attendees and beyond, we can help make your virtual conference a
+                      success. Contact us today to receive a quote!
+                    </Card.Description>
+                  </Card.Content>
+                </Card>
+                <Card link href="https://popl21.sigplan.org/">
+                  <Card.Content>
+                    <Card.Header>POPL 2021</Card.Header>
+                    <Card.Meta>January 17-22 2021</Card.Meta>
+                    <Card.Description>
+                      The 48th ACM SIGPLAN Symposium on Principles of Programming Languages (POPL
+                      2021) will be held on Clowdr early in the New Year!
+                    </Card.Description>
+                  </Card.Content>
+                </Card>
+                <Card link href="https://2020.splashcon.org/">
+                  <Card.Content>
+                    <Card.Header>SPLASH 2020</Card.Header>
+                    <Card.Meta>November 15-21 2020</Card.Meta>
+                    <Card.Description>
+                      Over 900 attendees used Clowdr to attend the ACM SIGPLAN conference on
+                      Systems, Programming, Languages, and Applications: Software for Humanity.
+                    </Card.Description>
+                  </Card.Content>
+                </Card>
                 <Card link href="https://cscw.acm.org/2020/">
                   <Card.Content>
                     <Card.Header>CSCW 2020</Card.Header>
@@ -297,10 +329,19 @@ export default function Solution() {
         </List>
         <Button
           as="a"
-          size="huge"
+          size="big"
           href="mailto:hello@clowdr.org?subject=I'm%20interested%20in%20using%20Clowdr"
           color="green"
-          content="Contact us about using Clowdr"
+          content="Contact us today"
+          icon="mail"
+        />
+        <Button
+          as="a"
+          size="big"
+          href="/pricing"
+          color="green"
+          content="View package pricing"
+          icon="dollar"
         />
       </Container>
     </ResponsiveContainer>

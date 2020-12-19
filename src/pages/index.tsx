@@ -72,10 +72,10 @@ export default function Home() {
           <Container textAlign="center">
             <Button
               as={Link}
-              to="/solution"
+              to="/features"
               size="massive"
               color="green"
-              content="Learn more about Clowdr"
+              content="Learn about Clowdr's features"
               style={{ margin: "2em auto" }}
             />
           </Container>
@@ -170,6 +170,14 @@ export default function Home() {
             color="green"
             content="Contact us today"
             icon="mail"
+          />
+          <Button
+            as="a"
+            size="big"
+            href="/pricing"
+            color="green"
+            content="View package pricing"
+            icon="dollar"
           />
         </Container>
       </ResponsiveContainer>

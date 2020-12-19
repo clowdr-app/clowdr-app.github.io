@@ -19,8 +19,8 @@ export default function Footer() {
                 <Header inverted as="h4" content="Clowdr" />
               </Link>
               <List link inverted>
-                <List.Item as={Link} to="/solution">
-                  Platform
+                <List.Item as={Link} to="/features">
+                  Features
                 </List.Item>
                 <List.Item as={Link} to="/about">
                   About Us
@@ -35,8 +35,8 @@ export default function Footer() {
                 © Clowdr CIC 2020
               </Header>
               <p>
-                Clowdr is a social enterprise dedicated to creating sustainable,
-                inclusive and engaging conferences.
+                Clowdr is a social enterprise dedicated to creating sustainable, inclusive and
+                engaging conferences.
               </p>
               <p>
                 Clowdr is a Community Interest Company, number{" "}
@@ -46,9 +46,9 @@ export default function Footer() {
                 .
               </p>
               <p>
-                Clowdr is made possible thanks to support by the National
-                Science Foundation under awards CCF-2035003, CCF-2035101 and
-                CCF-203500 and support from Twilio.org.
+                Clowdr was initially made possible thanks to support by the National Science
+                Foundation under awards CCF-2035003, CCF-2035101 and CCF-203500 and support from
+                Twilio.org.
               </p>
             </Grid.Column>
           </Grid.Row>

@@ -5,8 +5,11 @@ import { Menu } from "semantic-ui-react"
 export default function MenuItems() {
   return (
     <>
-      <Menu.Item as={Link} to="/solution" activeClassName="active">
-        Platform
+      <Menu.Item as={Link} to="/features" activeClassName="active">
+        Features
+      </Menu.Item>
+      <Menu.Item as={Link} to="/pricing" activeClassName="active">
+        Pricing
       </Menu.Item>
       <Menu.Item as={Link} to="/about" activeClassName="active">
         About Us
