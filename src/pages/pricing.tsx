@@ -35,7 +35,7 @@ export default function Pricing() {
         </Header>
         <p style={{ fontSize: "1.33em" }}>
           Whether your conference has 50 attendees or 5,000 and beyond, we can help you deliver a
-          rich social experience. Our packages are a guide to what we can provide but please talk to
+          rich social experience. These packages are a guide to what we can provide, but please talk to
           us if you need something not currently shown on our website. We're a small, fast moving
           team - we may already be working on just the thing you need!
         </p>
@@ -50,12 +50,6 @@ export default function Pricing() {
               <List.Content>Let us worry about the technology.</List.Content>
             </List.Item>
             <List.Item>
-              <List.Header>Do-it-yourself Clowdr</List.Header>
-              <List.Content>
-                Want to run the Clowdr software yourself? We can help you with that.
-              </List.Content>
-            </List.Item>
-            <List.Item>
               <List.Header>Expert support</List.Header>
               <List.Content>
                 We'll help you set up your conference and provide virtual on-site support to make
@@ -66,6 +60,12 @@ export default function Pricing() {
               <List.Header>Advanced customisation</List.Header>
               <List.Content>
                 Want to wow your attendees with something new? We can design and build it.
+              </List.Content>
+            </List.Item>
+            <List.Item>
+              <List.Header>Do-it-yourself Clowdr</List.Header>
+              <List.Content>
+                Want to run the Clowdr software yourself? We can help you with that.
               </List.Content>
             </List.Item>
           </List>
@@ -275,7 +275,7 @@ export default function Pricing() {
             <TableRow>
               <TableCell>Hosting</TableCell>
               <TableCell>
-                Clowdr's software is open source and free for anyone to use. However, we offer our
+                Clowdr's software is open source and free for anyone to use. Alternatively, we offer our
                 software as a <i>hosted service</i> so you don't have to worry about the tech and
                 infrastructure. Just log in and start creating your program!
               </TableCell>
@@ -283,11 +283,8 @@ export default function Pricing() {
             <TableRow>
               <TableCell>Features</TableCell>
               <TableCell>
-                <Link to="/features">Every feature</Link> of the Clowdr software at the time your
-                conference happens.{" "}
-                <span style={{ fontStyle: "italic" }}>
+                All packages include <Link to="/features">every feature</Link> of the Clowdr software.{" "}
                   (You can disable some features if you don't wish to use them.)
-                </span>
               </TableCell>
             </TableRow>
             <TableRow>
@@ -297,7 +294,7 @@ export default function Pricing() {
               <TableCell>
                 <List bulleted>
                   <ListItem>
-                    Three 1-hour training sessions for your committee, volunteers and presenters on
+                    Three 1-hour training sessions for your committee, volunteers, and presenters on
                     how to use Clowdr.
                   </ListItem>
                   <ListItem>
@@ -305,7 +302,7 @@ export default function Pricing() {
                     to a maximum of 4 hours/day.
                   </ListItem>
                   <ListItem>
-                    For larger conferencs, we may provide additional members of our team and more
+                    For larger conferencs, we may be able to provide additional members of our team and/or more
                     hours of support.
                   </ListItem>
                 </List>
@@ -328,8 +325,8 @@ export default function Pricing() {
                 please talk to us. If you'd like a guarantee of the feature being available for your
                 conference, we may offer this package option to you.{" "}
                 <i style={{ fontWeight: 600, fontSize: "95%" }}>
-                  (Please talk to us as early as possible so we can allow enough time for your
-                  requirements.)
+                  Please talk to us as early as possible so we can allow enough time to address your
+                  requirements.
                 </i>
               </TableCell>
             </TableRow>
@@ -337,8 +334,7 @@ export default function Pricing() {
               <TableCell>Event management</TableCell>
               <TableCell>
                 If you'd like our team to help you design your program, provide extra training for
-                your volunteers or assist your conference in any other way, this option is available
-                (subject to offer after a free consultation).
+                your volunteers, or assist your conference in any other way, let's talk about it!
               </TableCell>
             </TableRow>
           </TableBody>
@@ -348,14 +344,14 @@ export default function Pricing() {
           that we provide to keep our services up and running.
         </p>
         <p>
-          <span style={{ color: "red" }}>2</span> Quotes provided before January 2021 included
+          <span style={{ color: "red" }}>2</span> Quotes provided before January 2021 include
           Training. After January 2021 Training may be included upon request depending on
           availability.
         </p>
         <p>
           <span style={{ color: "red" }}>3</span> All prices are shown in USD and exclusive of tax.
           GBP and EUR currencies also available. All prices shown are for guidance only and are
-          subject to change at any time. We provide a quote for your conference after a free
+          subject to change at any time. We will provide an exact quote for your conference after a free
           consultation. Clowdr CIC is a UK company operating in the UK - contracts are generally
           made under UK jurisdiction.
         </p>

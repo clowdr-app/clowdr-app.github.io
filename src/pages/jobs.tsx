@@ -18,7 +18,7 @@ export default function About() {
           </p>
           <h2>The company</h2>
           <p>
-            Clowdr CIC offers state-of-the-art virtual conferences to the academic community. Our  mission is to slash the climate impact of academia by providing an attractive, effective, and inclusive virtual alternative to physical meetings, and by empowering others to address different market segments using our open-source virtual conference platform.
+            Clowdr CIC offers state-of-the-art virtual conferences to the academic community. Our  mission is to slash the climate impact of academia by providing an attractive, effective, and inclusive virtual alternative to physical meetings, and by empowering others to address other market sectors by building on our open-source platform.
 
           </p>
 
