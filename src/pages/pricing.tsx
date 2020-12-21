@@ -284,7 +284,7 @@ export default function Pricing() {
               <TableCell>Features</TableCell>
               <TableCell>
                 All packages include <Link to="/features">every feature</Link> of the Clowdr software.{" "}
-                  (You can disable some features if you don't wish to use them.)
+                  You can disable some features if you don't wish to use them.
               </TableCell>
             </TableRow>
             <TableRow>
