@@ -6,6 +6,7 @@ import Title from "../components/Title"
 import "semantic-ui-css/semantic.min.css"
 import { Link } from "gatsby"
 import styles from "./index.module.scss"
+import { packages } from "./packages"
 
 export default function Home() {
   return (
@@ -129,37 +130,7 @@ export default function Home() {
             Interested in using Clowdr?
           </Header>
           <p style={{ fontSize: "1.33em" }}>We can provide:</p>
-          <List divided relaxed>
-            <List.Item>
-              <List.Header>Do-it-yourself Clowdr</List.Header>
-              <List.Content>
-                Want to run the Clowdr software yourself? It's{" "}
-                <a href="https://github.com/clowdr-app/clowdr-web-app">
-                  open source and freely available
-                </a>
-                . We can also provide support for your own deployment.
-              </List.Content>
-            </List.Item>
-            <List.Item>
-              <List.Header>Click-and-go Clowdr</List.Header>
-              <List.Content>
-                Let us worry about the technology, so you can focus on your event.
-              </List.Content>
-            </List.Item>
-            <List.Item>
-              <List.Header>Expert support</List.Header>
-              <List.Content>
-                We'll help you set up your conference and provide virtual on-site support to make
-                sure everything runs smoothly.
-              </List.Content>
-            </List.Item>
-            <List.Item>
-              <List.Header>Advanced customisation</List.Header>
-              <List.Content>
-                Want to wow your attendees with something new? We can design and build it.
-              </List.Content>
-            </List.Item>
-          </List>
+          {packages}
           <p style={{ fontSize: "1.33em" }}>
             If you're interested in using Clowdr, we'd love to hear from you.
           </p>

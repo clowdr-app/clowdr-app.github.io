@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet"
 import { Button, Card, Container, Grid, Header, List, Segment, Statistic } from "semantic-ui-react"
 import "semantic-ui-css/semantic.min.css"
 import ResponsiveContainer from "../components/ResponsiveContainer"
+import { packages } from "./packages"
 
 export default function Solution() {
   return (
@@ -302,31 +303,7 @@ export default function Solution() {
           Interested in using Clowdr?
         </Header>
         <p style={{ fontSize: "1.33em" }}>We can provide:</p>
-        <List divided relaxed>
-          <List.Item>
-            <List.Header>Click-and-go Clowdr</List.Header>
-            <List.Content>Let us worry about the technology.</List.Content>
-          </List.Item>
-          <List.Item>
-            <List.Header>Do-it-yourself Clowdr</List.Header>
-            <List.Content>
-              Want to run the Clowdr software yourself? We can help you with that.
-            </List.Content>
-          </List.Item>
-          <List.Item>
-            <List.Header>Expert support</List.Header>
-            <List.Content>
-              We'll help you set up your conference and provide virtual on-site support to make sure
-              everything runs smoothly.
-            </List.Content>
-          </List.Item>
-          <List.Item>
-            <List.Header>Advanced customisation</List.Header>
-            <List.Content>
-              Want to wow your attendees with something new? We can design and build it.
-            </List.Content>
-          </List.Item>
-        </List>
+        {packages}
         <Button
           as="a"
           size="big"
