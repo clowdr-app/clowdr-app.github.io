@@ -34,7 +34,7 @@ export default function Pricing() {
           Packages
         </Header>
         <p style={{ fontSize: "1.33em" }}>
-          Whether your conference has 50 attendees or 5,000 and beyond, we can help you deliver a
+          Whether your conference has 50 attendees, 5,000, or more, we can help you deliver a
           rich social experience. These packages are a guide to what we can provide, but please talk to
           us if you need something not currently shown on our website. We're a small, fast moving
           team - we may already be working on just the thing you need!
@@ -46,26 +46,32 @@ export default function Pricing() {
             style={{ width: "auto", display: "inline-block", textAlign: "left" }}
           >
             <List.Item>
-              <List.Header>Click-and-go Clowdr</List.Header>
-              <List.Content>Let us worry about the technology.</List.Content>
+              <List.Header>Click-and-go</List.Header>
+              <List.Content>We worry about the technology; you organize the conference.  Recommended for events with a simple, single-track program.</List.Content>
             </List.Item>
             <List.Item>
               <List.Header>Expert support</List.Header>
               <List.Content>
-                We'll help you set up your conference and provide virtual on-site support to make
-                sure everything runs smoothly.
+                You organize, we help.  We'll advise you on how to plan and set up your conference and provide virtual on-site support to make
+                sure everything runs smoothly.  Recommended for more complex events, especially ones with multiple tracks.
               </List.Content>
             </List.Item>
             <List.Item>
-              <List.Header>Advanced customisation</List.Header>
+              <List.Header>Hands-on support</List.Header>
               <List.Content>
-                Want to wow your attendees with something new? We can design and build it.
+                We organize, you help.  We'll take your requirements and deliver a successful event from start to finish.  
               </List.Content>
             </List.Item>
             <List.Item>
               <List.Header>Do-it-yourself Clowdr</List.Header>
               <List.Content>
                 Want to run the Clowdr software yourself? We can help you with that.
+              </List.Content>
+            </List.Item>
+            <List.Item>
+              <List.Header>Advanced customisation</List.Header>
+              <List.Content>
+                Want to wow your attendees with something new? We can design and build it.
               </List.Content>
             </List.Item>
           </List>
@@ -107,6 +113,56 @@ export default function Pricing() {
               <TableHeaderCell>Minimum price</TableHeaderCell>
             </TableHeader>
             <TableBody>
+              <TableRow textAlign="center">
+                <TableCell>Pure open source</TableCell>
+                <TableCell>
+                  <Icon name="times" />
+                </TableCell>
+                <TableCell>
+                  <Icon name="check" />
+                </TableCell>
+                <TableCell>
+                  <Icon name="times" />
+                </TableCell>
+                <TableCell>
+                  <Icon name="times" />
+                </TableCell>
+                <TableCell>
+                  <Icon name="times" />
+                </TableCell>
+                <TableCell>
+                  <Icon name="times" />
+                </TableCell>
+                <TableCell>N/A</TableCell>
+                <TableCell>N/A</TableCell>
+              </TableRow>
+              <TableRow textAlign="center">
+                <TableCell>Do-it-yourself</TableCell>
+                <TableCell>
+                  <Icon name="times" />
+                </TableCell>
+                <TableCell>
+                  <Icon name="check" />
+                </TableCell>
+                <TableCell>
+                  <Icon name="check" />
+                </TableCell>
+                <TableCell>
+                  <Icon name="times" />
+                </TableCell>
+                <TableCell>
+                  <Icon name="times" />
+                </TableCell>
+                <TableCell>
+                  <Icon name="times" />
+                </TableCell>
+                <TableCell>
+                  $250/hour of support
+                  <br />
+                  (inc. training)
+                </TableCell>
+                <TableCell>$500</TableCell>
+              </TableRow>
               <TableRow textAlign="center">
                 <TableCell>Click-and-go</TableCell>
                 <TableCell>
@@ -198,56 +254,6 @@ export default function Pricing() {
                 </TableCell>
                 <TableCell>$50/attendee</TableCell>
                 <TableCell>$50,000</TableCell>
-              </TableRow>
-              <TableRow textAlign="center">
-                <TableCell>Do-it-yourself</TableCell>
-                <TableCell>
-                  <Icon name="times" />
-                </TableCell>
-                <TableCell>
-                  <Icon name="check" />
-                </TableCell>
-                <TableCell>
-                  <Icon name="check" />
-                </TableCell>
-                <TableCell>
-                  <Icon name="times" />
-                </TableCell>
-                <TableCell>
-                  <Icon name="times" />
-                </TableCell>
-                <TableCell>
-                  <Icon name="times" />
-                </TableCell>
-                <TableCell>
-                  $250/hour of support
-                  <br />
-                  (inc. training)
-                </TableCell>
-                <TableCell>$500</TableCell>
-              </TableRow>
-              <TableRow textAlign="center">
-                <TableCell>Pure open source</TableCell>
-                <TableCell>
-                  <Icon name="times" />
-                </TableCell>
-                <TableCell>
-                  <Icon name="check" />
-                </TableCell>
-                <TableCell>
-                  <Icon name="times" />
-                </TableCell>
-                <TableCell>
-                  <Icon name="times" />
-                </TableCell>
-                <TableCell>
-                  <Icon name="times" />
-                </TableCell>
-                <TableCell>
-                  <Icon name="times" />
-                </TableCell>
-                <TableCell>N/A</TableCell>
-                <TableCell>N/A</TableCell>
               </TableRow>
             </TableBody>
           </Table>
