@@ -10,7 +10,7 @@ import styles from "./index.module.scss"
 export default function Home() {
   return (
     <>
-      <Title title="Virtual conferences without the heavy lifting" />
+      <Title title="Virtual conferences for social good" />
       <ResponsiveContainer heading={<HomepageHeading />}>
         <Container text style={{ paddingTop: "4em" }}>
           <Header as="h3" style={{ fontSize: "2em" }}>
@@ -117,7 +117,7 @@ export default function Home() {
               </Header>
               <p style={{ fontSize: "1.33em" }}>
                 Clowdr is a social enterprise, incorporated as a Community Interest Company. Our
-                mission is to make inclusive, climate-friendly virtual conferences just as socially
+                mission is to make inclusive, accessible, climate-friendly virtual conferences just as socially
                 engaging as physical conferences.
               </p>
             </Grid.Column>
@@ -132,7 +132,6 @@ export default function Home() {
           <List
             divided
             relaxed
-            style={{ width: "auto", display: "inline-block", textAlign: "left" }}
           >
             <List.Item>
               <List.Header>Click-and-go</List.Header>

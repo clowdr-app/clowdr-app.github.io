@@ -305,7 +305,6 @@ export default function Solution() {
         <List
           divided
           relaxed
-          style={{ width: "auto", display: "inline-block", textAlign: "left" }}
         >
           <List.Item>
             <List.Header>Click-and-go</List.Header>
