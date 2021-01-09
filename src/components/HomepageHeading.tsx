@@ -8,7 +8,7 @@ export default function HomepageHeading() {
       <>
         <Header
           as="h1"
-          content="Great virtual conferences without the heavy lifting"
+          content="Virtual conferences for social good"
           inverted
           style={{
             fontSize: small ? "1.8em" : "3.5em",
