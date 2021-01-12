@@ -36,7 +36,7 @@ export default function HomepageHeading() {
       <Media at="mobile">
         <Container text style={{ marginTop: "2em" }}>
           <Image
-            src="/people-table.svg"
+            src="/Clowdr-logo.svg"
             style={{ marginTop: "1em", width: "80%", maxHeight: "10em" }}
             centered
           />
@@ -79,7 +79,7 @@ export default function HomepageHeading() {
               }}
             >
               <Image
-                src="/people-table.svg"
+                src="/Clowdr-logo.svg"
                 style={{
                   height: "30em",
                 }}

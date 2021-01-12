@@ -22,6 +22,9 @@ export default function Footer() {
                 <List.Item as={Link} to="/features">
                   Features
                 </List.Item>
+                <List.Item as={Link} to="/pricing">
+                  Pricing
+                </List.Item>
                 <List.Item as={Link} to="/about">
                   About Us
                 </List.Item>
