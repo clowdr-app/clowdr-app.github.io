@@ -2,6 +2,10 @@ import { Link } from "gatsby"
 import React from "react"
 import { Menu } from "semantic-ui-react"
 
+/* If you change the list of pages, make sure to also change
+   Footer.tsx (really, the two should be generated from the same
+   static list of strings!) */
+
 export default function MenuItems() {
   return (
     <>
@@ -16,6 +20,9 @@ export default function MenuItems() {
       </Menu.Item>
       <Menu.Item as={Link} to="/jobs" activeClassName="active">
         Jobs
+      </Menu.Item>
+      <Menu.Item as={Link} to="/feedback" activeClassName="active">
+        Feedback
       </Menu.Item>
     </>
   )

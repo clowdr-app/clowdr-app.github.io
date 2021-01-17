@@ -6,8 +6,10 @@ import Header from "semantic-ui-react/dist/commonjs/elements/Header/Header"
 import List from "semantic-ui-react/dist/commonjs/elements/List/List"
 import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment"
 
-// BCP: It's too bad that the list of menu items is repeated here!
-// Bug waiting to happen (again :-)
+/* If you change the list of pages, make sure to also change
+   Footer.tsx (really, the two should be generated from the same
+   static list of strings!) */
+
 export default function Footer() {
   return (
     <Segment inverted vertical style={{ padding: "5em 0em" }}>
@@ -31,6 +33,9 @@ export default function Footer() {
                 <List.Item as={Link} to="/jobs">
                   Jobs
                 </List.Item>
+                <List.Item as={Link} to="/feedback">
+                  Feedback
+                </List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={7}>
@@ -42,14 +47,14 @@ export default function Footer() {
                 engaging conferences.
               </p>
               <p>
-                Clowdr is a Community Interest Company, number{" "}
+                Clowdr is a UK Community Interest Company, number{" "}
                 <a href="https://find-and-update.company-information.service.gov.uk/company/12984216">
                   12984216
                 </a>
                 .
               </p>
               <p>
-                Clowdr was initially made possible thanks to support by the National Science
+                Clowdr was initially made possible thanks to support by the US National Science
                 Foundation under awards CCF-2035003, CCF-2035101 and CCF-203500 and support from
                 Twilio.org.
               </p>

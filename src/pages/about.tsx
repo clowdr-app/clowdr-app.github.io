@@ -19,7 +19,7 @@ export default function About() {
              climate impact of academia by providing an attractive,
              effective, and inclusive virtual alternative to physical
              meetings, and by empowering others to address other
-             market sectors by building on our open-source platform.
+             market sectors using our open-source platform.
           </p>
 
           <Header as="h2" style={{ fontSize: "2em" }}>
@@ -31,7 +31,7 @@ export default function About() {
             community. Our software is fully open source and can be used by
             anyone free of charge; we also sell 
             turnkey services to reduce the effort for conference
-            organisers.
+            organisers and to support our ongoing development.
           </p>
           <p>
             Clowdr started as a response to climate change: About 70% of

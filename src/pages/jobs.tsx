@@ -10,17 +10,13 @@ export default function About() {
       <Title title="Jobs" />
       <ResponsiveContainer>
         <Container text style={{ padding: "4em 0" }}>
-          <Header as="h2" style={{ fontSize: "2em", padding: "1em 0 0" }} textAlign="center">
-            Open Position: Business Development Manager
-          </Header>
-          <p style={{ fontSize: "1.33em", textAlign: "center" }}>
+          <p style={{ fontSize: "2em", textAlign: "center" }}>
             Join our team!
           </p>
-          <h2>The company</h2>
-          <p>
-            Clowdr CIC offers state-of-the-art virtual conferences to the academic community. Our  mission is to slash the climate impact of academia by providing an attractive, effective, and inclusive virtual alternative to physical meetings, and by empowering others to address other market sectors by building on our open-source platform.
 
-          </p>
+          <Header as="h2" style={{ fontSize: "1.7em" }} >
+            Open Position: Business Development Manager
+          </Header>
 
         <h2>The need</h2>
         <p>
@@ -62,18 +58,14 @@ export default function About() {
           <p>They should be easy to work with and comfortable working remotely, internationally, and at flexible times. The  international nature of our business means meetings can be at a wide range of hours.</p>
           <p>Ideally they will already be familiar with academic conferences including some familiarity with how conference organizing committees function.</p>
           <p>They should have no conflicts being employed by a UK company (though they needn't be UK resident).</p>
-          <p>Starting date as soon as convenient.</p>
+          <p>Starting date: as soon as convenient.</p>
+
         <h2>What we offer</h2>
           <p>A leading role in a public-interest, community-focused company that is developing cutting-edge, open-source technology for a super-hot market sector, driven by a passion to combat climate change while increasing inclusiveness of conferences.</p>
           <p>A friendly, flexible working environment.</p>
           <p>Competitive remuneration.</p>
-        <h2>More about Clowdr</h2>
-          <p>Clowdr is a UK Community Interest Company focused on delivering virtual conferencing software for the academic community. Our software is fully open source and we sell a turnkey service to reduce the effort for conference organisers.</p>
-          <p>Clowdr started as a response to climate change: ~70% of carbon emissions for a physical conference come from flights and hotels. Virtual conferences can dramatically reduce this carbon footprint. In the short term, Clowdr was prompted by the pandemic and the need for the conferences our founding team call "home" to go virtual. </p>
-          <p>Along the way, we've learned that virtual conferences massively expand participation in academic conferences by making them significantly more inclusive for people with disabilities, family responsibilities, caregiving roles, heavy work requirements, geographical restrictions, or limited financial means.</p>
-          <p>The social experience at a virtual conference makes or breaks the event. This is Clowdr's key focus and we have strong targets for accessibility and inclusivity. </p>
-          <p>We believe that, by delivering great virtual conference experiences now, we can convince people to continue holding many of their meetings virtually even after the pandemic is over.</p>
-        <h2>To apply</h2>
+
+        <h2 style={{ fontSize: "1.7em" }}>To apply</h2>
           <p>Please send your CV to <a href="mailto:jobs@clowdr.org">jobs@clowdr.org</a>. Applications will be considered as they arrive.</p>
         </Container>
       </ResponsiveContainer>
