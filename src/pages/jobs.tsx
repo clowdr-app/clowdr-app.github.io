@@ -20,7 +20,7 @@ export default function About() {
 
         <h2>The need</h2>
         <p>
-          Clowdr is a new and quickly growing business. We are looking for a business development manager to spearhead our operational activities:
+          Clowdr is a young and quickly growing business. We are looking for a business development manager to spearhead our operational activities:
         </p>
         <p>
           Sales:
