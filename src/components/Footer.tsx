@@ -16,7 +16,7 @@ export default function Footer() {
       <Container>
         <Grid divided inverted stackable>
           <Grid.Row>
-            <Grid.Column width={6}>
+            <Grid.Column width={3}>
               <Link to="/">
                 <Header inverted as="h4" content="Clowdr" />
               </Link>
@@ -35,6 +35,21 @@ export default function Footer() {
                 </List.Item>
                 <List.Item as={Link} to="/feedback">
                   Feedback
+                </List.Item>
+              </List>
+            </Grid.Column>
+            <Grid.Column width={3}>
+              <span>
+                <Header inverted as="h4" style={{ visibility: "hidden" }} aria-hidden={true}>
+                  &nbsp;
+                </Header>
+              </span>
+              <List link inverted>
+                <List.Item as={Link} to="/policies/backups">
+                  Backups Policy
+                </List.Item>
+                <List.Item as={Link} to="/policies/archiving">
+                  Archiving Policy
                 </List.Item>
               </List>
             </Grid.Column>
