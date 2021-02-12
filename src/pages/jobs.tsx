@@ -23,15 +23,15 @@ export default function About() {
 
           <p>Essential qualifications:</p>
           <ul>
-            <li>Front-end web application development
-                <i>(How many years??)</i></li> 
-            <li>User-experience (UX)</li>
+            <li>Front-end web application development</li> 
+            <li>User-experience design (UX)</li>
           </ul>
           
           <p>Desirable skills:</p>
           <ul>
             <li>Typescript</li>
-            <li><i>(What else??)</i></li>
+            <li>Chakra / React</li>
+            <li>Heroku / Hasura</li>
           </ul>
           
           <h2>The role</h2>
@@ -58,25 +58,16 @@ export default function About() {
           </p>
 
           <h2>Who we're looking for</h2>
-          <p>
-            The ideal candidate will have a broad skillset related to
-            web application development and several years of specific
-            experience designing and developing web user interfaces
-            and user experience.
 
-            They will be capable of picking up new challenges as they
-            present themselves, and they will have good people
-            skills.{" "}
-          </p>
+          <p> The ideal candidate will have a broad skillset related
+            to web application development, with at least 3-5 years of
+            experience designing and developing web user interfaces
+            and user experience.  {" "} </p>
 
           <p> They should be easy to work with and comfortable working
             remotely, internationally, and at flexible times. The
             international nature of our business means meetings can be
             at a wide range of hours.  </p>
-
-          <p> Ideally they will already be familiar with academic
-            conferences including some familiarity with how conference
-            organizing committees function.  </p>
 
           <p> They should have no conflicts being employed by a UK
             company (though they needn't be UK resident).  </p>
