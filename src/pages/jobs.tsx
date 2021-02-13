@@ -18,29 +18,33 @@ export default function About() {
 
           <h2>The need</h2>
 
-          <p> Clowdr is a young and quickly growing platform. We are
-            looking for a software developer.  </p>
+          <p> The Clowdr team is looking for a software developer.
+            </p>
 
-          <p>Essential qualifications:</p>
+          <p>Essential skills:</p>
           <ul>
             <li>Front-end web application development</li> 
             <li>User-experience design (UX)</li>
+            <li>Typescript</li>
+            <li>React</li>
           </ul>
           
           <p>Desirable skills:</p>
           <ul>
-            <li>Typescript</li>
-            <li>Chakra / React</li>
+            <li>Chakra-UI</li>
             <li>Heroku / Hasura</li>
           </ul>
           
-          <h2>The role</h2>
+          <h2>The company</h2>
+
+          <p> Clowdr is a young and quickly growing virtual conference
+          platform. </p>
 
           <p>
-            Clowdr has 5 founders, all currently contributing to every
+            Clowdr CIC has 5 founders, all currently contributing to every
             aspect of the business. Ed and Ross are full time CEO and
             CTO, respectively. Both are software developers by
-            background though Ed has entrepreneurship
+            background though Ed also has entrepreneurship
             training. Benjamin, Jonathan, and Crista remain full-time
             in their academic positions and contribute as much time as
             possible to Clowdr. Ed and Ross currently do the bulk of
@@ -51,18 +55,18 @@ export default function About() {
             {" "} 
           </p>
 
+          <h2>Who we're looking for</h2>
+
           <p>
             The new Clowdr front-end software developer will contribute to
             all aspects of platform development, focusing on UI/UX design
             and implementation. 
           </p>
 
-          <h2>Who we're looking for</h2>
-
           <p> The ideal candidate will have a broad skillset related
             to web application development, with at least 3-5 years of
-            experience designing and developing web user interfaces
-            and user experience.  {" "} </p>
+            experience designing and developing web user interfaces.
+            {" "} </p>
 
           <p> They should be easy to work with and comfortable working
             remotely, internationally, and at flexible times. The
