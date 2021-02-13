@@ -37,23 +37,22 @@ export default function About() {
           
           <h2>The company</h2>
 
-          <p> Clowdr is a young and quickly growing virtual conference
-          platform. </p>
+          <p> Clowdr is a young and quickly growing conference
+          platform that aims to reduce the carbon footprint of
+          academic conferences by offering a more attractive virtual
+          alternative. </p>
 
-          <p>
-            Clowdr CIC has 5 founders, all currently contributing to every
+          <p> Clowdr CIC has 5 founders, all contributing to every
             aspect of the business. Ed and Ross are full time CEO and
-            CTO, respectively. Both are software developers by
-            background though Ed also has entrepreneurship
-            training. Benjamin, Jonathan, and Crista remain full-time
-            in their academic positions and contribute as much time as
-            possible to Clowdr. Ed and Ross currently do the bulk of
-            technical development, and the whole team contributes to
-            business development and operations. We are in the process
-            of onboarding a business development manager to focus on
-            scaling up the latter activities.
-            {" "} 
-          </p>
+            CTO. Both are software developers by background, though Ed
+            also has entrepreneurship training. Benjamin, Jonathan,
+            and Crista remain full-time in their academic positions
+            and contribute as much as possible to Clowdr. Ed and Ross
+            currently do the bulk of technical development, and the
+            whole team contributes to business development and
+            operations. We are in the process of onboarding a business
+            development manager to focus on scaling up the latter
+            activities.  {" "} </p>
 
           <h2>Who we're looking for</h2>
 
