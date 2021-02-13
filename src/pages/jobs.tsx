@@ -13,7 +13,7 @@ export default function About() {
           <p style={{ fontSize: "2em", textAlign: "center" }}>Join our team!</p>
 
           <Header as="h1" style={{ fontSize: "1.7em" }}>
-            Open: Frontend Software Developer
+            Open Position: Front-end Software Developer
           </Header>
 
           <h2>The need</h2>
@@ -93,12 +93,8 @@ export default function About() {
           <h2 style={{ fontSize: "1.7em" }}>To apply</h2>
 
           <p>
-<<<<<<< HEAD
-            Please send your CV to {" "} <a href="mailto:jobs@clowdr.org">jobs@clowdr.org</a>.
-=======
-            Please send your CV to 
+            Please send your CV to {" "} 
             <a href="mailto:jobs@clowdr.org">jobs@clowdr.org</a>.
->>>>>>> 794dc2ad8084458471805977e89c8b65facf49b5
             Applications will be considered as they arrive.
           </p>
 
