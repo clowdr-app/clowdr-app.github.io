@@ -35,6 +35,42 @@ export default function About() {
             <li>Heroku / Hasura</li>
           </ul>
           
+          <h2>Who we're looking for</h2>
+
+          <p>
+            The new Clowdr front-end software developer will contribute to
+            all aspects of platform development, focusing on UI/UX design
+            and implementation. 
+          </p>
+
+          <p> The ideal candidate will have a broad skillset related
+            to web application development, with at least 3-5 years of
+            experience designing and developing web user interfaces.
+            {" "} </p>
+
+          <p> They should be easy to work with and comfortable working
+            remotely, internationally, and at flexible times. The
+            international nature of our business means meetings can be
+            at a wide range of hours.  In particular, our development
+            team works on European time. </p>
+
+          <p> They should have no conflicts being employed by a UK
+            company (though they needn't be UK resident).  </p>
+
+          <p>Starting date: as soon as convenient.</p>
+
+          <h2>What we offer</h2>
+
+          <p> A critical role in a public-interest, community-focused
+            company that is developing cutting-edge, open-source
+            technology for a super-hot market sector, driven by a
+            passion to combat climate change while increasing
+            inclusiveness of conferences.  </p>
+
+          <p>A friendly, flexible working environment.</p>
+
+          <p>Competitive remuneration.</p>
+
           <h2>The company</h2>
 
           <p> Clowdr is a young and quickly growing conference
@@ -53,41 +89,6 @@ export default function About() {
             operations. We are in the process of onboarding a business
             development manager to focus on scaling up the latter
             activities.  {" "} </p>
-
-          <h2>Who we're looking for</h2>
-
-          <p>
-            The new Clowdr front-end software developer will contribute to
-            all aspects of platform development, focusing on UI/UX design
-            and implementation. 
-          </p>
-
-          <p> The ideal candidate will have a broad skillset related
-            to web application development, with at least 3-5 years of
-            experience designing and developing web user interfaces.
-            {" "} </p>
-
-          <p> They should be easy to work with and comfortable working
-            remotely, internationally, and at flexible times. The
-            international nature of our business means meetings can be
-            at a wide range of hours.  </p>
-
-          <p> They should have no conflicts being employed by a UK
-            company (though they needn't be UK resident).  </p>
-
-          <p>Starting date: as soon as convenient.</p>
-
-          <h2>What we offer</h2>
-
-          <p> A critical role in a public-interest, community-focused
-            company that is developing cutting-edge, open-source
-            technology for a super-hot market sector, driven by a
-            passion to combat climate change while increasing
-            inclusiveness of conferences.  </p>
-
-          <p>A friendly, flexible working environment.</p>
-
-          <p>Competitive remuneration.</p>
 
           <h2 style={{ fontSize: "1.7em" }}>To apply</h2>
 
