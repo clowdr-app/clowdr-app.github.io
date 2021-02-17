@@ -92,11 +92,11 @@ export default function About() {
 
           <h2 style={{ fontSize: "1.7em" }}>To apply</h2>
 
-          <p>
-            Please send your CV to {" "} 
-            <a href="mailto:jobs@clowdr.org">jobs@clowdr.org</a>.
-            Applications will be considered as they arrive.
-          </p>
+          <p> Please send your CV, together with a cover letter
+            telling us why Clowdr might be a good fit for you and vice
+            versa, to {" "} <a
+            href="mailto:jobs@clowdr.org">jobs@clowdr.org</a>.
+            Applications will be considered as they arrive.  </p>
 
         </Container>
       </ResponsiveContainer>
