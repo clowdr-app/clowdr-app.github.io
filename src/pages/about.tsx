@@ -17,8 +17,8 @@ export default function About() {
              Clowdr CIC offers state-of-the-art virtual conferences to
              the academic community. Our mission is to slash the
              climate impact of academia by providing an attractive,
-             effective, and inclusive virtual alternative to physical
-             meetings, and by empowering others to address other
+             effective, and inclusive alternative to physical
+             gatherings, and by empowering others to address other
              market sectors using our open-source platform.
           </p>
 
