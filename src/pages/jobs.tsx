@@ -12,6 +12,8 @@ export default function About() {
         <Container text style={{ padding: "4em 0" }}>
           <p style={{ fontSize: "2em", textAlign: "center" }}>Join our team</p>
 
+          <p>Clowdr CIC is hiring!</p>
+
           <h1>
             Current openings
           </h1>
