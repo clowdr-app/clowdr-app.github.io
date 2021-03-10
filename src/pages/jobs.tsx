@@ -1,6 +1,5 @@
+import { Container, Heading, Link, ListItem, Text, UnorderedList } from "@chakra-ui/react"
 import React from "react"
-import "semantic-ui-css/semantic.min.css"
-import { Container, Header } from "semantic-ui-react"
 import { Layout } from "../components/Layout"
 import Title from "../components/Title"
 
@@ -9,43 +8,49 @@ export default function About() {
     <>
       <Title title="Jobs" />
       <Layout>
-        <Container text style={{ padding: "4em 0" }}>
-          <p style={{ fontSize: "2em", textAlign: "center" }}>Join our team</p>
+        <Container my={12}>
+          <Heading as="h2" size="2xl">
+            Join our team
+          </Heading>
 
-          <p>Clowdr CIC is hiring!</p>
+          <Text>Clowdr CIC is hiring!</Text>
 
-          <h1>Current openings</h1>
+          <Heading as="h3" size="xl">
+            Current openings
+          </Heading>
 
-          <h3>Software developer (front end)</h3>
+          <Heading as="h4" size="lg">
+            Software developer (front end)
+          </Heading>
 
-          <p>
-            {" "}
+          <Text>
             Our ideal candidate for this position is an experienced developer with a particular
             interest in front-end design and implementation. You should have an eye for what looks
             good and an instinct for good user experience.
-          </p>
+          </Text>
 
-          <p>Essential skills:</p>
-          <ul>
-            <li>Front-end web application development</li>
-            <li>User experience design (UX)</li>
-            <li>TypeScript</li>
-            <li>React</li>
-          </ul>
+          <Text>Essential skills:</Text>
+          <UnorderedList>
+            <ListItem>Front-end web application development</ListItem>
+            <ListItem>User experience design (UX)</ListItem>
+            <ListItem>TypeScript</ListItem>
+            <ListItem>React</ListItem>
+          </UnorderedList>
 
-          <p>Nice to have:</p>
-          <ul>
-            <li>Chakra UI</li>
-            <li>Heroku</li>
-            <li>GraphQL</li>
-            <li>AWS</li>
-            <li>Hasura</li>
-          </ul>
+          <Text>Nice to have:</Text>
+          <UnorderedList>
+            <ListItem>Chakra UI</ListItem>
+            <ListItem>Heroku</ListItem>
+            <ListItem>GraphQL</ListItem>
+            <ListItem>AWS</ListItem>
+            <ListItem>Hasura</ListItem>
+          </UnorderedList>
 
-          <h3>Software developer (devops / backend)</h3>
+          <Heading as="h4" size="lg">
+            Software developer (devops / backend)
+          </Heading>
 
-          <p>
-            {" "}
+          <Text>
             The ideal candidae for this position would be a strong software developer with an
             interest in infrastructure and DevOps. You would be comfortable implementing backend
             APIs and services, working on our build and deployment systems; designing and securing
@@ -53,101 +58,105 @@ export default function About() {
             would have several years of experience working on cloud-hosted applications -- even
             better if that's at significant scale. You should share our appreciation for
             applications that are well-documented, easy to build and deploy, and whose configuration
-            and infrastructure are defined as code.{" "}
-          </p>
+            and infrastructure are defined as code.
+          </Text>
 
-          <p>Essential skills:</p>
-          <ul>
-            <li>Web application development</li>
-            <li>Typescript</li>
-            <li>Cloud infrastructure, particularly AWS</li>
-          </ul>
+          <Text>Essential skills:</Text>
+          <UnorderedList>
+            <ListItem>Web application development</ListItem>
+            <ListItem>Typescript</ListItem>
+            <ListItem>Cloud infrastructure, particularly AWS</ListItem>
+          </UnorderedList>
 
-          <p>Nice to have:</p>
-          <ul>
-            <li>Postgres</li>
-            <li>Heroku</li>
-            <li>Hasura</li>
-            <li>GraphQL</li>
-            <li>Technical writing</li>
-          </ul>
+          <Text>Nice to have:</Text>
+          <UnorderedList>
+            <ListItem>Postgres</ListItem>
+            <ListItem>Heroku</ListItem>
+            <ListItem>Hasura</ListItem>
+            <ListItem>GraphQL</ListItem>
+            <ListItem>Technical writing</ListItem>
+          </UnorderedList>
 
-          <h1>What we're looking for</h1>
+          <Heading as="h3" fontSize="xl">
+            What we're looking for
+          </Heading>
 
-          <p>
-            {" "}
+          <Text>
             You should be friendly and easy to work with, and comfortable working remotely with an
             internationally distributed team. We encourage flexible working and asynchronous
             collaboration, but the international nature of our business means meetings can be at a
-            wide range of hours. Our existing engineering team work from European timezones.{" "}
-          </p>
+            wide range of hours. Our existing engineering team work from European timezones.
+          </Text>
 
-          <p>
-            {" "}
+          <Text>
             Clowdr is incorporated in the UK, but there is no need to be resident or have the right
-            to work in the UK for this role.{" "}
-          </p>
+            to work in the UK for this role.
+          </Text>
 
-          <p>
-            {" "}
+          <Text>
             Ideal candidates for these positions will have a broad skillset related to web
             application development, with at least 3-5 years of experience designing and developing
             web-based systems. Talent is more important than specific skills, so it's still worth
             contacting us if you don't precisely match one the specific job descriptions below.
-          </p>
+          </Text>
 
-          <p>
-            {" "}
+          <Text>
             The idea candidate for any position will be comfortable pitching in at all levels of our
             stack when necessary. We develop all of our software{" "}
-            <a href="https://github.com/clowdr-app/clowdr">in the open</a>.{" "}
-          </p>
+            <a href="https://github.com/clowdr-app/clowdr">in the open</a>.
+          </Text>
 
-          <h1>What we offer</h1>
+          <Heading as="h3" fontSize="xl">
+            What we offer
+          </Heading>
 
-          <p>
-            {" "}
+          <Text>
             A critical role in a public-interest, community-focused company that is developing
             cutting-edge, open-source technology for a super-hot market sector, driven by a passion
-            to combat climate change while increasing inclusivity at conferences.{" "}
-          </p>
+            to combat climate change while increasing inclusivity at conferences.
+          </Text>
 
-          <p>A friendly, flexible remote working environment.</p>
+          <Text>A friendly, flexible remote working environment.</Text>
 
-          <p>Competitive remuneration.</p>
+          <Text>Competitive remuneration.</Text>
 
-          <h1>The company</h1>
+          <Heading as="h3" fontSize="xl">
+            The company
+          </Heading>
 
-          <p>
-            {" "}
+          <Text>
             Clowdr is a young and quickly growing conference platform that aims to reduce the carbon
-            footprint of academic conferences by offering a more attractive virtual alternative.{" "}
-          </p>
+            footprint of academic conferences by offering a more attractive virtual alternative.
+          </Text>
 
-          <p>
-            {" "}
+          <Text>
             Clowdr CIC has 5 founders, all contributing to every aspect of the business. Ed and Ross
             are full time CEO and CTO. Both are software developers by background, though Ed also
             has entrepreneurship training. Benjamin, Jonathan, and Crista remain full-time in their
             academic positions and contribute as much as possible to Clowdr. Ed and Ross currently
             do the bulk of technical development, and the whole team contributes to business
             development and operations. We are in the process of onboarding a business development
-            manager to focus on scaling up the latter activities.{" "}
-          </p>
+            manager to focus on scaling up the latter activities.
+          </Text>
 
-          <h1>Starting date</h1>
+          <Heading as="h3" fontSize="xl">
+            Starting date
+          </Heading>
 
-          <p>As soon as convenient.</p>
+          <Text>As soon as convenient.</Text>
 
-          <Header as="h1" style={{ fontSize: "1.7em" }}>
+          <Heading as="h3" fontSize="xl">
             To apply
-          </Header>
+          </Heading>
 
-          <p>
+          <Text>
             Please send your CV, together with a cover letter telling us why Clowdr might be a good
-            fit for you and vice versa, to <a href="mailto:jobs@clowdr.org">jobs@clowdr.org</a>.
-            Applications will be considered as they arrive.
-          </p>
+            fit for you and vice versa, to{" "}
+            <Link as="a" href="mailto:jobs@clowdr.org">
+              jobs@clowdr.org
+            </Link>
+            . Applications will be considered as they arrive.
+          </Text>
         </Container>
       </Layout>
     </>
