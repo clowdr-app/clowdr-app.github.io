@@ -1,28 +1,20 @@
+import { Box, Heading } from "@chakra-ui/react"
 import React from "react"
-import { Helmet } from "react-helmet"
-import { Container, Header } from "semantic-ui-react"
-import "semantic-ui-css/semantic.min.css"
-import ResponsiveContainer from "../components/ResponsiveContainer"
+import { Helmet } from "react-helmet-async"
+import { Layout } from "../components/Layout"
 
-export default function About() {
+export default function PageNotFound() {
   return (
-    <ResponsiveContainer>
+    <Layout>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>
-          Page not found | Clowdr - Virtual conferences that bring people together
-          emissions
-        </title>
+        <title>Page not found | Clowdr - Virtual conferences that bring people together</title>
       </Helmet>
-      <Container text style={{ padding: "4em 0" }}>
-        <Header
-          as="h2"
-          style={{ fontSize: "2em", padding: "1em 0" }}
-          textAlign="center"
-        >
+      <Box text p={4}>
+        <Heading as="h2" textAlign="center">
           Sorry, we couldn't find that page.
-        </Header>
-      </Container>
-    </ResponsiveContainer>
+        </Heading>
+      </Box>
+    </Layout>
   )
 }

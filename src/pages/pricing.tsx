@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
-import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet-async"
 import {
   Button,
   Container,
@@ -34,8 +34,8 @@ export default function Pricing() {
           Packages
         </Header>
         <p style={{ fontSize: "1.33em" }}>
-          Whether your conference has 50 attendees, 5,000, or more, we can help you deliver a
-          rich social experience. These packages are a guide to what we can provide, but please talk to
+          Whether your conference has 50 attendees, 5,000, or more, we can help you deliver a rich
+          social experience. These packages are a guide to what we can provide, but please talk to
           us if you need something not currently shown on our website. We're a small, fast moving
           team - we may already be working on just the thing you need!
         </p>
@@ -47,19 +47,24 @@ export default function Pricing() {
           >
             <List.Item>
               <List.Header>Click-and-go</List.Header>
-              <List.Content>We worry about the technology; you organize the conference.  Recommended for events with a simple, single-track program.</List.Content>
+              <List.Content>
+                We worry about the technology; you organize the conference. Recommended for events
+                with a simple, single-track program.
+              </List.Content>
             </List.Item>
             <List.Item>
               <List.Header>Expert support</List.Header>
               <List.Content>
-                You organize, we help.  We'll advise you on how to plan and set up your conference and provide virtual on-site support to make
-                sure everything runs smoothly.  Recommended for more complex events, especially ones with multiple tracks.
+                You organize, we help. We'll advise you on how to plan and set up your conference
+                and provide virtual on-site support to make sure everything runs smoothly.
+                Recommended for more complex events, especially ones with multiple tracks.
               </List.Content>
             </List.Item>
             <List.Item>
               <List.Header>Hands-on support</List.Header>
               <List.Content>
-                We organize, you help.  We'll take your requirements and deliver a successful event from start to finish.
+                We organize, you help. We'll take your requirements and deliver a successful event
+                from start to finish.
               </List.Content>
             </List.Item>
             <List.Item>
@@ -281,16 +286,16 @@ export default function Pricing() {
             <TableRow>
               <TableCell>Hosting</TableCell>
               <TableCell>
-                Clowdr's software is open source and free for anyone to use. Alternatively, we offer our
-                software as a <i>hosted service</i> so you don't have to worry about the tech and
-                infrastructure. Just log in and start creating your program!
+                Clowdr's software is open source and free for anyone to use. Alternatively, we offer
+                our software as a <i>hosted service</i> so you don't have to worry about the tech
+                and infrastructure. Just log in and start creating your program!
               </TableCell>
             </TableRow>
             <TableRow>
               <TableCell>Features</TableCell>
               <TableCell>
-                All packages include <Link to="/features">every feature</Link> of the Clowdr software.{" "}
-                  You can disable some features if you don't wish to use them.
+                All packages include <Link to="/features">every feature</Link> of the Clowdr
+                software. You can disable some features if you don't wish to use them.
               </TableCell>
             </TableRow>
             <TableRow>
@@ -308,8 +313,8 @@ export default function Pricing() {
                     to a maximum of 4 hours/day.
                   </ListItem>
                   <ListItem>
-                    For larger conferencs, we may be able to provide additional members of our team and/or more
-                    hours of support.
+                    For larger conferencs, we may be able to provide additional members of our team
+                    and/or more hours of support.
                   </ListItem>
                 </List>
               </TableCell>
@@ -357,9 +362,9 @@ export default function Pricing() {
         <p>
           <span style={{ color: "red" }}>3</span> All prices are shown in USD and exclusive of tax.
           GBP and EUR currencies also available. All prices shown are for guidance only and are
-          subject to change at any time. We will provide an exact quote for your conference after a free
-          consultation. Clowdr CIC is a UK company operating in the UK - contracts are generally
-          made under UK jurisdiction.
+          subject to change at any time. We will provide an exact quote for your conference after a
+          free consultation. Clowdr CIC is a UK company operating in the UK - contracts are
+          generally made under UK jurisdiction.
         </p>
       </Container>
     </ResponsiveContainer>

@@ -5,7 +5,6 @@ import HomepageHeading from "../components/HomepageHeading"
 import Title from "../components/Title"
 import "semantic-ui-css/semantic.min.css"
 import { Link } from "gatsby"
-import styles from "./index.module.scss"
 
 export default function Home() {
   return (
@@ -16,17 +15,17 @@ export default function Home() {
           <Header as="h3" style={{ fontSize: "2em" }}>
             Running a virtual conference can be hard work
           </Header>
-          <div className={styles.quotes}>
-            <Label as="div" pointing="left" size="big" className={styles.quotes__quote}>
+          <div>
+            <Label as="div" pointing="left" size="big">
               How do I organise video streaming and Q&amp;A?
             </Label>
-            <Label as="div" pointing="right" size="big" className={styles.quotes__quote}>
+            <Label as="div" pointing="right" size="big">
               How will attendees socialise with one another?
             </Label>
-            <Label as="div" pointing="left" size="big" className={styles.quotes__quote}>
+            <Label as="div" pointing="left" size="big">
               How do I run poster sessions and exhibitions?
             </Label>
-            <Label as="div" pointing="right" size="big" className={styles.quotes__quote}>
+            <Label as="div" pointing="right" size="big">
               What about providing booths for our sponsors?
             </Label>
           </div>

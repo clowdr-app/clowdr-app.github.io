@@ -11,12 +11,8 @@ interface Props {
 export default function ResponsiveContainer(props: Props) {
   return (
     <MediaContextProvider>
-      <DesktopContainer heading={props.heading}>
-        {props.children}
-      </DesktopContainer>
-      <MobileContainer heading={props.heading}>
-        {props.children}
-      </MobileContainer>
+      <DesktopContainer heading={props.heading}>{props.children}</DesktopContainer>
+      <MobileContainer heading={props.heading}>{props.children}</MobileContainer>
     </MediaContextProvider>
   )
 }
