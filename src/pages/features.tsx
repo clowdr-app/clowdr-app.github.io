@@ -1,8 +1,8 @@
 import { Link } from "gatsby"
 import React from "react"
 import { Helmet } from "react-helmet-async"
-import { Button, Card, Container, Grid, Header, List, Segment, Statistic } from "semantic-ui-react"
 import "semantic-ui-css/semantic.min.css"
+import { Button, Card, Container, Grid, Header, List, Segment, Statistic } from "semantic-ui-react"
 import ResponsiveContainer from "../components/ResponsiveContainer"
 
 export default function Solution() {

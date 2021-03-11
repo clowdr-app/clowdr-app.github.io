@@ -1,6 +1,6 @@
 {
   "plugins": ["./node_modules/prettier-plugin-organize-imports"],
   "arrowParens": "avoid",
-  "semi": false,
-  "printWidth": 100
+  "semi": true,
+  "printWidth": 80
 }
