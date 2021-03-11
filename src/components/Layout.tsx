@@ -9,22 +9,22 @@ import {
   useColorModeValue,
   useDisclosure,
   VStack,
-} from "@chakra-ui/react"
-import { Link as GatsbyLink } from "gatsby"
-import React from "react"
-import { AiOutlineMenu } from "react-icons/ai"
-import Footer from "./Footer"
+} from "@chakra-ui/react";
+import { Link as GatsbyLink } from "gatsby";
+import React from "react";
+import { AiOutlineMenu } from "react-icons/ai";
+import Footer from "./Footer";
 
 export function Layout({
   children,
 }: {
-  children: JSX.Element[] | JSX.Element | string | string[]
+  children: JSX.Element[] | JSX.Element | string | string[];
 }) {
-  const headerBg = useColorModeValue("brand.800", "brand.800")
-  const mobileNav = useDisclosure()
+  const headerBg = useColorModeValue("brand.800", "brand.800");
+  const mobileNav = useDisclosure();
 
   return (
-    <>
+    <Flex direction="column" m="0 auto" minH="100vh">
       <chakra.header
         bg={headerBg}
         layerStyle="header"
@@ -55,19 +55,19 @@ export function Layout({
               color="brand.500"
               display={{ base: "none", md: "inline-flex" }}
             >
-              <Link as={GatsbyLink} to="/features" variant="header">
+              <Link as={GatsbyLink} to="/features">
                 Features
               </Link>
-              <Link as={GatsbyLink} to="/pricing" variant="header">
+              <Link as={GatsbyLink} to="/pricing">
                 Pricing
               </Link>
-              <Link as={GatsbyLink} to="/about" variant="header">
+              <Link as={GatsbyLink} to="/about">
                 About
               </Link>
-              <Link as={GatsbyLink} to="/jobs" variant="header">
+              <Link as={GatsbyLink} to="/jobs">
                 Jobs
               </Link>
-              <Link as={GatsbyLink} to="/feedback" variant="header">
+              <Link as={GatsbyLink} to="/feedback">
                 Feedback
               </Link>
             </HStack>
@@ -98,7 +98,10 @@ export function Layout({
                 shadow="sm"
                 textAlign="center"
               >
-                <CloseButton aria-label="Close menu" onClick={mobileNav.onClose} />
+                <CloseButton
+                  aria-label="Close menu"
+                  onClick={mobileNav.onClose}
+                />
 
                 <Link as={GatsbyLink} to="/features" w="full">
                   Features
@@ -120,8 +123,8 @@ export function Layout({
           </HStack>
         </Flex>
       </chakra.header>
-      <Box>{children}</Box>
+      <Box flex="1">{children}</Box>
       <Footer />
-    </>
-  )
+    </Flex>
+  );
 }

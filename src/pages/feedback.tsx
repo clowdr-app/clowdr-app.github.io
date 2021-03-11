@@ -1,42 +1,63 @@
-import React from "react"
-import { Container, Header, Item, Segment } from "semantic-ui-react"
-import "semantic-ui-css/semantic.min.css"
-import ResponsiveContainer from "../components/ResponsiveContainer"
-import Title from "../components/Title"
+import {
+  Alert,
+  AlertIcon,
+  Box,
+  Container,
+  Heading,
+  Text,
+} from "@chakra-ui/react";
+import React from "react";
+import { Layout } from "../components/Layout";
+import Title from "../components/Title";
 
 export default function Feedback() {
   return (
     <>
       <Title title="Feedback" />
-      <ResponsiveContainer>
-        <Container text style={{ padding: "4em 0" }}>
-
-          <Header as="h2" style={{ fontSize: "2em" }} >
+      <Layout>
+        <Container my={12}>
+          <Heading as="h2" size="2xl">
+            Feedback
+          </Heading>
+          <Heading as="h3" size="xl">
             Reporting issues
-          </Header>
+          </Heading>
 
-          <p> We welcome feedback from users!  If you have a bug to
-            report or an improvement to suggest, please use{" "}
-            <a href="https://github.com/clowdr-app/clowdr/issues">our
-            issue tracker</a> to tell us about it!  </p>
+          <Text>
+            We welcome feedback from users! If you have a bug to report or an
+            improvement to suggest, please use{" "}
+            <a href="https://github.com/clowdr-app/clowdr/issues">
+              our issue tracker
+            </a>{" "}
+            to tell us about it!
+          </Text>
 
-          <Header as="h2" style={{ fontSize: "2em" }} >
+          <Heading as="h3" size="xl">
             Contributing to Clowdr
-          </Header>
+          </Heading>
 
-          <p> The Clowdr platform is 100% open source: your
-            contributions are welcome!  If you'd like to build it
-            yourself, you are welcome to clone {" "}<a
-            href="https://github.com/clowdr-app/clowdr">our github
-            repo</a>.  </p>
+          <Text>
+            The Clowdr platform is 100% open source: your contributions are
+            welcome! If you'd like to build it yourself, you are welcome to
+            clone{" "}
+            <a href="https://github.com/clowdr-app/clowdr">our GitHub repo</a>.
+          </Text>
 
-          <p>(Warning: The platform relies on a number of
-            external services, which you'll also need to set up.  The
-            repo includes complete instructions for how to do this,
-            but it's not a trivial process.) </p>
-
+          <Alert status="info">
+            <AlertIcon />
+            <Box>
+              <Text>
+                Clowdr relies on some third-party services and infrastructure.
+                You'll need to set these up for your local instance of Clowdr.
+                Most have a free tier, but some may cost money to run.{" "}
+              </Text>
+              <Text>
+                Full setup instructions can be found in the repository.
+              </Text>
+            </Box>
+          </Alert>
         </Container>
-      </ResponsiveContainer>
+      </Layout>
     </>
-  )
+  );
 }

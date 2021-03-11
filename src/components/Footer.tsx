@@ -1,10 +1,14 @@
-import { Link } from "gatsby"
-import React from "react"
-import Grid from "semantic-ui-react/dist/commonjs/collections/Grid/Grid"
-import Container from "semantic-ui-react/dist/commonjs/elements/Container/Container"
-import Header from "semantic-ui-react/dist/commonjs/elements/Header/Header"
-import List from "semantic-ui-react/dist/commonjs/elements/List/List"
-import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment"
+import {
+  Box,
+  Heading,
+  HStack,
+  Link,
+  ListItem,
+  Text,
+  UnorderedList,
+} from "@chakra-ui/react";
+import { Link as GatsbyLink } from "gatsby";
+import React from "react";
 
 /* If you change the list of pages, make sure to also change
    Footer.tsx (really, the two should be generated from the same
@@ -12,71 +16,81 @@ import Segment from "semantic-ui-react/dist/commonjs/elements/Segment/Segment"
 
 export default function Footer() {
   return (
-    <Segment inverted vertical style={{ padding: "5em 0em" }}>
-      <Container>
-        <Grid divided inverted stackable>
-          <Grid.Row>
-            <Grid.Column width={3}>
-              <Link to="/">
-                <Header inverted as="h4" content="Clowdr" />
-              </Link>
-              <List link inverted>
-                <List.Item as={Link} to="/features">
+    <Box bgColor="gray.800" py={8} mt="auto" layerStyle="footer">
+      <HStack alignItems="flex-start" justifyContent="center">
+        <Box width="30%">
+          <Link to="/">
+            <Heading as="h4" size="md" fontWeight="bold" color="white">
+              Clowdr
+            </Heading>
+          </Link>
+          <HStack alignItems="flex-start" mt={4} spacing={12}>
+            <UnorderedList styleType="none" ml="0">
+              <ListItem>
+                <Link as={GatsbyLink} to="/features">
                   Features
-                </List.Item>
-                <List.Item as={Link} to="/pricing">
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link as={GatsbyLink} to="/pricing">
                   Pricing
-                </List.Item>
-                <List.Item as={Link} to="/about">
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link as={GatsbyLink} to="/about">
                   About Us
-                </List.Item>
-                <List.Item as={Link} to="/jobs">
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link as={GatsbyLink} to="/jobs">
                   Jobs
-                </List.Item>
-                <List.Item as={Link} to="/feedback">
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link as={GatsbyLink} to="/feedback">
                   Feedback
-                </List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={3}>
-              <span>
-                <Header inverted as="h4" style={{ visibility: "hidden" }} aria-hidden={true}>
-                  &nbsp;
-                </Header>
-              </span>
-              <List link inverted>
-                <List.Item as={Link} to="/policies/backups">
+                </Link>
+              </ListItem>
+            </UnorderedList>
+            <UnorderedList styleType="none" mt={5} ml={0}>
+              <ListItem>
+                <Link as={GatsbyLink} to="/policies/backups">
                   Backups Policy
-                </List.Item>
-                <List.Item as={Link} to="/policies/archiving">
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link as={Link} to="/policies/archiving">
                   Archiving Policy
-                </List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={7}>
-              <Header as="h4" inverted>
-                © Clowdr CIC 2021
-              </Header>
-              <p>
-                Clowdr is a social enterprise dedicated to creating sustainable, inclusive and
-                engaging conferences.
-              </p>
-              <p>
-                Clowdr is a UK Community Interest Company, number{" "}
-                <a href="https://find-and-update.company-information.service.gov.uk/company/12984216">
-                  12984216
-                </a>
-                .
-              </p>
-              <p>
-                Clowdr was initially made possible thanks to support by the US National Science
-                Foundation under awards CCF-2035003, CCF-2035101 and CCF-203500 and support from
-                Twilio.org.
-              </p>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-      </Container>
-    </Segment>
-  )
+                </Link>
+              </ListItem>
+            </UnorderedList>
+          </HStack>
+        </Box>
+        <Box w="40%">
+          <Heading as="h4" size="sm">
+            © Clowdr CIC 2021
+          </Heading>
+          <Text>
+            Clowdr is a social enterprise dedicated to creating sustainable,
+            inclusive and engaging conferences.
+          </Text>
+          <Text>
+            Clowdr is a UK Community Interest Company, number{" "}
+            <Link
+              as="a"
+              href="https://find-and-update.company-information.service.gov.uk/company/12984216"
+            >
+              12984216
+            </Link>
+            .
+          </Text>
+          <Text>
+            Clowdr was initially made possible thanks to support by the US
+            National Science Foundation under awards CCF-2035003, CCF-2035101
+            and CCF-203500 and support from Twilio.org.
+          </Text>
+        </Box>
+      </HStack>
+    </Box>
+  );
 }
