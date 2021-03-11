@@ -5,7 +5,8 @@ import {
   Container,
   Heading,
   HStack,
-  Link,
+  LinkBox,
+  LinkOverlay,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -207,22 +208,29 @@ function ProfileInternal({
   children: string | JSX.Element;
 }): JSX.Element {
   return (
-    <HStack spacing={4} className={className}>
-      <Avatar size="2xl" src={imageUrl} name={name} />
-      <VStack alignItems="left">
-        {link ? (
-          <Link as="a" href={link}>
+    <LinkBox
+      borderWidth="1px"
+      borderRadius="lg"
+      borderColor="gray.200"
+      transition="border-color 0.5s"
+      _hover={{ borderColor: link ? "gray.400" : "gray.200" }}
+      className={className}
+    >
+      <HStack spacing={4} p={4}>
+        <Avatar size="2xl" src={imageUrl} name={name} />
+        <VStack alignItems="left">
+          {link ? (
+            <Heading as="h3" size="lg">
+              <LinkOverlay href={link}>{name}</LinkOverlay>
+            </Heading>
+          ) : (
             <Heading as="h3" size="lg">
               {name}
             </Heading>
-          </Link>
-        ) : (
-          <Heading as="h3" size="lg">
-            {name}
-          </Heading>
-        )}
-        <Box>{children}</Box>
-      </VStack>
-    </HStack>
+          )}
+          <Box>{children}</Box>
+        </VStack>
+      </HStack>
+    </LinkBox>
   );
 }

@@ -68,6 +68,19 @@ export const theme = extendTheme({
         },
       },
     },
+    hero: {
+      color: "#ffffff",
+      _hover: {
+        color: "#ffffff",
+      },
+      a: {
+        color: "gray.300",
+        _hover: {
+          color: "gray.100",
+          textDecoration: "none",
+        },
+      },
+    },
   },
   styles: {
     global: {
