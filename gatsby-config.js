@@ -14,5 +14,12 @@ module.exports = {
     `gatsby-plugin-scss-typescript`,
     `gatsby-plugin-cname`,
     `@chakra-ui/gatsby-plugin`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`lato`],
+        display: "swap",
+      },
+    },
   ],
-}
+};

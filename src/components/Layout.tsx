@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   chakra,
   CloseButton,
   Flex,
@@ -70,6 +71,21 @@ export function Layout({
               <Link as={GatsbyLink} to="/feedback">
                 Feedback
               </Link>
+              <Button
+                as={Link}
+                href="https://form.asana.com/?k=trOGgRktwffYqw6B73DHuA&amp;d=1198973227684402"
+                bgColor="brand.900"
+                color="white"
+                minWidth="min-content"
+                fontSize="xl"
+                p={4}
+                _hover={{
+                  bgColor: "brand.700",
+                  color: "white",
+                }}
+              >
+                Arrange a demo
+              </Button>
             </HStack>
             <Box display={{ base: "inline-flex", md: "none" }}>
               <IconButton
@@ -118,6 +134,21 @@ export function Layout({
                 <Link as={GatsbyLink} to="/feedback" w="full">
                   Feedback
                 </Link>
+                <Button
+                  as={Link}
+                  href="https://form.asana.com/?k=trOGgRktwffYqw6B73DHuA&amp;d=1198973227684402"
+                  bgColor="brand.900"
+                  color="white"
+                  minWidth="min-content"
+                  fontSize="xl"
+                  p={4}
+                  _hover={{
+                    bgColor: "brand.700",
+                    color: "white",
+                  }}
+                >
+                  Arrange a demo
+                </Button>
               </VStack>
             </Box>
           </HStack>

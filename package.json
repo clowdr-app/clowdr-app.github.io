@@ -23,6 +23,7 @@
     "framer-motion": "^3.10.3",
     "gatsby": "^3.0.4",
     "gatsby-plugin-cname": "^1.0.0",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-react-helmet-async": "^1.2.0",
     "gatsby-plugin-typescript": "^3.0.0",
     "prettier-plugin-organize-imports": "^1.1.1",

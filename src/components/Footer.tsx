@@ -6,6 +6,8 @@ import {
   ListItem,
   Text,
   UnorderedList,
+  Wrap,
+  WrapItem,
 } from "@chakra-ui/react";
 import { Link as GatsbyLink } from "gatsby";
 import React from "react";
@@ -24,47 +26,51 @@ export default function Footer() {
               Clowdr
             </Heading>
           </Link>
-          <HStack alignItems="flex-start" mt={4} spacing={12}>
-            <UnorderedList styleType="none" ml="0">
-              <ListItem>
-                <Link as={GatsbyLink} to="/features">
-                  Features
-                </Link>
-              </ListItem>
-              <ListItem>
-                <Link as={GatsbyLink} to="/pricing">
-                  Pricing
-                </Link>
-              </ListItem>
-              <ListItem>
-                <Link as={GatsbyLink} to="/about">
-                  About Us
-                </Link>
-              </ListItem>
-              <ListItem>
-                <Link as={GatsbyLink} to="/jobs">
-                  Jobs
-                </Link>
-              </ListItem>
-              <ListItem>
-                <Link as={GatsbyLink} to="/feedback">
-                  Feedback
-                </Link>
-              </ListItem>
-            </UnorderedList>
-            <UnorderedList styleType="none" mt={5} ml={0}>
-              <ListItem>
-                <Link as={GatsbyLink} to="/policies/backups">
-                  Backups Policy
-                </Link>
-              </ListItem>
-              <ListItem>
-                <Link as={Link} to="/policies/archiving">
-                  Archiving Policy
-                </Link>
-              </ListItem>
-            </UnorderedList>
-          </HStack>
+          <Wrap alignItems="flex-start" spacing={12} flexWrap="wrap">
+            <WrapItem>
+              <UnorderedList styleType="none" ml={0}>
+                <ListItem>
+                  <Link as={GatsbyLink} to="/features">
+                    Features
+                  </Link>
+                </ListItem>
+                <ListItem>
+                  <Link as={GatsbyLink} to="/pricing">
+                    Pricing
+                  </Link>
+                </ListItem>
+                <ListItem>
+                  <Link as={GatsbyLink} to="/about">
+                    About Us
+                  </Link>
+                </ListItem>
+                <ListItem>
+                  <Link as={GatsbyLink} to="/jobs">
+                    Jobs
+                  </Link>
+                </ListItem>
+                <ListItem>
+                  <Link as={GatsbyLink} to="/feedback">
+                    Feedback
+                  </Link>
+                </ListItem>
+              </UnorderedList>
+            </WrapItem>
+            <WrapItem>
+              <UnorderedList styleType="none" ml={0}>
+                <ListItem>
+                  <Link as={GatsbyLink} to="/policies/backups">
+                    Backups Policy
+                  </Link>
+                </ListItem>
+                <ListItem>
+                  <Link as={GatsbyLink} to="/policies/archiving">
+                    Archiving Policy
+                  </Link>
+                </ListItem>
+              </UnorderedList>
+            </WrapItem>
+          </Wrap>
         </Box>
         <Box w="40%">
           <Heading as="h4" size="sm">

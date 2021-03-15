@@ -1,4 +1,7 @@
 import {
+  Alert,
+  AlertDescription,
+  AlertIcon,
   Container,
   Heading,
   Link,
@@ -176,6 +179,13 @@ export default function About() {
             </Link>
             . Applications will be considered as they arrive.
           </Text>
+
+          <Alert status="warning">
+            <AlertIcon />
+            <AlertDescription>
+              We are not looking for external recruitment partners at this time.
+            </AlertDescription>
+          </Alert>
         </Container>
       </Layout>
     </>

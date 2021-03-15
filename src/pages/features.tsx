@@ -215,10 +215,11 @@ export default function Features() {
           borderRadius="lg"
           shadow="xl"
           mt={12}
+          py={4}
         >
           <HStack>
             <Box pr={4}>
-              <Stat p={4} textAlign="right">
+              <Stat p={4} textAlign="center">
                 <StatLabel fontSize="xl">Clowdr is</StatLabel>
                 <StatNumber fontSize="4xl">100%</StatNumber>
                 <StatHelpText fontSize="xl">open source</StatHelpText>
@@ -238,7 +239,7 @@ export default function Features() {
 
             <IconButton
               as={Link}
-              to="https://github.com/clowdr-app/"
+              href="https://github.com/clowdr-app/"
               aria-label="Clowdr on GitHub"
               icon={<AiOutlineGithub size="32px" />}
               color="black"
@@ -254,8 +255,14 @@ export default function Features() {
         </Box>
 
         <Box w="100%" my={12}>
-          <HStack mx="auto" justifyContent="center">
-            <Heading as="h2" mr={20}>
+          <HStack
+            mx="auto"
+            justifyContent="center"
+            flexWrap="wrap"
+            flex="1"
+            gridColumnGap={8}
+          >
+            <Heading as="h2" minW={72} my={8} textAlign="center">
               Trusted by thousands
             </Heading>
             <VStack spacing={6}>
@@ -356,7 +363,7 @@ export default function Features() {
 
         <Box
           layerStyle="hero"
-          px={{ base: 0, xl: 20 }}
+          px={{ base: 8, xl: 20 }}
           w="auto"
           justifyContent="center"
           bg="brand.800"

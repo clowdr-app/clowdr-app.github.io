@@ -4,11 +4,12 @@ import {
   chakra,
   Container,
   Heading,
-  HStack,
   LinkBox,
   LinkOverlay,
   Text,
   VStack,
+  Wrap,
+  WrapItem,
 } from "@chakra-ui/react";
 import React from "react";
 import { Layout } from "../components/Layout";
@@ -216,21 +217,25 @@ function ProfileInternal({
       _hover={{ borderColor: link ? "gray.400" : "gray.200" }}
       className={className}
     >
-      <HStack spacing={4} p={4}>
-        <Avatar size="2xl" src={imageUrl} name={name} />
-        <VStack alignItems="left">
-          {link ? (
-            <Heading as="h3" size="lg">
-              <LinkOverlay href={link}>{name}</LinkOverlay>
-            </Heading>
-          ) : (
-            <Heading as="h3" size="lg">
-              {name}
-            </Heading>
-          )}
-          <Box>{children}</Box>
-        </VStack>
-      </HStack>
+      <Wrap spacing={4} p={4} justify="center" align="center">
+        <WrapItem>
+          <Avatar size="2xl" src={imageUrl} name={name} my={4} />
+        </WrapItem>
+        <WrapItem minW="min-content" flexBasis="0" flexGrow={1}>
+          <VStack alignItems="left">
+            {link ? (
+              <Heading as="h3" size="lg">
+                <LinkOverlay href={link}>{name}</LinkOverlay>
+              </Heading>
+            ) : (
+              <Heading as="h3" size="lg">
+                {name}
+              </Heading>
+            )}
+            <Box>{children}</Box>
+          </VStack>
+        </WrapItem>
+      </Wrap>
     </LinkBox>
   );
 }

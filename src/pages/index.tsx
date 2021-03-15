@@ -6,7 +6,6 @@ import {
   HStack,
   Icon,
   Image,
-  Link,
   Stack,
   Text,
   VStack,
@@ -25,6 +24,7 @@ import {
 } from "react-icons/ai";
 import { Feature } from "../components/Feature";
 import { Layout } from "../components/Layout";
+import { Packages } from "../components/Packages";
 import Title from "../components/Title";
 
 export default function Home() {
@@ -34,7 +34,7 @@ export default function Home() {
       <Layout>
         <Box
           layerStyle="hero"
-          px={{ base: 0, xl: 20 }}
+          px={{ base: 4, xl: 20 }}
           w="auto"
           justifyContent="center"
           bg="brand.800"
@@ -42,7 +42,7 @@ export default function Home() {
         >
           <HStack flexWrap="wrap">
             <Box flex="1">
-              <Heading as="h1" size="4xl">
+              <Heading as="h1" size="3xl">
                 Virtual conferences for social good
               </Heading>
               <Heading as="h2" size="lg" fontWeight="normal">
@@ -51,7 +51,7 @@ export default function Home() {
               </Heading>
               <Button
                 w="min-content"
-                as={Link}
+                as="a"
                 fontSize="2xl"
                 my={12}
                 p={8}
@@ -59,9 +59,9 @@ export default function Home() {
                 _hover={{
                   bgColor: "brand.700",
                 }}
-                to="https://form.asana.com/?k=trOGgRktwffYqw6B73DHuA&amp;d=1198973227684402"
+                href="https://form.asana.com/?k=trOGgRktwffYqw6B73DHuA&amp;d=1198973227684402"
               >
-                Request a demo
+                Arrange a demo
                 <Icon ml={4} as={AiOutlineArrowRight} />
               </Button>
             </Box>
@@ -133,7 +133,7 @@ export default function Home() {
               What about providing booths for our sponsors?
             </Box>
           </Box>
-          <Text>
+          <Text fontSize="xl">
             Clowdr solves these problems and more, giving you time to focus on
             the thing that really matters: bringing people together.
           </Text>
@@ -141,7 +141,7 @@ export default function Home() {
 
         <Box
           layerStyle="hero"
-          px={{ base: 0, xl: 20 }}
+          px={{ base: 4, xl: 20 }}
           w="auto"
           justifyContent="center"
           bg="brand.800"
@@ -203,7 +203,7 @@ export default function Home() {
             _hover={{
               bgColor: "brand.700",
             }}
-            to="https://form.asana.com/?k=trOGgRktwffYqw6B73DHuA&amp;d=1198973227684402"
+            to="/features"
           >
             Learn more about Clowdr
             <Icon ml={4} as={AiOutlineArrowRight} />
@@ -246,135 +246,36 @@ export default function Home() {
           </HStack>
         </Box>
 
-        {/*
+        <Box px={{ base: 4, xl: 20 }} my={12}>
+          <Heading as="h2" size="2xl" my={8}>
+            What we offer
+          </Heading>
+          <Packages />
+          <VStack my={8} gridRowGap={4}>
+            <Button
+              w="min-content"
+              as={GatsbyLink}
+              fontSize="2xl"
+              p={8}
+              to="/pricing"
+            >
+              Find out more about our packages
+              <Icon ml={4} as={AiOutlineArrowRight} />
+            </Button>
 
-        <Container text style={{ paddingTop: "4em", textAlign: "center" }}>
-          <Header as="h3" style={{ fontSize: "2em" }}>
-            Why go virtual with Clowdr?
-          </Header>
-        </Container>
-
-        <Grid
-          celled="internally"
-          columns="equal"
-          stackable
-          style={{ marginTop: "4em" }}
-        >
-          <Grid.Row textAlign="center" style={{ padding: "2em 0" }}>
-            <Grid.Column>
-              <Icon
-                name="smile outline"
-                style={{ fontSize: "4em" }}
-                color="teal"
-              />
-              <Header as="h3" style={{ fontSize: "2em" }}>
-                Scales to your event
-              </Header>
-              <p style={{ fontSize: "1.33em" }}>
-                Clowdr was founded by academics with decades of combined
-                experience organising large, complex academic conferences. It
-                handles everything from simple seminars to week-long,
-                multi-track conferences with thousands of attendees.
-              </p>
-            </Grid.Column>
-            <Grid.Column>
-              <Icon
-                name="handshake outline"
-                style={{ fontSize: "4em" }}
-                color="purple"
-              />
-              <Header as="h3" style={{ fontSize: "2em" }}>
-                A sociable experience
-              </Header>
-              <p style={{ fontSize: "1.33em" }}>
-                Clowdr lets your attendees talk to one another with text and
-                video chat. You can set up your own custom meeting rooms,
-                sponsor booths, announcement channels and more.
-              </p>
-            </Grid.Column>
-            <Grid.Column>
-              <Icon
-                name="paper plane outline"
-                style={{ fontSize: "4em" }}
-                color="green"
-              />
-              <Header as="h3" style={{ fontSize: "2em" }}>
-                By the community, for the community
-              </Header>
-              <p style={{ fontSize: "1.33em" }}>
-                Clowdr is a social enterprise, incorporated as a Community
-                Interest Company. Our mission is to make inclusive, accessible,
-                climate-friendly virtual conferences just as socially engaging
-                as physical conferences.
-              </p>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-
-        <Container text style={{ padding: "4em 0" }}>
-          <Header as="h3" style={{ fontSize: "2em", marginTop: "1em" }}>
-            Interested in using Clowdr?
-          </Header>
-          <p style={{ fontSize: "1.33em" }}>We can provide:</p>
-          <List divided relaxed>
-            <List.Item>
-              <List.Header>Click-and-go</List.Header>
-              <List.Content>
-                We worry about the technology; you organize the conference.
-                Recommended for events with a simple, single-track program.
-              </List.Content>
-            </List.Item>
-            <List.Item>
-              <List.Header>Expert support</List.Header>
-              <List.Content>
-                You organize, we help. We'll advise you on how to plan and set
-                up your conference and provide virtual on-site support to make
-                sure everything runs smoothly. Recommended for more complex
-                events, especially ones with multiple tracks.
-              </List.Content>
-            </List.Item>
-            <List.Item>
-              <List.Header>Hands-on support</List.Header>
-              <List.Content>
-                We organize, you help. We'll take your requirements and deliver
-                a successful event from start to finish.
-              </List.Content>
-            </List.Item>
-            <List.Item>
-              <List.Header>Advanced customisation</List.Header>
-              <List.Content>
-                Want to wow your attendees with something new? We can design and
-                build it.
-              </List.Content>
-            </List.Item>
-            <List.Item>
-              <List.Header>Do-it-yourself</List.Header>
-              <List.Content>
-                Want to run the Clowdr platform yourself? We can help you with
-                that.
-              </List.Content>
-            </List.Item>
-          </List>
-          <p style={{ fontSize: "1.33em" }}>
-            If you're interested in using Clowdr, we'd love to hear from you.
-          </p>
-          <Button
-            as="a"
-            size="big"
-            href="mailto:hello@clowdr.org?subject=I'm%20interested%20in%20using%20Clowdr"
-            color="green"
-            content="Contact us today"
-            icon="mail"
-          />
-          <Button
-            as="a"
-            size="big"
-            href="/pricing"
-            color="green"
-            content="View package pricing"
-            icon="dollar"
-          />
-        </Container> */}
+            <Button
+              w="min-content"
+              as="a"
+              fontSize="2xl"
+              ml={4}
+              p={8}
+              href="https://form.asana.com/?k=trOGgRktwffYqw6B73DHuA&amp;d=1198973227684402"
+            >
+              Arrange a demo
+              <Icon ml={4} as={AiOutlineArrowRight} />
+            </Button>
+          </VStack>
+        </Box>
       </Layout>
     </>
   );
