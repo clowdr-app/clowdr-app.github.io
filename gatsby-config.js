@@ -11,7 +11,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet-async`,
-    `gatsby-plugin-scss-typescript`,
     `gatsby-plugin-cname`,
     `@chakra-ui/gatsby-plugin`,
     {
