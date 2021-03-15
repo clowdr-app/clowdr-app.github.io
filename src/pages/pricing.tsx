@@ -20,6 +20,7 @@ import {
   Tooltip,
   Tr,
 } from "@chakra-ui/react";
+import { Link as GatsbyLink } from "gatsby";
 import React from "react";
 import {
   AiFillCheckCircle,
@@ -360,9 +361,11 @@ export default function Pricing() {
                   <Td>Features</Td>
                   <Td>
                     All packages include{" "}
-                    <Link to="/features">every feature</Link> of the Clowdr
-                    software. You can disable some features if you don't wish to
-                    use them.
+                    <Link as={GatsbyLink} to="/features">
+                      every feature
+                    </Link>{" "}
+                    of the Clowdr software. You can disable some features if you
+                    don't wish to use them.
                   </Td>
                 </Tr>
                 <Tr>
@@ -399,11 +402,14 @@ export default function Pricing() {
                 <Tr>
                   <Td>Organiser support</Td>
                   <Td>
-                    Learn from <Link to="/about">our team's</Link> &gt;10 years
-                    experience organising conferences. We will advise your
-                    organising committee on best practices for the design and
-                    delivery of virtual conferences, and how to get the most out
-                    of the Clowdr software.
+                    Learn from{" "}
+                    <Link as={GatsbyLink} to="/about">
+                      our team's
+                    </Link>{" "}
+                    &gt;10 years experience organising conferences. We will
+                    advise your organising committee on best practices for the
+                    design and delivery of virtual conferences, and how to get
+                    the most out of the Clowdr software.
                   </Td>
                 </Tr>
                 <Tr>
