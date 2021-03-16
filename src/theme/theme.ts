@@ -19,6 +19,11 @@ export const theme = extendTheme({
     },
   },
   components: {
+    Container: {
+      baseStyle: {
+        maxW: "100ch",
+      },
+    },
     Link: {
       variants: {},
       baseStyle: {
