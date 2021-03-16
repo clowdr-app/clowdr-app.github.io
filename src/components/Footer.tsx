@@ -59,6 +59,11 @@ export default function Footer() {
             <WrapItem>
               <UnorderedList styleType="none" ml={0}>
                 <ListItem>
+                  <Link as={GatsbyLink} to="/policies/terms">
+                    Terms and Conditions
+                  </Link>
+                </ListItem>
+                <ListItem>
                   <Link as={GatsbyLink} to="/policies/privacy">
                     Privacy Policy
                   </Link>
