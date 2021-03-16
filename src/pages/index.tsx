@@ -1,6 +1,7 @@
 import {
   Box,
   Button,
+  chakra,
   Container,
   Heading,
   HStack,
@@ -40,7 +41,7 @@ export default function Home() {
           bg="brand.800"
           alignItems="center"
         >
-          <HStack flexWrap="wrap">
+          <HStack flexWrap="wrap-reverse" justifyContent="center">
             <Box flex="1">
               <Heading as="h1" size="3xl">
                 Virtual conferences for social good
@@ -50,7 +51,6 @@ export default function Home() {
                 experience, giving you time to focus on the things that matter
               </Heading>
               <Button
-                w="min-content"
                 as="a"
                 fontSize="2xl"
                 my={12}
@@ -66,21 +66,17 @@ export default function Home() {
               </Button>
             </Box>
             <Box flex="1">
-              <div
-                style={{
-                  margin: "1em",
-                  width: "80%",
-                  maxHeight: "30em",
-                  textAlign: "left",
-                }}
+              <chakra.div
+                margin={1}
+                w="80%"
+                minW={80}
+                maxW={400}
+                maxH="100%"
+                textAlign="center"
+                mx="auto"
               >
-                <Image
-                  src="/Clowdr-logo.svg"
-                  style={{
-                    height: "30em",
-                  }}
-                />
-              </div>
+                <Image src="/Clowdr-logo.svg" />
+              </chakra.div>
             </Box>
           </HStack>
         </Box>
@@ -93,7 +89,8 @@ export default function Home() {
             <Box
               bgColor="gray.200"
               w="max-content"
-              fontSize="2xl"
+              maxW="100%"
+              fontSize={{ base: "lg", lg: "2xl" }}
               p={4}
               my={4}
               borderRadius="lg"
@@ -103,7 +100,8 @@ export default function Home() {
             <Box
               bgColor="gray.200"
               w="max-content"
-              fontSize="2xl"
+              maxW="100%"
+              fontSize={{ base: "lg", lg: "2xl" }}
               p={4}
               my={4}
               borderRadius="lg"
@@ -114,7 +112,8 @@ export default function Home() {
             <Box
               bgColor="gray.200"
               w="max-content"
-              fontSize="2xl"
+              maxW="100%"
+              fontSize={{ base: "lg", lg: "2xl" }}
               p={4}
               my={4}
               borderRadius="lg"
@@ -124,7 +123,8 @@ export default function Home() {
             <Box
               bgColor="gray.200"
               w="max-content"
-              fontSize="2xl"
+              maxW="100%"
+              fontSize={{ base: "lg", lg: "2xl" }}
               p={4}
               my={4}
               borderRadius="lg"
@@ -194,16 +194,17 @@ export default function Home() {
             </Feature>
           </Stack>
           <Button
-            w="min-content"
             as={GatsbyLink}
             fontSize="2xl"
             my={12}
-            p={8}
+            p={4}
             bgColor="brand.900"
             _hover={{
               bgColor: "brand.700",
             }}
             to="/features"
+            h="auto"
+            whiteSpace="normal"
           >
             Learn more about Clowdr
             <Icon ml={4} as={AiOutlineArrowRight} />
@@ -213,8 +214,13 @@ export default function Home() {
             Why go virtual with Clowdr?
           </Heading>
 
-          <HStack mt={8} textAlign="center" alignItems="flex-start">
-            <VStack flexBasis="0" flexGrow={1}>
+          <HStack
+            mt={8}
+            textAlign="center"
+            alignItems="flex-start"
+            flexWrap="wrap"
+          >
+            <VStack flexBasis="20rem" flexGrow={1}>
               <Icon as={AiOutlineArrowsAlt} w={16} h={16} />
               <Heading as="h3">Scales to your event</Heading>
               <Text>
@@ -224,7 +230,7 @@ export default function Home() {
                 multi-track conferences with thousands of attendees.
               </Text>
             </VStack>
-            <VStack flexBasis="0" flexGrow={1}>
+            <VStack flexBasis="20rem" flexGrow={1}>
               <Icon as={AiOutlineComment} w={16} h={16} />
               <Heading as="h3">A sociable experience</Heading>
               <Text>
@@ -233,7 +239,7 @@ export default function Home() {
                 sponsor booths, announcement channels and more.
               </Text>
             </VStack>
-            <VStack flexBasis="0" flexGrow={1}>
+            <VStack flexBasis="20rem" flexGrow={1}>
               <Icon as={AiOutlineRetweet} w={16} h={16} />
               <Heading as="h3">By the community, for the community</Heading>
               <Text>
@@ -253,22 +259,25 @@ export default function Home() {
           <Packages />
           <VStack my={8} gridRowGap={4}>
             <Button
-              w="min-content"
               as={GatsbyLink}
               fontSize="2xl"
-              p={8}
+              p={4}
+              h="auto"
               to="/pricing"
+              whiteSpace="normal"
             >
               Find out more about our packages
               <Icon ml={4} as={AiOutlineArrowRight} />
             </Button>
 
             <Button
-              w="min-content"
               as="a"
               fontSize="2xl"
+              flex="1"
+              h="auto"
               ml={4}
-              p={8}
+              p={4}
+              whiteSpace="normal"
               href="https://form.asana.com/?k=trOGgRktwffYqw6B73DHuA&amp;d=1198973227684402"
             >
               Arrange a demo

@@ -108,7 +108,7 @@ export function Layout({
                 p={2}
                 pb={4}
                 m={2}
-                bg={headerBg}
+                bg="brand.600"
                 spacing={3}
                 rounded="sm"
                 shadow="sm"
