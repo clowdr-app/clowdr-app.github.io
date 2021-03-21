@@ -51,7 +51,20 @@ export default function Home() {
                 Clowdr makes it easy to create an engaging virtual conference
                 experience, giving you time to focus on the things that matter
               </Heading>
-              <ArrangeADemoButton />
+              <Button
+                as="a"
+                fontSize="2xl"
+                my={12}
+                p={8}
+                bgColor="brand.900"
+                _hover={{
+                  bgColor: "brand.700",
+                }}
+                href="https://form.asana.com/?k=trOGgRktwffYqw6B73DHuA&amp;d=1198973227684402"
+              >
+                Arrange a demo
+                <Icon ml={4} as={AiOutlineArrowRight} />
+              </Button>
             </Box>
             <Box flex="1">
               <chakra.div
