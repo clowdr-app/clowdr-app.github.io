@@ -54,6 +54,11 @@ export default function Footer() {
                     Feedback
                   </Link>
                 </ListItem>
+                <ListItem>
+                  <Link as={GatsbyLink} to="/faq">
+                    FAQ
+                  </Link>
+                </ListItem>
               </UnorderedList>
             </WrapItem>
             <WrapItem>

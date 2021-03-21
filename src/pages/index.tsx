@@ -23,6 +23,7 @@ import {
   AiOutlineRetweet,
   AiOutlineTeam,
 } from "react-icons/ai";
+import ArrangeADemoButton from "../components/ArrangeADemoButton";
 import { Feature } from "../components/Feature";
 import { Layout } from "../components/Layout";
 import { Packages } from "../components/Packages";
@@ -50,20 +51,7 @@ export default function Home() {
                 Clowdr makes it easy to create an engaging virtual conference
                 experience, giving you time to focus on the things that matter
               </Heading>
-              <Button
-                as="a"
-                fontSize="2xl"
-                my={12}
-                p={8}
-                bgColor="brand.900"
-                _hover={{
-                  bgColor: "brand.700",
-                }}
-                href="https://form.asana.com/?k=trOGgRktwffYqw6B73DHuA&amp;d=1198973227684402"
-              >
-                Arrange a demo
-                <Icon ml={4} as={AiOutlineArrowRight} />
-              </Button>
+              <ArrangeADemoButton />
             </Box>
             <Box flex="1">
               <chakra.div
@@ -270,19 +258,7 @@ export default function Home() {
               <Icon ml={4} as={AiOutlineArrowRight} />
             </Button>
 
-            <Button
-              as="a"
-              fontSize="2xl"
-              flex="1"
-              h="auto"
-              ml={4}
-              p={4}
-              whiteSpace="normal"
-              href="https://form.asana.com/?k=trOGgRktwffYqw6B73DHuA&amp;d=1198973227684402"
-            >
-              Arrange a demo
-              <Icon ml={4} as={AiOutlineArrowRight} />
-            </Button>
+            <ArrangeADemoButton />
           </VStack>
         </Box>
       </Layout>

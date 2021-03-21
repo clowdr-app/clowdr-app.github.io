@@ -2,7 +2,6 @@ import { QuestionOutlineIcon } from "@chakra-ui/icons";
 import {
   Badge,
   Box,
-  Button,
   Container,
   Heading,
   HStack,
@@ -27,10 +26,10 @@ import {
   AiFillCloseCircle,
   AiOutlineCustomerService,
   AiOutlineExperiment,
-  AiOutlineMail,
   AiOutlineRocket,
   AiOutlineTool,
 } from "react-icons/ai";
+import ArrangeADemoButton from "../components/ArrangeADemoButton";
 import { Feature } from "../components/Feature";
 import { Layout } from "../components/Layout";
 import Title from "../components/Title";
@@ -317,16 +316,7 @@ export default function Pricing() {
           </Box>
 
           <Container textAlign="center" style={{ padding: "2em 0 1em" }}>
-            <Button
-              variant="outline"
-              as={Link}
-              size="lg"
-              href="mailto:hello@clowdr.org?subject=I'm%20interested%20in%20using%20Clowdr"
-              color="brand.800"
-            >
-              <Icon as={AiOutlineMail} w={6} h={6} mr={4} />
-              Arrange a free consultation
-            </Button>
+            <ArrangeADemoButton />
           </Container>
 
           <Box

@@ -6,7 +6,6 @@ import {
   GridItem,
   Heading,
   HStack,
-  Icon,
   IconButton,
   Link,
   SimpleGrid,
@@ -33,6 +32,7 @@ import {
   AiOutlineVideoCamera,
 } from "react-icons/ai";
 import ReactPlayer from "react-player";
+import ArrangeADemoButton from "../components/ArrangeADemoButton";
 import { Feature } from "../components/Feature";
 import { Layout } from "../components/Layout";
 import Title from "../components/Title";
@@ -126,7 +126,7 @@ export default function Features() {
                       conversation with polls, Q&amp;A, emoji and more.
                     </Feature>
                     <Feature
-                      title="Audiovisual production"
+                      title="Audio-visual production"
                       color="white"
                       icon={AiOutlinePlayCircle}
                     >
@@ -189,22 +189,7 @@ export default function Features() {
           </Flex>
           <Box textAlign="center" py={12}>
             <Text fontSize="xl">We'd love to show you around!</Text>
-            <Button
-              as={Link}
-              href="https://form.asana.com/?k=trOGgRktwffYqw6B73DHuA&amp;d=1198973227684402"
-              bgColor="brand.900"
-              color="white"
-              minWidth="min-content"
-              fontSize="3xl"
-              p={8}
-              _hover={{
-                bgColor: "brand.700",
-                color: "white",
-              }}
-            >
-              <Icon as={AiOutlineTeam} mr={4} aria-hidden="true" />
-              Arrange a demo
-            </Button>
+            <ArrangeADemoButton />
           </Box>
         </Box>
 

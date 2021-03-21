@@ -1,6 +1,5 @@
 import {
   Box,
-  Button,
   chakra,
   CloseButton,
   Flex,
@@ -14,6 +13,7 @@ import {
 import { Link as GatsbyLink } from "gatsby";
 import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
+import ArrangeADemoButton from "./ArrangeADemoButton";
 import Footer from "./Footer";
 
 export function Layout({
@@ -71,21 +71,10 @@ export function Layout({
               <Link as={GatsbyLink} to="/feedback">
                 Feedback
               </Link>
-              <Button
-                as={Link}
-                href="https://form.asana.com/?k=trOGgRktwffYqw6B73DHuA&amp;d=1198973227684402"
-                bgColor="brand.900"
-                color="white"
-                minWidth="min-content"
-                fontSize="xl"
-                p={4}
-                _hover={{
-                  bgColor: "brand.700",
-                  color: "white",
-                }}
-              >
-                Arrange a demo
-              </Button>
+              <Link as={GatsbyLink} to="/faq">
+                FAQ
+              </Link>
+              <ArrangeADemoButton />
             </HStack>
             <Box display={{ base: "inline-flex", md: "none" }}>
               <IconButton
@@ -134,21 +123,10 @@ export function Layout({
                 <Link as={GatsbyLink} to="/feedback" w="full">
                   Feedback
                 </Link>
-                <Button
-                  as={Link}
-                  href="https://form.asana.com/?k=trOGgRktwffYqw6B73DHuA&amp;d=1198973227684402"
-                  bgColor="brand.900"
-                  color="white"
-                  minWidth="min-content"
-                  fontSize="xl"
-                  p={4}
-                  _hover={{
-                    bgColor: "brand.700",
-                    color: "white",
-                  }}
-                >
-                  Arrange a demo
-                </Button>
+                <Link as={GatsbyLink} to="/faq" w="full">
+                  FAQ
+                </Link>
+                <ArrangeADemoButton />
               </VStack>
             </Box>
           </HStack>
