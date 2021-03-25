@@ -13,7 +13,7 @@ import Title from "../../components/Title";
 export default function Privacy() {
   return (
     <>
-      <Title title="Privacy Policy" />
+      <Title title="Terms and Conditions" />
       <Layout>
         <Container my={8}>
           <Heading as="h2" size="2xl" mb={4}>
