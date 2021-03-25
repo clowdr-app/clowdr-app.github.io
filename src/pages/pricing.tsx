@@ -514,7 +514,7 @@ export default function Pricing() {
             </Link>
             .
           </Text>
-          <Table variant="simple">
+          <Table variant="striped" colorScheme="whiteAlpha">
             <Thead>
               <Tr>
                 <Th>Feature</Th>
