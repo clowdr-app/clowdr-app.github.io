@@ -571,7 +571,8 @@ export default function Pricing() {
                 <Td>Auto-generated subtitles</Td>
                 <Td>
                   Automatically generated subtitles for pre-recorded video
-                  uploads and live recordings.
+                  uploads and live recordings. Let your authors edit their own
+                  subtitles.
                 </Td>
               </Tr>
               <Tr>
