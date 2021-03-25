@@ -62,13 +62,13 @@ export default function Pricing() {
             </Text>
           </Container>
           <Flex
-            direction={{ base: "column", md: "row" }}
+            direction={{ base: "column", xl: "row" }}
             justifyContent="center"
             my={12}
           >
             <Flex
-              flex={{ sm: 1, lg: "initial" }}
-              w={{ lg: 2.3 / 9.3 }}
+              flex={{ sm: 1 }}
+              flexBasis={{ lg: 2.3 / 9.3 }}
               rounded="lg"
               borderTopRightRadius={0}
               borderBottomLeftRadius="lg"
@@ -151,8 +151,8 @@ export default function Pricing() {
             </Flex>
 
             <Flex
-              flex={{ base: 1, lg: "initial" }}
-              w={{ lg: 2.4 / 9.3 }}
+              flex={{ base: 1 }}
+              flexBasis={{ lg: 2.4 / 9.3 }}
               rounded="lg"
               bg="white"
               mt={{ base: 4, sm: -4 }}
@@ -314,8 +314,8 @@ export default function Pricing() {
             </Flex>
 
             <Flex
-              flex={{ sm: 1, lg: "initial" }}
-              w={{ lg: 2.3 / 9.3 }}
+              flex={{ sm: 1 }}
+              flexBasis={{ lg: 2.3 / 9.3 }}
               rounded="lg"
               borderTopRightRadius={0}
               borderBottomLeftRadius="lg"
@@ -414,8 +414,8 @@ export default function Pricing() {
             </Flex>
 
             <Flex
-              flex={{ sm: 1, lg: "initial" }}
-              w={{ lg: 2.3 / 9.3 }}
+              flex={{ sm: 1 }}
+              flexBasis={{ lg: 2.3 / 9.3 }}
               roundedTop="lg"
               borderBottomRightRadius="lg"
               borderTopLeftRadius={0}
