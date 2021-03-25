@@ -114,7 +114,7 @@ export default function Features() {
                       color="white"
                       icon={AiOutlineVideoCamera}
                     >
-                      Attendess can create ad-hoc video breakout rooms at the
+                      Attendees can create ad-hoc video breakout rooms at the
                       click of a button.
                     </Feature>
                     <Feature

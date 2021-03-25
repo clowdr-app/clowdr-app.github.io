@@ -66,9 +66,9 @@ export const theme = extendTheme({
         color: "#ffffff",
       },
       a: {
-        color: "gray.300",
+        color: "gray.200",
         _hover: {
-          color: "gray.100",
+          color: "gray.50",
           textDecoration: "none",
         },
       },
@@ -84,6 +84,9 @@ export const theme = extendTheme({
           color: "gray.100",
           textDecoration: "none",
         },
+      },
+      th: {
+        color: "#ffffff",
       },
       components: {
         Button: {

@@ -62,7 +62,7 @@ export default function About() {
           </Heading>
 
           <Text>
-            The ideal candidae for this position would be a strong software
+            The ideal candidate for this position would be a strong software
             developer with an interest in infrastructure and DevOps. You would
             be comfortable implementing backend APIs and services, working on
             our build and deployment systems; designing and securing our AWS
@@ -113,8 +113,7 @@ export default function About() {
             related to web application development, with at least 3-5 years of
             experience designing and developing web-based systems. Talent is
             more important than specific skills, so it's still worth contacting
-            us if you don't precisely match one the specific job descriptions
-            below.
+            us if you don't precisely match the specific job descriptions above.
           </Text>
 
           <Text>
@@ -157,7 +156,7 @@ export default function About() {
             academic positions and contribute as much as possible to Clowdr. Ed
             and Ross currently do the bulk of technical development, and the
             whole team contributes to business development and operations. We
-            are in the process of onboarding a business development manager to
+            have recently been joined by a new business development manager to
             focus on scaling up the latter activities.
           </Text>
 

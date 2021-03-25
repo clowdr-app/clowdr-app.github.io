@@ -25,7 +25,7 @@ export default function Privacy() {
           <Heading as="h2" size="2xl" mb={4}>
             Privacy Policy
           </Heading>
-          <Text>Welcome to Clowdr’s privacy policy.</Text>
+          <Text>Welcome to Clowdr's privacy policy.</Text>
           <Text>
             Clowdr respects your privacy and is committed to protecting your
             personal data. This privacy policy will inform you as to how we look

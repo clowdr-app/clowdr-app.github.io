@@ -21,7 +21,7 @@ export default function Footer() {
     <Box bgColor="gray.800" py={8} mt="auto" layerStyle="footer">
       <HStack alignItems="flex-start" justifyContent="center">
         <Box width="30%">
-          <Link to="/">
+          <Link as={GatsbyLink} to="/">
             <Heading as="h4" size="md" fontWeight="bold" color="white">
               Clowdr
             </Heading>

@@ -1,36 +1,38 @@
-import { QuestionOutlineIcon } from "@chakra-ui/icons";
+import { AccordionPanel } from "@chakra-ui/accordion";
 import {
+  Accordion,
+  AccordionButton,
+  AccordionIcon,
+  AccordionItem,
   Badge,
   Box,
+  Button,
+  chakra,
   Container,
+  Flex,
   Heading,
   HStack,
   Icon,
   Link,
   List,
   ListItem,
-  SimpleGrid,
   Table,
   Tbody,
   Td,
   Text,
   Th,
   Thead,
-  Tooltip,
   Tr,
+  VStack,
 } from "@chakra-ui/react";
 import { Link as GatsbyLink } from "gatsby";
 import React from "react";
 import {
   AiFillCheckCircle,
-  AiFillCloseCircle,
-  AiOutlineCustomerService,
-  AiOutlineExperiment,
-  AiOutlineRocket,
-  AiOutlineTool,
+  AiFillInfoCircle,
+  AiOutlineArrowRight,
 } from "react-icons/ai";
-import ArrangeADemoButton from "../components/ArrangeADemoButton";
-import { Feature } from "../components/Feature";
+import { GoMarkGithub } from "react-icons/go";
 import { Layout } from "../components/Layout";
 import Title from "../components/Title";
 
@@ -45,419 +47,639 @@ export default function Pricing() {
               Packages
             </Heading>
             <Text fontSize="lg">
-              Whether your conference has 50 attendees, 5,000, or more, we can
-              help you deliver a rich social experience. These packages are a
-              guide to what we can provide, but please talk to us if you need
-              something not currently shown on our website. We're a small, fast
-              moving team - we may already be working on just the thing you
-              need!
+              Whether your conference has 50 attendees, 5,000, or more, we have
+              a plan that can help you deliver a rich social experience.
+            </Text>
+            <Text fontSize="lg">
+              Our packages are a starting point for what Clowdr can provide
+              based on your event size and support needs - but please talk to us
+              if you need something not currently shown on our website. We want
+              to hear from you!
+            </Text>
+            <Text fontSize="lg">
+              We're a small, fast moving team - we may already be working on
+              just the thing you need!
             </Text>
           </Container>
-          <Box p={8} my={12} bgColor="brand.800" layerStyle="hero">
-            <SimpleGrid
-              columns={{ base: 1, sm: 1, md: 2, lg: 3 }}
-              spacingX={{ base: 8, lg: 16 }}
-              spacingY={12}
+          <Flex
+            direction={{ base: "column", md: "row" }}
+            justifyContent="center"
+            my={12}
+          >
+            <Flex
+              flex={{ sm: 1, lg: "initial" }}
+              w={{ lg: 2.3 / 9.3 }}
+              rounded="lg"
+              borderTopRightRadius={0}
+              borderBottomLeftRadius="lg"
+              bg="white"
+              my={6}
+              direction="column"
             >
-              <Feature color="white" icon={AiOutlineTool} title="Click-and-go">
-                <Text>
-                  We worry about the technology; you organize the conference.
-                  Recommended for events with a simple, single-track program.
-                </Text>
-              </Feature>
-              <Feature
-                color="white"
-                icon={AiOutlineCustomerService}
-                title="Expert support"
+              <VStack
+                spacing={1}
+                justifyContent="center"
+                p={8}
+                textAlign="center"
+                w="full"
+                shadow="xl"
               >
-                <Text>
-                  You organize, we help. We'll advise you on how to plan and set
-                  up your conference and provide virtual on-site support to make
-                  sure everything runs smoothly. Recommended for more complex
-                  events, especially ones with multiple tracks.
-                </Text>
-              </Feature>
-              <Feature
-                color="white"
-                icon={AiOutlineRocket}
-                title="Hands-on support"
+                <Heading as="h3" size="xl" fontWeight="bold">
+                  DIY
+                </Heading>
+                <HStack spacing={3}>
+                  <chakra.span fontWeight="bold" fontSize="5xl">
+                    Free
+                  </chakra.span>
+                </HStack>
+              </VStack>
+              <VStack
+                fontSize="md"
+                spacing={8}
+                h="full"
+                bg="gray.100"
+                borderBottomLeftRadius="lg"
+                p={8}
               >
-                <Text>
-                  We organize, you help. We'll take your requirements and
-                  deliver a successful event from start to finish.
-                </Text>
-              </Feature>
-              <Feature
-                color="white"
-                icon={AiOutlineExperiment}
-                title="Advanced customisation"
-              >
-                <Text>
-                  Want to wow your attendees with something new? We can design
-                  and build it.
-                </Text>
-              </Feature>
-              <Feature
-                color="white"
-                icon={AiOutlineTool}
-                title="Do-it-yourself"
-              >
-                <Text>
+                <Text my={0}>
                   Want to run the Clowdr platform yourself? We can help you with
                   that.
                 </Text>
-              </Feature>
-            </SimpleGrid>
-          </Box>
-          <Container>
-            <Heading as="h2" size="2xl">
-              Guide Prices
-            </Heading>
-            <Badge mt={4}>valid through March 2021</Badge>
-            <Text>
-              We recognise that one price doesn't fit everyone. When you contact
-              us, we'll meet with you (virtually 😉) for a free consultation to
-              understand your requirements and provide an appropriate quote for
-              your conference.
-            </Text>
-          </Container>
-          <Box
-            maxW={{ base: "100%", xl: "80%" }}
-            overflow="auto"
-            my="4"
-            mx="auto"
-          >
-            <Table mx="auto">
-              <Thead>
-                <Tr>
-                  <Th>
-                    <Text>Package</Text>
-                  </Th>
-                  <Th>Hosting</Th>
-                  <Th>Features</Th>
-                  <Th>
-                    <HStack alignItems="flex-start">
-                      <Text>Training &amp; attendee support</Text>
-                      <Tooltip
-                        label="All packages include our standard tech support that we provide to keep our services up and running."
-                        fontSize="md"
-                      >
-                        <QuestionOutlineIcon />
-                      </Tooltip>
-                    </HStack>
-                  </Th>
-                  <Th>Organiser support</Th>
-                  <Th>Event management</Th>
-                  <Th>Extended features</Th>
-                  <Th>
-                    <HStack alignItems="flex-start">
-                      <Text>Guide price</Text>
-                      <Tooltip
-                        label="All prices are shown in USD
-                        and exclusive of tax. GBP and EUR currencies also available. All
-                        prices shown are for guidance only and are subject to change at any
-                        time. We will provide an exact quote for your conference after a
-                        free consultation. Clowdr CIC is a UK company operating in the UK -
-                        contracts are generally made under UK jurisdiction."
-                        fontSize="md"
-                      >
-                        <QuestionOutlineIcon />
-                      </Tooltip>
-                    </HStack>
-                  </Th>
-                  <Th>Minimum price</Th>
-                </Tr>
-              </Thead>
-              <Tbody>
-                <Tr textAlign="center">
-                  <Td>Pure open source</Td>
-                  <Td>
-                    <Cross />
-                  </Td>
-                  <Td>
-                    <Check />
-                  </Td>
-                  <Td>
-                    <Cross />
-                  </Td>
-                  <Td>
-                    <Cross />
-                  </Td>
-                  <Td>
-                    <Cross />
-                  </Td>
-                  <Td>
-                    <Cross />
-                  </Td>
-                  <Td>N/A</Td>
-                  <Td>N/A</Td>
-                </Tr>
-                <Tr textAlign="center">
-                  <Td>Do-it-yourself</Td>
-                  <Td>
-                    <Cross />
-                  </Td>
-                  <Td>
-                    <Check />
-                  </Td>
-                  <Td>
-                    <Check />
-                  </Td>
-                  <Td>
-                    <Cross />
-                  </Td>
-                  <Td>
-                    <Cross />
-                  </Td>
-                  <Td>
-                    <Cross />
-                  </Td>
-                  <Td>
-                    $250/hour of support
-                    <br />
-                    (inc. training)
-                  </Td>
-                  <Td>$500</Td>
-                </Tr>
-                <Tr textAlign="center">
-                  <Td>Click-and-go</Td>
-                  <Td>
-                    <Check />
-                  </Td>
-                  <Td>
-                    <Check />
-                  </Td>
-                  <Td>
-                    <Cross />
-                  </Td>
-                  <Td>
-                    <Cross />
-                  </Td>
-                  <Td>
-                    <Cross />
-                  </Td>
-                  <Td>
-                    <Cross />
-                  </Td>
-                  <Td>$20/attendee</Td>
-                  <Td>$1,000</Td>
-                </Tr>
-                <Tr textAlign="center">
-                  <Td>Expert support</Td>
-                  <Td>
-                    <Check />
-                  </Td>
-                  <Td>
-                    <Check />
-                  </Td>
-                  <Td>
-                    <Check />
-                  </Td>
-                  <Td>
-                    <Check />
-                  </Td>
-                  <Td>
-                    <Cross />
-                  </Td>
-                  <Td>
-                    <Cross />
-                  </Td>
-                  <Td>$30/attendee</Td>
-                  <Td>$6,000</Td>
-                </Tr>
-                <Tr textAlign="center">
-                  <Td>Hands-on support</Td>
-                  <Td>
-                    <Check />
-                  </Td>
-                  <Td>
-                    <Check />
-                  </Td>
-                  <Td>
-                    <Check />
-                  </Td>
-                  <Td>
-                    <Check />
-                  </Td>
-                  <Td>
-                    <Check />
-                  </Td>
-                  <Td>
-                    <Cross />
-                  </Td>
-                  <Td>$50/attendee</Td>
-                  <Td>$25,000</Td>
-                </Tr>
-                <Tr textAlign="center">
-                  <Td>Advanced customisation</Td>
-                  <Td>
-                    <Check />
-                  </Td>
-                  <Td>
-                    <Check />
-                  </Td>
-                  <Td>
-                    <Check />
-                  </Td>
-                  <Td>
-                    <Check />
-                  </Td>
-                  <Td>
-                    <Cross />
-                  </Td>
-                  <Td>
-                    <Check />
-                  </Td>
-                  <Td>$50/attendee</Td>
-                  <Td>$50,000</Td>
-                </Tr>
-              </Tbody>
-            </Table>
-          </Box>
+                <VStack
+                  spacing={4}
+                  w="full"
+                  direction="column"
+                  alignItems="start"
+                  role="list"
+                >
+                  <Feature role="listitem">All software features</Feature>
+                  <Feature role="listitem">
+                    If you have sufficient tech know-how, you can run our
+                    open-source software on your own hosting services!
+                  </Feature>
+                </VStack>
+                <Box
+                  w="full"
+                  ml={3}
+                  display="inline-flex"
+                  rounded="md"
+                  shadow="md"
+                >
+                  <Button
+                    as="a"
+                    href="https://github.com/clowdr-app/clowdr"
+                    w="full"
+                    display="inline-flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    px={5}
+                    py={3}
+                    border="solid transparent"
+                    fontWeight="bold"
+                    rounded="md"
+                    color="brand.800"
+                    bg="white"
+                    _hover={{
+                      bg: "brand.50",
+                    }}
+                  >
+                    <Icon mr={4} as={GoMarkGithub} aria-hidden />
+                    Get Clowdr on GitHub
+                  </Button>
+                </Box>
+              </VStack>
+            </Flex>
 
-          <Container textAlign="center" style={{ padding: "2em 0 1em" }}>
-            <ArrangeADemoButton />
-          </Container>
-
-          <Box
-            maxW={{ base: "100%", xl: "80%" }}
-            overflow="auto"
-            my="4"
-            mx="auto"
-          >
-            <Table>
-              <Thead>
-                <Tr>
-                  <Th>Package item</Th>
-                  <Th>What's included</Th>
-                </Tr>
-              </Thead>
-              <Tbody>
-                <Tr>
-                  <Td>Days</Td>
-                  <Td>All guide prices are based on a five day conference.</Td>
-                </Tr>
-                <Tr>
-                  <Td>Hosting</Td>
-                  <Td>
-                    Clowdr's software is open source and free for anyone to use.
-                    Alternatively, we offer our software as a{" "}
-                    <i>hosted service</i> so you don't have to worry about the
-                    tech and infrastructure. Just log in and start creating your
-                    program!
-                  </Td>
-                </Tr>
-                <Tr>
-                  <Td>Features</Td>
-                  <Td>
-                    All packages include{" "}
-                    <Link as={GatsbyLink} to="/features">
-                      every feature
-                    </Link>{" "}
-                    of the Clowdr software. You can disable some features if you
-                    don't wish to use them.
-                  </Td>
-                </Tr>
-                <Tr>
-                  <Td>
-                    <HStack alignItems="center">
-                      <Text>Training &amp; attendee support</Text>
-                      <Tooltip
-                        p={2}
-                        label="All packages include our standard tech support that we provide to keep our services up and running."
+            <Flex
+              flex={{ base: 1, lg: "initial" }}
+              w={{ lg: 2.4 / 9.3 }}
+              rounded="lg"
+              bg="white"
+              mt={{ base: 4, sm: -4 }}
+              shadow="xl"
+              zIndex={30}
+              direction="column"
+            >
+              <VStack
+                spacing={1}
+                justifyContent="center"
+                p={8}
+                textAlign="center"
+                w="full"
+                shadow="xl"
+              >
+                <Heading as="h3" size="xl" fontWeight="bold">
+                  50-250 registrants
+                </Heading>
+                <Text>(up to four days)</Text>
+                <HStack spacing={3}>
+                  <chakra.span fontWeight="bold" fontSize="6xl">
+                    $12
+                  </chakra.span>
+                  <chakra.span
+                    alignSelf="center"
+                    fontSize="3xl"
+                    color="gray.600"
+                  >
+                    /registrant
+                  </chakra.span>
+                </HStack>
+              </VStack>
+              <VStack
+                fontSize="sm"
+                h="full"
+                roundedBottom="lg"
+                spacing={8}
+                bg="gray.100"
+                p={10}
+              >
+                <VStack
+                  spacing={4}
+                  w="full"
+                  direction="column"
+                  alignItems="start"
+                  role="list"
+                >
+                  <Feature role="listitem">All software features</Feature>
+                  <Feature role="listitem">Standard tech support</Feature>
+                  <Feature role="listitem">Up to three organisers</Feature>
+                </VStack>
+                <Accordion w="full" allowToggle>
+                  <AccordionItem>
+                    <AccordionButton>
+                      <Box flex="1" textAlign="left">
+                        Included quotas
+                      </Box>
+                      <AccordionIcon />
+                    </AccordionButton>
+                    <AccordionPanel pb={4} fontSize="md">
+                      <List
+                        listStyleType="circle"
                         fontSize="md"
+                        sx={{ ul: { fontSize: "sm" } }}
                       >
-                        <QuestionOutlineIcon />
-                      </Tooltip>
-                    </HStack>
-                  </Td>
-                  <Td>
-                    <List bulleted>
-                      <ListItem>
-                        Three 1-hour training sessions for your committee,
-                        volunteers, and presenters on how to use Clowdr.
-                      </ListItem>
-                      <ListItem>
-                        One of our team online for 30 mins/100 attendees each
-                        day of your conference, up to a maximum of 4 hours/day.
-                      </ListItem>
-                      <ListItem>
-                        For larger conferencs, we may be able to provide
-                        additional members of our team and/or more hours of
-                        support.
-                      </ListItem>
-                    </List>
-                  </Td>
-                </Tr>
-                <Tr>
-                  <Td>Organiser support</Td>
-                  <Td>
-                    Learn from{" "}
-                    <Link as={GatsbyLink} to="/about">
-                      our team's
-                    </Link>{" "}
-                    &gt;10 years experience organising conferences. We will
-                    advise your organising committee on best practices for the
-                    design and delivery of virtual conferences, and how to get
-                    the most out of the Clowdr software.
-                  </Td>
-                </Tr>
-                <Tr>
-                  <Td>Extended features (/feature guarantees)</Td>
-                  <Td>
-                    We are always developing new features, but if your
-                    conference needs something specific that isn't on our
-                    roadmap (or you need it sooner than we have planned), please
-                    talk to us. If you'd like a guarantee of the feature being
-                    available for your conference, we may offer this package
-                    option to you.{" "}
-                    <i style={{ fontWeight: 600, fontSize: "95%" }}>
-                      Please talk to us as early as possible so we can allow
-                      enough time to address your requirements.
-                    </i>
-                  </Td>
-                </Tr>
-                <Tr>
-                  <Td>Event management</Td>
-                  <Td>
-                    If you'd like our team to help you design your program,
-                    provide extra training for your volunteers, or assist your
-                    conference in any other way, let's talk about it!
-                  </Td>
-                </Tr>
-              </Tbody>
-            </Table>
-          </Box>
+                        <ListItem>
+                          Access to configure your conference starting up to 4
+                          weeks ahead of your conference
+                          <List listStyleType="circle" ml={4}>
+                            <ListItem>Up to three organisers</ListItem>
+                          </List>
+                        </ListItem>
+                        <ListItem>
+                          1 week author submission period starting up to 2 weeks
+                          ahead of your conference
+                        </ListItem>
+                        <ListItem>
+                          Pre-publication of schedule, content, pre-recorded
+                          videos and text chats up to 5 days ahead of the
+                          conference (access for registered users only)
+                        </ListItem>
+                        <ListItem>
+                          Up to 100 pre-recorded videos
+                          <List listStyleType="circle" ml={4}>
+                            <ListItem>Max 1080p, 30fps</ListItem>
+                            <ListItem>Up to 20 minutes long</ListItem>
+                            <ListItem>
+                              Auto-generated subtitles and author access to edit
+                              subtitles
+                            </ListItem>
+                          </List>
+                        </ListItem>
+                        <ListItem>
+                          3 hours of livestreaming per day
+                          <List listStyleType="circle" ml={4}>
+                            <ListItem>Max 1 livestream room</ListItem>
+                            <ListItem>Up to 5 live speakers</ListItem>
+                            <ListItem>
+                              Live presentations and playback of pre-recorded
+                              video
+                            </ListItem>
+                          </List>
+                        </ListItem>
+                        <ListItem>Up to 10 social rooms</ListItem>
+                        <ListItem>
+                          Unlimited one-to-one (direct message) rooms
+                        </ListItem>
+                        <ListItem>
+                          Up to 10 sponsor booths
+                          <List listStyleType="circle" ml={4}>
+                            <ListItem>
+                              Unlimited text, images and PDFs per booth
+                            </ListItem>
+                            <ListItem>Up to 2 videos per booth</ListItem>
+                          </List>
+                        </ListItem>
+                        <ListItem>
+                          Up to one shuffle (randomised attendee networking)
+                          queue per day
+                          <List listStyleType="circle" ml={4}>
+                            <ListItem>Max 30 minutes queue duration</ListItem>
+                            <ListItem>
+                              Max 5 attendees per shuffle room
+                            </ListItem>
+                            <ListItem>
+                              Max 10 minutes in each shuffle room
+                            </ListItem>
+                          </List>
+                        </ListItem>
+                      </List>
+                    </AccordionPanel>
+                  </AccordionItem>
+                </Accordion>
+                <Box display="inline-flex" rounded="md" shadow="md" w="full">
+                  <Button
+                    as="a"
+                    href="https://form.asana.com/?k=vZCogwGG5WSVBz-qgByHAw&d=1198973227684402"
+                    w="full"
+                    display="inline-flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    px={5}
+                    py={3}
+                    border="solid transparent"
+                    fontWeight="bold"
+                    rounded="md"
+                    color="white"
+                    bg="brand.700"
+                    _hover={{
+                      bg: "brand.700",
+                      color: "white",
+                    }}
+                  >
+                    Request a Quote
+                  </Button>
+                </Box>
+                <Text>Quotes are available in USD, EUR and GBP</Text>
+              </VStack>
+            </Flex>
+
+            <Flex
+              flex={{ sm: 1, lg: "initial" }}
+              w={{ lg: 2.3 / 9.3 }}
+              rounded="lg"
+              borderTopRightRadius={0}
+              borderBottomLeftRadius="lg"
+              bg="white"
+              my={6}
+              direction="column"
+            >
+              <VStack
+                spacing={1}
+                justifyContent="center"
+                p={8}
+                textAlign="center"
+                w="full"
+                shadow="xl"
+              >
+                <Heading as="h3" size="xl" fontWeight="bold">
+                  250+ registrants
+                </Heading>
+                <chakra.span fontWeight="bold" fontSize="5xl">
+                  Contact us
+                </chakra.span>
+              </VStack>
+              <VStack
+                fontSize="sm"
+                spacing={8}
+                h="full"
+                bg="gray.100"
+                borderBottomLeftRadius="lg"
+                p={8}
+              >
+                <Text my={0} fontSize="md">
+                  Clowdr will work with you to create a quote tailored to the
+                  needs of your conference, factoring in your event size,
+                  technical support level, and budget constraints.
+                </Text>
+                <VStack
+                  spacing={4}
+                  w="full"
+                  direction="column"
+                  alignItems="start"
+                  role="list"
+                >
+                  <Feature role="listitem">All software features</Feature>
+                  <Feature role="listitem">
+                    Dedicated tech support for attendees{" "}
+                    <Badge color="green" variant="outline" ml={2}>
+                      Optional
+                    </Badge>
+                  </Feature>
+                  <Feature role="listitem">
+                    Conference and schedule design advice{" "}
+                    <Badge color="green" variant="outline" ml={2}>
+                      Optional
+                    </Badge>
+                  </Feature>
+                  <Feature role="listitem">
+                    Hands-on support for organisers (e.g. schedule import, live
+                    tech support, training for session chairs and speakers){" "}
+                    <Badge color="green" variant="outline" ml={2}>
+                      Optional
+                    </Badge>
+                  </Feature>
+                  <Feature role="listitem">
+                    A custom package tailored for your event's success!
+                  </Feature>
+                </VStack>
+                <Box
+                  w="full"
+                  ml={3}
+                  display="inline-flex"
+                  rounded="md"
+                  shadow="md"
+                >
+                  <Button
+                    as="a"
+                    href="https://form.asana.com/?k=trOGgRktwffYqw6B73DHuA&d=1198973227684402"
+                    w="full"
+                    display="inline-flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    px={5}
+                    py={3}
+                    border="solid transparent"
+                    fontWeight="bold"
+                    rounded="md"
+                    color="brand.800"
+                    bg="white"
+                    _hover={{
+                      bg: "brand.50",
+                    }}
+                  >
+                    Request a Demo
+                  </Button>
+                </Box>
+              </VStack>
+            </Flex>
+
+            <Flex
+              flex={{ sm: 1, lg: "initial" }}
+              w={{ lg: 2.3 / 9.3 }}
+              roundedTop="lg"
+              borderBottomRightRadius="lg"
+              borderTopLeftRadius={0}
+              bg="white"
+              my={6}
+              direction="column"
+            >
+              <VStack
+                spacing={1}
+                justifyContent="center"
+                p={8}
+                textAlign="center"
+                w="full"
+                shadow="xl"
+              >
+                <Heading as="h3" size="xl" fontWeight="bold">
+                  Discounted
+                </Heading>
+              </VStack>
+              <VStack
+                fontSize="sm"
+                spacing={8}
+                h="full"
+                bg="gray.100"
+                borderBottomRightRadius="lg"
+                p={8}
+              >
+                <Text fontSize="md" my={0}>
+                  We offer discounted or at-cost pricing for conferences that
+                  align with our company's goals and values - including
+                  increasing accessibility of digital services, tackling climate
+                  change, and more. If you think your event might fall into this
+                  category, please reach out!
+                </Text>
+                <VStack
+                  spacing={4}
+                  w="full"
+                  direction="column"
+                  alignItems="start"
+                  role="list"
+                >
+                  <Feature role="listitem">All software features</Feature>
+                  <Feature icon="neutral" role="listitem">
+                    We do not currently offer conference hosting for free or
+                    below-cost
+                  </Feature>
+                </VStack>
+                <Box
+                  w="full"
+                  ml={3}
+                  display="inline-flex"
+                  rounded="md"
+                  shadow="md"
+                >
+                  <Button
+                    as="a"
+                    href="https://form.asana.com/?k=-anuBVrSLfVMyNuXJefdSw&d=1198973227684402"
+                    w="full"
+                    display="inline-flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    px={5}
+                    py={3}
+                    border="solid transparent"
+                    fontWeight="bold"
+                    rounded="md"
+                    color="brand.800"
+                    bg="white"
+                    _hover={{
+                      bg: "brand.50",
+                    }}
+                  >
+                    Contact us
+                  </Button>
+                </Box>
+              </VStack>
+            </Flex>
+          </Flex>
+        </Box>
+        <Box
+          layerStyle="hero"
+          px={{ base: 4, xl: 20 }}
+          w="auto"
+          justifyContent="center"
+          bg="brand.800"
+          alignItems="center"
+        >
+          <Heading as="h2" pt={12}>
+            Features
+          </Heading>
+          <Text>
+            Here are the main features you'll find included with every Clowdr
+            package. We're always happy to hear{" "}
+            <Link as={GatsbyLink} to="/feedback">
+              feedback about what should be added to Clowdr next
+            </Link>
+            .
+          </Text>
+          <Table variant="simple">
+            <Thead>
+              <Tr>
+                <Th>Feature</Th>
+                <Th>Description</Th>
+              </Tr>
+            </Thead>
+            <Tbody>
+              <Tr>
+                <Td>Advanced scheduling</Td>
+                <Td>Support for complex, multi-track programs.</Td>
+              </Tr>
+              <Tr>
+                <Td>Video rooms</Td>
+                <Td>Registrant- and organiser-created video breakout rooms.</Td>
+              </Tr>
+              <Tr>
+                <Td>Text chat</Td>
+                <Td>
+                  Realtime text chat, including direct messages and global
+                  channels.
+                </Td>
+              </Tr>
+              <Tr>
+                <Td>Integrated video streaming</Td>
+                <Td>
+                  Present live from inside Clowdr. Control which people (or
+                  screen shares) are shown in your livestream.
+                </Td>
+              </Tr>
+              <Tr>
+                <Td>Seamless livestreams</Td>
+                <Td>
+                  Schedule both live and pre-recorded sessions and Clowdr will
+                  switch between them seamlessly in your livestream.
+                </Td>
+              </Tr>
+              <Tr>
+                <Td>Content management</Td>
+                <Td>
+                  Upload and display your conference proceedings, including
+                  abstracts, videos, files and links.
+                </Td>
+              </Tr>
+              <Tr>
+                <Td>Content collection</Td>
+                <Td>
+                  Allow your authors to upload content (e.g. pre-recorded
+                  videos).
+                </Td>
+              </Tr>
+              <Tr>
+                <Td>Auto-generated subtitles</Td>
+                <Td>
+                  Automatically generated subtitles for pre-recorded video
+                  uploads and live recordings.
+                </Td>
+              </Tr>
+              <Tr>
+                <Td>Shuffle spaces</Td>
+                <Td>
+                  Randomised networking rooms for your registrants. Can also be
+                  used for mentoring sessions.
+                </Td>
+              </Tr>
+              <Tr>
+                <Td>Sponsor booths</Td>
+                <Td>
+                  A dedicated video room page for each of your sponsors.
+                  Customisable with text, images, links and video.
+                </Td>
+              </Tr>
+              <Tr>
+                <Td>Custom homepage</Td>
+                <Td>
+                  A customisable landing page to introduce registrants to your
+                  conference.
+                </Td>
+              </Tr>
+              <Tr>
+                <Td>Admin panel</Td>
+                <Td>
+                  A self-service admin panel to control everything at your
+                  conference.
+                </Td>
+              </Tr>
+              <Tr>
+                <Td>Permissions management</Td>
+                <Td>
+                  Group registrants together to give them access to different
+                  areas. Or give specific roles to different organisers.
+                </Td>
+              </Tr>
+              <Tr>
+                <Td>YouTube export</Td>
+                <Td>Upload your videos or live recordings to YouTube.</Td>
+              </Tr>
+              <Tr>
+                <Td>Mobile support</Td>
+                <Td>
+                  Clowdr is designed to work on screens of any size - desktop,
+                  laptop, tablet or mobile.
+                </Td>
+              </Tr>
+            </Tbody>
+          </Table>
+
+          <Button
+            as={GatsbyLink}
+            fontSize="2xl"
+            my={12}
+            p={8}
+            bgColor="brand.900"
+            _hover={{
+              bgColor: "brand.700",
+            }}
+            to="/features"
+          >
+            Learn more about Clowdr
+            <Icon ml={4} as={AiOutlineArrowRight} />
+          </Button>
         </Box>
       </Layout>
     </>
   );
 }
 
-function Check({ className }: { className?: string }): JSX.Element {
-  return (
-    <Icon
-      color="brand.600"
-      as={AiFillCheckCircle}
-      aria-label="Included"
-      title="Included"
-      w={6}
-      h={6}
-      className={className}
-    />
-  );
-}
+const Feature = chakra(FeatureInner);
 
-function Cross({ className }: { className?: string }): JSX.Element {
+function FeatureInner({
+  className,
+  children,
+  icon,
+}: {
+  className?: string;
+  children: React.ReactNode | React.ReactNodeArray | string;
+  icon?: "check" | "neutral";
+}): JSX.Element {
   return (
-    <Icon
-      color="red.100"
-      as={AiFillCloseCircle}
-      aria-label="Not included"
-      title="Not included"
-      w={6}
-      h={6}
-      className={className}
-    />
+    <Flex alignSelf="start" w="full">
+      {icon === "neutral" ? (
+        <Icon
+          mt={1}
+          mr={2}
+          boxSize={5}
+          color="gray.600"
+          w={6}
+          h={6}
+          as={AiFillInfoCircle}
+          aria-hidden
+        />
+      ) : (
+        <Icon
+          mt={1}
+          mr={2}
+          boxSize={5}
+          color="brand.600"
+          w={6}
+          h={6}
+          as={AiFillCheckCircle}
+          aria-hidden
+        />
+      )}
+      <chakra.p fontSize="lg" className={className}>
+        {children}
+      </chakra.p>
+    </Flex>
   );
 }
