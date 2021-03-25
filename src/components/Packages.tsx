@@ -11,28 +11,23 @@ import { Feature } from "./Feature";
 export function Packages(): JSX.Element {
   return (
     <SimpleGrid
-      columns={{ base: 1, sm: 1, md: 2, lg: 3 }}
+      columns={{ base: 1, sm: 1, md: 2, lg: 4 }}
       spacingX={{ base: 8, lg: 16 }}
       spacingY={12}
     >
-      <Feature icon={AiOutlineTool} title="Click-and-go">
+      <Feature icon={AiOutlineRocket} title="Click-and-go">
         <Text>
-          We worry about the technology; you organize the conference.
-          Recommended for events with a simple, single-track program.
+          We worry about the technology; you organize the conference. Use Clowdr
+          - hosted by the people who built it.
         </Text>
       </Feature>
-      <Feature icon={AiOutlineCustomerService} title="Expert support">
+      <Feature
+        icon={AiOutlineCustomerService}
+        title="Expert support and advice"
+      >
         <Text>
-          You organize, we help. We'll advise you on how to plan and set up your
-          conference and provide virtual on-site support to make sure everything
-          runs smoothly. Recommended for more complex events, especially ones
-          with multiple tracks.
-        </Text>
-      </Feature>
-      <Feature icon={AiOutlineRocket} title="Hands-on support">
-        <Text>
-          We organize, you help. We'll take your requirements and deliver a
-          successful event from start to finish.
+          We can advise you on how to plan and set up your conference and
+          provide virtual on-site support to make sure everything runs smoothly.
         </Text>
       </Feature>
       <Feature icon={AiOutlineExperiment} title="Advanced customisation">
