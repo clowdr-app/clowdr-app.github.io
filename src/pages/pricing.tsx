@@ -249,7 +249,9 @@ export default function Pricing() {
                           3 hours of livestreaming per day
                           <List listStyleType="circle" ml={4}>
                             <ListItem>Max 1 livestream room</ListItem>
-                            <ListItem>Up to 5 live speakers</ListItem>
+                            <ListItem>
+                              Up to 5 simultaneous live speakers
+                            </ListItem>
                             <ListItem>
                               Live presentations and playback of pre-recorded
                               video
