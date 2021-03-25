@@ -611,13 +611,6 @@ export default function Pricing() {
                 <Td>YouTube export</Td>
                 <Td>Upload your videos or live recordings to YouTube.</Td>
               </Tr>
-              <Tr>
-                <Td>Mobile support</Td>
-                <Td>
-                  Clowdr is designed to work on screens of any size - desktop,
-                  laptop, tablet or mobile.
-                </Td>
-              </Tr>
             </Tbody>
           </Table>
 
