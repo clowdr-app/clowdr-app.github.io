@@ -66,7 +66,12 @@ export default function Privacy() {
             If you have any questions about this privacy policy or our privacy
             practices, please contact us in the following ways:
           </Text>
-          <Text>Email address: hello@clowdr.org</Text>
+          <Text>
+            Email address:{" "}
+            <Link as="a" href="mailto:hello@clowdr.org">
+              hello@clowdr.org
+            </Link>
+          </Text>
           <Text>
             You have the right to make a complaint at any time to the
             Information Commissioner's Office (ICO), the UK supervisory
@@ -762,29 +767,6 @@ export default function Privacy() {
             particularly complex or you have made a number of requests. In this
             case, we will notify you and keep you updated.
           </Text>
-          <Text>
-            <strong>Cookie Policy</strong>
-          </Text>
-          <Text>
-            Our site uses cookies to distinguish you from other users of our
-            site. This helps us to provide you with a good experience when you
-            browse our site and also allows us to improve our site.
-          </Text>
-          <Text>
-            A cookie is a small file of letters and numbers that we store on
-            your browser or the hard drive of your computer if you agree.
-            Cookies contain information that is transferred to your computer's
-            hard drive.
-          </Text>
-          <Text>
-            We only use <strong>strictly necessary cookies.</strong> These are
-            cookies that are required for the operation of our site. They enable
-            you to log into secure areas of our site.
-          </Text>
-          <Text>We do not use:</Text>
-          <Text>Analytical or performance cookies, or</Text>
-          <Text>Functionality cookies, or</Text>
-          <Text>Targeting cookies.</Text>
         </Container>
       </Layout>
     </>

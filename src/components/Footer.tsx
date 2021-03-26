@@ -55,6 +55,11 @@ export default function Footer() {
                   </Link>
                 </ListItem>
                 <ListItem>
+                  <Link as={GatsbyLink} to="/policies/cookies">
+                    Cookie Policy
+                  </Link>
+                </ListItem>
+                <ListItem>
                   <Link as={GatsbyLink} to="/policies/backups">
                     Backups Policy
                   </Link>

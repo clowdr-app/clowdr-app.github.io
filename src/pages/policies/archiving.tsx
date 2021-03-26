@@ -8,7 +8,7 @@ export default function Archiving() {
     <>
       <Title title="Backups Policy" />
       <Layout>
-        <Container>
+        <Container my={8}>
           <Heading as="h2" size="2xl">
             Archiving Policy
           </Heading>

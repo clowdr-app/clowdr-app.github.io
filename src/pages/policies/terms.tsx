@@ -6,6 +6,7 @@ import {
   ListItem,
   Text,
 } from "@chakra-ui/react";
+import { Link as GatsbyLink } from "gatsby";
 import React from "react";
 import { Layout } from "../../components/Layout";
 import Title from "../../components/Title";
@@ -60,11 +61,20 @@ export default function Privacy() {
             also apply to your use of our site:
           </Text>
           <List styleType="disc">
-            <ListItem>Our Privacy Policy. </ListItem>
+            <ListItem>
+              Our{" "}
+              <Link as={GatsbyLink} to="/policies/privacy">
+                Privacy Policy
+              </Link>
+              .{" "}
+            </ListItem>
 
             <ListItem>
-              Our Cookie Policy, which sets out information about the cookies on
-              our site.
+              Our{" "}
+              <Link as={GatsbyLink} to="/policies/cookies">
+                Cookie Policy
+              </Link>
+              , which sets out information about the cookies on our site.
             </ListItem>
           </List>
           <Text>
@@ -409,8 +419,11 @@ export default function Privacy() {
             <strong>How we may use your personal information</strong>
           </Text>
           <Text>
-            We will only use your personal information as set out in our Privacy
-            Policy.
+            We will only use your personal information as set out in our{" "}
+            <Link as={GatsbyLink} to="/policies/privacy">
+              Privacy Policy
+            </Link>
+            .
           </Text>
           <Text>
             <strong>
