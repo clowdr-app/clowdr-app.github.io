@@ -16,24 +16,34 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
   }
 };
 
-exports.createPages = async ({ graphql, actions, reporter }) => {
-  const { createPage } = actions;
+const redirects = [
+  { fromPath: "/faq/video-subtitles", toPath: "/resources/video-subtitles" },
+];
 
-  // Define a template for blog post
-  const blogPost = path.resolve(`./src/templates/blog-post.tsx`);
+exports.createPages = async ({ graphql, actions, reporter }) => {
+  const { createPage, createRedirect } = actions;
+
+  /// Create blog post pages
 
   // Get all markdown blog posts sorted by date
-  const result = await graphql(
+  const allRemark = await graphql(
     `
       {
         allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: ASC }
           limit: 1000
         ) {
-          nodes {
-            id
-            fields {
-              slug
+          edges {
+            node {
+              id
+              fields {
+                collection
+                slug
+              }
+              frontmatter {
+                slug
+                title
+              }
             }
           }
         }
@@ -41,37 +51,64 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `
   );
 
-  if (result.errors) {
+  if (allRemark.errors) {
     reporter.panicOnBuild(
       `There was an error loading your blog posts`,
-      result.errors
+      allRemark.errors
     );
     return;
   }
 
-  const posts = result.data.allMarkdownRemark.nodes;
+  const allEdges = allRemark.data.allMarkdownRemark.edges;
 
-  // Create blog posts pages
-  // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
-  // `context` is available in the template as a prop and as a variable in GraphQL
+  const blogEdges = allEdges.filter(
+    edge => edge.node.fields.collection === `blog`
+  );
+  const resourceEdges = allEdges.filter(
+    edge => edge.node.fields.collection === `resources`
+  );
 
-  if (posts.length > 0) {
-    posts.forEach((post, index) => {
-      const previousPostId = index === 0 ? null : posts[index - 1].id;
-      const nextPostId =
-        index === posts.length - 1 ? null : posts[index + 1].id;
+  console.log(
+    `Blog edges: ${blogEdges.length}, resource edges: ${resourceEdges.length}`
+  );
 
-      createPage({
-        path: `blog${post.fields.slug}`,
-        component: blogPost,
-        context: {
-          id: post.id,
-          previousPostId,
-          nextPostId,
-        },
-      });
+  blogEdges.forEach((edge, index) => {
+    const previous =
+      index === blogEdges.length - 1 ? null : blogEdges[index + 1].node;
+    const next = index === 0 ? null : blogEdges[index - 1].node;
+
+    createPage({
+      path: `/blog/${edge.node.frontmatter.slug}`,
+      component: path.resolve(`./src/templates/blog-post.tsx`),
+      context: {
+        id: edge.node.id,
+        slug: edge.node.frontmatter.slug,
+        previous,
+        next,
+      },
     });
-  }
+  });
+
+  resourceEdges.forEach(edge => {
+    createPage({
+      path: `/resources/${edge.node.frontmatter.slug}`,
+      component: path.resolve(`./src/templates/resource-page.tsx`),
+      context: {
+        id: edge.node.id,
+        slug: edge.node.frontmatter.slug,
+      },
+    });
+  });
+
+  /// Redirects
+  // redirects.forEach(redirect =>
+  //   createRedirect({ ...redirect, isPermanent: true, redirectInBrowser: true })
+  // );
+  createRedirect({
+    fromPath: "/faq/video-subtitles/",
+    toPath: "/resources/video-subtitles",
+    isPermanent: true,
+  });
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
@@ -84,6 +121,14 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       name: `slug`,
       node,
       value,
+    });
+
+    const parent = getNode(node.parent);
+
+    createNodeField({
+      node,
+      name: "collection",
+      value: parent.sourceInstanceName,
     });
   }
 };

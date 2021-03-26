@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { Link as GatsbyLink } from "gatsby";
 import React from "react";
+import { menuItems } from "../misc/menu-items";
 // import { useCMS } from "tinacms";
 
 /* If you change the list of pages, make sure to also change
@@ -32,36 +33,13 @@ export default function Footer() {
           <Wrap alignItems="flex-start" spacing={12} flexWrap="wrap">
             <WrapItem>
               <UnorderedList styleType="none" ml={0}>
-                <ListItem>
-                  <Link as={GatsbyLink} to="/features">
-                    Features
-                  </Link>
-                </ListItem>
-                <ListItem>
-                  <Link as={GatsbyLink} to="/pricing">
-                    Pricing
-                  </Link>
-                </ListItem>
-                <ListItem>
-                  <Link as={GatsbyLink} to="/about">
-                    About Us
-                  </Link>
-                </ListItem>
-                <ListItem>
-                  <Link as={GatsbyLink} to="/jobs">
-                    Jobs
-                  </Link>
-                </ListItem>
-                <ListItem>
-                  <Link as={GatsbyLink} to="/feedback">
-                    Feedback
-                  </Link>
-                </ListItem>
-                <ListItem>
-                  <Link as={GatsbyLink} to="/faq">
-                    FAQ
-                  </Link>
-                </ListItem>
+                {menuItems.map((menuItem, i) => (
+                  <ListItem key={i}>
+                    <Link as={GatsbyLink} to={menuItem.link}>
+                      {menuItem.text}
+                    </Link>
+                  </ListItem>
+                ))}
               </UnorderedList>
             </WrapItem>
             <WrapItem>

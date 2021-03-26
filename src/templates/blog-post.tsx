@@ -1,6 +1,7 @@
 import {
   chakra,
   Container,
+  Divider,
   Heading,
   Link,
   ListItem,
@@ -9,6 +10,7 @@ import {
   UnorderedList,
 } from "@chakra-ui/react";
 import { graphql, Link as GatsbyLink } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import rehypeReact from "rehype-react";
 import unified from "unified";
@@ -39,12 +41,14 @@ export const renderAst = (ast: any): JSX.Element => {
 export default function BlogPost({
   data,
   location,
+  pageContext,
 }: {
   data: BlogPostBySlugQuery;
   location: any;
+  pageContext: { previous: any; next: any };
 }) {
   const post = data.markdownRemark;
-  const { previous, next } = data;
+  const { previous, next } = pageContext;
 
   return (
     <>
@@ -55,42 +59,75 @@ export default function BlogPost({
           itemScope
           itemType="http://schema.org/Article"
           overflowX="auto"
+          my={12}
         >
+          {post?.frontmatter?.featuredImage?.childImageSharp
+            ?.gatsbyImageData ? (
+            <GatsbyImage
+              style={{
+                borderTopLeftRadius: "0.5rem",
+                borderTopRightRadius: "0.5rem",
+                width: "full",
+                height: "16rem",
+                objectFit: "cover",
+              }}
+              image={
+                post.frontmatter.featuredImage.childImageSharp.gatsbyImageData
+              }
+              alt={post?.frontmatter?.title ?? "No description"}
+            />
+          ) : undefined}
           <header>
             <Heading as="h1" itemProp="headline">
               {post?.frontmatter?.title}
             </Heading>
-            <p>{post?.frontmatter?.date}</p>
+            <time
+              itemProp="datePublished"
+              dateTime={post?.frontmatter?.rawDate}
+            >
+              {post?.frontmatter?.date}
+            </time>
+            <p>
+              by <span itemProp="author">{post?.frontmatter?.author}</span>
+            </p>
           </header>
           <section>{renderAst(post?.htmlAst)}</section>
-          <hr />
+          <Divider />
+          <chakra.nav mt={4}>
+            <ul
+              style={{
+                display: `flex`,
+                flexWrap: `wrap`,
+                justifyContent: `space-between`,
+                listStyle: `none`,
+                padding: 0,
+              }}
+            >
+              <li>
+                {previous?.fields?.slug && (
+                  <Link
+                    as={GatsbyLink}
+                    to={`/blog${previous.fields.slug}`}
+                    rel="prev"
+                  >
+                    ← {previous?.frontmatter?.title}
+                  </Link>
+                )}
+              </li>
+              <li>
+                {next?.fields?.slug && (
+                  <Link
+                    as={GatsbyLink}
+                    to={`/blog${next.fields.slug}`}
+                    rel="next"
+                  >
+                    {next?.frontmatter?.title} →
+                  </Link>
+                )}
+              </li>
+            </ul>
+          </chakra.nav>
         </Container>
-        <nav className="blog-post-nav">
-          <ul
-            style={{
-              display: `flex`,
-              flexWrap: `wrap`,
-              justifyContent: `space-between`,
-              listStyle: `none`,
-              padding: 0,
-            }}
-          >
-            <li>
-              {previous?.fields?.slug && (
-                <Link as={GatsbyLink} to={previous.fields.slug} rel="prev">
-                  ← {previous?.frontmatter?.title}
-                </Link>
-              )}
-            </li>
-            <li>
-              {next?.fields?.slug && (
-                <Link as={GatsbyLink} to={next.fields.slug} rel="next">
-                  {next?.frontmatter?.title} →
-                </Link>
-              )}
-            </li>
-          </ul>
-        </nav>
       </Layout>
     </>
   );
@@ -114,7 +151,14 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        rawDate: date
         description
+        author
+        featuredImage {
+          childImageSharp {
+            gatsbyImageData(width: 700)
+          }
+        }
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

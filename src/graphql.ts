@@ -305,6 +305,7 @@ export type SitePage = Node & {
 export type SitePageContext = {
   __typename?: 'SitePageContext';
   id?: Maybe<Scalars['String']>;
+  slug?: Maybe<Scalars['String']>;
 };
 
 export enum ImageFormat {
@@ -659,6 +660,11 @@ export type Frontmatter = {
   title?: Maybe<Scalars['String']>;
   description?: Maybe<Scalars['String']>;
   date?: Maybe<Scalars['Date']>;
+  slug?: Maybe<Scalars['String']>;
+  updatedDate?: Maybe<Scalars['Date']>;
+  author?: Maybe<Scalars['String']>;
+  category?: Maybe<Scalars['String']>;
+  featuredImage?: Maybe<File>;
 };
 
 
@@ -669,9 +675,18 @@ export type FrontmatterDateArgs = {
   locale?: Maybe<Scalars['String']>;
 };
 
+
+export type FrontmatterUpdatedDateArgs = {
+  formatString?: Maybe<Scalars['String']>;
+  fromNow?: Maybe<Scalars['Boolean']>;
+  difference?: Maybe<Scalars['String']>;
+  locale?: Maybe<Scalars['String']>;
+};
+
 export type Fields = {
   __typename?: 'Fields';
   slug?: Maybe<Scalars['String']>;
+  collection?: Maybe<Scalars['String']>;
 };
 
 export type SiteBuildMetadata = Node & {
@@ -720,6 +735,16 @@ export type SitePluginPluginOptions = {
   failOnError?: Maybe<Scalars['Boolean']>;
   path?: Maybe<Scalars['String']>;
   name?: Maybe<Scalars['String']>;
+  width?: Maybe<Scalars['Int']>;
+  ratio?: Maybe<Scalars['Float']>;
+  height?: Maybe<Scalars['Int']>;
+  related?: Maybe<Scalars['Boolean']>;
+  noIframeBorder?: Maybe<Scalars['Boolean']>;
+  loadingStrategy?: Maybe<Scalars['String']>;
+  urlOverrides?: Maybe<Array<Maybe<SitePluginPluginOptionsUrlOverrides>>>;
+  containerClass?: Maybe<Scalars['String']>;
+  iframeId?: Maybe<Scalars['Boolean']>;
+  wrapperStyle?: Maybe<Scalars['String']>;
   maxWidth?: Maybe<Scalars['Int']>;
   linkImagesToOriginal?: Maybe<Scalars['Boolean']>;
   showCaptions?: Maybe<Scalars['Boolean']>;
@@ -732,7 +757,6 @@ export type SitePluginPluginOptions = {
   loading?: Maybe<Scalars['String']>;
   disableBgImageOnAlpha?: Maybe<Scalars['Boolean']>;
   disableBgImage?: Maybe<Scalars['Boolean']>;
-  wrapperStyle?: Maybe<Scalars['String']>;
   fonts?: Maybe<Array<Maybe<Scalars['String']>>>;
   display?: Maybe<Scalars['String']>;
   pathCheck?: Maybe<Scalars['Boolean']>;
@@ -752,6 +776,16 @@ export type SitePluginPluginOptionsPlugins = {
 
 export type SitePluginPluginOptionsPluginsPluginOptions = {
   __typename?: 'SitePluginPluginOptionsPluginsPluginOptions';
+  width?: Maybe<Scalars['Int']>;
+  ratio?: Maybe<Scalars['Float']>;
+  height?: Maybe<Scalars['Int']>;
+  related?: Maybe<Scalars['Boolean']>;
+  noIframeBorder?: Maybe<Scalars['Boolean']>;
+  loadingStrategy?: Maybe<Scalars['String']>;
+  urlOverrides?: Maybe<Array<Maybe<SitePluginPluginOptionsPluginsPluginOptionsUrlOverrides>>>;
+  containerClass?: Maybe<Scalars['String']>;
+  iframeId?: Maybe<Scalars['Boolean']>;
+  wrapperStyle?: Maybe<Scalars['String']>;
   maxWidth?: Maybe<Scalars['Int']>;
   linkImagesToOriginal?: Maybe<Scalars['Boolean']>;
   showCaptions?: Maybe<Scalars['Boolean']>;
@@ -764,7 +798,16 @@ export type SitePluginPluginOptionsPluginsPluginOptions = {
   loading?: Maybe<Scalars['String']>;
   disableBgImageOnAlpha?: Maybe<Scalars['Boolean']>;
   disableBgImage?: Maybe<Scalars['Boolean']>;
-  wrapperStyle?: Maybe<Scalars['String']>;
+};
+
+export type SitePluginPluginOptionsPluginsPluginOptionsUrlOverrides = {
+  __typename?: 'SitePluginPluginOptionsPluginsPluginOptionsUrlOverrides';
+  id?: Maybe<Scalars['String']>;
+};
+
+export type SitePluginPluginOptionsUrlOverrides = {
+  __typename?: 'SitePluginPluginOptionsUrlOverrides';
+  id?: Maybe<Scalars['String']>;
 };
 
 export type SitePluginPackageJson = {
@@ -1227,10 +1270,61 @@ export type FrontmatterFilterInput = {
   title?: Maybe<StringQueryOperatorInput>;
   description?: Maybe<StringQueryOperatorInput>;
   date?: Maybe<DateQueryOperatorInput>;
+  slug?: Maybe<StringQueryOperatorInput>;
+  updatedDate?: Maybe<DateQueryOperatorInput>;
+  author?: Maybe<StringQueryOperatorInput>;
+  category?: Maybe<StringQueryOperatorInput>;
+  featuredImage?: Maybe<FileFilterInput>;
+};
+
+export type FileFilterInput = {
+  sourceInstanceName?: Maybe<StringQueryOperatorInput>;
+  absolutePath?: Maybe<StringQueryOperatorInput>;
+  relativePath?: Maybe<StringQueryOperatorInput>;
+  extension?: Maybe<StringQueryOperatorInput>;
+  size?: Maybe<IntQueryOperatorInput>;
+  prettySize?: Maybe<StringQueryOperatorInput>;
+  modifiedTime?: Maybe<DateQueryOperatorInput>;
+  accessTime?: Maybe<DateQueryOperatorInput>;
+  changeTime?: Maybe<DateQueryOperatorInput>;
+  birthTime?: Maybe<DateQueryOperatorInput>;
+  root?: Maybe<StringQueryOperatorInput>;
+  dir?: Maybe<StringQueryOperatorInput>;
+  base?: Maybe<StringQueryOperatorInput>;
+  ext?: Maybe<StringQueryOperatorInput>;
+  name?: Maybe<StringQueryOperatorInput>;
+  relativeDirectory?: Maybe<StringQueryOperatorInput>;
+  dev?: Maybe<IntQueryOperatorInput>;
+  mode?: Maybe<IntQueryOperatorInput>;
+  nlink?: Maybe<IntQueryOperatorInput>;
+  uid?: Maybe<IntQueryOperatorInput>;
+  gid?: Maybe<IntQueryOperatorInput>;
+  rdev?: Maybe<IntQueryOperatorInput>;
+  ino?: Maybe<FloatQueryOperatorInput>;
+  atimeMs?: Maybe<FloatQueryOperatorInput>;
+  mtimeMs?: Maybe<FloatQueryOperatorInput>;
+  ctimeMs?: Maybe<FloatQueryOperatorInput>;
+  atime?: Maybe<DateQueryOperatorInput>;
+  mtime?: Maybe<DateQueryOperatorInput>;
+  ctime?: Maybe<DateQueryOperatorInput>;
+  birthtime?: Maybe<DateQueryOperatorInput>;
+  birthtimeMs?: Maybe<FloatQueryOperatorInput>;
+  blksize?: Maybe<IntQueryOperatorInput>;
+  blocks?: Maybe<IntQueryOperatorInput>;
+  publicURL?: Maybe<StringQueryOperatorInput>;
+  childrenImageSharp?: Maybe<ImageSharpFilterListInput>;
+  childImageSharp?: Maybe<ImageSharpFilterInput>;
+  childrenMarkdownRemark?: Maybe<MarkdownRemarkFilterListInput>;
+  childMarkdownRemark?: Maybe<MarkdownRemarkFilterInput>;
+  id?: Maybe<StringQueryOperatorInput>;
+  parent?: Maybe<NodeFilterInput>;
+  children?: Maybe<NodeFilterListInput>;
+  internal?: Maybe<InternalFilterInput>;
 };
 
 export type FieldsFilterInput = {
   slug?: Maybe<StringQueryOperatorInput>;
+  collection?: Maybe<StringQueryOperatorInput>;
 };
 
 export type MarkdownHeadingFilterListInput = {
@@ -1470,7 +1564,50 @@ export enum FileFieldsEnum {
   ChildrenMarkdownRemarkFrontmatterTitle = 'childrenMarkdownRemark___frontmatter___title',
   ChildrenMarkdownRemarkFrontmatterDescription = 'childrenMarkdownRemark___frontmatter___description',
   ChildrenMarkdownRemarkFrontmatterDate = 'childrenMarkdownRemark___frontmatter___date',
+  ChildrenMarkdownRemarkFrontmatterSlug = 'childrenMarkdownRemark___frontmatter___slug',
+  ChildrenMarkdownRemarkFrontmatterUpdatedDate = 'childrenMarkdownRemark___frontmatter___updatedDate',
+  ChildrenMarkdownRemarkFrontmatterAuthor = 'childrenMarkdownRemark___frontmatter___author',
+  ChildrenMarkdownRemarkFrontmatterCategory = 'childrenMarkdownRemark___frontmatter___category',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageSourceInstanceName = 'childrenMarkdownRemark___frontmatter___featuredImage___sourceInstanceName',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageAbsolutePath = 'childrenMarkdownRemark___frontmatter___featuredImage___absolutePath',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageRelativePath = 'childrenMarkdownRemark___frontmatter___featuredImage___relativePath',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageExtension = 'childrenMarkdownRemark___frontmatter___featuredImage___extension',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageSize = 'childrenMarkdownRemark___frontmatter___featuredImage___size',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImagePrettySize = 'childrenMarkdownRemark___frontmatter___featuredImage___prettySize',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageModifiedTime = 'childrenMarkdownRemark___frontmatter___featuredImage___modifiedTime',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageAccessTime = 'childrenMarkdownRemark___frontmatter___featuredImage___accessTime',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageChangeTime = 'childrenMarkdownRemark___frontmatter___featuredImage___changeTime',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageBirthTime = 'childrenMarkdownRemark___frontmatter___featuredImage___birthTime',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageRoot = 'childrenMarkdownRemark___frontmatter___featuredImage___root',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageDir = 'childrenMarkdownRemark___frontmatter___featuredImage___dir',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageBase = 'childrenMarkdownRemark___frontmatter___featuredImage___base',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageExt = 'childrenMarkdownRemark___frontmatter___featuredImage___ext',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageName = 'childrenMarkdownRemark___frontmatter___featuredImage___name',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageRelativeDirectory = 'childrenMarkdownRemark___frontmatter___featuredImage___relativeDirectory',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageDev = 'childrenMarkdownRemark___frontmatter___featuredImage___dev',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageMode = 'childrenMarkdownRemark___frontmatter___featuredImage___mode',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageNlink = 'childrenMarkdownRemark___frontmatter___featuredImage___nlink',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageUid = 'childrenMarkdownRemark___frontmatter___featuredImage___uid',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageGid = 'childrenMarkdownRemark___frontmatter___featuredImage___gid',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageRdev = 'childrenMarkdownRemark___frontmatter___featuredImage___rdev',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageIno = 'childrenMarkdownRemark___frontmatter___featuredImage___ino',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageAtimeMs = 'childrenMarkdownRemark___frontmatter___featuredImage___atimeMs',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageMtimeMs = 'childrenMarkdownRemark___frontmatter___featuredImage___mtimeMs',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageCtimeMs = 'childrenMarkdownRemark___frontmatter___featuredImage___ctimeMs',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageAtime = 'childrenMarkdownRemark___frontmatter___featuredImage___atime',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageMtime = 'childrenMarkdownRemark___frontmatter___featuredImage___mtime',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageCtime = 'childrenMarkdownRemark___frontmatter___featuredImage___ctime',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageBirthtime = 'childrenMarkdownRemark___frontmatter___featuredImage___birthtime',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageBirthtimeMs = 'childrenMarkdownRemark___frontmatter___featuredImage___birthtimeMs',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageBlksize = 'childrenMarkdownRemark___frontmatter___featuredImage___blksize',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageBlocks = 'childrenMarkdownRemark___frontmatter___featuredImage___blocks',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImagePublicUrl = 'childrenMarkdownRemark___frontmatter___featuredImage___publicURL',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageChildrenImageSharp = 'childrenMarkdownRemark___frontmatter___featuredImage___childrenImageSharp',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageChildrenMarkdownRemark = 'childrenMarkdownRemark___frontmatter___featuredImage___childrenMarkdownRemark',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageId = 'childrenMarkdownRemark___frontmatter___featuredImage___id',
+  ChildrenMarkdownRemarkFrontmatterFeaturedImageChildren = 'childrenMarkdownRemark___frontmatter___featuredImage___children',
   ChildrenMarkdownRemarkFieldsSlug = 'childrenMarkdownRemark___fields___slug',
+  ChildrenMarkdownRemarkFieldsCollection = 'childrenMarkdownRemark___fields___collection',
   ChildrenMarkdownRemarkExcerpt = 'childrenMarkdownRemark___excerpt',
   ChildrenMarkdownRemarkRawMarkdownBody = 'childrenMarkdownRemark___rawMarkdownBody',
   ChildrenMarkdownRemarkFileAbsolutePath = 'childrenMarkdownRemark___fileAbsolutePath',
@@ -1527,7 +1664,50 @@ export enum FileFieldsEnum {
   ChildMarkdownRemarkFrontmatterTitle = 'childMarkdownRemark___frontmatter___title',
   ChildMarkdownRemarkFrontmatterDescription = 'childMarkdownRemark___frontmatter___description',
   ChildMarkdownRemarkFrontmatterDate = 'childMarkdownRemark___frontmatter___date',
+  ChildMarkdownRemarkFrontmatterSlug = 'childMarkdownRemark___frontmatter___slug',
+  ChildMarkdownRemarkFrontmatterUpdatedDate = 'childMarkdownRemark___frontmatter___updatedDate',
+  ChildMarkdownRemarkFrontmatterAuthor = 'childMarkdownRemark___frontmatter___author',
+  ChildMarkdownRemarkFrontmatterCategory = 'childMarkdownRemark___frontmatter___category',
+  ChildMarkdownRemarkFrontmatterFeaturedImageSourceInstanceName = 'childMarkdownRemark___frontmatter___featuredImage___sourceInstanceName',
+  ChildMarkdownRemarkFrontmatterFeaturedImageAbsolutePath = 'childMarkdownRemark___frontmatter___featuredImage___absolutePath',
+  ChildMarkdownRemarkFrontmatterFeaturedImageRelativePath = 'childMarkdownRemark___frontmatter___featuredImage___relativePath',
+  ChildMarkdownRemarkFrontmatterFeaturedImageExtension = 'childMarkdownRemark___frontmatter___featuredImage___extension',
+  ChildMarkdownRemarkFrontmatterFeaturedImageSize = 'childMarkdownRemark___frontmatter___featuredImage___size',
+  ChildMarkdownRemarkFrontmatterFeaturedImagePrettySize = 'childMarkdownRemark___frontmatter___featuredImage___prettySize',
+  ChildMarkdownRemarkFrontmatterFeaturedImageModifiedTime = 'childMarkdownRemark___frontmatter___featuredImage___modifiedTime',
+  ChildMarkdownRemarkFrontmatterFeaturedImageAccessTime = 'childMarkdownRemark___frontmatter___featuredImage___accessTime',
+  ChildMarkdownRemarkFrontmatterFeaturedImageChangeTime = 'childMarkdownRemark___frontmatter___featuredImage___changeTime',
+  ChildMarkdownRemarkFrontmatterFeaturedImageBirthTime = 'childMarkdownRemark___frontmatter___featuredImage___birthTime',
+  ChildMarkdownRemarkFrontmatterFeaturedImageRoot = 'childMarkdownRemark___frontmatter___featuredImage___root',
+  ChildMarkdownRemarkFrontmatterFeaturedImageDir = 'childMarkdownRemark___frontmatter___featuredImage___dir',
+  ChildMarkdownRemarkFrontmatterFeaturedImageBase = 'childMarkdownRemark___frontmatter___featuredImage___base',
+  ChildMarkdownRemarkFrontmatterFeaturedImageExt = 'childMarkdownRemark___frontmatter___featuredImage___ext',
+  ChildMarkdownRemarkFrontmatterFeaturedImageName = 'childMarkdownRemark___frontmatter___featuredImage___name',
+  ChildMarkdownRemarkFrontmatterFeaturedImageRelativeDirectory = 'childMarkdownRemark___frontmatter___featuredImage___relativeDirectory',
+  ChildMarkdownRemarkFrontmatterFeaturedImageDev = 'childMarkdownRemark___frontmatter___featuredImage___dev',
+  ChildMarkdownRemarkFrontmatterFeaturedImageMode = 'childMarkdownRemark___frontmatter___featuredImage___mode',
+  ChildMarkdownRemarkFrontmatterFeaturedImageNlink = 'childMarkdownRemark___frontmatter___featuredImage___nlink',
+  ChildMarkdownRemarkFrontmatterFeaturedImageUid = 'childMarkdownRemark___frontmatter___featuredImage___uid',
+  ChildMarkdownRemarkFrontmatterFeaturedImageGid = 'childMarkdownRemark___frontmatter___featuredImage___gid',
+  ChildMarkdownRemarkFrontmatterFeaturedImageRdev = 'childMarkdownRemark___frontmatter___featuredImage___rdev',
+  ChildMarkdownRemarkFrontmatterFeaturedImageIno = 'childMarkdownRemark___frontmatter___featuredImage___ino',
+  ChildMarkdownRemarkFrontmatterFeaturedImageAtimeMs = 'childMarkdownRemark___frontmatter___featuredImage___atimeMs',
+  ChildMarkdownRemarkFrontmatterFeaturedImageMtimeMs = 'childMarkdownRemark___frontmatter___featuredImage___mtimeMs',
+  ChildMarkdownRemarkFrontmatterFeaturedImageCtimeMs = 'childMarkdownRemark___frontmatter___featuredImage___ctimeMs',
+  ChildMarkdownRemarkFrontmatterFeaturedImageAtime = 'childMarkdownRemark___frontmatter___featuredImage___atime',
+  ChildMarkdownRemarkFrontmatterFeaturedImageMtime = 'childMarkdownRemark___frontmatter___featuredImage___mtime',
+  ChildMarkdownRemarkFrontmatterFeaturedImageCtime = 'childMarkdownRemark___frontmatter___featuredImage___ctime',
+  ChildMarkdownRemarkFrontmatterFeaturedImageBirthtime = 'childMarkdownRemark___frontmatter___featuredImage___birthtime',
+  ChildMarkdownRemarkFrontmatterFeaturedImageBirthtimeMs = 'childMarkdownRemark___frontmatter___featuredImage___birthtimeMs',
+  ChildMarkdownRemarkFrontmatterFeaturedImageBlksize = 'childMarkdownRemark___frontmatter___featuredImage___blksize',
+  ChildMarkdownRemarkFrontmatterFeaturedImageBlocks = 'childMarkdownRemark___frontmatter___featuredImage___blocks',
+  ChildMarkdownRemarkFrontmatterFeaturedImagePublicUrl = 'childMarkdownRemark___frontmatter___featuredImage___publicURL',
+  ChildMarkdownRemarkFrontmatterFeaturedImageChildrenImageSharp = 'childMarkdownRemark___frontmatter___featuredImage___childrenImageSharp',
+  ChildMarkdownRemarkFrontmatterFeaturedImageChildrenMarkdownRemark = 'childMarkdownRemark___frontmatter___featuredImage___childrenMarkdownRemark',
+  ChildMarkdownRemarkFrontmatterFeaturedImageId = 'childMarkdownRemark___frontmatter___featuredImage___id',
+  ChildMarkdownRemarkFrontmatterFeaturedImageChildren = 'childMarkdownRemark___frontmatter___featuredImage___children',
   ChildMarkdownRemarkFieldsSlug = 'childMarkdownRemark___fields___slug',
+  ChildMarkdownRemarkFieldsCollection = 'childMarkdownRemark___fields___collection',
   ChildMarkdownRemarkExcerpt = 'childMarkdownRemark___excerpt',
   ChildMarkdownRemarkRawMarkdownBody = 'childMarkdownRemark___rawMarkdownBody',
   ChildMarkdownRemarkFileAbsolutePath = 'childMarkdownRemark___fileAbsolutePath',
@@ -1676,51 +1856,6 @@ export type FileGroupConnection = {
   pageInfo: PageInfo;
   field: Scalars['String'];
   fieldValue?: Maybe<Scalars['String']>;
-};
-
-export type FileFilterInput = {
-  sourceInstanceName?: Maybe<StringQueryOperatorInput>;
-  absolutePath?: Maybe<StringQueryOperatorInput>;
-  relativePath?: Maybe<StringQueryOperatorInput>;
-  extension?: Maybe<StringQueryOperatorInput>;
-  size?: Maybe<IntQueryOperatorInput>;
-  prettySize?: Maybe<StringQueryOperatorInput>;
-  modifiedTime?: Maybe<DateQueryOperatorInput>;
-  accessTime?: Maybe<DateQueryOperatorInput>;
-  changeTime?: Maybe<DateQueryOperatorInput>;
-  birthTime?: Maybe<DateQueryOperatorInput>;
-  root?: Maybe<StringQueryOperatorInput>;
-  dir?: Maybe<StringQueryOperatorInput>;
-  base?: Maybe<StringQueryOperatorInput>;
-  ext?: Maybe<StringQueryOperatorInput>;
-  name?: Maybe<StringQueryOperatorInput>;
-  relativeDirectory?: Maybe<StringQueryOperatorInput>;
-  dev?: Maybe<IntQueryOperatorInput>;
-  mode?: Maybe<IntQueryOperatorInput>;
-  nlink?: Maybe<IntQueryOperatorInput>;
-  uid?: Maybe<IntQueryOperatorInput>;
-  gid?: Maybe<IntQueryOperatorInput>;
-  rdev?: Maybe<IntQueryOperatorInput>;
-  ino?: Maybe<FloatQueryOperatorInput>;
-  atimeMs?: Maybe<FloatQueryOperatorInput>;
-  mtimeMs?: Maybe<FloatQueryOperatorInput>;
-  ctimeMs?: Maybe<FloatQueryOperatorInput>;
-  atime?: Maybe<DateQueryOperatorInput>;
-  mtime?: Maybe<DateQueryOperatorInput>;
-  ctime?: Maybe<DateQueryOperatorInput>;
-  birthtime?: Maybe<DateQueryOperatorInput>;
-  birthtimeMs?: Maybe<FloatQueryOperatorInput>;
-  blksize?: Maybe<IntQueryOperatorInput>;
-  blocks?: Maybe<IntQueryOperatorInput>;
-  publicURL?: Maybe<StringQueryOperatorInput>;
-  childrenImageSharp?: Maybe<ImageSharpFilterListInput>;
-  childImageSharp?: Maybe<ImageSharpFilterInput>;
-  childrenMarkdownRemark?: Maybe<MarkdownRemarkFilterListInput>;
-  childMarkdownRemark?: Maybe<MarkdownRemarkFilterInput>;
-  id?: Maybe<StringQueryOperatorInput>;
-  parent?: Maybe<NodeFilterInput>;
-  children?: Maybe<NodeFilterListInput>;
-  internal?: Maybe<InternalFilterInput>;
 };
 
 export type FileSortInput = {
@@ -2115,6 +2250,7 @@ export type SiteSortInput = {
 
 export type SitePageContextFilterInput = {
   id?: Maybe<StringQueryOperatorInput>;
+  slug?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SitePluginFilterInput = {
@@ -2144,6 +2280,16 @@ export type SitePluginPluginOptionsFilterInput = {
   failOnError?: Maybe<BooleanQueryOperatorInput>;
   path?: Maybe<StringQueryOperatorInput>;
   name?: Maybe<StringQueryOperatorInput>;
+  width?: Maybe<IntQueryOperatorInput>;
+  ratio?: Maybe<FloatQueryOperatorInput>;
+  height?: Maybe<IntQueryOperatorInput>;
+  related?: Maybe<BooleanQueryOperatorInput>;
+  noIframeBorder?: Maybe<BooleanQueryOperatorInput>;
+  loadingStrategy?: Maybe<StringQueryOperatorInput>;
+  urlOverrides?: Maybe<SitePluginPluginOptionsUrlOverridesFilterListInput>;
+  containerClass?: Maybe<StringQueryOperatorInput>;
+  iframeId?: Maybe<BooleanQueryOperatorInput>;
+  wrapperStyle?: Maybe<StringQueryOperatorInput>;
   maxWidth?: Maybe<IntQueryOperatorInput>;
   linkImagesToOriginal?: Maybe<BooleanQueryOperatorInput>;
   showCaptions?: Maybe<BooleanQueryOperatorInput>;
@@ -2156,7 +2302,6 @@ export type SitePluginPluginOptionsFilterInput = {
   loading?: Maybe<StringQueryOperatorInput>;
   disableBgImageOnAlpha?: Maybe<BooleanQueryOperatorInput>;
   disableBgImage?: Maybe<BooleanQueryOperatorInput>;
-  wrapperStyle?: Maybe<StringQueryOperatorInput>;
   fonts?: Maybe<StringQueryOperatorInput>;
   display?: Maybe<StringQueryOperatorInput>;
   pathCheck?: Maybe<BooleanQueryOperatorInput>;
@@ -2178,6 +2323,16 @@ export type SitePluginPluginOptionsPluginsFilterInput = {
 };
 
 export type SitePluginPluginOptionsPluginsPluginOptionsFilterInput = {
+  width?: Maybe<IntQueryOperatorInput>;
+  ratio?: Maybe<FloatQueryOperatorInput>;
+  height?: Maybe<IntQueryOperatorInput>;
+  related?: Maybe<BooleanQueryOperatorInput>;
+  noIframeBorder?: Maybe<BooleanQueryOperatorInput>;
+  loadingStrategy?: Maybe<StringQueryOperatorInput>;
+  urlOverrides?: Maybe<SitePluginPluginOptionsPluginsPluginOptionsUrlOverridesFilterListInput>;
+  containerClass?: Maybe<StringQueryOperatorInput>;
+  iframeId?: Maybe<BooleanQueryOperatorInput>;
+  wrapperStyle?: Maybe<StringQueryOperatorInput>;
   maxWidth?: Maybe<IntQueryOperatorInput>;
   linkImagesToOriginal?: Maybe<BooleanQueryOperatorInput>;
   showCaptions?: Maybe<BooleanQueryOperatorInput>;
@@ -2190,7 +2345,22 @@ export type SitePluginPluginOptionsPluginsPluginOptionsFilterInput = {
   loading?: Maybe<StringQueryOperatorInput>;
   disableBgImageOnAlpha?: Maybe<BooleanQueryOperatorInput>;
   disableBgImage?: Maybe<BooleanQueryOperatorInput>;
-  wrapperStyle?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsPluginsPluginOptionsUrlOverridesFilterListInput = {
+  elemMatch?: Maybe<SitePluginPluginOptionsPluginsPluginOptionsUrlOverridesFilterInput>;
+};
+
+export type SitePluginPluginOptionsPluginsPluginOptionsUrlOverridesFilterInput = {
+  id?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsUrlOverridesFilterListInput = {
+  elemMatch?: Maybe<SitePluginPluginOptionsUrlOverridesFilterInput>;
+};
+
+export type SitePluginPluginOptionsUrlOverridesFilterInput = {
+  id?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SitePluginPackageJsonFilterInput = {
@@ -2356,6 +2526,7 @@ export enum SitePageFieldsEnum {
   InternalType = 'internal___type',
   IsCreatedByStatefulCreatePages = 'isCreatedByStatefulCreatePages',
   ContextId = 'context___id',
+  ContextSlug = 'context___slug',
   PluginCreatorId = 'pluginCreator___id',
   PluginCreatorParentId = 'pluginCreator___parent___id',
   PluginCreatorParentParentId = 'pluginCreator___parent___parent___id',
@@ -2414,6 +2585,17 @@ export enum SitePageFieldsEnum {
   PluginCreatorPluginOptionsFailOnError = 'pluginCreator___pluginOptions___failOnError',
   PluginCreatorPluginOptionsPath = 'pluginCreator___pluginOptions___path',
   PluginCreatorPluginOptionsName = 'pluginCreator___pluginOptions___name',
+  PluginCreatorPluginOptionsWidth = 'pluginCreator___pluginOptions___width',
+  PluginCreatorPluginOptionsRatio = 'pluginCreator___pluginOptions___ratio',
+  PluginCreatorPluginOptionsHeight = 'pluginCreator___pluginOptions___height',
+  PluginCreatorPluginOptionsRelated = 'pluginCreator___pluginOptions___related',
+  PluginCreatorPluginOptionsNoIframeBorder = 'pluginCreator___pluginOptions___noIframeBorder',
+  PluginCreatorPluginOptionsLoadingStrategy = 'pluginCreator___pluginOptions___loadingStrategy',
+  PluginCreatorPluginOptionsUrlOverrides = 'pluginCreator___pluginOptions___urlOverrides',
+  PluginCreatorPluginOptionsUrlOverridesId = 'pluginCreator___pluginOptions___urlOverrides___id',
+  PluginCreatorPluginOptionsContainerClass = 'pluginCreator___pluginOptions___containerClass',
+  PluginCreatorPluginOptionsIframeId = 'pluginCreator___pluginOptions___iframeId',
+  PluginCreatorPluginOptionsWrapperStyle = 'pluginCreator___pluginOptions___wrapperStyle',
   PluginCreatorPluginOptionsMaxWidth = 'pluginCreator___pluginOptions___maxWidth',
   PluginCreatorPluginOptionsLinkImagesToOriginal = 'pluginCreator___pluginOptions___linkImagesToOriginal',
   PluginCreatorPluginOptionsShowCaptions = 'pluginCreator___pluginOptions___showCaptions',
@@ -2426,7 +2608,6 @@ export enum SitePageFieldsEnum {
   PluginCreatorPluginOptionsLoading = 'pluginCreator___pluginOptions___loading',
   PluginCreatorPluginOptionsDisableBgImageOnAlpha = 'pluginCreator___pluginOptions___disableBgImageOnAlpha',
   PluginCreatorPluginOptionsDisableBgImage = 'pluginCreator___pluginOptions___disableBgImage',
-  PluginCreatorPluginOptionsWrapperStyle = 'pluginCreator___pluginOptions___wrapperStyle',
   PluginCreatorPluginOptionsFonts = 'pluginCreator___pluginOptions___fonts',
   PluginCreatorPluginOptionsDisplay = 'pluginCreator___pluginOptions___display',
   PluginCreatorPluginOptionsPathCheck = 'pluginCreator___pluginOptions___pathCheck',
@@ -2685,7 +2866,90 @@ export enum MarkdownRemarkFieldsEnum {
   FrontmatterTitle = 'frontmatter___title',
   FrontmatterDescription = 'frontmatter___description',
   FrontmatterDate = 'frontmatter___date',
+  FrontmatterSlug = 'frontmatter___slug',
+  FrontmatterUpdatedDate = 'frontmatter___updatedDate',
+  FrontmatterAuthor = 'frontmatter___author',
+  FrontmatterCategory = 'frontmatter___category',
+  FrontmatterFeaturedImageSourceInstanceName = 'frontmatter___featuredImage___sourceInstanceName',
+  FrontmatterFeaturedImageAbsolutePath = 'frontmatter___featuredImage___absolutePath',
+  FrontmatterFeaturedImageRelativePath = 'frontmatter___featuredImage___relativePath',
+  FrontmatterFeaturedImageExtension = 'frontmatter___featuredImage___extension',
+  FrontmatterFeaturedImageSize = 'frontmatter___featuredImage___size',
+  FrontmatterFeaturedImagePrettySize = 'frontmatter___featuredImage___prettySize',
+  FrontmatterFeaturedImageModifiedTime = 'frontmatter___featuredImage___modifiedTime',
+  FrontmatterFeaturedImageAccessTime = 'frontmatter___featuredImage___accessTime',
+  FrontmatterFeaturedImageChangeTime = 'frontmatter___featuredImage___changeTime',
+  FrontmatterFeaturedImageBirthTime = 'frontmatter___featuredImage___birthTime',
+  FrontmatterFeaturedImageRoot = 'frontmatter___featuredImage___root',
+  FrontmatterFeaturedImageDir = 'frontmatter___featuredImage___dir',
+  FrontmatterFeaturedImageBase = 'frontmatter___featuredImage___base',
+  FrontmatterFeaturedImageExt = 'frontmatter___featuredImage___ext',
+  FrontmatterFeaturedImageName = 'frontmatter___featuredImage___name',
+  FrontmatterFeaturedImageRelativeDirectory = 'frontmatter___featuredImage___relativeDirectory',
+  FrontmatterFeaturedImageDev = 'frontmatter___featuredImage___dev',
+  FrontmatterFeaturedImageMode = 'frontmatter___featuredImage___mode',
+  FrontmatterFeaturedImageNlink = 'frontmatter___featuredImage___nlink',
+  FrontmatterFeaturedImageUid = 'frontmatter___featuredImage___uid',
+  FrontmatterFeaturedImageGid = 'frontmatter___featuredImage___gid',
+  FrontmatterFeaturedImageRdev = 'frontmatter___featuredImage___rdev',
+  FrontmatterFeaturedImageIno = 'frontmatter___featuredImage___ino',
+  FrontmatterFeaturedImageAtimeMs = 'frontmatter___featuredImage___atimeMs',
+  FrontmatterFeaturedImageMtimeMs = 'frontmatter___featuredImage___mtimeMs',
+  FrontmatterFeaturedImageCtimeMs = 'frontmatter___featuredImage___ctimeMs',
+  FrontmatterFeaturedImageAtime = 'frontmatter___featuredImage___atime',
+  FrontmatterFeaturedImageMtime = 'frontmatter___featuredImage___mtime',
+  FrontmatterFeaturedImageCtime = 'frontmatter___featuredImage___ctime',
+  FrontmatterFeaturedImageBirthtime = 'frontmatter___featuredImage___birthtime',
+  FrontmatterFeaturedImageBirthtimeMs = 'frontmatter___featuredImage___birthtimeMs',
+  FrontmatterFeaturedImageBlksize = 'frontmatter___featuredImage___blksize',
+  FrontmatterFeaturedImageBlocks = 'frontmatter___featuredImage___blocks',
+  FrontmatterFeaturedImagePublicUrl = 'frontmatter___featuredImage___publicURL',
+  FrontmatterFeaturedImageChildrenImageSharp = 'frontmatter___featuredImage___childrenImageSharp',
+  FrontmatterFeaturedImageChildrenImageSharpGatsbyImageData = 'frontmatter___featuredImage___childrenImageSharp___gatsbyImageData',
+  FrontmatterFeaturedImageChildrenImageSharpId = 'frontmatter___featuredImage___childrenImageSharp___id',
+  FrontmatterFeaturedImageChildrenImageSharpChildren = 'frontmatter___featuredImage___childrenImageSharp___children',
+  FrontmatterFeaturedImageChildImageSharpGatsbyImageData = 'frontmatter___featuredImage___childImageSharp___gatsbyImageData',
+  FrontmatterFeaturedImageChildImageSharpId = 'frontmatter___featuredImage___childImageSharp___id',
+  FrontmatterFeaturedImageChildImageSharpChildren = 'frontmatter___featuredImage___childImageSharp___children',
+  FrontmatterFeaturedImageChildrenMarkdownRemark = 'frontmatter___featuredImage___childrenMarkdownRemark',
+  FrontmatterFeaturedImageChildrenMarkdownRemarkId = 'frontmatter___featuredImage___childrenMarkdownRemark___id',
+  FrontmatterFeaturedImageChildrenMarkdownRemarkExcerpt = 'frontmatter___featuredImage___childrenMarkdownRemark___excerpt',
+  FrontmatterFeaturedImageChildrenMarkdownRemarkRawMarkdownBody = 'frontmatter___featuredImage___childrenMarkdownRemark___rawMarkdownBody',
+  FrontmatterFeaturedImageChildrenMarkdownRemarkFileAbsolutePath = 'frontmatter___featuredImage___childrenMarkdownRemark___fileAbsolutePath',
+  FrontmatterFeaturedImageChildrenMarkdownRemarkHtml = 'frontmatter___featuredImage___childrenMarkdownRemark___html',
+  FrontmatterFeaturedImageChildrenMarkdownRemarkHtmlAst = 'frontmatter___featuredImage___childrenMarkdownRemark___htmlAst',
+  FrontmatterFeaturedImageChildrenMarkdownRemarkExcerptAst = 'frontmatter___featuredImage___childrenMarkdownRemark___excerptAst',
+  FrontmatterFeaturedImageChildrenMarkdownRemarkHeadings = 'frontmatter___featuredImage___childrenMarkdownRemark___headings',
+  FrontmatterFeaturedImageChildrenMarkdownRemarkTimeToRead = 'frontmatter___featuredImage___childrenMarkdownRemark___timeToRead',
+  FrontmatterFeaturedImageChildrenMarkdownRemarkTableOfContents = 'frontmatter___featuredImage___childrenMarkdownRemark___tableOfContents',
+  FrontmatterFeaturedImageChildrenMarkdownRemarkChildren = 'frontmatter___featuredImage___childrenMarkdownRemark___children',
+  FrontmatterFeaturedImageChildMarkdownRemarkId = 'frontmatter___featuredImage___childMarkdownRemark___id',
+  FrontmatterFeaturedImageChildMarkdownRemarkExcerpt = 'frontmatter___featuredImage___childMarkdownRemark___excerpt',
+  FrontmatterFeaturedImageChildMarkdownRemarkRawMarkdownBody = 'frontmatter___featuredImage___childMarkdownRemark___rawMarkdownBody',
+  FrontmatterFeaturedImageChildMarkdownRemarkFileAbsolutePath = 'frontmatter___featuredImage___childMarkdownRemark___fileAbsolutePath',
+  FrontmatterFeaturedImageChildMarkdownRemarkHtml = 'frontmatter___featuredImage___childMarkdownRemark___html',
+  FrontmatterFeaturedImageChildMarkdownRemarkHtmlAst = 'frontmatter___featuredImage___childMarkdownRemark___htmlAst',
+  FrontmatterFeaturedImageChildMarkdownRemarkExcerptAst = 'frontmatter___featuredImage___childMarkdownRemark___excerptAst',
+  FrontmatterFeaturedImageChildMarkdownRemarkHeadings = 'frontmatter___featuredImage___childMarkdownRemark___headings',
+  FrontmatterFeaturedImageChildMarkdownRemarkTimeToRead = 'frontmatter___featuredImage___childMarkdownRemark___timeToRead',
+  FrontmatterFeaturedImageChildMarkdownRemarkTableOfContents = 'frontmatter___featuredImage___childMarkdownRemark___tableOfContents',
+  FrontmatterFeaturedImageChildMarkdownRemarkChildren = 'frontmatter___featuredImage___childMarkdownRemark___children',
+  FrontmatterFeaturedImageId = 'frontmatter___featuredImage___id',
+  FrontmatterFeaturedImageParentId = 'frontmatter___featuredImage___parent___id',
+  FrontmatterFeaturedImageParentChildren = 'frontmatter___featuredImage___parent___children',
+  FrontmatterFeaturedImageChildren = 'frontmatter___featuredImage___children',
+  FrontmatterFeaturedImageChildrenId = 'frontmatter___featuredImage___children___id',
+  FrontmatterFeaturedImageChildrenChildren = 'frontmatter___featuredImage___children___children',
+  FrontmatterFeaturedImageInternalContent = 'frontmatter___featuredImage___internal___content',
+  FrontmatterFeaturedImageInternalContentDigest = 'frontmatter___featuredImage___internal___contentDigest',
+  FrontmatterFeaturedImageInternalDescription = 'frontmatter___featuredImage___internal___description',
+  FrontmatterFeaturedImageInternalFieldOwners = 'frontmatter___featuredImage___internal___fieldOwners',
+  FrontmatterFeaturedImageInternalIgnoreType = 'frontmatter___featuredImage___internal___ignoreType',
+  FrontmatterFeaturedImageInternalMediaType = 'frontmatter___featuredImage___internal___mediaType',
+  FrontmatterFeaturedImageInternalOwner = 'frontmatter___featuredImage___internal___owner',
+  FrontmatterFeaturedImageInternalType = 'frontmatter___featuredImage___internal___type',
   FieldsSlug = 'fields___slug',
+  FieldsCollection = 'fields___collection',
   Excerpt = 'excerpt',
   RawMarkdownBody = 'rawMarkdownBody',
   FileAbsolutePath = 'fileAbsolutePath',
@@ -3069,6 +3333,16 @@ export enum SitePluginFieldsEnum {
   PluginOptionsPluginsId = 'pluginOptions___plugins___id',
   PluginOptionsPluginsName = 'pluginOptions___plugins___name',
   PluginOptionsPluginsVersion = 'pluginOptions___plugins___version',
+  PluginOptionsPluginsPluginOptionsWidth = 'pluginOptions___plugins___pluginOptions___width',
+  PluginOptionsPluginsPluginOptionsRatio = 'pluginOptions___plugins___pluginOptions___ratio',
+  PluginOptionsPluginsPluginOptionsHeight = 'pluginOptions___plugins___pluginOptions___height',
+  PluginOptionsPluginsPluginOptionsRelated = 'pluginOptions___plugins___pluginOptions___related',
+  PluginOptionsPluginsPluginOptionsNoIframeBorder = 'pluginOptions___plugins___pluginOptions___noIframeBorder',
+  PluginOptionsPluginsPluginOptionsLoadingStrategy = 'pluginOptions___plugins___pluginOptions___loadingStrategy',
+  PluginOptionsPluginsPluginOptionsUrlOverrides = 'pluginOptions___plugins___pluginOptions___urlOverrides',
+  PluginOptionsPluginsPluginOptionsContainerClass = 'pluginOptions___plugins___pluginOptions___containerClass',
+  PluginOptionsPluginsPluginOptionsIframeId = 'pluginOptions___plugins___pluginOptions___iframeId',
+  PluginOptionsPluginsPluginOptionsWrapperStyle = 'pluginOptions___plugins___pluginOptions___wrapperStyle',
   PluginOptionsPluginsPluginOptionsMaxWidth = 'pluginOptions___plugins___pluginOptions___maxWidth',
   PluginOptionsPluginsPluginOptionsLinkImagesToOriginal = 'pluginOptions___plugins___pluginOptions___linkImagesToOriginal',
   PluginOptionsPluginsPluginOptionsShowCaptions = 'pluginOptions___plugins___pluginOptions___showCaptions',
@@ -3081,7 +3355,6 @@ export enum SitePluginFieldsEnum {
   PluginOptionsPluginsPluginOptionsLoading = 'pluginOptions___plugins___pluginOptions___loading',
   PluginOptionsPluginsPluginOptionsDisableBgImageOnAlpha = 'pluginOptions___plugins___pluginOptions___disableBgImageOnAlpha',
   PluginOptionsPluginsPluginOptionsDisableBgImage = 'pluginOptions___plugins___pluginOptions___disableBgImage',
-  PluginOptionsPluginsPluginOptionsWrapperStyle = 'pluginOptions___plugins___pluginOptions___wrapperStyle',
   PluginOptionsPluginsNodeApIs = 'pluginOptions___plugins___nodeAPIs',
   PluginOptionsPluginsBrowserApIs = 'pluginOptions___plugins___browserAPIs',
   PluginOptionsPluginsPluginFilepath = 'pluginOptions___plugins___pluginFilepath',
@@ -3094,6 +3367,17 @@ export enum SitePluginFieldsEnum {
   PluginOptionsFailOnError = 'pluginOptions___failOnError',
   PluginOptionsPath = 'pluginOptions___path',
   PluginOptionsName = 'pluginOptions___name',
+  PluginOptionsWidth = 'pluginOptions___width',
+  PluginOptionsRatio = 'pluginOptions___ratio',
+  PluginOptionsHeight = 'pluginOptions___height',
+  PluginOptionsRelated = 'pluginOptions___related',
+  PluginOptionsNoIframeBorder = 'pluginOptions___noIframeBorder',
+  PluginOptionsLoadingStrategy = 'pluginOptions___loadingStrategy',
+  PluginOptionsUrlOverrides = 'pluginOptions___urlOverrides',
+  PluginOptionsUrlOverridesId = 'pluginOptions___urlOverrides___id',
+  PluginOptionsContainerClass = 'pluginOptions___containerClass',
+  PluginOptionsIframeId = 'pluginOptions___iframeId',
+  PluginOptionsWrapperStyle = 'pluginOptions___wrapperStyle',
   PluginOptionsMaxWidth = 'pluginOptions___maxWidth',
   PluginOptionsLinkImagesToOriginal = 'pluginOptions___linkImagesToOriginal',
   PluginOptionsShowCaptions = 'pluginOptions___showCaptions',
@@ -3106,7 +3390,6 @@ export enum SitePluginFieldsEnum {
   PluginOptionsLoading = 'pluginOptions___loading',
   PluginOptionsDisableBgImageOnAlpha = 'pluginOptions___disableBgImageOnAlpha',
   PluginOptionsDisableBgImage = 'pluginOptions___disableBgImage',
-  PluginOptionsWrapperStyle = 'pluginOptions___wrapperStyle',
   PluginOptionsFonts = 'pluginOptions___fonts',
   PluginOptionsDisplay = 'pluginOptions___display',
   PluginOptionsPathCheck = 'pluginOptions___pathCheck',
@@ -3162,7 +3445,14 @@ export type PostsQuery = (
         & Pick<Fields, 'slug'>
       )>, frontmatter?: Maybe<(
         { __typename?: 'Frontmatter' }
-        & Pick<Frontmatter, 'date' | 'title' | 'description'>
+        & Pick<Frontmatter, 'date' | 'title' | 'description' | 'author' | 'category'>
+        & { featuredImage?: Maybe<(
+          { __typename?: 'File' }
+          & { childImageSharp?: Maybe<(
+            { __typename?: 'ImageSharp' }
+            & Pick<ImageSharp, 'gatsbyImageData'>
+          )> }
+        )> }
       )> }
     )> }
   ) }
@@ -3188,7 +3478,15 @@ export type BlogPostBySlugQuery = (
     & Pick<MarkdownRemark, 'id' | 'excerpt' | 'htmlAst'>
     & { frontmatter?: Maybe<(
       { __typename?: 'Frontmatter' }
-      & Pick<Frontmatter, 'title' | 'date' | 'description'>
+      & Pick<Frontmatter, 'title' | 'date' | 'description' | 'author'>
+      & { rawDate: Frontmatter['date'] }
+      & { featuredImage?: Maybe<(
+        { __typename?: 'File' }
+        & { childImageSharp?: Maybe<(
+          { __typename?: 'ImageSharp' }
+          & Pick<ImageSharp, 'gatsbyImageData'>
+        )> }
+      )> }
     )> }
   )>, previous?: Maybe<(
     { __typename?: 'MarkdownRemark' }
@@ -3207,6 +3505,29 @@ export type BlogPostBySlugQuery = (
     )>, frontmatter?: Maybe<(
       { __typename?: 'Frontmatter' }
       & Pick<Frontmatter, 'title'>
+    )> }
+  )> }
+);
+
+export type ResourcePageBySlugQueryVariables = Exact<{
+  id: Scalars['String'];
+}>;
+
+
+export type ResourcePageBySlugQuery = (
+  { __typename?: 'Query' }
+  & { site?: Maybe<(
+    { __typename?: 'Site' }
+    & { siteMetadata?: Maybe<(
+      { __typename?: 'SiteSiteMetadata' }
+      & Pick<SiteSiteMetadata, 'title'>
+    )> }
+  )>, markdownRemark?: Maybe<(
+    { __typename?: 'MarkdownRemark' }
+    & Pick<MarkdownRemark, 'id' | 'excerpt' | 'htmlAst'>
+    & { frontmatter?: Maybe<(
+      { __typename?: 'Frontmatter' }
+      & Pick<Frontmatter, 'title' | 'updatedDate' | 'description'>
     )> }
   )> }
 );

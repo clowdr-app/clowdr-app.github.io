@@ -13,6 +13,7 @@ import {
 import { Link as GatsbyLink } from "gatsby";
 import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
+import { menuItems } from "../misc/menu-items";
 import ArrangeADemoButton from "./ArrangeADemoButton";
 import Footer from "./Footer";
 
@@ -34,8 +35,13 @@ export function Layout({
         py={4}
         shadow="md"
       >
-        <Flex alignItems="center" justifyContent="space-between" mx="auto">
-          <Flex>
+        <Flex
+          alignItems="center"
+          justifyContent="space-around"
+          mx="auto"
+          flexWrap="wrap"
+        >
+          <Flex justifyContent="center">
             <chakra.a
               _hover={{ color: "white" }}
               href="/"
@@ -48,7 +54,14 @@ export function Layout({
               </chakra.h1>
             </chakra.a>
           </Flex>
-          <HStack display="flex" alignItems="center" spacing={1}>
+          <HStack
+            display="flex"
+            flexWrap="wrap"
+            justifyContent="right"
+            ml={4}
+            alignItems="center"
+            spacing={1}
+          >
             <HStack
               spacing={6}
               mr={4}
@@ -56,24 +69,11 @@ export function Layout({
               color="brand.500"
               display={{ base: "none", md: "inline-flex" }}
             >
-              <Link as={GatsbyLink} to="/features">
-                Features
-              </Link>
-              <Link as={GatsbyLink} to="/pricing">
-                Pricing
-              </Link>
-              <Link as={GatsbyLink} to="/about">
-                About
-              </Link>
-              <Link as={GatsbyLink} to="/jobs">
-                Jobs
-              </Link>
-              <Link as={GatsbyLink} to="/feedback">
-                Feedback
-              </Link>
-              <Link as={GatsbyLink} to="/faq">
-                FAQ
-              </Link>
+              {menuItems.map((menuItem, i) => (
+                <Link as={GatsbyLink} to={menuItem.link} key={i}>
+                  {menuItem.text}
+                </Link>
+              ))}
               <ArrangeADemoButton />
             </HStack>
             <Box display={{ base: "inline-flex", md: "none" }}>
@@ -108,24 +108,11 @@ export function Layout({
                   onClick={mobileNav.onClose}
                 />
 
-                <Link as={GatsbyLink} to="/features" w="full">
-                  Features
-                </Link>
-                <Link as={GatsbyLink} to="/pricing" w="full">
-                  Pricing
-                </Link>
-                <Link as={GatsbyLink} to="/about" w="full">
-                  About
-                </Link>
-                <Link as={GatsbyLink} to="/jobs" w="full">
-                  Jobs
-                </Link>
-                <Link as={GatsbyLink} to="/feedback" w="full">
-                  Feedback
-                </Link>
-                <Link as={GatsbyLink} to="/faq" w="full">
-                  FAQ
-                </Link>
+                {menuItems.map((menuItem, i) => (
+                  <Link as={GatsbyLink} to={menuItem.link} w="full" key={i}>
+                    {menuItem.text}
+                  </Link>
+                ))}
                 <ArrangeADemoButton />
               </VStack>
             </Box>
