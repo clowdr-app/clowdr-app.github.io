@@ -49,3 +49,5 @@ fields:
   name: featuredImage
   label: featuredImage
   description: Path to the main image for the blog post.
+pages:
+- content/blog/test-post/test-post-please-ignore.md
