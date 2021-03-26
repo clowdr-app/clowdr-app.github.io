@@ -5,7 +5,7 @@ title: Test post, please ignore
 description: A test post
 author: Ross Gardiner 2.0
 slug: test-post-please-ignore
-featuredImage: ''
+featuredImage: "/images/char_stilton.png"
 
 ---
 Test post, please ignore.
