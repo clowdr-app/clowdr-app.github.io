@@ -167,8 +167,8 @@ export default function About() {
             it to evolve to meet the needs of{" "}
             <a href="https://icfp20.sigplan.org">ICFP</a>,{" "}
             <a href="https://cscw.acm.org/2020/">CSCW</a>,{" "}
-            <a href="https://https://2020.splashcon.org/">SPLASH</a>, and
-            numerous other conferences throughout the summer and autumn.
+            <a href="https://2020.splashcon.org/">SPLASH</a>, and numerous other
+            conferences throughout the summer and autumn.
           </Text>
           <Text>
             The platform developed dramatically over the first few months,

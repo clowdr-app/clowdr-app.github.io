@@ -112,7 +112,9 @@ export default function Pricing() {
                   alignItems="start"
                   role="list"
                 >
-                  <Feature role="listitem">All software features</Feature>
+                  <Feature role="listitem">
+                    <Link href="#all-features">All software features</Link>
+                  </Feature>
                   <Feature role="listitem">
                     If you have sufficient tech know-how, you can run our
                     open-source software on your own hosting services!
@@ -200,7 +202,9 @@ export default function Pricing() {
                   alignItems="start"
                   role="list"
                 >
-                  <Feature role="listitem">All software features</Feature>
+                  <Feature role="listitem">
+                    <Link href="#all-features">All software features</Link>
+                  </Feature>
                   <Feature role="listitem">Standard tech support</Feature>
                   <Feature role="listitem">Up to three organisers</Feature>
                 </VStack>
@@ -360,7 +364,9 @@ export default function Pricing() {
                   alignItems="start"
                   role="list"
                 >
-                  <Feature role="listitem">All software features</Feature>
+                  <Feature role="listitem">
+                    <Link href="#all-features">All software features</Link>
+                  </Feature>
                   <Feature role="listitem">
                     Dedicated tech support for attendees{" "}
                     <Badge color="green" variant="outline" ml={2}>
@@ -459,7 +465,9 @@ export default function Pricing() {
                   alignItems="start"
                   role="list"
                 >
-                  <Feature role="listitem">All software features</Feature>
+                  <Feature role="listitem">
+                    <Link href="#all-features">All software features</Link>
+                  </Feature>
                   <Feature icon="neutral" role="listitem">
                     We do not currently offer conference hosting for free or
                     below-cost
@@ -505,7 +513,7 @@ export default function Pricing() {
           bg="brand.800"
           alignItems="center"
         >
-          <Heading as="h2" pt={12}>
+          <Heading as="h2" pt={12} id="all-features">
             Features
           </Heading>
           <Text>
