@@ -1,8 +1,8 @@
 const React = require("react");
-const TinaCMS = require("tinacms");
+// const TinaCMS = require("tinacms");
 
 exports.wrapRootElement = ({ element }) => {
-  window.tinacms = new TinaCMS.TinaCMS({
+  /*window.tinacms = new TinaCMS.TinaCMS({
     enabled: undefined,
     sidebar: {
       hidden: process.env.NODE_ENV === "production",
@@ -14,5 +14,6 @@ exports.wrapRootElement = ({ element }) => {
     TinaCMS.TinaProvider,
     { cms: window.tinacms },
     element
-  );
+  );*/
+  return element;
 };

@@ -30,6 +30,7 @@
     "gatsby-remark-copy-linked-files": "^3.1.0",
     "gatsby-remark-images": "^4.1.1",
     "gatsby-remark-prismjs": "^4.1.0",
+    "gatsby-remark-responsive-iframe": "^3.1.0",
     "gatsby-remark-smartypants": "^3.1.0",
     "gatsby-source-filesystem": "^3.1.0",
     "gatsby-source-graphql": "^3.1.0",
@@ -47,6 +48,7 @@
     "react-icons": "^4.2.0",
     "react-player": "^2.9.0",
     "styled-components": "^5.2.1",
+    "tinacms": "^0.38.0",
     "ts-node": "^9.1.1"
   },
   "devDependencies": {

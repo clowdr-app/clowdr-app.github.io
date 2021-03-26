@@ -11,12 +11,15 @@ import {
 } from "@chakra-ui/react";
 import { Link as GatsbyLink } from "gatsby";
 import React from "react";
+// import { useCMS } from "tinacms";
 
 /* If you change the list of pages, make sure to also change
    Footer.tsx (really, the two should be generated from the same
    static list of strings!) */
 
 export default function Footer() {
+  const cms = useCMS();
+
   return (
     <Box bgColor="gray.800" py={8} mt="auto" layerStyle="footer">
       <HStack alignItems="flex-start" justifyContent="center">
@@ -110,6 +113,9 @@ export default function Footer() {
             National Science Foundation under awards CCF-2035003, CCF-2035101
             and CCF-203500 and support from Twilio.org.
           </Text>
+          {/* <Button colorScheme="brand" onClick={() => cms.toggle()} size="xs">
+            {cms.enabled ? "Stop editing" : "Edit"}
+          </Button> */}
         </Box>
       </HStack>
     </Box>
