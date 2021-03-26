@@ -16,10 +16,6 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
   }
 };
 
-const redirects = [
-  { fromPath: "/faq/video-subtitles", toPath: "/resources/video-subtitles" },
-];
-
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage, createRedirect } = actions;
 
@@ -101,14 +97,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   });
 
   /// Redirects
-  // redirects.forEach(redirect =>
-  //   createRedirect({ ...redirect, isPermanent: true, redirectInBrowser: true })
-  // );
-  createRedirect({
-    fromPath: "/faq/video-subtitles/",
-    toPath: "/resources/video-subtitles",
-    isPermanent: true,
-  });
+  const redirects = [
+    { fromPath: "/faq/video-subtitles/", toPath: "/resources/video-subtitles" },
+  ];
+  redirects.forEach(redirect =>
+    createRedirect({
+      ...redirect,
+      isPermanent: true,
+    })
+  );
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
