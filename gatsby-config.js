@@ -33,7 +33,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/images`,
+        path: `${__dirname}/static/images`,
         name: `images`,
       },
     },
@@ -68,6 +68,13 @@ module.exports = {
             },
           },
           `gatsby-remark-prismjs`,
+          {
+            resolve: `gatsby-remark-relative-images`,
+            options: {
+              staticFolderName: "static",
+              include: ["featuredImage"],
+            },
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
