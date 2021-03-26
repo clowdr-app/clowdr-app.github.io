@@ -7,7 +7,7 @@ sections:
 - type: directory
   path: content
   label: Blog posts
-  create: all
+  create: documents
   match: "**/*"
 upload_dir: content/images
 public_path: "/static"
