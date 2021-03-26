@@ -15,7 +15,7 @@ fields:
   description: Date the blog post was published.
   config:
     date_format: YYYY-MM-DD
-    export_format: YYYY-MM-DDTh:mm:ssZ
+    export_format: YYYY-MM-DDThh:mm:ssZ
     required: true
   default: now
 - type: text
