@@ -44,7 +44,7 @@ export default function Blog() {
                     <h2>
                       <Link
                         as={GatsbyLink}
-                        to={post?.fields?.slug ?? "#"}
+                        to={`/blog${post?.fields?.slug ?? "#"}`}
                         itemProp="url"
                       >
                         <span itemProp="headline">{title}</span>

@@ -49,9 +49,11 @@
     "react-helmet-async": "^1.0.9",
     "react-icons": "^4.2.0",
     "react-player": "^2.9.0",
+    "rehype-react": "^6.2.0",
     "styled-components": "^5.2.1",
     "tinacms": "^0.38.0",
-    "ts-node": "^9.1.1"
+    "ts-node": "^9.1.1",
+    "unified": "^8.4.2"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^1.21.3",

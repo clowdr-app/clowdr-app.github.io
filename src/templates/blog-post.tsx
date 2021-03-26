@@ -1,9 +1,40 @@
-import { Container, Heading, Link } from "@chakra-ui/react";
+import {
+  chakra,
+  Container,
+  Heading,
+  Link,
+  ListItem,
+  OrderedList,
+  Text,
+  UnorderedList,
+} from "@chakra-ui/react";
 import { graphql, Link as GatsbyLink } from "gatsby";
 import React from "react";
+import rehypeReact from "rehype-react";
+import unified from "unified";
 import { Layout } from "../components/Layout";
 import Title from "../components/Title";
 import { BlogPostBySlugQuery } from "../graphql";
+
+const processor = unified().use(rehypeReact, {
+  createElement: React.createElement,
+  components: {
+    p: (props: any) => <Text {...props} />,
+    h3: (props: any) => <Heading as="h3" {...props} size="xl" />,
+    h4: (props: any) => <Heading as="h4" {...props} size="lg" />,
+    h5: (props: any) => <Heading as="h5" {...props} size="md" />,
+    h6: (props: any) => <Heading as="h6" {...props} size="sm" />,
+    blockquote: (props: any) => <chakra.blockquote {...props} />,
+    pre: (props: any) => <chakra.pre {...props} maxW="100%" overflowX="auto" />,
+    ol: (props: any) => <OrderedList {...props} />,
+    ul: (props: any) => <UnorderedList {...props} />,
+    li: (props: any) => <ListItem {...props} />,
+  },
+});
+
+export const renderAst = (ast: any): JSX.Element => {
+  return (processor.stringify(ast) as unknown) as JSX.Element;
+};
 
 export default function BlogPost({
   data,
@@ -31,10 +62,7 @@ export default function BlogPost({
             </Heading>
             <p>{post?.frontmatter?.date}</p>
           </header>
-          <section
-            dangerouslySetInnerHTML={{ __html: post?.html ?? "" }}
-            itemProp="articleBody"
-          />
+          <section>{renderAst(post?.htmlAst)}</section>
           <hr />
         </Container>
         <nav className="blog-post-nav">
@@ -82,7 +110,7 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       excerpt(pruneLength: 160)
-      html
+      htmlAst
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
