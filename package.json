@@ -4,10 +4,11 @@
   "description": "Clowdr's marketing site",
   "version": "0.1.0",
   "scripts": {
-    "forestry-install": "npm install -g npm@latest && npm install",
     "build": "gatsby build",
     "codegen": "graphql-codegen --config graphql-codegen.yml",
     "develop": "gatsby develop",
+    "forestry-install": "npm install -g npm@latest && npm install",
+    "forestry-build": "gatsby build --no-uglify",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
