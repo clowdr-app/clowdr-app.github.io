@@ -9,3 +9,5 @@ featuredImage: "/images/char_stilton.png"
 
 ---
 Test post, please ignore.
+
+![](/images/char_stilton.png)
