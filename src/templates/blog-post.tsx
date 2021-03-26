@@ -104,10 +104,10 @@ export default function BlogPost({
               }}
             >
               <li>
-                {previous?.fields?.slug && (
+                {previous?.frontmatter?.slug && (
                   <Link
                     as={GatsbyLink}
-                    to={`/blog${previous.fields.slug}`}
+                    to={`/blog/${previous.frontmatter.slug}`}
                     rel="prev"
                   >
                     ← {previous?.frontmatter?.title}
@@ -115,10 +115,10 @@ export default function BlogPost({
                 )}
               </li>
               <li>
-                {next?.fields?.slug && (
+                {next?.frontmatter?.slug && (
                   <Link
                     as={GatsbyLink}
-                    to={`/blog${next.fields.slug}`}
+                    to={`/blog/${next.frontmatter.slug}`}
                     rel="next"
                   >
                     {next?.frontmatter?.title} →

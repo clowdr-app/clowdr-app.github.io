@@ -32,6 +32,7 @@ export default function Blog() {
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            slug
             description
             author
             category
@@ -66,12 +67,12 @@ export default function Blog() {
           justifyContent="center"
         >
           {posts.map(post => {
-            const title = post?.frontmatter?.title || post?.fields?.slug;
+            const title = post?.frontmatter?.title || post?.frontmatter?.slug;
 
             return (
               <WrapItem
                 as="li"
-                key={post?.fields?.slug}
+                key={post?.frontmatter?.slug}
                 flexGrow={{ base: 1, lg: 0 }}
               >
                 <LinkBox
@@ -115,7 +116,7 @@ export default function Blog() {
                       <Heading as="h2">
                         <LinkOverlay
                           as={GatsbyLink}
-                          to={`/blog${post?.fields?.slug ?? "#"}`}
+                          to={`/blog/${post?.frontmatter?.slug ?? "#"}`}
                           itemProp="url"
                           display="block"
                           color={"gray.800"}
