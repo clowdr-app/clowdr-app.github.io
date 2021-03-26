@@ -1,4 +1,4 @@
-import { Link } from "@chakra-ui/react";
+import { Container, Heading, Link } from "@chakra-ui/react";
 import { graphql, Link as GatsbyLink } from "gatsby";
 import React from "react";
 import { Layout } from "../components/Layout";
@@ -17,23 +17,26 @@ export default function BlogPost({
 
   return (
     <>
-      <Title title={post.frontmatter.title} />
+      <Title title={post?.frontmatter?.title ?? "Post"} />
       <Layout>
-        <article
-          className="blog-post"
+        <Container
+          as="article"
           itemScope
           itemType="http://schema.org/Article"
+          overflowX="auto"
         >
           <header>
-            <h1 itemProp="headline">{post.frontmatter.title}</h1>
-            <p>{post.frontmatter.date}</p>
+            <Heading as="h1" itemProp="headline">
+              {post?.frontmatter?.title}
+            </Heading>
+            <p>{post?.frontmatter?.date}</p>
           </header>
           <section
-            dangerouslySetInnerHTML={{ __html: post.html }}
+            dangerouslySetInnerHTML={{ __html: post?.html ?? "" }}
             itemProp="articleBody"
           />
           <hr />
-        </article>
+        </Container>
         <nav className="blog-post-nav">
           <ul
             style={{
@@ -45,16 +48,16 @@ export default function BlogPost({
             }}
           >
             <li>
-              {previous && (
+              {previous?.fields?.slug && (
                 <Link as={GatsbyLink} to={previous.fields.slug} rel="prev">
-                  ← {previous.frontmatter.title}
+                  ← {previous?.frontmatter?.title}
                 </Link>
               )}
             </li>
             <li>
-              {next && (
+              {next?.fields?.slug && (
                 <Link as={GatsbyLink} to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} →
+                  {next?.frontmatter?.title} →
                 </Link>
               )}
             </li>

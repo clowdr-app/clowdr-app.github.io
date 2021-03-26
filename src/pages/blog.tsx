@@ -31,10 +31,10 @@ export default function Blog() {
       <Layout>
         <ol style={{ listStyle: `none` }}>
           {posts.map(post => {
-            const title = post.frontmatter.title || post.fields.slug;
+            const title = post?.frontmatter?.title || post?.fields?.slug;
 
             return (
-              <li key={post.fields.slug}>
+              <li key={post?.fields?.slug}>
                 <article
                   className="post-list-item"
                   itemScope
@@ -44,18 +44,19 @@ export default function Blog() {
                     <h2>
                       <Link
                         as={GatsbyLink}
-                        to={post.fields.slug}
+                        to={post?.fields?.slug ?? "#"}
                         itemProp="url"
                       >
                         <span itemProp="headline">{title}</span>
                       </Link>
                     </h2>
-                    <small>{post.frontmatter.date}</small>
+                    <small>{post?.frontmatter?.date}</small>
                   </header>
                   <section>
                     <p
                       dangerouslySetInnerHTML={{
-                        __html: post.frontmatter.description || post.excerpt,
+                        __html:
+                          post?.frontmatter?.description || post.excerpt || "",
                       }}
                       itemProp="description"
                     />
