@@ -18,7 +18,7 @@ import React from "react";
    static list of strings!) */
 
 export default function Footer() {
-  const cms = useCMS();
+  // const cms = useCMS();
 
   return (
     <Box bgColor="gray.800" py={8} mt="auto" layerStyle="footer">
