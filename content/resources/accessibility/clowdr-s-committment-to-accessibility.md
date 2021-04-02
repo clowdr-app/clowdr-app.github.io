@@ -1,5 +1,5 @@
 ---
-updatedDate: 2021-04-02T07:36:04+00:00
+updatedDate: 2021-04-02T07:36:04.000+00:00
 title: Clowdr's committment to accessibility
 slug: accessibility
 description: Clowdr is committed to accessibility as a core part of our platform.
@@ -12,11 +12,11 @@ category: Accessibility
 
 ## Accessibility
 
-Our app is fully keyboard navigable, screen reader accessible, colour-contrast compliant (and assists organisers and attendees with choosing contrasting colours when customising the design), does not rely on colour as the sole means of communicating purpose, and many other key elements that make our app accessible. 
+Our app is fully keyboard navigable, screen reader accessible, colour-contrast compliant (and assists organisers and attendees with choosing contrasting colours when customising the design), does not rely on colour as the sole means of communicating purpose, and many other key elements that make our app accessible.
 
 We chose the [Chakra UI](https://chakra-ui.com/ "Chakra UI framework") framework because one of its few design goals was providing an out-of-the-box accessible UI for React apps like ours. We cannot thank the Chakra UI team enough - their work has made a world of difference to our app! We really enjoy using the framework. We hope to contribute back to the project in due course.
 
-We also support curated video captioning - a mechanism we purpose built for large academic conferences and that is unrivaled by any other platform. When authors upload their videos, we auto-generate captions and, importantly, we give them the opportunity to edit those captions - without the need for any input from organisers. This enables the submission of hundreds of videos but several thousand authors, all with fully curated captions and without burdening organising committees. These captions are included when playing back videos on item pages, when playing them as part of a live stream and when exporting videos (to MP4s or to YouTube). We also generate captions for recordings of live streams before publishing the recordings (and, of course, editing is available).
+We also support [curated video captioning](/resources/video-subtitles "Learn about Clowdr's video captioning features") - a mechanism we purpose built for large academic conferences and that is unrivaled by any other platform. When authors upload their videos, we auto-generate captions and, importantly, we give them the opportunity to edit those captions - without the need for any input from organisers. This enables the submission of hundreds of videos but several thousand authors, all with fully curated captions and without burdening organising committees. These captions are included when playing back videos on item pages, when playing them as part of a live stream and when exporting videos (to MP4s or to YouTube). We also generate captions for recordings of live streams before publishing the recordings (and, of course, editing is available).
 
 Both automatic and manual live captioning of video chat rooms (social rooms) as well as of live presentations in streams (such as live presentations or Q&As) is top on our to-do list for summer 2021. It's a hard problem that we are determined to solve because it makes such a difference to attendees.
 
