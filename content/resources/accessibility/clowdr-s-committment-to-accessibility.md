@@ -12,7 +12,7 @@ category: Accessibility
 
 ## **Accessibility**
 
-Our app is fully keyboard navigable, screen reader accessible, colour-contrast compliant (and assists organisers and attendees with choosing contrasting colours when customising the design), does not rely on colour as the sole means of communicating purpose, and many other key elements that make our app accessible. 
+Our app is fully keyboard navigable, screen reader accessible, colour-contrast compliant (and assists organisers and attendees with choosing contrasting colours when customising the design), does not rely on colour as the sole means of communicating purpose, and many other key elements that make our app accessible.
 
 For example, our chat provides easy buttons for resizing the font independently of the rest of the app. Chat text can be made up to 250% larger than the browser's base font size. We also provide adjustable spacing (line height and margins around messages). Furthermore, the whole app builds off of the browser's base font size - unlike most apps, we don't override it. So users relying on their browser's built-in accessibility features will have no trouble reading content on Clowdr. (Our CEO, Ed Nutting, uses this too!)
 
@@ -30,6 +30,6 @@ Clowdr serves many different communities. As such, Clowdr's profile pages provid
 
 ## **Standards and Browsers**
 
-We are close to WCAG 2.1 AA compliance, and are also working AAA compliance. Currently we are working with members of the SIGCHI and IBM Accessibility groups to evaluate, improve and prepare Clowdr for a formal compliance evaluation. (Live captioning is a key feature on our list before we go for formal review).
+We are close to WCAG 2.1 AA compliance, and are working on AAA compliance. Currently we are working with members of the SIGCHI and IBM Accessibility groups to evaluate, improve and prepare Clowdr for a formal compliance evaluation. (Live captioning is a key feature on our list before we go for formal review).
 
 Currently we support Firefox, Chrome, Edge and Opera browsers on desktop/laptop devices (Windows/Mac/Linux). We also support Safari 14 on most recent Mac devices. We support Chrome and Firefox mobile on Android. We do not currently support iOS devices but are continuing to work on compatibility throughout 2021.
