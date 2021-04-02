@@ -64,6 +64,11 @@ export default function Feedback() {
             </Heading>
             <UnorderedList>
               <ListItem>
+                <Link as={GatsbyLink} to="/resources/accessibility">
+                  Overview of Clowdr's accessibility and inclusivity features
+                </Link>
+              </ListItem>
+              <ListItem>
                 <Link as={GatsbyLink} to="/resources/video-subtitles">
                   Pre-recorded and live video captions
                 </Link>
