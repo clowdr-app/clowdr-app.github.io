@@ -12,7 +12,9 @@ category: Accessibility
 
 ## **Accessibility**
 
-Our app is fully keyboard navigable, screen reader accessible, colour-contrast compliant (and assists organisers and attendees with choosing contrasting colours when customising the design), does not rely on colour as the sole means of communicating purpose, and many other key elements that make our app accessible.
+Our app is fully keyboard navigable, screen reader accessible, colour-contrast compliant (and assists organisers and attendees with choosing contrasting colours when customising the design), does not rely on colour as the sole means of communicating purpose, and many other key elements that make our app accessible. 
+
+For example, our chat provides easy buttons for resizing the font independently of the rest of the app. Chat text can be made up to 250% larger than the browser's base font size. We also provide adjustable spacing (line height and margins around messages). Furthermore, the whole app builds off of the browser's base font size - unlike most apps, we don't override it. So users relying on their browser's built-in accessibility features will have no trouble reading content on Clowdr. (Our CEO, Ed Nutting, uses this too!)
 
 We chose the [Chakra UI](https://chakra-ui.com/ "Chakra UI framework") framework because one of its few design goals was providing an out-of-the-box accessible UI for React apps like ours. We cannot thank the Chakra UI team enough - their work has made a world of difference to our app! We really enjoy using the framework. We hope to contribute back to the project in due course.
 
