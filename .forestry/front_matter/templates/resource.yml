@@ -38,3 +38,5 @@ fields:
   name: category
   label: category
   description: Category the resource falls into.
+pages:
+- content/resources/accessibility/clowdr-s-committment-to-accessibility.md
