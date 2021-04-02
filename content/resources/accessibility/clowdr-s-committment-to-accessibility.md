@@ -10,7 +10,7 @@ category: Accessibility
 ---
 **Clowdr aims to provide a social platform. One key element of that is providing a platform that anyone can access. Another is making sure everyone feels welcome. That's why accessibility and inclusivity are woven into every part of our software.**
 
-## Accessibility
+## **Accessibility**
 
 Our app is fully keyboard navigable, screen reader accessible, colour-contrast compliant (and assists organisers and attendees with choosing contrasting colours when customising the design), does not rely on colour as the sole means of communicating purpose, and many other key elements that make our app accessible.
 
@@ -20,13 +20,13 @@ We also support [curated video captioning](/resources/video-subtitles "Learn abo
 
 Both automatic and manual live captioning of video chat rooms (social rooms) as well as of live presentations in streams (such as live presentations or Q&As) is top on our to-do list for summer 2021. It's a hard problem that we are determined to solve because it makes such a difference to attendees.
 
-## Inclusivity
+## **Inclusivity**
 
 We recognise that many attendees will be using Clowdr for the first time at a conference, and may only be on the platform for a few days. As such, we cannot rely on the kind of time investment and user familiarity that users often acquire when they regularly use apps like Zoom or Teams. We work hard to make sure that when a user logs in for the first time, they can easily set up their profile and find the content, events and people they're looking for - or discover new connections - with minimal effort. We use icons that have universally understood meaning and neutral dark/light themes that make everyone feel welcome.
 
 Clowdr serves many different communities. As such, Clowdr's profile pages provide a broad range of options for people to share with other attendees  who they are and what they're working on. This includes their display name, picture, customisable badges, affiliations, social media handles, bio paragraph, pronouns and more. With the exception of display names, each part is optional so attendees can provide as much or as little information as they are comfortable sharing.
 
-## Standards and Browsers
+## **Standards and Browsers**
 
 We are close to WCAG 2.1 AA compliance, and are also working AAA compliance. Currently we are working with members of the SIGCHI and IBM Accessibility groups to evaluate, improve and prepare Clowdr for a formal compliance evaluation. (Live captioning is a key feature on our list before we go for formal review).
 
