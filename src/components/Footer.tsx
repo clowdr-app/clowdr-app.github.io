@@ -14,10 +14,6 @@ import React from "react";
 import { menuItems } from "../misc/menu-items";
 // import { useCMS } from "tinacms";
 
-/* If you change the list of pages, make sure to also change
-   Footer.tsx (really, the two should be generated from the same
-   static list of strings!) */
-
 export default function Footer() {
   // const cms = useCMS();
 

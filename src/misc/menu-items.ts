@@ -1,4 +1,5 @@
 export const menuItems = [
+  { text: "Home", link: "/" },
   { text: "Features", link: "/features" },
   { text: "Pricing", link: "/pricing" },
   { text: "About", link: "/about" },
