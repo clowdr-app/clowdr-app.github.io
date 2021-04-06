@@ -30,12 +30,15 @@ export default function Footer() {
             <WrapItem>
               <UnorderedList styleType="none" ml={0}>
                 {menuItems.map((menuItem, i) => (
-                  <ListItem key={i}>
-                    <Link as={GatsbyLink} to={menuItem.link}>
-                      {menuItem.text}
-                    </Link>
-                  </ListItem>
-                ))}
+                  (menuItem.text.trim() === "|") ? 
+                   "" 
+                  : 
+                    <ListItem key={i}>
+                      <Link as={GatsbyLink} to={menuItem.link}>
+                        {menuItem.text}
+                      </Link>
+                    </ListItem>
+                  ))}
               </UnorderedList>
             </WrapItem>
             <WrapItem>
