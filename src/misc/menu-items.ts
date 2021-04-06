@@ -3,8 +3,10 @@ export const menuItems = [
   { text: "Features", link: "/features" },
   { text: "Pricing", link: "/pricing" },
   { text: "About", link: "/about" },
-  { text: "Jobs", link: "/jobs" },
-  { text: "Feedback", link: "/feedback" },
+  /* BCP: This is surely not the right way to do this... */
+  { text: " | ", link: "/" },
   { text: "Resources", link: "/resources" },
+  { text: "Feedback", link: "/feedback" },
+  { text: "Jobs", link: "/jobs" },
   { text: "Blog", link: "/blog" },
 ];

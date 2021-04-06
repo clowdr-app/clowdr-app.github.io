@@ -74,7 +74,6 @@ export function Layout({
                   {menuItem.text}
                 </Link>
               ))}
-              <ArrangeADemoButton />
             </HStack>
             <Box display={{ base: "inline-flex", md: "none" }}>
               <IconButton
