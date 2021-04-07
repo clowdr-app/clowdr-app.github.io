@@ -1,7 +1,7 @@
 ---
 updatedDate: 2021-04-06T09:46:23+00:00
 title: Hosting a tutorial or workshop with Clowdr and Zoom
-slug: tutorial-instructions-zoom
+slug: tutorial-instructions
 description: Instructions for hosting a tutorial or workshop with Clowdr and Zoom
 author: Ed Nutting
 category: tutorials
