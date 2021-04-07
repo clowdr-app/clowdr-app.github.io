@@ -47,14 +47,15 @@ These instructions are for organizers who anticipate having more than 40 attende
 * You should not start the recording until after you have given this notice. Participants in the EU, as well as other regions, have strong data protection rights that we must respect.
 * You may need to politely ask that anyone who does not wish to be recorded simply not turn on their camera/mic during the session.
 * Please consider turning on Automatic Live Captions. These can be of great assistance to many attendees.
-* During the session, you can control who is allowed to share screens, show their cameras, turn on their microphones, etc. -- all the usual Zoom features.
-* At the end of your tutorial, please end the meeting and log out of Zoom.
-* You should end the Zoom meeting on time and if you wish to carry on the conversation, ask that people join you in the Clowdr room.
 
+7. **During the session, you can control who is allowed to share screens, show their cameras, turn on their microphones, etc. -- all the usual Zoom features.**
+8. **At the end of your tutorial, please end the meeting and log out of Zoom.**
+9. **You should end the Zoom meeting on time and if you wish to carry on the conversation, ask that people join you in the Clowdr room.**
 
 * Clowdr rooms are available for video chats of up to 40 people - attendees can create their own if they like!
 * You can create additional private or public Rooms in Clowdr if you would like to run breakouts or other kinds of social activities after your tutorial.
 * If your tutorial is looking like it will overrun, please be mindful that there may be another tutorial scheduled to use the same Zoom account after yours. While we hope it is never necessary, one of the Clowdr team will log into your Zoom and end the meeting in order to make the license available for a following tutorial.
-* All activity using Clowdr's Zoom licenses is monitored. You should not log into the accounts until the day of your event, in the 30 mins before it starts. To practice using Zoom as a host, please create your own (free) Zoom account and create test meetings that way.
+
+10. All activity using Clowdr's Zoom licenses is monitored. You should not log into the accounts until the day of your event, in the 30 mins before it starts. To practice using Zoom as a host, please create your own (free) Zoom account and create test meetings that way.
 
 While we don't expect this to happen, please be aware that any abuse of Clowdr's Zoom licenses, or any organizer action that violates the conference's code of conduct or the conference's contract with Clowdr, will result in termination of your access to Clowdr and Clowdr's Zoom accounts. Broadly speaking: be polite and run your tutorial as you would any other event.
