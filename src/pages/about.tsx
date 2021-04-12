@@ -89,6 +89,24 @@ export default function About() {
               excited to build its future.
             </Text>
           </Profile>
+          <Profile imageUrl="/cristal-mojica.jpg" name="Cristal Mojica" my={8}>
+            <>
+              <Text>
+                Cristal is Clowdr's Business Development Manager. She is a
+                former management consultant with experience in event and
+                community management, and girls' STEM &amp; entrepreneurship
+                education. Most recently, she was a Program Manager for Grace
+                Hopper Celebration, the largest conference for women in
+                technology.
+              </Text>
+              <Text>
+                Cristal is an alum of UC Berkeley and the Goldman School of
+                Public Policy. Her interests include civic tech innovation,
+                accessible education technology, sustainability in business, and
+                immigrant advocacy.
+              </Text>
+            </>
+          </Profile>
           <Profile
             imageUrl="/benjamin-pierce.jpg"
             name="Benjamin Pierce"
