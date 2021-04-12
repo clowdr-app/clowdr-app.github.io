@@ -75,6 +75,24 @@ export default function Feedback() {
               </ListItem>
             </UnorderedList>
           </VStack>
+          <VStack
+            justifyContent="flex-start"
+            alignItems="flex-start"
+            spacing={4}
+            mb={4}
+          >
+            <Heading as="h3" size="lg">
+              Organizer Guides
+            </Heading>
+            <UnorderedList>
+              <ListItem>
+                <Link as={GatsbyLink} to="/resources/tutorial-instructions">
+                  External integration: Hosting a tutorial or workshop with
+                  Clowdr and Zoom
+                </Link>
+              </ListItem>
+            </UnorderedList>
+          </VStack>
         </Container>
       </Layout>
     </>
