@@ -9,7 +9,7 @@ category: tutorials
 ---
 ## Managing the people in your program with Clowdr
 
-This video briefly summarizes how Organizers manage the people in their program via Clowdr.
+This video summarizes how Organizers manage the people in their program via Clowdr.
 
 We share a brief overview of the relationship between People in Clowdr and the other major program components, and walk through Clowdr's UI to show how to link People to Content, Events, and Registrants. Common scenarios are also identified and advice for how to tackle them is provided!
 
