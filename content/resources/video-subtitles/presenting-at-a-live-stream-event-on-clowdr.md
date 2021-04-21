@@ -1,7 +1,7 @@
 ---
 updatedDate: 2021-04-21T05:10:55+00:00
 title: Presenting at a live-stream event on Clowdr
-slug: present-livestream
+slug: livestream
 description: 'Learn how to use Clowdr''s live-streaming features to chair or present
   at a live-stream event. '
 author: Ed Nutting
