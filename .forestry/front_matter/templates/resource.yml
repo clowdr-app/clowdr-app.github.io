@@ -40,5 +40,6 @@ fields:
   description: Category the resource falls into.
 pages:
 - content/resources/Organizer Guides/hosting-a-tutorial-or-workshop-with-clowdr-and-zoom.md
+- content/resources/Organizer Guides/managing-the-people-in-your-program-with-clowdr.md
 - content/resources/accessibility/clowdr-s-committment-to-accessibility.md
 - content/resources/video-subtitles/presenting-at-a-live-stream-event-on-clowdr.md
