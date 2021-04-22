@@ -9,25 +9,26 @@ import {
   Heading,
   HStack,
   Icon,
+  IconButton,
   Image,
+  Link,
   Stack,
   Text,
   VStack,
 } from "@chakra-ui/react";
-import { Link as GatsbyLink, Link } from "gatsby";
+import { Link as GatsbyLink } from "gatsby";
 import React from "react";
 import {
   AiOutlineArrowRight,
-  AiOutlineArrowsAlt,
-  AiOutlineCalendar,
-  AiOutlineComment,
-  AiOutlineCustomerService,
-  AiOutlinePlayCircle,
-  AiOutlineRetweet,
-  AiOutlineTeam,
+  AiOutlineCheck,
+  AiOutlineGithub,
+  AiOutlineGlobal,
+  AiOutlineNotification,
+  AiOutlineRead,
+  AiOutlineVideoCamera,
+  AiOutlineYoutube,
 } from "react-icons/ai";
 import ReactPlayer from "react-player";
-import { ArrangeADemoButton } from "../components/ArrangeADemoButton";
 import { Feature } from "../components/Feature";
 import { Layout } from "../components/Layout";
 import { Packages } from "../components/Packages";
@@ -314,49 +315,69 @@ export default function Home() {
           alignItems="center"
           pb={12}
         >
-          <Text py={12} fontSize="2xl">
-            Here are just a few of our great features:
+          <Text pt={12} fontSize="2xl">
+            Clowdr makes it simple to get live or pre-recorded video from your
+            presenters and make it available to your attendees.
+          </Text>
+          <Text pt={4} pb={8} fontSize="2xl">
+            Here's how it works.
           </Text>
           <Stack
             spacing={{ base: 10, md: 0 }}
             display={{ md: "grid" }}
-            gridTemplateColumns={{ md: "repeat(2,1fr)" }}
+            gridTemplateColumns={{ md: "repeat(4,1fr)" }}
             gridColumnGap={{ md: 8 }}
             gridRowGap={{ md: 10 }}
           >
             <Feature
-              title="Advanced scheduling"
+              title="Call for content"
               color="white"
-              icon={AiOutlineCalendar}
+              icon={AiOutlineNotification}
             >
-              Clowdr supports the complex, multi-track conference programs
-              common in large academic conferences.
+              <Text>
+                Import your program, then send requests for authors and
+                presenters to upload their videos (and other content). Authors
+                can edit subtitles that are generated for their videos.
+              </Text>
+              <Text>Review and approve uploaded content.</Text>
+            </Feature>
+
+            <Feature title="Pre-publish" color="white" icon={AiOutlineRead}>
+              <Text>
+                Optionally publish your pre-recorded videos a week in advance of
+                the conference.
+              </Text>
+              <Text>
+                Attendees can use Clowdr chat to discuss your content. Now is a
+                great time to gather questions for authors ahead of the live
+                event.
+              </Text>
+            </Feature>
+            <Feature title="Go live!" color="white" icon={AiOutlineVideoCamera}>
+              <Text>
+                Clowdr turns your conference program into a fully-automated live
+                stream that switches seamlessly between pre-recorded content and
+                live sessions.
+              </Text>
+              <Text>
+                You control who has access to the backstage area, and can give
+                your session chairs live control over the layout of the video.
+              </Text>
             </Feature>
 
             <Feature
-              title="Audiovisual production"
+              title="Post-publish and archive"
               color="white"
-              icon={AiOutlinePlayCircle}
+              icon={AiOutlineYoutube}
             >
-              Our end-to-end video production workflow seamlessly combines
-              pre-recorded videos with live presentations, panel sessions and
-              Q&amp;A.
-            </Feature>
-            <Feature
-              title="Attendee networking"
-              color="white"
-              icon={AiOutlineTeam}
-            >
-              Get your attendees talking with shuffle spaces, a way to create
-              spontaneous group conversations.
-            </Feature>
-
-            <Feature
-              title="Expert support"
-              color="white"
-              icon={AiOutlineCustomerService}
-            >
-              Our experienced team is ready to make your conference a success.
+              <Text>
+                Your live-streamed events are automatically recorded by Clowdr
+                so that attendees can watch or rewatch them later.
+              </Text>
+              <Text>
+                Choose whether to publish your pre-recorded content and live
+                recordings directly to YouTube, including subtitles.
+              </Text>
             </Feature>
           </Stack>
           <Button
@@ -371,20 +392,36 @@ export default function Home() {
             Learn more about Clowdr
             <Icon ml={4} as={AiOutlineArrowRight} />
           </Button>
-
-          <Heading as="h2" size="2xl">
+        </Box>
+        <Box
+          px={{ base: 4, xl: 20 }}
+          w="auto"
+          justifyContent="center"
+          alignItems="center"
+          py={12}
+        >
+          <Heading as="h2" size="2xl" textAlign="center">
             Why go virtual with Clowdr?
           </Heading>
 
           <HStack
             mt={8}
             textAlign="center"
-            alignItems="flex-start"
+            alignItems="stretch"
+            justifyContent="center"
             flexWrap="wrap"
+            spacing={4}
           >
-            <VStack flexBasis="20rem" flexGrow={1}>
-              <Icon as={AiOutlineArrowsAlt} w={16} h={16} />
-              <Heading as="h3">Scales to your event</Heading>
+            <VStack
+              flexBasis="20rem"
+              flexGrow={1}
+              maxW="80ch"
+              bgColor="purple.500"
+              color="white"
+              p={8}
+            >
+              <Icon as={AiOutlineCheck} w={16} h={16} />
+              <Heading as="h3">Built for your event</Heading>
               <Text>
                 Clowdr was founded by academics with decades of combined
                 experience organising large, complex academic conferences. It
@@ -392,17 +429,15 @@ export default function Home() {
                 multi-track conferences with thousands of attendees.
               </Text>
             </VStack>
-            <VStack flexBasis="20rem" flexGrow={1}>
-              <Icon as={AiOutlineComment} w={16} h={16} />
-              <Heading as="h3">A sociable experience</Heading>
-              <Text>
-                Clowdr lets your attendees talk to one another with text and
-                video chat. You can set up your own custom meeting rooms,
-                sponsor booths, announcement channels and more.
-              </Text>
-            </VStack>
-            <VStack flexBasis="20rem" flexGrow={1}>
-              <Icon as={AiOutlineRetweet} w={16} h={16} />
+            <VStack
+              flexBasis="20rem"
+              flexGrow={1}
+              maxW="80ch"
+              bgColor="yellow.700"
+              color="white"
+              p={8}
+            >
+              <Icon as={AiOutlineGlobal} w={16} h={16} />
               <Heading as="h3">By the community, for the community</Heading>
               <Text>
                 Clowdr is a social enterprise, incorporated as a Community
@@ -411,11 +446,43 @@ export default function Home() {
                 as physical conferences.
               </Text>
             </VStack>
+            <VStack
+              flexBasis="20rem"
+              flexGrow={1}
+              maxW="80ch"
+              bgColor="teal.500"
+              color="white"
+              p={8}
+            >
+              <Icon as={AiOutlineGithub} w={16} h={16} />
+              <Heading as="h3">Proudly open source</Heading>
+              <Text pb={4}>
+                If you want to do-it-yourself, you can run your very own Clowdr.
+                We also support researchers who want to modify Clowdr or use it
+                in their research.
+              </Text>
+
+              <IconButton
+                as={Link}
+                href="https://github.com/clowdr-app/"
+                aria-label="Clowdr on GitHub"
+                title="View Clowdr on GitHub"
+                icon={<AiOutlineGithub size="32px" />}
+                color="black"
+                bgColor="white"
+                _hover={{
+                  bgColor: "white",
+                }}
+                w={16}
+                h={16}
+                style={{ margin: "0 1em" }}
+              />
+            </VStack>
           </HStack>
         </Box>
 
         <Box px={{ base: 4, xl: 20 }} my={12}>
-          <Heading as="h2" size="2xl" my={8}>
+          <Heading as="h2" size="2xl" my={8} textAlign="center">
             What we offer
           </Heading>
           <Packages />
@@ -431,8 +498,6 @@ export default function Home() {
               Find out more about our packages
               <Icon ml={4} as={AiOutlineArrowRight} />
             </Button>
-
-            <ArrangeADemoButton />
           </VStack>
         </Box>
       </Layout>

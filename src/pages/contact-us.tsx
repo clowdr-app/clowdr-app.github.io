@@ -4,6 +4,7 @@ import {
   Box,
   Container,
   Heading,
+  Link,
   Text,
 } from "@chakra-ui/react";
 import React from "react";
@@ -13,11 +14,11 @@ import Title from "../components/Title";
 export default function Feedback() {
   return (
     <>
-      <Title title="Feedback" />
+      <Title title="Contact Us" />
       <Layout>
         <Container my={12}>
           <Heading as="h2" size="2xl">
-            Feedback
+            Contact Us
           </Heading>
           <Heading as="h3" size="xl">
             Reporting issues
@@ -56,6 +57,24 @@ export default function Feedback() {
               </Text>
             </Box>
           </Alert>
+
+          <Heading as="h3" size="xl">
+            Something else?
+          </Heading>
+
+          <Text>
+            If you are interested in using Clowdr, we highly recommend{" "}
+            <Link href="https://form.asana.com/?k=trOGgRktwffYqw6B73DHuA&amp;d=1198973227684402">
+              requesting a demo
+            </Link>
+            . Our dedicated form contains all the questions that help us respond
+            to you as fast and accurately as possible.
+          </Text>
+          <Text>
+            Want to talk to us directly about something? Have a question about
+            Clowdr?{" "}
+            <Link href="mailto:welcome@clowdr.org">Drop us an email</Link>.
+          </Text>
         </Container>
       </Layout>
     </>

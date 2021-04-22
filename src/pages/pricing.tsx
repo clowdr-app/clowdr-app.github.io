@@ -519,7 +519,7 @@ export default function Pricing() {
           <Text>
             Here are the main features you'll find included with every Clowdr
             package. We're always happy to hear{" "}
-            <Link as={GatsbyLink} to="/feedback">
+            <Link as={GatsbyLink} to="/contact-us">
               feedback about what should be added to Clowdr next
             </Link>
             .
@@ -625,17 +625,7 @@ export default function Pricing() {
             </Tbody>
           </Table>
 
-          <Button
-            as={GatsbyLink}
-            fontSize="2xl"
-            my={12}
-            p={8}
-            bgColor="brand.900"
-            _hover={{
-              bgColor: "brand.700",
-            }}
-            to="/features"
-          >
+          <Button as={GatsbyLink} fontSize="2xl" my={12} p={8} to="/features">
             Learn more about Clowdr
             <Icon ml={4} as={AiOutlineArrowRight} />
           </Button>

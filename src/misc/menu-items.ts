@@ -6,7 +6,7 @@ export const menuItems = [
 
 export const menuSecondaryItems = [
   { text: "Resources", link: "/resources" },
-  { text: "Contact Us", link: "/feedback" },
+  { text: "Contact Us", link: "/contact-us" },
   { text: "Careers", link: "/jobs" },
   { text: "Blog", link: "/blog" },
 ];

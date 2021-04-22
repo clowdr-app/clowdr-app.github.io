@@ -3,25 +3,19 @@ import {
   Button,
   chakra,
   Flex,
+  Grid,
   GridItem,
   Heading,
   HStack,
-  IconButton,
   Link,
   SimpleGrid,
   Stack,
-  Stat,
-  StatHelpText,
-  StatLabel,
-  StatNumber,
   Text,
-  VStack,
 } from "@chakra-ui/react";
 import React from "react";
 import {
   AiOutlineCalendar,
   AiOutlineCustomerService,
-  AiOutlineGithub,
   AiOutlineMessage,
   AiOutlinePicRight,
   AiOutlinePicture,
@@ -177,54 +171,8 @@ export default function Features() {
           </Flex>
           <Box textAlign="center" py={12}>
             <Text fontSize="xl">We'd love to show you around!</Text>
-            <ArrangeADemoButton />
+            <ArrangeADemoButton fontSize="2xl" />
           </Box>
-        </Box>
-
-        <Box
-          backgroundColor="brand.800"
-          layerStyle="hero"
-          mx={{ base: 0, lg: 20 }}
-          borderRadius="lg"
-          shadow="xl"
-          mt={12}
-          py={4}
-        >
-          <HStack>
-            <Box pr={4}>
-              <Stat p={4} textAlign="center">
-                <StatLabel fontSize="xl">Clowdr is</StatLabel>
-                <StatNumber fontSize="4xl">100%</StatNumber>
-                <StatHelpText fontSize="xl">open source</StatHelpText>
-              </Stat>
-            </Box>
-            <Box flex="1">
-              <Text fontSize="xl">
-                Clowdr is proudly open-source. As a social enterprise, this is
-                part of how we serve the academic community.
-              </Text>
-              <Text>
-                If you want to do-it-yourself, you can run your very own Clowdr.
-                We also support researchers who want to modify Clowdr or use it
-                in their research.
-              </Text>
-            </Box>
-
-            <IconButton
-              as={Link}
-              href="https://github.com/clowdr-app/"
-              aria-label="Clowdr on GitHub"
-              icon={<AiOutlineGithub size="32px" />}
-              color="black"
-              bgColor="gray.800"
-              _hover={{
-                bgColor: "gray.800",
-              }}
-              w={16}
-              h={16}
-              style={{ margin: "0 1em" }}
-            />
-          </HStack>
         </Box>
 
         <Box w="100%" my={12}>
@@ -238,7 +186,7 @@ export default function Features() {
             <Heading as="h2" minW={72} my={8} textAlign="center">
               Trusted by thousands
             </Heading>
-            <VStack spacing={6}>
+            <Grid spacing={6} templateColumns="1fr 1fr" gridGap={4}>
               <Testimonial
                 title="ICSE 2020"
                 name="July 2020"
@@ -265,12 +213,12 @@ export default function Features() {
                 description="FPGA 2021 made use of Clowdr's advanced video broadcast capabilities to deliver content to 500 attendees."
               />
               <Testimonial description="and many more!" />
-            </VStack>
+            </Grid>
           </HStack>
         </Box>
 
         <Box
-          backgroundColor="brand.800"
+          backgroundColor="purple.500"
           layerStyle="hero"
           mx={{ base: 0, lg: 20 }}
           borderRadius="lg"
@@ -368,14 +316,10 @@ export default function Features() {
           <Button
             as={Link}
             href="/pricing"
-            bgColor="brand.900"
             color="white"
             size="lg"
-            fontSize="xl"
-            _hover={{
-              bgColor: "brand.700",
-              color: "white",
-            }}
+            fontSize="2xl"
+            mt={4}
           >
             Discover our packages
           </Button>
