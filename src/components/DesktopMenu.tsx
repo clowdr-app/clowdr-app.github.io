@@ -1,11 +1,4 @@
-import {
-  chakra,
-  Grid,
-  HStack,
-  Image,
-  Link,
-  VisuallyHidden,
-} from "@chakra-ui/react";
+import { chakra, HStack, Image, Link, VisuallyHidden } from "@chakra-ui/react";
 import { Link as GatsbyLink } from "gatsby";
 import React from "react";
 import { menuItems, menuSecondaryItems } from "../misc/menu-items";
@@ -13,15 +6,16 @@ import { ArrangeADemoButton } from "./ArrangeADemoButton";
 
 export function DesktopMenu(): JSX.Element {
   return (
-    <Grid
-      templateColumns="1fr 1.5fr"
+    <HStack
+      //   templateColumns="minmax(, 1fr) minmax(1.5fr)"
+      flexWrap="wrap"
       columnGap={0}
       bgColor="brand.900"
       layerStyle="hero"
       shadow="md"
       py={2}
     >
-      <HStack fontSize="large" justifyContent="flex-start">
+      <HStack fontSize="large" justifyContent="flex-start" flex={1}>
         <chakra.a href="/" title="Clowdr Home Page" alignItems="center" ml={4}>
           <Image src="/Clowdr-logo-white.svg" maxW="200" h="100" />
           <VisuallyHidden>
@@ -45,9 +39,11 @@ export function DesktopMenu(): JSX.Element {
         ))}
       </HStack>
       <HStack
+        flex={1}
         display="flex"
         flexWrap="wrap"
         alignItems="center"
+        justifyContent="flex-end"
         spacing={1}
         px={8}
         py={2}
@@ -74,8 +70,8 @@ export function DesktopMenu(): JSX.Element {
             </Link>
           ))}
         </HStack>
-        <ArrangeADemoButton flexGrow={1} />
+        <ArrangeADemoButton flexGrow={1} maxW="20rem" />
       </HStack>
-    </Grid>
+    </HStack>
   );
 }

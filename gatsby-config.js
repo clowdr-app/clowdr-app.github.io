@@ -93,6 +93,30 @@ module.exports = {
         display: "swap",
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Clowdr`,
+        short_name: `Clowdr`,
+        start_url: `/`,
+        background_color: `#16703f`,
+        theme_color: `#16703f`,
+        display: `standalone`,
+        icon: `static/favicons/favicon-32x32.png`,
+        icons: [
+          {
+            src: "/favicons/android-chrome-192x192.png",
+            sizes: "192x192",
+            type: "image/png",
+          },
+          {
+            src: "/favicons/android-chrome-512x512.png",
+            sizes: "512x512",
+            type: "image/png",
+          },
+        ],
+      },
+    },
     `gatsby-plugin-meta-redirect`,
     // Disable while plugin is broken
     // {
