@@ -7,9 +7,9 @@ import { ArrangeADemoButton } from "./ArrangeADemoButton";
 export function DesktopMenu(): JSX.Element {
   return (
     <HStack
-      //   templateColumns="minmax(, 1fr) minmax(1.5fr)"
       flexWrap="wrap"
       columnGap={0}
+      bgGradient="linear(to-b, brand.900 20%, brand.800)"
       bgColor="brand.900"
       layerStyle="hero"
       shadow="md"

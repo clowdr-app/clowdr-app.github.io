@@ -1,13 +1,17 @@
 import {
+  Accordion,
+  AccordionButton,
+  AccordionItem,
+  AccordionPanel,
   Box,
   Button,
   Container,
   Heading,
   HStack,
   Icon,
+  Image,
   Stack,
   Text,
-  useToken,
   VStack,
 } from "@chakra-ui/react";
 import { Link as GatsbyLink, Link } from "gatsby";
@@ -30,7 +34,6 @@ import { Packages } from "../components/Packages";
 import Title from "../components/Title";
 
 export default function Home() {
-  const brand = useToken("colors", "brand.800");
   return (
     <>
       <Title title="Virtual conferences for social good" />
@@ -105,60 +108,197 @@ export default function Home() {
         </Box>
 
         <Container my={12} maxW="120ch">
-          <Heading as="h2" size="2xl" mb={8}>
+          <Heading as="h2" size="xl" mb={8} textAlign="center">
             Running a virtual conference can be hard work
           </Heading>
-          <Box mx="auto">
-            <Box
-              bgColor="gray.200"
-              w="80%"
-              maxW="100%"
-              fontSize={{ base: "lg", lg: "xl" }}
-              p={4}
-              my={4}
-              borderRadius="lg"
-            >
-              How do I gather videos from authors and create accurate subtitles
-              for them?
-            </Box>
-            <Box
-              bgColor="gray.200"
-              w="80%"
-              maxW="100%"
-              fontSize={{ base: "lg", lg: "xl" }}
-              p={4}
-              my={4}
-              borderRadius="lg"
-              ml="auto"
-            >
-              Will the conference be accessible to everyone in my community?
-            </Box>
-            <Box
-              bgColor="gray.200"
-              w="80%"
-              maxW="100%"
-              fontSize={{ base: "lg", lg: "xl" }}
-              p={4}
-              my={4}
-              borderRadius="lg"
-            >
-              How do I encourage social engagement around conference
-              content&#8212;before, during and after?
-            </Box>
-            <Box
-              bgColor="gray.200"
-              w="80%"
-              maxW="100%"
-              fontSize={{ base: "lg", lg: "xl" }}
-              p={4}
-              my={4}
-              borderRadius="lg"
-              ml="auto"
-            >
-              How do I manage a large and complex program? How do attendees find
-              what they're interested in?
-            </Box>
-          </Box>
+          <Accordion mx="auto" allowToggle={true} allowMultiple={true}>
+            <AccordionItem border="0 none">
+              <AccordionButton _hover={{ bgColor: "none" }}>
+                <Box
+                  bgColor="yellow.200"
+                  _hover={{
+                    bgColor: "yellow.300",
+                  }}
+                  shadow="inner"
+                  w="80%"
+                  maxW="100%"
+                  fontSize={{ base: "lg", lg: "xl" }}
+                  p={4}
+                  my={4}
+                  borderRadius="lg"
+                >
+                  <Text>
+                    How do I gather videos from authors and create accurate
+                    subtitles for them?
+                  </Text>
+                </Box>
+              </AccordionButton>
+              <AccordionPanel fontSize="lg" bgColor="yellow.100">
+                <Text>
+                  <strong>Clowdr makes it easy.</strong> After importing your
+                  conference program, it's just a couple of clicks to ask
+                  presenters to upload their videos, slides or other
+                  information.
+                </Text>
+                <Image
+                  src="/images/submission-requests.webp"
+                  alt="Sending a submission request from Clowdr"
+                  shadow="dark-lg"
+                  my={8}
+                  mx="auto"
+                  maxW="30rem"
+                />
+                <Text>
+                  Clowdr automatically generates subtitles for videos uploaded
+                  by your presenters and authors. After subtitling is complete,
+                  Clowdr will email the uploader to notify them that they can
+                  now make any corrections they want to.
+                </Text>
+              </AccordionPanel>
+            </AccordionItem>
+            <AccordionItem border="0 none">
+              <AccordionButton _hover={{ bgColor: "none" }}>
+                <Box
+                  bgColor="brand.100"
+                  _hover={{
+                    bgColor: "brand.200",
+                  }}
+                  shadow="inner"
+                  w="80%"
+                  maxW="100%"
+                  fontSize={{ base: "lg", lg: "xl" }}
+                  p={4}
+                  my={4}
+                  borderRadius="lg"
+                  ml="auto"
+                >
+                  Will the conference be accessible to everyone in my community?
+                </Box>
+              </AccordionButton>
+              <AccordionPanel fontSize="lg" bgColor="brand.100">
+                <Text>
+                  <strong>Accessibility is one of Clowdr's core values.</strong>{" "}
+                  Our platform is designed to work well with screen readers and
+                  keyboard navigation. Clowdr also supports video subtitling for
+                  your pre-recorded content, and live subtitling is coming soon.
+                </Text>
+                <Image
+                  src="/images/subtitles.webp"
+                  alt="Watching a video with subtitles"
+                  shadow="dark-lg"
+                  my={8}
+                  mx="auto"
+                  maxW="30rem"
+                />
+                <Text>
+                  We believe that, today, text-based platforms are fundamentally
+                  more accessible than trying to replicate a conference in a 2D
+                  or 3D virtual environment.
+                </Text>
+              </AccordionPanel>
+            </AccordionItem>
+            <AccordionItem border="0 none">
+              <AccordionButton _hover={{ bgColor: "none" }}>
+                <Box
+                  bgColor="purple.100"
+                  _hover={{
+                    bgColor: "purple.200",
+                  }}
+                  shadow="inner"
+                  w="80%"
+                  maxW="100%"
+                  fontSize={{ base: "lg", lg: "xl" }}
+                  p={4}
+                  my={4}
+                  borderRadius="lg"
+                >
+                  How do I encourage social engagement around conference
+                  content&#8212;before, during and after?
+                </Box>
+              </AccordionButton>
+              <AccordionPanel bgColor="purple.100" fontSize="lg">
+                <Text>
+                  <strong>
+                    We believe that social connections are the most important
+                    thing made at your conference.
+                  </strong>{" "}
+                  Attendees can personalise their profile with a picture, badges
+                  and a bio, and that means it's always just a click away to
+                  find out more about someone you've just met. Clowdr also shows
+                  you who's in the room with you, which makes the conference
+                  feel like a real shared experience.
+                </Text>
+                <Image
+                  src="/images/video-chat.webp"
+                  alt="Attendees in a Clowdr video chat"
+                  shadow="dark-lg"
+                  my={8}
+                  mx="auto"
+                  maxW="30rem"
+                />
+                <Text>
+                  Clowdr's powerful chat system includes features your attendees
+                  expect, like emoji reactions, Q&amp;A and polls. Create themed
+                  video meeting rooms for your attendees to meet new people or
+                  discuss a particular topic. Networking sessions run great with
+                  our Shuffle feature, which groups attendees together randomly
+                  for a limited period of time.
+                </Text>
+              </AccordionPanel>
+            </AccordionItem>
+            <AccordionItem border="0 none">
+              <AccordionButton _hover={{ bgColor: "none" }}>
+                <Box
+                  bgColor="teal.50"
+                  _hover={{
+                    bgColor: "teal.100",
+                  }}
+                  shadow="inner"
+                  w="80%"
+                  maxW="100%"
+                  fontSize={{ base: "lg", lg: "xl" }}
+                  p={4}
+                  my={4}
+                  borderRadius="lg"
+                  ml="auto"
+                >
+                  How do I manage a large and complex program? How do attendees
+                  find what they're interested in?
+                </Box>
+              </AccordionButton>
+              <AccordionPanel bgColor="teal.50" fontSize="lg">
+                <Text>
+                  <strong>
+                    Clowdr is designed to work at every scale&mdash;from a
+                    single track event through to a multi-week conference with
+                    many parallel tracks.
+                  </strong>{" "}
+                  When your conference has a lots of content and rapid-fire
+                  presentations, it can get difficult to manage. Clowdr shows
+                  you the right thing at the right time.
+                </Text>
+                <Image
+                  src="/images/schedule.webp"
+                  alt="Clowdr's schedule page"
+                  shadow="dark-lg"
+                  my={8}
+                  mx="auto"
+                  maxW="30rem"
+                />
+                <Text>
+                  Clowdr's Live Sidebar shows you what's happening right now:
+                  who is chatting in a video room? What presentations are coming
+                  up next? How many people are in the auditorium right now?
+                </Text>
+                <Text>
+                  You can create a custom landing page for your conference,
+                  organising your content in the way that makes sense for your
+                  conference. And Clowdr's Schedule page compresses even a large
+                  program into an easy-to-navigate timeline.
+                </Text>
+              </AccordionPanel>
+            </AccordionItem>
+          </Accordion>
           <Text fontSize="xl">
             Clowdr solves these problems and more, giving you time to focus on
             the thing that really matters: bringing people together.
