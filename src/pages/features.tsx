@@ -31,8 +31,7 @@ import {
   AiOutlineTeam,
   AiOutlineVideoCamera,
 } from "react-icons/ai";
-import ReactPlayer from "react-player";
-import ArrangeADemoButton from "../components/ArrangeADemoButton";
+import { ArrangeADemoButton } from "../components/ArrangeADemoButton";
 import { Feature } from "../components/Feature";
 import { Layout } from "../components/Layout";
 import Title from "../components/Title";
@@ -81,17 +80,6 @@ export default function Features() {
                     platform 'just work' - so that you can concentrate on the
                     things that really matter.
                   </Text>
-
-                  <ReactPlayer
-                    url="https://www.youtube-nocookie.com/embed/RqyHVQUYVI4"
-                    width="100%"
-                    className="react-player"
-                    config={{
-                      youtube: {
-                        playerVars: { showinfo: 1 },
-                      },
-                    }}
-                  />
                 </Box>
                 <GridItem colSpan={2}>
                   <Stack

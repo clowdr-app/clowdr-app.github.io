@@ -1,12 +1,10 @@
 import {
   Box,
   Button,
-  chakra,
   Container,
   Heading,
   HStack,
   Icon,
-  Image,
   Stack,
   Text,
   VStack,
@@ -23,7 +21,8 @@ import {
   AiOutlineRetweet,
   AiOutlineTeam,
 } from "react-icons/ai";
-import ArrangeADemoButton from "../components/ArrangeADemoButton";
+import ReactPlayer from "react-player";
+import { ArrangeADemoButton } from "../components/ArrangeADemoButton";
 import { Feature } from "../components/Feature";
 import { Layout } from "../components/Layout";
 import { Packages } from "../components/Packages";
@@ -34,16 +33,14 @@ export default function Home() {
     <>
       <Title title="Virtual conferences for social good" />
       <Layout>
-        <Box
-          layerStyle="hero"
-          px={{ base: 4, xl: 20 }}
-          w="auto"
-          justifyContent="center"
-          bg="brand.800"
-          alignItems="center"
-        >
-          <HStack flexWrap="wrap-reverse" justifyContent="center">
-            <Box flex="1">
+        <Box w="auto">
+          <HStack
+            alignItems="stretch"
+            justifyContent="center"
+            spacing={0}
+            flexWrap="wrap"
+          >
+            <Box flexBasis="50%" flexGrow={1} flexShrink={0} py={12} px={8}>
               <Heading as="h1" size="3xl">
                 Virtual conferences for social good
               </Heading>
@@ -52,32 +49,57 @@ export default function Home() {
                 experience, giving you time to focus on the things that matter
               </Heading>
               <Button
-                as="a"
-                fontSize="2xl"
                 my={12}
                 p={8}
-                bgColor="brand.900"
-                _hover={{
-                  bgColor: "brand.700",
-                }}
+                fontSize="2xl"
+                variant="solid"
+                as="a"
                 href="https://form.asana.com/?k=trOGgRktwffYqw6B73DHuA&amp;d=1198973227684402"
               >
                 Arrange a demo
                 <Icon ml={4} as={AiOutlineArrowRight} />
               </Button>
             </Box>
-            <Box flex="1">
-              <chakra.div
-                margin={1}
-                w="80%"
-                minW={80}
-                maxW={400}
-                maxH="100%"
-                textAlign="center"
-                mx="auto"
-              >
-                <Image src="/Clowdr-logo.svg" />
-              </chakra.div>
+            <Box
+              flexBasis="50%"
+              minW="650px"
+              flexGrow={1}
+              flexShrink={0}
+              bg="brand.800"
+              layerStyle="hero"
+              py={12}
+              px={8}
+            >
+              <Box maxW="90%" w="90%" mx="auto">
+                <Box
+                  w="100%"
+                  h="auto"
+                  mx="auto"
+                  sx={{
+                    ".react-player": {
+                      paddingTop: "56.25%",
+                      position: "relative",
+                    },
+                    ".react-player > div": {
+                      position: "absolute",
+                      left: 0,
+                      top: 0,
+                    },
+                  }}
+                >
+                  <ReactPlayer
+                    url="https://www.youtube-nocookie.com/embed/RqyHVQUYVI4"
+                    className="react-player"
+                    width="100%"
+                    height="auto"
+                    config={{
+                      youtube: {
+                        playerVars: { showinfo: 1 },
+                      },
+                    }}
+                  />
+                </Box>
+              </Box>
             </Box>
           </HStack>
         </Box>

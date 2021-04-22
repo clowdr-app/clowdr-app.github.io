@@ -1,20 +1,18 @@
-import { Button, Link } from "@chakra-ui/react";
+import { Button, chakra, Link } from "@chakra-ui/react";
 import React from "react";
 
-export default function ArrangeADemoButton() {
+export const ArrangeADemoButton = chakra(ArrangeADemoButtonInner);
+
+export function ArrangeADemoButtonInner({ className }: { className?: string }) {
   return (
     <Button
       as={Link}
       href="https://form.asana.com/?k=trOGgRktwffYqw6B73DHuA&amp;d=1198973227684402"
-      bgColor="brand.900"
-      color="white"
       minWidth="min-content"
       fontSize="xl"
       p={4}
-      _hover={{
-        bgColor: "brand.700",
-        color: "white",
-      }}
+      variant="solid-2"
+      className={className}
     >
       Arrange a demo
     </Button>
