@@ -69,6 +69,12 @@ export const theme = extendTheme({
             color: "white",
             textDecoration: "none",
           },
+          _active: {
+            bg: "blue.800",
+          },
+          _focus: {
+            bg: "blue.700",
+          },
         },
         "solid-2": {
           bg: "purple.500",
@@ -77,6 +83,12 @@ export const theme = extendTheme({
             bg: "purple.700",
             color: "white",
             textDecoration: "none",
+          },
+          _active: {
+            bg: "purple.800",
+          },
+          _focus: {
+            bg: "purple.700",
           },
         },
       },

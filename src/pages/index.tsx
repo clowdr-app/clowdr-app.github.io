@@ -7,9 +7,10 @@ import {
   Icon,
   Stack,
   Text,
+  useToken,
   VStack,
 } from "@chakra-ui/react";
-import { Link as GatsbyLink } from "gatsby";
+import { Link as GatsbyLink, Link } from "gatsby";
 import React from "react";
 import {
   AiOutlineArrowRight,
@@ -29,22 +30,23 @@ import { Packages } from "../components/Packages";
 import Title from "../components/Title";
 
 export default function Home() {
+  const brand = useToken("colors", "brand.800");
   return (
     <>
       <Title title="Virtual conferences for social good" />
       <Layout>
-        <Box w="auto">
+        <Box w="auto" layerStyle="hero" bgColor="brand.800">
           <HStack
             alignItems="stretch"
             justifyContent="center"
             spacing={0}
             flexWrap="wrap"
           >
-            <Box flexBasis="50%" flexGrow={1} flexShrink={0} py={12} px={8}>
-              <Heading as="h1" size="3xl">
-                Virtual conferences for social good
+            <Box flexBasis="40%" flexGrow={1} flexShrink={0} py={12} px={8}>
+              <Heading as="h1" size="3xl" lineHeight={1.2}>
+                Create community around your content
               </Heading>
-              <Heading as="h2" size="lg" fontWeight="normal">
+              <Heading as="h2" size="lg" fontWeight="normal" lineHeight={1.6}>
                 Clowdr makes it easy to create an engaging virtual conference
                 experience, giving you time to focus on the things that matter
               </Heading>
@@ -53,20 +55,18 @@ export default function Home() {
                 p={8}
                 fontSize="2xl"
                 variant="solid"
-                as="a"
-                href="https://form.asana.com/?k=trOGgRktwffYqw6B73DHuA&amp;d=1198973227684402"
+                as={Link}
+                to="/features"
               >
-                Arrange a demo
+                Learn more
                 <Icon ml={4} as={AiOutlineArrowRight} />
               </Button>
             </Box>
             <Box
-              flexBasis="50%"
+              flexBasis="60%"
               minW="650px"
               flexGrow={1}
               flexShrink={0}
-              bg="brand.800"
-              layerStyle="hero"
               py={12}
               px={8}
             >
@@ -104,56 +104,59 @@ export default function Home() {
           </HStack>
         </Box>
 
-        <Container my={12} maxW="80ch">
+        <Container my={12} maxW="120ch">
           <Heading as="h2" size="2xl" mb={8}>
             Running a virtual conference can be hard work
           </Heading>
           <Box mx="auto">
             <Box
               bgColor="gray.200"
-              w="max-content"
+              w="80%"
               maxW="100%"
-              fontSize={{ base: "lg", lg: "2xl" }}
+              fontSize={{ base: "lg", lg: "xl" }}
               p={4}
               my={4}
               borderRadius="lg"
             >
-              How do I organise video streaming and Q&amp;A?
+              How do I gather videos from authors and create accurate subtitles
+              for them?
             </Box>
             <Box
               bgColor="gray.200"
-              w="max-content"
+              w="80%"
               maxW="100%"
-              fontSize={{ base: "lg", lg: "2xl" }}
+              fontSize={{ base: "lg", lg: "xl" }}
               p={4}
               my={4}
               borderRadius="lg"
               ml="auto"
             >
-              How will attendees socialise with one another?
+              Will the conference be accessible to everyone in my community?
             </Box>
             <Box
               bgColor="gray.200"
-              w="max-content"
+              w="80%"
               maxW="100%"
-              fontSize={{ base: "lg", lg: "2xl" }}
+              fontSize={{ base: "lg", lg: "xl" }}
               p={4}
               my={4}
               borderRadius="lg"
             >
-              How do I run poster sessions and exhibitions?
+              How do I encourage social engagement around conference
+              content&#8212;before, during and after?
             </Box>
             <Box
               bgColor="gray.200"
-              w="max-content"
+              w="80%"
               maxW="100%"
-              fontSize={{ base: "lg", lg: "2xl" }}
+              fontSize={{ base: "lg", lg: "xl" }}
               p={4}
               my={4}
               borderRadius="lg"
               ml="auto"
             >
-              What about providing booths for our sponsors?
+              How do I manage a large and complex program? How do attendees find
+              what they're interested in?
             </Box>
           </Box>
           <Text fontSize="xl">
@@ -221,10 +224,6 @@ export default function Home() {
             fontSize="2xl"
             my={12}
             p={4}
-            bgColor="brand.900"
-            _hover={{
-              bgColor: "brand.700",
-            }}
             to="/features"
             h="auto"
             whiteSpace="normal"

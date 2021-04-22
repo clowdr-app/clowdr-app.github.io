@@ -13,10 +13,17 @@ import { ArrangeADemoButton } from "./ArrangeADemoButton";
 
 export function DesktopMenu(): JSX.Element {
   return (
-    <Grid templateColumns="1fr 1fr" columnGap={0}>
-      <HStack fontSize="large" bgColor="white" justifyContent="flex-start">
-        <chakra.a href="/" title="Clowdr Home Page" alignItems="center">
-          <Image src="/Clowdr-logo-green.svg" maxW="200" h="100" />
+    <Grid
+      templateColumns="1fr 1.5fr"
+      columnGap={0}
+      bgColor="brand.900"
+      layerStyle="hero"
+      shadow="md"
+      py={2}
+    >
+      <HStack fontSize="large" justifyContent="flex-start">
+        <chakra.a href="/" title="Clowdr Home Page" alignItems="center" ml={4}>
+          <Image src="/Clowdr-logo-white.svg" maxW="200" h="100" />
           <VisuallyHidden>
             <chakra.h1 fontSize="3xl" fontWeight="400">
               Clowdr
@@ -39,23 +46,20 @@ export function DesktopMenu(): JSX.Element {
       </HStack>
       <HStack
         display="flex"
-        flexWrap="wrap-reverse"
-        justifyContent="space-between"
+        flexWrap="wrap"
         alignItems="center"
         spacing={1}
         px={8}
         py={2}
-        layerStyle="hero"
-        bgColor="brand.800"
       >
         <HStack
           spacing={6}
-          mr={4}
+          mr={8}
           fontSize="large"
           color="brand.500"
           display={{ base: "none", md: "inline-flex" }}
+          justifyContent="flex-end"
           flexGrow={1}
-          justifyContent="space-around"
         >
           {menuSecondaryItems.map((menuItem, i) => (
             <Link
