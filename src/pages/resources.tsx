@@ -17,7 +17,7 @@ export default function Feedback() {
     <>
       <Title title="Resources" />
       <Layout>
-        <Container my={4}>
+        <Container my={12}>
           <Heading as="h2" size="2xl">
             Resources
           </Heading>

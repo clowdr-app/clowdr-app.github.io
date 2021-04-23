@@ -187,9 +187,11 @@ export default function Features() {
               Trusted by thousands
             </Heading>
             <Grid
-              spacing={6}
-              templateColumns={{ base: "1fr", lg: "1fr 1fr" }}
-              gridGap={4}
+              spacing={0}
+              templateColumns={{ base: "minmax(0, 1fr)", lg: "1fr 1fr" }}
+              gridGap={{ base: 0, lg: 4 }}
+              gridRowGap={4}
+              maxW="100%"
             >
               <Testimonial
                 title="ICSE 2020"

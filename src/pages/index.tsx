@@ -293,7 +293,7 @@ export default function Home() {
                     single track event through to a multi-week conference with
                     many parallel tracks.
                   </strong>{" "}
-                  When your conference has a lots of content and rapid-fire
+                  When your conference has a lot of content and rapid-fire
                   presentations, it can get difficult to manage. Clowdr shows
                   you the right thing at the right time.
                 </Text>
