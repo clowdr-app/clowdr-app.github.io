@@ -46,7 +46,13 @@ export default function Home() {
             spacing={0}
             flexWrap="wrap"
           >
-            <Box flexBasis="40%" flexGrow={1} flexShrink={0} py={12} px={8}>
+            <Box
+              flexBasis="40%"
+              flexGrow={1}
+              flexShrink={0}
+              py={{ base: 2, xl: 12 }}
+              px={8}
+            >
               <Heading as="h1" size="3xl" lineHeight={1.2}>
                 Create community around your content
               </Heading>
@@ -55,7 +61,7 @@ export default function Home() {
                 experience, giving you time to focus on the things that matter
               </Heading>
               <Button
-                my={12}
+                my={{ base: 4, xl: 12 }}
                 p={8}
                 fontSize="2xl"
                 variant="solid"
@@ -68,13 +74,15 @@ export default function Home() {
             </Box>
             <Box
               flexBasis="60%"
-              minW="650px"
               flexGrow={1}
               flexShrink={0}
-              py={12}
-              px={8}
+              py={{ base: 4, xl: 12 }}
+              px={4}
+              display="flex"
+              flexDir="column"
+              justifyContent="center"
             >
-              <Box maxW="90%" w="90%" mx="auto">
+              <Box maxW="100vw" w="90%" mx="auto">
                 <Box
                   w="100%"
                   h="auto"
@@ -114,7 +122,10 @@ export default function Home() {
           </Heading>
           <Accordion mx="auto" allowToggle={true} allowMultiple={true}>
             <AccordionItem border="0 none">
-              <AccordionButton _hover={{ bgColor: "none" }}>
+              <AccordionButton
+                _hover={{ bgColor: "none" }}
+                py={{ base: 2, lg: 4 }}
+              >
                 <Box
                   bgColor="yellow.200"
                   _hover={{
@@ -125,7 +136,6 @@ export default function Home() {
                   maxW="100%"
                   fontSize={{ base: "lg", lg: "xl" }}
                   p={4}
-                  my={4}
                   borderRadius="lg"
                 >
                   <Text>
@@ -147,7 +157,8 @@ export default function Home() {
                   shadow="dark-lg"
                   my={8}
                   mx="auto"
-                  maxW="30rem"
+                  w="30rem"
+                  maxW="100%"
                 />
                 <Text>
                   Clowdr automatically generates subtitles for videos uploaded
@@ -158,7 +169,10 @@ export default function Home() {
               </AccordionPanel>
             </AccordionItem>
             <AccordionItem border="0 none">
-              <AccordionButton _hover={{ bgColor: "none" }}>
+              <AccordionButton
+                _hover={{ bgColor: "none" }}
+                py={{ base: 2, lg: 4 }}
+              >
                 <Box
                   bgColor="brand.100"
                   _hover={{
@@ -169,7 +183,6 @@ export default function Home() {
                   maxW="100%"
                   fontSize={{ base: "lg", lg: "xl" }}
                   p={4}
-                  my={4}
                   borderRadius="lg"
                   ml="auto"
                 >
@@ -189,7 +202,8 @@ export default function Home() {
                   shadow="dark-lg"
                   my={8}
                   mx="auto"
-                  maxW="30rem"
+                  w="30rem"
+                  maxW="100%"
                 />
                 <Text>
                   We believe that, today, text-based platforms are fundamentally
@@ -199,7 +213,10 @@ export default function Home() {
               </AccordionPanel>
             </AccordionItem>
             <AccordionItem border="0 none">
-              <AccordionButton _hover={{ bgColor: "none" }}>
+              <AccordionButton
+                _hover={{ bgColor: "none" }}
+                py={{ base: 2, lg: 4 }}
+              >
                 <Box
                   bgColor="purple.100"
                   _hover={{
@@ -210,7 +227,6 @@ export default function Home() {
                   maxW="100%"
                   fontSize={{ base: "lg", lg: "xl" }}
                   p={4}
-                  my={4}
                   borderRadius="lg"
                 >
                   How do I encourage social engagement around conference
@@ -235,7 +251,8 @@ export default function Home() {
                   shadow="dark-lg"
                   my={8}
                   mx="auto"
-                  maxW="30rem"
+                  w="30rem"
+                  maxW="100%"
                 />
                 <Text>
                   Clowdr's powerful chat system includes features your attendees
@@ -248,7 +265,10 @@ export default function Home() {
               </AccordionPanel>
             </AccordionItem>
             <AccordionItem border="0 none">
-              <AccordionButton _hover={{ bgColor: "none" }}>
+              <AccordionButton
+                _hover={{ bgColor: "none" }}
+                py={{ base: 2, lg: 4 }}
+              >
                 <Box
                   bgColor="teal.50"
                   _hover={{
@@ -259,7 +279,6 @@ export default function Home() {
                   maxW="100%"
                   fontSize={{ base: "lg", lg: "xl" }}
                   p={4}
-                  my={4}
                   borderRadius="lg"
                   ml="auto"
                 >
@@ -284,7 +303,8 @@ export default function Home() {
                   shadow="dark-lg"
                   my={8}
                   mx="auto"
-                  maxW="30rem"
+                  w="30rem"
+                  maxW="100%"
                 />
                 <Text>
                   Clowdr's Live Sidebar shows you what's happening right now:
@@ -410,12 +430,12 @@ export default function Home() {
             alignItems="stretch"
             justifyContent="center"
             flexWrap="wrap"
-            spacing={4}
+            spacing={0}
           >
             <VStack
-              flexBasis="20rem"
-              flexGrow={1}
-              maxW="80ch"
+              flex={1}
+              minW="40ch"
+              flexBasis="minmax(max-content, 80ch)"
               bgColor="purple.500"
               color="white"
               p={8}
@@ -430,9 +450,9 @@ export default function Home() {
               </Text>
             </VStack>
             <VStack
-              flexBasis="20rem"
-              flexGrow={1}
-              maxW="80ch"
+              flex={1}
+              minW="40ch"
+              flexBasis="minmax(max-content, 80ch)"
               bgColor="yellow.700"
               color="white"
               p={8}
@@ -447,9 +467,9 @@ export default function Home() {
               </Text>
             </VStack>
             <VStack
-              flexBasis="20rem"
-              flexGrow={1}
-              maxW="80ch"
+              flex={1}
+              minW="40ch"
+              flexBasis="minmax(max-content, 80ch)"
               bgColor="teal.500"
               color="white"
               p={8}

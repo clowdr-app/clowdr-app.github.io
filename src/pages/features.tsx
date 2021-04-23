@@ -186,7 +186,11 @@ export default function Features() {
             <Heading as="h2" minW={72} my={8} textAlign="center">
               Trusted by thousands
             </Heading>
-            <Grid spacing={6} templateColumns="1fr 1fr" gridGap={4}>
+            <Grid
+              spacing={6}
+              templateColumns={{ base: "1fr", lg: "1fr 1fr" }}
+              gridGap={4}
+            >
               <Testimonial
                 title="ICSE 2020"
                 name="July 2020"
