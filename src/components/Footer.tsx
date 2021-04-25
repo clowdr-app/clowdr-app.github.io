@@ -22,7 +22,7 @@ export default function Footer() {
   // const cms = useCMS();
 
   return (
-    <Box bgColor="gray.800" py={8} mt="auto" layerStyle="footer">
+    <Box bgColor="gray.800" py={8} mt="auto" layerStyle="footer" as="footer">
       <HStack alignItems="flex-start" justifyContent="center" flexWrap="wrap">
         <Box
           width="30%"

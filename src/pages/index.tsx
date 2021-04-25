@@ -56,10 +56,10 @@ export default function Home() {
               <Heading as="h1" size="3xl" lineHeight={1.2}>
                 Create community around your content
               </Heading>
-              <Heading as="h2" size="lg" fontWeight="normal" lineHeight={1.6}>
+              <Text fontSize="3xl" fontWeight="normal" lineHeight={1.6}>
                 Clowdr makes it easy to create an engaging virtual conference
                 experience, giving you time to focus on the things that matter
-              </Heading>
+              </Text>
               <Button
                 my={{ base: 4, xl: 12 }}
                 p={8}
@@ -470,7 +470,7 @@ export default function Home() {
               flex={1}
               minW="40ch"
               flexBasis="minmax(max-content, 80ch)"
-              bgColor="teal.500"
+              bgColor="teal.600"
               color="white"
               p={8}
             >
@@ -492,6 +492,12 @@ export default function Home() {
                 bgColor="white"
                 _hover={{
                   bgColor: "white",
+                }}
+                _active={{
+                  bgColor: "gray.100",
+                }}
+                _focus={{
+                  bgColor: "gray.100",
                 }}
                 w={16}
                 h={16}

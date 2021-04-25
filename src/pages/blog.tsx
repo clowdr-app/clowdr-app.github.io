@@ -105,7 +105,7 @@ export default function Blog() {
                   ) : undefined}
 
                   <Box p={6}>
-                    <Box>
+                    <Box as="header">
                       <chakra.span
                         fontSize="xs"
                         textTransform="uppercase"
@@ -145,7 +145,7 @@ export default function Blog() {
                       />
                     </Box>
 
-                    <Box mt={4}>
+                    <Box mt={4} as="main">
                       <Flex alignItems="center">
                         <Link
                           mr={2}

@@ -91,7 +91,7 @@ export default function BlogPost({
               by <span itemProp="author">{post?.frontmatter?.author}</span>
             </p>
           </header>
-          <section>{renderAst(post?.htmlAst)}</section>
+          <main>{renderAst(post?.htmlAst)}</main>
           <Divider />
           <chakra.nav mt={4}>
             <ul
