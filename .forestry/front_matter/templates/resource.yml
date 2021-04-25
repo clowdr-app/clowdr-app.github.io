@@ -34,10 +34,11 @@ fields:
   name: author
   label: author
   description: Author of the resource.
-- type: text
-  name: category
-  label: category
-  description: Category the resource falls into.
+- name: categories
+  type: tag_list
+  default: []
+  label: Categories
+  description: The categories that this resource fits into.
 pages:
 - content/resources/Organizer Guides/hosting-a-tutorial-or-workshop-with-clowdr-and-zoom.md
 - content/resources/Organizer Guides/managing-the-content-in-your-program-with-clowdr.md
