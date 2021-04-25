@@ -59,7 +59,9 @@ export default function Resources() {
         .filter(
           post =>
             post.frontmatter?.categories &&
-            post.frontmatter?.categories.includes(category)
+            post.frontmatter?.categories
+              .map(c => c?.toLowerCase())
+              .includes(category)
         )
         .sort((a, b) =>
           a.frontmatter?.title && b.frontmatter?.title
