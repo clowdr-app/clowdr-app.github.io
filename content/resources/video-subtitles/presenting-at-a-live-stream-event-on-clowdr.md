@@ -11,8 +11,6 @@ categories:
 draft: true
 ---
 
-## Presenting at a live-stream event on Clowdr
-
 This video briefly summarizes Clowdr's video pipeline capabilities, then explains what you need to do as a presenter or chair at a live-stream event.
 
 We walk through Clowdr's UI going from logging in, to finding the room for your event, to opening and joining the backstage area. Common problems are also identified and brief advice for how to tackle them is provided!

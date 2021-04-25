@@ -9,8 +9,6 @@ categories:
 draft: true
 ---
 
-## Managing your program's content with Clowdr
-
 This video summarizes how Organizers can manage the content in their program with Clowdr. This includes manually entering content items, as well as batch importing from an external content manager.
 
 `youtube:`[`https://www.youtube.com/watch`](https://www.youtube.com/watch "https://www.youtube.com/watch")

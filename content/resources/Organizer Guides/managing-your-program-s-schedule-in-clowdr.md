@@ -9,8 +9,6 @@ categories:
 draft: true
 ---
 
-## Managing your program's schedule in Clowdr
-
 This video summarizes how to XXXX.
 
 We walk through Clowdr's UI to show how to XXXXXX. Common scenarios are also identified and advice for how to tackle them is provided!

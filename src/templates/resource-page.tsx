@@ -15,7 +15,7 @@ import rehypeReact from "rehype-react";
 import unified from "unified";
 import { Layout } from "../components/Layout";
 import Title from "../components/Title";
-import { ResourcePostBySlugQuery } from "../graphql";
+import { ResourcePageBySlugQuery } from "../graphql";
 
 const processor = unified().use(rehypeReact, {
   createElement: React.createElement,
@@ -42,7 +42,7 @@ export default function ResourcePageBySlug({
   data,
   location,
 }: {
-  data: ResourcePostBySlugQuery;
+  data: ResourcePageBySlugQuery;
   location: any;
 }) {
   const post = data.markdownRemark;
@@ -64,7 +64,22 @@ export default function ResourcePageBySlug({
             </Heading>
             <Badge mt={4}>Updated {post?.frontmatter?.updatedDate}</Badge>
           </header>
-          <section>{renderAst(post?.htmlAst)}</section>
+          <chakra.section
+            sx={{
+              h3: {
+                size: "xl",
+              },
+              h4: {
+                size: "lg",
+              },
+              h5: {
+                fontWeight: "bolder",
+                size: "md",
+              },
+            }}
+          >
+            {renderAst(post?.htmlAst)}
+          </chakra.section>
         </Container>
       </Layout>
     </>
