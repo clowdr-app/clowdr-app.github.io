@@ -48,14 +48,12 @@ export default function Resources() {
   const posts = result.allMarkdownRemark.nodes;
 
   const postsEl = useMemo(() => {
-    //const categories = R.uniqBy(p => p.frontmatter?.category, posts);
-    // const x = posts.map(p => p.frontmatter?.categories);
     const postCategories = posts.map(
       p => p.frontmatter?.categories?.filter(notEmpty) ?? []
     );
-    const allCategories = R.uniq(R.flatten(postCategories)).sort((a, b) =>
-      a.localeCompare(b)
-    );
+    const allCategories = R.uniq(
+      R.flatten(postCategories).map(x => x.toLowerCase())
+    ).sort((a, b) => a.localeCompare(b));
     return allCategories.map(category => {
       const categoryPosts = posts
         .filter(
