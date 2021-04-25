@@ -2,12 +2,14 @@
 updatedDate: 2021-04-02T07:36:04.000+00:00
 title: Clowdr's committment to accessibility
 slug: accessibility
-description: Clowdr is committed to accessibility as a core part of our platform.
+description:
+  Clowdr is committed to accessibility as a core part of our platform.
   In this page we explain how we deliver on that commitment.
 author: Ed Nutting
-category: Accessibility
-
+categories:
+  - Accessibility
 ---
+
 **Clowdr aims to provide a social platform. One key element of that is providing a platform that anyone can access. Another is making sure everyone feels welcome. That's why accessibility and inclusivity are woven into every part of our software.**
 
 ## **Accessibility**
@@ -26,7 +28,7 @@ Both automatic and manual live captioning of video chat rooms (social rooms) as 
 
 We recognise that many attendees will be using Clowdr for the first time at a conference, and may only be on the platform for a few days. As such, we cannot rely on the kind of time investment and user familiarity that users often acquire when they regularly use apps like Zoom or Teams. We work hard to make sure that when a user logs in for the first time, they can easily set up their profile and find the content, events and people they're looking for - or discover new connections - with minimal effort. We use icons that have universally understood meaning and neutral dark/light themes that make everyone feel welcome.
 
-Clowdr serves many different communities. As such, Clowdr's profile pages provide a broad range of options for people to share with other attendees  who they are and what they're working on. This includes their display name, picture, customisable badges, affiliations, social media handles, bio paragraph, pronouns and more. With the exception of display names, each part is optional so attendees can provide as much or as little information as they are comfortable sharing.
+Clowdr serves many different communities. As such, Clowdr's profile pages provide a broad range of options for people to share with other attendees who they are and what they're working on. This includes their display name, picture, customisable badges, affiliations, social media handles, bio paragraph, pronouns and more. With the exception of display names, each part is optional so attendees can provide as much or as little information as they are comfortable sharing.
 
 ## **Standards and Browsers**
 

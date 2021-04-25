@@ -6,8 +6,8 @@ author: Ross Gardiner
 category: Clowdr
 slug: hello-world
 featuredImage: "./Clowdr-logo_colour.png"
-
 ---
-Welcome to the Clowdr blog! We'll be using this to post all sorts of interesting content about running virtual conferences and building open source software. 
+
+Welcome to the Clowdr blog! We'll be using this to post all sorts of interesting content about running virtual conferences and building open source software.
 
 Stay tuned!
