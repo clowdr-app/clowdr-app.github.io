@@ -9,7 +9,7 @@ author: Cristal Mojica
 draft: false
 
 ---
-### Technical Requirements for Using Clowdr
+### Getting Ready to Use Clowdr?
 
 We want to make sure that all users have a great experience on Clowdr! Here are the minimum technical requirements for using our platform:
 
