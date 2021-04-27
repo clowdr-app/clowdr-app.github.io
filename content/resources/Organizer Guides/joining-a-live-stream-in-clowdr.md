@@ -26,9 +26,14 @@ To join a live-stream in Clowdr, please follow these three stages, starting at t
    Please use a desktop or laptop device for the best experience (for both you and attendees watching your live-stream). iPads and mobile phones are not a good choice (unless professionally set up).
 2. **Find or create a social room to check your camera/microphone permissions**
 
-   First, select the conference you are attending from your list of conferences.
-
-   In the left sidebar you will find Clowdr's main navigation menus. Choose a social room (or create one using the "plus" button). Once in the room, try to enable your camera and microphone, then click Join Room. If you have trouble enabling your camera or microphone, such as "Permission denied" error messages, please follow these instructions to resolve the problem.
+   * First, select the conference you are attending from your list of conferences.  
+   * In the left sidebar you will find Clowdr's main navigation menus. Choose a social room (or create one using the "plus" button). 
+   * Once you are on the room page, try to enable your camera and microphone
+   * Finally, click the "Join room" button. 
+   
+   If you have trouble enabling your camera or microphone, such as "Permission denied" error messages, [please follow these instructions to resolve the problem](TODO "Instructions for fixing camera, microphone and screen sharing permissions").  
+     
+   If you plan to give a presentation using slides or an on-screen demo, you should also try enabling screen sharing. If you have problems with browser or operating system permissions, please follow the instructions linked above to resolve the problem.
 3. **Invite a friend to join you. Check your camera/microphone quality**
 
    You'll need a friend to help you with this step! Either someone you already know at the conference, or a stranger in a social room, or your session chair. Anybody will do! Ask them to join the social room and let you know how you look and sound.
@@ -65,14 +70,13 @@ Your speakers' area will appear automatically in the same room as your event. Fr
    If you are the presenter or chair at multiple events, you will see a separate speakers' area for each event. You should join the next one at which you are needed. 
 2. **Enable your camera and microphone, just as you did during step 2 of "Prepare in advance".**
 3. **Join the room  
-     
    **To participate in the live-stream, the final step is to click "Join room".  
      
    Once in the room, you can toggle your camera, microphone or screen sharing. You will see anyone else who is due to present with you and can use the time available to chat to them.  
      
    If you are a session chair, you should chat to the presenters in the backstage, get to know them a little and help them to feel comfortable.
 4. **(Optional) Start sharing your screen  
-   **TODO
+   **If you need to show slides or give a demo, you can enable screen sharing after joining the room.
 5. **Watch for the countdown  
    **TODO
 6. **You are LIVE!  
