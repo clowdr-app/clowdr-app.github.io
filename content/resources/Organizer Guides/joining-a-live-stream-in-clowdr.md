@@ -17,7 +17,7 @@ The video below briefly summarizes Clowdr's video pipeline capabilities, then ex
 
 To join a live-stream in Clowdr, please follow these three stages, starting at the latest the day before your event.
 
-## 1. Prepare in advance
+### 1. Prepare in advance
 
 1. [**Log in (or sign up)**](https://app.clowdr.org)
 
@@ -57,7 +57,7 @@ To join a live-stream in Clowdr, please follow these three stages, starting at t
 7. **Session chairs: Watch or read the presentations in advance**  
    While you are backstage with the presenters at an event, you cannot (currently) watch the live-stream at the same time. Therefore, you should familiarize yourself with the content of the session in advance. For example, by watching any pre-recorded videos or read each paper's abstract.
 
-## 2. Arrive ahead of time
+### 2. Arrive ahead of time
 
 Your speakers' (a.k.a. backstage) area will become available **20 minutes in advance of your event** (in the same room as your event is scheduled in - the one we found in Step 4 of "Prepare in advance").
 
@@ -69,7 +69,7 @@ Your speakers' area will become available 20 minutes **in advance of the schedul
 
 Clowdr's data model does not include "sessions". **Your speakers' area becomes available 20 minutes in advance of your event, not your session.**
 
-## 3. Join the speakers' area
+### 3. Join the speakers' area
 
 ![A Clowdr speakers' area in the Demo Room. The open speakers' area is for an event presenting a paper called Demo Paper. The "You are off air" message is visible to the left of a central countdown timer. The join room controls are shown and are the same as the buttons for entering a social room.](/images/backstage-with-off-air-countdown.png "A Clowdr speakers' area in the Demo Room")
 
@@ -109,7 +109,7 @@ Clowdr's data model does not include "sessions". **Your speakers' area becomes a
      
    **Clowdr will cut you off:** Most conferences have tightly packed schedules with back-to-back presentations. As a result, when the time for your event runs out, there is no space for overspill. Clowdr's live-stream will move on to the next event. **As such, whoever is speaking in the last 30 seconds of the event should try to bring themselves to a close before the time runs out.**
 
-## Top tips
+### Top tips
 
 1. **When you're live, _you're live._**   
    Don't sit around waiting for the audience to tell you - we've all watched this happen and there's no need. Clowdr's backstage makes it very clear when you are live.
