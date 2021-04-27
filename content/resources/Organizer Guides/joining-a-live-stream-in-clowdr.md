@@ -27,9 +27,9 @@ To join a live-stream in Clowdr, please follow these three stages, starting at t
      
    You'll need a friend to help you with this step! Either someone you already know at the conference, or a stranger in a social room, or your session chair. Anybody will do! Ask them to join the social room and let you know how you look and sound. 
 
-   > **We strongly recommend wearing headphones** and using an external USB microphone if you have one available. If you're using a headset, please remember to position the microphone correctly: below your chin - out of the line of your breath.  
-   >   
-   > Feedback loops caused by using speakers (even fabled Apple devices) are almost unavoidable and awful for attendees watching your live-stream. Most built-in microphones sound poor too.
+> **We strongly recommend wearing headphones** and using an external USB microphone if you have one available. If you're using a headset, please remember to position the microphone correctly: below your chin - out of the line of your breath.  
+>   
+> Feedback loops caused by using speakers (even fabled Apple devices) are almost unavoidable and awful for attendees watching your live-stream. Most built-in microphones sound poor too.
 
 ## 2. Arrive ahead of time
 
