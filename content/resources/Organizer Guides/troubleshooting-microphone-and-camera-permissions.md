@@ -39,8 +39,9 @@ Latest versions of:
 
 * Safari v13 or lower
   * Including on iOS devices
-  * **Please note: on iOS devices, all browsers are just Safari with a different UI.  
-    \**Due to Apple's app store restrictions, Chrome, FireFox and other browsers are not permitted to use their own rendering engines. As a result, they are just a wrapper around the underlying Safari browser.
+  * **Please note: on iOS devices, all browsers are just Safari with a different UI. **
+
+    Due to Apple's app store restrictions, Chrome, FireFox and other browsers are not permitted to use their own rendering engines. As a result, they are just a wrapper around the underlying Safari browser.
 * iOS devices (iPad / iPhone) during a live-stream
   * This generally results in a poor connection and low quality sound/video
 * Android devices during a live-stream
@@ -55,9 +56,9 @@ If the form doesn't help you solve the issue, you can submit the form to the Clo
 
 ### 2. Examples
 
-1. **Apple devices: Enable camera/microphone/screen-sharing ("screen recording") via the _System Preferences  
+1. **Apple devices: Enable camera/microphone/screen-sharing ("screen recording") via the _System Preferences**
      
-   _**Apple Mac and iOS devices pose particular challenges, as Apple have added an additional layer of security to the operating systems. By default this prevents browsers from accessing the microphone and camera.**__**
+   _**Apple Mac and iOS devices pose particular challenges, as Apple have added an additional layer of security to the operating systems. By default this prevents browsers from accessing the microphone and camera.**_
 
    ![Use System Prefences to enable microphone/camera](/images/chrome-os-permissions-2.gif "Use System Prefences to enable microphone/camera")
 2. **Example: Enable permissions within your browser.**
@@ -67,10 +68,10 @@ If the form doesn't help you solve the issue, you can submit the form to the Clo
    ![Enable permissions in Chrome](/images/chrome-os-permissions-1.gif "Enable permissions in Chrome")
 3. **Example: Reset permissions in Safari, then try enabling your microphone**
 
-   ![](/images/safari-allow-microphone.gif "Enable mic permissions fresh in Chrome")
+   ![Enable mic in Safari](/images/safari-allow-microphone.gif "Enable mic in Safari")
 4. **Example: Reset permissions in Safari, then try enabling your camera**
 
-   **![](/images/safari-allow-camera.gif)**
+   ![Enable camera in Safari](/images/safari-allow-camera.gif "Enable camera in Safari")
 5. **Example: Try changing device in Settings then (secondly) enable mic/camera  
      
-   ![](/images/fix-device-selection.gif)**
+   ![Change settings then enable mic/cam](/images/fix-device-selection.gif "Change settings then enable mic/cam")
