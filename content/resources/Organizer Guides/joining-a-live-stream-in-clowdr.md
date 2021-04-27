@@ -6,7 +6,7 @@ title: Joining a live-stream in Clowdr
 slug: livestreaming
 description: Learn how to join a livestream as a presenter or chair.
 author: Ed Nutting
-draft: true
+draft: false
 
 ---
 TODO: Screenshots
@@ -61,13 +61,17 @@ To join a live-stream in Clowdr, please follow these three stages, starting at t
 
 Your speakers' (a.k.a. backstage) area will become available **20 minutes in advance of your event** (in the same room as your event is scheduled in - the one we found in Step 4 of "Prepare in advance").
 
+![A Clowdr room called Demo Room showing the countdown to when the speakers' area will become available for an event called Demo Event.](/images/demo-backstage-event-highlighting-countdown-to-backstage-available.png "Clowdr room with countdown to speakers' area available")
+
 **Your speakers' area will appear automatically in the same room as your event.** From 1 hour before your event, you will see a countdown to let you the time left until your speakers' area becomes available.
 
-**Your speakers' area will become available 20 minutes in advance of the scheduled _live presentation/Q&A_ period of your event - not including pre-recorded playback.**
+Your speakers' area will become available 20 minutes **in advance of the scheduled _live presentation/Q&A_ period** of your event - **not including pre-recorded playback.**
 
-**Clowdr's data model does not include "sessions". Your speakers' area becomes available 20 minutes in advance of your event, not your session.**
+Clowdr's data model does not include "sessions". **Your speakers' area becomes available 20 minutes in advance of your event, not your session.**
 
 ## 3. Join the speakers' area
+
+![A Clowdr speakers' area in the Demo Room. The open speakers' area is for an event presenting a paper called Demo Paper. The "You are off air" message is visible to the left of a central countdown timer. The join room controls are shown and are the same as the buttons for entering a social room.](/images/backstage-with-off-air-countdown.png "A Clowdr speakers' area in the Demo Room")
 
 1. **If you see multiple speakers' areas, open the next one you at which you are presenting or chairing.**
    **_(If only one area is available, it will open automatically.)_**
