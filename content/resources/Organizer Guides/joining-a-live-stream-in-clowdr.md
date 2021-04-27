@@ -109,7 +109,7 @@ Clowdr's data model does not include "sessions". **Your speakers' area becomes a
 
 ## Top tips
 
-1. **When you're live, _you're live._**
+1. **When you're live, _you're live._**   
    Don't sit around waiting for the audience to tell you - we've all watched this happen and there's no need. Clowdr's backstage makes it very clear when you are live.
 2. **Leave questions until you are live.**   
    When you see questions in the chat, and you're due to participate in a live Q&A, leave them unanswered so that you can answer them during the live event. If you answer the questions via chat, you'll have nothing to answer during the live-stream.
