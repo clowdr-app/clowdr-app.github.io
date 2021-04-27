@@ -53,16 +53,17 @@ Latest versions of:
 
 If the form doesn't help you solve the issue, you can submit the form to the Clowdr team as a record of what system/browser you are using and what you have tried. This will enable us to help you most effectively.
 
-### 2. Apple devices
+### 2. Examples
 
-Apple Mac and iOS devices pose particular challenges, as Apple have added an additional layer of security to the operating systems. By default this prevents browsers from accessing the microphone and camera.
-
-1. **Enable camera/microphone/screen-sharing ("screen recording") via the _System Preferences_**
+1. **Apple devices: Enable camera/microphone/screen-sharing ("screen recording") via the _System Preferences  
+     
+   _**Apple Mac and iOS devices pose particular challenges, as Apple have added an additional layer of security to the operating systems. By default this prevents browsers from accessing the microphone and camera.**__**
 
    ![Use System Prefences to enable microphone/camera](/images/chrome-os-permissions-2.gif "Use System Prefences to enable microphone/camera")
-2. **Example: Enable permissions within your browser.**   
-     
+2. **Example: Enable permissions within your browser.**
+
    This example shows Chrome. The process is very similar in FireFox and Edge.  
+     
    ![Enable permissions in Chrome](/images/chrome-os-permissions-1.gif "Enable permissions in Chrome")
 3. **Example: Reset permissions in Safari, then try enabling your microphone**
 
@@ -70,12 +71,6 @@ Apple Mac and iOS devices pose particular challenges, as Apple have added an add
 4. **Example: Reset permissions in Safari, then try enabling your camera**
 
    **![](/images/safari-allow-camera.gif)**
-   
-5. **Example: Try changing device in Settings then (secondly) enable mic/camera**
-
-
-### 3. Google Chrome
-
-### 4. Mozilla FireFox
-
-### 5.
+5. **Example: Try changing device in Settings then (secondly) enable mic/camera  
+     
+   ![](/images/fix-device-selection.gif)**
