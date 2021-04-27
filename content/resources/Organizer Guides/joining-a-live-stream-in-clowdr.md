@@ -109,7 +109,7 @@ Clowdr's data model does not include "sessions". **Your speakers' area becomes a
 
    You will see a box that says "You are off air" next to a countdown timer. When the countdown reaches zero, you are live - and everyone at the conference can see and hear you!
 
-   In the 10 seconds before are live, the countdown will flash red-black, red-black, red-black, and then remain red once you are live.
+   In the 10 seconds before you are live, the countdown will flash red-black, red-black, red-black, and then remain red once you are live.
 
    ![In a Clowdr backstage, during the 10s before you are live, the "You are off air" text and the countdown alternative backgrounds between red and black.](/images/backsrtage-10-secs-before-live.png "Clowdr backstage 10s before live")
 6. **You are LIVE!**
@@ -128,6 +128,7 @@ Clowdr's data model does not include "sessions". **Your speakers' area becomes a
 
    **Ask the question out loud.** Just like at a physical event, you need to say out loud the question that you are asking. People watching the recording of your event on Clowdr or YouTube long after the conference has ended, may not have access to the text chat, so will need to hear the question from you in the stream.
 7. **Watch for the countdown**  
+
    The countdown will have been replaced with a new timer. This shows the time remaining until the end of your event.
 
    **Clowdr will cut you off:** Most conferences have tightly packed schedules with back-to-back presentations. As a result, when the time for your event runs out, there is no space for overspill. Clowdr's live-stream will move on to the next event. **As such, whoever is speaking in the last 30 seconds of the event should try to bring themselves to a close before the time runs out.**
