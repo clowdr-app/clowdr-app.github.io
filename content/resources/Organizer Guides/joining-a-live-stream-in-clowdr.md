@@ -41,13 +41,12 @@ To join a live-stream in Clowdr, please follow these three stages, starting at t
    > **We strongly recommend wearing headphones** and using an external USB microphone if you have one available. If you're using a headset, please remember to position the microphone correctly: below your chin - out of the line of your breath.
    >
    > Feedback loops caused by using speakers (even fabled Apple devices) are almost unavoidable and awful for attendees watching your live-stream. Most built-in microphones sound poor too.
-4. **Find the room for your event  
-   **When preparing in advance, you'll need to find which room your event is scheduled in. On the day of your event, you'll be able to find your room using the "Today's Program Rooms" section of the left sidebar. 
-
+4. **Find the room for your event**
+   When preparing in advance, you'll need to find which room your event is scheduled in. On the day of your event, you'll be able to find your room using the "Today's Program Rooms" section of the left sidebar. 
      
    To find your event, either browser the Schedule or search in the Happening Soon section for your own name or the title of your event. Click on your event to open the item page. At the bottom of the item page you will find a summary of the scheduled times and rooms for your item. Use the first of the two tables to find the relevant room.
-5. **Session chairs: Watch or read the presentations in advance  
-   **TODO: Can't watch stream backstage; must prepare questions in advance
+5. **Session chairs: Watch or read the presentations in advance**  
+   TODO: Can't watch stream backstage; must prepare questions in advance
 
 ## 2. Arrive ahead of time
 
@@ -61,11 +60,10 @@ Your speakers' area will appear automatically in the same room as your event. Fr
 
 ## 3. Join the speakers' area
 
-1. **If you see multiple speakers' areas, open the next one you at which you are presenting or chairing.   
-   _(If only one area is available, it will open automatically.)  
+1. **If you see multiple speakers' areas, open the next one you at which you are presenting or chairing.**
+   **_(If only one area is available, it will open automatically.)_**
      
-   _**Click the "Open this area" button to open a particular speakers' area.
-
+   Click the "Open this area" button to open a particular speakers' area.
      
    If you are the presenter or chair at multiple events, you will see a separate speakers' area for each event. You should join the next one at which you are needed. 
 2. **Enable your camera and microphone, just as you did during step 2 of "Prepare in advance".**
@@ -75,11 +73,11 @@ Your speakers' area will appear automatically in the same room as your event. Fr
    Once in the room, you can toggle your camera, microphone or screen sharing. You will see anyone else who is due to present with you and can use the time available to chat to them.  
      
    If you are a session chair, you should chat to the presenters in the backstage, get to know them a little and help them to feel comfortable.
-4. **(Optional) Start sharing your screen  
-   **If you need to show slides or give a demo, you can enable screen sharing after joining the room.
-5. **Watch for the countdown  
-   **TODO
-6. **You are LIVE!  
-   **TODO
-7. **Watch for the countdown  
-   **TODO
+4. **(Optional) Start sharing your screen**
+   If you need to show slides or give a demo, you can enable screen sharing after joining the room.
+5. **Watch for the countdown**
+   TODO
+6. **You are LIVE!**
+   TODO
+7. **Watch for the countdown**
+   TODO
