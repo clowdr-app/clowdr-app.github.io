@@ -39,7 +39,7 @@ Latest versions of:
 
 * Safari v13 or lower
   * Including on iOS devices
-  * **Please note: on iOS devices, all browsers are just Safari with a different UI. **
+  * **Please note: on iOS devices, all browsers are just Safari with a different UI.**
 
     Due to Apple's app store restrictions, Chrome, FireFox and other browsers are not permitted to use their own rendering engines. As a result, they are just a wrapper around the underlying Safari browser.
 * iOS devices (iPad / iPhone) during a live-stream
@@ -52,13 +52,15 @@ Latest versions of:
 
 [This step-by-step form](https://form.asana.com?k=2O5KSgfyRmNoddFkKdJh5Q&d=1198973227684402 "Mic/Cam Troubleshooting form") provides links to support information for specific browsers and operating systems. Hopefully it will help you diagnose and fix the problem you are having.
 
+[https://form.asana.com?k=2O5KSgfyRmNoddFkKdJh5Q&d=1198973227684402](https://form.asana.com?k=2O5KSgfyRmNoddFkKdJh5Q&d=1198973227684402 "Mic/Cam Troubleshooting form")
+
 If the form doesn't help you solve the issue, you can submit the form to the Clowdr team as a record of what system/browser you are using and what you have tried. This will enable us to help you most effectively.
 
 ### 2. Examples
 
-1. **Apple devices: Enable camera/microphone/screen-sharing ("screen recording") via the _System Preferences**
+1. **Apple devices: Enable camera/microphone/screen-sharing ("screen recording") via the _System Preferences_**
      
-   _**Apple Mac and iOS devices pose particular challenges, as Apple have added an additional layer of security to the operating systems. By default this prevents browsers from accessing the microphone and camera.**_
+   Apple Mac and iOS devices pose particular challenges, as Apple have added an additional layer of security to the operating systems. By default this prevents browsers from accessing the microphone and camera.
 
    ![Use System Prefences to enable microphone/camera](/images/chrome-os-permissions-2.gif "Use System Prefences to enable microphone/camera")
 2. **Example: Enable permissions within your browser.**
@@ -72,6 +74,6 @@ If the form doesn't help you solve the issue, you can submit the form to the Clo
 4. **Example: Reset permissions in Safari, then try enabling your camera**
 
    ![Enable camera in Safari](/images/safari-allow-camera.gif "Enable camera in Safari")
-5. **Example: Try changing device in Settings then (secondly) enable mic/camera  
+5. **Example: Try changing device in Settings then (secondly) enable mic/camera**
      
    ![Change settings then enable mic/cam](/images/fix-device-selection.gif "Change settings then enable mic/cam")
