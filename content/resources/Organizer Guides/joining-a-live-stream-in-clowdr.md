@@ -69,8 +69,8 @@ Your speakers' area will appear automatically in the same room as your event. Fr
      
    If you are the presenter or chair at multiple events, you will see a separate speakers' area for each event. You should join the next one at which you are needed. 
 2. **Enable your camera and microphone, just as you did during step 2 of "Prepare in advance".**
-3. **Join the room  
-   **To participate in the live-stream, the final step is to click "Join room".  
+3. **Join the room** 
+   To participate in the live-stream, the final step is to click "Join room".
      
    Once in the room, you can toggle your camera, microphone or screen sharing. You will see anyone else who is due to present with you and can use the time available to chat to them.  
      
