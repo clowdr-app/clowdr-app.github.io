@@ -29,7 +29,7 @@ To join a live-stream in Clowdr, please follow these three stages, starting at t
 
 3. **Use headphones and an external microphone.**
 
-   If the audience wanted to just see slides, they would ask for a PDF. In other words, the audience is here to listen to you! It really doesn't matter much if your camera is high quality or not. Audio is king in the world of online videos. If you sound bad, nobody will want to listen. So please, use headphones to avoid unwanted feedback and use an external microphone (even a $30 will do), not a built-in laptop mic.
+   If the audience wanted to just see slides, they would ask for a PDF. In other words, the audience is here to listen to you! It really doesn't matter much if your camera is high quality or not. Audio is king in the world of online videos. If you sound bad, nobody will want to listen. So please, use headphones to avoid feedback loops and use an external microphone (even a $30 will do), not a built-in laptop mic.
 
 ### 1. Prepare in advance
 
