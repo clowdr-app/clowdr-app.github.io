@@ -109,9 +109,9 @@ Clowdr's data model does not include "sessions". **Your speakers' area becomes a
 
 ## Top tips
 
-1. **When you're live, _you're live. _  
-   **Don't sit around waiting for the audience to tell you - we've all watched this happen and there's no need. Clowdr's backstage makes it very clear when you are live.
+1. **When you're live, _you're live._**
+   Don't sit around waiting for the audience to tell you - we've all watched this happen and there's no need. Clowdr's backstage makes it very clear when you are live.
 2. **Leave questions until you are live.**   
    When you see questions in the chat, and you're due to participate in a live Q&A, leave them unanswered so that you can answer them during the live event. If you answer the questions via chat, you'll have nothing to answer during the live-stream.
-3. **Use headphones and an external microphone.  
-   **If the audience wanted to just see slides, they would ask for a PDF. In other words, the audience is here to listen to you! It really doesn't matter much if your camera is high quality or not. Audio is king in the world of online videos. If you sound bad, nobody will want to listen. So please, use headphones to avoid unwanted feedback and use an external microphone (even a $30 will do), not a built-in laptop mic.
+3. **Use headphones and an external microphone.**
+   If the audience wanted to just see slides, they would ask for a PDF. In other words, the audience is here to listen to you! It really doesn't matter much if your camera is high quality or not. Audio is king in the world of online videos. If you sound bad, nobody will want to listen. So please, use headphones to avoid unwanted feedback and use an external microphone (even a $30 will do), not a built-in laptop mic.
