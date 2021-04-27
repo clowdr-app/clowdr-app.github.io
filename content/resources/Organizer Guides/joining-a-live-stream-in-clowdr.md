@@ -9,7 +9,7 @@ author: Ed Nutting
 draft: false
 
 ---
-On this page you can learn detailed instructions by text, video and screenshots for how to prepare for and join into a Clowdr livestream event.
+This tutorial includes detailed instructions (in text, video and screenshots) for how to prepare for and join into a Clowdr livestream event.
 
 The video below briefly summarizes Clowdr's video pipeline capabilities, then explains what you need to do as a presenter or chair at an event. We walk through Clowdr's UI going from logging in, to finding the room for your event, to opening and joining the backstage area. Common problems are also identified and brief advice for how to tackle them is provided.
 
