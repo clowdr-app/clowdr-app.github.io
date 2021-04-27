@@ -17,6 +17,20 @@ The video below briefly summarizes Clowdr's video pipeline capabilities, then ex
 
 To join a live-stream in Clowdr, please follow these three stages, starting at the latest the day before your event.
 
+### Top tips
+
+1. **When you're live, _you're live._**   
+
+   Don't sit around waiting for the audience to tell you - we've all watched this happen and there's no need. Clowdr's backstage makes it very clear when you are live.
+
+2. **Leave questions until you are live.**   
+
+   When you see questions in the chat, and you're due to participate in a live Q&A, leave them unanswered so that you can answer them during the live event. If you answer the questions via chat, you'll have nothing to answer during the live-stream.
+
+3. **Use headphones and an external microphone.**
+
+   If the audience wanted to just see slides, they would ask for a PDF. In other words, the audience is here to listen to you! It really doesn't matter much if your camera is high quality or not. Audio is king in the world of online videos. If you sound bad, nobody will want to listen. So please, use headphones to avoid unwanted feedback and use an external microphone (even a $30 will do), not a built-in laptop mic.
+
 ### 1. Prepare in advance
 
 1. [**Log in (or sign up)**](https://app.clowdr.org)
@@ -115,17 +129,3 @@ Clowdr's data model does not include "sessions". **Your speakers' area becomes a
    The countdown will have been replaced with a new timer. This shows the time remaining until the end of your event.   
      
    **Clowdr will cut you off:** Most conferences have tightly packed schedules with back-to-back presentations. As a result, when the time for your event runs out, there is no space for overspill. Clowdr's live-stream will move on to the next event. **As such, whoever is speaking in the last 30 seconds of the event should try to bring themselves to a close before the time runs out.**
-
-### Top tips
-
-1. **When you're live, _you're live._**   
-
-   Don't sit around waiting for the audience to tell you - we've all watched this happen and there's no need. Clowdr's backstage makes it very clear when you are live.
-
-2. **Leave questions until you are live.**   
-
-   When you see questions in the chat, and you're due to participate in a live Q&A, leave them unanswered so that you can answer them during the live event. If you answer the questions via chat, you'll have nothing to answer during the live-stream.
-
-3. **Use headphones and an external microphone.**
-
-   If the audience wanted to just see slides, they would ask for a PDF. In other words, the audience is here to listen to you! It really doesn't matter much if your camera is high quality or not. Audio is king in the world of online videos. If you sound bad, nobody will want to listen. So please, use headphones to avoid unwanted feedback and use an external microphone (even a $30 will do), not a built-in laptop mic.
