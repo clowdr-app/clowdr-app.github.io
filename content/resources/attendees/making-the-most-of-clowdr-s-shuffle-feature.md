@@ -35,6 +35,8 @@ The following information provides an brief summary of the following:
 * If someone is in the Shuffle queue on their own for a while, they are allocated to an existing room if that room has less than the maximum number of people.
 * The Shuffle rooms last for a set number of minutes each. When a room ends, people are taken back to the queue page and can rejoin to be allocated to a new room with new people!
 
+![](/images/shuffle-3.jpg)
+
 **Organizer Tips**
 
 * As an organizer, you can assign specific individuals to rooms (special guests or speakers, mentors, etc) to facilitate speaker roundtables or mentoring sessions!
