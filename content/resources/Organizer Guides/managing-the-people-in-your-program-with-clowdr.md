@@ -15,4 +15,4 @@ We share a brief overview of the relationship between People in Clowdr and the o
 
 Common scenarios are also identified and advice for how to tackle them is provided!
 
-`youtube:`[`https://www.yo`]( "https://www.youtube.com/watch?v=36Y0jHLu2Nk")`u.tube/36Y0jHLu2Nk`
+`youtube:https://youtu.be/36Y0jHLu2Nk`
