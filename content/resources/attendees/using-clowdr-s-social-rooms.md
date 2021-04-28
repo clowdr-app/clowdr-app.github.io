@@ -14,7 +14,7 @@ draft: false
 
 This is a brief overview of our Social Rooms feature - an key part of the social experience on Clowdr!
 
-Social Rooms provide an informal and fun way for attendees to connect with each other via text and video chat. This short video provides an overview of the following: 
+Social Rooms provide an informal and fun way for attendees to connect with each other via text and video chat. This short video provides an overview of the following:
 
 * What are Social Rooms?
 * How to Join a Social Room
@@ -23,4 +23,4 @@ Social Rooms provide an informal and fun way for attendees to connect with each 
 
 `youtube:https://youtu.be/CsDqP9SlJOc`
 
-**Tip:** We highly recommend attendees use headphones and an external camera, when available. This ensures a more comfortable experience during those long networking
+**Tip:** We highly recommend attendees use headphones and an external camera, when available. This ensures a more comfortable experience during those long networking hours!
