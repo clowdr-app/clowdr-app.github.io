@@ -48,7 +48,7 @@ To join a live-stream in Clowdr, please follow these three stages, starting at t
      ![A Clowdr social room highlighting the three buttons at the top of the page for enabling camera and microphone then joining the room.](/images/join-room-steps.png "Clowdr room page")
    * Finally, click the "Join room" button.
 
-   If you have trouble enabling your camera or microphone, such as "Permission denied" error messages, [please follow these instructions to resolve the problem](TODO "Instructions for fixing camera, microphone and screen sharing permissions").
+   If you have trouble enabling your camera or microphone, such as "Permission denied" error messages, [please follow these instructions to resolve the problem](mic-cam-permissions "Instructions for fixing camera, microphone and screen sharing permissions").
 
    If you plan to give a presentation using slides or an on-screen demo, you should also try enabling screen sharing. If you have problems with browser or operating system permissions, please follow the instructions linked above to resolve the problem.
 5. **Invite a friend to join you. Check your camera/microphone quality**
@@ -127,7 +127,7 @@ Clowdr's data model does not include "sessions". **Your speakers' area becomes a
    **For most Q&A sessions, the session chair should start by asking a question they have prepared in advance**. While the question is being answered, they should watch for new questions in the chat and prepare to ask them. _This turns out to be a good thing - it takes a bit of the pressure off of presenters, particularly newer members of the community._ This delay in questions appearing in chat and the session chair asking them gives presenters an opportunity to read the question and start to think of an answer, before being put on the spot.
 
    **Ask the question out loud.** Just like at a physical event, you need to say out loud the question that you are asking. People watching the recording of your event on Clowdr or YouTube long after the conference has ended, may not have access to the text chat, so will need to hear the question from you in the stream.
-7. **Watch for the countdown**  
+7. **Watch for the countdown**
 
    The countdown will have been replaced with a new timer. This shows the time remaining until the end of your event.
 
