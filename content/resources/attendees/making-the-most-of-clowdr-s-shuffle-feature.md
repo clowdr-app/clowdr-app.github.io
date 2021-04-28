@@ -23,7 +23,7 @@ This short video provides an brief summary of the following:
 * How to configure a Shuffle experience
 * Tips for how to use the Shuffle feature as an organizer
 
-\`https://youtu.be
+\`youtube:https://youtu.be/
 
 **Additional Shuffle details:**
 
