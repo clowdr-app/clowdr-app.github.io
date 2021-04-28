@@ -59,21 +59,21 @@ If the form doesn't help you solve the issue, you can submit the form to the Clo
 ### 2. Examples
 
 1. **Apple devices: Enable camera/microphone/screen-sharing ("screen recording") via the _System Preferences_**
+
+   If the operating system is denying permissions, you may experience "permission denied" errors in the browser, even if you allow the browser's permissions (as shown below).
+   
+   ![Permissions denied in Chrome on MacOS](/images/chrome-os-permissions-1.gif "Permissions denied in Chrome on MacOS")
      
    Apple Mac and iOS devices pose particular challenges, as Apple have added an additional layer of security to the operating systems. By default this prevents browsers from accessing the microphone and camera.
 
    ![Use System Prefences to enable microphone/camera](/images/chrome-os-permissions-2.gif "Use System Prefences to enable microphone/camera")
-2. **Example: Enable permissions within your browser.**
-
-   This example shows Chrome. The process is very similar in FireFox and Edge.  
-     
-   ![Enable permissions in Chrome](/images/chrome-os-permissions-1.gif "Enable permissions in Chrome")
-3. **Example: Reset permissions in Safari, then try enabling your microphone**
+   
+2. **Example: Reset permissions in Safari, then try enabling your microphone**
 
    ![Enable mic in Safari](/images/safari-allow-microphone.gif "Enable mic in Safari")
-4. **Example: Reset permissions in Safari, then try enabling your camera**
+3. **Example: Reset permissions in Safari, then try enabling your camera**
 
    ![Enable camera in Safari](/images/safari-allow-camera.gif "Enable camera in Safari")
-5. **Example: Try changing device in Settings then (secondly) enable mic/camera**
+4. **Example: Try changing device in Settings then (secondly) enable mic/camera**
      
    ![Change settings then enable mic/cam](/images/fix-device-selection.gif "Change settings then enable mic/cam")
