@@ -102,9 +102,9 @@ export const theme = extendTheme({
     Link: {
       variants: {},
       baseStyle: {
-        color: "brand.800",
+        color: "brand.600",
         _hover: {
-          color: "brand.800",
+          color: "brand.600",
         },
       },
     },
