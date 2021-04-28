@@ -9,10 +9,10 @@ categories:
 draft: false
 
 ---
-This resource summarizes how you can effectively manage people in Clowdr - including managing their connection to your event's content and schedule.
+This resource summarizes how you can effectively manage the people associated with your event - including their connection to your event's content and schedule.
 
-We share a brief overview of the relationship between People in Clowdr and the other major program components, and walk through Clowdr's UI to show exactly how to link People to Content, Events, and Registrants on the platform.
+We share a brief overview of the relationship between people and the other major program components, then walk through Clowdr's UI to show you exactly how to link People to Content, Events, and Registrants on the platform.
 
-Common scenarios are also identified and advice for how to tackle them is provided!
+Common scenarios are identified and advice for how to tackle them is provided!
 
 `youtube:https://youtu.be/36Y0jHLu2Nk`
