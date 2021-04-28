@@ -7,7 +7,7 @@ slug: socialrooms
 description: Learn about Clowdr's Social Rooms feature - an important part of the
   the attendee social experience!
 author: Cristal Mojica
-draft: true
+draft: false
 
 ---
 ### Wondering about the social experience on Clowdr?
