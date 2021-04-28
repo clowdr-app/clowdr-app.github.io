@@ -14,7 +14,7 @@ draft: false
 
 This is a brief overview of Clowdr's Shuffle feature. 
 
-Shuffle queues and rooms provide an opportunity for attendees to network in a randomized way - by joining the queue and being assigned to a room with a maximum limit of attendees and time constraints!
+Shuffle queues and rooms provide an opportunity for attendees to network in a randomized way, by joining a queue and being assigned to a random room with pre-set time constraints!
 
 This short video provides an overview of the following:
 
