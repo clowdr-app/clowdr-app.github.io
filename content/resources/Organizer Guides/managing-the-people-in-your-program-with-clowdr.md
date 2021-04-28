@@ -46,3 +46,7 @@ For the purpose of this exercise, we will elect to add a new person to this cont
 6. Once you've made your selections and hit the Create button, you'll be able to see the new person who you've added as chair in the list of people associated with this content item.
 
 ![](/images/content-ppl-7.jpg)
+
+7. **Close out the Manage content people dialog, and make sure to hit Save Changes on the main Content page. This is the area** you selected the content item from in the first step - this is extremely important to do, to ensure Clowdr captures all of your modifications. Otherwise, your changes may be lost!
+
+With a few quick steps, you've now added a Chair to a paper!
