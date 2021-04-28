@@ -5,7 +5,7 @@ categories:
 title: Using Clowdr's Social Rooms
 slug: socialrooms
 description: Learn about Clowdr's Social Rooms feature - an important part of the
-  the attendee social experience!
+  attendee social experience!
 author: Cristal Mojica
 draft: false
 
