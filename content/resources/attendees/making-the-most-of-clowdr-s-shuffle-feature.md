@@ -31,6 +31,6 @@ The following information provides an brief summary of the following:
 * When enough people are in the queue, they are automatically divided up and allocated to auto-generated Shuffle rooms to meet other attendees! 
 * The target and maximum number of people per room is configurable.
 * The allocation/grouping algorithm aims to place the target number of people in a room together - but will do fewer if not enough are people are in the queue!
-* If someone is in the  Shuffle queue on their own for a while, they are allocated to an existing room if that room has less than the maximum number of people.
+* If someone is in the Shuffle queue on their own for a while, they are allocated to an existing room if that room has less than the maximum number of people.
 * The Shuffle rooms last for a set number of minutes each. When a room ends, people are taken back to the queue page and can rejoin to be allocated to a new room with new people.
 * As an organizer, you can assign specific individuals to rooms (special guests or speakers, mentors, etc) to facilitate speaker roundtables or mentoring sessions!
