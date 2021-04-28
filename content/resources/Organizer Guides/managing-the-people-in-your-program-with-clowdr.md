@@ -23,13 +23,13 @@ Common scenarios are identified and advice for how to tackle them is provided!
 
 ![](/images/content-ppl-1.jpg)
 
-2. **Select the content item (paper, poster, workshop, etc.) you would like to assign a Chair to by checking the box next to the item.** A sidebar will open, revealing a People section at the top. By expanding this section, you will find a Manage Content People button - this will lead you to a new dialog.
+2. **Select the content item (paper, poster, workshop, etc.) you would like to assign a Chair to by checking the box next to the item.** A new sidebar will open, revealing a People section at the top. By expanding this section, you will find a Manage Content People button - this will lead you to a new dialog.
 
 ![](/images/content-ppl-2.jpg)![](/images/content-ppl-3.jpg)
 
-3. **Now you find yourself in the Manage Content People area.** There are two options for how to select a person to assign the role of chair to within this piece of content. You are able to either:
+3. **Now you'll find yourself in the Manage Content People area.** There are two options for how to select a person to assign the role of Chair in relation to this piece of content. You are able to either:
 
-    A. Select an individual from the available list to assign a role to (by clicking the checkbox next to the name) or
+    A. Select an individual from the list of people already associated with this paper to assign a new role to (by clicking the checkbox next to the name and editing the appropriate field) or
 
     B. Create a new individual (using the button at the top). 
 
@@ -39,14 +39,14 @@ For the purpose of this exercise, we will elect to add a new person to this cont
 
 ![](/images/content-ppl-5.jpg)
 
-5. **Once the Create New dialog appears, you can use the dropdown menu to identify the person in your program you want to associate to this piece of content.** In this case, we have selected Benjamin. From this same dialog, we can assign him the desired role of Chair, as well as select the Priority of the individual (this translates to the order Benjamin's name will be listed on the content item - this is particularly useful for Authors).
+4. **Once the Create New dialog appears, you can use the dropdown menu to identify the person in your program you want to associate to this piece of content.** In this case, we have selected Benjamin. From this same dialog, we can assign him the desired role of Chair, as well as select the Priority of the individual (this translates to the order Benjamin's name will be listed on the content item - this is particularly useful for Authors).
 
 ![](/images/content-ppl-6.jpg)
 
-6. Once you've made your selections and hit the Create button, you'll be able to see the new person who you've added as chair in the list of people associated with this content item.
+5. **Once you've made your selections and hit the Create button, you'll be able to see the new person who you've added as chair in the list of people associated with this content item.**
 
 ![](/images/content-ppl-7.jpg)
 
-7. **Close out the Manage content people dialog, and make sure to hit Save Changes on the main Content page. This is the area** you selected the content item from in the first step - this is extremely important to do, to ensure Clowdr captures all of your modifications. Otherwise, your changes may be lost!
+6. **Close out the Manage content people dialog, and make sure to hit Save Changes on the initial Content page.** This is extremely important to do, to ensure Clowdr captures all of your modifications. Otherwise, your changes may be lost!
 
-With a few quick steps, you've now added a Chair to a paper!
+**You've successfully added a Chair to your paper!**
