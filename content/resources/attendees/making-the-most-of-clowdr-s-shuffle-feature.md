@@ -14,7 +14,9 @@ draft: false
 
 This is an overview of Clowdr's popular Shuffle feature!
 
-![](/images/shuff-e.jpg)Shuffle queues provide an opportunity for attendees to network in a randomized way, for a set amount of time. 
+![](/images/shuff-e.jpg)
+
+Shuffle queues provide an opportunity for attendees to network in a randomized way, for a set amount of time. 
 
 ![](/images/shuffle-2.jpg)
 
