@@ -29,9 +29,9 @@ Common scenarios are identified and advice for how to tackle them is provided!
 
 3. **Now you'll find yourself in the Manage Content People area.** There are two options for how to select a person to assign the role of Chair in relation to this piece of content. You are able to either:
 
-    A. Select an individual from the list of people already associated with this paper to assign a new role to (by clicking the checkbox next to the name and editing the appropriate field) or
+    A. Select an individual from the list of people already associated with this paper to assign a new role to (by clicking the checkbox next to the name and editing the appropriate field) OR
 
-    B. Create a new individual (using the button at the top). 
+    B. Add a new individual to this content item from the list of people in your conference (using the Create New button at the top). 
 
 ![](/images/content-ppl-4.jpg)
 
