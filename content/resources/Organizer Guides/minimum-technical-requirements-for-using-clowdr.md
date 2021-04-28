@@ -1,7 +1,7 @@
 ---
-updatedDate: 2021-04-26T04:13:48+00:00
+updatedDate: 2021-04-26T04:13:48.000+00:00
 categories:
-- technical
+- support
 title: Technical requirements for using Clowdr
 slug: requirements
 description: Review the minimum technical requirements for using Clowdr
