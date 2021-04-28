@@ -9,7 +9,7 @@ author: Cristal Mojica
 draft: true
 
 ---
-### Spontaneous conversations and randomized networking are made easy with Shuffle
+### Spontaneous conversations and randomized networking are made easy with Shuffle queues
 
 This is a brief overview of Clowdr's Shuffle feature. 
 
