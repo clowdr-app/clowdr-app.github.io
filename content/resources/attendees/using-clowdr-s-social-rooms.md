@@ -12,9 +12,9 @@ draft: false
 ---
 ### Wondering about the social experience on Clowdr?
 
-This is a brief overview of our Social Rooms feature - an important part of the social experience on Clowdr. Social Rooms provide an informal and fun way for attendees to connect with each other.
+This is a brief overview of our Social Rooms feature - an important part of the social experience on Clowdr. 
 
-This short video provides an overview of the following: 
+Social Rooms provide an informal and fun way for attendees to connect with each other. This short video provides an overview of the following: 
 
 * What are Social Rooms?
 * How to Join a Social Room
