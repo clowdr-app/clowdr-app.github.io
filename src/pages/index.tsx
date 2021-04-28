@@ -1,6 +1,7 @@
 import {
   Accordion,
   AccordionButton,
+  AccordionIcon,
   AccordionItem,
   AccordionPanel,
   Box,
@@ -126,7 +127,7 @@ export default function Home() {
                 _hover={{ bgColor: "none" }}
                 py={{ base: 2, lg: 4 }}
               >
-                <Box
+                <HStack
                   bgColor="yellow.200"
                   _hover={{
                     bgColor: "yellow.300",
@@ -137,12 +138,14 @@ export default function Home() {
                   fontSize={{ base: "lg", lg: "xl" }}
                   p={4}
                   borderRadius="lg"
+                  justifyContent="space-around"
                 >
                   <Text>
                     How do I gather videos from authors and create accurate
                     subtitles for them?
                   </Text>
-                </Box>
+                  <AccordionIcon />
+                </HStack>
               </AccordionButton>
               <AccordionPanel fontSize="lg" bgColor="yellow.100">
                 <Text>
@@ -173,7 +176,7 @@ export default function Home() {
                 _hover={{ bgColor: "none" }}
                 py={{ base: 2, lg: 4 }}
               >
-                <Box
+                <HStack
                   bgColor="brand.100"
                   _hover={{
                     bgColor: "brand.200",
@@ -185,9 +188,14 @@ export default function Home() {
                   p={4}
                   borderRadius="lg"
                   ml="auto"
+                  justifyContent="space-around"
                 >
-                  Will the conference be accessible to everyone in my community?
-                </Box>
+                  <Text>
+                    Will the conference be accessible to everyone in my
+                    community?
+                  </Text>
+                  <AccordionIcon />
+                </HStack>
               </AccordionButton>
               <AccordionPanel fontSize="lg" bgColor="brand.100">
                 <Text>
@@ -217,7 +225,7 @@ export default function Home() {
                 _hover={{ bgColor: "none" }}
                 py={{ base: 2, lg: 4 }}
               >
-                <Box
+                <HStack
                   bgColor="purple.100"
                   _hover={{
                     bgColor: "purple.200",
@@ -228,10 +236,14 @@ export default function Home() {
                   fontSize={{ base: "lg", lg: "xl" }}
                   p={4}
                   borderRadius="lg"
+                  justifyContent="space-around"
                 >
-                  How do I encourage social engagement around conference
-                  content&#8212;before, during and after?
-                </Box>
+                  <Text>
+                    How do I encourage social engagement around conference
+                    content&#8212;before, during and after?
+                  </Text>
+                  <AccordionIcon />
+                </HStack>
               </AccordionButton>
               <AccordionPanel bgColor="purple.100" fontSize="lg">
                 <Text>
@@ -269,7 +281,7 @@ export default function Home() {
                 _hover={{ bgColor: "none" }}
                 py={{ base: 2, lg: 4 }}
               >
-                <Box
+                <HStack
                   bgColor="teal.50"
                   _hover={{
                     bgColor: "teal.100",
@@ -281,10 +293,14 @@ export default function Home() {
                   p={4}
                   borderRadius="lg"
                   ml="auto"
+                  justifyContent="space-around"
                 >
-                  How do I manage a large and complex program? How do attendees
-                  find what they're interested in?
-                </Box>
+                  <Text>
+                    How do I manage a large and complex program? How do
+                    attendees find what they're interested in?
+                  </Text>
+                  <AccordionIcon />
+                </HStack>
               </AccordionButton>
               <AccordionPanel bgColor="teal.50" fontSize="lg">
                 <Text>
