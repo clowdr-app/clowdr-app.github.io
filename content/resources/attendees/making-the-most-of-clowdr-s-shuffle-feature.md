@@ -21,4 +21,4 @@ This short video provides an overview of the following:
 * What is Shuffle?
 * How to join a Shuffle queue
 * How to configure a Shuffle experience
-* Tips for ways to use the Shuffle feature as an organizer
+* Tips for how to use the Shuffle feature in your program as an organizer
