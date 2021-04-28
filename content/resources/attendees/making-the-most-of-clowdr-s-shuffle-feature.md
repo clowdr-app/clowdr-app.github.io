@@ -1,6 +1,7 @@
 ---
 updatedDate: 2021-04-28T06:41:08+00:00
-categories: []
+categories:
+- attendees
 title: Making the most of Clowdr's Shuffle feature
 slug: shuffle
 description: Clowdr's social experience includes randomized networking via Shuffle
