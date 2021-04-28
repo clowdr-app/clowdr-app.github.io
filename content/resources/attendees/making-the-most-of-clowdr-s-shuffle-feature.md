@@ -28,7 +28,7 @@ The following information provides an brief summary of the following:
 
 * A Shuffle queue runs between set times (max 30 minutes)
 * People join the queue when it is running.
-* When enough people are in the queue, they are automatically divided up and allocated to auto-generated Shuffle rooms. 
+* When enough people are in the queue, they are automatically divided up and allocated to auto-generated Shuffle rooms to meet other attendees! 
 * The target and maximum number of people per room is configurable.
 * The allocation/grouping algorithm aims to place the target number of people in a room together - but will do fewer if not enough are people are in the queue!
 * If someone is in the  Shuffle queue on their own for a while, they are allocated to an existing room if that room has less than the maximum number of people.
