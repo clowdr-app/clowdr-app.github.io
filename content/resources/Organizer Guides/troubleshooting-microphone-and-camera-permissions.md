@@ -48,6 +48,17 @@ Latest versions of:
   * This generally results in a poor connection and low quality sound/video
   * Even the latest devices tend to under-perform on WebRTC connections
 
+### Overview of steps
+
+1. Close other applications that might be using your camera or microphone
+2. Check in-browser permissions (lock or settings icon in the left end of the address/url/search bar)
+	* [Instructions for Chrome](https://support.google.com/chrome/answer/2693767)
+    * [Instructions for FireFox](https://support.mozilla.org/en-US/kb/how-manage-your-camera-and-microphone-permissions)
+3. Mac OS / iOS: Check operating system permissions
+4. Try using Settings to (temporarily) select a different device
+5. [Try a test call](https://tokbox.com/developer/tools/precall/)
+6. Clear browser permissions, restart your browser, refresh the page twice, then try again
+
 ### 1. Try the troubleshooting form
 
 [This step-by-step form](https://form.asana.com?k=2O5KSgfyRmNoddFkKdJh5Q&d=1198973227684402 "Mic/Cam Troubleshooting form") provides links to support information for specific browsers and operating systems. Hopefully it will help you diagnose and fix the problem you are having.
