@@ -7,7 +7,7 @@ slug: shuffle
 description: Clowdr's social experience includes randomized networking via Shuffle
   queues - learn more about them!
 author: Cristal Mojica
-draft: false
+draft: true
 
 ---
 ### Spontaneous conversations and randomized networking are made easy with Shuffle queues
