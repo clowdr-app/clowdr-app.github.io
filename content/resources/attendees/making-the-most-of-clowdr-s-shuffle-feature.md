@@ -6,6 +6,6 @@ slug: shuffle
 description: Clowdr's social experience includes randomized networking via Shuffle
   queues and rooms - learn more about them!
 author: Cristal Mojica
-draft: true
+draft: false
 
 ---
