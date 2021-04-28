@@ -10,3 +10,17 @@ author: Cristal Mojica
 draft: false
 
 ---
+### Wondering about the social experience on Clowdr?
+
+This is a brief overview of our Social Rooms feature - an important part of the social experience on Clowdr. Social Rooms provide an informal and fun way for attendees to connect with each other.
+
+This short video provides an overview of the following: 
+
+* What are Social Rooms?
+* How to Join a Social Room
+* In-room Features and Navigation
+* Tips for a great social experience!
+
+\`youtube:https://youtu.be/CsDqP9SlJOc
+
+**Tip:** We highly recommend attendees use headphones and an external camera, when available. This ensures a more comfortable experience during those long networking
