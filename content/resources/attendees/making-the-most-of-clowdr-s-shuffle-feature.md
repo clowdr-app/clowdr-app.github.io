@@ -23,7 +23,7 @@ This short video provides an brief summary of the following:
 * How to configure a Shuffle experience
 * Tips for how to use the Shuffle feature as an organizer
 
-**Additional Shuffle information:**
+**Additional Shuffle details:**
 
 * A Shuffle queue runs between set times (max 30 minutes)
 * People join the queue when it is running.
