@@ -168,9 +168,9 @@ export const theme = extendTheme({
   styles: {
     global: {
       a: {
-        color: "brand.800",
+        color: "brand.600",
         _hover: {
-          color: "brand.800",
+          color: "brand.600",
         },
       },
     },
