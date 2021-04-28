@@ -12,9 +12,9 @@ draft: false
 ---
 ### Spontaneous conversations and randomized networking are made easy with Shuffle queues
 
-This is an overview of Clowdr's fun Shuffle feature!
+This is an overview of Clowdr's popular Shuffle feature!
 
-![](/images/shuff-e.jpg)Shuffle queues and rooms provide an opportunity for attendees to network in a randomized way, for a set amount of time. 
+![](/images/shuff-e.jpg)Shuffle queues provide an opportunity for attendees to network in a randomized way, for a set amount of time. 
 
 ![](/images/shuffle-2.jpg)
 
@@ -24,6 +24,7 @@ The following information and short video provide an brief summary of the follow
 * How to join a Shuffle queue
 * How to configure a Shuffle experience
 * Tips for how to use the Shuffle feature as an organizer
+* 
 
 \`youtube:https://youtu.be/
 
