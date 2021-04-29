@@ -35,7 +35,9 @@ Common scenarios are identified and advice for how to tackle them is provided!
 
 ![](/images/pp-5.jpg)
 
-##### **Now you're ready to assign people to content! Here are a few easy steps to assign a person as Session Chair of a paper:**
+##### **You're now ready to assign people to content!** 
+
+##### **Here are a few easy steps to assign a person as Session Chair of a paper:**
 
 1. **Navigate to the Content area from the Admin Dashboard.**
 
