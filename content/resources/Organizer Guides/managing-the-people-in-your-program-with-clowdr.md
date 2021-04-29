@@ -25,9 +25,7 @@ Common scenarios are identified and advice for how to tackle them is provided!
 
 ![](/images/content-ppl-1.jpg)
 
-2. **Select the content item (paper, poster, workshop, etc.) you would like to assign a Chair to by checking the box next to the content item row.** A new sidebar will open, revealing a People section at the top. 
-
-   By expanding this section, you will find a Manage Content People button - this will lead you to a new dialog.
+2. **Select the content item (paper, poster, workshop, etc.) you would like to assign a Chair to by checking the box next to the content item row.** A new sidebar will open, revealing a People section at the top. By expanding this section, you will find a Manage Content People button - this will lead you to a new dialog.
 
 ![](/images/content-ppl-2.jpg)![](/images/content-ppl-3.jpg)
 
