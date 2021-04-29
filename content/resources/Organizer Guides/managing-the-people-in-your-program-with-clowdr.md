@@ -23,11 +23,17 @@ Common scenarios are identified and advice for how to tackle them is provided!
 
 ![](/images/content-ppl-8.jpg)
 
-2. Select add a new person via the green plus (+) sign on the left.
+2. We can see a few individuals are already listed in the program. From this page, you can add a new person to your program using the green plus (+) sign on the left.
 
 ![](/images/pp-2.jpg)
 
-3. The create new dialog will have appeared. Add the name, affiliation, email, and if available - registrant info - then hit Create.
+3. The Create New dialog will have appeared after clicking the green plus sign. Add the person's name, affiliation, email address, and - if available - registrant info. Then hit Create!
+
+![](/images/pp-4.jpg)
+
+4. The person you have created should now be listed under the main Program People page, and will appear in all relevant areas in Content and Schedule where the option to assign people is available. 
+
+![](/images/pp-5.jpg)
 
 #### **Now you're ready to assign people to content! Here are a few easy steps to assign a person as Session Chair of a paper:**
 
