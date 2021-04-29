@@ -17,7 +17,7 @@ Common scenarios are identified and advice for how to tackle them is provided!
 
 `youtube:https://youtu.be/36Y0jHLu2Nk`
 
-#### **You can also follow these brief instructions to add a person to your program:**
+##### **You can also follow these brief instructions to add a person to your program:**
 
 1. Navigate to Program People from the Admin Dashboard.
 
@@ -35,7 +35,7 @@ Common scenarios are identified and advice for how to tackle them is provided!
 
 ![](/images/pp-5.jpg)
 
-#### **Now you're ready to assign people to content! Here are a few easy steps to assign a person as Session Chair of a paper:**
+##### **Now you're ready to assign people to content! Here are a few easy steps to assign a person as Session Chair of a paper:**
 
 1. **Navigate to the Content area from the Admin Dashboard.**
 
