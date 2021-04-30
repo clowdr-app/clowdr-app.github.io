@@ -14,7 +14,7 @@ draft: false
 
 This is an overview of Clowdr's popular Shuffle feature.
 
-`youtube:`[`https://youtu.be/RopQWAUan9k`](https://youtu.be/RopQWAUan9k "https://youtu.be/RopQWAUan9k")
+`youtube:https://youtu.be/RopQWAUan9k`
 
 Shuffle queues provide a fun opportunity for attendees to network in a randomized way, for a set amount of time.
 
