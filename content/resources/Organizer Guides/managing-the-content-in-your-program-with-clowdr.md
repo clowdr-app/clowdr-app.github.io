@@ -24,4 +24,9 @@ _To learn about linking content to the schedule, see our_ [_managing your schedu
 **You can follow these simple instructions to add content to your program in Clowdr:**
 
 1. Navigate to the Content area of the Clowdr admin dashboard.
-2. We can see a few Content items are already listed in the program. From this page, you can add a new event to your program using the green plus (+) sign on the left.
+
+![](/images/content-ppl-1.jpg)
+
+1. We can see a few Content items are already listed in the program. From this page, you can add a new Content item to your program using the green plus (+) sign on the left.
+2. The Create New dialog will have appeared after clicking the green plus sign. Add the XXXX.
+3. After you click Create, you’ll see your new Content item appear as a new row on the Content page.
