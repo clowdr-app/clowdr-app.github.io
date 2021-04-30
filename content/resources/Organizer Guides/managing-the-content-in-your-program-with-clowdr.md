@@ -52,9 +52,7 @@ _To learn about linking content to the schedule, see our_ [_managing your schedu
 
 From this sidebar menu, as you make edits you can also preview your content by clicking through View Item. 
 
-* 
-
-  6\. For this example, we add a Link Button from the Add Content dropdown, and a Pre-Published Video to as Add Uploadable - meaning the organizer will be able to send a request to an author or other individual to contribute the video.
+6\. In this example, we add a Link Button from the Add Content dropdown, and a Pre-Published Video to as Add Uploadable - meaning the organizer will be able to send a request to an author or other individual to contribute the video.
 
 ![](/images/content-8-add-content.jpg)
 
