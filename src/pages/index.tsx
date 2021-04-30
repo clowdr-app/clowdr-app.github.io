@@ -63,6 +63,7 @@ export default function Home() {
               </Text>
               <Button
                 my={{ base: 4, xl: 12 }}
+                as={GatsbyLink}
                 p={8}
                 fontSize="2xl"
                 variant="solid"
