@@ -21,7 +21,7 @@ _To learn about linking content to the schedule, see our_ [_managing your schedu
 
 \[Video Coming Shortly\]
 
-##### You can follow these simple instructions to add individual content items to your program in Clowdr (batch imports are also possible):
+##### Follow these simple instructions to add individual content items to your program in Clowdr (batch imports are also possible):
 
 1. Navigate to the Content area of the Clowdr admin dashboard.
 
