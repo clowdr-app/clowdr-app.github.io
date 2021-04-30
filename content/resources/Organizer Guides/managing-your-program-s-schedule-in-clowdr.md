@@ -9,11 +9,9 @@ categories:
 draft: false
 
 ---
-The following video resource summarizes how you can your program's schedule and events with Clowdr.
+Your schedule allows attendees to understand what is going to a part of your program, plan their experience, and get excited about your conference! The following resource summarizes how you can manage your program's schedule and events with Clowdr.
 
-We share a brief overview of the relationship between events and content, then walk through Clowdr’s UI to show you exactly how to create and schedule an event.
-
-Common scenarios are identified and advice for how to tackle them is provided!
+We share a brief overview of the relationship between events and content, then walk through Clowdr’s UI to show you exactly how to create and schedule an event. Common scenarios are identified and advice for how to tackle them is provided!
 
 _\[Video Coming Shortly\]_
 
