@@ -27,11 +27,11 @@ _To learn about linking content to the schedule, see our_ [_managing your schedu
 
 ![](/images/content-1.jpg)
 
-1. We can see a few Content items are already listed in the program. From this page, you can add a new Content item to your program using the Create New button.
+2. We can see a few Content items are already listed in the program. From this page, you can add a new Content item to your program using the Create New button.
 
 ![](/images/content-2.jpg)
 
-1. The Create New dialog will open and present you with options to add a title to your content, determine content type (paper, poster, keynote, etc.), and optionally add tags that will help organize the content on the conference landing page. Tags can be managed from the main content page.
+3. The Create New dialog will open and present you with options to add a title to your content, determine content type (paper, poster, keynote, etc.), and optionally add tags that will help organize the content on the conference landing page. Tags can be managed from the main content page.
 
 ![](/images/content-3.jpg)
 
@@ -39,18 +39,18 @@ _To learn about linking content to the schedule, see our_ [_managing your schedu
 
 ![](/images/content-5-tags.jpg)
 
-1. After you click Create, you’ll see the new Content item appear as a new row on the Content page, and a right sidebar will appear with options for customizing your content item. 
+4. After you click Create, you’ll see the new Content item appear as a new row on the Content page, and a right sidebar will appear with options for customizing your content item. 
 
 ![](/images/content-6-sidebar.jpg)
 
-![](/images/content-7-options.jpg)
+5. Options to customize the content item include:
 
-1. Options to customize the content item include:
-   * Adding a discussion room
-   * Adding content elements (files, videos, links, and more) that can be directly added to the item as an organizer from within Clowdr
-   * Adding uploadable content (elements that can be delegated externally to authors and other contributors), and 
-   * Managing and adding people 
-2. For this example we will focus on adding content and uploadable content.
+* Adding a discussion room
+* Adding content elements (files, videos, links, and more) that can be directly added to the item as an organizer from within Clowdr
+* Adding uploadable content (elements that can be delegated externally to authors and other contributors), and 
+* Managing and adding people 
+
+6.  For this example, we add a Link Button from the Add Content dropdown, and a Pre-Published Video to as Add Uploadable - meaning the organizer will be able to send a request to an author or other individual to contribute the video. 
 
    ![](/images/content-8-add-content.jpg)
 
@@ -58,6 +58,25 @@ _To learn about linking content to the schedule, see our_ [_managing your schedu
 
 ![](/images/content-10-uploaders.jpg)
 
-![](/images/content-11-manage-uploaders.jpg)
+7. Now that we've added a few content additions - let's take a closer look at Uploadable Content. Each Uploadable Content element will have the Manage Uploaders button, through which you will be able to add people as uploaders.
+
+![](/images/content-11-manage-uploaders.jpg)  
+In the Manage Uploaders dialog, you will see a Create New option, which allows organizers to enter the name and email of the new uploader.
 
 ![](/images/content-12-add-uploaders.jpg)
+
+Once you hit Create, the individual will now appear as a row in  Manage Uploaders, along with the customizable number of allowable Submission Attempts and information on requests that have been sent. 
+
+Here we can see that Jenny Smith has received 0 submission requests. Requests for submission are managed from the main content page and can be sent in bulk. Requests go out in the form of an email with a direct link to an upload page, and if the contributor is uploading a video, they will receive automatic email confirmations for when their content has been successfully received, processed, and captioned!
+
+![](/images/content-13-jenny.jpg)
+
+![](/images/content-14-main.jpg)
+
+Back on the main Content page, you can see your new content item, along with options for grouping content via Manage Tags and Manage Exhibitions (used for group formats like student poster sessions and competitions). 
+
+You now know how to:
+
+* Create a Content Item
+* Add customizable Content elements to your item
+* Manage the people assigned to upload and contribute to the content
