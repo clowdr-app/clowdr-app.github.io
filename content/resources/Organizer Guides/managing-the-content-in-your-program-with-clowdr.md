@@ -6,7 +6,7 @@ description: Learn how to manage Content on Clowdr
 author: Cristal Mojica
 categories:
 - tutorials
-draft: true
+draft: false
 
 ---
 We know content is at the center of your community - and consequently, content management tends to be one of the most laborious parts of running a conference. 
@@ -21,7 +21,7 @@ _To learn about linking content to the schedule, see our_ [_managing your schedu
 
 \[Video Coming Shortly\]
 
-**You can follow these simple instructions to add individual content items to your program in Clowdr (batch imports are also possible):**
+#### **You can follow these simple instructions to add individual content items to your program in Clowdr (batch imports are also possible):**
 
 1. Navigate to the Content area of the Clowdr admin dashboard.
 
@@ -61,22 +61,22 @@ _To learn about linking content to the schedule, see our_ [_managing your schedu
 7. Now that we've added a few content additions - let's take a closer look at Uploadable Content. Each Uploadable Content element will have the Manage Uploaders button, through which you will be able to add people as uploaders.
 
 ![](/images/content-11-manage-uploaders.jpg)  
-In the Manage Uploaders dialog, you will see a Create New option, which allows organizers to enter the name and email of the new uploader.
+8\. In the Manage Uploaders dialog, you will see a Create New option, which allows organizers to enter the name and email of the new uploader.
 
 ![](/images/content-12-add-uploaders.jpg)
 
-Once you hit Create, the individual will now appear as a row in  Manage Uploaders, along with the customizable number of allowable Submission Attempts and information on requests that have been sent. 
+9. Once you hit Create, the individual will now appear as a row in  Manage Uploaders, along with the customizable number of allowable Submission Attempts and information on requests that have been sent. 
 
-Here we can see that Jenny Smith has received 0 submission requests. Requests for submission are managed from the main content page and can be sent in bulk. Requests go out in the form of an email with a direct link to an upload page, and if the contributor is uploading a video, they will receive automatic email confirmations for when their content has been successfully received, processed, and captioned!
+10. **Requests for Submission:** Here we can see that Jenny Smith has received 0 submission requests. Requests for submission are managed from the main content page and can be sent in bulk. Requests go out in the form of an email with a direct link to an upload page, and if the contributor is uploading a video, they will receive automatic email confirmations for when their content has been successfully received, processed, and captioned!
 
 ![](/images/content-13-jenny.jpg)
 
 ![](/images/content-14-main.jpg)
 
-Back on the main Content page, you can see your new content item, along with options for grouping content via Manage Tags and Manage Exhibitions (used for group formats like student poster sessions and competitions). 
+11. Back on the main Content page, you can see your new content item, along with options for grouping content via Manage Tags and Manage Exhibitions (used for group formats like student poster sessions and competitions)!
 
-You now know how to:
+#### After reviewing this resource, you should know how to:
 
-* Create a Content Item
+* Create a Content Item 
 * Add customizable Content elements to your item
-* Manage the people assigned to upload and contribute to the content
+* Manage the people assigned to upload and contribute to the content!
