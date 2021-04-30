@@ -18,8 +18,6 @@ This is an overview of Clowdr's popular Shuffle feature.
 
 Shuffle queues provide a fun opportunity for attendees to network in a randomized way, for a set amount of time.
 
-![](/images/shuffle-2.jpg)
-
 The following section provides an brief summary covering:
 
 * What is Shuffle?
