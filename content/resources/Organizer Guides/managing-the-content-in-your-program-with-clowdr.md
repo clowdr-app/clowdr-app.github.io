@@ -9,7 +9,7 @@ categories:
 draft: false
 
 ---
-We know content is at the center of your community - and consequently, content management tends to be one of the most laborious parts of running a conference.
+We know content is at the center of your community - and content management tends to be one of the most laborious parts of running a conference.
 
 Clowdr makes it easy to manage content, and empowers organizers to delegate and automate parts of the content management process to reallocate time to other critical parts of the event - such as building community and connections.
 
