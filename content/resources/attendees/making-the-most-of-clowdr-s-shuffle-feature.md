@@ -40,4 +40,7 @@ The following section provides an brief summary covering:
 **Organizer Tips**
 
 * As an organizer, you can assign specific individuals to rooms (special guests or speakers, mentors, etc) to facilitate speaker roundtables or mentoring sessions!
+
+![](/images/shuffle-4.jpg)
+
 * The target and maximum number of people per room is configurable to customize the experience for your event.
