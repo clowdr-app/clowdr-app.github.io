@@ -6,7 +6,7 @@ description: Learn how to create and manage your schedule on Clowdr
 author: Cristal Mojica
 categories:
 - tutorials
-draft: true
+draft: false
 
 ---
 The following video resource summarizes how you can your program's schedule and events with Clowdr.
