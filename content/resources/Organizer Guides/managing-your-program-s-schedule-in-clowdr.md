@@ -32,6 +32,7 @@ _\[Video Coming Shortly\]_
 ![](/images/schedule-3.jpg)
 
 4. From here, you can also link any content that will be presented during the event and will show up as part of the event on the schedule. Select your preferred Mode (format) for the event from the dropdown list - this includes workshop, Q&A, presentation, pre-recorded video, and many others.  Lastly, you have the option to select for the event to be associated with an Exhibition, if this grouped content format is part of your program.
-5. After you click Create, you'll see your new event appear as a new row in the Schedule's list of events. You'll notice this event is highlighted with an alert icon on the left.  This is a notification that appears on events created in a Mode that requires a live presenter at the event. In this case, we created a Q&A event, so the alert is telling us we need to assign presenters for this session. 
+5. After you click Create, you'll see your new event appear as a new row in the Schedule's list of events!
+6.  You'll notice this new event is highlighted with an alert icon on the left.  This is a notification that appears on events that require a live presenter at the event. This is determined by the Mode you have selected. In this case, we created a Q&A event, so the alert is telling us we need to assign presenters for this session. 
 
 ![](/images/schedule-4.jpg)
