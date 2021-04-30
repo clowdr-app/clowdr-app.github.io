@@ -26,8 +26,6 @@ The following section provides an brief summary covering:
 * How to join a Shuffle queue
 * Tips for how to use the Shuffle feature as an organizer
 
-![](/images/shuffle-3.jpg)
-
 **Shuffle Queues**
 
 * A Shuffle queue runs between set times (max 30 minutes)
