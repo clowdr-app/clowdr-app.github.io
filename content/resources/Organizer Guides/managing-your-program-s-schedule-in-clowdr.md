@@ -9,7 +9,7 @@ categories:
 draft: false
 
 ---
-Your schedule allows attendees to understand what is going to a part of your program and get excited about your conference! The following resource summarizes how you can manage your program's schedule and events with Clowdr.
+Your schedule allows attendees to understand what is going to included in your program, and helps them get excited about your conference content! The following resource summarizes how you can manage your program's schedule and events with Clowdr.
 
 We share a brief overview of the relationship between events and content, then walk through Clowdr’s UI to show you exactly how to create and schedule an event. Common scenarios are identified and advice for how to tackle them is provided! 
 
