@@ -14,17 +14,15 @@ draft: false
 
 This is an overview of Clowdr's popular Shuffle feature.
 
-![](/images/shuffle-10.jpg)
+`youtube:`[`https://youtu.be/RopQWAUan9k`](https://youtu.be/RopQWAUan9k "https://youtu.be/RopQWAUan9k")
 
 Shuffle queues provide a fun opportunity for attendees to network in a randomized way, for a set amount of time.
 
-The following section provides an brief summary covering:
+![](/images/shuffle-10.jpg)The following section provides an brief summary covering:
 
 * What is Shuffle?
 * How to join a Shuffle queue
 * Tips for how to use the Shuffle feature as an organizer
-
-`youtube:https://youtu.be/RopQWAUan9k`
 
 **Shuffle Queues**
 
