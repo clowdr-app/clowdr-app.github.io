@@ -67,7 +67,6 @@ export default function Home() {
                 p={8}
                 fontSize="2xl"
                 variant="solid"
-                as={Link}
                 to="/features"
               >
                 Learn more
