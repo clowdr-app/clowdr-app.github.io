@@ -21,12 +21,41 @@ _To learn about linking content to the schedule, see our_ [_managing your schedu
 
 \[Video Coming Shortly\]
 
-**You can follow these simple instructions to add content to your program in Clowdr:**
+**You can follow these simple instructions to add individual content items to your program in Clowdr (batch imports are also possible):**
 
 1. Navigate to the Content area of the Clowdr admin dashboard.
 
-![](/images/content-ppl-1.jpg)
+![](/images/content-1.jpg)
 
-1. We can see a few Content items are already listed in the program. From this page, you can add a new Content item to your program using the green plus (+) sign on the left.
-2. The Create New dialog will have appeared after clicking the green plus sign. Add the XXXX.
-3. After you click Create, you’ll see your new Content item appear as a new row on the Content page.
+1. We can see a few Content items are already listed in the program. From this page, you can add a new Content item to your program using the Create New button.
+
+![](/images/content-2.jpg)
+
+1. The Create New dialog will open and present you with options to add a title to your content, determine content type (paper, poster, keynote, etc.), and optionally add tags that will help organize the content on the conference landing page. Tags can be managed from the main content page.
+
+![](/images/content-3.jpg)
+
+![](/images/content-4.jpg)
+
+![](/images/content-5-tags.jpg)
+
+1. After you click Create, you’ll see the new Content item appear as a new row on the Content page, and a right sidebar will appear with options for customizing your content item. 
+
+![](/images/content-6-sidebar.jpg)
+
+![](/images/content-7-options.jpg)
+
+1. Options to customize the content item include:
+   * Adding a discussion room
+   * Adding content elements (files, videos, links, and more) that can be directly added to the item as an organizer from within Clowdr
+   * Adding uploadable content (elements that can be delegated externally to authors and other contributors), and 
+   * Managing and adding people 
+2. For this example we will focus on adding content and uploadable content.
+
+   ![](/images/content-8-add-content.jpg)
+
+![](/images/content-9-uploadable.jpg)
+
+![](/images/content-10-uploaders.jpg)
+
+![](/images/content-11-manage-uploaders.jpg)
