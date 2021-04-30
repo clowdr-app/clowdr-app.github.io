@@ -1,5 +1,5 @@
 ---
-updatedDate: 2021-04-28T06:41:08+00:00
+updatedDate: 2021-04-28T06:41:08.000+00:00
 categories:
 - attendees
 title: Making the most of Clowdr's Shuffle feature
@@ -25,6 +25,8 @@ The following section provides an brief summary covering:
 * What is Shuffle?
 * How to join a Shuffle queue
 * Tips for how to use the Shuffle feature as an organizer
+
+![](/images/shuffle-3.jpg)
 
 **Shuffle Queues**
 
