@@ -59,3 +59,5 @@ _To learn about linking content to the schedule, see our_ [_managing your schedu
 ![](/images/content-10-uploaders.jpg)
 
 ![](/images/content-11-manage-uploaders.jpg)
+
+![](/images/content-12-add-uploaders.jpg)
