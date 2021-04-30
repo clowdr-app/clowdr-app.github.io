@@ -36,3 +36,21 @@ _\[Video Coming Shortly\]_
 6.  You'll notice this new event is highlighted with an alert icon on the left.  This is a notification that appears on events that require a live presenter at the event. This is determined by the Mode you have selected. In this case, we created a Q&A event, so the alert is telling us we need to assign presenters for this session. 
 
 ![](/images/schedule-4.jpg)
+
+7. By clicking on the triangle alert icon on the left, a new sidebar will appear with the option to Manage Event People associated with the event. 
+
+![](/images/schedule-5.jpg)
+
+8. After clicking through Manage Event People, you can add a person to the event by either:
+
+A. Clicking the green plus sign on the left, and selecting the appropriate person from the available list of people in your program (authors, chairs, etc) OR 
+
+B. Clicking the Add Registrant and selecting from the full list of your conference's registrants (individuals registered to attend your conference).
+
+![](/images/schedule-6.jpg)
+
+9. For this example, we have selected Add Registrant. Simply select the registrant from the dropdown list, and select the role this individual should have in relation to this specific event. 
+
+![](/images/schedule-7.jpg)
+
+10. Once you've clicked Add, the individual will now appear in the list of people associated with your event! This will remove the alert from your event - and you are now free to manage other components of your program.
