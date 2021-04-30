@@ -54,3 +54,10 @@ B. Clicking the Add Registrant and selecting from the full list of your conferen
 ![](/images/schedule-7.jpg)
 
 10. Once you've clicked Add, the individual will now appear in the list of people associated with your event! This will remove the alert from your event - and you are now free to manage other components of your program.
+11. You can view your program's schedule and the event you've just created in the attendee view, via the Schedule button at the top of the left-hand menu.
+
+![](/images/schedule-11.jpg)
+
+![](/images/schedule-10.jpg)
+
+Clicking on the event opens up additional details from the content that has been linked to the event during set up. 
