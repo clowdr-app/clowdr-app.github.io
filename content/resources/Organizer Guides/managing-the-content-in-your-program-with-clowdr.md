@@ -9,9 +9,9 @@ categories:
 draft: false
 
 ---
-We know content is at the center of your community - and consequently, content management tends to be one of the most laborious parts of running a conference. 
+We know content is at the center of your community - and consequently, content management tends to be one of the most laborious parts of running a conference.
 
-Clowdr makes it easy to manage content, and empowers organizers to delegate and automate parts of the content management process to reallocate time to other critical parts of the event - such as building community and connections. 
+Clowdr makes it easy to manage content, and empowers organizers to delegate and automate parts of the content management process to reallocate time to other critical parts of the event - such as building community and connections.
 
 The following resource summarizes how organizers can easily manage complex program content with Clowdr.
 
@@ -21,7 +21,7 @@ _To learn about linking content to the schedule, see our_ [_managing your schedu
 
 \[Video Coming Shortly\]
 
-#### **You can follow these simple instructions to add individual content items to your program in Clowdr (batch imports are also possible):**
+##### You can follow these simple instructions to add individual content items to your program in Clowdr (batch imports are also possible):
 
 1. Navigate to the Content area of the Clowdr admin dashboard.
 
@@ -39,7 +39,7 @@ _To learn about linking content to the schedule, see our_ [_managing your schedu
 
 ![](/images/content-5-tags.jpg)
 
-4. After you click Create, you’ll see the new Content item appear as a new row on the Content page, and a right sidebar will appear with options for customizing your content item. 
+4. After you click Create, you’ll see the new Content item appear as a new row on the Content page, and a right sidebar will appear with options for customizing your content item.
 
 ![](/images/content-6-sidebar.jpg)
 
@@ -47,12 +47,12 @@ _To learn about linking content to the schedule, see our_ [_managing your schedu
 
 * Adding a discussion room
 * Adding content elements (files, videos, links, and more) that can be directly added to the item as an organizer from within Clowdr
-* Adding uploadable content (elements that can be delegated externally to authors and other contributors), and 
-* Managing and adding people 
+* Adding uploadable content (elements that can be delegated externally to authors and other contributors), and
+* Managing and adding people
 
-6.  For this example, we add a Link Button from the Add Content dropdown, and a Pre-Published Video to as Add Uploadable - meaning the organizer will be able to send a request to an author or other individual to contribute the video. 
+  6\. For this example, we add a Link Button from the Add Content dropdown, and a Pre-Published Video to as Add Uploadable - meaning the organizer will be able to send a request to an author or other individual to contribute the video.
 
-   ![](/images/content-8-add-content.jpg)
+![](/images/content-8-add-content.jpg)
 
 ![](/images/content-9-uploadable.jpg)
 
@@ -65,8 +65,7 @@ _To learn about linking content to the schedule, see our_ [_managing your schedu
 
 ![](/images/content-12-add-uploaders.jpg)
 
-9. Once you hit Create, the individual will now appear as a row in  Manage Uploaders, along with the customizable number of allowable Submission Attempts and information on requests that have been sent. 
-
+ 9. Once you hit Create, the individual will now appear as a row in  Manage Uploaders, along with the customizable number of allowable Submission Attempts and information on requests that have been sent.
 10. **Requests for Submission:** Here we can see that Jenny Smith has received 0 submission requests. Requests for submission are managed from the main content page and can be sent in bulk. Requests go out in the form of an email with a direct link to an upload page, and if the contributor is uploading a video, they will receive automatic email confirmations for when their content has been successfully received, processed, and captioned!
 
 ![](/images/content-13-jenny.jpg)
@@ -75,8 +74,8 @@ _To learn about linking content to the schedule, see our_ [_managing your schedu
 
 11. Back on the main Content page, you can see your new content item, along with options for grouping content via Manage Tags and Manage Exhibitions (used for group formats like student poster sessions and competitions)!
 
-#### After reviewing this resource, you should know how to:
+##### After reviewing this resource, you should know how to:
 
-* Create a Content Item 
+* Create a Content Item
 * Add customizable Content elements to your item
 * Manage the people assigned to upload and contribute to the content!
