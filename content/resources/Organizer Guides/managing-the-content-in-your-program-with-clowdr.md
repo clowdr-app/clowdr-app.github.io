@@ -11,11 +11,11 @@ draft: false
 ---
 We know content is at the center of your community - and content management tends to be one of the most laborious parts of running a conference.
 
-Clowdr makes it easy to manage content, and empowers organizers to delegate and automate parts of the content management process to reallocate time to other critical parts of the event - such as building community and connections.
+Clowdr makes it easy to manage content, and empowers organizers to delegate and automate parts of the management process to reallocate time to other critical parts of the event - like supporting and connecting with your community.
 
-**The following resource summarizes how organizers can easily manage complex program content with Clowdr.**
+**The following resource summarizes how organizers can manage complex program content with Clowdr.**
 
-We share a brief overview of how content is managed in Clowdr, then walk through Clowdr’s UI to show you exactly how to add a content item in Clowdr. Common scenarios are identified and advice for how to tackle them is provided!
+Common scenarios are identified and advice for how to tackle them is provided!
 
 _To learn about linking content to the schedule, see our_ [_managing your schedule with Clowdr_](https://clowdr.org/resources/schedule) _resource, and to learn about assigning people to manage content, view our_ [_managing people within Clowdr_](https://clowdr.org/resources/people) _resource._
 
