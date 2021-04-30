@@ -9,8 +9,17 @@ categories:
 draft: true
 
 ---
-This video summarizes how to XXXX.
+The following video resource summarizes how you can your program's schedule and events with Clowdr.
 
-We walk through Clowdr's UI to show how to XXXXXX. Common scenarios are also identified and advice for how to tackle them is provided!
+We share a brief overview of the relationship between events and content, then walk through Clowdr’s UI to show you exactly how to create and schedule an event.
 
-`youtube:`[`https://www.youtube.com/watch`](https://www.youtube.com/watch "https://www.youtube.com/watch")
+Common scenarios are identified and advice for how to tackle them is provided!
+
+\[Video Coming Soon\]
+
+**You can also follow these simple instructions to create an event in your schedule:**
+
+1. Navigate to the Schedule area of the Clowdr admin dashboard.
+2. We can see a few events are already listed in the program. From this page, you can add a new event to your program using the green plus (+) sign on the left.
+3. The Create New dialog will have appeared after clicking the green plus sign. Add the event start date and time, end date and time, event name, and associated room that it will be hosted in. 
+4. You can also link any content that will be presented during the event, and select from a variety of formats for the event (workshop, Q&A, presentation, pre-recorded video, etc).  Lastly, you have the option to select for the event to be associated with an Exhibition, if this grouped content format is part of your program.
