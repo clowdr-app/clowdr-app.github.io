@@ -15,7 +15,7 @@ We share a brief overview of the relationship between events and content, then w
 
 _\[Video Coming Shortly\]_
 
-**You can also follow these simple instructions to create an event in your schedule:**
+**You can follow these simple instructions to create an event in your schedule:**
 
 1. Navigate to the Schedule area of the Clowdr admin dashboard.
 
