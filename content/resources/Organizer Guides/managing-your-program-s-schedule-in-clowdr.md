@@ -13,7 +13,7 @@ Your schedule allows attendees to understand what is going to be included in you
 
 We share a brief overview of the relationship between events and content, then walk through Clowdr’s UI to show you exactly how to create and schedule an event. Common scenarios are identified and advice for how to tackle them is provided!
 
-_\[Video Coming Shortly\]_
+`youtube:https://youtu.be/13KxFrzGBL0`
 
 **You can follow these simple instructions to create an event in your schedule:**
 
