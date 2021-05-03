@@ -15,16 +15,16 @@ The video below briefly summarizes Clowdr's video pipeline capabilities, then ex
 
 `youtube:https://youtu.be/cCxcsd45yEo`
 
-**FEATURE UPDATE:** Clowdr has deployed a page called "My Backstages". 
+**FEATURE UPDATE:** Clowdr has deployed a page called "My Backstages" to make it easy for presenters to navigate to their backstage areas.
 
-This is available via the _My Backstages_ button in the top-left of the page - at the top of the navigation menu.
+This page available via the _My Backstages_ button in the top-left of the page - above the navigation menu.
 
 ![](/images/my-backstage.jpg)  
-This page shows someone all their upcoming speaker backstages - and will highlight the ones they are needed at when available (in the 20 minutes before an event). 
+_My Backstages_ shows each presenter all their upcoming speaker backstages - and will highlight which ones they are needed at when available (in the 20 minutes before an event). 
 
 ![](/images/my-backstage2.jpg)
 
-A big button appears that a presenter can click to go directly to the room with their backstage.
+A big button appears to go directly to the room with their backstage. 
 
 **NOTE:** 
 
