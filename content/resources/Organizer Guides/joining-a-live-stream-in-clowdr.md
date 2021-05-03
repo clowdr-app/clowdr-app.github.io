@@ -24,7 +24,7 @@ _My Backstages_ shows each presenter all their upcoming speaker backstages - and
 
 ![](/images/my-backstage2.jpg)
 
-A big button appears to go directly to the room with their backstage. 
+A big button will appear to go directly to the room with the presenter's backstage. 
 
 **NOTE:** 
 
