@@ -15,7 +15,7 @@ The video below briefly summarizes Clowdr's video pipeline capabilities, then ex
 
 `youtube:https://youtu.be/cCxcsd45yEo`
 
-**FEATURE UPDATE:** Clowdr has deployed a page called "My Backstages" to make it easy for presenters to navigate to their backstage areas.
+**FEATURE UPDATE:** Clowdr has recently deployed a page called "My Backstages" to make it easy for presenters to navigate to their backstage areas.
 
 This page available via the _My Backstages_ button in the top-left of the page - above the navigation menu.
 
