@@ -15,7 +15,20 @@ The video below briefly summarizes Clowdr's video pipeline capabilities, then ex
 
 `youtube:https://youtu.be/cCxcsd45yEo`
 
-To join a live-stream in Clowdr, please follow these three stages, starting at the latest the day before your event.
+**FEATURE UPDATE:** Clowdr has deployed a page called "My Backstages". 
+
+This is available via the _My Backstages_ button in the top-left of the page - at the top of the navigation menu.
+
+![](/images/my-backstage.jpg)  
+This page shows someone all their upcoming speaker backstages - and will highlight the ones they are needed at when available (in the 20 minutes before an event). 
+
+![](/images/my-backstage2.jpg)
+
+A big button appears that a presenter can click to go directly to the room with their backstage.
+
+**NOTE:** 
+
+To join a live-stream in Clowdr, please follow these three important stages, starting at the latest the day before your event.
 
 ### Top tips
 
