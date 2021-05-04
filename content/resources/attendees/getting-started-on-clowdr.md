@@ -24,11 +24,11 @@ Review this brief resource to learn how to navigate our platform as an attendee 
 
 ![](/images/sign-up-page.jpg)
 
-1. Once you've signed up for an account on Clowdr, you'll be asked to accept the Clowdr Terms & Conditions, and then invited to input the invitation code into the "Join A Conference" field to access your conference.
+3. Once you've signed up for an account on Clowdr, you'll be asked to accept the Clowdr Terms & Conditions, and then invited to input the invitation code into the "Join A Conference" field to access your conference.
 
 ![](/images/join-a-conference.jpg)
 
-1. Now that you've joined your conference, it's time to set up your profile! Your profile will help you connect with other attendees, and will be linked to any sessions you may be associated with as a presenter, author, or chair. All fields in your profile are optional.
+4. Now that you've joined your conference, it's time to set up your profile! Your profile will help you connect with other attendees, and will be linked to any sessions you may be associated with as a presenter, author, or chair. All fields in your profile are optional.
 
 ![](/images/profile.jpg)
 
@@ -36,13 +36,13 @@ Once you've created your profile, you are free to explore your conference!
 
 ![](/images/homepafe.jpg)
 
-1. The conference home page can be found in the center of the screen. Each conference can customize this area.
-2. On the left hand side you'll find navigation to the rest of the conference, including schedule, attendees, rooms (social and program), exhibitions, shuffle (randomized networking) rooms, and the My Backstages area (for presenters).
+5. The conference home page can be found in the center of the screen. Each conference can customize this area.
+6. On the left hand side you'll find navigation to the rest of the conference, including schedule, attendees, rooms (social and program), exhibitions, shuffle (randomized networking) rooms, and the My Backstages area (for presenters).
 
 ![](/images/left-menu.jpg)
 
-1. The left sidebar menu includes a Happening Now section, which highlights upcoming sessions - and a Sponsor section where attendees can browse Sponsor booths.
-2. On the right side of the landing page, Clowdr provides a chat area where you can view announcements, engage tech support, and pin chats from different sessions and rooms. You can also view who the other attendees currently in the conference are by clicking on Who's Here.
+7. The left sidebar menu includes a Happening Now section, which highlights upcoming sessions - and a Sponsor section where attendees can browse Sponsor booths.
+8. On the right side of the landing page, Clowdr provides a chat area where you can view announcements, engage tech support, and pin chats from different sessions and rooms. You can also view who the other attendees currently in the conference are by clicking on Who's Here.
 
 ![](/images/right-menu.jpg)
 
