@@ -44,6 +44,7 @@ fields:
   label: Draft
   description: Is this post a draft?
 pages:
+- content/resources/Organizer Guides/clowdr-s-event-modes.md
 - content/resources/Organizer Guides/hosting-a-tutorial-or-workshop-with-clowdr-and-zoom.md
 - content/resources/Organizer Guides/joining-a-live-stream-in-clowdr.md
 - content/resources/Organizer Guides/managing-the-content-in-your-program-with-clowdr.md
