@@ -28,7 +28,9 @@ Review this brief resource to learn how to navigate our platform as an attendee 
 
 ![](/images/join-a-conference.jpg)
 
-4. Now that you've joined your conference, it's time to set up your profile! Your profile will help you connect with other attendees, and will be linked to any sessions you may be associated with as a presenter, author, or chair. All fields in your profile are optional.
+4. Now that you've joined your conference, it's time to set up your profile! 
+
+   Your profile will help you connect with other attendees, and will be linked to any sessions you may be associated with as a presenter, author, or chair. All fields in your profile are optional.
 
 ![](/images/profile.jpg)
 
