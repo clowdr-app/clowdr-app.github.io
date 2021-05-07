@@ -21,6 +21,8 @@ Here is the brief list of minimum technical requirements for using our platform:
 
 #### Requirements for Uploads
 
+**Video**
+
 Clowdr supports a wide range of video upload formats. However, for the best results, we recommend that you upload videos in the following format:
 
 * Codec: H.264 (AVC)
@@ -32,5 +34,11 @@ Note: Clowdr does not support the following H.264 profiles: High 4:2:2, High 10-
 Tip: you can use the following [ffmpeg](https://www.ffmpeg.org/) command to convert many input videos to a format Clowdr accepts.
 
     ffmpeg -i <input file> -vcodec h264 -s hd1080 -crf 23 output.mp4
+
+**Other Content Formats**
+
+Clowdr supports PDFs, and the following image formats: PNG, JPG/JPEG, GIF and WebP.
+
+We also support uploads for text/abstracts; links; youtube and other sites video embeddings (by url to the video); and zoom links!
 
 **Tip:** We also highly recommend attendees use headphones and an external camera, when available. This ensures a more comfortable experience during those long networking hours!
