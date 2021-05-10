@@ -21,7 +21,27 @@ export default function Feedback() {
             Contact Us
           </Heading>
           <Heading as="h3" size="xl">
-            Reporting issues
+            Need support?
+          </Heading>
+
+          <Text>
+            Most issues can be solved quickly by the person or people organising
+            your conference. Please try contacting them first! Organisers have a
+            direct line to Clowdr and we can help them resolve complex issues.
+          </Text>
+
+          <Text>
+            If you are unable to resolve your problem through your conference
+            organisers, email us at{" "}
+            <Link href="mailto:support@clowdr.org">support@clowdr.org</Link>.
+          </Text>
+
+          <Heading as="h3" size="xl">
+            Contributing to Clowdr
+          </Heading>
+
+          <Heading as="h4" size="lg">
+            Report bugs and feature requests
           </Heading>
 
           <Text>
@@ -33,8 +53,8 @@ export default function Feedback() {
             to tell us about it!
           </Text>
 
-          <Heading as="h3" size="xl">
-            Contributing to Clowdr
+          <Heading as="h4" size="lg">
+            Contribute to Clowdr's code
           </Heading>
 
           <Text>
@@ -71,8 +91,7 @@ export default function Feedback() {
             to you as fast and accurately as possible.
           </Text>
           <Text>
-            Want to talk to us directly about something? Have a question about
-            Clowdr?{" "}
+            Want to talk to us directly about something?{" "}
             <Link href="mailto:welcome@clowdr.org">Drop us an email</Link>.
           </Text>
         </Container>
