@@ -4,7 +4,8 @@ categories:
 - Videos
 title: Exporting content from Clowdr to YouTube
 slug: "/exporting"
-description: Instructions for exporting event video content directly to YouTube
+description: Simple instructions for exporting video content from Clowdr directly
+  into YouTube
 author: Cristal Mojica
 draft: false
 
