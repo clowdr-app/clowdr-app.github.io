@@ -1,6 +1,7 @@
 ---
 updatedDate: 2021-05-26T09:05:07+00:00
-categories: []
+categories:
+- Videos
 title: Exporting Content from Clowdr to YouTube
 slug: "/exporting"
 description: Instructions for exporting event video content directly to YouTube
@@ -10,7 +11,7 @@ draft: false
 ---
 ### Ready to Archive Your Conference Content?
 
-Clowdr makes it quick and easy to package and export conference content directly to your organization's YouTube channel.
+Clowdr makes it quick and easy to package and export conference content directly to your organization's YouTube channel. 
 
 #### Exporting to YouTube
 
