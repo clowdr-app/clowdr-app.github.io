@@ -1,7 +1,7 @@
 ---
 updatedDate: 2021-05-26T09:05:07+00:00
 categories: []
-title: Exporting Video from Clowdr to YouTube
+title: Exporting Content from Clowdr to YouTube
 slug: "/exporting"
 description: Instructions for exporting event video content directly to YouTube
 author: Cristal Mojica
