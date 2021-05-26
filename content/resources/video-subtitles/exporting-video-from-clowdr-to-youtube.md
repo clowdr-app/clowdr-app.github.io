@@ -12,7 +12,7 @@ draft: false
 ---
 #### Ready to Archive Your Conference Content?
 
-Clowdr makes it quick and easy to package and export conference content directly to your organization's YouTube channel. 
+Clowdr makes it quick and easy to package and export conference content directly to your organization's YouTube channel.
 
 Exporting presentations from within Clowdr can save you a great deal of time as an organizer, by reducing the steps involved in post-event content management.
 
@@ -24,7 +24,7 @@ Follow these simple instructions to get started!
 
 ![](/images/export-1.jpg)
 
-**Step 2:** In the Export area, you will see three distinct areas - Connected YouTube Accounts, Upload Videos to YouTube, and Uploaded Videos. Click **+Connect to YouTube** in the Connected YouTube Accounts section.
+**Step 2:** In the Export area, you will see three distinct areas - Connected YouTube Accounts, Upload Videos to YouTube, and Uploaded Videos. Click **+Connect to YouTube** in the Connected YouTube Accounts section. 
 
 ![](/images/export-2.jpg)
 
@@ -52,10 +52,10 @@ When exporting videos, you are able to select from the list of connected Google/
 
 **Step 4**
 
-Once you've uploaded content to YouTube, you are able to visit the full list of videos in Clowdr from the Uploaded Videos section. 
+Once you've uploaded content to YouTube, you are able to visit the full list of videos in Clowdr from the Uploaded Videos section.
 
-The information listed includes the video YouTube ID, privacy status, and preview with playback ability. 
+The information listed includes the video YouTube ID, privacy status, and preview with playback ability.
 
 ![](/images/export-7.jpg)
 
-### Now you're ready to start exporting! 
+### Now you're ready to start exporting!
