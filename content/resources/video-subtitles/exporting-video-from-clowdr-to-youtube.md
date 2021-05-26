@@ -16,13 +16,13 @@ Clowdr makes it quick and easy to package and export conference content directly
 
 **Step 1**
 
-XXXXe recommend that you upload videos in the following 
+Navigate to the Export tile in the Clowdr admin dashboard.
 
 ![](/images/export-1.jpg)
 
 **Step 2**
 
-XXX
+In the Export area, you will see three related areas - Connected YouTube Accounts, Upload Videos to YouTube, and Uploaded Videos.
 
 ![](/images/export-2.jpg)
 
