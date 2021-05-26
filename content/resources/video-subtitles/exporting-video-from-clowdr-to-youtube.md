@@ -48,10 +48,10 @@ From here, you are able to choose the video you want to upload by Content Item a
 
 ![](/images/export-6.jpg)
 
-When exporting videos, you will be able to select from the list of connected YouTube accounts, as wells specific channels and playlists.
+When exporting videos, you are able to select from the list of connected Google/YouTube accounts, as well as specific channels and playlists.
 
 **Step 4**
 
-Once you've uploaded videos to your YouTube account from within Clowdr, you will be able to view 
+Once you've uploaded videos to your YouTube account from within Clowdr, you are able to view the list in the Upload
 
 ![](/images/export-7.jpg)
