@@ -19,8 +19,6 @@ Exporting presentations from within Clowdr can save you a great deal of time as 
 1. **Combine videos**
 
    You may have scheduled pre-recorded videos followed by live Q&As. We recommend combining the pre-recorded video with the Q&A, to form a single video.
-
-    
 2. **Export to YouTube**
 
    With Clowdr, you can export videos directly to YouTube - there's no need to download and re-upload the video files. Clowdr's export also includes subtitles and template-based descriptions to include abstracts, author names and links.
@@ -28,6 +26,8 @@ Exporting presentations from within Clowdr can save you a great deal of time as 
 Follow these simple instructions to get started!
 
 #### **1. Combining videos**
+
+Combining videos enables you to stitch together videos, such as a pre-recorded presentation followed by the Q&A recording.
 
 **Step 1.** Open the **_Manage Content_** panel from the admin dashboard.
 
@@ -45,11 +45,13 @@ Follow these simple instructions to get started!
 
 #### **2. Exporting to YouTube**
 
+After combining videos has completed, you can then move on to exporting videos directly to YouTube.
+
 **Step 1.** Navigate to the **_Export_** panel in the Clowdr admin dashboard.
 
 ![](/images/export-1.jpg)
 
-**Step 2.** In the Export area, you will see three tabs - _Connected YouTube Accounts_, _Upload Videos to YouTube_, and _Uploaded Videos_. In the **_Connected YouTube Accounts _**tab, click **_+Connect to YouTube_**.
+**Step 2.** In the Export area, you will see three tabs - _Connected YouTube Accounts_, _Upload Videos to YouTube_, and _Uploaded Videos_. In the ___Connected YouTube Accounts **tab, click **_+Connect to YouTube__.
 
 ![](/images/export-2.jpg)
 
@@ -63,15 +65,19 @@ The newly added YouTube account will now appear in your list of _Connected Accou
 
 **Step 3.** Now that you have linked an account to upload content to, navigate to the **_Upload Videos to YouTube_** tab. From here, you are able to choose one or more videos to upload.
 
+We recommend using **_Add videos by tag_** and filtering the file name to select only the combined videos (generated above). For example, **_filter by_** "**_Combined video_**" (without the quotes).
+
 ![](/images/export-5.jpg)
 
 ![](/images/export-7a.jpg)
 
-We recommend configuring the privacy setting (which determins the privacy setting in YouTube of each video); the video title and description. A recommended description template is provided below.
+We recommend configuring the privacy setting (which determines of each video's privacy setting in YouTube); the video title and description. A recommended description template is provided below.
 
 ![](/images/export-6.jpg)
 
 **Recommended Title Template**
+
+If you are uploading combined videos, we recommend removing the "{{fileName}}" from the video title.
 
     {{itemTitle}} ({{fileName}})
 
@@ -81,19 +87,17 @@ We recommend configuring the privacy setting (which determins the privacy settin
     
     {{/abstract}}
     {{#authors.length}}
-    {{#authors}}
-    {{name}}{{#affiliation}} ({{affiliation}}){{/affiliation}}, 
-    {{/authors}}
+    {{#authors}}{{name}}{{#affiliation}} ({{affiliation}}){{/affiliation}}, {{/authors}}
     
     {{/authors.length}}
     {{#paperLinks.length}}
     {{#paperLinks}}{{#url}}
-    * {{text}}: {{url}}
+    * {{text}}: {{{url}}}
     {{/url}}{{/paperLinks}}
     
     {{/paperLinks.length}}
     {{#paperUrls.length}}
-    {{#paperUrls}}{{#.}}* {{.}}
+    {{#paperUrls}}{{#.}}* {{{.}}}
     {{/.}}{{/paperUrls}}
     
     {{/paperUrls.length}}
@@ -102,7 +106,9 @@ When exporting videos, you are able to select from the list of connected Google/
 
 **Step 4.** Once you've uploaded content to YouTube, you are able to view the full list of videos in Clowdr from the _Uploaded Videos_ section.
 
-The information listed includes the video YouTube ID, privacy status, and preview with playback ability.![](/images/export-7.jpg)
+The information listed includes the video YouTube ID, privacy status, and preview with playback ability.
+
+![](/images/export-7.jpg)
 
 ### Now you're ready to start exporting!
 
