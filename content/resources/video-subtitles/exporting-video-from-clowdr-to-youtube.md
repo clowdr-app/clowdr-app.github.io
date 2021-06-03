@@ -98,7 +98,7 @@ We recommend configuring the privacy setting (which determins the privacy settin
 
 When exporting videos, you are able to select from the list of connected Google/YouTube accounts, as well as upload to specific channels and playlists.
 
-**Step 4.** Once you've uploaded content to YouTube, you are able to visit the full list of videos in Clowdr from the _Uploaded Videos_ section.
+**Step 4.** Once you've uploaded content to YouTube, you are able to view the full list of videos in Clowdr from the _Uploaded Videos_ section.
 
 The information listed includes the video YouTube ID, privacy status, and preview with playback ability.![](/images/export-7.jpg)
 
