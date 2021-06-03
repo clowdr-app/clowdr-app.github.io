@@ -19,6 +19,8 @@ Exporting presentations from within Clowdr can save you a great deal of time as 
 1. **Combine videos**
 
    You may have scheduled pre-recorded videos followed by live Q&As. We recommend combining the pre-recorded video with the Q&A, to form a single video.
+
+    
 2. **Export to YouTube**
 
    With Clowdr, you can export videos directly to YouTube - there's no need to download and re-upload the video files. Clowdr's export also includes subtitles and template-based descriptions to include abstracts, author names and links.
