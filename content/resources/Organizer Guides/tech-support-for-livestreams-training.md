@@ -10,7 +10,6 @@ author: Cristal Mojica
 draft: false
 
 ---
-
 Training volunteers to help with speaker tech support on Clowdr? Watch this 15 minute resource to learn how to:
 
 * Help speakers manage camera and microphone permissions
@@ -19,6 +18,6 @@ Training volunteers to help with speaker tech support on Clowdr? Watch this 15 m
 
 `youtube:https://youtu.be/pcQAlUICABw`
 
-For detailed written instructions on how to manage camera and microphone permissions, review the Troubleshooting Microphone & Camera Permissions resource next!
+For detailed written instructions on how to manage camera and microphone permissions, view the Troubleshooting Microphone & Camera Permissions resource next!
 
 [https://clowdr.org/resources/mic-cam-permissions](https://clowdr.org/resources/mic-cam-permissions "https://clowdr.org/resources/mic-cam-permissions")
