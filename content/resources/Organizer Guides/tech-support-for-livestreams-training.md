@@ -20,4 +20,4 @@ draft: false
 
 For detailed written instructions on how to manage camera and microphone permissions, view the **Troubleshooting Microphone & Camera Permissions** resource next!
 
-[https://clowdr.org/resources/mic-cam-permissions](https://clowdr.org/resources/mic-cam-permissions "https://clowdr.org/resources/mic-cam-permissions")
+_READ NEXT_: [https://clowdr.org/resources/mic-cam-permissions](https://clowdr.org/resources/mic-cam-permissions "https://clowdr.org/resources/mic-cam-permissions")
