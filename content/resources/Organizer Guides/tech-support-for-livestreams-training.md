@@ -7,7 +7,7 @@ slug: techsupport
 description: A brief training for organizers and volunteers on providing tech support
   for livestreams
 author: Cristal Mojica
-draft: true
+draft: false
 
 ---
 `youtube:https://youtu.be/pcQAIUCABw`
