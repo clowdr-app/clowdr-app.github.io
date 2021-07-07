@@ -4,6 +4,7 @@ import {
   Link,
   List,
   ListItem,
+  OrderedList,
   Table,
   Tbody,
   Td,
@@ -68,8 +69,8 @@ export default function Privacy() {
           </Text>
           <Text>
             Email address:{" "}
-            <Link as="a" href="mailto:hello@clowdr.org">
-              hello@clowdr.org
+            <Link as="a" href="mailto:welcome@clowdr.org">
+              welcome@clowdr.org
             </Link>
           </Text>
           <Text>
@@ -87,7 +88,7 @@ export default function Privacy() {
           </Text>
           <Text>
             We keep our privacy policy under regular review. This version was
-            last updated on 4<sup>th</sup> March 2021.
+            last updated on 5<sup>th</sup> July 2021.
           </Text>
           <Text>
             It is important that the personal data we hold about you is accurate
@@ -117,7 +118,8 @@ export default function Privacy() {
           </Text>
           <Text>
             <strong>Identity Data</strong> includes first name, last name,
-            username or similar identifier, title
+            username or similar identifier, title and in some cases video or
+            photographic data.
           </Text>
           <Text>
             <strong>Contact Data</strong> includes billing address, home
@@ -200,14 +202,18 @@ export default function Privacy() {
             <ListItem>create an account on our website;</ListItem>
 
             <ListItem>
-              subscribe to any other service or publication we offer;{" "}
+              subscribe to any other service or publication we offer;
             </ListItem>
 
             <ListItem>request marketing to be sent to you;</ListItem>
 
             <ListItem>enter a promotion or survey; or</ListItem>
 
-            <ListItem>give us feedback or contact us. </ListItem>
+            <ListItem>
+              participate in a virtual conference such as a live stream; or
+            </ListItem>
+
+            <ListItem>give us feedback or contact us.</ListItem>
           </List>
           <Text>
             <strong>Automated technologies or interactions.</strong> As you
@@ -229,11 +235,9 @@ export default function Privacy() {
             <ListItem>
               Identity and Contact Data from data brokers or aggregators{" "}
             </ListItem>
-
-            <ListItem>
-              <strong>How we use your personal data</strong>
-            </ListItem>
           </List>
+
+          <Heading as="h3">3. How we use your personal data</Heading>
           <Text>
             We will only use your personal data when the law allows us to. Most
             commonly, we will use your personal data in the following
@@ -243,6 +247,10 @@ export default function Privacy() {
             <ListItem>
               Where we need to perform the contract we are about to enter into
               or have entered into with you.
+            </ListItem>
+
+            <ListItem>
+              Where you give your consent to use certain personal data.
             </ListItem>
 
             <ListItem>
@@ -256,11 +264,43 @@ export default function Privacy() {
             </ListItem>
           </List>
           <Text>
-            Generally, we do not rely on consent as a legal basis for processing
-            your personal data although we will get your consent before sending
-            third party direct marketing communications to you via email or text
-            message. You have the right to withdraw consent to marketing at any
-            time by contacting us.
+            We will get your consent before sending third party direct marketing
+            communications to you via email or text message. You have the right
+            to withdraw consent to marketing at any time by contacting us.
+          </Text>
+          <Text>
+            <strong>YouTube</strong>
+          </Text>
+          <Text>
+            We will also require your consent to participate in a virtual
+            conference which intends to export videos or recordings to YouTube
+            which, where possible, will be obtained by consent form. The consent
+            form will include the requirement for you to agree to{" "}
+            <Link href="https://policies.google.com/privacy">
+              Google’s Privacy Terms
+            </Link>{" "}
+            which can be found at{" "}
+            <Link href="https://policies.google.com/privacy">
+              https://policies.google.com/privacy
+            </Link>
+            . If you have not signed a consent form but wish to take part in a
+            live-streamed event you will be agreeing to comply with{" "}
+            <Link href="https://policies.google.com/privacy">
+              Google’s Privacy Policy
+            </Link>
+            .
+          </Text>
+          <Text>
+            In order to create or submit a YouTube video via our export system
+            you will have to agree to{" "}
+            <Link href="https://security.google.com/settings/security/permissions">
+              Google’s Security Settings
+            </Link>{" "}
+            which can be found at{" "}
+            <Link href="https://security.google.com/settings/security/permissions">
+              https://security.google.com/settings/security/permissions
+            </Link>
+            .
           </Text>
           <Text>
             <strong>Purposes for which we will use your personal data</strong>
@@ -335,63 +375,72 @@ export default function Privacy() {
               <Tr>
                 <Td>To register you as an account holder</Td>
                 <Td>
-                  (a) Identity
-                  <br />
-                  (b) Contact
+                  <OrderedList type="a">
+                    <ListItem>Identity</ListItem>
+                    <ListItem>Contact</ListItem>
+                  </OrderedList>
                 </Td>
                 <Td>Performance of a contract with you</Td>
               </Tr>
               <Tr>
                 <Td>
                   To process and deliver your order including:
-                  <br />
-                  (a) Manage payments, fees and charges
-                  <br />
-                  (b) Collect and recover money owed to us
+                  <OrderedList type="a">
+                    <ListItem>Manage payments, fees and charges</ListItem>
+                    <ListItem>Collect and recover money owed to us</ListItem>
+                  </OrderedList>
                 </Td>
                 <Td>
-                  (a) Identity
-                  <br />
-                  (b) Contact
-                  <br />
-                  (c) Financial
-                  <br />
-                  (d) Transaction
-                  <br />
-                  (e) Marketing and Communications
+                  <OrderedList type="a">
+                    <ListItem>Identity</ListItem>
+                    <ListItem>Contact</ListItem>
+                    <ListItem>Financial</ListItem>
+                    <ListItem>Transaction</ListItem>
+                    <ListItem>Marketing and Communications</ListItem>
+                  </OrderedList>
                 </Td>
                 <Td>
-                  (a) Performance of a contract with you
-                  <br />
-                  (b) Necessary for our legitimate interests (to recover debts
-                  due to us)
+                  <OrderedList type="a">
+                    <ListItem>Performance of a contract with you</ListItem>
+                    <ListItem>
+                      Necessary for our legitimate interests (to recover debts
+                      due to us)
+                    </ListItem>
+                  </OrderedList>
                 </Td>
               </Tr>
               <Tr>
                 <Td>
                   To manage our relationship with you which will include:
-                  <br />
-                  (a) Notifying you about changes to our terms or privacy policy
-                  <br />
-                  (b) Asking you to leave a review or take a survey
+                  <OrderedList type="a">
+                    <ListItem>
+                      Notifying you about changes to our terms or privacy policy
+                    </ListItem>
+                    <ListItem>
+                      Asking you to leave a review or take a survey
+                    </ListItem>
+                  </OrderedList>
                 </Td>
                 <Td>
-                  (a) Identity
-                  <br />
-                  (b) Contact
-                  <br />
-                  (c) Profile
-                  <br />
-                  (d) Marketing and Communications
+                  <OrderedList type="a">
+                    <ListItem>Identity</ListItem>
+                    <ListItem>Contact</ListItem>
+                    <ListItem>Profile</ListItem>
+                    <ListItem>Marketing and Communications</ListItem>
+                  </OrderedList>
                 </Td>
                 <Td>
-                  (a) Performance of a contract with you
-                  <br />
-                  (b) Necessary to comply with a legal obligation
-                  <br />
-                  (c) Necessary for our legitimate interests (to keep our
-                  records updated and to study how customers use our
-                  products/services)
+                  <OrderedList type="a">
+                    <ListItem>Performance of a contract with you</ListItem>
+                    <ListItem>
+                      Necessary to comply with a legal obligation
+                    </ListItem>
+                    <ListItem>
+                      Necessary for our legitimate interests (to keep our
+                      records updated and to study how customers use our
+                      products/services)
+                    </ListItem>
+                  </OrderedList>
                 </Td>
               </Tr>
               <Tr>
@@ -399,22 +448,23 @@ export default function Privacy() {
                   To enable you to partake in a promotion or complete a survey
                 </Td>
                 <Td>
-                  (a) Identity
-                  <br />
-                  (b) Contact
-                  <br />
-                  (c) Profile
-                  <br />
-                  (d) Usage
-                  <br />
-                  (e) Marketing and Communications
+                  <OrderedList type="a">
+                    <ListItem>Identity</ListItem>
+                    <ListItem>Contact</ListItem>
+                    <ListItem>Profile</ListItem>
+                    <ListItem>Usage</ListItem>
+                    <ListItem>Marketing and Communications</ListItem>
+                  </OrderedList>
                 </Td>
                 <Td>
-                  (a) Performance of a contract with you
-                  <br />
-                  (b) Necessary for our legitimate interests (to study how
-                  customers use our products/services, to develop them and grow
-                  our business)
+                  <OrderedList type="a">
+                    <ListItem>Performance of a contract with you</ListItem>
+                    <ListItem>
+                      Necessary for our legitimate interests (to study how
+                      customers use our products/services, to develop them and
+                      grow our business)
+                    </ListItem>
+                  </OrderedList>
                 </Td>
               </Tr>
               <Tr>
@@ -424,19 +474,24 @@ export default function Privacy() {
                   maintenance, support, reporting and hosting of data)
                 </Td>
                 <Td>
-                  (a) Identity
-                  <br />
-                  (b) Contact
-                  <br />
-                  (c) Technical
+                  <OrderedList type="a">
+                    <ListItem>Identity</ListItem>
+                    <ListItem>Contact</ListItem>
+                    <ListItem>Technical</ListItem>
+                  </OrderedList>
                 </Td>
                 <Td>
-                  (a) Necessary for our legitimate interests (for running our
-                  business, provision of administration and IT services, network
-                  security, to prevent fraud and in the context of a business
-                  reorganisation or group restructuring exercise)
-                  <br />
-                  (b) Necessary to comply with a legal obligation
+                  <OrderedList type="a">
+                    <ListItem>
+                      Necessary for our legitimate interests (for running our
+                      business, provision of administration and IT services,
+                      network security, to prevent fraud and in the context of a
+                      business reorganisation or group restructuring exercise)
+                    </ListItem>
+                    <ListItem>
+                      Necessary to comply with a legal obligation
+                    </ListItem>
+                  </OrderedList>
                 </Td>
               </Tr>
               <Tr>
@@ -446,15 +501,42 @@ export default function Privacy() {
                   experiences
                 </Td>
                 <Td>
-                  (a) Technical
-                  <br />
-                  (b) Usage
+                  <OrderedList type="a">
+                    <ListItem>Technical</ListItem>
+                    <ListItem>Usage</ListItem>
+                  </OrderedList>
                 </Td>
                 <Td>
                   Necessary for our legitimate interests (to define types of
                   customers for our products and services, to keep our website
                   updated and relevant, to develop our business and to inform
                   our marketing strategy)
+                </Td>
+              </Tr>
+              <Tr>
+                <Td>
+                  To enable you to take part in a virtual conference either by
+                  submitting a video via YouTube or by taking part in live
+                  streamed video.
+                </Td>
+                <Td>
+                  <OrderedList type="a">
+                    <ListItem>Identity</ListItem>
+                    <ListItem>Profile</ListItem>
+                    <ListItem>Technical</ListItem>
+                  </OrderedList>
+                </Td>
+                <Td>
+                  <OrderedList type="a">
+                    <ListItem>
+                      Consent in the form of signature of a consent form.
+                    </ListItem>
+                    <ListItem>
+                      Necessary for our legitimate interests where you request
+                      to take part in a live streamed video and it is not
+                      practical to obtain your written consent.
+                    </ListItem>
+                  </OrderedList>
                 </Td>
               </Tr>
             </Tbody>
@@ -526,7 +608,7 @@ export default function Privacy() {
             knowledge or consent, in compliance with the above rules, where this
             is required or permitted by law.
           </Text>
-          <Heading as="h3">3. Disclosures of your personal data</Heading>
+          <Heading as="h3">4. Disclosures of your personal data</Heading>
           <Text>
             We may share your personal data with the parties set out below for
             the purposes set out in the table above.
@@ -560,7 +642,7 @@ export default function Privacy() {
             for their own purposes and only permit them to process your personal
             data for specified purposes and in accordance with our instructions.
           </Text>
-          <Heading as="h3">4. International transfers</Heading>
+          <Heading as="h3">5. International transfers</Heading>
           <Text>
             Some of our external third parties are based outside the EEA so
             their processing of your personal data will involve a transfer of
@@ -598,7 +680,7 @@ export default function Privacy() {
             based outside the EEA and we will not be able to provide those
             services without the processing of personal data outside of the EEA.
           </Text>
-          <Heading as="h3">5. Data security</Heading>
+          <Heading as="h3">6. Data security</Heading>
           <Text>
             We have put in place appropriate security measures to prevent your
             personal data from being accidentally lost, used or accessed in an
@@ -613,7 +695,7 @@ export default function Privacy() {
             data breach and will notify you and any applicable regulator of a
             breach where we are legally required to do so.
           </Text>
-          <Heading as="h3">6. Data retention</Heading>
+          <Heading as="h3">7. Data retention</Heading>
           <Text>
             <strong>How long will you use my personal data for?</strong>
           </Text>
@@ -650,7 +732,7 @@ export default function Privacy() {
             purposes, in which case we may use this information indefinitely
             without further notice to you.
           </Text>
-          <Heading as="h3">7. Your legal rights</Heading>
+          <Heading as="h3">8. Your legal rights</Heading>
           <Text>
             Under certain circumstances, you have rights under data protection
             laws in relation to your personal data.
