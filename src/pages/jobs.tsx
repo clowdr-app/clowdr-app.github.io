@@ -19,17 +19,18 @@ export default function About() {
       <Title title="Jobs" />
       <Layout>
         <Container my={12}>
-          <Heading as="h2" size="2xl">
-            Join our team
+
+          <Heading as="h1" size="2xl">
+            Join our team!
           </Heading>
 
-          <Text>Clowdr CIC is hiring!</Text>
+          <br/>
 
-          <Heading as="h3" size="xl">
-            Current openings
+          <Heading as="h2">
+            Current openings...
           </Heading>
 
-          <Heading as="h4" size="lg">
+          <Heading as="h3" size="md">
             Software developer (front end)
           </Heading>
 
@@ -38,57 +39,53 @@ export default function About() {
             with a particular interest in front-end design and implementation.
             You should have an eye for what looks good and an instinct for good
             user experience.
+            {" "}
+            <b>Essential skills: </b>
+            Front-end web application development,
+            TypeScript,
+            React.
+          {" "}
+          <b>Nice to have: </b>
+            User experience design (UX),
+            Chakra UI,
+            Heroku,
+            GraphQL,
+            AWS,
+            Hasura.
           </Text>
 
-          <Text>Essential skills:</Text>
-          <UnorderedList>
-            <ListItem>Front-end web application development</ListItem>
-            <ListItem>User experience design (UX)</ListItem>
-            <ListItem>TypeScript</ListItem>
-            <ListItem>React</ListItem>
-          </UnorderedList>
-
-          <Text>Nice to have:</Text>
-          <UnorderedList>
-            <ListItem>Chakra UI</ListItem>
-            <ListItem>Heroku</ListItem>
-            <ListItem>GraphQL</ListItem>
-            <ListItem>AWS</ListItem>
-            <ListItem>Hasura</ListItem>
-          </UnorderedList>
-
-          <Heading as="h4" size="lg">
+          <Heading as="h4" size="md">
             Software developer (devops / backend)
           </Heading>
 
           <Text>
-            The ideal candidate for this position would be a strong software
+            Our ideal candidate for this position is an experienced software
             developer with an interest in infrastructure and DevOps. You would
             be comfortable implementing backend APIs and services, working on
             our build and deployment systems; designing and securing our AWS
             infrastructure; deploying monitoring, alerting and load testing.
-            Ideally, you would have several years of experience working on
-            cloud-hosted applications -- even better if that's at significant
-            scale. You should share our appreciation for applications that are
-            well-documented, easy to build and deploy, and whose configuration
-            and infrastructure are defined as code.
+            Ideally, you would have significant experience working on
+            cloud-hosted applications; even better if at serious
+            scale.
+          {" "}
+          <b>Essential skills: </b>
+            Web application development,
+            Typescript,
+            Cloud infrastructure (particularly AWS).
+          {" "}
+          <b>Nice to have: </b>
+            Postgres,
+            Heroku,
+            Hasura,
+            GraphQL,
+            Technical writing.
           </Text>
 
-          <Text>Essential skills:</Text>
-          <UnorderedList>
-            <ListItem>Web application development</ListItem>
-            <ListItem>Typescript</ListItem>
-            <ListItem>Cloud infrastructure, particularly AWS</ListItem>
-          </UnorderedList>
+          <br/>
 
-          <Text>Nice to have:</Text>
-          <UnorderedList>
-            <ListItem>Postgres</ListItem>
-            <ListItem>Heroku</ListItem>
-            <ListItem>Hasura</ListItem>
-            <ListItem>GraphQL</ListItem>
-            <ListItem>Technical writing</ListItem>
-          </UnorderedList>
+          <Heading as="h2">
+            Working at Clowdr...
+          </Heading>
 
           <Heading as="h3" fontSize="xl">
             What we're looking for
@@ -111,14 +108,17 @@ export default function About() {
           <Text>
             Ideal candidates for these positions will have a broad skillset
             related to web application development, with at least 3-5 years of
-            experience designing and developing web-based systems. Talent is
+            experience designing and developing web-based systems.
+            You should share our appreciation for applications that are
+            well-documented, easy to build and deploy, and whose configuration
+            and infrastructure are defined as code.
+            Talent is
             more important than specific skills, so it's still worth contacting
             us if you don't precisely match the specific job descriptions above.
           </Text>
 
           <Text>
-            The idea candidate for any position will be comfortable pitching in
-            at all levels of our stack when necessary. We develop all of our
+            We develop all of our
             software{" "}
             <a href="https://github.com/clowdr-app/clowdr">in the open</a>.
           </Text>
@@ -137,28 +137,6 @@ export default function About() {
           <Text>A friendly, flexible remote working environment.</Text>
 
           <Text>Competitive remuneration.</Text>
-
-          <Heading as="h3" fontSize="xl">
-            The company
-          </Heading>
-
-          <Text>
-            Clowdr is a young and quickly growing conference platform that aims
-            to reduce the carbon footprint of academic conferences by offering a
-            more attractive virtual alternative.
-          </Text>
-
-          <Text>
-            Clowdr CIC has 5 founders, all contributing to every aspect of the
-            business. Ed and Ross are full time CEO and CTO. Both are software
-            developers by background, though Ed also has entrepreneurship
-            training. Benjamin, Jonathan, and Crista remain full-time in their
-            academic positions and contribute as much as possible to Clowdr. Ed
-            and Ross currently do the bulk of technical development, and the
-            whole team contributes to business development and operations. We
-            have recently been joined by a new business development manager to
-            focus on scaling up the latter activities.
-          </Text>
 
           <Heading as="h3" fontSize="xl">
             Starting date
