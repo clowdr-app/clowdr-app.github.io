@@ -38,7 +38,78 @@ export default function About() {
             spacing={6}
           >
             <Heading as="h4" size="lg" p={0} mt={0}>
-              UX / UI designer
+              Open position: Front-end developer
+            </Heading>
+
+            <Text>
+              Our ideal candidate for this position is an experienced developer
+              with a particular interest in front-end design and implementation.
+              You should have an eye for what looks good and an instinct for good
+              user experience.
+              {" "}
+              <b>Essential skills: </b>
+              Front-end web application development,
+              TypeScript,
+              React.
+            {" "}
+            <b>Nice to have: </b>
+              User experience design (UX),
+              Chakra UI,
+              Heroku,
+              GraphQL,
+              AWS,
+              Hasura.
+            </Text>
+          </VStack>
+
+          <VStack
+            bg="green.50"
+            shadow="md"
+            rounded="lg"
+            my={8}
+            p={8}
+            alignItems="flex-start"
+            spacing={6}
+          >
+            <Heading as="h4" size="lg" p={0} mt={0}>
+              Open position: Software developer (devops / backend)
+            </Heading>
+
+            <Text>
+              Our ideal candidate for this position is an experienced software
+              developer with an interest in infrastructure and DevOps. You would
+              be comfortable implementing backend APIs and services, working on
+              our build and deployment systems; designing and securing our AWS
+              infrastructure; deploying monitoring, alerting and load testing.
+              Ideally, you would have significant experience working on
+              cloud-hosted applications; even better if at serious
+              scale.
+            {" "}
+            <b>Essential skills: </b>
+              Web application development,
+              Typescript,
+              Cloud infrastructure (particularly AWS).
+            {" "}
+            <b>Nice to have: </b>
+              Postgres,
+              Heroku,
+              Hasura,
+              GraphQL,
+              Technical writing.
+            </Text>
+          </VStack>
+
+          <VStack
+            bg="green.50"
+            shadow="md"
+            rounded="lg"
+            my={8}
+            p={8}
+            alignItems="flex-start"
+            spacing={6}
+          >
+            <Heading as="h4" size="lg" p={0} mt={0}>
+              Open position: UX / UI designer
             </Heading>
 
             <Text>
@@ -87,6 +158,106 @@ export default function About() {
                 </UnorderedList>
               </VStack>
             </Flex>
+
+            <VStack alignItems="flex-start">
+              <Heading as="h5" fontSize="lg">
+                Goals
+              </Heading>
+
+              <Text>
+                Clowdr is a large and complex progressive-web-app. Your main
+                task will be to tame that complexity into an easy-to-use
+                experience for the wide variety of people that attend
+                conferences on our platform.
+              </Text>
+            </VStack>
+
+            <VStack alignItems="flex-start">
+              <Heading as="h5" fontSize="lg">
+                Responsibilities
+              </Heading>
+
+              <Text>
+                You will be responsible for the UX/UI design process (and if you
+                are interested in helping with the frontend implementation,
+                that's cool too!) We expect you to undertake the creation of
+                personas and user stories, refine UX designs through trials on
+                our groups of willing testers (real conference attendees from
+                our community) and translate those user experiences into a
+                modern, sleek UI design.
+              </Text>
+            </VStack>
+          </VStack>
+
+          <VStack
+            bg="gray.50"
+            shadow="md"
+            rounded="lg"
+            my={8}
+            p={8}
+            spacing={6}
+            alignItems="flex-start"
+          >
+            <VStack alignItems="flex-start">
+              <Heading as="h3" fontSize="xl" p={0} mt={0}>
+                Who we're looking for
+              </Heading>
+
+              <Text>
+                You should be friendly and easy to work with, and comfortable
+                working remotely with an internationally distributed team. We
+                encourage flexible working and asynchronous collaboration, but
+                the international nature of our business means meetings can be
+                at a wide range of hours. Our existing engineering team work
+                from European timezones.
+              </Text>
+
+              <Text>
+                Ideal candidates for these positions will have a broad skillset
+                related to web application development, with at least 3-5 years
+                of experience designing or developing web-based systems. Talent
+                is more important than specific skills, so it's still worth
+                contacting us if you don't precisely match the specific job
+                descriptions above.
+              </Text>
+
+              <Text>
+                The ideal candidate for any position will be comfortable
+                pitching in ideas or code at all levels of our stack when
+                necessary. We develop all of our software{" "}
+                <a href="https://github.com/clowdr-app/clowdr">in the open</a>.
+              </Text>
+            </VStack>
+
+            <Divider borderColor="gray.300" w="80%" alignSelf="center" />
+
+            <VStack alignItems="flex-start">
+              <Heading as="h3" fontSize="xl" p={0} mt={0}>
+                What we offer
+              </Heading>
+
+              <Text>
+                A critical role in a public-interest, community-focused company
+                that is developing cutting-edge, open-source technology for a
+                hot market sector, driven by a passion to combat climate change
+                while increasing inclusivity at conferences.
+              </Text>
+
+              <Text>
+                We enjoy a friendly, flexible remote working environment.
+                Sometimes a live conference can get a bit stressful but the
+                challenge and thrill make it worthwhile and fun. There's nothing
+                quite like the feeling of 2,000 conference attendees expressing
+                appreciation for your product at the end of a 3 week conference!
+              </Text>
+            </VStack>
+
+            <Divider borderColor="gray.300" w="80%" alignSelf="center" />
+
+            <VStack alignItems="flex-start">
+              <Heading as="h3" fontSize="xl" p={0} mt={0}>
+                The Nitty-gritty 
+              </Heading>
 
             <SimpleGrid
               fontSize="sm"
@@ -137,111 +308,14 @@ export default function About() {
                 similar benefits.
               </Text>
             </SimpleGrid>
-
-            <VStack alignItems="flex-start">
-              <Heading as="h5" fontSize="lg">
-                Goals
-              </Heading>
-
-              <Text>
-                Clowdr is a large and complex progressive-web-app. Your main
-                task will be to tame that complexity into an easy-to-use
-                experience for the wide variety of people that attend
-                conferences on our platform.
-              </Text>
             </VStack>
-
-            <VStack alignItems="flex-start">
-              <Heading as="h5" fontSize="lg">
-                Responsibilities
-              </Heading>
-
-              <Text>
-                You will be responsible for the UX/UI design process (and if you
-                are interested in helping with the frontend implementation,
-                that's cool too!) We expect you to undertake the creation of
-                personas and user stories, refine UX designs through trials on
-                our groups of willing testers (real conference attendees from
-                our community) and translate those user experiences into a
-                modern, sleek UI design.
-              </Text>
-            </VStack>
-
-            <Center w="100%">
-              <Button as="a" href="#apply">
-                Apply now
-              </Button>
-            </Center>
-          </VStack>
-
-          <VStack
-            bg="gray.50"
-            shadow="md"
-            rounded="lg"
-            my={8}
-            p={8}
-            spacing={6}
-            alignItems="flex-start"
-          >
-            <VStack alignItems="flex-start">
-              <Heading as="h3" fontSize="xl" p={0} mt={0}>
-                What we're looking for
-              </Heading>
-
-              <Text>
-                You should be friendly and easy to work with, and comfortable
-                working remotely with an internationally distributed team. We
-                encourage flexible working and asynchronous collaboration, but
-                the international nature of our business means meetings can be
-                at a wide range of hours. Our existing engineering team work
-                from European timezones.
-              </Text>
 
               <Text>
                 Clowdr is incorporated in the UK, but there is no need to be
-                resident or have the right to work in the UK for this role. (We
-                are not offering visa sponsorship at this time.)
+                resident or have the right to work in the UK for this role. We
+                are not offering visa sponsorship at this time.
               </Text>
 
-              <Text>
-                Ideal candidates for these positions will have a broad skillset
-                related to web application development, with at least 3-5 years
-                of experience designing or developing web-based systems. Talent
-                is more important than specific skills, so it's still worth
-                contacting us if you don't precisely match the specific job
-                descriptions above.
-              </Text>
-
-              <Text>
-                The ideal candidate for any position will be comfortable
-                pitching in ideas or code at all levels of our stack when
-                necessary. We develop all of our software{" "}
-                <a href="https://github.com/clowdr-app/clowdr">in the open</a>.
-              </Text>
-            </VStack>
-
-            <Divider borderColor="gray.300" w="80%" alignSelf="center" />
-
-            <VStack alignItems="flex-start">
-              <Heading as="h3" fontSize="xl" p={0} mt={0}>
-                What we offer
-              </Heading>
-
-              <Text>
-                A critical role in a public-interest, community-focused company
-                that is developing cutting-edge, open-source technology for a
-                hot market sector, driven by a passion to combat climate change
-                while increasing inclusivity at conferences.
-              </Text>
-
-              <Text>
-                We enjoy a friendly, flexible remote working environment.
-                Sometimes a live conference can get a bit stressful but the
-                challenge and thrill make it worthwhile and fun. There's nothing
-                quite like the feeling of 2,000 conference attendees expressing
-                appreciation for your product at the end of a 3 week conference!
-              </Text>
-            </VStack>
           </VStack>
 
           <VStack
