@@ -13,6 +13,7 @@ export function ArrangeADemoButtonInner({ className }: { className?: string }) {
       p={4}
       variant="solid-2"
       className={className}
+      title="Arrange a demo of Clowdr"
     >
       Arrange a demo
     </Button>
