@@ -114,8 +114,9 @@ export default function About() {
             my={8}
           >
             <Text>
-              Benjamin is Henry Salvatori Professor of Computer and Information
-              Science at the University of Pennsylvania and a Fellow of the
+              Benjamin serves on Clowdr's board of directors. He is
+              Henry Salvatori Professor of Computer and Information 
+              Science at the University of Pennsylvania and a Fellow of the 
               Association for Computing Machinery. He was virtualization chair
               for the 2020 International Conference on Functional Programming
               and has extensive experience with organization of physical
@@ -138,8 +139,9 @@ export default function About() {
             my={8}
           >
             <Text>
-              Jon is Assistant Professor of Software Engineering at Northeastern
-              University. He has been involved in academic conference
+              Jon serves on Clowdr's board of directors. He is an Assistant
+              Professor of Software Engineering at Northeastern
+              University. He has been involved in academic conference 
               organization since he was a first-year PhD student, and, based on
               his experiences, has taken a particular interest in organizing
               student mentoring workshops (at SPLASH in 2017, 2018, 2019, and
@@ -155,7 +157,8 @@ export default function About() {
             my={8}
           >
             <Text>
-              Crista is Professor of Informatics and Computer Science at the
+              Crista serves on Clowdr's board of directors. She is a
+              Professor of Informatics and Computer Science at the
               University of California, Irvine. She has extensive experience on
               conference committees and in 2020 became the first-ever
               Virtualization Chair for the International Conference on Software
