@@ -89,23 +89,26 @@ export default function About() {
               Front-end developer
             </Heading>
 
-            <Text>
-              Clowdr's aim is to make attending a virtual conference just as good as - 
-              or better than - a physical one. By doing this, we will reduce the
-              carbon emitted by long-distance travel to meetings that could take place online.
-            </Text>
-            <Text>
-              One of our key challenges is that every conference brings hundreds (or thousands) of new users
-              that have never seen Clowdr before. We want them to find what they're
-              looking for easily and to have a great time participating once they're there. To do this, we need a UI that 
-              stays fast and intuitive while also providing a space for messy, complex, real-time 
-              interaction between users.
-            </Text>
-            <Text>
-              We're looking for someone who wants to build the future of online conferences. You should be able 
-              to build and maintain large, modern front-end applications. Ideally, you have an instinct 
-              for slick user experiences and an eye for design.
-            </Text>
+            <Text> Clowdr's aim is to make attending virtual
+              conferences as good as, or better than, physical
+              ones. By doing this, we reduce the carbon footprint of
+              long-distance travel to meetings that can instead take
+              place online.  </Text>
+
+            <Text> One of our key challenges is that every conference
+              brings hundreds (or thousands) of new users that have
+              never seen Clowdr before. We want them to find what
+              they're looking for easily and to have a great time
+              participating once they're there. To do this, we need a
+              UI that stays fast and intuitive while also providing a
+              space for messy, complex, real-time interaction between
+              users.  </Text>
+
+            <Text> We're looking for someone who wants to build the
+              future of online conferences. You should be able to
+              build and maintain large, modern front-end
+              applications. Ideally, you have an instinct for slick
+              user experiences and an eye for design.  </Text>
 
             <Flex w="100%" flexWrap="wrap">
               <VStack
@@ -198,25 +201,24 @@ export default function About() {
               Full-stack engineer
             </Heading>
 
-            <Text>
-              Clowdr's aim is to make attending a virtual conference just as good as - 
-              or better than - a physical one. By doing this, we will reduce the
-              carbon emitted by long-distance travel to meetings that could take place online.
-            </Text>
-            <Text>
-              There are dozens of features that our users have asked for and that we'd like to build.
-              But delighting users also means building increasingly complex infrastructure behind the 
-              scenes. This means we need developers who can tie everything together: from the frontend,
-              through our backend services, data API and down into the cloud infrastructure itself.
-            </Text>
-            <Text>
-              We're looking for an experienced software developer with an interest in front- and 
-              back-end implementation. You should be comfortable implementing backend APIs
-              and services; working on our build and deployment systems;
-              designing and securing our cloud infrastructure; deploying
-              monitoring and alerts, and undertaking load testing. Ideally, you have significant experience 
-              working on highly-scaled, real-world cloud software.
-            </Text>
+            <Text> Virtual conferences are complex beasts.  There are
+              dozens more features that our users have asked for and
+              that we'd like to build.  But delighting users also
+              means building increasingly complex infrastructure
+              behind the scenes. This means we need developers who can
+              tie everything together: from the front end, through our
+              back end services, the data API, and down to the cloud
+              infrastructure itself.  </Text>
+
+            <Text> We're looking for an experienced software developer
+              with an interest in both front- and back-end
+              implementation. You should be comfortable implementing
+              backend APIs and services; working on our build and
+              deployment systems; designing and securing our cloud
+              infrastructure; deploying monitoring and alerts; and
+              undertaking load testing. Ideally, you have significant
+              experience working on highly-scalable, real-world cloud
+              software.  </Text>
 
             <Flex w="100%" flexWrap="wrap">
               <VStack
