@@ -13,6 +13,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import React from "react";
+import { AiOutlineTeam } from "react-icons/ai";
 import { Layout } from "../components/Layout";
 import Title from "../components/Title";
 
@@ -89,10 +90,21 @@ export default function About() {
             </Heading>
 
             <Text>
-              Our ideal candidate for this position is an experienced developer
-              with a particular interest in front-end design and implementation.
-              You should have an eye for what looks good and an instinct for
-              good user experience.
+              Clowdr's aim is to make attending a virtual conference just as good as - 
+              or better than - a physical one. By doing this, we will reduce the
+              carbon emitted by long-distance travel to meetings that could take place online.
+            </Text>
+            <Text>
+              One of our key challenges is that every conference brings hundreds (or thousands) of new users
+              that have never seen Clowdr before. We want them to find what they're
+              looking for easily and to have a great time participating once they're there. To do this, we need a UI that 
+              stays fast and intuitive while also providing a space for messy, complex, real-time 
+              interaction between users.
+            </Text>
+            <Text>
+              We're looking for someone who wants to build the future of online conferences. You should be able 
+              to build and maintain large, modern front-end applications. Ideally, you have an instinct 
+              for slick user experiences and an eye for design.
             </Text>
 
             <Flex w="100%" flexWrap="wrap">
@@ -129,7 +141,7 @@ export default function About() {
                   <ListItem>Chakra UI</ListItem>
                   <ListItem>Hasura</ListItem>
                   <ListItem>NodeJS (TS) / backend development</ListItem>
-                  <ListItem>AWS (Chime and Media services)</ListItem>
+                  <ListItem>AWS</ListItem>
                 </UnorderedList>
               </VStack>
             </Flex>
@@ -154,11 +166,11 @@ export default function About() {
               </Button>
               <Button
                 as={Link}
+                leftIcon={<AiOutlineTeam />}
                 href="#working-at-clowdr"
                 colorScheme="blue"
                 title="Find out more about working at Clowdr"
               >
-                <LinkIcon mr={2} />
                 Working at Clowdr
               </Button>
               <Button
@@ -187,14 +199,23 @@ export default function About() {
             </Heading>
 
             <Text>
-              Our ideal candidate for this position is an experienced software
-              developer with an interest in front- and back-end implementation.
-              In particular, you should be comfortable implementing backend APIs
-              and services, working on our build and deployment systems;
-              designing and securing our AWS infrastructure; deploying
-              monitoring and alerts and undertaking load testing. Ideally, you
-              would have significant experience working on cloud-hosted
-              applications; even better if at serious scale.
+              Clowdr's aim is to make attending a virtual conference just as good as - 
+              or better than - a physical one. By doing this, we will reduce the
+              carbon emitted by long-distance travel to meetings that could take place online.
+            </Text>
+            <Text>
+              There are dozens of features that our users have asked for and that we'd like to build.
+              But delighting users also means building increasingly complex infrastructure behind the 
+              scenes. This means we need developers who can tie everything together: from the frontend,
+              through our backend services, data API and down into the cloud infrastructure itself.
+            </Text>
+            <Text>
+              We're looking for an experienced software developer with an interest in front- and 
+              back-end implementation. You should be comfortable implementing backend APIs
+              and services; working on our build and deployment systems;
+              designing and securing our cloud infrastructure; deploying
+              monitoring and alerts, and undertaking load testing. Ideally, you have significant experience 
+              working on highly-scaled, real-world cloud software.
             </Text>
 
             <Flex w="100%" flexWrap="wrap">
@@ -234,7 +255,7 @@ export default function About() {
                   <ListItem>Hasura</ListItem>
                   <ListItem>Heroku</ListItem>
                   <ListItem>
-                    Detailed knowledge of AWS Chime and AWS Media services
+                    AWS Media Services expertise
                   </ListItem>
                   <ListItem>Technical writing</ListItem>
                 </UnorderedList>
@@ -261,11 +282,11 @@ export default function About() {
               </Button>
               <Button
                 as={Link}
+                leftIcon={<AiOutlineTeam />}
                 href="#working-at-clowdr"
                 colorScheme="blue"
                 title="Find out more about working at Clowdr"
               >
-                <LinkIcon mr={2} />
                 Working at Clowdr
               </Button>
               <Button
@@ -373,11 +394,11 @@ export default function About() {
               </Button>
               <Button
                 as={Link}
+                leftIcon={<AiOutlineTeam />}
                 href="#working-at-clowdr"
                 colorScheme="blue"
                 title="Find out more about working at Clowdr"
               >
-                <LinkIcon mr={2} />
                 Working at Clowdr
               </Button>
               <Button
