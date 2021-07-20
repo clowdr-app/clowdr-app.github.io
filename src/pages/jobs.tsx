@@ -201,12 +201,13 @@ export default function About() {
               Full-stack engineer
             </Heading>
 
-            <Text> Virtual conferences are complex beasts.  There are
-              dozens more features that our users have asked for and
-              that we'd like to build.  But delighting users also
-              means building increasingly complex infrastructure
-              behind the scenes. This means we need developers who can
-              tie everything together: from the front end, through our
+            <Text> Virtual conferences are complex beasts.  Clowdr is
+              already a rich platform, but there are dozens more
+              features that our users have asked for and that we'd
+              like to build.  But delighting users also means building
+              increasingly complex infrastructure behind the
+              scenes. This means we need developers who can tie
+              everything together: from the front end, through our
               back end services, the data API, and down to the cloud
               infrastructure itself.  </Text>
 
