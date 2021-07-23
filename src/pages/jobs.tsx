@@ -35,7 +35,7 @@ export default function About() {
             Clowdr is a climate-focused social enterprise. All our positions
             offer fully remote, flexible working from almost anywhere in the
             world. Our software is open source and we are currently a small
-            team, meaning you have the opporunity to make a direct and big
+            team, meaning you have the opportunity to make a direct and big
             impact on our product and users.
           </Text>
 
