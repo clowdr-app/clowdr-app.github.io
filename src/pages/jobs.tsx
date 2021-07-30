@@ -1,5 +1,6 @@
 import { EmailIcon, LinkIcon } from "@chakra-ui/icons";
 import {
+  Badge,
   Button,
   Container,
   Divider,
@@ -89,26 +90,31 @@ export default function About() {
               Front-end developer
             </Heading>
 
-            <Text> Clowdr's aim is to make attending virtual
-              conferences as good as, or better than, physical
-              ones. By doing this, we reduce the carbon footprint of
-              long-distance travel to meetings that can instead take
-              place online.  </Text>
+            <Text>
+              {" "}
+              Clowdr's aim is to make attending virtual conferences as good as,
+              or better than, physical ones. By doing this, we reduce the carbon
+              footprint of long-distance travel to meetings that can instead
+              take place online.{" "}
+            </Text>
 
-            <Text> One of our key challenges is that every conference
-              brings hundreds (or thousands) of new users that have
-              never seen Clowdr before. We want them to find what
-              they're looking for easily and to have a great time
-              participating once they're there. To do this, we need a
-              UI that stays fast and intuitive while also providing a
-              space for messy, complex, real-time interaction between
-              users.  </Text>
+            <Text>
+              {" "}
+              One of our key challenges is that every conference brings hundreds
+              (or thousands) of new users that have never seen Clowdr before. We
+              want them to find what they're looking for easily and to have a
+              great time participating once they're there. To do this, we need a
+              UI that stays fast and intuitive while also providing a space for
+              messy, complex, real-time interaction between users.{" "}
+            </Text>
 
-            <Text> We're looking for someone who wants to build the
-              future of online conferences. You should be able to
-              build and maintain large, modern front-end
-              applications. Ideally, you have an instinct for slick
-              user experiences and an eye for design.  </Text>
+            <Text>
+              {" "}
+              We're looking for someone who wants to build the future of online
+              conferences. You should be able to build and maintain large,
+              modern front-end applications. Ideally, you have an instinct for
+              slick user experiences and an eye for design.{" "}
+            </Text>
 
             <Flex w="100%" flexWrap="wrap">
               <VStack
@@ -201,25 +207,27 @@ export default function About() {
               Full-stack engineer
             </Heading>
 
-            <Text> Virtual conferences are complex beasts.  Clowdr is
-              already a rich platform, but there are dozens more
-              features that our users have asked for and that we'd
-              like to build.  But delighting users also means building
-              increasingly complex infrastructure behind the
-              scenes. This means we need developers who can tie
-              everything together: from the front end, through our
-              back end services, the data API, and down to the cloud
-              infrastructure itself.  </Text>
+            <Text>
+              {" "}
+              Virtual conferences are complex beasts. Clowdr is already a rich
+              platform, but there are dozens more features that our users have
+              asked for and that we'd like to build. But delighting users also
+              means building increasingly complex infrastructure behind the
+              scenes. This means we need developers who can tie everything
+              together: from the front end, through our back end services, the
+              data API, and down to the cloud infrastructure itself.{" "}
+            </Text>
 
-            <Text> We're looking for an experienced software developer
-              with an interest in both front- and back-end
-              implementation. You should be comfortable implementing
-              backend APIs and services; working on our build and
-              deployment systems; designing and securing our cloud
-              infrastructure; deploying monitoring and alerts; and
-              undertaking load testing. Ideally, you have significant
-              experience working on highly-scalable, real-world cloud
-              software.  </Text>
+            <Text>
+              {" "}
+              We're looking for an experienced software developer with an
+              interest in both front- and back-end implementation. You should be
+              comfortable implementing backend APIs and services; working on our
+              build and deployment systems; designing and securing our cloud
+              infrastructure; deploying monitoring and alerts; and undertaking
+              load testing. Ideally, you have significant experience working on
+              highly-scalable, real-world cloud software.{" "}
+            </Text>
 
             <Flex w="100%" flexWrap="wrap">
               <VStack
@@ -257,9 +265,7 @@ export default function About() {
                   <ListItem>Chakra UI</ListItem>
                   <ListItem>Hasura</ListItem>
                   <ListItem>Heroku</ListItem>
-                  <ListItem>
-                    AWS Media Services expertise
-                  </ListItem>
+                  <ListItem>AWS Media Services expertise</ListItem>
                   <ListItem>Technical writing</ListItem>
                 </UnorderedList>
               </VStack>
@@ -305,7 +311,7 @@ export default function About() {
           </VStack>
 
           <VStack
-            bg="green.50"
+            bg="gray.300"
             shadow="md"
             rounded="lg"
             my={8}
@@ -313,6 +319,7 @@ export default function About() {
             alignItems="flex-start"
             spacing={6}
           >
+            <Badge colorScheme="green">Filled</Badge>
             <Heading as="h4" size="lg" p={0} mt={0} id="ux-ui-position">
               UX / UI designer
             </Heading>
