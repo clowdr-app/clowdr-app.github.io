@@ -12,8 +12,8 @@ import {
 import { Link as GatsbyLink } from "gatsby";
 import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-import { menuItems, menuSecondaryItems } from "../misc/menu-items";
-import { ArrangeADemoButton } from "./ArrangeADemoButton";
+import { menuItems } from "../misc/menu-items";
+import { BackToClowdrButton } from "./BackToClowdrButton";
 
 export function MobileMenu(): JSX.Element {
   const mobileNav = useDisclosure();
@@ -82,12 +82,7 @@ export function MobileMenu(): JSX.Element {
               {menuItem.text}
             </Link>
           ))}
-          <ArrangeADemoButton />
-          {menuSecondaryItems.map((menuItem, i) => (
-            <Link as={GatsbyLink} to={menuItem.link} w="full" key={i}>
-              {menuItem.text}
-            </Link>
-          ))}
+          <BackToClowdrButton />
         </VStack>
       </Flex>
     </nav>

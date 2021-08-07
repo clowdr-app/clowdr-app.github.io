@@ -16,15 +16,15 @@ import * as R from "ramda";
 import React, { useMemo } from "react";
 import { Layout } from "../components/Layout";
 import Title from "../components/Title";
-import { ResourcesQuery } from "../graphql";
+import { ResourcesQuery } from "../generated/graphql-types";
 function notEmpty<TValue>(value: TValue | null | undefined): value is TValue {
   return value !== null && value !== undefined;
 }
 export default function Resources() {
-  const result: ResourcesQuery = useStaticQuery(graphql`
+  const result: ResourcesQuery = useStaticQuery<ResourcesQuery>(graphql`
     query Resources {
       allMarkdownRemark(
-        sort: { fields: [frontmatter___date], order: DESC }
+        sort: { fields: [frontmatter___title], order: ASC }
         filter: { fields: { collection: { eq: "resources" } } }
       ) {
         nodes {
@@ -33,7 +33,6 @@ export default function Resources() {
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
             title
             slug
             description
@@ -162,21 +161,18 @@ export default function Resources() {
       <Title title="Resources" />
       <Layout>
         <Container my={12}>
-          <Heading as="h2" size="2xl">
-            Resources
+          <Heading as="h1" size="2xl">
+            All Resources
           </Heading>
-
           <Text>
-            We are beginning to put together a number of pages answering
-            frequently asked questions. If you have suggestions, please consider
-            leaving a comment on{" "}
-            <Link
-              isExternal
-              href="https://github.com/clowdr-app/clowdr-app.github.io/issues"
-            >
-              our GitHub repository
+            We are continually improving Clowdr's help resources.{" "}
+            <Link href="https://clowdr.org/contact-us">Contact us</Link> if you
+            have a suggestion for how we could improve these resources. (Or
+            contribute directly{" "}
+            <Link href="https://github.com/clowdr-app/clowdr-app.github.io/">
+              on GitHub
             </Link>
-            .
+            !)
           </Text>
           {postsEl}
         </Container>

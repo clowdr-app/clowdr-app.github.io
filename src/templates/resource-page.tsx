@@ -12,10 +12,10 @@ import {
 import { graphql } from "gatsby";
 import React from "react";
 import rehypeReact from "rehype-react";
-import unified from "unified";
+import { unified } from "unified";
 import { Layout } from "../components/Layout";
 import Title from "../components/Title";
-import { ResourcePageBySlugQuery } from "../graphql";
+import { ResourcePageBySlugQuery } from "../generated/graphql";
 
 const processor = unified().use(rehypeReact, {
   createElement: React.createElement,
@@ -35,7 +35,7 @@ const processor = unified().use(rehypeReact, {
 });
 
 export const renderAst = (ast: any): JSX.Element => {
-  return (processor.stringify(ast) as unknown) as JSX.Element;
+  return processor.stringify(ast) as unknown as JSX.Element;
 };
 
 export default function ResourcePageBySlug({
