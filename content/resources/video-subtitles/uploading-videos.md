@@ -1,6 +1,5 @@
 ---
 title: Preparing, uploading and editing video captions
-slug: video-subtitles
 updatedDate: 2021-03-26T15:40:16Z
 description:
   Preparing, uploading and editing video captions for pre-recorded and

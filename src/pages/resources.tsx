@@ -1,19 +1,7 @@
-import {
-  Box,
-  chakra,
-  Container,
-  Flex,
-  Heading,
-  Link,
-  LinkBox,
-  LinkOverlay,
-  ListItem,
-  Text,
-  UnorderedList,
-} from "@chakra-ui/react";
-import { graphql, Link as GatsbyLink, useStaticQuery } from "gatsby";
-import * as R from "ramda";
-import React, { useMemo } from "react";
+import { Container, Heading, Link, SimpleGrid, Text } from "@chakra-ui/react";
+import { graphql, useStaticQuery } from "gatsby";
+import React from "react";
+import { CategoryCard } from "../components/CategoryCard";
 import { Layout } from "../components/Layout";
 import Title from "../components/Title";
 import { ResourcesQuery } from "../generated/graphql-types";
@@ -25,7 +13,12 @@ export default function Resources() {
     query Resources {
       allMarkdownRemark(
         sort: { fields: [frontmatter___title], order: ASC }
-        filter: { fields: { collection: { eq: "resources" } } }
+        filter: {
+          fields: {
+            collection: { eq: "resources" }
+            slug: { regex: "/^/[^/]+[/]?$/" }
+          }
+        }
       ) {
         nodes {
           excerpt
@@ -34,127 +27,138 @@ export default function Resources() {
           }
           frontmatter {
             title
-            slug
             description
             author
-            categories
             draft
           }
         }
       }
     }
   `);
-  const posts = result.allMarkdownRemark.nodes;
+  const categoryNodes = result.allMarkdownRemark.nodes;
 
-  const postsEl = useMemo(() => {
-    const postCategories = posts.map(
-      p => p.frontmatter?.categories?.filter(notEmpty) ?? []
-    );
-    const allCategories = R.uniq(
-      R.flatten(postCategories).map(x => x.toLowerCase())
-    ).sort((a, b) => a.localeCompare(b));
-    return allCategories.map(category => {
-      const categoryPosts = posts
-        .filter(
-          post =>
-            post.frontmatter?.categories &&
-            post.frontmatter?.categories
-              .map(c => c?.toLowerCase())
-              .includes(category)
-        )
-        .sort((a, b) =>
-          a.frontmatter?.title && b.frontmatter?.title
-            ? a.frontmatter.title.localeCompare(b.frontmatter.title)
-            : 0
-        );
-      return (
-        <>
-          <Heading as="h3" size="lg" textTransform="capitalize" pt={4}>
-            {category}
-          </Heading>
-          <UnorderedList listStyleType="none" m={0}>
-            {categoryPosts
-              .filter(post => !post.frontmatter?.draft)
-              .map(post => {
-                const title = post.frontmatter?.title || post.frontmatter?.slug;
+  const categoriesEl = categoryNodes.length ? (
+    <SimpleGrid columns={2} spacing={4}>
+      {categoryNodes.map((node, i) => (
+        <CategoryCard
+          key={i}
+          indexUrl={node.fields?.slug ?? "#"}
+          descriptionHtml={node.frontmatter?.description ?? node.excerpt ?? ""}
+          title={node.frontmatter?.title ?? "(No title)"}
+        />
+      ))}
+    </SimpleGrid>
+  ) : undefined;
 
-                return (
-                  <ListItem>
-                    <LinkBox
-                      as="article"
-                      itemScope
-                      itemType="http://schema.org/Article"
-                      rounded="lg"
-                      shadow="md"
-                      bg={"white"}
-                      my={4}
-                    >
-                      <Box p={6}>
-                        <Box>
-                          <Heading as="h4">
-                            <LinkOverlay
-                              as={GatsbyLink}
-                              to={`/resources/${
-                                post?.frontmatter?.slug ?? "#"
-                              }`}
-                              itemProp="url"
-                              display="block"
-                              color={"gray.800"}
-                              fontWeight="bold"
-                              fontSize="2xl"
-                              mt={2}
-                              _hover={{
-                                color: "gray.600",
-                                textDecor: "underline",
-                              }}
-                            >
-                              <span itemProp="headline">{title}</span>
-                            </LinkOverlay>
-                          </Heading>
-                          <Text
-                            dangerouslySetInnerHTML={{
-                              __html:
-                                post?.frontmatter?.description ||
-                                post.excerpt ||
-                                "",
-                            }}
-                            itemProp="description"
-                            mt={2}
-                            fontSize="sm"
-                            color={"gray.600"}
-                          />
-                        </Box>
+  // const postsEl = useMemo(() => {
+  //   const postCategories = posts.map(
+  //     p => p.frontmatter?.categories?.filter(notEmpty) ?? []
+  //   );
+  //   const allCategories = R.uniq(
+  //     R.flatten(postCategories).map(x => x.toLowerCase())
+  //   ).sort((a, b) => a.localeCompare(b));
+  //   return allCategories.map(category => {
+  //     const categoryPosts = posts
+  //       .filter(
+  //         post =>
+  //           post.frontmatter?.categories &&
+  //           post.frontmatter?.categories
+  //             .map(c => c?.toLowerCase())
+  //             .includes(category)
+  //       )
+  //       .sort((a, b) =>
+  //         a.frontmatter?.title && b.frontmatter?.title
+  //           ? a.frontmatter.title.localeCompare(b.frontmatter.title)
+  //           : 0
+  //       );
+  //     return (
+  //       <>
+  //         <Heading as="h3" size="lg" textTransform="capitalize" pt={4}>
+  //           {category}
+  //         </Heading>
+  //         <UnorderedList listStyleType="none" m={0}>
+  //           {categoryPosts
+  //             .filter(post => !post.frontmatter?.draft)
+  //             .map(post => {
+  //               const title = post.frontmatter?.title || post.frontmatter?.slug;
 
-                        <Box mt={4}>
-                          <Flex alignItems="center">
-                            <Link
-                              mr={2}
-                              fontWeight="bold"
-                              color={"gray.700"}
-                              href="#"
-                            >
-                              {post?.frontmatter?.author}
-                            </Link>
-                            <chakra.span
-                              mx={1}
-                              fontSize="sm"
-                              color={"gray.600"}
-                            >
-                              {post?.frontmatter?.date}
-                            </chakra.span>
-                          </Flex>
-                        </Box>
-                      </Box>
-                    </LinkBox>
-                  </ListItem>
-                );
-              })}
-            ;
-          </UnorderedList>
-        </>
-      );
-    });
-  }, [posts]);
+  //               return (
+  //                 <ListItem>
+  //                   <LinkBox
+  //                     as="article"
+  //                     itemScope
+  //                     itemType="http://schema.org/Article"
+  //                     rounded="lg"
+  //                     shadow="md"
+  //                     bg={"white"}
+  //                     my={4}
+  //                   >
+  //                     <Box p={6}>
+  //                       <Box>
+  //                         <Heading as="h4">
+  //                           <LinkOverlay
+  //                             as={GatsbyLink}
+  //                             to={`/resources/${
+  //                               post?.frontmatter?.slug ?? "#"
+  //                             }`}
+  //                             itemProp="url"
+  //                             display="block"
+  //                             color={"gray.800"}
+  //                             fontWeight="bold"
+  //                             fontSize="2xl"
+  //                             mt={2}
+  //                             _hover={{
+  //                               color: "gray.600",
+  //                               textDecor: "underline",
+  //                             }}
+  //                           >
+  //                             <span itemProp="headline">{title}</span>
+  //                           </LinkOverlay>
+  //                         </Heading>
+  //                         <Text
+  //                           dangerouslySetInnerHTML={{
+  //                             __html:
+  //                               post?.frontmatter?.description ||
+  //                               post.excerpt ||
+  //                               "",
+  //                           }}
+  //                           itemProp="description"
+  //                           mt={2}
+  //                           fontSize="sm"
+  //                           color={"gray.600"}
+  //                         />
+  //                       </Box>
+
+  //                       <Box mt={4}>
+  //                         <Flex alignItems="center">
+  //                           <Link
+  //                             mr={2}
+  //                             fontWeight="bold"
+  //                             color={"gray.700"}
+  //                             href="#"
+  //                           >
+  //                             {post?.frontmatter?.author}
+  //                           </Link>
+  //                           <chakra.span
+  //                             mx={1}
+  //                             fontSize="sm"
+  //                             color={"gray.600"}
+  //                           >
+  //                             {post?.frontmatter?.date}
+  //                           </chakra.span>
+  //                         </Flex>
+  //                       </Box>
+  //                     </Box>
+  //                   </LinkBox>
+  //                 </ListItem>
+  //               );
+  //             })}
+  //           ;
+  //         </UnorderedList>
+  //       </>
+  //     );
+  //   });
+  // }, [posts]);
 
   return (
     <>
@@ -174,7 +178,7 @@ export default function Resources() {
             </Link>
             !)
           </Text>
-          {postsEl}
+          {categoriesEl}
         </Container>
       </Layout>
     </>

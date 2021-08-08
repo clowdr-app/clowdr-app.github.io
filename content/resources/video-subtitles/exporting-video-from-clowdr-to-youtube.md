@@ -1,15 +1,15 @@
 ---
 updatedDate: 2021-05-26T09:05:07+00:00
 categories:
-- Videos
+  - Videos
 title: Exporting content from Clowdr to YouTube
-slug: exporting
-description: Simple instructions for exporting video content from Clowdr directly
+description:
+  Simple instructions for exporting video content from Clowdr directly
   into YouTube!
 author: Cristal Mojica
 draft: false
-
 ---
+
 #### Ready to Archive Your Conference Content?
 
 Clowdr makes it quick and easy to package and export conference content directly to your organization's YouTube channel.
@@ -19,6 +19,7 @@ Exporting presentations from within Clowdr can save you a great deal of time as 
 1. **Combine videos**
 
    You may have scheduled pre-recorded videos followed by live Q&As. We recommend combining the pre-recorded video with the Q&A, to form a single video.
+
 2. **Export to YouTube**
 
    With Clowdr, you can export videos directly to YouTube - there's no need to download and re-upload the video files. Clowdr's export also includes subtitles and template-based descriptions to include abstracts, author names and links.
@@ -51,7 +52,7 @@ After combining videos has completed, you can then move on to exporting videos d
 
 ![](/images/export-1.jpg)
 
-**Step 2.** In the Export area, you will see three tabs - _Connected YouTube Accounts_, _Upload Videos to YouTube_, and _Uploaded Videos_. In the ___Connected YouTube Accounts **tab, click **_+Connect to YouTube__.
+**Step 2.** In the Export area, you will see three tabs - _Connected YouTube Accounts_, _Upload Videos to YouTube_, and _Uploaded Videos_. In the **_Connected YouTube Accounts **tab, click **_+Connect to YouTube**.
 
 ![](/images/export-2.jpg)
 
@@ -84,22 +85,22 @@ If you are uploading combined videos, we recommend removing the "{{fileName}}" f
 **Recommended Description Template**
 
     {{#abstract}}{{abstract}}
-    
+
     {{/abstract}}
     {{#authors.length}}
     {{#authors}}{{name}}{{#affiliation}} ({{affiliation}}){{/affiliation}}, {{/authors}}
-    
+
     {{/authors.length}}
     {{#paperLinks.length}}
     {{#paperLinks}}{{#url}}
     * {{text}}: {{{url}}}
     {{/url}}{{/paperLinks}}
-    
+
     {{/paperLinks.length}}
     {{#paperUrls.length}}
     {{#paperUrls}}{{#.}}* {{{.}}}
     {{/.}}{{/paperUrls}}
-    
+
     {{/paperUrls.length}}
 
 When exporting videos, you are able to select from the list of connected Google/YouTube accounts, as well as upload to specific channels and playlists.

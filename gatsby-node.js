@@ -1,6 +1,8 @@
-const { default: gql } = require("fake-tag");
+const gql = require("fake-tag");
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const path = require("path");
+const escapeStringRegexp = require("escape-string-regexp");
+const breadcrumb = require("url-breadcrumb");
 
 /** @type import('gatsby').GatsbyNode['onCreateWebpackConfig'] */
 exports.onCreateWebpackConfig = ({ stage, actions }) => {
@@ -20,26 +22,26 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
 
 /** @type import('gatsby').GatsbyNode['createPages'] */
 exports.createPages = async ({ graphql, actions, reporter }) => {
-  const { createPage, createRedirect } = actions;
-
-  /// Create blog post pages
+  const { createPage } = actions;
 
   // Get all markdown blog posts sorted by date
+  /** @type import("./gatsby-types").CreatePagesGraphqlReturn */
   const allRemark = await graphql(gql`
-    {
+    query GetMarkdownEdges {
       allMarkdownRemark(
-        sort: { fields: [frontmatter___date], order: ASC }
+        sort: { fields: [frontmatter___title], order: ASC }
         limit: 1000
       ) {
         edges {
           node {
             id
+            fileAbsolutePath
             fields {
               collection
               slug
+              isCategoryIndex
             }
             frontmatter {
-              slug
               title
             }
           }
@@ -63,27 +65,66 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   );
 
   resourceEdges.forEach(edge => {
+    /** @type {{name: string, url: string}[]} */
+    const rawBreadcrumbs = breadcrumb(edge.node.fields.slug, {
+      home: "All resources",
+    });
+    const breadcrumbs = rawBreadcrumbs.map(breadcrumb => ({
+      ...breadcrumb,
+      title:
+        allEdges.find(edge => edge.node.fields.slug === `${breadcrumb.url}/`)
+          ?.node?.frontmatter?.title ?? breadcrumb.name,
+    }));
     createPage({
-      path: `/resources/${edge.node.frontmatter.slug}`,
-      component: path.resolve(`./src/templates/resource-page.tsx`),
+      path: `/resources${edge.node.fields.slug}`,
+      component: edge.node.fields.isCategoryIndex
+        ? path.resolve(`./src/templates/resource-category-page.tsx`)
+        : path.resolve(`./src/templates/resource-page.tsx`),
       context: {
         id: edge.node.id,
-        slug: edge.node.frontmatter.slug,
+        slug: edge.node.fields.slug,
+        regex: `^${escapeStringRegexp(edge.node.fields.slug)}[^/]+[/]?$/`,
+        breadcrumbs,
       },
     });
   });
 
   /// Redirects
-  const redirects = [
-    { fromPath: "/faq/video-subtitles/", toPath: "/resources/video-subtitles" },
-  ];
-  redirects.forEach(redirect =>
-    createRedirect({
-      ...redirect,
-      isPermanent: true,
-    })
-  );
+  // const redirects = [
+  //   { fromPath: "/faq/video-subtitles/", toPath: "/resources/video-subtitles" },
+  // ];
+  // redirects.forEach(redirect =>
+  //   createRedirect({
+  //     ...redirect,
+  //     isPermanent: true,
+  //   })
+  // );
 };
+
+function findFileNode({ node, getNode }) {
+  // Find the file node.
+  let fileNode = node;
+
+  let whileCount = 0;
+  while (
+    fileNode.internal.type !== `File` &&
+    fileNode.parent &&
+    getNode(fileNode.parent) !== undefined &&
+    whileCount < 101
+  ) {
+    fileNode = getNode(fileNode.parent);
+
+    whileCount += 1;
+    if (whileCount > 100) {
+      console.log(
+        `It looks like you have a node that's set its parent as itself`,
+        fileNode
+      );
+    }
+  }
+
+  return fileNode;
+}
 
 /** @type import('gatsby').GatsbyNode['onCreateNode'] */
 exports.onCreateNode = ({ node, actions, getNode }) => {
@@ -104,6 +145,13 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       name: "collection",
       value: parent.sourceInstanceName,
+    });
+
+    const fileNode = findFileNode({ node, getNode });
+    createNodeField({
+      node,
+      name: "isCategoryIndex",
+      value: path.parse(fileNode.relativePath).name === "index",
     });
   }
 };

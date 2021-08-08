@@ -1,14 +1,13 @@
 ---
 updatedDate: 2021-04-21T06:01:24.000+00:00
 title: Managing events in your schedule with Clowdr
-slug: schedule
 description: Learn how to create and manage your schedule on Clowdr
 author: Cristal Mojica
 categories:
-- tutorials
+  - tutorials
 draft: false
-
 ---
+
 Your schedule allows attendees to understand what is going to be included in your program - and helps them plan for and get excited about your conference content! The following resource summarizes how you can easily manage the events in your program's schedule with Clowdr.
 
 We share a brief overview of the relationship between events and content, then walk through Clowdr’s UI to show you exactly how to create and schedule an event. Common scenarios are identified and advice for how to tackle them is provided!
@@ -29,9 +28,9 @@ We share a brief overview of the relationship between events and content, then w
 
 ![](/images/schedule-3.jpg)
 
-4. From here, you can also link any content that will be presented during the event and will show up as part of the event on the schedule. Select your preferred Mode (format) for the event from the dropdown list - this includes workshop, Q&A, presentation, pre-recorded video, and many others.  Lastly, you have the option to select for the event to be associated with an Exhibition, if this grouped content format is part of your program.
+4. From here, you can also link any content that will be presented during the event and will show up as part of the event on the schedule. Select your preferred Mode (format) for the event from the dropdown list - this includes workshop, Q&A, presentation, pre-recorded video, and many others. Lastly, you have the option to select for the event to be associated with an Exhibition, if this grouped content format is part of your program.
 5. After you click Create, you'll see your new event appear as a new row in the Schedule's list of events!
-6. You'll notice this new event is highlighted with an alert icon on the left.  This is a notification that appears on events that require a live presenter at the event. This is determined by the Mode you have selected. In this case, we created a Q&A event, so the alert is telling us we need to assign presenters for this session.
+6. You'll notice this new event is highlighted with an alert icon on the left. This is a notification that appears on events that require a live presenter at the event. This is determined by the Mode you have selected. In this case, we created a Q&A event, so the alert is telling us we need to assign presenters for this session.
 
 ![](/images/schedule-4.jpg)
 

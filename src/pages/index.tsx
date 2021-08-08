@@ -1,4 +1,4 @@
-import { Box, Container, Heading, HStack, Image, Text } from "@chakra-ui/react";
+import { Box, Container, Heading, HStack, Text } from "@chakra-ui/react";
 import React from "react";
 import { Layout } from "../components/Layout";
 import Title from "../components/Title";
@@ -43,7 +43,7 @@ export default function Home() {
               h="30rem"
               w="auto"
             >
-              <Image
+              <img
                 alt="person reading a book"
                 src="/artwork/manypixels-reading-book.svg"
               />

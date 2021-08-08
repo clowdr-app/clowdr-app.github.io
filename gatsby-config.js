@@ -34,7 +34,6 @@ const transformerRemark = {
         resolve: `gatsby-remark-relative-images`,
         options: {
           staticFolderName: "static",
-          include: ["featuredImage"],
         },
       },
       {

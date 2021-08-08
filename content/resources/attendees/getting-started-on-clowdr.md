@@ -1,21 +1,20 @@
 ---
 updatedDate: 2021-05-03T05:39:02+00:00
 categories:
-- attendees
-title: 'Getting Started on Clowdr '
-slug: login
+  - attendees
+title: "Getting Started on Clowdr "
 description: Learn how to access and navigate your conference in Clowdr
 author: Cristal Mojica
 draft: false
-
 ---
+
 Welcome to Clowdr!
 
 Review this brief resource to learn how to navigate our platform as an attendee - and make the most of Clowdr's features.
 
 ![](/images/homepafe.jpg)
 
-##### Below we will cover 1. How to log in to your conference on Clowdr and 2.  How to set up your profile and navigate your event in Clowdr.
+##### Below we will cover 1. How to log in to your conference on Clowdr and 2. How to set up your profile and navigate your event in Clowdr.
 
 1. As an attendee, you will receive an email titled _YOUR INVITATION TO \[CONFERENCE NAME\]_ containing a link and a unique invitation code to your conference.
 2. Through the link in the invitation email, you'll be able to create a Clowdr account using your name and email address.

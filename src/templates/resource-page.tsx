@@ -1,50 +1,26 @@
 import {
   Badge,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
   chakra,
   Container,
-  Divider,
   Heading,
-  ListItem,
-  OrderedList,
-  Text,
-  UnorderedList,
+  Icon,
 } from "@chakra-ui/react";
-import { graphql } from "gatsby";
+import { graphql, PageProps } from "gatsby";
 import React from "react";
-import rehypeReact from "rehype-react";
-import { unified } from "unified";
+import { AiOutlineUser } from "react-icons/ai";
 import { Layout } from "../components/Layout";
+import { RenderHtml } from "../components/RenderHtml";
 import Title from "../components/Title";
-import { ResourcePageBySlugQuery } from "../generated/graphql";
-
-const processor = unified().use(rehypeReact, {
-  createElement: React.createElement,
-  components: {
-    p: (props: any) => <Text {...props} />,
-    h3: (props: any) => <Heading as="h3" {...props} size="xl" />,
-    h4: (props: any) => <Heading as="h4" {...props} size="lg" />,
-    h5: (props: any) => <Heading as="h5" {...props} size="md" />,
-    h6: (props: any) => <Heading as="h6" {...props} size="sm" />,
-    blockquote: (props: any) => <chakra.blockquote {...props} />,
-    pre: (props: any) => <chakra.pre {...props} maxW="100%" overflowX="auto" />,
-    ol: (props: any) => <OrderedList {...props} />,
-    ul: (props: any) => <UnorderedList {...props} />,
-    li: (props: any) => <ListItem {...props} />,
-    hr: (props: any) => <Divider {...props} />,
-  },
-});
-
-export const renderAst = (ast: any): JSX.Element => {
-  return processor.stringify(ast) as unknown as JSX.Element;
-};
+import { ResourcePageBySlugQuery } from "../generated/graphql-types";
+import { ResourcePageContext } from "../misc/resource-page-context";
 
 export default function ResourcePageBySlug({
   data,
-  location,
-}: {
-  data: ResourcePageBySlugQuery;
-  location: any;
-}) {
+  pageContext,
+}: PageProps<ResourcePageBySlugQuery, ResourcePageContext>) {
   const post = data.markdownRemark;
 
   return (
@@ -58,11 +34,36 @@ export default function ResourcePageBySlug({
           itemType="http://schema.org/Article"
           overflowX="auto"
         >
+          <Breadcrumb>
+            {pageContext.breadcrumbs.map(breadcrumb => (
+              <BreadcrumbItem key={breadcrumb.url}>
+                <BreadcrumbLink href={`/resources${breadcrumb.url}`}>
+                  {breadcrumb.title}
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+            ))}
+          </Breadcrumb>
           <header>
             <Heading as="h2" size="2xl" itemProp="headline">
               {post?.frontmatter?.title}
             </Heading>
-            <Badge mt={4}>Updated {post?.frontmatter?.updatedDate}</Badge>
+            {post?.frontmatter?.updatedDate ? (
+              <Badge mt={4} mr={2}>
+                Updated{" "}
+                <time
+                  itemProp="dateModified"
+                  dateTime={post?.frontmatter?.isoUpdatedDate}
+                >
+                  {post?.frontmatter?.updatedDate}
+                </time>
+              </Badge>
+            ) : undefined}
+            {post?.frontmatter?.author ? (
+              <Badge mt={4}>
+                <Icon as={AiOutlineUser} aria-label="author" />{" "}
+                <span itemProp="author">{post?.frontmatter?.author}</span>
+              </Badge>
+            ) : undefined}
           </header>
           <chakra.section
             sx={{
@@ -78,7 +79,7 @@ export default function ResourcePageBySlug({
               },
             }}
           >
-            {renderAst(post?.htmlAst)}
+            <RenderHtml htmlAst={post?.htmlAst} />
           </chakra.section>
         </Container>
       </Layout>
@@ -86,7 +87,7 @@ export default function ResourcePageBySlug({
   );
 }
 
-export const pageQuery = graphql`
+export const query = graphql`
   query ResourcePageBySlug($id: String!) {
     site {
       siteMetadata {
@@ -100,7 +101,9 @@ export const pageQuery = graphql`
       frontmatter {
         title
         updatedDate(formatString: "MMMM DD, YYYY")
+        isoUpdatedDate: updatedDate
         description
+        author
       }
     }
   }

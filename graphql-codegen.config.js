@@ -4,6 +4,7 @@ module.exports = {
   schema: "./src/generated/gatsby-introspection.graphql",
   documents: [
     "src/**/*.tsx",
+    "gatsby-node.js",
     "node_modules/gatsby-transformer-sharp/src/fragments.js",
   ],
   pluckConfig: {

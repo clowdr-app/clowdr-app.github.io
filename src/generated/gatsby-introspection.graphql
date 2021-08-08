@@ -349,7 +349,9 @@ type Site implements Node {
 type SiteSiteMetadata {
   title: String
   description: String
+  author: Author
   siteUrl: String
+  social: Social
 }
 
 type SiteFunction implements Node {
@@ -377,8 +379,23 @@ type SitePage implements Node {
   children: [Node!]!
   internal: Internal!
   isCreatedByStatefulCreatePages: Boolean
+  context: SitePageContext
   pluginCreator: SitePlugin
   pluginCreatorId: String
+}
+
+type SitePageContext {
+  id: String
+  slug: String
+  regex: String
+  breadcrumbs: [SitePageContextBreadcrumbs]
+}
+
+type SitePageContextBreadcrumbs {
+  name: String
+  NAME: String
+  url: String
+  title: String
 }
 
 enum ImageFormat {
@@ -675,11 +692,11 @@ type MarkdownWordCount {
 
 type MarkdownRemark implements Node {
   id: ID!
-  frontmatter: MarkdownRemarkFrontmatter
+  frontmatter: Frontmatter
+  fields: Fields
   excerpt(pruneLength: Int = 140, truncate: Boolean = false, format: MarkdownExcerptFormats = PLAIN): String
   rawMarkdownBody: String
   fileAbsolutePath: String
-  fields: MarkdownRemarkFields
   html: String
   htmlAst: JSON
   excerptAst(pruneLength: Int = 140, truncate: Boolean = false): JSON
@@ -692,9 +709,31 @@ type MarkdownRemark implements Node {
   internal: Internal!
 }
 
-type MarkdownRemarkFrontmatter {
+type Author {
+  name: String
+  summary: String
+}
+
+type Social {
+  twitter: String
+}
+
+type Frontmatter {
   title: String
-  slug: String
+  description: String
+  date(
+    # Format the date using Moment.js' date tokens, e.g. `date(formatString: "YYYY MMMM DD")`. See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens.
+    formatString: String
+
+    # Returns a string generated with Moment.js' `fromNow` function
+    fromNow: Boolean
+
+    # Returns the difference between this date and the current time. Defaults to "milliseconds" but you can also pass in as the measurement "years", "months", "weeks", "days", "hours", "minutes", and "seconds".
+    difference: String
+
+    # Configures the locale Moment.js will use to format the date.
+    locale: String
+  ): Date
   updatedDate(
     # Format the date using Moment.js' date tokens, e.g. `date(formatString: "YYYY MMMM DD")`. See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens.
     formatString: String
@@ -708,15 +747,15 @@ type MarkdownRemarkFrontmatter {
     # Configures the locale Moment.js will use to format the date.
     locale: String
   ): Date
-  description: String
   author: String
   categories: [String]
   draft: Boolean
 }
 
-type MarkdownRemarkFields {
+type Fields {
   slug: String
   collection: String
+  isCategoryIndex: Boolean
 }
 
 type SitePlugin implements Node {
@@ -758,7 +797,6 @@ type SitePluginPluginOptions {
   iframeId: Boolean
   wrapperStyle: String
   staticFolderName: String
-  include: [String]
   maxWidth: Int
   linkImagesToOriginal: Boolean
   showCaptions: Boolean
@@ -812,7 +850,6 @@ type SitePluginPluginOptionsPluginsPluginOptions {
   iframeId: Boolean
   wrapperStyle: String
   staticFolderName: String
-  include: [String]
   maxWidth: Int
   linkImagesToOriginal: Boolean
   showCaptions: Boolean
@@ -899,11 +936,11 @@ type Query {
   allSite(filter: SiteFilterInput, sort: SiteSortInput, skip: Int, limit: Int): SiteConnection!
   siteFunction(functionRoute: StringQueryOperatorInput, pluginName: StringQueryOperatorInput, originalAbsoluteFilePath: StringQueryOperatorInput, originalRelativeFilePath: StringQueryOperatorInput, relativeCompiledFilePath: StringQueryOperatorInput, absoluteCompiledFilePath: StringQueryOperatorInput, matchPath: StringQueryOperatorInput, id: StringQueryOperatorInput, parent: NodeFilterInput, children: NodeFilterListInput, internal: InternalFilterInput): SiteFunction
   allSiteFunction(filter: SiteFunctionFilterInput, sort: SiteFunctionSortInput, skip: Int, limit: Int): SiteFunctionConnection!
-  sitePage(path: StringQueryOperatorInput, component: StringQueryOperatorInput, internalComponentName: StringQueryOperatorInput, componentChunkName: StringQueryOperatorInput, matchPath: StringQueryOperatorInput, id: StringQueryOperatorInput, parent: NodeFilterInput, children: NodeFilterListInput, internal: InternalFilterInput, isCreatedByStatefulCreatePages: BooleanQueryOperatorInput, pluginCreator: SitePluginFilterInput, pluginCreatorId: StringQueryOperatorInput): SitePage
+  sitePage(path: StringQueryOperatorInput, component: StringQueryOperatorInput, internalComponentName: StringQueryOperatorInput, componentChunkName: StringQueryOperatorInput, matchPath: StringQueryOperatorInput, id: StringQueryOperatorInput, parent: NodeFilterInput, children: NodeFilterListInput, internal: InternalFilterInput, isCreatedByStatefulCreatePages: BooleanQueryOperatorInput, context: SitePageContextFilterInput, pluginCreator: SitePluginFilterInput, pluginCreatorId: StringQueryOperatorInput): SitePage
   allSitePage(filter: SitePageFilterInput, sort: SitePageSortInput, skip: Int, limit: Int): SitePageConnection!
   imageSharp(fixed: ImageSharpFixedFilterInput, fluid: ImageSharpFluidFilterInput, gatsbyImageData: JSONQueryOperatorInput, original: ImageSharpOriginalFilterInput, resize: ImageSharpResizeFilterInput, id: StringQueryOperatorInput, parent: NodeFilterInput, children: NodeFilterListInput, internal: InternalFilterInput): ImageSharp
   allImageSharp(filter: ImageSharpFilterInput, sort: ImageSharpSortInput, skip: Int, limit: Int): ImageSharpConnection!
-  markdownRemark(id: StringQueryOperatorInput, frontmatter: MarkdownRemarkFrontmatterFilterInput, excerpt: StringQueryOperatorInput, rawMarkdownBody: StringQueryOperatorInput, fileAbsolutePath: StringQueryOperatorInput, fields: MarkdownRemarkFieldsFilterInput, html: StringQueryOperatorInput, htmlAst: JSONQueryOperatorInput, excerptAst: JSONQueryOperatorInput, headings: MarkdownHeadingFilterListInput, timeToRead: IntQueryOperatorInput, tableOfContents: StringQueryOperatorInput, wordCount: MarkdownWordCountFilterInput, parent: NodeFilterInput, children: NodeFilterListInput, internal: InternalFilterInput): MarkdownRemark
+  markdownRemark(id: StringQueryOperatorInput, frontmatter: FrontmatterFilterInput, fields: FieldsFilterInput, excerpt: StringQueryOperatorInput, rawMarkdownBody: StringQueryOperatorInput, fileAbsolutePath: StringQueryOperatorInput, html: StringQueryOperatorInput, htmlAst: JSONQueryOperatorInput, excerptAst: JSONQueryOperatorInput, headings: MarkdownHeadingFilterListInput, timeToRead: IntQueryOperatorInput, tableOfContents: StringQueryOperatorInput, wordCount: MarkdownWordCountFilterInput, parent: NodeFilterInput, children: NodeFilterListInput, internal: InternalFilterInput): MarkdownRemark
   allMarkdownRemark(filter: MarkdownRemarkFilterInput, sort: MarkdownRemarkSortInput, skip: Int, limit: Int): MarkdownRemarkConnection!
   sitePlugin(id: StringQueryOperatorInput, parent: NodeFilterInput, children: NodeFilterListInput, internal: InternalFilterInput, resolve: StringQueryOperatorInput, name: StringQueryOperatorInput, version: StringQueryOperatorInput, pluginOptions: SitePluginPluginOptionsFilterInput, nodeAPIs: StringQueryOperatorInput, browserAPIs: StringQueryOperatorInput, ssrAPIs: StringQueryOperatorInput, pluginFilepath: StringQueryOperatorInput, packageJson: SitePluginPackageJsonFilterInput): SitePlugin
   allSitePlugin(filter: SitePluginFilterInput, sort: SitePluginSortInput, skip: Int, limit: Int): SitePluginConnection!
@@ -1056,11 +1093,11 @@ input MarkdownRemarkFilterListInput {
 
 input MarkdownRemarkFilterInput {
   id: StringQueryOperatorInput
-  frontmatter: MarkdownRemarkFrontmatterFilterInput
+  frontmatter: FrontmatterFilterInput
+  fields: FieldsFilterInput
   excerpt: StringQueryOperatorInput
   rawMarkdownBody: StringQueryOperatorInput
   fileAbsolutePath: StringQueryOperatorInput
-  fields: MarkdownRemarkFieldsFilterInput
   html: StringQueryOperatorInput
   htmlAst: JSONQueryOperatorInput
   excerptAst: JSONQueryOperatorInput
@@ -1073,19 +1110,20 @@ input MarkdownRemarkFilterInput {
   internal: InternalFilterInput
 }
 
-input MarkdownRemarkFrontmatterFilterInput {
+input FrontmatterFilterInput {
   title: StringQueryOperatorInput
-  slug: StringQueryOperatorInput
-  updatedDate: DateQueryOperatorInput
   description: StringQueryOperatorInput
+  date: DateQueryOperatorInput
+  updatedDate: DateQueryOperatorInput
   author: StringQueryOperatorInput
   categories: StringQueryOperatorInput
   draft: BooleanQueryOperatorInput
 }
 
-input MarkdownRemarkFieldsFilterInput {
+input FieldsFilterInput {
   slug: StringQueryOperatorInput
   collection: StringQueryOperatorInput
+  isCategoryIndex: BooleanQueryOperatorInput
 }
 
 input MarkdownHeadingFilterListInput {
@@ -1311,17 +1349,18 @@ enum FileFieldsEnum {
   childrenMarkdownRemark
   childrenMarkdownRemark___id
   childrenMarkdownRemark___frontmatter___title
-  childrenMarkdownRemark___frontmatter___slug
-  childrenMarkdownRemark___frontmatter___updatedDate
   childrenMarkdownRemark___frontmatter___description
+  childrenMarkdownRemark___frontmatter___date
+  childrenMarkdownRemark___frontmatter___updatedDate
   childrenMarkdownRemark___frontmatter___author
   childrenMarkdownRemark___frontmatter___categories
   childrenMarkdownRemark___frontmatter___draft
+  childrenMarkdownRemark___fields___slug
+  childrenMarkdownRemark___fields___collection
+  childrenMarkdownRemark___fields___isCategoryIndex
   childrenMarkdownRemark___excerpt @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
   childrenMarkdownRemark___rawMarkdownBody @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
   childrenMarkdownRemark___fileAbsolutePath @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
-  childrenMarkdownRemark___fields___slug @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
-  childrenMarkdownRemark___fields___collection @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
   childrenMarkdownRemark___html @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
   childrenMarkdownRemark___htmlAst @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
   childrenMarkdownRemark___excerptAst @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
@@ -1373,17 +1412,18 @@ enum FileFieldsEnum {
   childrenMarkdownRemark___internal___type @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
   childMarkdownRemark___id
   childMarkdownRemark___frontmatter___title
-  childMarkdownRemark___frontmatter___slug
-  childMarkdownRemark___frontmatter___updatedDate
   childMarkdownRemark___frontmatter___description
+  childMarkdownRemark___frontmatter___date
+  childMarkdownRemark___frontmatter___updatedDate
   childMarkdownRemark___frontmatter___author
   childMarkdownRemark___frontmatter___categories
   childMarkdownRemark___frontmatter___draft
+  childMarkdownRemark___fields___slug
+  childMarkdownRemark___fields___collection
+  childMarkdownRemark___fields___isCategoryIndex
   childMarkdownRemark___excerpt @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
   childMarkdownRemark___rawMarkdownBody @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
   childMarkdownRemark___fileAbsolutePath @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
-  childMarkdownRemark___fields___slug @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
-  childMarkdownRemark___fields___collection @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
   childMarkdownRemark___html @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
   childMarkdownRemark___htmlAst @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
   childMarkdownRemark___excerptAst @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
@@ -1782,7 +1822,18 @@ input DirectorySortInput {
 input SiteSiteMetadataFilterInput {
   title: StringQueryOperatorInput
   description: StringQueryOperatorInput
+  author: AuthorFilterInput
   siteUrl: StringQueryOperatorInput
+  social: SocialFilterInput
+}
+
+input AuthorFilterInput {
+  name: StringQueryOperatorInput
+  summary: StringQueryOperatorInput
+}
+
+input SocialFilterInput {
+  twitter: StringQueryOperatorInput
 }
 
 type SiteConnection {
@@ -1807,7 +1858,10 @@ enum SiteFieldsEnum {
   buildTime
   siteMetadata___title
   siteMetadata___description
+  siteMetadata___author___name
+  siteMetadata___author___summary
   siteMetadata___siteUrl
+  siteMetadata___social___twitter
   port
   host
   polyfill
@@ -2069,6 +2123,24 @@ input SiteFunctionSortInput {
   order: [SortOrderEnum] = [ASC]
 }
 
+input SitePageContextFilterInput {
+  id: StringQueryOperatorInput
+  slug: StringQueryOperatorInput
+  regex: StringQueryOperatorInput
+  breadcrumbs: SitePageContextBreadcrumbsFilterListInput
+}
+
+input SitePageContextBreadcrumbsFilterListInput {
+  elemMatch: SitePageContextBreadcrumbsFilterInput
+}
+
+input SitePageContextBreadcrumbsFilterInput {
+  name: StringQueryOperatorInput
+  NAME: StringQueryOperatorInput
+  url: StringQueryOperatorInput
+  title: StringQueryOperatorInput
+}
+
 input SitePluginFilterInput {
   id: StringQueryOperatorInput
   parent: NodeFilterInput
@@ -2108,7 +2180,6 @@ input SitePluginPluginOptionsFilterInput {
   iframeId: BooleanQueryOperatorInput
   wrapperStyle: StringQueryOperatorInput
   staticFolderName: StringQueryOperatorInput
-  include: StringQueryOperatorInput
   maxWidth: IntQueryOperatorInput
   linkImagesToOriginal: BooleanQueryOperatorInput
   showCaptions: BooleanQueryOperatorInput
@@ -2166,7 +2237,6 @@ input SitePluginPluginOptionsPluginsPluginOptionsFilterInput {
   iframeId: BooleanQueryOperatorInput
   wrapperStyle: StringQueryOperatorInput
   staticFolderName: StringQueryOperatorInput
-  include: StringQueryOperatorInput
   maxWidth: IntQueryOperatorInput
   linkImagesToOriginal: BooleanQueryOperatorInput
   showCaptions: BooleanQueryOperatorInput
@@ -2359,6 +2429,14 @@ enum SitePageFieldsEnum {
   internal___owner
   internal___type
   isCreatedByStatefulCreatePages
+  context___id
+  context___slug
+  context___regex
+  context___breadcrumbs
+  context___breadcrumbs___name
+  context___breadcrumbs___NAME
+  context___breadcrumbs___url
+  context___breadcrumbs___title
   pluginCreator___id
   pluginCreator___parent___id
   pluginCreator___parent___parent___id
@@ -2430,7 +2508,6 @@ enum SitePageFieldsEnum {
   pluginCreator___pluginOptions___iframeId
   pluginCreator___pluginOptions___wrapperStyle
   pluginCreator___pluginOptions___staticFolderName
-  pluginCreator___pluginOptions___include
   pluginCreator___pluginOptions___maxWidth
   pluginCreator___pluginOptions___linkImagesToOriginal
   pluginCreator___pluginOptions___showCaptions
@@ -2505,6 +2582,7 @@ input SitePageFilterInput {
   children: NodeFilterListInput
   internal: InternalFilterInput
   isCreatedByStatefulCreatePages: BooleanQueryOperatorInput
+  context: SitePageContextFilterInput
   pluginCreator: SitePluginFilterInput
   pluginCreatorId: StringQueryOperatorInput
 }
@@ -2688,17 +2766,18 @@ type MarkdownRemarkEdge {
 enum MarkdownRemarkFieldsEnum {
   id
   frontmatter___title
-  frontmatter___slug
-  frontmatter___updatedDate
   frontmatter___description
+  frontmatter___date
+  frontmatter___updatedDate
   frontmatter___author
   frontmatter___categories
   frontmatter___draft
+  fields___slug
+  fields___collection
+  fields___isCategoryIndex
   excerpt @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
   rawMarkdownBody @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
   fileAbsolutePath @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
-  fields___slug @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
-  fields___collection @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
   html @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
   htmlAst @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
   excerptAst @deprecated(reason: "Sorting on fields that need arguments to resolve is deprecated.")
@@ -2936,7 +3015,6 @@ enum SitePluginFieldsEnum {
   pluginOptions___plugins___pluginOptions___iframeId
   pluginOptions___plugins___pluginOptions___wrapperStyle
   pluginOptions___plugins___pluginOptions___staticFolderName
-  pluginOptions___plugins___pluginOptions___include
   pluginOptions___plugins___pluginOptions___maxWidth
   pluginOptions___plugins___pluginOptions___linkImagesToOriginal
   pluginOptions___plugins___pluginOptions___showCaptions
@@ -2975,7 +3053,6 @@ enum SitePluginFieldsEnum {
   pluginOptions___iframeId
   pluginOptions___wrapperStyle
   pluginOptions___staticFolderName
-  pluginOptions___include
   pluginOptions___maxWidth
   pluginOptions___linkImagesToOriginal
   pluginOptions___showCaptions

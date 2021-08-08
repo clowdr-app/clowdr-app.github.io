@@ -1,14 +1,13 @@
 ---
 updatedDate: 2021-05-04T09:16:21+00:00
 categories:
-- schedule
+  - schedule
 title: Clowdr's event modes
-slug: event-modes
 description: Clowdr's event modes and what each of them means.
 author: Ed Nutting
 draft: false
-
 ---
+
 Clowdr has a range of modes to choose from, which can be combined to achieve various kinds of session. Below each mode is described for what it does on its own. Please see our other guides for how to combine events to achieve different kinds of sessions (plenary, paper presentations, Q&As, AMAs, poster presentations, poster competitions, etc).
 
 Most events have a content item and/or an exhibition associated with them. These define the paper, poster, or group of items being presented at the event. However, this is optional: your events do not have to have a content item nor exhibition associated with them. Such events just have a name and no other content (which can be useful for scheduled social time).
@@ -16,7 +15,7 @@ Most events have a content item and/or an exhibition associated with them. These
 **In _all_ modes, Clowdr shows a summary of the content item and/or exhibition associated with the event, below the main video-player/video-chat.** In particular, exhibition summaries are always shown, even for events not in Exhibition mode - see details below.
 
 | Category             | Mode         | Description                                                                                                                                                                                                                                                                                    |
-|----------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| -------------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |                      | None         | You can use content elements on the item to add any information, such as links to external websites.                                                                                                                                                                                           |
 | Single video-chat    | Breakout     | A single video chat for up to 45 people is made available for anyone in the room to join.                                                                                                                                                                                                      |
 | Parallel video-chats | Exhibition   | This mode focuses on the associated Exhibition. The content summary is hidden. Attendees use discussion rooms (one for each item in the exhibition) and can join any of the parallel conversations that are happening. They choose which discussion room(s) to join and how long to stay for.  |

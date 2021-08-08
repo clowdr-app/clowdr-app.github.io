@@ -28,6 +28,17 @@ export type AvifOptions = {
   speed?: Maybe<Scalars['Int']>;
 };
 
+export type Author = {
+  __typename?: 'Author';
+  name?: Maybe<Scalars['String']>;
+  summary?: Maybe<Scalars['String']>;
+};
+
+export type AuthorFilterInput = {
+  name?: Maybe<StringQueryOperatorInput>;
+  summary?: Maybe<StringQueryOperatorInput>;
+};
+
 export type BlurredOptions = {
   width?: Maybe<Scalars['Int']>;
   toFormat?: Maybe<ImageFormat>;
@@ -381,6 +392,19 @@ export type DuotoneGradient = {
   opacity?: Maybe<Scalars['Int']>;
 };
 
+export type Fields = {
+  __typename?: 'Fields';
+  slug?: Maybe<Scalars['String']>;
+  collection?: Maybe<Scalars['String']>;
+  isCategoryIndex?: Maybe<Scalars['Boolean']>;
+};
+
+export type FieldsFilterInput = {
+  slug?: Maybe<StringQueryOperatorInput>;
+  collection?: Maybe<StringQueryOperatorInput>;
+  isCategoryIndex?: Maybe<BooleanQueryOperatorInput>;
+};
+
 export type File = Node & {
   __typename?: 'File';
   sourceInstanceName: Scalars['String'];
@@ -711,17 +735,18 @@ export enum FileFieldsEnum {
   ChildrenMarkdownRemark = 'childrenMarkdownRemark',
   ChildrenMarkdownRemarkId = 'childrenMarkdownRemark___id',
   ChildrenMarkdownRemarkFrontmatterTitle = 'childrenMarkdownRemark___frontmatter___title',
-  ChildrenMarkdownRemarkFrontmatterSlug = 'childrenMarkdownRemark___frontmatter___slug',
-  ChildrenMarkdownRemarkFrontmatterUpdatedDate = 'childrenMarkdownRemark___frontmatter___updatedDate',
   ChildrenMarkdownRemarkFrontmatterDescription = 'childrenMarkdownRemark___frontmatter___description',
+  ChildrenMarkdownRemarkFrontmatterDate = 'childrenMarkdownRemark___frontmatter___date',
+  ChildrenMarkdownRemarkFrontmatterUpdatedDate = 'childrenMarkdownRemark___frontmatter___updatedDate',
   ChildrenMarkdownRemarkFrontmatterAuthor = 'childrenMarkdownRemark___frontmatter___author',
   ChildrenMarkdownRemarkFrontmatterCategories = 'childrenMarkdownRemark___frontmatter___categories',
   ChildrenMarkdownRemarkFrontmatterDraft = 'childrenMarkdownRemark___frontmatter___draft',
+  ChildrenMarkdownRemarkFieldsSlug = 'childrenMarkdownRemark___fields___slug',
+  ChildrenMarkdownRemarkFieldsCollection = 'childrenMarkdownRemark___fields___collection',
+  ChildrenMarkdownRemarkFieldsIsCategoryIndex = 'childrenMarkdownRemark___fields___isCategoryIndex',
   ChildrenMarkdownRemarkExcerpt = 'childrenMarkdownRemark___excerpt',
   ChildrenMarkdownRemarkRawMarkdownBody = 'childrenMarkdownRemark___rawMarkdownBody',
   ChildrenMarkdownRemarkFileAbsolutePath = 'childrenMarkdownRemark___fileAbsolutePath',
-  ChildrenMarkdownRemarkFieldsSlug = 'childrenMarkdownRemark___fields___slug',
-  ChildrenMarkdownRemarkFieldsCollection = 'childrenMarkdownRemark___fields___collection',
   ChildrenMarkdownRemarkHtml = 'childrenMarkdownRemark___html',
   ChildrenMarkdownRemarkHtmlAst = 'childrenMarkdownRemark___htmlAst',
   ChildrenMarkdownRemarkExcerptAst = 'childrenMarkdownRemark___excerptAst',
@@ -773,17 +798,18 @@ export enum FileFieldsEnum {
   ChildrenMarkdownRemarkInternalType = 'childrenMarkdownRemark___internal___type',
   ChildMarkdownRemarkId = 'childMarkdownRemark___id',
   ChildMarkdownRemarkFrontmatterTitle = 'childMarkdownRemark___frontmatter___title',
-  ChildMarkdownRemarkFrontmatterSlug = 'childMarkdownRemark___frontmatter___slug',
-  ChildMarkdownRemarkFrontmatterUpdatedDate = 'childMarkdownRemark___frontmatter___updatedDate',
   ChildMarkdownRemarkFrontmatterDescription = 'childMarkdownRemark___frontmatter___description',
+  ChildMarkdownRemarkFrontmatterDate = 'childMarkdownRemark___frontmatter___date',
+  ChildMarkdownRemarkFrontmatterUpdatedDate = 'childMarkdownRemark___frontmatter___updatedDate',
   ChildMarkdownRemarkFrontmatterAuthor = 'childMarkdownRemark___frontmatter___author',
   ChildMarkdownRemarkFrontmatterCategories = 'childMarkdownRemark___frontmatter___categories',
   ChildMarkdownRemarkFrontmatterDraft = 'childMarkdownRemark___frontmatter___draft',
+  ChildMarkdownRemarkFieldsSlug = 'childMarkdownRemark___fields___slug',
+  ChildMarkdownRemarkFieldsCollection = 'childMarkdownRemark___fields___collection',
+  ChildMarkdownRemarkFieldsIsCategoryIndex = 'childMarkdownRemark___fields___isCategoryIndex',
   ChildMarkdownRemarkExcerpt = 'childMarkdownRemark___excerpt',
   ChildMarkdownRemarkRawMarkdownBody = 'childMarkdownRemark___rawMarkdownBody',
   ChildMarkdownRemarkFileAbsolutePath = 'childMarkdownRemark___fileAbsolutePath',
-  ChildMarkdownRemarkFieldsSlug = 'childMarkdownRemark___fields___slug',
-  ChildMarkdownRemarkFieldsCollection = 'childMarkdownRemark___fields___collection',
   ChildMarkdownRemarkHtml = 'childMarkdownRemark___html',
   ChildMarkdownRemarkHtmlAst = 'childMarkdownRemark___htmlAst',
   ChildMarkdownRemarkExcerptAst = 'childMarkdownRemark___excerptAst',
@@ -990,6 +1016,43 @@ export type FloatQueryOperatorInput = {
   lte?: Maybe<Scalars['Float']>;
   in?: Maybe<Array<Maybe<Scalars['Float']>>>;
   nin?: Maybe<Array<Maybe<Scalars['Float']>>>;
+};
+
+export type Frontmatter = {
+  __typename?: 'Frontmatter';
+  title?: Maybe<Scalars['String']>;
+  description?: Maybe<Scalars['String']>;
+  date?: Maybe<Scalars['Date']>;
+  updatedDate?: Maybe<Scalars['Date']>;
+  author?: Maybe<Scalars['String']>;
+  categories?: Maybe<Array<Maybe<Scalars['String']>>>;
+  draft?: Maybe<Scalars['Boolean']>;
+};
+
+
+export type FrontmatterDateArgs = {
+  formatString?: Maybe<Scalars['String']>;
+  fromNow?: Maybe<Scalars['Boolean']>;
+  difference?: Maybe<Scalars['String']>;
+  locale?: Maybe<Scalars['String']>;
+};
+
+
+export type FrontmatterUpdatedDateArgs = {
+  formatString?: Maybe<Scalars['String']>;
+  fromNow?: Maybe<Scalars['Boolean']>;
+  difference?: Maybe<Scalars['String']>;
+  locale?: Maybe<Scalars['String']>;
+};
+
+export type FrontmatterFilterInput = {
+  title?: Maybe<StringQueryOperatorInput>;
+  description?: Maybe<StringQueryOperatorInput>;
+  date?: Maybe<DateQueryOperatorInput>;
+  updatedDate?: Maybe<DateQueryOperatorInput>;
+  author?: Maybe<StringQueryOperatorInput>;
+  categories?: Maybe<StringQueryOperatorInput>;
+  draft?: Maybe<BooleanQueryOperatorInput>;
 };
 
 export enum ImageCropFocus {
@@ -1515,11 +1578,11 @@ export enum MarkdownHeadingLevels {
 export type MarkdownRemark = Node & {
   __typename?: 'MarkdownRemark';
   id: Scalars['ID'];
-  frontmatter?: Maybe<MarkdownRemarkFrontmatter>;
+  frontmatter?: Maybe<Frontmatter>;
+  fields?: Maybe<Fields>;
   excerpt?: Maybe<Scalars['String']>;
   rawMarkdownBody?: Maybe<Scalars['String']>;
   fileAbsolutePath?: Maybe<Scalars['String']>;
-  fields?: Maybe<MarkdownRemarkFields>;
   html?: Maybe<Scalars['String']>;
   htmlAst?: Maybe<Scalars['JSON']>;
   excerptAst?: Maybe<Scalars['JSON']>;
@@ -1605,26 +1668,21 @@ export type MarkdownRemarkEdge = {
   previous?: Maybe<MarkdownRemark>;
 };
 
-export type MarkdownRemarkFields = {
-  __typename?: 'MarkdownRemarkFields';
-  slug?: Maybe<Scalars['String']>;
-  collection?: Maybe<Scalars['String']>;
-};
-
 export enum MarkdownRemarkFieldsEnum {
   Id = 'id',
   FrontmatterTitle = 'frontmatter___title',
-  FrontmatterSlug = 'frontmatter___slug',
-  FrontmatterUpdatedDate = 'frontmatter___updatedDate',
   FrontmatterDescription = 'frontmatter___description',
+  FrontmatterDate = 'frontmatter___date',
+  FrontmatterUpdatedDate = 'frontmatter___updatedDate',
   FrontmatterAuthor = 'frontmatter___author',
   FrontmatterCategories = 'frontmatter___categories',
   FrontmatterDraft = 'frontmatter___draft',
+  FieldsSlug = 'fields___slug',
+  FieldsCollection = 'fields___collection',
+  FieldsIsCategoryIndex = 'fields___isCategoryIndex',
   Excerpt = 'excerpt',
   RawMarkdownBody = 'rawMarkdownBody',
   FileAbsolutePath = 'fileAbsolutePath',
-  FieldsSlug = 'fields___slug',
-  FieldsCollection = 'fields___collection',
   Html = 'html',
   HtmlAst = 'htmlAst',
   ExcerptAst = 'excerptAst',
@@ -1724,18 +1782,13 @@ export enum MarkdownRemarkFieldsEnum {
   InternalType = 'internal___type'
 }
 
-export type MarkdownRemarkFieldsFilterInput = {
-  slug?: Maybe<StringQueryOperatorInput>;
-  collection?: Maybe<StringQueryOperatorInput>;
-};
-
 export type MarkdownRemarkFilterInput = {
   id?: Maybe<StringQueryOperatorInput>;
-  frontmatter?: Maybe<MarkdownRemarkFrontmatterFilterInput>;
+  frontmatter?: Maybe<FrontmatterFilterInput>;
+  fields?: Maybe<FieldsFilterInput>;
   excerpt?: Maybe<StringQueryOperatorInput>;
   rawMarkdownBody?: Maybe<StringQueryOperatorInput>;
   fileAbsolutePath?: Maybe<StringQueryOperatorInput>;
-  fields?: Maybe<MarkdownRemarkFieldsFilterInput>;
   html?: Maybe<StringQueryOperatorInput>;
   htmlAst?: Maybe<JsonQueryOperatorInput>;
   excerptAst?: Maybe<JsonQueryOperatorInput>;
@@ -1750,35 +1803,6 @@ export type MarkdownRemarkFilterInput = {
 
 export type MarkdownRemarkFilterListInput = {
   elemMatch?: Maybe<MarkdownRemarkFilterInput>;
-};
-
-export type MarkdownRemarkFrontmatter = {
-  __typename?: 'MarkdownRemarkFrontmatter';
-  title?: Maybe<Scalars['String']>;
-  slug?: Maybe<Scalars['String']>;
-  updatedDate?: Maybe<Scalars['Date']>;
-  description?: Maybe<Scalars['String']>;
-  author?: Maybe<Scalars['String']>;
-  categories?: Maybe<Array<Maybe<Scalars['String']>>>;
-  draft?: Maybe<Scalars['Boolean']>;
-};
-
-
-export type MarkdownRemarkFrontmatterUpdatedDateArgs = {
-  formatString?: Maybe<Scalars['String']>;
-  fromNow?: Maybe<Scalars['Boolean']>;
-  difference?: Maybe<Scalars['String']>;
-  locale?: Maybe<Scalars['String']>;
-};
-
-export type MarkdownRemarkFrontmatterFilterInput = {
-  title?: Maybe<StringQueryOperatorInput>;
-  slug?: Maybe<StringQueryOperatorInput>;
-  updatedDate?: Maybe<DateQueryOperatorInput>;
-  description?: Maybe<StringQueryOperatorInput>;
-  author?: Maybe<StringQueryOperatorInput>;
-  categories?: Maybe<StringQueryOperatorInput>;
-  draft?: Maybe<BooleanQueryOperatorInput>;
 };
 
 export type MarkdownRemarkGroupConnection = {
@@ -2046,6 +2070,7 @@ export type QuerySitePageArgs = {
   children?: Maybe<NodeFilterListInput>;
   internal?: Maybe<InternalFilterInput>;
   isCreatedByStatefulCreatePages?: Maybe<BooleanQueryOperatorInput>;
+  context?: Maybe<SitePageContextFilterInput>;
   pluginCreator?: Maybe<SitePluginFilterInput>;
   pluginCreatorId?: Maybe<StringQueryOperatorInput>;
 };
@@ -2082,11 +2107,11 @@ export type QueryAllImageSharpArgs = {
 
 export type QueryMarkdownRemarkArgs = {
   id?: Maybe<StringQueryOperatorInput>;
-  frontmatter?: Maybe<MarkdownRemarkFrontmatterFilterInput>;
+  frontmatter?: Maybe<FrontmatterFilterInput>;
+  fields?: Maybe<FieldsFilterInput>;
   excerpt?: Maybe<StringQueryOperatorInput>;
   rawMarkdownBody?: Maybe<StringQueryOperatorInput>;
   fileAbsolutePath?: Maybe<StringQueryOperatorInput>;
-  fields?: Maybe<MarkdownRemarkFieldsFilterInput>;
   html?: Maybe<StringQueryOperatorInput>;
   htmlAst?: Maybe<JsonQueryOperatorInput>;
   excerptAst?: Maybe<JsonQueryOperatorInput>;
@@ -2399,7 +2424,10 @@ export enum SiteFieldsEnum {
   BuildTime = 'buildTime',
   SiteMetadataTitle = 'siteMetadata___title',
   SiteMetadataDescription = 'siteMetadata___description',
+  SiteMetadataAuthorName = 'siteMetadata___author___name',
+  SiteMetadataAuthorSummary = 'siteMetadata___author___summary',
   SiteMetadataSiteUrl = 'siteMetadata___siteUrl',
+  SiteMetadataSocialTwitter = 'siteMetadata___social___twitter',
   Port = 'port',
   Host = 'host',
   Polyfill = 'polyfill',
@@ -2714,6 +2742,7 @@ export type SitePage = Node & {
   children: Array<Node>;
   internal: Internal;
   isCreatedByStatefulCreatePages?: Maybe<Scalars['Boolean']>;
+  context?: Maybe<SitePageContext>;
   pluginCreator?: Maybe<SitePlugin>;
   pluginCreatorId?: Maybe<Scalars['String']>;
 };
@@ -2756,6 +2785,40 @@ export type SitePageConnectionGroupArgs = {
   skip?: Maybe<Scalars['Int']>;
   limit?: Maybe<Scalars['Int']>;
   field: SitePageFieldsEnum;
+};
+
+export type SitePageContext = {
+  __typename?: 'SitePageContext';
+  id?: Maybe<Scalars['String']>;
+  slug?: Maybe<Scalars['String']>;
+  regex?: Maybe<Scalars['String']>;
+  breadcrumbs?: Maybe<Array<Maybe<SitePageContextBreadcrumbs>>>;
+};
+
+export type SitePageContextBreadcrumbs = {
+  __typename?: 'SitePageContextBreadcrumbs';
+  name?: Maybe<Scalars['String']>;
+  NAME?: Maybe<Scalars['String']>;
+  url?: Maybe<Scalars['String']>;
+  title?: Maybe<Scalars['String']>;
+};
+
+export type SitePageContextBreadcrumbsFilterInput = {
+  name?: Maybe<StringQueryOperatorInput>;
+  NAME?: Maybe<StringQueryOperatorInput>;
+  url?: Maybe<StringQueryOperatorInput>;
+  title?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePageContextBreadcrumbsFilterListInput = {
+  elemMatch?: Maybe<SitePageContextBreadcrumbsFilterInput>;
+};
+
+export type SitePageContextFilterInput = {
+  id?: Maybe<StringQueryOperatorInput>;
+  slug?: Maybe<StringQueryOperatorInput>;
+  regex?: Maybe<StringQueryOperatorInput>;
+  breadcrumbs?: Maybe<SitePageContextBreadcrumbsFilterListInput>;
 };
 
 export type SitePageEdge = {
@@ -2858,6 +2921,14 @@ export enum SitePageFieldsEnum {
   InternalOwner = 'internal___owner',
   InternalType = 'internal___type',
   IsCreatedByStatefulCreatePages = 'isCreatedByStatefulCreatePages',
+  ContextId = 'context___id',
+  ContextSlug = 'context___slug',
+  ContextRegex = 'context___regex',
+  ContextBreadcrumbs = 'context___breadcrumbs',
+  ContextBreadcrumbsName = 'context___breadcrumbs___name',
+  ContextBreadcrumbsName = 'context___breadcrumbs___NAME',
+  ContextBreadcrumbsUrl = 'context___breadcrumbs___url',
+  ContextBreadcrumbsTitle = 'context___breadcrumbs___title',
   PluginCreatorId = 'pluginCreator___id',
   PluginCreatorParentId = 'pluginCreator___parent___id',
   PluginCreatorParentParentId = 'pluginCreator___parent___parent___id',
@@ -2929,7 +3000,6 @@ export enum SitePageFieldsEnum {
   PluginCreatorPluginOptionsIframeId = 'pluginCreator___pluginOptions___iframeId',
   PluginCreatorPluginOptionsWrapperStyle = 'pluginCreator___pluginOptions___wrapperStyle',
   PluginCreatorPluginOptionsStaticFolderName = 'pluginCreator___pluginOptions___staticFolderName',
-  PluginCreatorPluginOptionsInclude = 'pluginCreator___pluginOptions___include',
   PluginCreatorPluginOptionsMaxWidth = 'pluginCreator___pluginOptions___maxWidth',
   PluginCreatorPluginOptionsLinkImagesToOriginal = 'pluginCreator___pluginOptions___linkImagesToOriginal',
   PluginCreatorPluginOptionsShowCaptions = 'pluginCreator___pluginOptions___showCaptions',
@@ -2995,6 +3065,7 @@ export type SitePageFilterInput = {
   children?: Maybe<NodeFilterListInput>;
   internal?: Maybe<InternalFilterInput>;
   isCreatedByStatefulCreatePages?: Maybe<BooleanQueryOperatorInput>;
+  context?: Maybe<SitePageContextFilterInput>;
   pluginCreator?: Maybe<SitePluginFilterInput>;
   pluginCreatorId?: Maybe<StringQueryOperatorInput>;
 };
@@ -3184,7 +3255,6 @@ export enum SitePluginFieldsEnum {
   PluginOptionsPluginsPluginOptionsIframeId = 'pluginOptions___plugins___pluginOptions___iframeId',
   PluginOptionsPluginsPluginOptionsWrapperStyle = 'pluginOptions___plugins___pluginOptions___wrapperStyle',
   PluginOptionsPluginsPluginOptionsStaticFolderName = 'pluginOptions___plugins___pluginOptions___staticFolderName',
-  PluginOptionsPluginsPluginOptionsInclude = 'pluginOptions___plugins___pluginOptions___include',
   PluginOptionsPluginsPluginOptionsMaxWidth = 'pluginOptions___plugins___pluginOptions___maxWidth',
   PluginOptionsPluginsPluginOptionsLinkImagesToOriginal = 'pluginOptions___plugins___pluginOptions___linkImagesToOriginal',
   PluginOptionsPluginsPluginOptionsShowCaptions = 'pluginOptions___plugins___pluginOptions___showCaptions',
@@ -3223,7 +3293,6 @@ export enum SitePluginFieldsEnum {
   PluginOptionsIframeId = 'pluginOptions___iframeId',
   PluginOptionsWrapperStyle = 'pluginOptions___wrapperStyle',
   PluginOptionsStaticFolderName = 'pluginOptions___staticFolderName',
-  PluginOptionsInclude = 'pluginOptions___include',
   PluginOptionsMaxWidth = 'pluginOptions___maxWidth',
   PluginOptionsLinkImagesToOriginal = 'pluginOptions___linkImagesToOriginal',
   PluginOptionsShowCaptions = 'pluginOptions___showCaptions',
@@ -3399,7 +3468,6 @@ export type SitePluginPluginOptions = {
   iframeId?: Maybe<Scalars['Boolean']>;
   wrapperStyle?: Maybe<Scalars['String']>;
   staticFolderName?: Maybe<Scalars['String']>;
-  include?: Maybe<Array<Maybe<Scalars['String']>>>;
   maxWidth?: Maybe<Scalars['Int']>;
   linkImagesToOriginal?: Maybe<Scalars['Boolean']>;
   showCaptions?: Maybe<Scalars['Boolean']>;
@@ -3453,7 +3521,6 @@ export type SitePluginPluginOptionsFilterInput = {
   iframeId?: Maybe<BooleanQueryOperatorInput>;
   wrapperStyle?: Maybe<StringQueryOperatorInput>;
   staticFolderName?: Maybe<StringQueryOperatorInput>;
-  include?: Maybe<StringQueryOperatorInput>;
   maxWidth?: Maybe<IntQueryOperatorInput>;
   linkImagesToOriginal?: Maybe<BooleanQueryOperatorInput>;
   showCaptions?: Maybe<BooleanQueryOperatorInput>;
@@ -3541,7 +3608,6 @@ export type SitePluginPluginOptionsPluginsPluginOptions = {
   iframeId?: Maybe<Scalars['Boolean']>;
   wrapperStyle?: Maybe<Scalars['String']>;
   staticFolderName?: Maybe<Scalars['String']>;
-  include?: Maybe<Array<Maybe<Scalars['String']>>>;
   maxWidth?: Maybe<Scalars['Int']>;
   linkImagesToOriginal?: Maybe<Scalars['Boolean']>;
   showCaptions?: Maybe<Scalars['Boolean']>;
@@ -3569,7 +3635,6 @@ export type SitePluginPluginOptionsPluginsPluginOptionsFilterInput = {
   iframeId?: Maybe<BooleanQueryOperatorInput>;
   wrapperStyle?: Maybe<StringQueryOperatorInput>;
   staticFolderName?: Maybe<StringQueryOperatorInput>;
-  include?: Maybe<StringQueryOperatorInput>;
   maxWidth?: Maybe<IntQueryOperatorInput>;
   linkImagesToOriginal?: Maybe<BooleanQueryOperatorInput>;
   showCaptions?: Maybe<BooleanQueryOperatorInput>;
@@ -3620,18 +3685,31 @@ export type SiteSiteMetadata = {
   __typename?: 'SiteSiteMetadata';
   title?: Maybe<Scalars['String']>;
   description?: Maybe<Scalars['String']>;
+  author?: Maybe<Author>;
   siteUrl?: Maybe<Scalars['String']>;
+  social?: Maybe<Social>;
 };
 
 export type SiteSiteMetadataFilterInput = {
   title?: Maybe<StringQueryOperatorInput>;
   description?: Maybe<StringQueryOperatorInput>;
+  author?: Maybe<AuthorFilterInput>;
   siteUrl?: Maybe<StringQueryOperatorInput>;
+  social?: Maybe<SocialFilterInput>;
 };
 
 export type SiteSortInput = {
   fields?: Maybe<Array<Maybe<SiteFieldsEnum>>>;
   order?: Maybe<Array<Maybe<SortOrderEnum>>>;
+};
+
+export type Social = {
+  __typename?: 'Social';
+  twitter?: Maybe<Scalars['String']>;
+};
+
+export type SocialFilterInput = {
+  twitter?: Maybe<StringQueryOperatorInput>;
 };
 
 export enum SortOrderEnum {
@@ -3660,6 +3738,11 @@ export type TransformOptions = {
 export type WebPOptions = {
   quality?: Maybe<Scalars['Int']>;
 };
+
+export type GetMarkdownEdgesQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type GetMarkdownEdgesQuery = { __typename?: 'Query', allMarkdownRemark: { __typename?: 'MarkdownRemarkConnection', edges: Array<{ __typename?: 'MarkdownRemarkEdge', node: { __typename?: 'MarkdownRemark', id: string, fileAbsolutePath?: Maybe<string>, fields?: Maybe<{ __typename?: 'Fields', collection?: Maybe<string>, slug?: Maybe<string>, isCategoryIndex?: Maybe<boolean> }>, frontmatter?: Maybe<{ __typename?: 'Frontmatter', title?: Maybe<string> }> } }> } };
 
 export type GatsbyImageSharpFixedFragment = { __typename?: 'ImageSharpFixed', base64?: Maybe<string>, width: number, height: number, src: string, srcSet: string };
 
@@ -3690,11 +3773,19 @@ export type GatsbyImageSharpFluid_WithWebp_NoBase64Fragment = { __typename?: 'Im
 export type ResourcesQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type ResourcesQuery = { __typename?: 'Query', allMarkdownRemark: { __typename?: 'MarkdownRemarkConnection', nodes: Array<{ __typename?: 'MarkdownRemark', excerpt?: Maybe<string>, fields?: Maybe<{ __typename?: 'MarkdownRemarkFields', slug?: Maybe<string> }>, frontmatter?: Maybe<{ __typename?: 'MarkdownRemarkFrontmatter', title?: Maybe<string>, slug?: Maybe<string>, description?: Maybe<string>, author?: Maybe<string>, categories?: Maybe<Array<Maybe<string>>>, draft?: Maybe<boolean> }> }> } };
+export type ResourcesQuery = { __typename?: 'Query', allMarkdownRemark: { __typename?: 'MarkdownRemarkConnection', nodes: Array<{ __typename?: 'MarkdownRemark', excerpt?: Maybe<string>, fields?: Maybe<{ __typename?: 'Fields', slug?: Maybe<string> }>, frontmatter?: Maybe<{ __typename?: 'Frontmatter', title?: Maybe<string>, description?: Maybe<string>, author?: Maybe<string>, draft?: Maybe<boolean> }> }> } };
+
+export type ResourceCategoryBySlugQueryVariables = Exact<{
+  id: Scalars['String'];
+  regex: Scalars['String'];
+}>;
+
+
+export type ResourceCategoryBySlugQuery = { __typename?: 'Query', site?: Maybe<{ __typename?: 'Site', siteMetadata?: Maybe<{ __typename?: 'SiteSiteMetadata', title?: Maybe<string> }> }>, markdownRemark?: Maybe<{ __typename?: 'MarkdownRemark', id: string, excerpt?: Maybe<string>, htmlAst?: Maybe<any>, frontmatter?: Maybe<{ __typename?: 'Frontmatter', title?: Maybe<string>, updatedDate?: Maybe<any>, description?: Maybe<string> }> }>, allMarkdownRemark: { __typename?: 'MarkdownRemarkConnection', nodes: Array<{ __typename?: 'MarkdownRemark', excerpt?: Maybe<string>, fields?: Maybe<{ __typename?: 'Fields', slug?: Maybe<string>, isCategoryIndex?: Maybe<boolean> }>, frontmatter?: Maybe<{ __typename?: 'Frontmatter', title?: Maybe<string>, description?: Maybe<string>, author?: Maybe<string>, draft?: Maybe<boolean> }> }> } };
 
 export type ResourcePageBySlugQueryVariables = Exact<{
   id: Scalars['String'];
 }>;
 
 
-export type ResourcePageBySlugQuery = { __typename?: 'Query', site?: Maybe<{ __typename?: 'Site', siteMetadata?: Maybe<{ __typename?: 'SiteSiteMetadata', title?: Maybe<string> }> }>, markdownRemark?: Maybe<{ __typename?: 'MarkdownRemark', id: string, excerpt?: Maybe<string>, htmlAst?: Maybe<any>, frontmatter?: Maybe<{ __typename?: 'MarkdownRemarkFrontmatter', title?: Maybe<string>, updatedDate?: Maybe<any>, description?: Maybe<string> }> }> };
+export type ResourcePageBySlugQuery = { __typename?: 'Query', site?: Maybe<{ __typename?: 'Site', siteMetadata?: Maybe<{ __typename?: 'SiteSiteMetadata', title?: Maybe<string> }> }>, markdownRemark?: Maybe<{ __typename?: 'MarkdownRemark', id: string, excerpt?: Maybe<string>, htmlAst?: Maybe<any>, frontmatter?: Maybe<{ __typename?: 'Frontmatter', title?: Maybe<string>, updatedDate?: Maybe<any>, description?: Maybe<string>, author?: Maybe<string>, isoUpdatedDate?: Maybe<any> }> }> };
