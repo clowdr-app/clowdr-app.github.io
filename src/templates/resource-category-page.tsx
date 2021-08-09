@@ -64,7 +64,7 @@ export default function ResourceCategoryBySlug({
           Sub-categories
         </Heading>
       </VisuallyHidden>
-      <SimpleGrid columns={2} spacing={4} mt={2} mb={8}>
+      <SimpleGrid columns={{ sm: 1, lg: 2 }} spacing={4} mt={2} mb={8}>
         {categoryNodes.map((node, i) => (
           <CategoryCard
             key={i}
@@ -87,7 +87,7 @@ export default function ResourceCategoryBySlug({
           Resources
         </Heading>
       </VisuallyHidden>
-      <SimpleGrid columns={2} spacing={4} mt={2}>
+      <SimpleGrid columns={{ sm: 1, lg: 2 }} spacing={4} mt={2}>
         {resourceNodes.map((node, i) => (
           <CategoryCard
             key={i}

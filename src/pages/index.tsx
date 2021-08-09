@@ -90,7 +90,7 @@ export default function Home() {
           <Heading as="h1" size="2xl" mb={8} textAlign="center">
             Featured resources
           </Heading>
-          <SimpleGrid columns={2} spacing={4} mt={2}>
+          <SimpleGrid columns={{ sm: 1, lg: 2 }} spacing={4} mt={2}>
             {featuredResourceNodes.map((node, i) => (
               <CategoryCard
                 key={i}

@@ -50,7 +50,7 @@ export default function Resources() {
   const categoryNodes = result.allMarkdownRemark.nodes;
 
   const categoriesEl = categoryNodes.length ? (
-    <SimpleGrid columns={2} spacing={4}>
+    <SimpleGrid columns={{ sm: 1, lg: 2 }} spacing={4}>
       {categoryNodes.map((node, i) => (
         <CategoryCard
           key={i}
