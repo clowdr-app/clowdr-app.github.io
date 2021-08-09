@@ -57,9 +57,7 @@ export const theme = extendTheme({
   components: {
     Button: {
       baseStyle: {
-        bg: "purple.800",
         border: "1px solid white",
-        color: "white",
       },
       variants: {
         solid: {

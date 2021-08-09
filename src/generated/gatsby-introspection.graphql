@@ -709,6 +709,30 @@ type MarkdownRemark implements Node {
   internal: Internal!
 }
 
+type LocalSearchResources implements Node {
+  # The name of the index.
+  name: String!
+
+  # The search engine used to create the index.
+  engine: String!
+
+  # The search index created using the selected engine.
+  index: String!
+
+  # A JSON object used to map search results to their data.
+  store: JSON!
+
+  # Save the index to the site's static directory and return a public URL to it.
+  publicIndexURL: String!
+
+  # Save the store to the site's static directory and return a public URL to it.
+  publicStoreURL: String!
+  id: ID!
+  parent: Node
+  children: [Node!]!
+  internal: Internal!
+}
+
 type Author {
   name: String
   summary: String
@@ -824,6 +848,11 @@ type SitePluginPluginOptions {
   crossOrigin: String
   include_favicon: Boolean
   cacheDigest: String
+  engine: String
+  query: String
+  ref: String
+  index: [String]
+  store: [String]
   pathCheck: Boolean
 }
 
@@ -942,6 +971,8 @@ type Query {
   allImageSharp(filter: ImageSharpFilterInput, sort: ImageSharpSortInput, skip: Int, limit: Int): ImageSharpConnection!
   markdownRemark(id: StringQueryOperatorInput, frontmatter: FrontmatterFilterInput, fields: FieldsFilterInput, excerpt: StringQueryOperatorInput, rawMarkdownBody: StringQueryOperatorInput, fileAbsolutePath: StringQueryOperatorInput, html: StringQueryOperatorInput, htmlAst: JSONQueryOperatorInput, excerptAst: JSONQueryOperatorInput, headings: MarkdownHeadingFilterListInput, timeToRead: IntQueryOperatorInput, tableOfContents: StringQueryOperatorInput, wordCount: MarkdownWordCountFilterInput, parent: NodeFilterInput, children: NodeFilterListInput, internal: InternalFilterInput): MarkdownRemark
   allMarkdownRemark(filter: MarkdownRemarkFilterInput, sort: MarkdownRemarkSortInput, skip: Int, limit: Int): MarkdownRemarkConnection!
+  localSearchResources(name: StringQueryOperatorInput, engine: StringQueryOperatorInput, index: StringQueryOperatorInput, store: JSONQueryOperatorInput, publicIndexURL: StringQueryOperatorInput, publicStoreURL: StringQueryOperatorInput, id: StringQueryOperatorInput, parent: NodeFilterInput, children: NodeFilterListInput, internal: InternalFilterInput): LocalSearchResources
+  allLocalSearchResources(filter: LocalSearchResourcesFilterInput, sort: LocalSearchResourcesSortInput, skip: Int, limit: Int): LocalSearchResourcesConnection!
   sitePlugin(id: StringQueryOperatorInput, parent: NodeFilterInput, children: NodeFilterListInput, internal: InternalFilterInput, resolve: StringQueryOperatorInput, name: StringQueryOperatorInput, version: StringQueryOperatorInput, pluginOptions: SitePluginPluginOptionsFilterInput, nodeAPIs: StringQueryOperatorInput, browserAPIs: StringQueryOperatorInput, ssrAPIs: StringQueryOperatorInput, pluginFilepath: StringQueryOperatorInput, packageJson: SitePluginPackageJsonFilterInput): SitePlugin
   allSitePlugin(filter: SitePluginFilterInput, sort: SitePluginSortInput, skip: Int, limit: Int): SitePluginConnection!
   siteBuildMetadata(id: StringQueryOperatorInput, parent: NodeFilterInput, children: NodeFilterListInput, internal: InternalFilterInput, buildTime: DateQueryOperatorInput): SiteBuildMetadata
@@ -2207,6 +2238,11 @@ input SitePluginPluginOptionsFilterInput {
   crossOrigin: StringQueryOperatorInput
   include_favicon: BooleanQueryOperatorInput
   cacheDigest: StringQueryOperatorInput
+  engine: StringQueryOperatorInput
+  query: StringQueryOperatorInput
+  ref: StringQueryOperatorInput
+  index: StringQueryOperatorInput
+  store: StringQueryOperatorInput
   pathCheck: BooleanQueryOperatorInput
 }
 
@@ -2538,6 +2574,11 @@ enum SitePageFieldsEnum {
   pluginCreator___pluginOptions___crossOrigin
   pluginCreator___pluginOptions___include_favicon
   pluginCreator___pluginOptions___cacheDigest
+  pluginCreator___pluginOptions___engine
+  pluginCreator___pluginOptions___query
+  pluginCreator___pluginOptions___ref
+  pluginCreator___pluginOptions___index
+  pluginCreator___pluginOptions___store
   pluginCreator___pluginOptions___pathCheck
   pluginCreator___nodeAPIs
   pluginCreator___browserAPIs
@@ -2891,6 +2932,146 @@ input MarkdownRemarkSortInput {
   order: [SortOrderEnum] = [ASC]
 }
 
+type LocalSearchResourcesConnection {
+  totalCount: Int!
+  edges: [LocalSearchResourcesEdge!]!
+  nodes: [LocalSearchResources!]!
+  pageInfo: PageInfo!
+  distinct(field: LocalSearchResourcesFieldsEnum!): [String!]!
+  max(field: LocalSearchResourcesFieldsEnum!): Float
+  min(field: LocalSearchResourcesFieldsEnum!): Float
+  sum(field: LocalSearchResourcesFieldsEnum!): Float
+  group(skip: Int, limit: Int, field: LocalSearchResourcesFieldsEnum!): [LocalSearchResourcesGroupConnection!]!
+}
+
+type LocalSearchResourcesEdge {
+  next: LocalSearchResources
+  node: LocalSearchResources!
+  previous: LocalSearchResources
+}
+
+enum LocalSearchResourcesFieldsEnum {
+  name
+  engine
+  index
+  store
+  publicIndexURL
+  publicStoreURL
+  id
+  parent___id
+  parent___parent___id
+  parent___parent___parent___id
+  parent___parent___parent___children
+  parent___parent___children
+  parent___parent___children___id
+  parent___parent___children___children
+  parent___parent___internal___content
+  parent___parent___internal___contentDigest
+  parent___parent___internal___description
+  parent___parent___internal___fieldOwners
+  parent___parent___internal___ignoreType
+  parent___parent___internal___mediaType
+  parent___parent___internal___owner
+  parent___parent___internal___type
+  parent___children
+  parent___children___id
+  parent___children___parent___id
+  parent___children___parent___children
+  parent___children___children
+  parent___children___children___id
+  parent___children___children___children
+  parent___children___internal___content
+  parent___children___internal___contentDigest
+  parent___children___internal___description
+  parent___children___internal___fieldOwners
+  parent___children___internal___ignoreType
+  parent___children___internal___mediaType
+  parent___children___internal___owner
+  parent___children___internal___type
+  parent___internal___content
+  parent___internal___contentDigest
+  parent___internal___description
+  parent___internal___fieldOwners
+  parent___internal___ignoreType
+  parent___internal___mediaType
+  parent___internal___owner
+  parent___internal___type
+  children
+  children___id
+  children___parent___id
+  children___parent___parent___id
+  children___parent___parent___children
+  children___parent___children
+  children___parent___children___id
+  children___parent___children___children
+  children___parent___internal___content
+  children___parent___internal___contentDigest
+  children___parent___internal___description
+  children___parent___internal___fieldOwners
+  children___parent___internal___ignoreType
+  children___parent___internal___mediaType
+  children___parent___internal___owner
+  children___parent___internal___type
+  children___children
+  children___children___id
+  children___children___parent___id
+  children___children___parent___children
+  children___children___children
+  children___children___children___id
+  children___children___children___children
+  children___children___internal___content
+  children___children___internal___contentDigest
+  children___children___internal___description
+  children___children___internal___fieldOwners
+  children___children___internal___ignoreType
+  children___children___internal___mediaType
+  children___children___internal___owner
+  children___children___internal___type
+  children___internal___content
+  children___internal___contentDigest
+  children___internal___description
+  children___internal___fieldOwners
+  children___internal___ignoreType
+  children___internal___mediaType
+  children___internal___owner
+  children___internal___type
+  internal___content
+  internal___contentDigest
+  internal___description
+  internal___fieldOwners
+  internal___ignoreType
+  internal___mediaType
+  internal___owner
+  internal___type
+}
+
+type LocalSearchResourcesGroupConnection {
+  totalCount: Int!
+  edges: [LocalSearchResourcesEdge!]!
+  nodes: [LocalSearchResources!]!
+  pageInfo: PageInfo!
+  field: String!
+  fieldValue: String
+}
+
+input LocalSearchResourcesFilterInput {
+  name: StringQueryOperatorInput
+  engine: StringQueryOperatorInput
+  index: StringQueryOperatorInput
+  store: JSONQueryOperatorInput
+  publicIndexURL: StringQueryOperatorInput
+  publicStoreURL: StringQueryOperatorInput
+  id: StringQueryOperatorInput
+  parent: NodeFilterInput
+  children: NodeFilterListInput
+  internal: InternalFilterInput
+}
+
+input LocalSearchResourcesSortInput {
+  fields: [LocalSearchResourcesFieldsEnum]
+  order: [SortOrderEnum] = [ASC]
+}
+
 type SitePluginConnection {
   totalCount: Int!
   edges: [SitePluginEdge!]!
@@ -3083,6 +3264,11 @@ enum SitePluginFieldsEnum {
   pluginOptions___crossOrigin
   pluginOptions___include_favicon
   pluginOptions___cacheDigest
+  pluginOptions___engine
+  pluginOptions___query
+  pluginOptions___ref
+  pluginOptions___index
+  pluginOptions___store
   pluginOptions___pathCheck
   nodeAPIs
   browserAPIs

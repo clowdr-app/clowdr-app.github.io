@@ -48,6 +48,45 @@ const transformerRemark = {
   },
 };
 
+/**
+ * @type import("gatsby-plugin-local-search/dist/types").PluginOptions
+ */
+const localSearchOptions = {
+  name: "resources",
+  engine: "lunr",
+  query: `
+      {
+        allMarkdownRemark {
+          nodes {
+            id
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+            }
+            rawMarkdownBody
+          }
+        }
+      }
+    `,
+  ref: "id",
+  index: ["title", "body"],
+  store: ["id", "slug", "title"],
+
+  // Function used to map the result from the GraphQL query. This should
+  // return an array of items to index in the form of flat objects
+  // containing properties to index. The objects must contain the `ref`
+  // field above (default: 'id'). This is required.
+  normalizer: ({ data }) =>
+    data.allMarkdownRemark.nodes.map(node => ({
+      id: node.id,
+      slug: node.fields.slug,
+      title: node.frontmatter.title,
+      body: node.rawMarkdownBody,
+    })),
+};
+
 /** @type import("gatsby").GatsbyConfig */
 module.exports = {
   siteMetadata: {
@@ -114,5 +153,9 @@ module.exports = {
       },
     },
     `gatsby-plugin-meta-redirect`,
+    {
+      resolve: `gatsby-plugin-local-search`,
+      options: localSearchOptions,
+    },
   ],
 };

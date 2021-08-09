@@ -17,6 +17,7 @@
   "dependencies": {
     "@chakra-ui/gatsby-plugin": "^2.0.1",
     "@chakra-ui/icons": "^1.0.14",
+    "@chakra-ui/live-region": "^1.0.13",
     "@chakra-ui/react": "^1.6.5",
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
@@ -29,6 +30,7 @@
     "gatsby-plugin-extract-schema": "^0.2.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^1.11.0",
+    "gatsby-plugin-local-search": "^2.0.1",
     "gatsby-plugin-manifest": "^3.11.0",
     "gatsby-plugin-meta-redirect": "^1.1.1",
     "gatsby-plugin-react-helmet-async": "^1.2.0",
@@ -57,6 +59,7 @@
     "react-dom": "^17.0.2",
     "react-helmet-async": "^1.0.9",
     "react-icons": "^4.2.0",
+    "react-lunr": "^1.1.0",
     "react-player": "^2.9.0",
     "rehype-react": "^7.0.0",
     "styled-components": "^5.3.0",
