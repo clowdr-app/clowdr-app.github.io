@@ -64,6 +64,8 @@ const localSearchOptions = {
             }
             frontmatter {
               title
+              description
+              author
             }
             rawMarkdownBody
           }
@@ -72,7 +74,7 @@ const localSearchOptions = {
     `,
   ref: "id",
   index: ["title", "body"],
-  store: ["id", "slug", "title"],
+  store: ["id", "slug", "title", "description", "author"],
 
   // Function used to map the result from the GraphQL query. This should
   // return an array of items to index in the form of flat objects
@@ -84,6 +86,8 @@ const localSearchOptions = {
       slug: node.fields.slug,
       title: node.frontmatter.title,
       body: node.rawMarkdownBody,
+      author: node.frontmatter.author,
+      description: node.frontmatter.description,
     })),
 };
 

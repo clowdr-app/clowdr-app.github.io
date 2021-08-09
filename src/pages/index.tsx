@@ -1,9 +1,44 @@
-import { Box, Container, Heading, HStack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Heading,
+  HStack,
+  SimpleGrid,
+  Text,
+} from "@chakra-ui/react";
+import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
+import { CategoryCard } from "../components/CategoryCard";
 import { Layout } from "../components/Layout";
 import Title from "../components/Title";
+import { FeaturedResourcesQuery } from "../generated/graphql-types";
 
 export default function Home() {
+  const result: FeaturedResourcesQuery =
+    useStaticQuery<FeaturedResourcesQuery>(graphql`
+      query FeaturedResources {
+        allMarkdownRemark(
+          sort: { fields: [frontmatter___title], order: ASC }
+          filter: {
+            fields: { collection: { eq: "resources" } }
+            frontmatter: { featured: { eq: true } }
+          }
+        ) {
+          nodes {
+            excerpt
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              description
+              author
+            }
+          }
+        }
+      }
+    `);
+  const featuredResourceNodes = result.allMarkdownRemark.nodes;
   return (
     <>
       <Title title="Resources - Clowdr" />
@@ -53,8 +88,21 @@ export default function Home() {
 
         <Container my={12} maxW="120ch">
           <Heading as="h1" size="2xl" mb={8} textAlign="center">
-            Top resources
+            Featured resources
           </Heading>
+          <SimpleGrid columns={2} spacing={4} mt={2}>
+            {featuredResourceNodes.map((node, i) => (
+              <CategoryCard
+                key={i}
+                indexUrl={node.fields?.slug ?? "#"}
+                descriptionHtml={
+                  node.frontmatter?.description ?? node.excerpt ?? ""
+                }
+                title={node.frontmatter?.title ?? "(No title)"}
+                author={node.frontmatter?.author ?? undefined}
+              />
+            ))}
+          </SimpleGrid>
         </Container>
       </Layout>
     </>

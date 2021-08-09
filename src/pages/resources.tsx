@@ -80,13 +80,16 @@ export default function Resources() {
           </Text>
           {result.localSearchResources?.index &&
           result.localSearchResources.store ? (
-            <Box my={4}>
+            <Box my={8}>
               <Search
                 index={result.localSearchResources.index}
                 store={result.localSearchResources.store}
               />
             </Box>
           ) : undefined}
+          <Heading as="h2" size="xl" mb={4}>
+            Categories
+          </Heading>
           {categoriesEl}
         </Container>
       </Layout>

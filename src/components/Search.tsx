@@ -7,8 +7,6 @@ import {
   InputGroup,
   InputLeftAddon,
   InputRightElement,
-  LinkBox,
-  LinkOverlay,
   List,
   ListItem,
   Text,
@@ -16,6 +14,7 @@ import {
 import React, { FocusEvent, useCallback, useEffect, useState } from "react";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { useLunr } from "react-lunr";
+import { CategoryCard } from "./CategoryCard";
 
 export function Search({
   index,
@@ -43,11 +42,11 @@ export function Search({
 
   return (
     <>
-      <InputGroup>
-        <InputLeftAddon>Search</InputLeftAddon>
+      <InputGroup mb={4}>
+        <InputLeftAddon>Search resources</InputLeftAddon>
 
         <Input
-          placeholder="Search resources"
+          placeholder="Enter a search term"
           value={searchTerm ?? undefined}
           onChange={handleSearchTermChange}
           px={2}
@@ -71,15 +70,16 @@ export function Search({
 
       <Box role="region" aria-label="search results">
         {searchTerm ? (
-          <List spacing={1} my={2} w="100%">
+          <List spacing={4} my={2} w="100%">
             {results.length ? (
               results.map(result => (
                 <ListItem key={result.id} w="100%">
-                  <LinkBox px={2} borderWidth="1px" rounded="md">
-                    <LinkOverlay href={`/resources${result.slug}`}>
-                      <Text>{result.title}</Text>
-                    </LinkOverlay>
-                  </LinkBox>
+                  <CategoryCard
+                    title={result.title}
+                    indexUrl={`/resources${result.slug}`}
+                    author={result.author}
+                    descriptionHtml={result.description}
+                  />
                 </ListItem>
               ))
             ) : (

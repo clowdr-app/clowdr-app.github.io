@@ -758,6 +758,7 @@ type Frontmatter {
     # Configures the locale Moment.js will use to format the date.
     locale: String
   ): Date
+  featured: Boolean
   updatedDate(
     # Format the date using Moment.js' date tokens, e.g. `date(formatString: "YYYY MMMM DD")`. See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens.
     formatString: String
@@ -771,8 +772,8 @@ type Frontmatter {
     # Configures the locale Moment.js will use to format the date.
     locale: String
   ): Date
-  author: String
   categories: [String]
+  author: String
   draft: Boolean
 }
 
@@ -1145,9 +1146,10 @@ input FrontmatterFilterInput {
   title: StringQueryOperatorInput
   description: StringQueryOperatorInput
   date: DateQueryOperatorInput
+  featured: BooleanQueryOperatorInput
   updatedDate: DateQueryOperatorInput
-  author: StringQueryOperatorInput
   categories: StringQueryOperatorInput
+  author: StringQueryOperatorInput
   draft: BooleanQueryOperatorInput
 }
 
@@ -1382,9 +1384,10 @@ enum FileFieldsEnum {
   childrenMarkdownRemark___frontmatter___title
   childrenMarkdownRemark___frontmatter___description
   childrenMarkdownRemark___frontmatter___date
+  childrenMarkdownRemark___frontmatter___featured
   childrenMarkdownRemark___frontmatter___updatedDate
-  childrenMarkdownRemark___frontmatter___author
   childrenMarkdownRemark___frontmatter___categories
+  childrenMarkdownRemark___frontmatter___author
   childrenMarkdownRemark___frontmatter___draft
   childrenMarkdownRemark___fields___slug
   childrenMarkdownRemark___fields___collection
@@ -1445,9 +1448,10 @@ enum FileFieldsEnum {
   childMarkdownRemark___frontmatter___title
   childMarkdownRemark___frontmatter___description
   childMarkdownRemark___frontmatter___date
+  childMarkdownRemark___frontmatter___featured
   childMarkdownRemark___frontmatter___updatedDate
-  childMarkdownRemark___frontmatter___author
   childMarkdownRemark___frontmatter___categories
+  childMarkdownRemark___frontmatter___author
   childMarkdownRemark___frontmatter___draft
   childMarkdownRemark___fields___slug
   childMarkdownRemark___fields___collection
@@ -2809,9 +2813,10 @@ enum MarkdownRemarkFieldsEnum {
   frontmatter___title
   frontmatter___description
   frontmatter___date
+  frontmatter___featured
   frontmatter___updatedDate
-  frontmatter___author
   frontmatter___categories
+  frontmatter___author
   frontmatter___draft
   fields___slug
   fields___collection

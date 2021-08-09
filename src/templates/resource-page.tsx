@@ -48,7 +48,7 @@ export default function ResourcePageBySlug({
               {post?.frontmatter?.title}
             </Heading>
             {post?.frontmatter?.updatedDate ? (
-              <Badge mt={4} mr={2}>
+              <Badge mt={4} mr={2} textTransform="none">
                 Updated{" "}
                 <time
                   itemProp="dateModified"
@@ -59,7 +59,7 @@ export default function ResourcePageBySlug({
               </Badge>
             ) : undefined}
             {post?.frontmatter?.author ? (
-              <Badge mt={4}>
+              <Badge mt={4} textTransform="none">
                 <Icon as={AiOutlineUser} aria-label="author" />{" "}
                 <span itemProp="author">{post?.frontmatter?.author}</span>
               </Badge>

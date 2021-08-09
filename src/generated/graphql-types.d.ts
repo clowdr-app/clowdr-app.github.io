@@ -737,6 +737,7 @@ export enum FileFieldsEnum {
   ChildrenMarkdownRemarkFrontmatterTitle = 'childrenMarkdownRemark___frontmatter___title',
   ChildrenMarkdownRemarkFrontmatterDescription = 'childrenMarkdownRemark___frontmatter___description',
   ChildrenMarkdownRemarkFrontmatterDate = 'childrenMarkdownRemark___frontmatter___date',
+  ChildrenMarkdownRemarkFrontmatterFeatured = 'childrenMarkdownRemark___frontmatter___featured',
   ChildrenMarkdownRemarkFrontmatterUpdatedDate = 'childrenMarkdownRemark___frontmatter___updatedDate',
   ChildrenMarkdownRemarkFrontmatterAuthor = 'childrenMarkdownRemark___frontmatter___author',
   ChildrenMarkdownRemarkFrontmatterCategories = 'childrenMarkdownRemark___frontmatter___categories',
@@ -800,6 +801,7 @@ export enum FileFieldsEnum {
   ChildMarkdownRemarkFrontmatterTitle = 'childMarkdownRemark___frontmatter___title',
   ChildMarkdownRemarkFrontmatterDescription = 'childMarkdownRemark___frontmatter___description',
   ChildMarkdownRemarkFrontmatterDate = 'childMarkdownRemark___frontmatter___date',
+  ChildMarkdownRemarkFrontmatterFeatured = 'childMarkdownRemark___frontmatter___featured',
   ChildMarkdownRemarkFrontmatterUpdatedDate = 'childMarkdownRemark___frontmatter___updatedDate',
   ChildMarkdownRemarkFrontmatterAuthor = 'childMarkdownRemark___frontmatter___author',
   ChildMarkdownRemarkFrontmatterCategories = 'childMarkdownRemark___frontmatter___categories',
@@ -1023,6 +1025,7 @@ export type Frontmatter = {
   title?: Maybe<Scalars['String']>;
   description?: Maybe<Scalars['String']>;
   date?: Maybe<Scalars['Date']>;
+  featured?: Maybe<Scalars['Boolean']>;
   updatedDate?: Maybe<Scalars['Date']>;
   author?: Maybe<Scalars['String']>;
   categories?: Maybe<Array<Maybe<Scalars['String']>>>;
@@ -1049,6 +1052,7 @@ export type FrontmatterFilterInput = {
   title?: Maybe<StringQueryOperatorInput>;
   description?: Maybe<StringQueryOperatorInput>;
   date?: Maybe<DateQueryOperatorInput>;
+  featured?: Maybe<BooleanQueryOperatorInput>;
   updatedDate?: Maybe<DateQueryOperatorInput>;
   author?: Maybe<StringQueryOperatorInput>;
   categories?: Maybe<StringQueryOperatorInput>;
@@ -1857,6 +1861,7 @@ export enum MarkdownRemarkFieldsEnum {
   FrontmatterTitle = 'frontmatter___title',
   FrontmatterDescription = 'frontmatter___description',
   FrontmatterDate = 'frontmatter___date',
+  FrontmatterFeatured = 'frontmatter___featured',
   FrontmatterUpdatedDate = 'frontmatter___updatedDate',
   FrontmatterAuthor = 'frontmatter___author',
   FrontmatterCategories = 'frontmatter___categories',
@@ -3997,6 +4002,11 @@ export type GatsbyImageSharpFluid_WithWebp_TracedSvgFragment = { __typename?: 'I
 export type GatsbyImageSharpFluid_NoBase64Fragment = { __typename?: 'ImageSharpFluid', aspectRatio: number, src: string, srcSet: string, sizes: string };
 
 export type GatsbyImageSharpFluid_WithWebp_NoBase64Fragment = { __typename?: 'ImageSharpFluid', aspectRatio: number, src: string, srcSet: string, srcWebp?: Maybe<string>, srcSetWebp?: Maybe<string>, sizes: string };
+
+export type FeaturedResourcesQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type FeaturedResourcesQuery = { __typename?: 'Query', allMarkdownRemark: { __typename?: 'MarkdownRemarkConnection', nodes: Array<{ __typename?: 'MarkdownRemark', excerpt?: Maybe<string>, fields?: Maybe<{ __typename?: 'Fields', slug?: Maybe<string> }>, frontmatter?: Maybe<{ __typename?: 'Frontmatter', title?: Maybe<string>, description?: Maybe<string>, author?: Maybe<string> }> }> } };
 
 export type ResourcesQueryVariables = Exact<{ [key: string]: never; }>;
 

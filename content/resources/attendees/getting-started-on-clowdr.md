@@ -5,6 +5,7 @@ categories:
 title: "Getting Started on Clowdr "
 description: Learn how to access and navigate your conference in Clowdr
 author: Cristal Mojica
+featured: true
 draft: false
 ---
 
@@ -12,7 +13,7 @@ Welcome to Clowdr!
 
 Review this brief resource to learn how to navigate our platform as an attendee - and make the most of Clowdr's features.
 
-![](/images/homepafe.jpg)
+![](/images/homepage.jpg)
 
 ##### Below we will cover 1. How to log in to your conference on Clowdr and 2. How to set up your profile and navigate your event in Clowdr.
 
@@ -34,7 +35,7 @@ Review this brief resource to learn how to navigate our platform as an attendee 
 
 Once you've created your profile, you are free to explore your conference!
 
-![](/images/homepafe.jpg)
+![](/images/homepage.jpg)
 
 6. The conference home page can be found in the center of the screen. Each conference can customize this area.
 7. On the left hand side you'll find navigation to the rest of the conference, including schedule, attendees, rooms (social and program), exhibitions, shuffle (randomized networking) rooms, and the My Backstages area (for presenters).

@@ -83,6 +83,7 @@ export default function ResourceCategoryBySlug({
           indexUrl={node.fields?.slug ?? "#"}
           descriptionHtml={node.frontmatter?.description ?? node.excerpt ?? ""}
           title={node.frontmatter?.title ?? "(No title)"}
+          author={node.frontmatter?.author ?? undefined}
         />
       ))}
     </SimpleGrid>
