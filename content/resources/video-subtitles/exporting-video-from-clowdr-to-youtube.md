@@ -1,5 +1,5 @@
 ---
-updatedDate: 2021-05-26T09:05:07+00:00
+updatedDate: 2021-05-26T09:05:07.000+00:00
 categories:
 - Videos
 title: Exporting content from Clowdr to YouTube
@@ -79,20 +79,20 @@ We recommend configuring the privacy setting (which determines of each video's p
 
 If you are uploading combined videos, we recommend removing the "{{fileName}}" from the video title.
 
-    {{itemTitle}} ({{fileName}})
+    {{{itemTitle}}} ({{{fileName}}})
 
 **Recommended Description Template**
 
-    {{#abstract}}{{abstract}}
+    {{#abstract}}{{{abstract}}}
     
     {{/abstract}}
     {{#authors.length}}
-    {{#authors}}{{name}}{{#affiliation}} ({{affiliation}}){{/affiliation}}, {{/authors}}
+    {{#authors}}{{{name}}}{{#affiliation}} ({{{affiliation}}}){{/affiliation}}, {{/authors}}
     
     {{/authors.length}}
     {{#paperLinks.length}}
     {{#paperLinks}}{{#url}}
-    * {{text}}: {{{url}}}
+    * {{{text}}}: {{{url}}}
     {{/url}}{{/paperLinks}}
     
     {{/paperLinks.length}}
