@@ -1,13 +1,10 @@
 ---
 updatedDate: 2021-04-27T11:24:37+00:00
-categories:
-  - support
 title: Troubleshooting microphone and camera permissions
 description:
   Use this information to get your camera and microphone working on supported
   platforms.
 author: Ed Nutting
-draft: false
 ---
 
 Please use the information linked to from this page to diagnose and fix your camera and microphone permissions on supported platforms.

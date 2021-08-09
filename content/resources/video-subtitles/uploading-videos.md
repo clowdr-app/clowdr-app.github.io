@@ -5,8 +5,6 @@ description:
   Preparing, uploading and editing video captions for pre-recorded and
   live videos.
 author: Ross Gardiner
-categories:
-  - Videos
 ---
 
 Video captioning is a significant part of Clowdr's commitment to

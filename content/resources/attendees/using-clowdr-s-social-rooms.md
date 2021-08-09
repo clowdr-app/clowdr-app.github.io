@@ -1,13 +1,10 @@
 ---
 updatedDate: 2021-04-28T06:29:07+00:00
-categories:
-  - attendees
 title: Using Clowdr's Social Rooms
 description:
   Learn about Clowdr's Social Rooms feature - an important part of the
   attendee social experience!
 author: Cristal Mojica
-draft: false
 ---
 
 ### Wondering about the social experience on Clowdr?

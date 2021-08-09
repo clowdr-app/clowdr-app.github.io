@@ -3,9 +3,6 @@ updatedDate: 2021-04-21T06:01:24.000+00:00
 title: Managing events in your schedule with Clowdr
 description: Learn how to create and manage your schedule on Clowdr
 author: Cristal Mojica
-categories:
-  - tutorials
-draft: false
 ---
 
 Your schedule allows attendees to understand what is going to be included in your program - and helps them plan for and get excited about your conference content! The following resource summarizes how you can easily manage the events in your program's schedule with Clowdr.

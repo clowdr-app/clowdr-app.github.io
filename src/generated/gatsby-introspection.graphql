@@ -772,9 +772,7 @@ type Frontmatter {
     # Configures the locale Moment.js will use to format the date.
     locale: String
   ): Date
-  categories: [String]
   author: String
-  draft: Boolean
 }
 
 type Fields {
@@ -1148,9 +1146,7 @@ input FrontmatterFilterInput {
   date: DateQueryOperatorInput
   featured: BooleanQueryOperatorInput
   updatedDate: DateQueryOperatorInput
-  categories: StringQueryOperatorInput
   author: StringQueryOperatorInput
-  draft: BooleanQueryOperatorInput
 }
 
 input FieldsFilterInput {
@@ -1386,9 +1382,7 @@ enum FileFieldsEnum {
   childrenMarkdownRemark___frontmatter___date
   childrenMarkdownRemark___frontmatter___featured
   childrenMarkdownRemark___frontmatter___updatedDate
-  childrenMarkdownRemark___frontmatter___categories
   childrenMarkdownRemark___frontmatter___author
-  childrenMarkdownRemark___frontmatter___draft
   childrenMarkdownRemark___fields___slug
   childrenMarkdownRemark___fields___collection
   childrenMarkdownRemark___fields___isCategoryIndex
@@ -1450,9 +1444,7 @@ enum FileFieldsEnum {
   childMarkdownRemark___frontmatter___date
   childMarkdownRemark___frontmatter___featured
   childMarkdownRemark___frontmatter___updatedDate
-  childMarkdownRemark___frontmatter___categories
   childMarkdownRemark___frontmatter___author
-  childMarkdownRemark___frontmatter___draft
   childMarkdownRemark___fields___slug
   childMarkdownRemark___fields___collection
   childMarkdownRemark___fields___isCategoryIndex
@@ -2815,9 +2807,7 @@ enum MarkdownRemarkFieldsEnum {
   frontmatter___date
   frontmatter___featured
   frontmatter___updatedDate
-  frontmatter___categories
   frontmatter___author
-  frontmatter___draft
   fields___slug
   fields___collection
   fields___isCategoryIndex

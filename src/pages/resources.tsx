@@ -35,7 +35,6 @@ export default function Resources() {
             title
             description
             author
-            draft
           }
         }
       }
@@ -55,6 +54,7 @@ export default function Resources() {
           indexUrl={node.fields?.slug ?? "#"}
           descriptionHtml={node.frontmatter?.description ?? node.excerpt ?? ""}
           title={node.frontmatter?.title ?? "(No title)"}
+          type="category"
         />
       ))}
     </SimpleGrid>

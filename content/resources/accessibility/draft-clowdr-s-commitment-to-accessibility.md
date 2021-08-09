@@ -5,9 +5,6 @@ description:
   Clowdr is committed to accessibility as a core part of our platform.
   In this page we explain how we deliver on that commitment.
 author: Ed Nutting
-categories:
-  - Accessibility
-draft: false
 ---
 
 **Clowdr aims to provide a social platform. One key element of that is providing a platform that anyone can access. Another is making sure everyone feels welcome. That's why accessibility and inclusivity are woven into every part of our software.**

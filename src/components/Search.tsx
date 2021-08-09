@@ -76,9 +76,10 @@ export function Search({
                 <ListItem key={result.id} w="100%">
                   <CategoryCard
                     title={result.title}
-                    indexUrl={`/resources${result.slug}`}
+                    indexUrl={result.slug}
                     author={result.author}
                     descriptionHtml={result.description}
+                    type={result.isCategoryIndex ? "category" : "resource"}
                   />
                 </ListItem>
               ))

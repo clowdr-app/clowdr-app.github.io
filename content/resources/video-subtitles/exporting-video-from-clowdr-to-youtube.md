@@ -1,13 +1,10 @@
 ---
 updatedDate: 2021-05-26T09:05:07+00:00
-categories:
-  - Videos
 title: Exporting content from Clowdr to YouTube
 description:
   Simple instructions for exporting video content from Clowdr directly
   into YouTube!
 author: Cristal Mojica
-draft: false
 ---
 
 #### Ready to Archive Your Conference Content?
@@ -52,7 +49,7 @@ After combining videos has completed, you can then move on to exporting videos d
 
 ![](/images/export-1.jpg)
 
-**Step 2.** In the Export area, you will see three tabs - _Connected YouTube Accounts_, _Upload Videos to YouTube_, and _Uploaded Videos_. In the **_Connected YouTube Accounts **tab, click **_+Connect to YouTube**.
+**Step 2.** In the Export area, you will see three tabs - _Connected YouTube Accounts_, _Upload Videos to YouTube_, and _Uploaded Videos_. In the **\_Connected YouTube Accounts **tab, click **\_+Connect to YouTube**.
 
 ![](/images/export-2.jpg)
 

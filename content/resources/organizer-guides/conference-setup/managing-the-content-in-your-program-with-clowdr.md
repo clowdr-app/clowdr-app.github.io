@@ -3,9 +3,6 @@ updatedDate: 2021-04-21T05:57:27.000+00:00
 title: Managing your content with Clowdr
 description: Learn how to manage your program's content on Clowdr
 author: Cristal Mojica
-categories:
-  - tutorials
-draft: false
 ---
 
 We know content is at the center of your community - and content management tends to be one of the most laborious parts of running a conference.

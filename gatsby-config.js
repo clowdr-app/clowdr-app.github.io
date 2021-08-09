@@ -1,3 +1,5 @@
+const gql = require("fake-tag");
+
 /** @type import("gatsby-transformer-remark").RemarkConfig */
 const transformerRemark = {
   resolve: `gatsby-transformer-remark`,
@@ -54,27 +56,30 @@ const transformerRemark = {
 const localSearchOptions = {
   name: "resources",
   engine: "lunr",
-  query: `
-      {
-        allMarkdownRemark {
-          nodes {
-            id
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-              description
-              author
-            }
-            rawMarkdownBody
+  query: gql`
+    {
+      allMarkdownRemark(
+        filter: { fields: { collection: { eq: "resources" } } }
+      ) {
+        nodes {
+          id
+          fields {
+            slug
+            isCategoryIndex
           }
+          frontmatter {
+            title
+            description
+            author
+          }
+          rawMarkdownBody
         }
       }
-    `,
+    }
+  `,
   ref: "id",
   index: ["title", "body"],
-  store: ["id", "slug", "title", "description", "author"],
+  store: ["id", "slug", "title", "description", "author", "isCategoryIndex"],
 
   // Function used to map the result from the GraphQL query. This should
   // return an array of items to index in the form of flat objects
@@ -88,6 +93,7 @@ const localSearchOptions = {
       body: node.rawMarkdownBody,
       author: node.frontmatter.author,
       description: node.frontmatter.description,
+      isCategoryIndex: node.fields.isCategoryIndex,
     })),
 };
 
@@ -114,6 +120,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/resources`,
+        ignore: process.env.NODE_ENV === `production` ? [`**/draft-*`] : [],
         name: `resources`,
       },
     },

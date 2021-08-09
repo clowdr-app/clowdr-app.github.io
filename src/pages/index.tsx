@@ -100,6 +100,7 @@ export default function Home() {
                 }
                 title={node.frontmatter?.title ?? "(No title)"}
                 author={node.frontmatter?.author ?? undefined}
+                type="resource"
               />
             ))}
           </SimpleGrid>

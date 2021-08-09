@@ -3,9 +3,6 @@ updatedDate: 2021-04-21T05:38:19.000+00:00
 title: Managing people within Clowdr
 description: Learn how to manage the people in your program with Clowdr
 author: Cristal Mojica
-categories:
-  - tutorials
-draft: false
 ---
 
 The following video resource summarizes how you can effectively manage the people associated with your event - including their connection to your event's content and schedule.

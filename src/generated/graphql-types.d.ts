@@ -740,8 +740,6 @@ export enum FileFieldsEnum {
   ChildrenMarkdownRemarkFrontmatterFeatured = 'childrenMarkdownRemark___frontmatter___featured',
   ChildrenMarkdownRemarkFrontmatterUpdatedDate = 'childrenMarkdownRemark___frontmatter___updatedDate',
   ChildrenMarkdownRemarkFrontmatterAuthor = 'childrenMarkdownRemark___frontmatter___author',
-  ChildrenMarkdownRemarkFrontmatterCategories = 'childrenMarkdownRemark___frontmatter___categories',
-  ChildrenMarkdownRemarkFrontmatterDraft = 'childrenMarkdownRemark___frontmatter___draft',
   ChildrenMarkdownRemarkFieldsSlug = 'childrenMarkdownRemark___fields___slug',
   ChildrenMarkdownRemarkFieldsCollection = 'childrenMarkdownRemark___fields___collection',
   ChildrenMarkdownRemarkFieldsIsCategoryIndex = 'childrenMarkdownRemark___fields___isCategoryIndex',
@@ -804,8 +802,6 @@ export enum FileFieldsEnum {
   ChildMarkdownRemarkFrontmatterFeatured = 'childMarkdownRemark___frontmatter___featured',
   ChildMarkdownRemarkFrontmatterUpdatedDate = 'childMarkdownRemark___frontmatter___updatedDate',
   ChildMarkdownRemarkFrontmatterAuthor = 'childMarkdownRemark___frontmatter___author',
-  ChildMarkdownRemarkFrontmatterCategories = 'childMarkdownRemark___frontmatter___categories',
-  ChildMarkdownRemarkFrontmatterDraft = 'childMarkdownRemark___frontmatter___draft',
   ChildMarkdownRemarkFieldsSlug = 'childMarkdownRemark___fields___slug',
   ChildMarkdownRemarkFieldsCollection = 'childMarkdownRemark___fields___collection',
   ChildMarkdownRemarkFieldsIsCategoryIndex = 'childMarkdownRemark___fields___isCategoryIndex',
@@ -1028,8 +1024,6 @@ export type Frontmatter = {
   featured?: Maybe<Scalars['Boolean']>;
   updatedDate?: Maybe<Scalars['Date']>;
   author?: Maybe<Scalars['String']>;
-  categories?: Maybe<Array<Maybe<Scalars['String']>>>;
-  draft?: Maybe<Scalars['Boolean']>;
 };
 
 
@@ -1055,8 +1049,6 @@ export type FrontmatterFilterInput = {
   featured?: Maybe<BooleanQueryOperatorInput>;
   updatedDate?: Maybe<DateQueryOperatorInput>;
   author?: Maybe<StringQueryOperatorInput>;
-  categories?: Maybe<StringQueryOperatorInput>;
-  draft?: Maybe<BooleanQueryOperatorInput>;
 };
 
 export enum ImageCropFocus {
@@ -1864,8 +1856,6 @@ export enum MarkdownRemarkFieldsEnum {
   FrontmatterFeatured = 'frontmatter___featured',
   FrontmatterUpdatedDate = 'frontmatter___updatedDate',
   FrontmatterAuthor = 'frontmatter___author',
-  FrontmatterCategories = 'frontmatter___categories',
-  FrontmatterDraft = 'frontmatter___draft',
   FieldsSlug = 'fields___slug',
   FieldsCollection = 'fields___collection',
   FieldsIsCategoryIndex = 'fields___isCategoryIndex',
@@ -4011,7 +4001,7 @@ export type FeaturedResourcesQuery = { __typename?: 'Query', allMarkdownRemark: 
 export type ResourcesQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type ResourcesQuery = { __typename?: 'Query', allMarkdownRemark: { __typename?: 'MarkdownRemarkConnection', nodes: Array<{ __typename?: 'MarkdownRemark', excerpt?: Maybe<string>, fields?: Maybe<{ __typename?: 'Fields', slug?: Maybe<string> }>, frontmatter?: Maybe<{ __typename?: 'Frontmatter', title?: Maybe<string>, description?: Maybe<string>, author?: Maybe<string>, draft?: Maybe<boolean> }> }> }, localSearchResources?: Maybe<{ __typename?: 'LocalSearchResources', index: string, store: any }> };
+export type ResourcesQuery = { __typename?: 'Query', allMarkdownRemark: { __typename?: 'MarkdownRemarkConnection', nodes: Array<{ __typename?: 'MarkdownRemark', excerpt?: Maybe<string>, fields?: Maybe<{ __typename?: 'Fields', slug?: Maybe<string> }>, frontmatter?: Maybe<{ __typename?: 'Frontmatter', title?: Maybe<string>, description?: Maybe<string>, author?: Maybe<string> }> }> }, localSearchResources?: Maybe<{ __typename?: 'LocalSearchResources', index: string, store: any }> };
 
 export type ResourceCategoryBySlugQueryVariables = Exact<{
   id: Scalars['String'];
@@ -4019,7 +4009,7 @@ export type ResourceCategoryBySlugQueryVariables = Exact<{
 }>;
 
 
-export type ResourceCategoryBySlugQuery = { __typename?: 'Query', site?: Maybe<{ __typename?: 'Site', siteMetadata?: Maybe<{ __typename?: 'SiteSiteMetadata', title?: Maybe<string> }> }>, markdownRemark?: Maybe<{ __typename?: 'MarkdownRemark', id: string, excerpt?: Maybe<string>, htmlAst?: Maybe<any>, frontmatter?: Maybe<{ __typename?: 'Frontmatter', title?: Maybe<string>, updatedDate?: Maybe<any>, description?: Maybe<string> }> }>, allMarkdownRemark: { __typename?: 'MarkdownRemarkConnection', nodes: Array<{ __typename?: 'MarkdownRemark', excerpt?: Maybe<string>, fields?: Maybe<{ __typename?: 'Fields', slug?: Maybe<string>, isCategoryIndex?: Maybe<boolean> }>, frontmatter?: Maybe<{ __typename?: 'Frontmatter', title?: Maybe<string>, description?: Maybe<string>, author?: Maybe<string>, draft?: Maybe<boolean> }> }> } };
+export type ResourceCategoryBySlugQuery = { __typename?: 'Query', site?: Maybe<{ __typename?: 'Site', siteMetadata?: Maybe<{ __typename?: 'SiteSiteMetadata', title?: Maybe<string> }> }>, markdownRemark?: Maybe<{ __typename?: 'MarkdownRemark', id: string, excerpt?: Maybe<string>, htmlAst?: Maybe<any>, frontmatter?: Maybe<{ __typename?: 'Frontmatter', title?: Maybe<string>, updatedDate?: Maybe<any>, description?: Maybe<string> }> }>, allMarkdownRemark: { __typename?: 'MarkdownRemarkConnection', nodes: Array<{ __typename?: 'MarkdownRemark', excerpt?: Maybe<string>, fields?: Maybe<{ __typename?: 'Fields', slug?: Maybe<string>, isCategoryIndex?: Maybe<boolean> }>, frontmatter?: Maybe<{ __typename?: 'Frontmatter', title?: Maybe<string>, description?: Maybe<string>, author?: Maybe<string> }> }> } };
 
 export type ResourcePageBySlugQueryVariables = Exact<{
   id: Scalars['String'];

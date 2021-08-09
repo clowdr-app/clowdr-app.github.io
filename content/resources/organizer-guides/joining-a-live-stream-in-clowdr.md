@@ -1,11 +1,8 @@
 ---
 updatedDate: 2021-04-27T09:13:53.000+00:00
-categories:
-  - tutorials
 title: Joining a live-stream in Clowdr
 description: Learn how to join a livestream as a presenter or chair.
 author: Ed Nutting
-draft: false
 ---
 
 This tutorial includes detailed instructions (in text, video and screenshots) for how to prepare for and join into a Clowdr livestream event.

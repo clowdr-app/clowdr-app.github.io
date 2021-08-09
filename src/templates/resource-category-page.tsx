@@ -11,6 +11,8 @@ import {
   SimpleGrid,
   Text,
   UnorderedList,
+  useId,
+  VisuallyHidden,
 } from "@chakra-ui/react";
 import { graphql, PageProps } from "gatsby";
 import React from "react";
@@ -49,18 +51,22 @@ export default function ResourceCategoryBySlug({
 }: PageProps<ResourceCategoryBySlugQuery, ResourcePageContext>) {
   const post = data.markdownRemark;
   const categoryNodes = data.allMarkdownRemark.nodes.filter(
-    node => node.fields.isCategoryIndex
+    node => node.fields?.isCategoryIndex
   );
   const resourceNodes = data.allMarkdownRemark.nodes.filter(
-    node => !node.fields.isCategoryIndex
+    node => !node.fields?.isCategoryIndex
   );
+  const categoriesHeadingId = useId();
+  const resourcesHeadingId = useId();
 
   const categoriesEl = categoryNodes.length ? (
-    <>
-      <Heading as="h3" size="xl">
-        Subcategories
-      </Heading>
-      <SimpleGrid columns={2} spacing={4} mt={2}>
+    <section aria-labelledby={categoriesHeadingId}>
+      <VisuallyHidden>
+        <Heading as="h2" id={categoriesHeadingId}>
+          Sub-categories
+        </Heading>
+      </VisuallyHidden>
+      <SimpleGrid columns={2} spacing={4} mt={2} mb={8}>
         {categoryNodes.map((node, i) => (
           <CategoryCard
             key={i}
@@ -69,24 +75,35 @@ export default function ResourceCategoryBySlug({
               node.frontmatter?.description ?? node.excerpt ?? ""
             }
             title={node.frontmatter?.title ?? "(No title)"}
+            type="category"
           />
         ))}
       </SimpleGrid>
-    </>
+    </section>
   ) : undefined;
 
   const resourcesEl = resourceNodes.length ? (
-    <SimpleGrid columns={2} spacing={4} mt={2}>
-      {resourceNodes.map((node, i) => (
-        <CategoryCard
-          key={i}
-          indexUrl={node.fields?.slug ?? "#"}
-          descriptionHtml={node.frontmatter?.description ?? node.excerpt ?? ""}
-          title={node.frontmatter?.title ?? "(No title)"}
-          author={node.frontmatter?.author ?? undefined}
-        />
-      ))}
-    </SimpleGrid>
+    <section aria-labelledby={resourcesHeadingId}>
+      <VisuallyHidden>
+        <Heading as="h2" id={resourcesHeadingId}>
+          Resources
+        </Heading>
+      </VisuallyHidden>
+      <SimpleGrid columns={2} spacing={4} mt={2}>
+        {resourceNodes.map((node, i) => (
+          <CategoryCard
+            key={i}
+            indexUrl={node.fields?.slug ?? "#"}
+            descriptionHtml={
+              node.frontmatter?.description ?? node.excerpt ?? ""
+            }
+            title={node.frontmatter?.title ?? "(No title)"}
+            author={node.frontmatter?.author ?? undefined}
+            type="resource"
+          />
+        ))}
+      </SimpleGrid>
+    </section>
   ) : undefined;
 
   return (
@@ -110,7 +127,7 @@ export default function ResourceCategoryBySlug({
             ))}
           </Breadcrumb>
           <header>
-            <Heading as="h2" size="2xl" itemProp="headline">
+            <Heading as="h1" size="2xl" itemProp="headline">
               Category: {post?.frontmatter?.title}
             </Heading>
           </header>
@@ -131,11 +148,11 @@ export default function ResourceCategoryBySlug({
             {post?.htmlAst?.children?.length ? (
               renderAst(post?.htmlAst)
             ) : (
-              <Text>{post?.frontmatter.description}</Text>
+              <Text>{post?.frontmatter?.description}</Text>
             )}
           </chakra.section>
           <chakra.section mt={2}>{categoriesEl}</chakra.section>
-          <chakra.section mt={2}>{resourcesEl}</chakra.section>
+          <chakra.section mt={4}>{resourcesEl}</chakra.section>
         </Container>
       </Layout>
     </>
@@ -175,7 +192,6 @@ export const query = graphql`
           title
           description
           author
-          draft
         }
       }
     }

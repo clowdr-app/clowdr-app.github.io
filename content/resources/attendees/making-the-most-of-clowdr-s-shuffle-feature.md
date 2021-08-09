@@ -1,13 +1,10 @@
 ---
 updatedDate: 2021-04-28T06:41:08.000+00:00
-categories:
-  - attendees
 title: Making the most of Clowdr's Shuffle feature
 description:
   Clowdr's social experience includes randomized networking via Shuffle
   queues - learn more about them!
 author: Cristal Mojica
-draft: false
 ---
 
 ### Spontaneous conversations and randomized networking are made easy with Shuffle queues

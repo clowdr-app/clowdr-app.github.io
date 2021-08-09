@@ -1,11 +1,8 @@
 ---
 updatedDate: 2021-05-04T09:16:21+00:00
-categories:
-  - schedule
 title: Clowdr's event modes
 description: Clowdr's event modes and what each of them means.
 author: Ed Nutting
-draft: false
 ---
 
 Clowdr has a range of modes to choose from, which can be combined to achieve various kinds of session. Below each mode is described for what it does on its own. Please see our other guides for how to combine events to achieve different kinds of sessions (plenary, paper presentations, Q&As, AMAs, poster presentations, poster competitions, etc).

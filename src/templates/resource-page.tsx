@@ -44,7 +44,7 @@ export default function ResourcePageBySlug({
             ))}
           </Breadcrumb>
           <header>
-            <Heading as="h2" size="2xl" itemProp="headline">
+            <Heading as="h1" size="2xl" itemProp="headline">
               {post?.frontmatter?.title}
             </Heading>
             {post?.frontmatter?.updatedDate ? (
