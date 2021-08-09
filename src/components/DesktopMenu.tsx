@@ -9,7 +9,7 @@ export function DesktopMenu(): JSX.Element {
     <nav>
       <HStack
         flexWrap="wrap"
-        columnGap={0}
+        columngap={0}
         bgGradient="linear(to-b, purple.900 20%, purple.800)"
         bgColor="purple.900"
         layerStyle="hero"

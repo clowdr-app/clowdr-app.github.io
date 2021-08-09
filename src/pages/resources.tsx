@@ -1,5 +1,8 @@
 import {
   Box,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
   Container,
   Heading,
   Link,
@@ -64,7 +67,15 @@ export default function Resources() {
     <>
       <Title title="Resources" />
       <Layout>
-        <Container my={12}>
+        <Container my={8}>
+          <Breadcrumb>
+            <BreadcrumbItem key="home">
+              <BreadcrumbLink href={`/`}>Home</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbItem key="resources" isCurrentPage={true}>
+              <BreadcrumbLink __css={{}}>All Resources</BreadcrumbLink>
+            </BreadcrumbItem>
+          </Breadcrumb>
           <Heading as="h1" size="2xl">
             All Resources
           </Heading>

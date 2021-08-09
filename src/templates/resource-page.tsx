@@ -1,16 +1,8 @@
-import {
-  Badge,
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  chakra,
-  Container,
-  Heading,
-  Icon,
-} from "@chakra-ui/react";
+import { Badge, chakra, Container, Heading, Icon } from "@chakra-ui/react";
 import { graphql, PageProps } from "gatsby";
 import React from "react";
 import { AiOutlineUser } from "react-icons/ai";
+import { Breadcrumbs } from "../components/Breadcrumbs";
 import { Layout } from "../components/Layout";
 import { RenderHtml } from "../components/RenderHtml";
 import Title from "../components/Title";
@@ -34,15 +26,7 @@ export default function ResourcePageBySlug({
           itemType="http://schema.org/Article"
           overflowX="auto"
         >
-          <Breadcrumb>
-            {pageContext.breadcrumbs.map(breadcrumb => (
-              <BreadcrumbItem key={breadcrumb.url}>
-                <BreadcrumbLink href={`/resources${breadcrumb.url}`}>
-                  {breadcrumb.title}
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-            ))}
-          </Breadcrumb>
+          <Breadcrumbs breadcrumbs={pageContext.breadcrumbs} />
           <header>
             <Heading as="h1" size="2xl" itemProp="headline">
               {post?.frontmatter?.title}

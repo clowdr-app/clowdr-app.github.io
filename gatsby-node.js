@@ -67,7 +67,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   resourceEdges.forEach(edge => {
     /** @type {{name: string, url: string}[]} */
     const rawBreadcrumbs = breadcrumb(edge.node.fields.slug, {
-      home: "All resources",
+      home: "All Resources",
     });
     const breadcrumbs = rawBreadcrumbs.map(breadcrumb => ({
       ...breadcrumb,

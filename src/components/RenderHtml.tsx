@@ -4,7 +4,12 @@ import {
   Heading,
   ListItem,
   OrderedList,
+  Table,
+  Tbody,
+  Td,
   Text,
+  Thead,
+  Tr,
   UnorderedList,
 } from "@chakra-ui/react";
 import React from "react";
@@ -25,6 +30,11 @@ const processor = unified().use(rehypeReact, {
     ul: (props: any) => <UnorderedList {...props} />,
     li: (props: any) => <ListItem {...props} />,
     hr: (props: any) => <Divider {...props} />,
+    table: (props: any) => <Table {...props} />,
+    tbody: (props: any) => <Tbody {...props} />,
+    thead: (props: any) => <Thead {...props} />,
+    tr: (props: any) => <Tr {...props} />,
+    td: (props: any) => <Td {...props} />,
   },
 });
 

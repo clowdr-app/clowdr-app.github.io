@@ -1,7 +1,4 @@
 import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
   chakra,
   Container,
   Divider,
@@ -18,6 +15,7 @@ import { graphql, PageProps } from "gatsby";
 import React from "react";
 import rehypeReact from "rehype-react";
 import { unified } from "unified";
+import { Breadcrumbs } from "../components/Breadcrumbs";
 import { CategoryCard } from "../components/CategoryCard";
 import { Layout } from "../components/Layout";
 import Title from "../components/Title";
@@ -117,15 +115,7 @@ export default function ResourceCategoryBySlug({
           itemType="http://schema.org/Article"
           overflowX="auto"
         >
-          <Breadcrumb>
-            {pageContext.breadcrumbs.map(breadcrumb => (
-              <BreadcrumbItem key={breadcrumb.url}>
-                <BreadcrumbLink href={`/resources${breadcrumb.url}`}>
-                  {breadcrumb.title}
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-            ))}
-          </Breadcrumb>
+          <Breadcrumbs breadcrumbs={pageContext.breadcrumbs} />
           <header>
             <Heading as="h1" size="2xl" itemProp="headline">
               Category: {post?.frontmatter?.title}
@@ -153,6 +143,9 @@ export default function ResourceCategoryBySlug({
           </chakra.section>
           <chakra.section mt={2}>{categoriesEl}</chakra.section>
           <chakra.section mt={4}>{resourcesEl}</chakra.section>
+          {!categoryNodes.length && !resourceNodes.length ? (
+            <Text mt={8}>Sorry, there's nothing in this category yet!</Text>
+          ) : undefined}
         </Container>
       </Layout>
     </>
