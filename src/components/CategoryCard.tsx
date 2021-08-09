@@ -46,7 +46,7 @@ export function CategoryCard({
       bg={"white"}
       p={4}
     >
-      <HStack>
+      <HStack h="100%">
         {type === "category" ? (
           <Icon
             m={2}
