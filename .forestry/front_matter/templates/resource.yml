@@ -9,12 +9,6 @@ fields:
   config:
     required: true
     min: 5
-- type: text
-  name: slug
-  label: slug
-  description: Path slug for the resource.
-  config:
-    required: true
 - type: datetime
   name: updatedDate
   label: updatedDate
