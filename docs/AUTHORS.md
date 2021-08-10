@@ -1,3 +1,7 @@
+---
+title: Authoring content
+---
+
 # Authoring content
 
 This guide will help you author or edit resource content through Forestry. You should already have access to a Forestry site attached to this repository.
