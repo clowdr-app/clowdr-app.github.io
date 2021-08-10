@@ -1,4 +1,8 @@
-# Contributing
+---
+title: Contributing (for developers)
+---
+
+# Contributing (for developers)
 
 This document outlines steps for developers to start working on the site.
 
