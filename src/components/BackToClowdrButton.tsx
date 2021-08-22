@@ -8,16 +8,16 @@ export function BackToClowdrButtonInner({ className }: { className?: string }) {
   return (
     <Button
       as={Link}
-      href="https://www.clowdr.org/"
+      href="https://midspace.app/"
       minWidth="min-content"
       fontSize="lg"
       p={4}
       variant="solid-2"
       className={className}
-      title="Return to clowdr.org"
+      title="Return to midspace.app"
       rightIcon={<ExternalLinkIcon />}
     >
-      Back to clowdr.org
+      Back to midspace.app
     </Button>
   );
 }

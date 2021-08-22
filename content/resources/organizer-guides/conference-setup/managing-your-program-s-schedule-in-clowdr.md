@@ -1,19 +1,19 @@
 ---
 updatedDate: 2021-04-21T06:01:24.000+00:00
-title: Managing events in your schedule with Clowdr
-description: Learn how to create and manage your schedule on Clowdr
+title: Managing events in your schedule with Midspace
+description: Learn how to create and manage your schedule on Midspace
 author: Cristal Mojica
 ---
 
-Your schedule allows attendees to understand what is going to be included in your program - and helps them plan for and get excited about your conference content! The following resource summarizes how you can easily manage the events in your program's schedule with Clowdr.
+Your schedule allows attendees to understand what is going to be included in your program - and helps them plan for and get excited about your conference content! The following resource summarizes how you can easily manage the events in your program's schedule with Midspace.
 
-We share a brief overview of the relationship between events and content, then walk through Clowdr’s UI to show you exactly how to create and schedule an event. Common scenarios are identified and advice for how to tackle them is provided!
+We share a brief overview of the relationship between events and content, then walk through Midspace’s UI to show you exactly how to create and schedule an event. Common scenarios are identified and advice for how to tackle them is provided!
 
 `youtube:https://youtu.be/13KxFrzGBL0`
 
 **You can follow these simple instructions to create an event in your schedule:**
 
-1. Navigate to the Schedule area of the Clowdr admin dashboard.
+1. Navigate to the Schedule area of the Midspace admin dashboard.
 
 ![](/images/schedule-1.jpg)
 

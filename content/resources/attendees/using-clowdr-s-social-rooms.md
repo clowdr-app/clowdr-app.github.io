@@ -1,15 +1,15 @@
 ---
 updatedDate: 2021-04-28T06:29:07+00:00
-title: Using Clowdr's Social Rooms
+title: Using Midspace's Social Rooms
 description:
-  Learn about Clowdr's Social Rooms feature - an important part of the
+  Learn about Midspace's Social Rooms feature - an important part of the
   attendee social experience!
 author: Cristal Mojica
 ---
 
-### Wondering about the social experience on Clowdr?
+### Wondering about the social experience on Midspace?
 
-This is a brief overview of our Social Rooms feature - an key part of the social experience on Clowdr!
+This is a brief overview of our Social Rooms feature - an key part of the social experience on Midspace!
 
 Social Rooms provide an informal and fun way for attendees to connect with each other via text and video chat. This short video provides an overview of the following:
 

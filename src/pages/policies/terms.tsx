@@ -37,7 +37,7 @@ export default function Privacy() {
           </Text>
           <Text>
             To contact us, please email{" "}
-            <Link href="mailto:hello@clowdr.org">hello@clowdr.org</Link>.
+            <Link href="mailto:hello@midspace.app">hello@midspace.app</Link>.
           </Text>
           <Text>
             <strong>By using our site you accept these terms</strong>
@@ -147,7 +147,7 @@ export default function Privacy() {
           <Text>
             If you know or suspect that anyone other than you knows your user
             identification code or password, you must promptly notify us at{" "}
-            <Link href="mailto:hello@clowdr.org">hello@clowdr.org</Link>.
+            <Link href="mailto:hello@midspace.app">hello@midspace.app</Link>.
           </Text>
           <Text>
             <strong>How you may use material on our site</strong>
@@ -317,16 +317,16 @@ export default function Privacy() {
           <Text>
             The Platform is provided to you "AS IS" and "AS AVAILABLE" and with
             all faults and defects without warranty of any kind. To the maximum
-            extent permitted under applicable law, Clowdr on its own behalf and
-            on behalf of its affiliates and its and their respective licensors
-            and service providers, expressly disclaims all warranties, whether
-            express, implied, statutory or otherwise, with respect to the
-            Platform, including all implied warranties of merchantability,
+            extent permitted under applicable law, Midspace on its own behalf
+            and on behalf of its affiliates and its and their respective
+            licensors and service providers, expressly disclaims all warranties,
+            whether express, implied, statutory or otherwise, with respect to
+            the Platform, including all implied warranties of merchantability,
             fitness for a particular purpose, title and non-infringement, and
             warranties that may arise out of course of dealing, course of
             performance, usage or trade practice. Without limitation to the
-            foregoing, Clowdr provides no warranty or undertaking, and makes no
-            representation of any kind that the Platform will meet your
+            foregoing, Midspace provides no warranty or undertaking, and makes
+            no representation of any kind that the Platform will meet your
             requirements, achieve any intended results, be compatible or work
             with any other software, applications, systems or services, operate
             without interruption, meet any performance or reliability standards
@@ -341,7 +341,7 @@ export default function Privacy() {
             be uninterrupted or error-free; (iii) as to the accuracy,
             reliability, or currency of any information or content provided
             through the Platform; or (iv) that the Platform, its servers, the
-            content, or e-mails sent from or on behalf of Clowdr are free of
+            content, or e-mails sent from or on behalf of Midspace are free of
             viruses, scripts, trojan horses, worms, malware, timebombs or other
             harmful components.
           </Text>
@@ -473,7 +473,7 @@ export default function Privacy() {
           <Text>
             If you wish to link to or make any use of content on our site other
             than that set out above, please contact{" "}
-            <Link href="mailto:hello@clowdr.org">hello@clowdr.org</Link>.
+            <Link href="mailto:hello@midspace.app">hello@midspace.app</Link>.
           </Text>
           <Text>
             <strong>Which country's laws apply to any disputes?</strong>
@@ -497,7 +497,7 @@ export default function Privacy() {
             <strong>Our trade marks</strong>
           </Text>
           <Text>
-            Clowdr is a trade mark of Clowdr CIC. You are not permitted to use
+            Midspace is a trade mark of Clowdr CIC. You are not permitted to use
             it without our approval, unless it is part of material you are using
             as permitted under <em>How you may use material on our site</em>.
           </Text>

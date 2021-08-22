@@ -1,17 +1,17 @@
 ---
 updatedDate: 2021-05-26T09:05:07+00:00
-title: Exporting content from Clowdr to YouTube
+title: Exporting content from Midspace to YouTube
 description:
-  Simple instructions for exporting video content from Clowdr directly
+  Simple instructions for exporting video content from Midspace directly
   into YouTube!
 author: Cristal Mojica
 ---
 
 #### Ready to Archive Your Conference Content?
 
-Clowdr makes it quick and easy to package and export conference content directly to your organization's YouTube channel.
+Midspace makes it quick and easy to package and export conference content directly to your organization's YouTube channel.
 
-Exporting presentations from within Clowdr can save you a great deal of time as an organizer, by reducing the steps involved in post-event content management.
+Exporting presentations from within Midspace can save you a great deal of time as an organizer, by reducing the steps involved in post-event content management.
 
 1. **Combine videos**
 
@@ -19,7 +19,7 @@ Exporting presentations from within Clowdr can save you a great deal of time as 
 
 2. **Export to YouTube**
 
-   With Clowdr, you can export videos directly to YouTube - there's no need to download and re-upload the video files. Clowdr's export also includes subtitles and template-based descriptions to include abstracts, author names and links.
+   With Midspace, you can export videos directly to YouTube - there's no need to download and re-upload the video files. Midspace's export also includes subtitles and template-based descriptions to include abstracts, author names and links.
 
 Follow these simple instructions to get started!
 
@@ -37,7 +37,7 @@ Combining videos enables you to stitch together videos, such as a pre-recorded p
 
 **Step 5.** Review the combinations that are about to be generated.
 
-> Please note that combining many videos may take Clowdr many hours, particularly if any of the videos are long recordings.
+> Please note that combining many videos may take Midspace many hours, particularly if any of the videos are long recordings.
 
 **Step 6.** Click **_Combine_**. You can now close the page while you wait for the combines to complete.
 
@@ -45,7 +45,7 @@ Combining videos enables you to stitch together videos, such as a pre-recorded p
 
 After combining videos has completed, you can then move on to exporting videos directly to YouTube.
 
-**Step 1.** Navigate to the **_Export_** panel in the Clowdr admin dashboard.
+**Step 1.** Navigate to the **_Export_** panel in the Midspace admin dashboard.
 
 ![](/images/export-1.jpg)
 
@@ -53,7 +53,7 @@ After combining videos has completed, you can then move on to exporting videos d
 
 ![](/images/export-2.jpg)
 
-This will take you to a Google authentication page. From here, you can select the correct Google/YouTube account to link to Clowdr.
+This will take you to a Google authentication page. From here, you can select the correct Google/YouTube account to link to Midspace.
 
 ![](/images/export-3.jpg)
 
@@ -82,11 +82,11 @@ If you are uploading combined videos, we recommend removing the "{{fileName}}" f
 **Recommended Description Template**
 
     {{#abstract}}{{{abstract}}}
-    
+
     {{/abstract}}
     {{#authors.length}}
     {{#authors}}{{{name}}}{{#affiliation}} ({{{affiliation}}}){{/affiliation}}, {{/authors}}
-    
+
     {{/authors.length}}
     {{#paperLinks.length}}
     {{#paperLinks}}{{#url}}
@@ -102,7 +102,7 @@ If you are uploading combined videos, we recommend removing the "{{fileName}}" f
 
 When exporting videos, you are able to select from the list of connected Google/YouTube accounts, as well as upload to specific channels and playlists.
 
-**Step 4.** Once you've uploaded content to YouTube, you are able to view the full list of videos in Clowdr from the _Uploaded Videos_ section.
+**Step 4.** Once you've uploaded content to YouTube, you are able to view the full list of videos in Midspace from the _Uploaded Videos_ section.
 
 The information listed includes the video YouTube ID, privacy status, and preview with playback ability.
 
@@ -110,6 +110,6 @@ The information listed includes the video YouTube ID, privacy status, and previe
 
 ### Now you're ready to start exporting!
 
-Please note: Google currently imposes tight API rate limits that restrict the volume of videos Clowdr can export per day (across all our customers). We will provide instruction about managing your export at the end of your conference.
+Please note: Google currently imposes tight API rate limits that restrict the volume of videos Midspace can export per day (across all our customers). We will provide instruction about managing your export at the end of your conference.
 
-If you need any advice or guidance, please don't hesitate to contact Clowdr.
+If you need any advice or guidance, please don't hesitate to contact Midspace.

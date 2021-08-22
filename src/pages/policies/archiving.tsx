@@ -13,18 +13,18 @@ export default function Archiving() {
             Archiving Policy
           </Heading>
           <Text>
-            Clowdr retains your conference's data for the time specified in our
-            service agreement with you. In general Clowdr is happy to provide
-            copies of data to conferences, since the conference owns that data
-            (as Data Controllers) as part of our standard services agreement.
-            The following policies apply to specific kinds of data within
-            Clowdr.
+            Midspace retains your conference's data for the time specified in
+            our service agreement with you. In general Midspace is happy to
+            provide copies of data to conferences, since the conference owns
+            that data (as Data Controllers) as part of our standard services
+            agreement. The following policies apply to specific kinds of data
+            within Midspace.
           </Text>
           <Heading as="h3" size="xl">
             Images and Videos
           </Heading>
           <Text>
-            Images and pre-recorded videos uploaded to Clowdr, as well as
+            Images and pre-recorded videos uploaded to Midspace, as well as
             recordings of any live streams, may be provided upon request as
             downloadable files. In addition, we may provide automatic uploading
             of videos to YouTube (when suitable authorization is granted to us).
@@ -35,11 +35,11 @@ export default function Archiving() {
             Chat messages
           </Heading>
           <Text>
-            We provide copies of "public" chats sent within Clowdr; In general
+            We provide copies of "public" chats sent within Midspace; In general
             these are messages sent in "hallway" rooms and rooms associated with
             particular content (papers, posters, etc). We will not, except at
             our sole discretion and only when given appropriate justification,
-            provide copies of private messages sent within Clowdr. Private
+            provide copies of private messages sent within Midspace. Private
             messages includes, for example, direct messages ("DMs"), messages
             sent in private group rooms or semi-private messages, such as
             messages sent in public ephemeral rooms (where attendees may have a

@@ -1,13 +1,13 @@
 ---
 updatedDate: 2021-04-26T04:13:48.000+00:00
-title: Technical requirements for using Clowdr
-description: Review the minimum technical requirements for using Clowdr
+title: Technical requirements for using Midspace
+description: Review the minimum technical requirements for using Midspace
 author: Cristal Mojica
 ---
 
-### Getting Ready to Use Clowdr?
+### Getting Ready to Use Midspace?
 
-We want to make sure that all users have a great experience on Clowdr!
+We want to make sure that all users have a great experience on Midspace!
 
 Here is the brief list of minimum technical requirements for using our platform:
 
@@ -19,21 +19,21 @@ Here is the brief list of minimum technical requirements for using our platform:
 
 **Video**
 
-Clowdr supports a wide range of video upload formats. However, for the best results, we recommend that you upload videos in the following format:
+Midspace supports a wide range of video upload formats. However, for the best results, we recommend that you upload videos in the following format:
 
 - Codec: H.264 (AVC)
 - Container: MP4
 - Resolution: 1920x1080 (1080p)
 
-Note: Clowdr does not support the following H.264 profiles: High 4:2:2, High 10-bit, High 4:4:4. Files produced in a ‘lossless’ mode are unlikely to work.
+Note: Midspace does not support the following H.264 profiles: High 4:2:2, High 10-bit, High 4:4:4. Files produced in a ‘lossless’ mode are unlikely to work.
 
-Tip: you can use the following [ffmpeg](https://www.ffmpeg.org/) command to convert many input videos to a format Clowdr accepts.
+Tip: you can use the following [ffmpeg](https://www.ffmpeg.org/) command to convert many input videos to a format Midspace accepts.
 
     ffmpeg -i <input file> -vcodec h264 -s hd1080 -crf 23 output.mp4
 
 **Other Content Formats**
 
-Clowdr supports PDFs, and the following image formats: PNG, JPG/JPEG, GIF and WebP.
+Midspace supports PDFs, and the following image formats: PNG, JPG/JPEG, GIF and WebP.
 
 We also support uploads for text/abstracts; links; youtube and other sites video embeddings (by url to the video); and zoom links!
 

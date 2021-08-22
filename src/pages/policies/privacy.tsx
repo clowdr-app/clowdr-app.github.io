@@ -26,9 +26,9 @@ export default function Privacy() {
           <Heading as="h2" size="2xl" mb={4}>
             Privacy Policy
           </Heading>
-          <Text>Welcome to Clowdr's privacy policy.</Text>
+          <Text>Welcome to Midspace's privacy policy.</Text>
           <Text>
-            Clowdr respects your privacy and is committed to protecting your
+            Midspace respects your privacy and is committed to protecting your
             personal data. This privacy policy will inform you as to how we look
             after your personal data when you visit our website (regardless of
             where you visit it from) and tell you about your privacy rights and
@@ -38,7 +38,7 @@ export default function Privacy() {
             <strong>Purpose of this privacy policy</strong>
           </Text>
           <Text>
-            This privacy policy aims to give you information on how Clowdr
+            This privacy policy aims to give you information on how Midspace
             collects and processes your personal data through your use of this
             website, including any data you may provide through your use of the
             website.
@@ -57,7 +57,7 @@ export default function Privacy() {
           </Text>
           <Text>
             Clowdr CIC is the controller and responsible for your personal data
-            (collectively referred to as "Clowdr", "we", "us" or "our" in this
+            (collectively referred to as "Midspace", "we", "us" or "our" in this
             privacy policy).
           </Text>
           <Text>
@@ -69,8 +69,8 @@ export default function Privacy() {
           </Text>
           <Text>
             Email address:{" "}
-            <Link as="a" href="mailto:welcome@clowdr.org">
-              welcome@clowdr.org
+            <Link as="a" href="mailto:welcome@midspace.app">
+              welcome@midspace.app
             </Link>
           </Text>
           <Text>
@@ -582,8 +582,8 @@ export default function Privacy() {
             <strong>or</strong> by following the opt-out links on any marketing
             message sent to you <strong>or</strong> by contacting us at any time
             on{" "}
-            <Link href="mailto:stop-emails@clowdr.org">
-              stop-emails@clowdr.org
+            <Link href="mailto:stop-emails@midspace.app">
+              stop-emails@midspace.app
             </Link>
             .
           </Text>

@@ -14,34 +14,33 @@ import Title from "../components/Title";
 import { FeaturedResourcesQuery } from "../generated/graphql-types";
 
 export default function Home() {
-  const result: FeaturedResourcesQuery =
-    useStaticQuery<FeaturedResourcesQuery>(graphql`
-      query FeaturedResources {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___title], order: ASC }
-          filter: {
-            fields: { collection: { eq: "resources" } }
-            frontmatter: { featured: { eq: true } }
+  const result: FeaturedResourcesQuery = useStaticQuery<FeaturedResourcesQuery>(graphql`
+    query FeaturedResources {
+      allMarkdownRemark(
+        sort: { fields: [frontmatter___title], order: ASC }
+        filter: {
+          fields: { collection: { eq: "resources" } }
+          frontmatter: { featured: { eq: true } }
+        }
+      ) {
+        nodes {
+          excerpt
+          fields {
+            slug
           }
-        ) {
-          nodes {
-            excerpt
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-              description
-              author
-            }
+          frontmatter {
+            title
+            description
+            author
           }
         }
       }
-    `);
+    }
+  `);
   const featuredResourceNodes = result.allMarkdownRemark.nodes;
   return (
     <>
-      <Title title="Resources - Clowdr" />
+      <Title title="Resources - Midspace" />
       <Layout>
         <Box w="auto" bgColor="brand.50">
           <HStack
@@ -62,8 +61,8 @@ export default function Home() {
                 Resources
               </Heading>
               <Text fontSize="3xl" fontWeight="normal" lineHeight={1.6}>
-                Organising or attending an event on Clowdr? Learn everything you
-                need to know here.
+                Organising or attending an event on Midspace? Learn everything
+                you need to know here.
               </Text>
             </Box>
             <Box

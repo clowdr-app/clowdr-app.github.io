@@ -1,7 +1,7 @@
 {
   "name": "clowdr-site",
   "private": true,
-  "description": "Clowdr's marketing site",
+  "description": "Midspace (formerly Clowdr) resources website",
   "version": "0.1.0",
   "scripts": {
     "build:dev": "cross-env NODE_ENV=development gatsby build",

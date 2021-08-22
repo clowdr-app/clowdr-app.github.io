@@ -27,7 +27,7 @@ export default function Footer() {
         >
           <Link as={GatsbyLink} to="/">
             <Heading as="h4" mb={4} size="md" fontWeight="bold" color="white">
-              Clowdr Resources
+              Midspace Resources
             </Heading>
           </Link>
           <Wrap alignItems="flex-start" flexWrap="wrap" spacing={12}>
@@ -49,7 +49,7 @@ export default function Footer() {
             © Clowdr CIC 2021
           </Heading>
           <Text>
-            Clowdr is a UK Community Interest Company, number{" "}
+            Midspace is a UK Community Interest Company, number{" "}
             <Link
               as="a"
               href="https://find-and-update.company-information.service.gov.uk/company/12984216"

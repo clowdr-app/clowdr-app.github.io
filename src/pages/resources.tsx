@@ -80,8 +80,8 @@ export default function Resources() {
             All Resources
           </Heading>
           <Text>
-            We are continually improving Clowdr's help resources.{" "}
-            <Link href="https://clowdr.org/contact-us">Contact us</Link> if you
+            We are continually improving Midspace's help resources.{" "}
+            <Link href="https://midspace.app/contact">Contact us</Link> if you
             have a suggestion for how we could improve these resources. (Or
             contribute directly{" "}
             <Link href="https://github.com/clowdr-app/clowdr-app.github.io/">

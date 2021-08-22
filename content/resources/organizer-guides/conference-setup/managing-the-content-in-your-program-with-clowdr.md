@@ -1,25 +1,25 @@
 ---
 updatedDate: 2021-04-21T05:57:27.000+00:00
-title: Managing your content with Clowdr
-description: Learn how to manage your program's content on Clowdr
+title: Managing your content with Midspace
+description: Learn how to manage your program's content on Midspace
 author: Cristal Mojica
 ---
 
 We know content is at the center of your community - and content management tends to be one of the most laborious parts of running a conference.
 
-Clowdr makes it easy to manage content, and empowers organizers to delegate and automate parts of the management process to reallocate time to other critical parts of the event - like supporting and connecting with your community.
+Midspace makes it easy to manage content, and empowers organizers to delegate and automate parts of the management process to reallocate time to other critical parts of the event - like supporting and connecting with your community.
 
-**The following resource summarizes how organizers can manage complex program content with Clowdr.**
+**The following resource summarizes how organizers can manage complex program content with Midspace.**
 
 Common scenarios are identified and advice for how to tackle them is provided!
 
-_To learn about linking content to the schedule, see our_ [_managing your schedule with Clowdr_](https://clowdr.org/resources/schedule) _resource, and to learn about assigning people to manage content, view our_ [_managing people within Clowdr_](https://clowdr.org/resources/people) _resource._
+_To learn about linking content to the schedule, see our_ [_managing your schedule with Midspace_](https://resources.midspace.app/schedule) _resource, and to learn about assigning people to manage content, view our_ [_managing people within Midspace_](https://resources.midspace.app/people) _resource._
 
 \[Video Coming Shortly\]
 
-##### Follow these simple instructions to add individual content items to your program in Clowdr (batch imports are also possible):
+##### Follow these simple instructions to add individual content items to your program in Midspace (batch imports are also possible):
 
-1. Navigate to the Content area of the Clowdr admin dashboard.
+1. Navigate to the Content area of the Midspace admin dashboard.
 
 ![](/images/content-1.jpg)
 
@@ -42,7 +42,7 @@ _To learn about linking content to the schedule, see our_ [_managing your schedu
 5. Options to customize the Content item include:
 
 - Adding a discussion room
-- Adding Content elements (files, videos, links, and more) that can be directly added to the item as an organizer from within Clowdr
+- Adding Content elements (files, videos, links, and more) that can be directly added to the item as an organizer from within Midspace
 - Adding Uploadable Content (elements that can be delegated externally to authors and other contributors), and
 - Managing and adding people
 

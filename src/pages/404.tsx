@@ -8,7 +8,7 @@ export default function PageNotFound() {
     <Layout>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Page not found | Clowdr</title>
+        <title>Page not found | Midspace</title>
       </Helmet>
       <Box text p={4}>
         <Heading as="h2" textAlign="center">

@@ -4,4 +4,4 @@ title: Accessibility
 author: Ross Gardiner
 ---
 
-Find out about Clowdr's accessibility features.
+Find out about Midspace's accessibility features.

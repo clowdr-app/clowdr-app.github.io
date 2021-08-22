@@ -19,14 +19,14 @@ export function DesktopMenu(): JSX.Element {
         <HStack fontSize="large" justifyContent="flex-start" flex={1}>
           <chakra.a
             href="/"
-            title="Clowdr Home Page"
+            title="Midspace Home Page"
             alignItems="center"
             ml={4}
           >
-            <Image alt="" src="/Clowdr-logo-white.svg" maxW="200" h="100" />
+            <Image alt="" src="/Midspace-logo-white.svg" maxW="200" h="100" />
             <VisuallyHidden>
               <chakra.h1 fontSize="3xl" fontWeight="400">
-                Clowdr
+                Midspace
               </chakra.h1>
             </VisuallyHidden>
           </chakra.a>

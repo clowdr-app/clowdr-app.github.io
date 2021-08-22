@@ -1,13 +1,13 @@
 ---
 updatedDate: 2021-04-21T05:38:19.000+00:00
-title: Managing people within Clowdr
-description: Learn how to manage the people in your program with Clowdr
+title: Managing people within Midspace
+description: Learn how to manage the people in your program with Midspace
 author: Cristal Mojica
 ---
 
 The following video resource summarizes how you can effectively manage the people associated with your event - including their connection to your event's content and schedule.
 
-We share a brief overview of the relationship between people and the other major program components, then walk through Clowdr's UI to show you exactly how to link People to Content, Events, and Registrants on the platform.
+We share a brief overview of the relationship between people and the other major program components, then walk through Midspace's UI to show you exactly how to link People to Content, Events, and Registrants on the platform.
 
 Common scenarios are identified and advice for how to tackle them is provided!
 
@@ -63,6 +63,6 @@ For the purpose of this exercise, we will elect to add a new person to this cont
 
 ![](/images/content-ppl-7.jpg)
 
-6. **Close out the Manage Content People dialog, and make sure to hit Save Changes on the main Content page.** This is extremely important to do, to ensure Clowdr captures all of your modifications. Otherwise, your changes may be lost!
+6. **Close out the Manage Content People dialog, and make sure to hit Save Changes on the main Content page.** This is extremely important to do, to ensure Midspace captures all of your modifications. Otherwise, your changes may be lost!
 
 **You've successfully added a Chair to your paper!**

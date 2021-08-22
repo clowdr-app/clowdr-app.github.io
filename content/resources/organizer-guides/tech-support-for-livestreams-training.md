@@ -7,14 +7,14 @@ description:
 author: Cristal Mojica
 ---
 
-**Volunteering to assist with speaker tech support for your event on Clowdr? Watch this 15 minute resource to learn how to:**
+**Volunteering to assist with speaker tech support for your event on Midspace? Watch this 15 minute resource to learn how to:**
 
 - Help speakers manage camera and microphone permissions
-- Manage the speaker backstage area in Clowdr
+- Manage the speaker backstage area in Midspace
 - Troubleshoot issues related to Mac OS
 
 `youtube:https://youtu.be/pcQAlUICABw`
 
 For detailed written instructions on how to manage camera and microphone permissions, view the **Troubleshooting Microphone & Camera Permissions** resource next!
 
-_READ NEXT_: [https://clowdr.org/resources/mic-cam-permissions](https://clowdr.org/resources/mic-cam-permissions "https://clowdr.org/resources/mic-cam-permissions")
+_READ NEXT_: [https://resources.midspace.app/mic-cam-permissions](https://resources.midspace.app/mic-cam-permissions "https://resources.midspace.app/mic-cam-permissions")

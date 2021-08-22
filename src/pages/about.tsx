@@ -43,11 +43,12 @@ export default function About() {
             conference organisers and to support our ongoing development.
           </Text>
           <Text>
-            Clowdr started as a response to climate change: About 70% of carbon
-            emissions for a physical conference come from flights and hotels.
-            Virtual conferences can dramatically reduce this carbon footprint.
-            In the short term, Clowdr was prompted by the pandemic and the need
-            for the conferences our founding team call "home" to go virtual.
+            Midspace started as a response to climate change: About 70% of
+            carbon emissions for a physical conference come from flights and
+            hotels. Virtual conferences can dramatically reduce this carbon
+            footprint. In the short term, Midspace was prompted by the pandemic
+            and the need for the conferences our founding team call "home" to go
+            virtual.
           </Text>
           <Text>
             Along the way, we've learned that virtual conferences massively
@@ -58,7 +59,7 @@ export default function About() {
           </Text>
           <Text>
             The social experience at a virtual conference makes or breaks the
-            event. This is Clowdr's key focus and we have strong targets for
+            event. This is Midspace's key focus and we have strong targets for
             accessibility and inclusivity.
           </Text>
           <Text>
@@ -73,7 +74,7 @@ export default function About() {
 
           <Profile imageUrl="/ed-nutting.jpg" name="Ed Nutting" my={8}>
             <Text>
-              Ed is the CEO of Clowdr. He's an experienced developer with a
+              Ed is the CEO of Midspace. He's an experienced developer with a
               passion for entrepreneurship and technology education. Ed founded
               his first startup when he was fifteen, created the open-source
               educational operating system FlingOS, and is a researcher in the
@@ -82,17 +83,17 @@ export default function About() {
           </Profile>
           <Profile imageUrl="/ross-gardiner.jpg" name="Ross Gardiner" my={8}>
             <Text>
-              Ross is the CTO of Clowdr. He's a software engineer who has worked
-              in multiple sectors: medical CAD software, railway operations,
-              e-commerce, and even mid-air haptics. He believes we have barely
-              scratched the surface of remote collaboration during 2020 and is
-              excited to build its future.
+              Ross is the CTO of Midspace. He's a software engineer who has
+              worked in multiple sectors: medical CAD software, railway
+              operations, e-commerce, and even mid-air haptics. He believes we
+              have barely scratched the surface of remote collaboration during
+              2020 and is excited to build its future.
             </Text>
           </Profile>
           <Profile imageUrl="/cristal-mojica.jpg" name="Cristal Mojica" my={8}>
             <>
               <Text>
-                Cristal is Clowdr's Business Development Manager. She is a
+                Cristal is Midspace's Business Development Manager. She is a
                 former management consultant with experience in event and
                 community management, and girls' STEM &amp; entrepreneurship
                 education. Most recently, she was a Program Manager for Grace
@@ -114,15 +115,14 @@ export default function About() {
             my={8}
           >
             <Text>
-              Benjamin serves on Clowdr's board of directors. He is
-              Henry Salvatori Professor of Computer and Information 
-              Science at the University of Pennsylvania and a Fellow of the 
-              Association for Computing Machinery. He was virtualization chair
-              for the 2020 International Conference on Functional Programming
-              and has extensive experience with organization of physical
-              conferences. He is deeply invested in reducing the climate impact
-              of conferences, having served, for example, as founding chair of
-              the ad hoc{" "}
+              Benjamin serves on Midspace's board of directors. He is Henry
+              Salvatori Professor of Computer and Information Science at the
+              University of Pennsylvania and a Fellow of the Association for
+              Computing Machinery. He was virtualization chair for the 2020
+              International Conference on Functional Programming and has
+              extensive experience with organization of physical conferences. He
+              is deeply invested in reducing the climate impact of conferences,
+              having served, for example, as founding chair of the ad hoc{" "}
               <a href="https://www.sigplan.org/Resources/Climate/">
                 committee on climate change
               </a>{" "}
@@ -139,15 +139,14 @@ export default function About() {
             my={8}
           >
             <Text>
-              Jon serves on Clowdr's board of directors. He is an Assistant
-              Professor of Software Engineering at Northeastern
-              University. He has been involved in academic conference 
-              organization since he was a first-year PhD student, and, based on
-              his experiences, has taken a particular interest in organizing
-              student mentoring workshops (at SPLASH in 2017, 2018, 2019, and
-              2020; at ICSE in 2022). Jon directs research in software
-              engineering and distributed systems, bringing a wealth of
-              technical expertise to Clowdr.
+              Jon serves on Midspace's board of directors. He is an Assistant
+              Professor of Software Engineering at Northeastern University. He
+              has been involved in academic conference organization since he was
+              a first-year PhD student, and, based on his experiences, has taken
+              a particular interest in organizing student mentoring workshops
+              (at SPLASH in 2017, 2018, 2019, and 2020; at ICSE in 2022). Jon
+              directs research in software engineering and distributed systems,
+              bringing a wealth of technical expertise to Midspace.
             </Text>
           </Profile>
           <Profile
@@ -157,12 +156,11 @@ export default function About() {
             my={8}
           >
             <Text>
-              Crista serves on Clowdr's board of directors. She is a
-              Professor of Informatics and Computer Science at the
-              University of California, Irvine. She has extensive experience on
-              conference committees and in 2020 became the first-ever
-              Virtualization Chair for the International Conference on Software
-              Engineering.
+              Crista serves on Midspace's board of directors. She is a Professor
+              of Informatics and Computer Science at the University of
+              California, Irvine. She has extensive experience on conference
+              committees and in 2020 became the first-ever Virtualization Chair
+              for the International Conference on Software Engineering.
             </Text>
           </Profile>
 
@@ -170,8 +168,8 @@ export default function About() {
             Our history
           </Heading>
           <Text>
-            Clowdr was conceived at the beginning of the COVID-19 pandemic when
-            Crista, Jonathan, and Benjamin &mdash; professors of Computer
+            Midspace was conceived at the beginning of the COVID-19 pandemic
+            when Crista, Jonathan, and Benjamin &mdash; professors of Computer
             Science and experienced conference organisers &mdash; realised a
             rapid solution was needed for organising{" "}
             <a href="https://www.acm.org/">
@@ -183,9 +181,9 @@ export default function About() {
             Beginning as a stop-gap measure for two flagship software
             engineering and programming languages conferences{" "}
             <a href="https://conf.researchr.org/home/icse-2020">ICSE</a> and{" "}
-            <a href="https://conf.researchr.org/home/pldi-2020">PLDI</a>, Clowdr
-            received funding from the US National Science Foundation, allowing
-            it to evolve to meet the needs of{" "}
+            <a href="https://conf.researchr.org/home/pldi-2020">PLDI</a>,
+            Midspace received funding from the US National Science Foundation,
+            allowing it to evolve to meet the needs of{" "}
             <a href="https://icfp20.sigplan.org">ICFP</a>,{" "}
             <a href="https://cscw.acm.org/2020/">CSCW</a>,{" "}
             <a href="https://2020.splashcon.org/">SPLASH</a>, and numerous other
@@ -203,7 +201,7 @@ export default function About() {
           </Text>
           <Text>
             A CIC is similar to a US public benefit corporation. The corporate
-            structure and UK regulation ensure that Clowdr remains open source
+            structure and UK regulation ensure that Midspace remains open source
             and for the benefit of the community. The company is required to
             reinvest almost all of its revenue into improving the platform and
             thereby serving the academic community it came from.

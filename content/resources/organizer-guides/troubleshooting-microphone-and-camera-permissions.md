@@ -64,7 +64,7 @@ Latest versions of:
 
 [https://form.asana.com?k=2O5KSgfyRmNoddFkKdJh5Q&d=1198973227684402](https://form.asana.com?k=2O5KSgfyRmNoddFkKdJh5Q&d=1198973227684402 "Mic/Cam Troubleshooting form")
 
-If the form doesn't help you solve the issue, you can submit the form to the Clowdr team as a record of what system/browser you are using and what you have tried. This will enable us to help you most effectively.
+If the form doesn't help you solve the issue, you can submit the form to the Midspace team as a record of what system/browser you are using and what you have tried. This will enable us to help you most effectively.
 
 ### 2. Examples
 
