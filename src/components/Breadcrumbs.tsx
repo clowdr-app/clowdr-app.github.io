@@ -21,7 +21,7 @@ export function Breadcrumbs({
               ? {
                   __css: {},
                 }
-              : { href: `/resources${breadcrumb.url}` })}
+              : { href: `${breadcrumb.url}` })}
           >
             {breadcrumb.title}
           </BreadcrumbLink>

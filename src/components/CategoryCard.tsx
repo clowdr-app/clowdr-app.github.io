@@ -67,7 +67,7 @@ export function CategoryCard({
           <Heading as="h4" m={0}>
             <LinkOverlay
               as={GatsbyLink}
-              to={`/resources${indexUrl}`}
+              to={`${indexUrl}`}
               itemProp="url"
               display="block"
               color={"gray.800"}

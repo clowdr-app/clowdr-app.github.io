@@ -48,8 +48,10 @@ export default function Footer() {
           <Heading as="h4" size="sm">
             © Clowdr CIC 2021
           </Heading>
+          <Text>Midspace is the new name of Clowdr.</Text>
+          <Text>In Midspace is a trademark of Clowdr CIC.</Text>
           <Text>
-            Midspace is a UK Community Interest Company, number{" "}
+            Clowdr is a UK Community Interest Company, number{" "}
             <Link
               as="a"
               href="https://find-and-update.company-information.service.gov.uk/company/12984216"

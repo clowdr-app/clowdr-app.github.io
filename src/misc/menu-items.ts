@@ -1,1 +1,1 @@
-export const menuItems = [{ text: "All resources", link: "/resources" }];
+export const menuItems = [];

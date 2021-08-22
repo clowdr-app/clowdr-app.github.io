@@ -10,7 +10,7 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: content/resources
+  path: content
   label: Resources
   create: all
   match: "**/*"
