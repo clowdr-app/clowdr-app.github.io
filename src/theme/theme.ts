@@ -6,28 +6,28 @@ export const theme = extendTheme({
   },
   colors: {
     brand: {
-      "50": "#f1f9f7",
-      "100": "#e1f8ee",
-      "200": "#bdf3d6",
-      "300": "#86e9b6",
-      "400": "#35d783",
-      "500": "#12bf53",
-      "600": "#0fa43a",
-      "700": "#148535",
-      "800": "#16703f",
-      "900": "#14522b",
+      50: "#ffe1f4",
+      100: "#ffb1d7",
+      200: "#ff7ebb",
+      300: "#ff4ca0",
+      400: "#ff1a85",
+      500: "#e6006c",
+      600: "#b40054",
+      700: "#82003c",
+      800: "#500024",
+      900: "#20000e",
     },
     purple: {
-      "50": "#f9f4f7",
-      "100": "#f2e9f0",
-      "200": "#dfc7d9",
-      "300": "#cba5c1",
-      "400": "#a46293",
-      "500": "#7D1E65",
-      "600": "#711b5b",
-      "700": "#5e174c",
-      "800": "#4b123d",
-      "900": "#3d0f31",
+      50: "#f8e4ff",
+      100: "#e4b3ff",
+      200: "#d281fd",
+      300: "#c04ffc",
+      400: "#ae21fb",
+      500: "#950ce2",
+      600: "#7307b0",
+      700: "#53037e",
+      800: "#32004d",
+      900: "#12001d",
     },
     yellow: {
       "50": "#fafaf4",
@@ -57,27 +57,10 @@ export const theme = extendTheme({
   components: {
     Button: {
       baseStyle: {
-        bg: "blue.900",
         border: "1px solid white",
-        color: "white",
       },
       variants: {
         solid: {
-          bg: "blue.500",
-          color: "white",
-          _hover: {
-            bg: "blue.700",
-            color: "white",
-            textDecoration: "none",
-          },
-          _active: {
-            bg: "blue.800",
-          },
-          _focus: {
-            bg: "blue.700",
-          },
-        },
-        "solid-2": {
           bg: "purple.500",
           color: "white",
           _hover: {
@@ -90,6 +73,21 @@ export const theme = extendTheme({
           },
           _focus: {
             bg: "purple.700",
+          },
+        },
+        "solid-2": {
+          bg: "brand.500",
+          color: "white",
+          _hover: {
+            bg: "brand.700",
+            color: "white",
+            textDecoration: "none",
+          },
+          _active: {
+            bg: "brand.800",
+          },
+          _focus: {
+            bg: "brand.700",
           },
         },
       },

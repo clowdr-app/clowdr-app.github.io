@@ -12,15 +12,8 @@ import {
 import { Link as GatsbyLink } from "gatsby";
 import React from "react";
 import { menuItems } from "../misc/menu-items";
-// import { useCMS } from "tinacms";
-
-/* If you change the list of pages, make sure to also change
-   Footer.tsx (really, the two should be generated from the same
-   static list of strings!) */
 
 export default function Footer() {
-  // const cms = useCMS();
-
   return (
     <Box bgColor="gray.800" py={8} mt="auto" layerStyle="footer" as="footer">
       <HStack alignItems="flex-start" justifyContent="center" flexWrap="wrap">
@@ -34,7 +27,7 @@ export default function Footer() {
         >
           <Link as={GatsbyLink} to="/">
             <Heading as="h4" mb={4} size="md" fontWeight="bold" color="white">
-              Clowdr
+              Midspace Resources
             </Heading>
           </Link>
           <Wrap alignItems="flex-start" flexWrap="wrap" spacing={12}>
@@ -49,45 +42,14 @@ export default function Footer() {
                 ))}
               </UnorderedList>
             </WrapItem>
-            <WrapItem>
-              <UnorderedList styleType="none" ml={0}>
-                <ListItem>
-                  <Link as={GatsbyLink} to="/policies/terms">
-                    Terms and Conditions
-                  </Link>
-                </ListItem>
-                <ListItem>
-                  <Link as={GatsbyLink} to="/policies/privacy">
-                    Privacy Policy
-                  </Link>
-                </ListItem>
-                <ListItem>
-                  <Link as={GatsbyLink} to="/policies/cookies">
-                    Cookie Policy
-                  </Link>
-                </ListItem>
-                <ListItem>
-                  <Link as={GatsbyLink} to="/policies/backups">
-                    Backups Policy
-                  </Link>
-                </ListItem>
-                <ListItem>
-                  <Link as={GatsbyLink} to="/policies/archiving">
-                    Archiving Policy
-                  </Link>
-                </ListItem>
-              </UnorderedList>
-            </WrapItem>
           </Wrap>
         </Box>
         <Box w="40%" minW="30ch">
           <Heading as="h4" size="sm">
             © Clowdr CIC 2021
           </Heading>
-          <Text>
-            Clowdr is a social enterprise dedicated to creating sustainable,
-            inclusive and engaging conferences.
-          </Text>
+          <Text>Midspace is the new name of Clowdr.</Text>
+          <Text>In Midspace is a trademark of Clowdr CIC.</Text>
           <Text>
             Clowdr is a UK Community Interest Company, number{" "}
             <Link
@@ -98,14 +60,6 @@ export default function Footer() {
             </Link>
             .
           </Text>
-          <Text>
-            Clowdr was initially made possible thanks to support by the US
-            National Science Foundation under awards CCF-2035003, CCF-2035101
-            and CCF-203500 and support from Twilio.org.
-          </Text>
-          {/* <Button colorScheme="brand" onClick={() => cms.toggle()} size="xs">
-            {cms.enabled ? "Stop editing" : "Edit"}
-          </Button> */}
         </Box>
       </HStack>
     </Box>

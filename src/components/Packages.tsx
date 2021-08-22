@@ -17,8 +17,8 @@ export function Packages(): JSX.Element {
     >
       <Feature icon={AiOutlineRocket} title="Click-and-go">
         <Text>
-          We worry about the technology; you organize the conference. Use Clowdr
-          - hosted by the people who built it.
+          We worry about the technology; you organize the conference. Use
+          Midspace - hosted by the people who built it.
         </Text>
       </Feature>
       <Feature
@@ -38,7 +38,7 @@ export function Packages(): JSX.Element {
       </Feature>
       <Feature icon={AiOutlineTool} title="Do-it-yourself">
         <Text>
-          Want to run the Clowdr platform yourself? We can help you with that.
+          Want to run the Midspace platform yourself? We can help you with that.
         </Text>
       </Feature>
     </SimpleGrid>

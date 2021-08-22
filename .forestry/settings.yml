@@ -5,13 +5,13 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: content/resources
-  label: Resources
+  path: docs
+  label: Documentation (for site editors)
   create: all
   match: "**/*"
 - type: directory
-  path: content/blog
-  label: Blog posts
+  path: content
+  label: Resources
   create: all
   match: "**/*"
 upload_dir: static/images
@@ -22,6 +22,7 @@ file_template: ":filename:"
 build:
   preview_env:
   - CI=true
+  - NODE_ENV=development
   preview_output_directory: public
   install_dependencies_command: npm run forestry:install
   preview_docker_image: node:15.12.0-buster

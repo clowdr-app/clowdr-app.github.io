@@ -9,12 +9,6 @@ fields:
   config:
     required: true
     min: 5
-- type: text
-  name: slug
-  label: slug
-  description: Path slug for the resource.
-  config:
-    required: true
 - type: datetime
   name: updatedDate
   label: updatedDate
@@ -34,26 +28,19 @@ fields:
   name: author
   label: author
   description: Author of the resource.
-- name: categories
-  type: tag_list
-  default: []
-  label: Categories
-  description: The categories that this resource fits into.
-- name: draft
-  type: boolean
-  label: Draft
-  description: Is this post a draft?
 pages:
-- content/resources/Organizer Guides/clowdr-s-event-modes.md
-- content/resources/Organizer Guides/hosting-a-tutorial-or-workshop-with-clowdr-and-zoom.md
-- content/resources/Organizer Guides/joining-a-live-stream-in-clowdr.md
-- content/resources/Organizer Guides/managing-the-content-in-your-program-with-clowdr.md
-- content/resources/Organizer Guides/managing-the-people-in-your-program-with-clowdr.md
-- content/resources/Organizer Guides/managing-your-program-s-schedule-in-clowdr.md
-- content/resources/Organizer Guides/minimum-technical-requirements-for-using-clowdr.md
-- content/resources/Organizer Guides/tech-support-for-livestreams-training.md
-- content/resources/Organizer Guides/troubleshooting-microphone-and-camera-permissions.md
-- content/resources/attendees/getting-started-on-clowdr.md
-- content/resources/attendees/making-the-most-of-clowdr-s-shuffle-feature.md
-- content/resources/attendees/using-clowdr-s-social-rooms.md
-- content/resources/video-subtitles/exporting-video-from-clowdr-to-youtube.md
+- content/accessibility/clowdr-s-commitment-to-accessibility.md
+- content/accessibility/draft-example.md
+- content/attendees/getting-started-on-clowdr.md
+- content/attendees/making-the-most-of-clowdr-s-shuffle-feature.md
+- content/attendees/using-clowdr-s-social-rooms.md
+- content/organizer-guides/conference-setup/clowdr-s-event-modes.md
+- content/organizer-guides/conference-setup/managing-the-content-in-your-program-with-clowdr.md
+- content/organizer-guides/conference-setup/managing-the-people-in-your-program-with-clowdr.md
+- content/organizer-guides/conference-setup/managing-your-program-s-schedule-in-clowdr.md
+- content/organizer-guides/hosting-a-tutorial-or-workshop-with-clowdr-and-zoom.md
+- content/organizer-guides/joining-a-live-stream-in-clowdr.md
+- content/organizer-guides/minimum-technical-requirements-for-using-clowdr.md
+- content/organizer-guides/tech-support-for-livestreams-training.md
+- content/organizer-guides/troubleshooting-microphone-and-camera-permissions.md
+- content/video-subtitles/exporting-video-from-clowdr-to-youtube.md

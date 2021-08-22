@@ -12,8 +12,8 @@ import {
 import { Link as GatsbyLink } from "gatsby";
 import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-import { menuItems, menuSecondaryItems } from "../misc/menu-items";
-import { ArrangeADemoButton } from "./ArrangeADemoButton";
+import { menuItems } from "../misc/menu-items";
+import { BackToClowdrButton } from "./BackToClowdrButton";
 
 export function MobileMenu(): JSX.Element {
   const mobileNav = useDisclosure();
@@ -30,14 +30,14 @@ export function MobileMenu(): JSX.Element {
         <Flex justifyContent="center">
           <chakra.a
             href="/"
-            title="Clowdr Home Page"
+            title="Midspace Home Page"
             alignItems="center"
             ml={4}
           >
-            <Image alt="" src="/Clowdr-logo-white.svg" maxW="200" h="100" />
+            <Image alt="" src="/Midspace-logo-white.svg" maxW="200" h="100" />
             <VisuallyHidden>
               <chakra.h1 fontSize="3xl" fontWeight="400">
-                Clowdr
+                Midspace
               </chakra.h1>
             </VisuallyHidden>
           </chakra.a>
@@ -82,12 +82,7 @@ export function MobileMenu(): JSX.Element {
               {menuItem.text}
             </Link>
           ))}
-          <ArrangeADemoButton />
-          {menuSecondaryItems.map((menuItem, i) => (
-            <Link as={GatsbyLink} to={menuItem.link} w="full" key={i}>
-              {menuItem.text}
-            </Link>
-          ))}
+          <BackToClowdrButton />
         </VStack>
       </Flex>
     </nav>

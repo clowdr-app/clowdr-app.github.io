@@ -1,17 +1,17 @@
 import { chakra, HStack, Image, Link, VisuallyHidden } from "@chakra-ui/react";
 import { Link as GatsbyLink } from "gatsby";
 import React from "react";
-import { menuItems, menuSecondaryItems } from "../misc/menu-items";
-import { ArrangeADemoButton } from "./ArrangeADemoButton";
+import { menuItems } from "../misc/menu-items";
+import { BackToClowdrButton } from "./BackToClowdrButton";
 
 export function DesktopMenu(): JSX.Element {
   return (
     <nav>
       <HStack
         flexWrap="wrap"
-        columnGap={0}
-        bgGradient="linear(to-b, brand.900 20%, brand.800)"
-        bgColor="brand.900"
+        columngap={0}
+        bgGradient="linear(to-b, purple.900 20%, purple.800)"
+        bgColor="purple.900"
         layerStyle="hero"
         shadow="md"
         py={2}
@@ -19,14 +19,14 @@ export function DesktopMenu(): JSX.Element {
         <HStack fontSize="large" justifyContent="flex-start" flex={1}>
           <chakra.a
             href="/"
-            title="Clowdr Home Page"
+            title="Midspace Home Page"
             alignItems="center"
             ml={4}
           >
-            <Image alt="" src="/Clowdr-logo-white.svg" maxW="200" h="100" />
+            <Image alt="" src="/Midspace-logo-white.svg" maxW="200" h="100" />
             <VisuallyHidden>
               <chakra.h1 fontSize="3xl" fontWeight="400">
-                Clowdr
+                Midspace
               </chakra.h1>
             </VisuallyHidden>
           </chakra.a>
@@ -34,10 +34,9 @@ export function DesktopMenu(): JSX.Element {
             <Link
               as={GatsbyLink}
               to={menuItem.link}
-              w="full"
               key={i}
-              flex={0}
-              fontSize="2xl"
+              flexBasis="max-content"
+              fontSize="xl"
               p={4}
             >
               {menuItem.text}
@@ -45,7 +44,6 @@ export function DesktopMenu(): JSX.Element {
           ))}
         </HStack>
         <HStack
-          flex={1}
           display="flex"
           flexWrap="wrap"
           alignItems="center"
@@ -54,29 +52,7 @@ export function DesktopMenu(): JSX.Element {
           px={8}
           py={2}
         >
-          <HStack
-            spacing={6}
-            mr={8}
-            fontSize="large"
-            color="brand.500"
-            display={{ base: "none", md: "inline-flex" }}
-            justifyContent="flex-end"
-            flexGrow={1}
-          >
-            {menuSecondaryItems.map((menuItem, i) => (
-              <Link
-                as={GatsbyLink}
-                to={menuItem.link}
-                w="max-content"
-                key={i}
-                p={2}
-                fontSize="xl"
-              >
-                {menuItem.text}
-              </Link>
-            ))}
-          </HStack>
-          <ArrangeADemoButton flexGrow={1} maxW="20rem" />
+          <BackToClowdrButton flexGrow={1} maxW="20rem" />
         </HStack>
       </HStack>
     </nav>

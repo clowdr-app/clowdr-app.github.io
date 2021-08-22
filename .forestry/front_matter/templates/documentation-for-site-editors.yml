@@ -1,0 +1,8 @@
+---
+label: Documentation (for site editors)
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+  description: Title of the help document.

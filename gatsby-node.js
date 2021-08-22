@@ -1,145 +1,171 @@
-const path = require(`path`);
+const gql = require("fake-tag");
 const { createFilePath } = require(`gatsby-source-filesystem`);
+const path = require("path");
+const escapeStringRegexp = require("escape-string-regexp");
+const breadcrumb = require("url-breadcrumb");
 
+/** @type import('gatsby').GatsbyNode['onCreateWebpackConfig'] */
 exports.onCreateWebpackConfig = ({ stage, actions }) => {
-  if (stage.startsWith("develop")) {
-    actions.setWebpackConfig({
-      resolve: {
-        alias: {
-          "react-dom": "@hot-loader/react-dom",
-        },
-        fallback: {
-          path: require.resolve("path-browserify"),
-        },
-      },
-    });
-  }
+    if (stage.startsWith("develop")) {
+        actions.setWebpackConfig({
+            resolve: {
+                alias: {
+                    "react-dom": "@hot-loader/react-dom",
+                },
+                fallback: {
+                    path: require.resolve("path-browserify"),
+                },
+            },
+        });
+    }
 };
 
+/** @type import('gatsby').GatsbyNode['createPages'] */
 exports.createPages = async ({ graphql, actions, reporter }) => {
-  const { createPage, createRedirect } = actions;
+    const { createPage } = actions;
 
-  /// Create blog post pages
-
-  // Get all markdown blog posts sorted by date
-  const allRemark = await graphql(
-    `
-      {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: ASC }
-          limit: 1000
-        ) {
-          edges {
-            node {
-              id
-              fields {
-                collection
-                slug
-              }
-              frontmatter {
-                slug
-                title
-              }
+    // Get all markdown blog posts sorted by date
+    /** @type import("./gatsby-types").CreatePagesGraphqlReturn */
+    const allRemark = await graphql(gql`
+    query GetMarkdownEdges {
+      allMarkdownRemark(
+        sort: { fields: [frontmatter___title], order: ASC }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            id
+            fileAbsolutePath
+            fields {
+              collection
+              slug
+              isCategoryIndex
+            }
+            frontmatter {
+              title
             }
           }
         }
       }
-    `
-  );
+    }
+  `);
 
-  if (allRemark.errors) {
-    reporter.panicOnBuild(
-      `There was an error loading your blog posts`,
-      allRemark.errors
+    if (allRemark.errors) {
+        reporter.panicOnBuild(
+            `There was an error loading your blog posts`,
+            allRemark.errors
+        );
+        return;
+    }
+
+    const allEdges = allRemark.data.allMarkdownRemark.edges;
+
+    const resourceEdges = allEdges.filter(
+        edge => edge.node.fields.collection === `resources`
     );
-    return;
-  }
 
-  const allEdges = allRemark.data.allMarkdownRemark.edges;
-
-  const blogEdges = allEdges.filter(
-    edge => edge.node.fields.collection === `blog`
-  );
-  const resourceEdges = allEdges.filter(
-    edge => edge.node.fields.collection === `resources`
-  );
-
-  console.log(
-    `Blog edges: ${blogEdges.length}, resource edges: ${resourceEdges.length}`
-  );
-
-  blogEdges.forEach((edge, index) => {
-    const previous =
-      index === blogEdges.length - 1 ? null : blogEdges[index + 1].node;
-    const next = index === 0 ? null : blogEdges[index - 1].node;
-
-    createPage({
-      path: `/blog/${edge.node.frontmatter.slug}`,
-      component: path.resolve(`./src/templates/blog-post.tsx`),
-      context: {
-        id: edge.node.id,
-        slug: edge.node.frontmatter.slug,
-        previous,
-        next,
-      },
+    resourceEdges.forEach(edge => {
+        /** @type {{name: string, url: string}[]} */
+        const rawBreadcrumbs = breadcrumb(edge.node.fields.slug, {
+            home: "All Resources",
+        });
+        const breadcrumbs = rawBreadcrumbs.map(breadcrumb => ({
+            ...breadcrumb,
+            title:
+                allEdges.find(edge => edge.node.fields.slug === `${breadcrumb.url}/`)
+                    ?.node?.frontmatter?.title ?? breadcrumb.name,
+        }));
+        createPage({
+            path: `${edge.node.fields.slug}`,
+            component: edge.node.fields.isCategoryIndex
+                ? path.resolve(`./src/templates/resource-category-page.tsx`)
+                : path.resolve(`./src/templates/resource-page.tsx`),
+            context: {
+                id: edge.node.id,
+                slug: edge.node.fields.slug,
+                regex: `^${escapeStringRegexp(edge.node.fields.slug)}[^/]+[/]?$/`,
+                breadcrumbs,
+            },
+        });
     });
-  });
 
-  resourceEdges.forEach(edge => {
-    createPage({
-      path: `/resources/${edge.node.frontmatter.slug}`,
-      component: path.resolve(`./src/templates/resource-page.tsx`),
-      context: {
-        id: edge.node.id,
-        slug: edge.node.frontmatter.slug,
-      },
-    });
-  });
-
-  /// Redirects
-  const redirects = [
-    { fromPath: "/faq/video-subtitles/", toPath: "/resources/video-subtitles" },
-  ];
-  redirects.forEach(redirect =>
-    createRedirect({
-      ...redirect,
-      isPermanent: true,
-    })
-  );
+    /// Redirects
+    // const redirects = [
+    //   { fromPath: "/faq/video-subtitles/", toPath: "/video-subtitles" },
+    // ];
+    // redirects.forEach(redirect =>
+    //   createRedirect({
+    //     ...redirect,
+    //     isPermanent: true,
+    //   })
+    // );
 };
 
+function findFileNode({ node, getNode }) {
+    // Find the file node.
+    let fileNode = node;
+
+    let whileCount = 0;
+    while (
+        fileNode.internal.type !== `File` &&
+        fileNode.parent &&
+        getNode(fileNode.parent) !== undefined &&
+        whileCount < 101
+    ) {
+        fileNode = getNode(fileNode.parent);
+
+        whileCount += 1;
+        if (whileCount > 100) {
+            console.log(
+                `It looks like you have a node that's set its parent as itself`,
+                fileNode
+            );
+        }
+    }
+
+    return fileNode;
+}
+
+/** @type import('gatsby').GatsbyNode['onCreateNode'] */
 exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions;
+    const { createNodeField } = actions;
 
-  if (node.internal.type === `MarkdownRemark`) {
-    // const value = createFilePath({ node, getNode });
+    if (node.internal.type === `MarkdownRemark`) {
+        const value = createFilePath({ node, getNode });
+        createNodeField({
+            name: `slug`,
+            node,
+            value,
+        });
 
-    // createNodeField({
-    //   name: `slug`,
-    //   node,
-    //   value,
-    // });
+        const parent = getNode(node.parent);
 
-    const parent = getNode(node.parent);
+        createNodeField({
+            node,
+            name: "collection",
+            value: parent.sourceInstanceName,
+        });
 
-    createNodeField({
-      node,
-      name: "collection",
-      value: parent.sourceInstanceName,
-    });
-  }
+        const fileNode = findFileNode({ node, getNode });
+        createNodeField({
+            node,
+            name: "isCategoryIndex",
+            value: path.parse(fileNode.relativePath).name === "index",
+        });
+    }
 };
 
+/** @type import('gatsby').GatsbyNode['createSchemaCustomization'] */
 exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions;
+    const { createTypes } = actions;
 
-  // Explicitly define the siteMetadata {} object
-  // This way those will always be defined even if removed from gatsby-config.js
+    // Explicitly define the siteMetadata {} object
+    // This way those will always be defined even if removed from gatsby-config.js
 
-  // Also explicitly define the Markdown frontmatter
-  // This way the "MarkdownRemark" queries will return `null` even when no
-  // blog posts are stored inside "content/blog" instead of returning an error
-  createTypes(`
+    // Also explicitly define the Markdown frontmatter
+    // This way the "MarkdownRemark" queries will return `null` even when no
+    // blog posts are stored inside "content/blog" instead of returning an error
+    createTypes(gql`
     type SiteSiteMetadata {
       author: Author
       siteUrl: String
@@ -160,6 +186,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       title: String
       description: String
       date: Date @dateformat
+      featured: Boolean
     }
     type Fields {
       slug: String
