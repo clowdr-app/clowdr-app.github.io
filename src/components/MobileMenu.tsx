@@ -1,4 +1,5 @@
 import {
+  Box,
   chakra,
   CloseButton,
   Flex,
@@ -34,7 +35,7 @@ export function MobileMenu(): JSX.Element {
             alignItems="center"
             ml={4}
           >
-            <Image alt="" src="/Midspace-logo-white.svg" maxW="200" h="100" />
+            <Image alt="" src="/midspace-wordmark.svg" maxW="200" h="100" />
             <VisuallyHidden>
               <chakra.h1 fontSize="3xl" fontWeight="400">
                 Midspace
@@ -42,15 +43,19 @@ export function MobileMenu(): JSX.Element {
             </VisuallyHidden>
           </chakra.a>
         </Flex>
-        <IconButton
-          display={{ base: "flex", md: "none" }}
-          aria-label="Open menu"
-          fontSize="20px"
-          variant="ghost"
-          color="white"
-          icon={<AiOutlineMenu />}
-          onClick={mobileNav.onOpen}
-        />
+        <Box flexGrow={1} flexBasis={0} my={2}>
+          <IconButton
+            ml="auto"
+            display={{ base: "flex", md: "none" }}
+            aria-label="Open menu"
+            fontSize="20px"
+            variant="ghost"
+            color="white"
+            icon={<AiOutlineMenu />}
+            onClick={mobileNav.onOpen}
+            disabled={mobileNav.isOpen}
+          />
+        </Box>
 
         <VStack
           pos="absolute"
@@ -61,7 +66,7 @@ export function MobileMenu(): JSX.Element {
           flexDirection="column"
           p={2}
           pb={4}
-          m={2}
+          my={2}
           bg="brand.900"
           layerStyle="hero"
           spacing={3}

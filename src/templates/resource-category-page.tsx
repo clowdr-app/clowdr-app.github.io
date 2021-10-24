@@ -3,6 +3,7 @@ import {
   Container,
   Divider,
   Heading,
+  Icon,
   ListItem,
   OrderedList,
   Text,
@@ -10,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { graphql, PageProps } from "gatsby";
 import React from "react";
+import { AiOutlineFolderOpen } from "react-icons/ai";
 import rehypeReact from "rehype-react";
 import { unified } from "unified";
 import { Breadcrumbs } from "../components/Breadcrumbs";
@@ -75,7 +77,15 @@ export default function ResourceCategoryBySlug({
           <Breadcrumbs breadcrumbs={pageContext.breadcrumbs} />
           <header>
             <Heading as="h1" size="2xl" itemProp="headline">
-              Category: {post?.frontmatter?.title}
+              <Icon
+                m={2}
+                as={AiOutlineFolderOpen}
+                title="Category"
+                w={16}
+                h={16}
+                aria-label="Category"
+              />{" "}
+              {post?.frontmatter?.title}
             </Heading>
           </header>
           <chakra.section
