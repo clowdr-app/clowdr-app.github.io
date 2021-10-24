@@ -1,6 +1,6 @@
 ---
 updatedDate: 2021-04-02T07:36:04.000+00:00
-title: Midpspace's commitment to accessibility
+title: Midspace's commitment to accessibility
 description:
   Midspace is committed to accessibility as a core part of our platform.
   In this page we explain how we deliver on that commitment.
