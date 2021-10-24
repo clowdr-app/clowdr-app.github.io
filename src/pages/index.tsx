@@ -6,13 +6,13 @@ import {
   Container,
   Heading,
   Link,
-  SimpleGrid,
   Text,
 } from "@chakra-ui/react";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
-import { CategoryCard } from "../components/CategoryCard";
+import { CategoryCards } from "../components/CategoryCards";
 import { Layout } from "../components/Layout";
+import { ResourceCards } from "../components/ResourceCards";
 import { Search } from "../components/Search";
 import Title from "../components/Title";
 import { ResourcesQuery } from "../generated/graphql-types";
@@ -30,15 +30,7 @@ export default function Resources() {
         }
       ) {
         nodes {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            description
-            author
-          }
+          ...NodeSummary
         }
       }
       localSearchResources {
@@ -47,20 +39,19 @@ export default function Resources() {
       }
     }
   `);
-  const categoryNodes = result.allMarkdownRemark.nodes;
+  const categoryNodes = result.allMarkdownRemark.nodes.filter(
+    node => node.fields?.isCategoryIndex
+  );
+  const resourceNodes = result.allMarkdownRemark.nodes.filter(
+    node => !node.fields?.isCategoryIndex
+  );
 
   const categoriesEl = categoryNodes.length ? (
-    <SimpleGrid columns={{ sm: 1, lg: 2 }} spacing={4}>
-      {categoryNodes.map((node, i) => (
-        <CategoryCard
-          key={i}
-          indexUrl={node.fields?.slug ?? "#"}
-          descriptionHtml={node.frontmatter?.description ?? node.excerpt ?? ""}
-          title={node.frontmatter?.title ?? "(No title)"}
-          type="category"
-        />
-      ))}
-    </SimpleGrid>
+    <CategoryCards categoryNodes={categoryNodes} mt={2} />
+  ) : undefined;
+
+  const resourcesEl = resourceNodes.length ? (
+    <ResourceCards resourceNodes={resourceNodes} mt={4} />
   ) : undefined;
 
   return (
@@ -99,6 +90,12 @@ export default function Resources() {
             Categories
           </Heading>
           {categoriesEl}
+          {resourcesEl}
+          {!categoryNodes.length && !resourceNodes.length ? (
+            <Text mt={8}>
+              Sorry, there are no resources available right now.
+            </Text>
+          ) : undefined}
         </Container>
       </Layout>
     </>
