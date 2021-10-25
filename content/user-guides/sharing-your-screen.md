@@ -50,6 +50,16 @@ You will see a small speaker icon on your screen share preview that indicates wh
 
 ### Tips
 
+#### Make sure your screen share works ahead of time
+
+You should test your screen share ahead of time to make sure that it goes smoothly when you are presenting to your audience.
+
+#### Wear headphones
+
+If you are using speakers to play audio while in a video chat, this audio is likely to 'leak' back in through your microphone.
+
+When you are sharing the screen with audio it is especially important to ensure that you are using headphones, otherwise your audience will hear the sound twice.
+
 #### Sharing a local video on macOS
 
 If you are using macOS and would like to screen share a local video file from your computer with its audio, you can do the following:
