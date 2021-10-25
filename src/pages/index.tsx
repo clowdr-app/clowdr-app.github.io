@@ -12,10 +12,10 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import { CategoryCards } from "../components/category-cards";
 import { FeaturedCards } from "../components/featured-cards";
-import { Layout } from "../components/layout2";
+import { Layout } from "../components/layout";
 import { ResourceCards } from "../components/resource-cards";
-import { Search } from "../components/search2";
-import Title from "../components/title2";
+import { Search } from "../components/search";
+import Title from "../components/title";
 import { ResourcesQuery } from "../generated/graphql-types";
 
 export default function Resources() {

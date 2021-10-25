@@ -14,11 +14,11 @@ import React from "react";
 import { AiOutlineFolderOpen } from "react-icons/ai";
 import rehypeReact from "rehype-react";
 import { unified } from "unified";
-import { Breadcrumbs } from "../components/breadcrumbs2";
+import { Breadcrumbs } from "../components/breadcrumbs";
 import { CategoryCards } from "../components/category-cards";
-import { Layout } from "../components/layout2";
+import { Layout } from "../components/layout";
 import { ResourceCards } from "../components/resource-cards";
-import Title from "../components/title2";
+import Title from "../components/title";
 import { ResourceCategoryBySlugQuery } from "../generated/graphql-types";
 import { ResourcePageContext } from "../misc/resource-page-context";
 
