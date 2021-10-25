@@ -14,7 +14,7 @@ import {
 import React, { FocusEvent, useCallback, useEffect, useState } from "react";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { useLunr } from "react-lunr";
-import { CategoryCard } from "./CategoryCard";
+import { Card } from "./card";
 
 export function Search({
   index,
@@ -74,7 +74,7 @@ export function Search({
             {results.length ? (
               results.map(result => (
                 <ListItem key={result.id} w="100%">
-                  <CategoryCard
+                  <Card
                     title={result.title}
                     indexUrl={result.slug}
                     author={result.author}

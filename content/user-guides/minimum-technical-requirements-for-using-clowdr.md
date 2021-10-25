@@ -3,6 +3,7 @@ updatedDate: 2021-04-26T04:13:48.000+00:00
 title: Technical requirements for using Midspace
 description: Review the minimum technical requirements for using Midspace
 author: Cristal Mojica
+isFeatured: true
 ---
 
 ### Getting Ready to Use Midspace?

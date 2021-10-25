@@ -685,6 +685,7 @@ export enum FileFieldsEnum {
   ChildMarkdownRemarkFrontmatterDate = 'childMarkdownRemark___frontmatter___date',
   ChildMarkdownRemarkFrontmatterDescription = 'childMarkdownRemark___frontmatter___description',
   ChildMarkdownRemarkFrontmatterFeatured = 'childMarkdownRemark___frontmatter___featured',
+  ChildMarkdownRemarkFrontmatterIsFeatured = 'childMarkdownRemark___frontmatter___isFeatured',
   ChildMarkdownRemarkFrontmatterTitle = 'childMarkdownRemark___frontmatter___title',
   ChildMarkdownRemarkFrontmatterUpdatedDate = 'childMarkdownRemark___frontmatter___updatedDate',
   ChildMarkdownRemarkHeadings = 'childMarkdownRemark___headings',
@@ -820,6 +821,7 @@ export enum FileFieldsEnum {
   ChildrenMarkdownRemarkFrontmatterDate = 'childrenMarkdownRemark___frontmatter___date',
   ChildrenMarkdownRemarkFrontmatterDescription = 'childrenMarkdownRemark___frontmatter___description',
   ChildrenMarkdownRemarkFrontmatterFeatured = 'childrenMarkdownRemark___frontmatter___featured',
+  ChildrenMarkdownRemarkFrontmatterIsFeatured = 'childrenMarkdownRemark___frontmatter___isFeatured',
   ChildrenMarkdownRemarkFrontmatterTitle = 'childrenMarkdownRemark___frontmatter___title',
   ChildrenMarkdownRemarkFrontmatterUpdatedDate = 'childrenMarkdownRemark___frontmatter___updatedDate',
   ChildrenMarkdownRemarkHeadings = 'childrenMarkdownRemark___headings',
@@ -1076,6 +1078,7 @@ export type Frontmatter = {
   date?: Maybe<Scalars['Date']>;
   description?: Maybe<Scalars['String']>;
   featured?: Maybe<Scalars['Boolean']>;
+  isFeatured?: Maybe<Scalars['Boolean']>;
   title?: Maybe<Scalars['String']>;
   updatedDate?: Maybe<Scalars['Date']>;
 };
@@ -1101,6 +1104,7 @@ export type FrontmatterFilterInput = {
   date?: Maybe<DateQueryOperatorInput>;
   description?: Maybe<StringQueryOperatorInput>;
   featured?: Maybe<BooleanQueryOperatorInput>;
+  isFeatured?: Maybe<BooleanQueryOperatorInput>;
   title?: Maybe<StringQueryOperatorInput>;
   updatedDate?: Maybe<DateQueryOperatorInput>;
 };
@@ -2037,6 +2041,7 @@ export enum MarkdownRemarkFieldsEnum {
   FrontmatterDate = 'frontmatter___date',
   FrontmatterDescription = 'frontmatter___description',
   FrontmatterFeatured = 'frontmatter___featured',
+  FrontmatterIsFeatured = 'frontmatter___isFeatured',
   FrontmatterTitle = 'frontmatter___title',
   FrontmatterUpdatedDate = 'frontmatter___updatedDate',
   Headings = 'headings',
@@ -3262,6 +3267,7 @@ export type SitePageContext = {
   __typename?: 'SitePageContext';
   breadcrumbs?: Maybe<Array<Maybe<SitePageContextBreadcrumbs>>>;
   id?: Maybe<Scalars['String']>;
+  isFeatured?: Maybe<Scalars['Boolean']>;
   regex?: Maybe<Scalars['String']>;
   slug?: Maybe<Scalars['String']>;
 };
@@ -3288,6 +3294,7 @@ export type SitePageContextBreadcrumbsFilterListInput = {
 export type SitePageContextFilterInput = {
   breadcrumbs?: Maybe<SitePageContextBreadcrumbsFilterListInput>;
   id?: Maybe<StringQueryOperatorInput>;
+  isFeatured?: Maybe<BooleanQueryOperatorInput>;
   regex?: Maybe<StringQueryOperatorInput>;
   slug?: Maybe<StringQueryOperatorInput>;
 };
@@ -3347,6 +3354,7 @@ export enum SitePageFieldsEnum {
   ContextBreadcrumbsTitle = 'context___breadcrumbs___title',
   ContextBreadcrumbsUrl = 'context___breadcrumbs___url',
   ContextId = 'context___id',
+  ContextIsFeatured = 'context___isFeatured',
   ContextRegex = 'context___regex',
   ContextSlug = 'context___slug',
   Id = 'id',
@@ -4332,7 +4340,7 @@ export type GatsbyImageSharpFluid_WithWebp_NoBase64Fragment = { __typename?: 'Im
 export type ResourcesQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type ResourcesQuery = { __typename?: 'Query', allMarkdownRemark: { __typename?: 'MarkdownRemarkConnection', nodes: Array<{ __typename?: 'MarkdownRemark', excerpt?: string | null | undefined, fields?: { __typename?: 'Fields', slug?: string | null | undefined, isCategoryIndex?: boolean | null | undefined } | null | undefined, frontmatter?: { __typename?: 'Frontmatter', title?: string | null | undefined, description?: string | null | undefined, author?: string | null | undefined } | null | undefined }> }, localSearchResources?: { __typename?: 'LocalSearchResources', index: string, store: any } | null | undefined };
+export type ResourcesQuery = { __typename?: 'Query', allMarkdownRemark: { __typename?: 'MarkdownRemarkConnection', nodes: Array<{ __typename?: 'MarkdownRemark', excerpt?: string | null | undefined, fields?: { __typename?: 'Fields', slug?: string | null | undefined, isCategoryIndex?: boolean | null | undefined } | null | undefined, frontmatter?: { __typename?: 'Frontmatter', title?: string | null | undefined, description?: string | null | undefined, author?: string | null | undefined, isFeatured?: boolean | null | undefined } | null | undefined }> }, localSearchResources?: { __typename?: 'LocalSearchResources', index: string, store: any } | null | undefined };
 
 export type ResourceCategoryBySlugQueryVariables = Exact<{
   id: Scalars['String'];
@@ -4340,13 +4348,13 @@ export type ResourceCategoryBySlugQueryVariables = Exact<{
 }>;
 
 
-export type ResourceCategoryBySlugQuery = { __typename?: 'Query', site?: { __typename?: 'Site', siteMetadata?: { __typename?: 'SiteSiteMetadata', title?: string | null | undefined } | null | undefined } | null | undefined, markdownRemark?: { __typename?: 'MarkdownRemark', id: string, excerpt?: string | null | undefined, htmlAst?: any | null | undefined, frontmatter?: { __typename?: 'Frontmatter', title?: string | null | undefined, updatedDate?: any | null | undefined, description?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { __typename?: 'MarkdownRemarkConnection', nodes: Array<{ __typename?: 'MarkdownRemark', excerpt?: string | null | undefined, fields?: { __typename?: 'Fields', slug?: string | null | undefined, isCategoryIndex?: boolean | null | undefined } | null | undefined, frontmatter?: { __typename?: 'Frontmatter', title?: string | null | undefined, description?: string | null | undefined, author?: string | null | undefined } | null | undefined }> } };
+export type ResourceCategoryBySlugQuery = { __typename?: 'Query', site?: { __typename?: 'Site', siteMetadata?: { __typename?: 'SiteSiteMetadata', title?: string | null | undefined } | null | undefined } | null | undefined, markdownRemark?: { __typename?: 'MarkdownRemark', id: string, excerpt?: string | null | undefined, htmlAst?: any | null | undefined, frontmatter?: { __typename?: 'Frontmatter', title?: string | null | undefined, updatedDate?: any | null | undefined, description?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { __typename?: 'MarkdownRemarkConnection', nodes: Array<{ __typename?: 'MarkdownRemark', excerpt?: string | null | undefined, fields?: { __typename?: 'Fields', slug?: string | null | undefined, isCategoryIndex?: boolean | null | undefined } | null | undefined, frontmatter?: { __typename?: 'Frontmatter', title?: string | null | undefined, description?: string | null | undefined, author?: string | null | undefined, isFeatured?: boolean | null | undefined } | null | undefined }> } };
 
-export type NodeSummaryFragment = { __typename?: 'MarkdownRemark', excerpt?: string | null | undefined, fields?: { __typename?: 'Fields', slug?: string | null | undefined, isCategoryIndex?: boolean | null | undefined } | null | undefined, frontmatter?: { __typename?: 'Frontmatter', title?: string | null | undefined, description?: string | null | undefined, author?: string | null | undefined } | null | undefined };
+export type NodeSummaryFragment = { __typename?: 'MarkdownRemark', excerpt?: string | null | undefined, fields?: { __typename?: 'Fields', slug?: string | null | undefined, isCategoryIndex?: boolean | null | undefined } | null | undefined, frontmatter?: { __typename?: 'Frontmatter', title?: string | null | undefined, description?: string | null | undefined, author?: string | null | undefined, isFeatured?: boolean | null | undefined } | null | undefined };
 
 export type ResourcePageBySlugQueryVariables = Exact<{
   id: Scalars['String'];
 }>;
 
 
-export type ResourcePageBySlugQuery = { __typename?: 'Query', site?: { __typename?: 'Site', siteMetadata?: { __typename?: 'SiteSiteMetadata', title?: string | null | undefined } | null | undefined } | null | undefined, markdownRemark?: { __typename?: 'MarkdownRemark', id: string, excerpt?: string | null | undefined, htmlAst?: any | null | undefined, frontmatter?: { __typename?: 'Frontmatter', title?: string | null | undefined, updatedDate?: any | null | undefined, description?: string | null | undefined, author?: string | null | undefined, isoUpdatedDate?: any | null | undefined } | null | undefined } | null | undefined };
+export type ResourcePageBySlugQuery = { __typename?: 'Query', site?: { __typename?: 'Site', siteMetadata?: { __typename?: 'SiteSiteMetadata', title?: string | null | undefined } | null | undefined } | null | undefined, markdownRemark?: { __typename?: 'MarkdownRemark', id: string, excerpt?: string | null | undefined, htmlAst?: any | null | undefined, frontmatter?: { __typename?: 'Frontmatter', title?: string | null | undefined, updatedDate?: any | null | undefined, description?: string | null | undefined, author?: string | null | undefined, isFeatured?: boolean | null | undefined, isoUpdatedDate?: any | null | undefined } | null | undefined } | null | undefined };

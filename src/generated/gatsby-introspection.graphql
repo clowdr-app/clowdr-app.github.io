@@ -389,6 +389,7 @@ type SitePageContext {
   slug: String
   regex: String
   breadcrumbs: [SitePageContextBreadcrumbs]
+  isFeatured: Boolean
 }
 
 type SitePageContextBreadcrumbs {
@@ -970,6 +971,7 @@ type Frontmatter {
     locale: String
   ): Date
   author: String
+  isFeatured: Boolean
 }
 
 type Fields {
@@ -1170,6 +1172,7 @@ input FrontmatterFilterInput {
   featured: BooleanQueryOperatorInput
   updatedDate: DateQueryOperatorInput
   author: StringQueryOperatorInput
+  isFeatured: BooleanQueryOperatorInput
 }
 
 input FieldsFilterInput {
@@ -1406,6 +1409,7 @@ enum FileFieldsEnum {
   childrenMarkdownRemark___frontmatter___featured
   childrenMarkdownRemark___frontmatter___updatedDate
   childrenMarkdownRemark___frontmatter___author
+  childrenMarkdownRemark___frontmatter___isFeatured
   childrenMarkdownRemark___fields___slug
   childrenMarkdownRemark___fields___collection
   childrenMarkdownRemark___fields___isCategoryIndex
@@ -1468,6 +1472,7 @@ enum FileFieldsEnum {
   childMarkdownRemark___frontmatter___featured
   childMarkdownRemark___frontmatter___updatedDate
   childMarkdownRemark___frontmatter___author
+  childMarkdownRemark___frontmatter___isFeatured
   childMarkdownRemark___fields___slug
   childMarkdownRemark___fields___collection
   childMarkdownRemark___fields___isCategoryIndex
@@ -2198,6 +2203,7 @@ input SitePageContextFilterInput {
   slug: StringQueryOperatorInput
   regex: StringQueryOperatorInput
   breadcrumbs: SitePageContextBreadcrumbsFilterListInput
+  isFeatured: BooleanQueryOperatorInput
 }
 
 input SitePageContextBreadcrumbsFilterListInput {
@@ -2513,6 +2519,7 @@ enum SitePageFieldsEnum {
   context___breadcrumbs___NAME
   context___breadcrumbs___url
   context___breadcrumbs___title
+  context___isFeatured
   pluginCreator___resolve
   pluginCreator___name
   pluginCreator___version
@@ -3238,6 +3245,7 @@ enum MarkdownRemarkFieldsEnum {
   frontmatter___featured
   frontmatter___updatedDate
   frontmatter___author
+  frontmatter___isFeatured
   fields___slug
   fields___collection
   fields___isCategoryIndex

@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { NodeSummaryFragment } from "../generated/graphql-types";
-import { CategoryCard } from "./CategoryCard";
+import { Card } from "./card";
 
 export function ResourceCards({
   resourceNodes,
@@ -25,7 +25,7 @@ export function ResourceCards({
       </VisuallyHidden>
       <SimpleGrid columns={{ sm: 1, lg: 2 }} spacing={4} mt={2}>
         {resourceNodes.map((node, i) => (
-          <CategoryCard
+          <Card
             key={i}
             indexUrl={node.fields?.slug ?? "#"}
             descriptionHtml={
@@ -33,6 +33,7 @@ export function ResourceCards({
             }
             title={node.frontmatter?.title ?? "(No title)"}
             author={node.frontmatter?.author ?? undefined}
+            isFeatured={Boolean(node.frontmatter?.isFeatured)}
             type="resource"
           />
         ))}

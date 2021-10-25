@@ -9,6 +9,7 @@ import {
   Text,
   useToken,
   VStack,
+  Wrap,
 } from "@chakra-ui/react";
 import { Link as GatsbyLink } from "gatsby";
 import React, { HTMLProps } from "react";
@@ -17,12 +18,14 @@ import {
   AiOutlineFolderOpen,
   AiOutlineUser,
 } from "react-icons/ai";
+import { FeaturedBadge } from "./featured-badge";
 
-export function CategoryCard({
+export function Card({
   indexUrl,
   title,
   author,
   descriptionHtml,
+  isFeatured,
   type,
   ...props
 }: {
@@ -30,6 +33,7 @@ export function CategoryCard({
   title: string;
   author?: string;
   descriptionHtml: string;
+  isFeatured: boolean;
   type: "category" | "resource";
 } & HTMLProps<HTMLDivElement>): JSX.Element {
   const borderColour = useToken("colors", "brand.600");
@@ -92,12 +96,15 @@ export function CategoryCard({
             color={"gray.600"}
           />
           <Spacer />
-          {author ? (
-            <Badge w="max-content" textTransform="none">
-              <Icon as={AiOutlineUser} aria-label="author" />{" "}
-              <span itemProp="author">{author}</span>
-            </Badge>
-          ) : undefined}
+          <Wrap>
+            {author ? (
+              <Badge w="max-content" textTransform="none">
+                <Icon as={AiOutlineUser} aria-label="author" />{" "}
+                <span itemProp="author">{author}</span>
+              </Badge>
+            ) : undefined}
+            {isFeatured ? <FeaturedBadge /> : undefined}
+          </Wrap>
         </VStack>
       </HStack>
     </LinkBox>

@@ -1,8 +1,16 @@
-import { Badge, chakra, Container, Heading, Icon } from "@chakra-ui/react";
+import {
+  Badge,
+  chakra,
+  Container,
+  Heading,
+  Icon,
+  Wrap,
+} from "@chakra-ui/react";
 import { graphql, PageProps } from "gatsby";
 import React from "react";
 import { AiOutlineUser } from "react-icons/ai";
 import { Breadcrumbs } from "../components/Breadcrumbs";
+import { FeaturedBadge } from "../components/featured-badge";
 import { Layout } from "../components/Layout";
 import { RenderHtml } from "../components/RenderHtml";
 import Title from "../components/Title";
@@ -29,25 +37,28 @@ export default function ResourcePageBySlug({
           <Breadcrumbs breadcrumbs={pageContext.breadcrumbs} />
           <header>
             <Heading as="h1" size="2xl" itemProp="headline">
-              {post?.frontmatter?.title}
+              {post?.frontmatter?.title}{" "}
             </Heading>
-            {post?.frontmatter?.updatedDate ? (
-              <Badge mt={4} mr={2} textTransform="none">
-                Updated{" "}
-                <time
-                  itemProp="dateModified"
-                  dateTime={post?.frontmatter?.isoUpdatedDate}
-                >
-                  {post?.frontmatter?.updatedDate}
-                </time>
-              </Badge>
-            ) : undefined}
-            {post?.frontmatter?.author ? (
-              <Badge mt={4} textTransform="none">
-                <Icon as={AiOutlineUser} aria-label="author" />{" "}
-                <span itemProp="author">{post?.frontmatter?.author}</span>
-              </Badge>
-            ) : undefined}
+            <Wrap mt={4}>
+              {post?.frontmatter?.updatedDate ? (
+                <Badge textTransform="none">
+                  Updated{" "}
+                  <time
+                    itemProp="dateModified"
+                    dateTime={post?.frontmatter?.isoUpdatedDate}
+                  >
+                    {post?.frontmatter?.updatedDate}
+                  </time>
+                </Badge>
+              ) : undefined}
+              {post?.frontmatter?.author ? (
+                <Badge textTransform="none">
+                  <Icon as={AiOutlineUser} aria-label="author" />{" "}
+                  <span itemProp="author">{post?.frontmatter?.author}</span>
+                </Badge>
+              ) : undefined}
+              {post?.frontmatter?.isFeatured ? <FeaturedBadge /> : undefined}
+            </Wrap>
           </header>
           <chakra.section
             sx={{
@@ -88,6 +99,7 @@ export const query = graphql`
         isoUpdatedDate: updatedDate
         description
         author
+        isFeatured
       }
     }
   }
