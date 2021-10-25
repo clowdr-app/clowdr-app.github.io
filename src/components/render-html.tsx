@@ -20,6 +20,7 @@ const processor = unified().use(rehypeReact, {
   createElement: React.createElement,
   components: {
     p: (props: any) => <Text {...props} />,
+    h2: (props: any) => <Heading as="h2" {...props} size="2xl" />,
     h3: (props: any) => <Heading as="h3" {...props} size="xl" />,
     h4: (props: any) => <Heading as="h4" {...props} size="lg" />,
     h5: (props: any) => <Heading as="h5" {...props} size="md" />,
