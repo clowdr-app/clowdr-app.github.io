@@ -1,5 +1,5 @@
 ---
-updatedDate: 2021-10-25T01:05:04+00:00
+updatedDate: 2021-10-25T01:05:04.000+00:00
 title: Sharing your screen
 description: Instructions for sharing your screen, including sharing the screen with
   audio.
@@ -11,7 +11,7 @@ Midspace supports sharing your screen whenever you are using video chat - whethe
 
 ![A screenshot of the screen sharing experience in a Midspace video chat.](/images/screen-share.png)
 
-To share your screen while using video chat mode, click the _Share Screen_ button. Your browser will ask you to choose what you want to share.
+To share your screen while using video chat, click the _Share Screen_ button. Your browser will ask you to choose what you want to share.
 
 Depending on your browser and operating system, you may have the option to share:
 
