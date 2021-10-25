@@ -11,6 +11,7 @@ import {
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import { CategoryCards } from "../components/category-cards";
+import { FeaturedCards } from "../components/featured-cards";
 import { Layout } from "../components/layout";
 import { ResourceCards } from "../components/resource-cards";
 import { Search } from "../components/search";
@@ -28,6 +29,14 @@ export default function Resources() {
             slug: { regex: "/^/[^/]+[/]?$/" }
           }
         }
+      ) {
+        nodes {
+          ...NodeSummary
+        }
+      }
+      featuredMarkdownRemark: allMarkdownRemark(
+        sort: { fields: [frontmatter___title], order: ASC }
+        filter: { frontmatter: { isFeatured: { eq: true } } }
       ) {
         nodes {
           ...NodeSummary
@@ -52,6 +61,10 @@ export default function Resources() {
 
   const resourcesEl = resourceNodes.length ? (
     <ResourceCards resourceNodes={resourceNodes} mt={4} />
+  ) : undefined;
+
+  const featuredEl = result.featuredMarkdownRemark.nodes.length ? (
+    <FeaturedCards featuredNodes={result.featuredMarkdownRemark.nodes} mt={4} />
   ) : undefined;
 
   return (
@@ -85,6 +98,14 @@ export default function Resources() {
                 store={result.localSearchResources.store}
               />
             </Box>
+          ) : undefined}
+          {result.featuredMarkdownRemark.nodes.length ? (
+            <>
+              <Heading as="h2" size="xl" mb={4}>
+                Featured
+              </Heading>
+              {featuredEl}
+            </>
           ) : undefined}
           <Heading as="h2" size="xl" mb={4}>
             Categories

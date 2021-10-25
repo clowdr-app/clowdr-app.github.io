@@ -10,22 +10,22 @@ import React from "react";
 import { NodeSummaryFragment } from "../generated/graphql-types";
 import { Card } from "./card";
 
-export function CategoryCards({
-  categoryNodes,
+export function FeaturedCards({
+  featuredNodes,
   ...props
 }: {
-  categoryNodes: NodeSummaryFragment[];
+  featuredNodes: NodeSummaryFragment[];
 } & HTMLChakraProps<"section">): JSX.Element {
   const categoriesHeadingId = useId();
   return (
     <chakra.section aria-labelledby={categoriesHeadingId} {...props}>
       <VisuallyHidden>
         <Heading as="h2" id={categoriesHeadingId}>
-          Sub-categories
+          Featured resources
         </Heading>
       </VisuallyHidden>
       <SimpleGrid columns={{ sm: 1, lg: 2 }} spacing={4} mt={2} mb={8}>
-        {categoryNodes.map((node, i) => (
+        {featuredNodes.map((node, i) => (
           <Card
             key={i}
             indexUrl={node.fields?.slug ?? "#"}
@@ -33,7 +33,7 @@ export function CategoryCards({
               node.frontmatter?.description ?? node.excerpt ?? ""
             }
             title={node.frontmatter?.title ?? "(No title)"}
-            type="category"
+            type={node.fields?.isCategoryIndex ? "category" : "resource"}
             isFeatured={Boolean(node.frontmatter?.isFeatured)}
           />
         ))}

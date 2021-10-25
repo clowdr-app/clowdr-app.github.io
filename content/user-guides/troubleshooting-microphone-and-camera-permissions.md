@@ -5,6 +5,7 @@ description:
   Use this information to get your camera and microphone working on supported
   platforms.
 author: Ed Nutting
+isFeatured: true
 ---
 
 Please use the information linked to from this page to diagnose and fix your camera and microphone permissions on supported platforms.

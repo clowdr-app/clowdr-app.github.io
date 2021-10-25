@@ -3267,7 +3267,6 @@ export type SitePageContext = {
   __typename?: 'SitePageContext';
   breadcrumbs?: Maybe<Array<Maybe<SitePageContextBreadcrumbs>>>;
   id?: Maybe<Scalars['String']>;
-  isFeatured?: Maybe<Scalars['Boolean']>;
   regex?: Maybe<Scalars['String']>;
   slug?: Maybe<Scalars['String']>;
 };
@@ -3294,7 +3293,6 @@ export type SitePageContextBreadcrumbsFilterListInput = {
 export type SitePageContextFilterInput = {
   breadcrumbs?: Maybe<SitePageContextBreadcrumbsFilterListInput>;
   id?: Maybe<StringQueryOperatorInput>;
-  isFeatured?: Maybe<BooleanQueryOperatorInput>;
   regex?: Maybe<StringQueryOperatorInput>;
   slug?: Maybe<StringQueryOperatorInput>;
 };
@@ -3354,7 +3352,6 @@ export enum SitePageFieldsEnum {
   ContextBreadcrumbsTitle = 'context___breadcrumbs___title',
   ContextBreadcrumbsUrl = 'context___breadcrumbs___url',
   ContextId = 'context___id',
-  ContextIsFeatured = 'context___isFeatured',
   ContextRegex = 'context___regex',
   ContextSlug = 'context___slug',
   Id = 'id',
@@ -4337,10 +4334,15 @@ export type GatsbyImageSharpFluid_NoBase64Fragment = { __typename?: 'ImageSharpF
 
 export type GatsbyImageSharpFluid_WithWebp_NoBase64Fragment = { __typename?: 'ImageSharpFluid', aspectRatio: number, src: string, srcSet: string, srcWebp?: string | null | undefined, srcSetWebp?: string | null | undefined, sizes: string };
 
+export type Page404QueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type Page404Query = { __typename?: 'Query', localSearchResources?: { __typename?: 'LocalSearchResources', index: string, store: any } | null | undefined };
+
 export type ResourcesQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type ResourcesQuery = { __typename?: 'Query', allMarkdownRemark: { __typename?: 'MarkdownRemarkConnection', nodes: Array<{ __typename?: 'MarkdownRemark', excerpt?: string | null | undefined, fields?: { __typename?: 'Fields', slug?: string | null | undefined, isCategoryIndex?: boolean | null | undefined } | null | undefined, frontmatter?: { __typename?: 'Frontmatter', title?: string | null | undefined, description?: string | null | undefined, author?: string | null | undefined, isFeatured?: boolean | null | undefined } | null | undefined }> }, localSearchResources?: { __typename?: 'LocalSearchResources', index: string, store: any } | null | undefined };
+export type ResourcesQuery = { __typename?: 'Query', allMarkdownRemark: { __typename?: 'MarkdownRemarkConnection', nodes: Array<{ __typename?: 'MarkdownRemark', excerpt?: string | null | undefined, fields?: { __typename?: 'Fields', slug?: string | null | undefined, isCategoryIndex?: boolean | null | undefined } | null | undefined, frontmatter?: { __typename?: 'Frontmatter', title?: string | null | undefined, description?: string | null | undefined, author?: string | null | undefined, isFeatured?: boolean | null | undefined } | null | undefined }> }, featuredMarkdownRemark: { __typename?: 'MarkdownRemarkConnection', nodes: Array<{ __typename?: 'MarkdownRemark', excerpt?: string | null | undefined, fields?: { __typename?: 'Fields', slug?: string | null | undefined, isCategoryIndex?: boolean | null | undefined } | null | undefined, frontmatter?: { __typename?: 'Frontmatter', title?: string | null | undefined, description?: string | null | undefined, author?: string | null | undefined, isFeatured?: boolean | null | undefined } | null | undefined }> }, localSearchResources?: { __typename?: 'LocalSearchResources', index: string, store: any } | null | undefined };
 
 export type ResourceCategoryBySlugQueryVariables = Exact<{
   id: Scalars['String'];

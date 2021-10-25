@@ -1,5 +1,6 @@
 import {
   Badge,
+  BoxProps,
   Heading,
   HStack,
   Icon,
@@ -12,7 +13,7 @@ import {
   Wrap,
 } from "@chakra-ui/react";
 import { Link as GatsbyLink } from "gatsby";
-import React, { HTMLProps } from "react";
+import React from "react";
 import {
   AiOutlineFileText,
   AiOutlineFolderOpen,
@@ -35,13 +36,11 @@ export function Card({
   descriptionHtml: string;
   isFeatured: boolean;
   type: "category" | "resource";
-} & HTMLProps<HTMLDivElement>): JSX.Element {
+} & BoxProps): JSX.Element {
   const borderColour = useToken("colors", "brand.600");
   const iconSize = 16;
   return (
     <LinkBox
-      {...props}
-      as="article"
       itemScope
       itemType="http://schema.org/Article"
       rounded="lg"
@@ -49,6 +48,8 @@ export function Card({
       border={`2px ${borderColour} solid`}
       bg={"white"}
       p={4}
+      {...props}
+      as="article"
     >
       <HStack h="100%">
         {type === "category" ? (

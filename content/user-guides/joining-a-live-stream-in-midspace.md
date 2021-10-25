@@ -3,6 +3,7 @@ updatedDate: 2021-04-27T09:13:53.000+00:00
 title: Joining a live-stream in Midspace
 description: Learn how to join a livestream as a presenter or chair.
 author: Ed Nutting
+isFeatured: true
 ---
 
 This tutorial includes detailed instructions (in text, video and screenshots) for how to prepare for and join into a Midspace livestream event.

@@ -19,11 +19,15 @@ import { Card } from "./card";
 export function Search({
   index,
   store,
+  initialSearch,
 }: {
   index: any;
   store: any;
+  initialSearch?: string;
 }): JSX.Element {
-  const [searchTerm, setSearchTerm] = useState<string | null>(null);
+  const [searchTerm, setSearchTerm] = useState<string | null>(
+    initialSearch ?? null
+  );
   const results = useLunr(searchTerm, index, store);
   const liveRegion = useLiveRegion({ "aria-live": "polite" });
 
