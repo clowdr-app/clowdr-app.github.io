@@ -2,8 +2,8 @@ import { Box, Container, Heading, Text } from "@chakra-ui/react";
 import { graphql, PageProps, useStaticQuery } from "gatsby";
 import React from "react";
 import { Helmet } from "react-helmet-async";
-import { Layout } from "../components/layout";
-import { Search } from "../components/search";
+import { Layout } from "../components/layout2";
+import { Search } from "../components/search2";
 import { Page404Query } from "../generated/graphql-types";
 
 export default function PageNotFound({ location }: PageProps) {

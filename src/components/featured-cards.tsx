@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { NodeSummaryFragment } from "../generated/graphql-types";
-import { Card } from "./card";
+import { Card } from "./card2";
 
 export function FeaturedCards({
   featuredNodes,

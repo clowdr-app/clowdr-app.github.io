@@ -14,7 +14,7 @@ import {
 import React, { FocusEvent, useCallback, useEffect, useState } from "react";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { useLunr } from "react-lunr";
-import { Card } from "./card";
+import { Card } from "./card2";
 
 export function Search({
   index,
