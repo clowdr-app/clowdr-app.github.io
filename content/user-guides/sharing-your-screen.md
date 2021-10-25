@@ -1,7 +1,8 @@
 ---
 updatedDate: 2021-10-25T01:05:04+00:00
 title: Sharing your screen
-description: Instructions for sharing your screen
+description: Instructions for sharing your screen, including sharing the screen with
+  audio.
 author: Ross Gardiner
 isFeatured: false
 
