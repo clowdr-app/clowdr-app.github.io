@@ -4,7 +4,7 @@ title: Sharing your screen
 description: Instructions for sharing your screen, including sharing the screen with
   audio.
 author: Ross Gardiner
-isFeatured: false
+isFeatured: true
 
 ---
 Midspace supports sharing your screen whenever you are using video chat - whether that be in a social room; presenting from a backstage or visiting a sponsor booth.
