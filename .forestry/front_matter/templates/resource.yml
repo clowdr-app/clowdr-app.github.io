@@ -4,14 +4,14 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
   description: Title of the resource.
   config:
     required: true
     min: 5
 - type: datetime
   name: updatedDate
-  label: updatedDate
+  label: Updated on
   description: Date the resource was last updated.
   config:
     date_format: YYYY-MM-DD
@@ -20,27 +20,27 @@ fields:
   default: now
 - type: text
   name: description
-  label: description
+  label: Description
   description: Description of the resource.
   config:
     required: false
 - type: text
   name: author
-  label: author
+  label: Author
   description: Author of the resource.
+- name: isFeatured
+  type: boolean
+  label: Is featured?
+  description: Should the resource be featured on the home page?
 pages:
 - content/accessibility/clowdr-s-commitment-to-accessibility.md
 - content/attendees/getting-started-on-clowdr.md
 - content/attendees/making-the-most-of-clowdr-s-shuffle-feature.md
 - content/attendees/using-clowdr-s-social-rooms.md
-- content/joining-a-live-stream-in-clowdr.md
-- content/minimum-technical-requirements-for-using-clowdr.md
 - content/organizer-guides/conference-setup/clowdr-s-event-modes.md
 - content/organizer-guides/conference-setup/managing-the-content-in-your-program-with-clowdr.md
 - content/organizer-guides/conference-setup/managing-the-people-in-your-program-with-clowdr.md
 - content/organizer-guides/conference-setup/managing-your-program-s-schedule-in-clowdr.md
 - content/organizer-guides/hosting-a-tutorial-or-workshop-with-clowdr-and-zoom.md
 - content/organizer-guides/tech-support-for-livestreams-training.md
-- content/troubleshooting-microphone-and-camera-permissions.md
-- content/user-guides/user-guides.md
 - content/video-subtitles/exporting-video-from-clowdr-to-youtube.md
