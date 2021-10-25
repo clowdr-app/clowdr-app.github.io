@@ -1,8 +1,8 @@
 import { Box, chakra, Flex } from "@chakra-ui/react";
 import React from "react";
-import { DesktopMenu } from "./DesktopMenu";
-import Footer from "./Footer";
-import { MobileMenu } from "./MobileMenu";
+import { DesktopMenu } from "./desktop-menu";
+import Footer from "./footer";
+import { MobileMenu } from "./mobile-menu";
 
 export function Layout({
   children,

@@ -9,11 +9,11 @@ import {
 import { graphql, PageProps } from "gatsby";
 import React from "react";
 import { AiOutlineUser } from "react-icons/ai";
-import { Breadcrumbs } from "../components/Breadcrumbs";
+import { Breadcrumbs } from "../components/breadcrumbs";
 import { FeaturedBadge } from "../components/featured-badge";
-import { Layout } from "../components/Layout";
-import { RenderHtml } from "../components/RenderHtml";
-import Title from "../components/Title";
+import { Layout } from "../components/layout";
+import { RenderHtml } from "../components/render-html";
+import Title from "../components/title";
 import { ResourcePageBySlugQuery } from "../generated/graphql-types";
 import { ResourcePageContext } from "../misc/resource-page-context";
 

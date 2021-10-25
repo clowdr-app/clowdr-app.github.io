@@ -10,11 +10,11 @@ import {
 } from "@chakra-ui/react";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
-import { CategoryCards } from "../components/CategoryCards";
-import { Layout } from "../components/Layout";
-import { ResourceCards } from "../components/ResourceCards";
-import { Search } from "../components/Search";
-import Title from "../components/Title";
+import { CategoryCards } from "../components/category-cards";
+import { Layout } from "../components/layout";
+import { ResourceCards } from "../components/resource-cards";
+import { Search } from "../components/search";
+import Title from "../components/title";
 import { ResourcesQuery } from "../generated/graphql-types";
 
 export default function Resources() {

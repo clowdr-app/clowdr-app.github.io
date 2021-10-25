@@ -9,7 +9,7 @@ import {
 import { Link as GatsbyLink } from "gatsby";
 import React from "react";
 import { menuItems } from "../misc/menu-items";
-import { BackToClowdrButton } from "./BackToClowdrButton";
+import { BackToClowdrButton } from "./back-to-clowdr-button";
 
 export function DesktopMenu(): JSX.Element {
   return (

@@ -6,7 +6,7 @@ import {
   AiOutlineRocket,
   AiOutlineTool,
 } from "react-icons/ai";
-import { Feature } from "./Feature";
+import { Feature } from "./feature";
 
 export function Packages(): JSX.Element {
   return (

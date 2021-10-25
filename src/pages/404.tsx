@@ -1,7 +1,7 @@
 import { Box, Heading } from "@chakra-ui/react";
 import React from "react";
 import { Helmet } from "react-helmet-async";
-import { Layout } from "../components/Layout";
+import { Layout } from "../components/layout";
 
 export default function PageNotFound() {
   return (

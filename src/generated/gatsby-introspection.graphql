@@ -389,7 +389,6 @@ type SitePageContext {
   slug: String
   regex: String
   breadcrumbs: [SitePageContextBreadcrumbs]
-  isFeatured: Boolean
 }
 
 type SitePageContextBreadcrumbs {
@@ -2203,7 +2202,6 @@ input SitePageContextFilterInput {
   slug: StringQueryOperatorInput
   regex: StringQueryOperatorInput
   breadcrumbs: SitePageContextBreadcrumbsFilterListInput
-  isFeatured: BooleanQueryOperatorInput
 }
 
 input SitePageContextBreadcrumbsFilterListInput {
@@ -2519,7 +2517,6 @@ enum SitePageFieldsEnum {
   context___breadcrumbs___NAME
   context___breadcrumbs___url
   context___breadcrumbs___title
-  context___isFeatured
   pluginCreator___resolve
   pluginCreator___name
   pluginCreator___version
