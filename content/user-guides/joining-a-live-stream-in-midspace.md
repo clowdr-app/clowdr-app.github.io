@@ -1,11 +1,11 @@
 ---
 updatedDate: 2021-04-27T09:13:53.000+00:00
 title: Joining a live-stream in Midspace
-description: Learn how to join a livestream as a presenter or chair.
+description: Learn how to join a livestream and backstage as a presenter or chair.
 author: Ed Nutting
 isFeatured: true
----
 
+---
 This tutorial includes detailed instructions (in text, video and screenshots) for how to prepare for and join into a Midspace livestream event.
 
 The video below briefly summarizes Midspace's video pipeline capabilities, then explains what you need to do as a presenter or chair at an event. We walk through Midspace's UI going from logging in, to finding the room for your event, to opening and joining the backstage area. Common problems are also identified and brief advice for how to tackle them is provided.
