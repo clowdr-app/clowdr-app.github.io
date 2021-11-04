@@ -6,20 +6,20 @@ author: Ed Nutting
 isFeatured: true
 
 ---
-This tutorial includes detailed instructions (in text, video and screenshots) for how to prepare for and join into a Midspace livestream event.
+This tutorial includes detailed instructions (in text, video and screenshots) for how to prepare for and join into a Midspace livestream event with a backstage.
 
-The video below briefly summarizes Midspace's video pipeline capabilities, then explains what you need to do as a presenter or chair at an event. We walk through Midspace's UI going from logging in, to finding the room for your event, to opening and joining the backstage area. Common problems are also identified and brief advice for how to tackle them is provided.
+The video below briefly summarizes Midspace's video capabilities, then explains what you need to do as a presenter or chair at an event. We walk through Midspace's UI going from logging in, to finding the room for your event, to opening and joining the backstage area. Common problems are also identified and brief advice for how to tackle them is provided.
 
 `youtube:https://youtu.be/cCxcsd45yEo`
 
 **FEATURE UPDATE:** Midspace has recently deployed a page called "My Backstages" to make it easy for presenters to navigate to their backstage areas.
 
-This page available via the _My Backstages_ button in the top-left of the page - above the navigation menu.
+![](/images/backstage-navigation.png)
 
-![](/images/my-backstage.jpg)  
+  
 _My Backstages_ shows each presenter all their upcoming speaker backstages - and will highlight which ones they are needed at when available (in the 20 minutes before an event).
 
-![](/images/my-backstage2.jpg)
+![](/images/backstage-event-starting-soon.PNG)
 
 A big button will appear to go directly to the room with the presenter's backstage.
 
@@ -32,11 +32,9 @@ To join a live-stream in Midspace, please follow these three important stages, s
 1. **When you're live, _you're live._**
 
    Don't sit around waiting for the audience to tell you - we've all watched this happen and there's no need. Midspace's backstage makes it very clear when you are live.
-
 2. **Leave questions until you are live.**
 
    When you see questions in the chat, and you're due to participate in a live Q&A, leave them unanswered so that you can answer them during the live event. If you answer the questions via chat, you'll have nothing to answer during the live-stream.
-
 3. **Use headphones and an external microphone.**
 
    If the audience wanted to just see slides, they would ask for a PDF. In other words, the audience is here to listen to you! It really doesn't matter much if your camera is high quality or not. Audio is king in the world of online videos. If you sound bad, nobody will want to listen. So please, use headphones to avoid feedback loops and use an external microphone (even a $30 will do), not a built-in laptop mic.
@@ -46,29 +44,23 @@ To join a live-stream in Midspace, please follow these three important stages, s
 1. [**Log in (or sign up)**](https://in.midspace.app)
 
    ![The Midspace landing page with sign up and login buttons](/images/login-screen-small.png "Midspace Landing Page")
-
 2. You should have received an invite code from your conference organizers via an email from Midspace. After signing up and confirming your email address, you can use the invite code to register for your conference.
 
    ![Midspace app showing the Join a conference using an invite code form on the left half of the page.](/images/use-invite-code-screen.png "Midspace Use Invite Code page")
-
 3. Please use a desktop or laptop device for the best experience (for both you and attendees watching your live-stream). iPads and mobile phones are not a good choice (unless professionally set up).
 4. **Find or create a social room to check your camera/microphone permissions**
-
-   - First, select the conference you are attending from your list of conferences.
-   - In the left sidebar you will find Midspace's main navigation menus. Choose a social room (or create one using the "plus" button).
+   * First, select the conference you are attending from your list of conferences.
+   * In the left sidebar you will find Midspace's main navigation menus. Choose a social room (or create one using the "plus" button).
 
      ![The welcome page of a demo conference in Midspace, with some social rooms highlighted in the left navigation sidebar.](/images/demo-welcome-page.png "A demo conference welcome page with some social rooms")
-
-   - Once you are on the room page, try to enable your camera and microphone.
+   * Once you are on the room page, try to enable your camera and microphone.
 
      ![A Midspace social room highlighting the three buttons at the top of the page for enabling camera and microphone then joining the room.](/images/join-room-steps.png "Midspace room page")
-
-   - Finally, click the "Join room" button.
+   * Finally, click the "Join room" button.
 
    If you have trouble enabling your camera or microphone, such as "Permission denied" error messages, [please follow these instructions to resolve the problem](mic-cam-permissions "Instructions for fixing camera, microphone and screen sharing permissions").
 
    If you plan to give a presentation using slides or an on-screen demo, you should also try enabling screen sharing. If you have problems with browser or operating system permissions, please follow the instructions linked above to resolve the problem.
-
 5. **Invite a friend to join you. Check your camera/microphone quality**
 
    You'll need a friend to help you with this step! Either someone you already know at the conference, or a stranger in a social room, or your session chair. Anybody will do! Ask them to join the social room and let you know how you look and sound.
@@ -76,7 +68,6 @@ To join a live-stream in Midspace, please follow these three important stages, s
    > **We strongly recommend wearing headphones** and using an external USB microphone if you have one available. If you're using a headset, please remember to position the microphone correctly: below your chin - out of the line of your breath.
    >
    > Feedback loops caused by using speakers (even fabled Apple devices) are almost unavoidable and awful for attendees watching your live-stream. Most built-in microphones sound poor too.
-
 6. **Find the room for your event**
 
    When preparing in advance, you'll need to find which room your event is scheduled in. On the day of your event, you'll be able to find your room using the "Today's Program Rooms" section of the left sidebar.
@@ -86,7 +77,6 @@ To join a live-stream in Midspace, please follow these three important stages, s
    To find your event, either browser the Schedule or search in the Happening Soon section for your own name or the title of your event. Click on your event to open the item page. At the bottom of the item page you will find a summary of the scheduled times and rooms for your item. Use the first of the two tables to find the relevant room.
 
    ![The Schedule section at the bottom of a Midspace item page, highlighting the left hand table that shows all times/rooms where the item is scheduled to be presented. An arrow points to the room button on a particular event which is a row in the schedule table.](/images/item-events-highlighting-how-to-find-room.png "Schedule section of a Midspace item page")
-
 7. **Session chairs: Watch or read the presentations in advance**
 
    While you are backstage with the presenters at an event, you cannot (currently) watch the live-stream at the same time. Therefore, you should familiarize yourself with the content of the session in advance. For example, by watching any pre-recorded videos or read each paper's abstract.
@@ -114,7 +104,6 @@ Midspace's data model does not include "sessions". **Your speakers' area becomes
    Click the "Open this area" button to open a particular speakers' area.
 
    If you are the presenter or chair at multiple events, you will see a separate speakers' area for each event. You should join the next one at which you are needed.
-
 2. **Enable your camera and microphone, just as you did during step 2 of "Prepare in advance".**
 3. **Join the room**
 
@@ -123,11 +112,9 @@ Midspace's data model does not include "sessions". **Your speakers' area becomes
    Once in the room, you can toggle your camera, microphone or screen sharing. You will see anyone else who is due to present with you and can use the time available to chat to them.
 
    If you are a session chair, you should chat to the presenters in the backstage, get to know them a little and help them to feel comfortable.
-
 4. **(Optional) Start sharing your screen**
 
    If you need to show slides or give a demo, you can enable screen sharing after joining the room.
-
 5. **Watch for the countdown**
 
    You will see a box that says "You are off air" next to a countdown timer. When the countdown reaches zero, you are live - and everyone at the conference can see and hear you!
@@ -135,7 +122,6 @@ Midspace's data model does not include "sessions". **Your speakers' area becomes
    In the 10 seconds before you are live, the countdown will flash red-black, red-black, red-black, and then remain red once you are live.
 
    ![In a Midspace backstage, during the 10s before you are live, the "You are off air" text and the countdown alternative backgrounds between red and black.](/images/backsrtage-10-secs-before-live.png "Midspace backstage 10s before live")
-
 6. **You are LIVE!**
 
    ![A Midspace backstage when it is live. The backstage has a bright red border and says "You are live" to the left of the central countdown. The countdown now shows the time remaining to the end of the event.](/images/live-backstage.png "A live backstage in Midspace")
@@ -151,7 +137,6 @@ Midspace's data model does not include "sessions". **Your speakers' area becomes
    **For most Q&A sessions, the session chair should start by asking a question they have prepared in advance**. While the question is being answered, they should watch for new questions in the chat and prepare to ask them. _This turns out to be a good thing - it takes a bit of the pressure off of presenters, particularly newer members of the community._ This delay in questions appearing in chat and the session chair asking them gives presenters an opportunity to read the question and start to think of an answer, before being put on the spot.
 
    **Ask the question out loud.** Just like at a physical event, you need to say out loud the question that you are asking. People watching the recording of your event on Midspace or YouTube long after the conference has ended, may not have access to the text chat, so will need to hear the question from you in the stream.
-
 7. **Watch for the countdown**
 
    The countdown will have been replaced with a new timer. This shows the time remaining until the end of your event.
