@@ -43,19 +43,19 @@ To join a live-stream in Midspace, please follow these three important stages, s
 
 1. [**Log in (or sign up)**](https://in.midspace.app)
 
-   ![The Midspace landing page with sign up and login buttons](/images/login-screen-small.png "Midspace Landing Page")
+   ![](/images/log-in.PNG)
 2. You should have received an invite code from your conference organizers via an email from Midspace. After signing up and confirming your email address, you can use the invite code to register for your conference.
 
    ![Midspace app showing the Join a conference using an invite code form on the left half of the page.](/images/use-invite-code-screen.png "Midspace Use Invite Code page")
 3. Please use a desktop or laptop device for the best experience (for both you and attendees watching your live-stream). iPads and mobile phones are not a good choice (unless professionally set up).
 4. **Find or create a social room to check your camera/microphone permissions**
    * First, select the conference you are attending from your list of conferences.
-   * In the left sidebar you will find Midspace's main navigation menus. Choose a social room (or create one using the "plus" button).
+   * In the left sidebar you will find Midspace's main navigation menus. Choose a social room under **Socialise**.
 
-     ![The welcome page of a demo conference in Midspace, with some social rooms highlighted in the left navigation sidebar.](/images/demo-welcome-page.png "A demo conference welcome page with some social rooms")
+   ![](/images/social-rooms-list.png)
    * Once you are on the room page, try to enable your camera and microphone.
 
-     ![A Midspace social room highlighting the three buttons at the top of the page for enabling camera and microphone then joining the room.](/images/join-room-steps.png "Midspace room page")
+   ![](/images/joining-social-and-discussion-rooms.png)
    * Finally, click the "Join room" button.
 
    If you have trouble enabling your camera or microphone, such as "Permission denied" error messages, [please follow these instructions to resolve the problem](mic-cam-permissions "Instructions for fixing camera, microphone and screen sharing permissions").
@@ -70,11 +70,11 @@ To join a live-stream in Midspace, please follow these three important stages, s
    > Feedback loops caused by using speakers (even fabled Apple devices) are almost unavoidable and awful for attendees watching your live-stream. Most built-in microphones sound poor too.
 6. **Find the room for your event**
 
-   When preparing in advance, you'll need to find which room your event is scheduled in. On the day of your event, you'll be able to find your room using the "Today's Program Rooms" section of the left sidebar.
+   When preparing in advance, you'll need to find which room your event is scheduled in. 
 
-   ![The Happening Soon section of the left sidebar, highlighting how to search for your own name to find the your items.](/images/happening-soon-self-search.png "Midspace Left Sidebar Happening Soon")
+   To find your event, either browser the Full Schedule (via Program in the left side navigation menu) or search in the Happening Soon section for your own name or the title of your event. 
 
-   To find your event, either browser the Schedule or search in the Happening Soon section for your own name or the title of your event. Click on your event to open the item page. At the bottom of the item page you will find a summary of the scheduled times and rooms for your item. Use the first of the two tables to find the relevant room.
+   Click on your event to open the item page. On the page you will find a summary of the scheduled times and rooms for your item. Use the first of the two tables to find the relevant room.
 
    ![The Schedule section at the bottom of a Midspace item page, highlighting the left hand table that shows all times/rooms where the item is scheduled to be presented. An arrow points to the room button on a particular event which is a row in the schedule table.](/images/item-events-highlighting-how-to-find-room.png "Schedule section of a Midspace item page")
 7. **Session chairs: Watch or read the presentations in advance**
