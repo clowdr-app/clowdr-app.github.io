@@ -90,3 +90,7 @@ Note: Midspace does not support the following H.264 profiles: High 4:2:2, High 1
 Tip: you can use the following [ffmpeg](https://www.ffmpeg.org/) command to convert many input videos to a format Midspace accepts.
 
     ffmpeg -i <input file> -vcodec h264 -s hd1080 -crf 23 -r 24 output.mp4
+
+Tip: If you have an Nvidia GPU and a version of ffmpeg with Nvidia encode/decode libraries included, you can use the following command for accelerated transcode:
+
+    ffmpeg -y -hwaccel nvdec -i <input file> -vcodec h264_nvenc -s hd1080 -r 24 output.mp4
