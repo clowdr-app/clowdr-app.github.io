@@ -93,4 +93,4 @@ Tip: you can use the following [ffmpeg](https://www.ffmpeg.org/) command to conv
 
 Tip: If you have an Nvidia GPU and a version of ffmpeg with Nvidia encode/decode libraries included, you can use the following command for accelerated transcode:
 
-    ffmpeg -y -hwaccel nvdec -i <input file> -vcodec h264_nvenc -s hd1080 -r 24 output.mp4
+    ffmpeg -hwaccel nvdec -i <input file> -vcodec h264_nvenc -s hd1080 -r 24 output.mp4
