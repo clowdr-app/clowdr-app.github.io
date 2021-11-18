@@ -24,13 +24,13 @@ In summary:
 2. Be respectful in the way you communicate with others. 
 3. All defamatory, abusive, threatening, offensive, or illegal materials are strictly prohibited.
 4. Disruption of presentations during sessions will be considered unacceptable behavior. 
-5. Midspace and the conference organizing team reserve the right to remove any messaging, posting, or presentation for any violation of these rules.
+5.  The conference organizing team reserves the right to remove any messaging, posting, or presentation for any violation of these rules.
 
 **As a user of Midspace, you agree to follow these safety rules put in place for events hosted on Midspace.**
 
 ### Reporting Violations
 
-If you are concerned about behavior on Midspace and wish to report it, you can take action by:
+If you are concerned about behavior on Midspace and wish to report it to an organizer, you can take action by:
 
 1. Flagging a chat message for review using the red flag icon in the top right corner of all messages.
 
