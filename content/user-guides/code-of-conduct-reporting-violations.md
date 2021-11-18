@@ -14,11 +14,11 @@ All platform users, including, but not limited to attendees, speakers, exhibitor
 
 This applies to all events on the Midspace platform. Please take a moment to review these important guidelines. 
 
-Conferences taking place on our platform may have their own code of conduct guidelines and are responsible for monitoring and enforcing adherence during their events. 
+Conferences taking place on our platform may have additional code of conduct guidelines and are responsible for monitoring and enforcing adherence during their events. 
 
 ### Code of Conduct for Online Behavior
 
-In order to preserve a climate that encourages both civil and fruitful dialogue, we encourage anyone who witnesses or hears of unacceptable behavior to flag or report it to your event organizer immediately. 
+In order to preserve a climate that encourages civil and fruitful dialogue, we encourage anyone who witnesses or hears of unacceptable behavior to flag or report it to your event organizer immediately. 
 
 We reserve the right to suspend or terminate access for anyone who violates the following rules:
 
@@ -34,8 +34,14 @@ We reserve the right to suspend or terminate access for anyone who violates the 
 
 If you witness behavior that is in violation of our guidelines, you can take action by:
 
-1. Flagging a message for review.
+1. Flagging a chat message for review using the red flag icon in the top right corner of all messages. 
+
+![](/images/flag-message.png)
+
+A pop up will appear asking for additional information to help the person in charge of reviewing reports.
+
+![](/images/flag-message-2.PNG)
 
 2. Raising the issue in the the event's Help Desk chat. 
 
-2. Direct messaging an organizer, moderator, or session chair in a private chat. 
+3. Direct messaging an organizer, moderator, or session chair in a private chat. 
