@@ -8,17 +8,17 @@ isFeatured: false
 ---
 # Code of Conduct & Reporting Violations
 
-Midspace is committed to providing a safe, productive, and welcoming environment for all event participants and staff. 
+Midspace is committed to providing a safe, productive, and welcoming environment for all event participants and staff.
 
-All platform users, including, but not limited to attendees, speakers, exhibitors, staff members, and all others are expected to abide by our code of conduct.
+All platform users, including, but not limited to attendees, speakers, exhibitors, staff members, and all others are expected to abide by a code of conduct.
 
-This applies to all events on the Midspace platform. Please take a moment to review these important guidelines. 
+This applies to all events on the Midspace platform. Please take a moment to review these important guidelines.
 
-Conferences taking place on our platform may have additional code of conduct guidelines and are responsible for monitoring and enforcing adherence during their events. 
+Conferences taking place on our platform may have additional code of conduct guidelines and are responsible for monitoring and enforcing adherence during their events.
 
 ### Code of Conduct for Online Behavior
 
-In order to preserve a climate that encourages civil and fruitful dialogue, we encourage anyone who witnesses or hears of unacceptable behavior to flag or report it to your event organizer immediately. 
+In order to preserve a climate that encourages civil and fruitful dialogue, we encourage anyone who witnesses or hears of unacceptable behavior to flag or report it to your event organizer immediately.
 
 We reserve the right to suspend or terminate access for anyone who violates the following rules:
 
@@ -28,13 +28,13 @@ We reserve the right to suspend or terminate access for anyone who violates the 
 4. Disruption of presentations during sessions will be considered unacceptable behavior and dealt with immediately. All participants must comply with the instructions of the moderator and/or any conference organizing team member or designated Midspace staff.
 5. Midspace and the conference organizing team reserve the right to reject/delete any messaging, posting and/or presentation for any violation of the Code of Conduct.
 
-**As a user of Midspace, you agree to adhere to the safety rules and guidelines put in place for events on Midspace.** 
+**As a user of Midspace, you agree to adhere to the safety rules and guidelines put in place for events on Midspace.**
 
 ### Reporting Violations
 
 If you witness behavior that is in violation of our guidelines, you can take action by:
 
-1. Flagging a chat message for review using the red flag icon in the top right corner of all messages. 
+1. Flagging a chat message for review using the red flag icon in the top right corner of all messages.
 
 ![](/images/flag-message.png)
 
@@ -42,12 +42,12 @@ A pop up will appear asking for additional information to help the organizer in 
 
 ![](/images/flag-message-2.PNG)
 
-2. Raising the issue in the the event's Help Desk chat. You can navigate to a Help Desk text chat via My Chats (left-side navigation), OR a video chat room via the Socialise -> Rooms area (right-side navigation).
+1. Raising the issue in the the event's Help Desk chat. You can navigate to a Help Desk text chat via My Chats (left-side navigation), OR a video chat room via the Socialise -> Rooms area (right-side navigation).
 
 ![](/images/help-desk.png)
 
 ![](/images/help-desk-2.png)
 
-3. Direct messaging an organizer, moderator, or session chair via 1-1 private chat. You can use the search feature in My Chats to look up a specific person, or search badges such as "volunteer" or "organizer". 
+1. Direct messaging an organizer, moderator, or session chair via 1-1 private chat. You can use the search feature in My Chats to look up a specific person, or search badges such as "volunteer" or "organizer".
 
 ![](/images/search.PNG)
