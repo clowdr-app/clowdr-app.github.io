@@ -8,21 +8,21 @@ isFeatured: false
 ---
 # Code of Conduct & Reporting Violations
 
-Midspace provides a safe, productive and welcoming environment for all members of the community. We require that all users abide by [our terms of service](https://midspace.app/terms-and-conditions) which prohibit unwanted behavior. 
+Midspace provides a safe, productive and welcoming environment for all members of the community! We require that all users abide by [our terms of service](https://midspace.app/terms-and-conditions) which prohibit unwanted behavior. 
 
 Many of the conferences we host also ask participants to abide by their own codes of conduct that are tailored to their specific communities. If your conference has a code of conduct, you will find it either via their registration page or the conference home page.
 
 ### Code of Conduct for Online Behavior
 
-In order to preserve a climate that encourages civil and fruitful dialogue, we encourage anyone who witnesses or hears of unacceptable behavior to flag or report it to your event organizer.
+In order to preserve a safe climate that encourages civil and fruitful dialogue, we encourage anyone who witnesses or hears of unacceptable behavior to report it to your event organizer.
 
-We reserve the right to suspend access for anyone who violates the following rules, as appear in our terms of service. In summary:
+We reserve the right to suspend access for anyone who does not abide by these rules, as they appear in our terms of service. In summary:
 
 1. Adhere to a policy of zero-tolerance for any form of harassment, intimidation or discrimination.
 2. Be respectful in the way you communicate with others. Be tolerant of other’s viewpoints. 
 3. All defamatory, abusive, threatening, offensive, or illegal materials are strictly prohibited.
 4. Disruption of presentations during sessions will be considered unacceptable behavior. 
-5. Midspace and the conference organizing team reserve the right to reject any messaging, posting, or presentation for any violation of the code of conduct.
+5. Midspace and the conference organizing team reserve the right to remove any messaging, posting, or presentation for any violation of these rules.
 
 **As a user of Midspace, you agree to follow these safety rules and guidelines put in place for events on Midspace.**
 
