@@ -38,10 +38,16 @@ If you witness behavior that is in violation of our guidelines, you can take act
 
 ![](/images/flag-message.png)
 
-A pop up will appear asking for additional information to help the person in charge of reviewing reports.
+A pop up will appear asking for additional information to help the organizer in charge of reviewing reports take the appropriate action.
 
 ![](/images/flag-message-2.PNG)
 
-2. Raising the issue in the the event's Help Desk chat. 
+2. Raising the issue in the the event's Help Desk chat. You can navigate to a Help Desk text chat via My Chats (left-side navigation), OR a video chat room via the Socialise -> Rooms area (right-side navigation).
 
-3. Direct messaging an organizer, moderator, or session chair in a private chat. 
+![](/images/help-desk.png)
+
+![](/images/help-desk-2.png)
+
+3. Direct messaging an organizer, moderator, or session chair via 1-1 private chat. You can use the search feature in My Chats to look up a specific person, or search badges such as "volunteer" or "organizer". 
+
+![](/images/search.PNG)
