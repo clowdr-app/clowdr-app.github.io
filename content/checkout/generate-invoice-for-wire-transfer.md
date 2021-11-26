@@ -9,4 +9,4 @@ isFeatured: false
 ---
 How to generate an invoice for a wire transfer payment using our FastSpring checkout.
 
-`FastSpring: Generating an invoice for wire transfer](https://www.youtube.com/watch?v=QeLzqigusHw`
+`https://www.youtube.com/watch?v=QeLzqigusHw`
