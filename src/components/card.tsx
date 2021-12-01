@@ -1,6 +1,7 @@
+import type {
+  BoxProps} from "@chakra-ui/react";
 import {
   Badge,
-  BoxProps,
   Heading,
   HStack,
   Icon,

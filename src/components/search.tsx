@@ -11,7 +11,8 @@ import {
   ListItem,
   Text,
 } from "@chakra-ui/react";
-import React, { FocusEvent, useCallback, useEffect, useState } from "react";
+import type { FocusEvent} from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { useLunr } from "react-lunr";
 import { Card } from "./card";

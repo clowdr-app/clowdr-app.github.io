@@ -9,7 +9,8 @@ import {
   Text,
   UnorderedList,
 } from "@chakra-ui/react";
-import { graphql, PageProps } from "gatsby";
+import type { PageProps } from "gatsby";
+import { graphql } from "gatsby";
 import React from "react";
 import { AiOutlineFolderOpen } from "react-icons/ai";
 import rehypeReact from "rehype-react";
@@ -19,8 +20,8 @@ import { CategoryCards } from "../components/category-cards";
 import { Layout } from "../components/layout";
 import { ResourceCards } from "../components/resource-cards";
 import Title from "../components/title";
-import { ResourceCategoryBySlugQuery } from "../generated/graphql-types";
-import { ResourcePageContext } from "../misc/resource-page-context";
+import type { ResourceCategoryBySlugQuery } from "../generated/graphql-types";
+import type { ResourcePageContext } from "../misc/resource-page-context";
 
 const processor = unified().use(rehypeReact, {
   createElement: React.createElement,
@@ -111,7 +112,7 @@ export default function ResourceCategoryBySlug({
           {categoriesEl}
           {resourcesEl}
           {!categoryNodes.length && !resourceNodes.length ? (
-            <Text mt={8}>Sorry, there's nothing in this category yet!</Text>
+            <Text mt={8}>Sorry, there&apos;s nothing in this category yet!</Text>
           ) : undefined}
         </Container>
       </Layout>

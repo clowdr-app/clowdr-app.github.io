@@ -1,12 +1,13 @@
 import { Box, Container, Heading, Text } from "@chakra-ui/react";
-import { graphql, PageProps, useStaticQuery } from "gatsby";
+import type { PageProps} from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Layout } from "../components/layout";
 import { Search } from "../components/search";
-import { Page404Query } from "../generated/graphql-types";
+import type { Page404Query } from "../generated/graphql-types";
 
-export default function PageNotFound({ location }: PageProps) {
+export default function PageNotFound({ location }: PageProps): JSX.Element {
   const result: Page404Query = useStaticQuery<Page404Query>(graphql`
     query Page404 {
       localSearchResources {
@@ -23,9 +24,9 @@ export default function PageNotFound({ location }: PageProps) {
       </Helmet>
       <Container my={8}>
         <Heading as="h2" textAlign="center">
-          Sorry, we couldn't find that page.
+          Sorry, we couldn&apos;t find that page.
         </Heading>
-        <Text>Perhaps it has moved? Don't worry, search for it here!</Text>
+        <Text>Perhaps it has moved? Don&apos;t worry, search for it here!</Text>
 
         {result.localSearchResources?.index &&
         result.localSearchResources.store ? (

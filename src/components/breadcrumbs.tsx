@@ -9,7 +9,7 @@ export function Breadcrumbs({
   return (
     <Breadcrumb>
       <BreadcrumbItem key="home">
-        <BreadcrumbLink href={`/`}>Home</BreadcrumbLink>
+        <BreadcrumbLink href={"/"}>Home</BreadcrumbLink>
       </BreadcrumbItem>
       {breadcrumbs.map((breadcrumb, i) => (
         <BreadcrumbItem

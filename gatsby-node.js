@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const gql = require("fake-tag");
-const { createFilePath } = require(`gatsby-source-filesystem`);
+const { createFilePath } = require("gatsby-source-filesystem");
 const path = require("path");
 const escapeStringRegexp = require("escape-string-regexp");
 const breadcrumb = require("url-breadcrumb");
@@ -52,7 +53,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   if (allRemark.errors) {
     reporter.panicOnBuild(
-      `There was an error loading your blog posts`,
+      "There was an error loading your blog posts",
       allRemark.errors
     );
     return;
@@ -61,7 +62,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const allEdges = allRemark.data.allMarkdownRemark.edges;
 
   const resourceEdges = allEdges.filter(
-    edge => edge.node.fields.collection === `resources`
+    edge => edge.node.fields.collection === "resources"
   );
 
   resourceEdges.forEach(edge => {
@@ -78,8 +79,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     createPage({
       path: `${edge.node.fields.slug}`,
       component: edge.node.fields.isCategoryIndex
-        ? path.resolve(`./src/templates/resource-category-page.tsx`)
-        : path.resolve(`./src/templates/resource-page.tsx`),
+        ? path.resolve("./src/templates/resource-category-page.tsx")
+        : path.resolve("./src/templates/resource-page.tsx"),
       context: {
         id: edge.node.id,
         slug: edge.node.fields.slug,
@@ -107,7 +108,7 @@ function findFileNode({ node, getNode }) {
 
   let whileCount = 0;
   while (
-    fileNode.internal.type !== `File` &&
+    fileNode.internal.type !== "File" &&
     fileNode.parent &&
     getNode(fileNode.parent) !== undefined &&
     whileCount < 101
@@ -117,7 +118,7 @@ function findFileNode({ node, getNode }) {
     whileCount += 1;
     if (whileCount > 100) {
       console.log(
-        `It looks like you have a node that's set its parent as itself`,
+        "It looks like you have a node that's set its parent as itself",
         fileNode
       );
     }
@@ -130,10 +131,10 @@ function findFileNode({ node, getNode }) {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === "MarkdownRemark") {
     const value = createFilePath({ node, getNode });
     createNodeField({
-      name: `slug`,
+      name: "slug",
       node,
       value,
     });

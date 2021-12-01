@@ -1,13 +1,14 @@
+import type {
+  HTMLChakraProps} from "@chakra-ui/react";
 import {
   chakra,
   Heading,
-  HTMLChakraProps,
   SimpleGrid,
   useId,
   VisuallyHidden,
 } from "@chakra-ui/react";
 import React from "react";
-import { NodeSummaryFragment } from "../generated/graphql-types";
+import type { NodeSummaryFragment } from "../generated/graphql-types";
 import { Card } from "./card";
 
 export function ResourceCards({

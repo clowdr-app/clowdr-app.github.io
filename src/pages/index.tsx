@@ -16,7 +16,7 @@ import { Layout } from "../components/layout";
 import { ResourceCards } from "../components/resource-cards";
 import { Search } from "../components/search";
 import Title from "../components/title";
-import { ResourcesQuery } from "../generated/graphql-types";
+import type { ResourcesQuery } from "../generated/graphql-types";
 
 export default function Resources() {
   const result: ResourcesQuery = useStaticQuery<ResourcesQuery>(graphql`
@@ -74,14 +74,14 @@ export default function Resources() {
         <Container my={8}>
           <Breadcrumb>
             <BreadcrumbItem key="home">
-              <BreadcrumbLink href={`/`}>Home</BreadcrumbLink>
+              <BreadcrumbLink href={"/"}>Home</BreadcrumbLink>
             </BreadcrumbItem>
           </Breadcrumb>
           <Heading as="h1" size="2xl">
             All Resources
           </Heading>
           <Text>
-            We are continually improving Midspace's help resources.{" "}
+            We are continually improving Midspace&apos;s help resources.{" "}
             <Link href="https://midspace.app/contact">Contact us</Link> if you
             have a suggestion for how we could improve these resources. (Or
             contribute directly{" "}

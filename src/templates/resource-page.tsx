@@ -6,7 +6,8 @@ import {
   Icon,
   Wrap,
 } from "@chakra-ui/react";
-import { graphql, PageProps } from "gatsby";
+import type { PageProps } from "gatsby";
+import { graphql } from "gatsby";
 import React from "react";
 import { AiOutlineUser } from "react-icons/ai";
 import { Breadcrumbs } from "../components/breadcrumbs";
@@ -14,8 +15,8 @@ import { FeaturedBadge } from "../components/featured-badge";
 import { Layout } from "../components/layout";
 import { RenderHtml } from "../components/render-html";
 import Title from "../components/title";
-import { ResourcePageBySlugQuery } from "../generated/graphql-types";
-import { ResourcePageContext } from "../misc/resource-page-context";
+import type { ResourcePageBySlugQuery } from "../generated/graphql-types";
+import type { ResourcePageContext } from "../misc/resource-page-context";
 
 export default function ResourcePageBySlug({
   data,
