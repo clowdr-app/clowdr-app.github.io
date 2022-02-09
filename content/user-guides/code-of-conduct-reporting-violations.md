@@ -4,8 +4,8 @@ title: Code of Conduct & Reporting Violations
 description: Features and guidelines to help ensure a safe community space on Midspace
 author: Cristal Mojica
 isFeatured: false
-
 ---
+
 # Code of Conduct & Reporting Violations
 
 Midspace provides a safe, productive and welcoming environment for all members of the community! We require that all users abide by [our terms of service](https://midspace.app/terms-and-conditions) which prohibit unwanted behavior.
