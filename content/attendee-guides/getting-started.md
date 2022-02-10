@@ -1,7 +1,8 @@
 ---
 updatedDate: 2021-05-03T05:39:02+00:00
-title: "Getting Started on Midspace "
-description: Learn how to access and navigate your conference in Midspace
+title: Getting Started
+index: 0
+description: Learn how to access and navigate your conference in Midspace.
 author: Cristal Mojica
 featured: true
 ---
@@ -12,7 +13,7 @@ Review this brief resource to learn how to navigate our platform as an attendee 
 
 ![](/images/homepage.jpg)
 
-##### Below we will cover 1. How to log in to your conference on Midspace and 2. How to set up your profile and navigate your event in Midspace.
+#### Below we will cover 1. How to log in to your conference on Midspace and 2. How to set up your profile and navigate your event in Midspace.
 
 1. As an attendee, you will receive an email titled _YOUR INVITATION TO \[CONFERENCE NAME\]_ containing a link and a unique invitation code to your conference.
 2. Through the link in the invitation email, you'll be able to create a Midspace account using your name and email address.

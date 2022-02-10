@@ -1,6 +1,7 @@
 ---
 updatedDate: 2021-04-21T05:57:27.000+00:00
-title: Managing your content with Midspace
+title: Managing Content
+index: 0
 description: Learn how to manage your program's content on Midspace
 author: Cristal Mojica
 ---
@@ -17,7 +18,7 @@ _To learn about linking content to the schedule, see our_ [_managing your schedu
 
 \[Video Coming Shortly\]
 
-##### Follow these simple instructions to add individual content items to your program in Midspace (batch imports are also possible):
+#### Follow these simple instructions to add individual content items to your program in Midspace (batch imports are also possible):
 
 1. Navigate to the Content area of the Midspace admin dashboard.
 
@@ -72,7 +73,7 @@ As you make edits, you can also preview your content by clicking through View It
 
 11. Back on the main Content page, you can see your new content item, along with options for grouping content via Manage Tags and Manage Exhibitions (used for group formats like student poster sessions and competitions)!
 
-##### After reviewing this resource, you should know how to:
+#### After reviewing this resource, you should know how to:
 
 - Create and manage a Content Item
 - Add customizable Content elements to your item

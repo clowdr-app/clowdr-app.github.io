@@ -1,13 +1,14 @@
 ---
 updatedDate: 2021-04-28T06:41:08.000+00:00
-title: Making the most of Midspace's Shuffle feature
+title: Shuffle Networking
+index: 3
 description:
   Midspace's social experience includes randomized networking via Shuffle
   queues - learn more about them!
 author: Cristal Mojica
 ---
 
-### Spontaneous conversations and randomized networking are made easy with Shuffle queues
+## Spontaneous conversations and randomized networking are made easy with Shuffle queues
 
 This is an overview of Midspace's popular Shuffle feature.
 

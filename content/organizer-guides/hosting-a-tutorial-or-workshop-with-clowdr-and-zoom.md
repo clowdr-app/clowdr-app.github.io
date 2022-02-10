@@ -1,11 +1,12 @@
 ---
 updatedDate: 2021-04-06T09:46:23.000+00:00
-title: Hosting a tutorial or workshop with Midspace and Zoom
+title: Hosting events with Midspace and Zoom
+index: 1
 description: Instructions for hosting a tutorial or workshop with Midspace and Zoom
 author: Ed Nutting
 ---
 
-### Hosting a tutorial or workshop with Midspace and Zoom
+## Hosting a tutorial or workshop with Midspace and Zoom
 
 These instructions are for organizers who anticipate having more than 40 attendees in their tutorials or workshops.
 
@@ -25,7 +26,7 @@ These instructions are for organizers who anticipate having more than 40 attende
 
 6\. **All the other usual features of Zoom, such as raising hands, are available.**
 
-### Host instructions
+## Host instructions
 
 1. **If you don't already have it, download the Zoom app for your platform (Windows/Linux/Mac)**.
    - You will not be able to host the meeting via the web interface. The Zoom App is necessary.

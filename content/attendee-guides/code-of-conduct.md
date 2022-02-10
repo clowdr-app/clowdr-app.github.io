@@ -1,7 +1,10 @@
 ---
 updatedDate: 2021-11-18T03:27:42+00:00
-title: Code of Conduct & Reporting Violations
-description: Features and guidelines to help ensure a safe community space on Midspace
+title: Code of Conduct
+index: 1
+description: >
+  Code of conduct and how to report violations.
+  Features and guidelines to help ensure a safe community space on Midspace.
 author: Cristal Mojica
 isFeatured: false
 ---
@@ -12,7 +15,7 @@ Midspace provides a safe, productive and welcoming environment for all members o
 
 Many of the conferences we host also ask participants to abide by their own codes of conduct that are tailored to their specific communities. If your conference has a code of conduct, you will find it either via their registration page or the conference home page.
 
-### Code of Conduct for Online Behavior
+## Code of Conduct for Online Behavior
 
 In order to preserve a safe climate that encourages civil and fruitful dialogue, we encourage anyone who witnesses unacceptable behavior to report it to your event organizer.
 
@@ -28,7 +31,7 @@ In summary:
 
 **As a user of Midspace, you agree to follow these safety rules put in place for events hosted on Midspace.**
 
-### Reporting Violations
+## Reporting Violations
 
 If you are concerned about behavior on Midspace and wish to report it to an organizer, you can take action by:
 

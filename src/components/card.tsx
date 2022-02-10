@@ -1,5 +1,4 @@
-import type {
-  BoxProps} from "@chakra-ui/react";
+import type { BoxProps } from "@chakra-ui/react";
 import {
   Badge,
   Heading,
@@ -20,7 +19,6 @@ import {
   AiOutlineFolderOpen,
   AiOutlineUser,
 } from "react-icons/ai";
-import { FeaturedBadge } from "./featured-badge";
 
 export function Card({
   indexUrl,
@@ -39,7 +37,7 @@ export function Card({
   type: "category" | "resource";
 } & BoxProps): JSX.Element {
   const borderColour = useToken("colors", "brand.600");
-  const iconSize = 16;
+  const iconSize = 8;
   return (
     <LinkBox
       itemScope
@@ -52,10 +50,9 @@ export function Card({
       {...props}
       as="article"
     >
-      <HStack h="100%">
+      <HStack h="100%" alignItems="flex-start">
         {type === "category" ? (
           <Icon
-            m={2}
             as={AiOutlineFolderOpen}
             title="Category"
             w={iconSize}
@@ -70,7 +67,7 @@ export function Card({
           />
         )}
         <VStack justify="start" align="left" h="100%">
-          <Heading as="h4" m={0}>
+          <Heading as="h4" m={0} p={0}>
             <LinkOverlay
               as={GatsbyLink}
               to={`${indexUrl}`}
@@ -78,7 +75,7 @@ export function Card({
               display="block"
               color={"gray.800"}
               fontWeight="bold"
-              fontSize="2xl"
+              fontSize="xl"
               _hover={{
                 color: "gray.600",
                 textDecor: "underline",
@@ -105,7 +102,6 @@ export function Card({
                 <span itemProp="author">{author}</span>
               </Badge>
             ) : undefined}
-            {isFeatured ? <FeaturedBadge /> : undefined}
           </Wrap>
         </VStack>
       </HStack>

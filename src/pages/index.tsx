@@ -77,7 +77,7 @@ export default function Resources() {
               <BreadcrumbLink href={"/"}>Home</BreadcrumbLink>
             </BreadcrumbItem>
           </Breadcrumb>
-          <Heading as="h1" size="2xl">
+          <Heading as="h1" size="3xl">
             All Resources
           </Heading>
           <Text>

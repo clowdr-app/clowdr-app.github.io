@@ -1,6 +1,7 @@
 ---
 updatedDate: 2022-02-09T10:35:00+00:00
 title: Importing your program
+index: 0
 description: Using the template spreadsheet to bulk-import your existing program.
 author: Ed Nutting
 isFeatured: false

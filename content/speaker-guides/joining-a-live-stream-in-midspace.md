@@ -1,6 +1,7 @@
 ---
 updatedDate: 2021-04-27T09:13:53.000+00:00
-title: Joining a live-stream in Midspace
+title: Joining a Live-stream
+index: 0
 description: Learn how to join a livestream and backstage as a presenter or chair.
 author: Ed Nutting
 isFeatured: true
@@ -26,7 +27,7 @@ A big button will appear to go directly to the room with the presenter's backsta
 
 To join a live-stream in Midspace, please follow these three important stages, starting at the latest the day before your event.
 
-### Top tips
+## Top tips
 
 1. **When you're live, _you're live._**
 
@@ -40,7 +41,7 @@ To join a live-stream in Midspace, please follow these three important stages, s
 
    If the audience wanted to just see slides, they would ask for a PDF. In other words, the audience is here to listen to you! It really doesn't matter much if your camera is high quality or not. Audio is king in the world of online videos. If you sound bad, nobody will want to listen. So please, use headphones to avoid feedback loops and use an external microphone (even a $30 will do), not a built-in laptop mic.
 
-### 1. Prepare in advance
+## 1. Prepare in advance
 
 1. [**Log in (or sign up)**](https://in.midspace.app)
 
@@ -90,7 +91,7 @@ To join a live-stream in Midspace, please follow these three important stages, s
 
    While you are backstage with the presenters at an event, you cannot (currently) watch the live-stream at the same time. Therefore, you should familiarize yourself with the content of the session in advance. For example, by watching any pre-recorded videos or read each paper's abstract.
 
-### 2. Arrive ahead of time
+## 2. Arrive ahead of time
 
 Your speakers' (a.k.a. backstage) area will become available **20 minutes in advance of your event** (in the same room as your event is scheduled in - the one we found in Step 4 of "Prepare in advance").
 
@@ -102,7 +103,7 @@ Your speakers' area will become available 20 minutes **in advance of the schedul
 
 Midspace's data model does not include "sessions". **Your speakers' area becomes available 20 minutes in advance of your event, not your session.**
 
-### 3. Join the speakers' area
+## 3. Join the speakers' area
 
 ![A Midspace speakers' area in the Demo Room. The open speakers' area is for an event presenting a paper called Demo Paper. The "You are off air" message is visible to the left of a central countdown timer. The join room controls are shown and are the same as the buttons for entering a social room.](/images/backstage-with-off-air-countdown.png "A Midspace speakers' area in the Demo Room")
 

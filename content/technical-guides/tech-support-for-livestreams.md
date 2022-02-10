@@ -1,9 +1,10 @@
 ---
 updatedDate: 2021-04-29T09:37:43.000+00:00
-title: How to Provide Technical Support for Livestreams
+title: Providing technical support for live-streams
+index: 2
 description:
   A brief training for organizers and volunteers on providing tech support
-  for livestreams
+  for live-streams
 author: Cristal Mojica
 ---
 

@@ -1,13 +1,14 @@
 ---
 updatedDate: 2021-05-26T09:05:07+00:00
-title: Exporting content from Midspace to YouTube
+title: Exporting videos to YouTube
+index: 0
 description:
-  Simple instructions for exporting video content from Midspace directly
-  into YouTube!
+  Simple instructions for exporting your videos from Midspace directly
+  into YouTube.
 author: Cristal Mojica
 ---
 
-#### Ready to Archive Your Conference Content?
+## Ready to Archive Your Conference Content?
 
 Midspace makes it quick and easy to package and export conference content directly to your organization's YouTube channel.
 
@@ -23,7 +24,7 @@ Exporting presentations from within Midspace can save you a great deal of time a
 
 Follow these simple instructions to get started!
 
-#### **1. Combining videos**
+### **1. Combining videos**
 
 Combining videos enables you to stitch together videos, such as a pre-recorded presentation followed by the Q&A recording.
 
@@ -41,7 +42,7 @@ Combining videos enables you to stitch together videos, such as a pre-recorded p
 
 **Step 6.** Click **_Combine_**. You can now close the page while you wait for the combines to complete.
 
-#### **2. Exporting to YouTube**
+### **2. Exporting to YouTube**
 
 After combining videos has completed, you can then move on to exporting videos directly to YouTube.
 
@@ -108,7 +109,7 @@ The information listed includes the video YouTube ID, privacy status, and previe
 
 ![](/images/export-7.jpg)
 
-### Now you're ready to start exporting!
+## Now you're ready to start exporting!
 
 Please note: Google currently imposes tight API rate limits that restrict the volume of videos Midspace can export per day (across all our customers). We will provide instruction about managing your export at the end of your conference.
 

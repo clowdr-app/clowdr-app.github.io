@@ -8,11 +8,13 @@ export function Breadcrumbs({
 }): JSX.Element {
   return (
     <Breadcrumb>
-      <BreadcrumbItem key="home">
+      <BreadcrumbItem key="home" px={0} mx={0}>
         <BreadcrumbLink href={"/"}>Home</BreadcrumbLink>
       </BreadcrumbItem>
       {breadcrumbs.map((breadcrumb, i) => (
         <BreadcrumbItem
+          px={0}
+          mx={0}
           key={breadcrumb.url}
           isCurrentPage={i === breadcrumbs.length - 1}
         >

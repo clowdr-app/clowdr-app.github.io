@@ -1,13 +1,14 @@
 ---
 updatedDate: 2021-04-28T06:29:07+00:00
-title: Using Midspace's Social Rooms
+title: Social Rooms
+index: 2
 description:
   Learn about Midspace's Social Rooms feature - an important part of the
   attendee social experience!
 author: Cristal Mojica
 ---
 
-### Wondering about the social experience on Midspace?
+## Wondering about the social experience on Midspace?
 
 This is a brief overview of our Social Rooms feature - an key part of the social experience on Midspace!
 

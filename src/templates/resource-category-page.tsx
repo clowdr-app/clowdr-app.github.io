@@ -1,20 +1,8 @@
-import {
-  chakra,
-  Container,
-  Divider,
-  Heading,
-  Icon,
-  ListItem,
-  OrderedList,
-  Text,
-  UnorderedList,
-} from "@chakra-ui/react";
+import { chakra, Container, Heading, Icon, Text } from "@chakra-ui/react";
 import type { PageProps } from "gatsby";
 import { graphql } from "gatsby";
 import React from "react";
 import { AiOutlineFolderOpen } from "react-icons/ai";
-import rehypeReact from "rehype-react";
-import { unified } from "unified";
 import { Breadcrumbs } from "../components/breadcrumbs";
 import { CategoryCards } from "../components/category-cards";
 import { Layout } from "../components/layout";
@@ -22,27 +10,6 @@ import { ResourceCards } from "../components/resource-cards";
 import Title from "../components/title";
 import type { ResourceCategoryBySlugQuery } from "../generated/graphql-types";
 import type { ResourcePageContext } from "../misc/resource-page-context";
-
-const processor = unified().use(rehypeReact, {
-  createElement: React.createElement,
-  components: {
-    p: (props: any) => <Text {...props} />,
-    h3: (props: any) => <Heading as="h3" {...props} size="xl" />,
-    h4: (props: any) => <Heading as="h4" {...props} size="lg" />,
-    h5: (props: any) => <Heading as="h5" {...props} size="md" />,
-    h6: (props: any) => <Heading as="h6" {...props} size="sm" />,
-    blockquote: (props: any) => <chakra.blockquote {...props} />,
-    pre: (props: any) => <chakra.pre {...props} maxW="100%" overflowX="auto" />,
-    ol: (props: any) => <OrderedList {...props} />,
-    ul: (props: any) => <UnorderedList {...props} />,
-    li: (props: any) => <ListItem {...props} />,
-    hr: (props: any) => <Divider {...props} />,
-  },
-});
-
-export const renderAst = (ast: any): JSX.Element => {
-  return processor.stringify(ast) as unknown as JSX.Element;
-};
 
 export default function ResourceCategoryBySlug({
   data,
@@ -77,31 +44,36 @@ export default function ResourceCategoryBySlug({
         >
           <Breadcrumbs breadcrumbs={pageContext.breadcrumbs} />
           <header>
-            <Heading as="h1" size="2xl" itemProp="headline">
+            <Heading as="h1" size="3xl" itemProp="headline">
               <Icon
                 m={2}
+                verticalAlign="middle"
                 as={AiOutlineFolderOpen}
                 title="Category"
                 w={16}
                 h={16}
                 aria-label="Category"
               />{" "}
-              {post?.frontmatter?.title}
+              <chakra.span verticalAlign="middle">
+                {post?.frontmatter?.title}
+              </chakra.span>
             </Heading>
           </header>
           <chakra.section
-            sx={{
-              h3: {
-                size: "xl",
-              },
-              h4: {
-                size: "lg",
-              },
-              h5: {
-                fontWeight: "bolder",
-                size: "md",
-              },
-            }}
+            sx={
+              {
+                //   h3: {
+                //     size: "xl",
+                //   },
+                //   h4: {
+                //     size: "lg",
+                //   },
+                //   h5: {
+                //     fontWeight: "bolder",
+                //     size: "md",
+                //   },
+              }
+            }
           >
             {post?.htmlAst?.children?.length ? (
               renderAst(post?.htmlAst)
@@ -112,7 +84,9 @@ export default function ResourceCategoryBySlug({
           {categoriesEl}
           {resourcesEl}
           {!categoryNodes.length && !resourceNodes.length ? (
-            <Text mt={8}>Sorry, there&apos;s nothing in this category yet!</Text>
+            <Text mt={8}>
+              Sorry, there&apos;s nothing in this category yet!
+            </Text>
           ) : undefined}
         </Container>
       </Layout>
@@ -138,7 +112,7 @@ export const query = graphql`
       }
     }
     allMarkdownRemark(
-      sort: { fields: [frontmatter___title], order: ASC }
+      sort: { fields: [frontmatter___index, frontmatter___title], order: ASC }
       filter: {
         fields: { collection: { eq: "resources" }, slug: { regex: $regex } }
       }

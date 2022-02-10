@@ -1,6 +1,7 @@
 ---
 updatedDate: 2021-04-21T06:01:24.000+00:00
-title: Managing events in your schedule with Midspace
+title: Managing Schedule/Events
+index: 2
 description: Learn how to create and manage your schedule on Midspace
 author: Cristal Mojica
 ---

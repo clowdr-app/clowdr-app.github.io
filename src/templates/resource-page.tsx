@@ -37,7 +37,7 @@ export default function ResourcePageBySlug({
         >
           <Breadcrumbs breadcrumbs={pageContext.breadcrumbs} />
           <header>
-            <Heading as="h1" size="2xl" itemProp="headline">
+            <Heading as="h1" size="3xl" itemProp="headline">
               {post?.frontmatter?.title}{" "}
             </Heading>
             <Wrap mt={4}>
@@ -62,18 +62,20 @@ export default function ResourcePageBySlug({
             </Wrap>
           </header>
           <chakra.section
-            sx={{
-              h3: {
-                size: "xl",
-              },
-              h4: {
-                size: "lg",
-              },
-              h5: {
-                fontWeight: "bolder",
-                size: "md",
-              },
-            }}
+            sx={
+              {
+                //   h3: {
+                //     size: "xl",
+                //   },
+                //   h4: {
+                //     size: "lg",
+                //   },
+                //   h5: {
+                //     fontWeight: "bolder",
+                //     size: "md",
+                //   },
+              }
+            }
           >
             <RenderHtml htmlAst={post?.htmlAst} />
           </chakra.section>

@@ -1,12 +1,14 @@
 ---
 updatedDate: 2021-10-25T01:05:04.000+00:00
 title: Sharing your screen
-description: Instructions for sharing your screen, including sharing the screen with
+index: 1
+description:
+  Instructions for sharing your screen, including sharing the screen with
   audio.
 author: Ross Gardiner
 isFeatured: true
-
 ---
+
 Midspace supports sharing your screen whenever you are using video chat - whether that be in a social room; presenting from a backstage or visiting a sponsor booth.
 
 ![A screenshot of the screen sharing experience in a Midspace video chat.](/images/screen-share.png)
@@ -15,59 +17,59 @@ To share your screen while using video chat, click the _Share Screen_ button. Yo
 
 Depending on your browser and operating system, you may have the option to share:
 
-* The whole screen
-* A single window
-* Another tab from the same browser
+- The whole screen
+- A single window
+- Another tab from the same browser
 
 ## Sharing with audio
 
 In some scenarios, you may want to share your screen and the audio that is currently playing. For example - perhaps you want to show your audience a video from your computer.
 
-### Limitations
+## Limitations
 
 Sharing the screen along with audio is an experimental technology and is currently only supported by Google Chrome.
 
 If you are using Chrome on Windows, you can share:
 
-* The entire screen with sound.
-* Another tab with its sound.
+- The entire screen with sound.
+- Another tab with its sound.
 
 If you are using Chrome on macOS, you can share:
 
-* Another tab with its sound.
+- Another tab with its sound.
 
-### How to share with audio
+## How to share with audio
 
 To share the screen with audio:
 
-* Open Midspace using Google Chrome and connect to a video chat.
-* Click the _Share Screen_ button.
-* Choose the tab or screen (Windows only) that you want to share. Ensure that the relevant 'share audio' checkbox is enabled (bottom left corner).![Screenshot of the Google Chrome screen sharing dialog.](/images/screen-share-audio-checkbox.png)
-* Click _Share_ to start sharing.
+- Open Midspace using Google Chrome and connect to a video chat.
+- Click the _Share Screen_ button.
+- Choose the tab or screen (Windows only) that you want to share. Ensure that the relevant 'share audio' checkbox is enabled (bottom left corner).![Screenshot of the Google Chrome screen sharing dialog.](/images/screen-share-audio-checkbox.png)
+- Click _Share_ to start sharing.
 
 You will see a small speaker icon on your screen share preview that indicates whether audio is being shared.
 
 ![Screenshot of the icon that shows screen share audio is enabled.](/images/screen-share-audio-indicator.png)
 
-### Tips
+## Tips
 
-#### Make sure your screen share works ahead of time
+### Make sure your screen share works ahead of time
 
 You should test your screen share ahead of time to make sure that it goes smoothly when you are presenting to your audience.
 
-#### Wear headphones
+### Wear headphones
 
 If you are using speakers to play audio while in a video chat, this audio is likely to 'leak' back in through your microphone.
 
 When you are sharing the screen with audio it is especially important to ensure that you are using headphones, otherwise your audience will hear the sound twice.
 
-#### Sharing a local video on macOS
+### Sharing a local video on macOS
 
 If you are using macOS and would like to screen share a local video file from your computer with its audio, you can do the following:
 
-* Open the [Web Video Player]() in another Chrome tab.
-* Click the folder icon (bottom left) to open the video from your computer.
-* Use Midspace's screen sharing to share the Chrome tab with audio.
+- Open the [Web Video Player]() in another Chrome tab.
+- Click the folder icon (bottom left) to open the video from your computer.
+- Use Midspace's screen sharing to share the Chrome tab with audio.
 
 **Note**: it is not possible to share audio from outside Chrome on macOS. You cannot share the audio from a PowerPoint presentation, for example.
 
