@@ -19,52 +19,6 @@ of the options is explained on this page.
 
 ## The Template
 
-The template is available from [Midspace's Google
-Drive](https://docs.google.com/spreadsheets/d/1XtQJPts8h59LNdIsShKRLMj4QndP97aC/edit?usp=sharing&ouid=101146156947887051687&rtpof=true&sd=true).
-
-To start using it, [_Download_ a copy](#Using-Excel) or [_Make a
-Copy_](#Using-Google-Sheets) of the template. Open your copy in Google Sheets,
-Excel or your preferred spreadsheet editor.
-
-### Data from external tools
-
-If you have an external tool/system with existing data, it may provide a CSV,
-XML or JSON export. If you are familiar with scripting languages (such as
-JavaScript) may wish to write a script to convert your existing data into the
-CSV format produced from Midspace's template spreadsheet.
-
-### Using Excel
-
-If you prefer to use Excel or another spreadsheet editing tool, you can download
-a copy of the template using the following steps.
-
-1. Click the File menu in the top-left corner
-2. From the menu, click Download
-3. From the submenu, select your preferred format. We recommend Microsoft Excel
-   or OpenDocument formats.
-4. Save the download file
-5. Open the downloaded template file in your preferred spreadsheet program.
-
-#### A note on Excel and Unicode
-
-Excel does not work in Unicode, meaning accent characters, emojis and other
-unusual characters may become corrupted or lost if you copy data from other
-applications or from the internet. We urge caution when using Excel to process
-data that may contain special characters.
-
-### Using Google Sheets
-
-If you have a Google Drive account and are logged in, you can make a copy of the
-template using the following steps.
-
-1. Click the File menu in the top-left corner
-2. From the menu, click Make a Copy
-3. Enter a name for your copy (e.g. "Conference 2022 Program")
-4. Select a folder to store your copy
-5. Click OK
-6. A new tab should open with an editable copy of the template
-   - This copy is only accessible to you and people you share it with.
-
 ### Overview
 
 The template is designed to support a number of standard conference program
@@ -109,6 +63,13 @@ Additional advanced options exist to enable greater customisation of your
 imported program. Please refer to the [Advanced Options](#Advanced-Options)
 section below for more information.
 
+#### Data from external tools
+
+If you have an external tool/system with existing data, it may provide a CSV,
+XML or JSON export. If you are familiar with scripting languages (such as
+JavaScript) may wish to write a script to convert your existing data into the
+CSV format produced from Midspace's template spreadsheet.
+
 ### Using the template
 
 We recommend starting with creating a few test sessions in the same structures
@@ -121,6 +82,47 @@ import template with your complete conference program.
 For assistance with the template, please contact our support team. The dedicated
 support email address for your conference is available from the Management
 Dashboard of your conference.
+
+#### Get the template
+
+The template is available from [Midspace's Google
+Drive](https://docs.google.com/spreadsheets/d/1XtQJPts8h59LNdIsShKRLMj4QndP97aC/edit?usp=sharing&ouid=101146156947887051687&rtpof=true&sd=true).
+
+To start using it, [_Download_ a copy](#Using-Excel) or [_Make a
+Copy_](#Using-Google-Sheets) of the template. Open your copy in Google Sheets,
+Excel or your preferred spreadsheet editor.
+
+#### Using Excel
+
+If you prefer to use Excel or another spreadsheet editing tool, you can download
+a copy of the template using the following steps.
+
+1. Click the File menu in the top-left corner
+2. From the menu, click Download
+3. From the submenu, select your preferred format. We recommend Microsoft Excel
+   or OpenDocument formats.
+4. Save the download file
+5. Open the downloaded template file in your preferred spreadsheet program.
+
+##### Warning: Excel and Unicode
+
+Excel does not work in Unicode, meaning accent characters, emojis and other
+unusual characters may become corrupted or lost if you copy data from other
+applications or from the internet. We urge caution when using Excel to process
+data that may contain special characters.
+
+#### Using Google Sheets
+
+If you have a Google Drive account and are logged in, you can make a copy of the
+template using the following steps.
+
+1. Click the File menu in the top-left corner
+2. From the menu, click Make a Copy
+3. Enter a name for your copy (e.g. "Conference 2022 Program")
+4. Select a folder to store your copy
+5. Click OK
+6. A new tab should open with an editable copy of the template
+   - This copy is only accessible to you and people you share it with.
 
 #### Getting started
 
@@ -193,7 +195,7 @@ Dashboard of your conference.
    **Please follow the [Preparing the file for import](#Preparing-for-import)
    steps** below as you must save your import data in a specific file format.
 
-#### Types of Presentation
+### Types of presentation
 
 A number of options are available for the type of presentation. Please choose
 the appropriate type for your requirements.
@@ -234,6 +236,164 @@ We recommend the following:
     recommend this format over the less successful "presentation followed by
     individual Q&A" format.
 - All sessions should be scheduled with at least a 10 minute break afterwards.
+
+### Examples
+
+Midspace supports a very wide range of program structures. Described below are
+some common use cases but please speak to us if you require help configuring
+your desired program structure.
+
+**Each of the following examples corresponds to one of the example sessions
+provided in the default template.**
+
+Please refer to the template spreadsheet in combination with this documentation.
+
+#### Keynote
+
+The example keynote generates a video-chat session starting with an introduction
+from the chair, followed by the keynote presentation and ending with a Q&A.
+
+The keynote speaker is able to edit the abstract of their keynote via Midspace's
+submissions system. Through the same system they can upload a copy of their
+slides and a link to their website.
+
+After the program is imported, you (the organizer) or the keynote speaker can
+choose to temporarily hide the speaker's uploaded slides until after the
+presentation is delivered. This will prevent the presentation from being spoiled
+or leaked ahead of the session.
+
+This session is configured with a single chair and single keynote speaker.
+
+#### Paper Session - Scheduled live presentations
+
+The example paper session for scheduled live presentations is the most popular
+session format. It is a 45 minute session with 3 10-minute presentations and a
+12-minute Q&A.
+
+The session starts with a welcome from the chair. This gives the chair an
+opportunity to create a lively and engaging atmosphere for the session (which
+really makes or breaks the Q&A!) The chair may also briefly introduce the theme
+or topic of the session. The welcome also gives the audience some time to arrive
+and join in and for presenters to get comfortable. The welcome is followed by
+the main presentations.
+
+This example session shows 3 paper presentations each of 10 minutes. Each paper
+is shown to have 1 speaker and 1 or more co-authors. The speakers are requested
+to upload a copy of their slides ahead of time. This can be particularly helpful
+for some members of the audience who might be unable to view screenshared slides
+or would like to familiarise themselves with the material ahead of time.
+
+The session ends with a group Q&A for all 3 speakers. This lasts 12 minutes. It
+is common for questions to have been posted in the text chat during the
+preceeding presentations.
+
+We recommend the chair does not try to immediately accept a live (via
+video/audio) audience question as this can break the flow of the session (quite
+dramatically if the audience member has not prepared their camera/microphone or
+has stepped away from their computer since raising their hand).
+
+We recommend the chair starts the Q&A with a brief explanation of how the
+audience can ask a question live via video/audio. They should then proceed by
+asking a question taken from the text chat, or if no questions have been posted,
+start by asking a question the chair has thought of ahead of time. Once the Q&A
+has begun to happen, then the chair can refocus their attention on choosing an
+audience member with a raised hand to accept their question live via
+video/audio.
+
+#### Paper Session - Scheduled pre-recorded presentations
+
+The example paper session for scheduled pre-recorded presentations is a popular
+and successful virtual conference format. It is a 45 minute session with 3
+10-minute pre-recorded video presentations and a 12-minute live Q&A.
+
+This example is the same as "Paper Session - Scheduled live presentations" but
+with two main differences:
+
+1. The speakers are requested to upload a video ahead of time for their session
+2. During the session, instead of live presentations, the chair will use
+   Midspace's Video Playback feature to play out the speaker's videos in the
+   desired order.
+
+By setting a duration for each presentation, Midspace can automatically check
+uploaded videos fit within the available time.
+
+Setting the order for presentations within the session will assist all
+participants, as well as the chair, when discussing the contents of
+presentations. It is common for the audience to refer to presentations by the
+order in which they occurred rather than their full (often long) titles.
+
+#### Paper Session - Unscheduled presentations
+
+The example paper session for unscheduled live presentations is single
+continuous video chat with no guiding structure. A summary of each paper is
+listed in the room (in an exhibition layout) and it is up to the chair to invite
+speakers to deliver their presentations or invite questions from the audience.
+
+This structure is most commonly used as a placeholder when the program committee
+is still deciding upon the final structure or timing of sessions.
+
+#### Poster Session (Scheduled session)
+
+The example poster session shows a common format for 60-minute poster
+competitions. Each poster creator has 5 minutes to give a lightning talk followed
+by 25 minutes for a breakout period. During the breakout each poster has its own
+room and people can join a room to chat to an author about their poster. During
+this time, the judges evaluate each poster and presentation, ask follow up
+questions and decide upon the winner(s). The session closes with the
+announcement of the winner.
+
+In this example, each poster speaker (aka creator) is requested to upload a
+pre-recorded video of their presentation, a copy of their poster and a link to a
+website to find out more.
+
+This example session makes use of the advanced option for "Breakout video-chat"
+interaction mode. Please follow additional instructions below to complete the
+configuration after importing your program.
+
+#### Poster Exhibition (Unscheduled session)
+
+The example poster exhibition shows a common format for persistent / standalone
+exhibitions of posters. Each poster is displayed as part of the exhibition which
+can be accessed at any time by conference attendees. Each poster has a text chat
+for live or asynchronous discussion. In addition, after importing your program,
+you may choose to create a Discussion Room for each poster.
+
+In this example, each poster speaker (aka creator) is requested to upload a
+video presentation, a copy of their poster and a link to a website to find out
+more.
+
+#### Tutorial or Workshop - Unstructured
+
+The example "Tutorial or Workshop - Unstructured" creates a single video-chat
+lasting 4 hours with a description of what the tutorial/workshop is about (an
+abstract). No additional structure is specified - the workshop organizer may
+use the time in whatever way they like.
+
+This format is commonly used when a workshop or tutorial is organized by a 3rd
+party who are not members of the main program committee (and thus might not
+have a prepared or fixed schedule).
+
+This format is also commonly used for flexible, free-flowing or open-forum
+workshops and tutorials, since there is no imposed schedule.
+
+#### Tutorial or Workshop - Partially structured
+
+The example "Tutorial or Workshop - Partially structured" creates a single
+video-chat lasting 4 hours with a description of what the tutorial/workshop is
+about (an abstract). Some structure is provided to highlight the main periods of
+the workshop, being the welcome, presentations, discussion periods, break and
+closing of the workshop. Within each period, the workshop organizer may use the
+time in whatever way they like.
+
+This format provides some guidance to the audience about the session and the
+Presentation periods each have an abstract. This gives some space for the
+organizers to describe in more detail what will be presented and who will be
+doing so. The abstract for the discussion period may also be used to describe
+how the discussion will be managed/moderated.
+
+This format is commonly used when a workshop or tutorial is organized by a 3rd
+party who are not members of the main program committee (and thus might not
+have a prepared or fixed schedule).
 
 ### Advanced Options
 
@@ -293,6 +453,9 @@ required.
     available for the audience to choose which one they wish to join.
     - This requires additional configuration after import to set up the items
       and rooms within the imported exhibition.
+    - You should use the Midspace Content Management interface to find each
+      item in the exhibition and, for each item, click the button to create a
+      Discussion Room.
     - Note: The functionality of this mode is subject to change. Please discuss
       with our support team prior to using this mode.
   - **Networking:** Randomised one-to-one or group "shuffle" networking.
@@ -316,35 +479,11 @@ required.
     attendees trying to find presentations on particular topics.
   - By default, presentations are tagged by the title of the session.
 
-### Examples
-
-#### Keynote
-
-TODO:
-
-#### Paper Session
-
-TODO:
-
-#### Poster Session
-
-TODO:
-
-#### Poster Exhibition (Unscheduled)
-
-TODO:
-
-#### Tutorial or Workshop
-
-TODO:
-
 ## The Importer
-
-TODO:
 
 ### Overview
 
-TODO:
+**Documentation regarding using the importer will be made available soon.**
 
 ### Preparing for import
 
@@ -374,7 +513,7 @@ using double quotation marks.
 
 ### Using the importer
 
-TODO:
+**Documentation regarding using the importer will be made available soon.**
 
 ### Options
 
@@ -388,11 +527,11 @@ TODO:
 
 ### Identifying changes
 
-TODO:
+**Documentation regarding using the importer will be made available soon.**
 
 ### Possible Errors
 
-TODO:
+**Documentation regarding using the importer will be made available soon.**
 
 - **"Presentations exceed session duration"**
 
@@ -402,7 +541,7 @@ TODO:
 
 ### FAQ
 
-TODO:
+**Documentation regarding using the importer will be made available soon.**
 
 - **How can I schedule presentations for my sponsors?**
 
@@ -410,7 +549,3 @@ TODO:
   importing your main conference program. This will enable you to associate
   sponsors with their presentations. It is not possible to do this via the
   importer.
-
-## Next steps
-
-TODO:

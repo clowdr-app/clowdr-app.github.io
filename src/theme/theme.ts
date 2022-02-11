@@ -118,26 +118,26 @@ export const theme = extendTheme({
       },
       sizes: {
         "3xl": {
-          fontSize: "4xl",
+          fontSize: "5xl",
           fontWeight: "normal",
         },
         "2xl": {
-          fontSize: "3xl",
+          fontSize: "4xl",
           fontWeight: "normal",
           pt: 4,
         },
         xl: {
-          fontSize: "xl",
+          fontSize: "2xl",
           fontWeight: "bold",
           pt: 4,
         },
         lg: {
           fontSize: "lg",
-          fontWeight: "bold",
+          fontWeight: "normal",
           pt: 4,
         },
         md: {
-          fontSize: "md",
+          fontSize: "sm",
           fontWeight: "bold",
           pt: 4,
         },
