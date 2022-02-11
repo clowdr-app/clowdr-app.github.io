@@ -25,7 +25,7 @@ Drive](https://docs.google.com/spreadsheets/d/1XtQJPts8h59LNdIsShKRLMj4QndP97aC/
 To start using it, _Download_ a copy or _Make a Copy_ of the template. Open your
 copy in Google Sheets, Excel or your preferred spreadsheet editor.
 
-#### A note on using data from external tools
+### A note on using data from external tools
 
 If you have an external tool/system with existing data, it may provide a CSV,
 XML or JSON export. If you are familiar with scripting languages (such as
