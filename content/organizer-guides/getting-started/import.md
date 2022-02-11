@@ -67,13 +67,13 @@ section below for more information.
 
 If you have an external tool/system with existing data, it may provide a CSV,
 XML or JSON export. If you are familiar with scripting languages (such as
-JavaScript) may wish to write a script to convert your existing data into the
-CSV format produced from Midspace's template spreadsheet.
+JavaScript) you may wish to write a script to convert your existing data into
+the CSV format produced from Midspace's template spreadsheet.
 
 ### Using the template
 
 We recommend starting with creating a few test sessions in the same structures
-as typical sessions at your conference. After importing and testing the
+as typical sessions at your conference. After importing and testing that the
 structure meets your expectations, you should then move on to filling out the
 import template with your complete conference program.
 
@@ -385,6 +385,8 @@ the workshop, being the welcome, presentations, discussion periods, break and
 closing of the workshop. Within each period, the workshop organizer may use the
 time in whatever way they like.
 
+TODO: Update this to document the networking period
+
 This format provides some guidance to the audience about the session and the
 Presentation periods each have an abstract. This gives some space for the
 organizers to describe in more detail what will be presented and who will be
@@ -529,7 +531,7 @@ using double quotation marks.
 
 **Documentation regarding using the importer will be made available soon.**
 
-### Possible Errors
+### Errors
 
 **Documentation regarding using the importer will be made available soon.**
 
