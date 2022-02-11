@@ -22,17 +22,18 @@ of the options is explained on this page.
 The template is available from [Midspace's Google
 Drive](https://docs.google.com/spreadsheets/d/1XtQJPts8h59LNdIsShKRLMj4QndP97aC/edit?usp=sharing&ouid=101146156947887051687&rtpof=true&sd=true).
 
-To start using it, _Download_ a copy or _Make a Copy_ of the template. Open your
-copy in Google Sheets, Excel or your preferred spreadsheet editor.
+To start using it, [_Download_ a copy](#Using-Excel) or [_Make a
+Copy_](#Using-Google-Sheets) of the template. Open your copy in Google Sheets,
+Excel or your preferred spreadsheet editor.
 
-### A note on using data from external tools
+### Data from external tools
 
 If you have an external tool/system with existing data, it may provide a CSV,
 XML or JSON export. If you are familiar with scripting languages (such as
 JavaScript) may wish to write a script to convert your existing data into the
 CSV format produced from Midspace's template spreadsheet.
 
-### Using Excel or other software: Download the template
+### Using Excel
 
 If you prefer to use Excel or another spreadsheet editing tool, you can download
 a copy of the template using the following steps.
@@ -51,7 +52,7 @@ unusual characters may become corrupted or lost if you copy data from other
 applications or from the internet. We urge caution when using Excel to process
 data that may contain special characters.
 
-### Using Google Sheets: Make a Copy of the template to your Google Drive
+### Using Google Sheets
 
 If you have a Google Drive account and are logged in, you can make a copy of the
 template using the following steps.
@@ -81,26 +82,32 @@ Content.
   of the presentation (or associated works) but will not be speaking at the
   conference.
   - Authors are not able to upload content for presentations.
-- **Content:** Content is additional information associated with a presentation.
-  - Content may include videos, images, slides or a website link.
+- **Content:** Additional information associated with a presentation.
+  - Content may include an abstract, text, videos, images, slides or a website link.
+    - More content types are available after importing your program.
   - You may optionally allow speakers to edit the abstracts of their
     presentations within Midspace.
   - Content is typically uploaded to Midspace by speakers using Midspace's
     purpose-built submissions system.
 
-A typical conference will have one or more parallel tracks spread across several
-days. Within each track, sessions are scheduled. Sessions typically focus on
-particular topics, research areas or social activities. A typical session
-consists of three presentations followed by a group Q&A (though many other
-formats are possible). A typical presentation has one or two speakers and
-several co-authors. The speakers will often be requested to upload an abstract,
-a pre-recorded video and a copy of their slides. These uploads are usually
-performed using Midspace's "submissions" features, including automatic
-subtitling and speaker-editing of subtitles.
+A typical conference will have one or more (parallel) tracks spread across
+several days. Tracks may be represented within Midspace using one of our
+advanced features (Rooms, Tags or Subconferences) depending on your conference
+structure. Within each track, sessions are scheduled.
+
+Sessions typically focus on particular topics, research areas or social
+activities. A typical session consists of three presentations followed by a
+group Q&A (though many other formats are possible).
+
+A typical presentation has one or two speakers and several co-authors. Speakers
+are commonly asked to provide an abstract, a pre-recorded video and a copy of
+their slides. We recommend using Midspace's submissions system to manage content
+uploads, particularly video submissions which support automatic subtitling and
+speaker-editing of subtitles.
 
 Additional advanced options exist to enable greater customisation of your
-imported program. Please refer to the Advanced Options section below for more
-information.
+imported program. Please refer to the [Advanced Options](#Advanced-Options)
+section below for more information.
 
 ### Using the template
 
@@ -117,15 +124,18 @@ Dashboard of your conference.
 
 #### Getting started
 
-1. Start by entering a title for a session in the left-hand column
-2. Enter a start time for the session. This must be in UTC time (not your local
-   timezone)
-   - **Top tip:** Use Google Search to quickly convert times, e.g. ["10 am PST
-     in UTC"](https://www.google.com/search?q=10+am+pst+in+utc)
-   - We are working on improvements to make this more flexible in future.
-3. Enter a session duration in minutes. This must be a whole number.
-4. A session requires a Chair - sometimes known as a session organizer or
-   moderator.
+1. **Create a session**
+
+   1. Enter a title for the session.
+   2. Enter a start time for the session.
+      - This must be in UTC time (not your localtimezone)
+      - **Top tip:** Use Google Search to quickly convert times, e.g. ["10 am PST
+        in UTC"](https://www.google.com/search?q=10+am+pst+in+utc)
+      - We are working on improvements to make this more flexible in future.
+   3. Enter a session duration in minutes.
+      - This must be a whole number.
+   4. A session requires a Chair - sometimes known as a session organizer or
+      moderator.
 
    During initial testing, we recommend you put your own name and email address
    while you test things out.
@@ -137,7 +147,7 @@ Dashboard of your conference.
      in that chair or speaker being unable to access or properly manage their
      session or presentation.
 
-5. You can now start to set up your presentations.
+2. **Create presentations**
 
    Presentations within a given session, start from the beginning of that
    session and occur back-to-back during the session. (Sessions may be listed
@@ -146,8 +156,8 @@ Dashboard of your conference.
 
    The total duration of presentations within a session may be less than or
    equal to the duration of that session. The total duration may not exceed the
-   duration of the session (Midspace's importer will detect this issue and
-   highlight it to you).
+   duration of the session Midspace's importer will detect this issue and
+   highlight it to you.
 
    A "presentation" may be different to a typical paper presentation. For
    example, it may be a demonstration, workshop, tutorial, social activity,
@@ -178,9 +188,10 @@ Dashboard of your conference.
 
    During initial testing, we recommend you leave the remaining columns blank.
 
-6. You now have a simple test program to try importing. Please follow the
-   "Preparing for import" steps below as you must **save your import data in a
-   specific file format.**
+3. You now have a simple test program to try importing.
+
+   **Please follow the [Preparing the file for import](#Preparing-for-import)
+   steps** below as you must save your import data in a specific file format.
 
 #### Types of Presentation
 
@@ -214,9 +225,9 @@ We recommend the following:
 
 - All presentations should be at least 5 minutes long, unless they are entirely
   pre-recorded.
-- All sessions should be at most 1.5 hours long (90 minutes)
-- Sessions in which papers are being presented should consist of several
-  presentations followed by a group Q&A.
+- All sessions should be at most 90 minutes long
+- For entirely virtual conferences, sessions in which papers are being presented
+  should consist of several presentations followed by a group Q&A.
   - This has been a more successful format for virtual conferences than formats
     used at traditional physical conferences.
   - It reduces pressure on organizers, chairs, speakers and the audience. We
@@ -231,6 +242,11 @@ customization of the program configuration. We recommend trying out Midspace and
 these options before choosing to use them. For more information, please contact
 our support teams.
 
+Typically additional configuration is required after import to make these
+advanced options operate properly. We recommend configuring a test session
+directly in your Midspace Conference to fully understand the configuration
+required.
+
 - **Interaction mode:**
 
   Ordinarily all presentations take place via Video Chat - which is a typical
@@ -239,11 +255,6 @@ our support teams.
   This option enables you to take advantage of Midspace's more advanced
   interaction modes to create session formats such as networking, breakout
   groups, live-streams (webinars) and events hosted outside of Midspace.
-
-  Typically additional configuration is required after import to make these
-  advanced configuration operate properly. We strongly recommend configuring a
-  test session via Midspace's Management pages to fully understand the
-  configuration required before opting to use an advanced interaction mode.
 
   - **Video-chat:** The default. Real-time (near 0 latency) video
     conversations/presentations.
@@ -295,15 +306,45 @@ our support teams.
 - **Room Name:** It is possible to schedule multiple sessions into a single
   room. In this way, rooms may be used to represent tracks.
 
-  - Rooms are allocated automatically by default.
   - The same room is used for each presentation in a session.
   - Two sessions in the same room may not overlap in time.
+  - By default, rooms are allocated automatically.
 
 - **Tags**: Tags may be used to group presentations by theme, topic or track.
   - Separate multiple tags using semicolons.
-  - By default, presentations are tagged by the title of the session.
   - We discourage tagging presentations by type - this isn't very helpful to
     attendees trying to find presentations on particular topics.
+  - By default, presentations are tagged by the title of the session.
+
+### Examples
+
+#### Keynote
+
+TODO:
+
+#### Paper Session
+
+TODO:
+
+#### Poster Session
+
+TODO:
+
+#### Poster Exhibition (Unscheduled)
+
+TODO:
+
+#### Tutorial or Workshop
+
+TODO:
+
+## The Importer
+
+TODO:
+
+### Overview
+
+TODO:
 
 ### Preparing for import
 
@@ -330,14 +371,6 @@ using double quotation marks.
 4. Select "CSV (Comma delimited) (\*.csv)"
 5. Click "Save As"
 6. Save the file to your computer
-
-## The Importer
-
-TODO:
-
-### Overview
-
-TODO:
 
 ### Using the importer
 
