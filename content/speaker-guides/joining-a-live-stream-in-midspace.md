@@ -1,6 +1,6 @@
 ---
 updatedDate: 2021-04-27T09:13:53.000+00:00
-title: Joining a Live-stream
+title: Joining a Livestream
 index: 0
 description: Learn how to join a livestream and backstage as a presenter or chair.
 author: Ed Nutting

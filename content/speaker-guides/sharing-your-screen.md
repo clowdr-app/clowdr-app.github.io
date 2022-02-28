@@ -1,7 +1,7 @@
 ---
 updatedDate: 2021-10-25T01:05:04.000+00:00
 title: Sharing your screen
-index: 1
+index: 2
 description:
   Instructions for sharing your screen, including sharing the screen with
   audio.
