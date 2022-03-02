@@ -99,7 +99,7 @@ Excel or your preferred spreadsheet editor.
 If you prefer to use Excel or another spreadsheet editing tool, you can download
 a copy of the template here:
 
-[Program Importer - Excel Download](https://docs.google.com/spreadsheets/d/1XtQJPts8h59LNdIsShKRLMj4QndP97aC/export?gid=825061278&format=xlsx)
+[Program Importer - Excel Download](https://docs.google.com/spreadsheets/d/1XtQJPts8h59LNdIsShKRLMj4QndP97aC/export?format=xlsx)
 
 ##### Warning: Excel and Unicode
 
@@ -113,7 +113,7 @@ data that may contain special characters.
 If you have a Google Drive account and are logged in, you can make a copy of the
 template here:
 
-[Registrants Importer - Make a Copy](https://docs.google.com/spreadsheets/d/1XtQJPts8h59LNdIsShKRLMj4QndP97aC/copy?gid=825061278)
+[Registrants Importer - Make a Copy](https://docs.google.com/spreadsheets/d/1XtQJPts8h59LNdIsShKRLMj4QndP97aC/copy)
 
 #### Getting started
 
