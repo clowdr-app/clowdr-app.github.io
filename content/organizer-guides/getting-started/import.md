@@ -10,7 +10,7 @@ isFeatured: false
 Midspace's import template enables you to use popular tools, such as Excel or
 Google Sheets, to quickly bulk-enter your existing conference program and import
 it into Midspace. This page provides the template and explanations of the column
-meanings, ways to use it and how the options provided by Midspace's importer.
+meanings, ways to use it and how to use the options provided by Midspace's importer.
 
 The template spreadsheet and importer provide a range of options to enable you
 to import your program in the configuration you desire. For example, whether to
@@ -92,17 +92,14 @@ To start using it, [_Download_ a copy](#Using-Excel) or [_Make a
 Copy_](#Using-Google-Sheets) of the template. Open your copy in Google Sheets,
 Excel or your preferred spreadsheet editor.
 
+- **Top tip:** If you already downloaded or copied the [Registrants Importer Template](https://resources.midspace.app/organizer-guides/getting-started/import-registrants/) you do not need to duplicate this step. You will find the Program template as a sheet titled "Program" within that spreadsheet.
+
 #### Using Excel
 
 If you prefer to use Excel or another spreadsheet editing tool, you can download
-a copy of the template using the following steps.
+a copy of the template here:
 
-1. Click the File menu in the top-left corner
-2. From the menu, click Download
-3. From the submenu, select your preferred format. We recommend Microsoft Excel
-   or OpenDocument formats.
-4. Save the download file
-5. Open the downloaded template file in your preferred spreadsheet program.
+[Program Importer - Excel Download](https://docs.google.com/spreadsheets/d/1XtQJPts8h59LNdIsShKRLMj4QndP97aC/export?format=xlsx)
 
 ##### Warning: Excel and Unicode
 
@@ -114,15 +111,9 @@ data that may contain special characters.
 #### Using Google Sheets
 
 If you have a Google Drive account and are logged in, you can make a copy of the
-template using the following steps.
+template here:
 
-1. Click the File menu in the top-left corner
-2. From the menu, click Make a Copy
-3. Enter a name for your copy (e.g. "Conference 2022 Program")
-4. Select a folder to store your copy
-5. Click OK
-6. A new tab should open with an editable copy of the template
-   - This copy is only accessible to you and people you share it with.
+[Registrants Importer - Make a Copy](https://docs.google.com/spreadsheets/d/1XtQJPts8h59LNdIsShKRLMj4QndP97aC/copy)
 
 #### Getting started
 
