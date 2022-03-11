@@ -2,13 +2,11 @@
 updatedDate: 2021-05-26T09:05:07+00:00
 title: Exporting videos to YouTube
 index: 0
-description:
-  Simple instructions for exporting your videos from Midspace directly
-  into YouTube.
+description: Instructions for exporting your videos from Midspace directly into YouTube.
 author: Cristal Mojica
 ---
 
-## Ready to Archive Your Conference Content?
+## Ready to Archive Your Conference's Videos?
 
 Midspace makes it quick and easy to package and export conference content directly to your organization's YouTube channel.
 
