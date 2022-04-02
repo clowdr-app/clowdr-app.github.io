@@ -9,10 +9,11 @@ isFeatured: false
 
 A conference's program schedule is made up of [sessions](/organizer-guides/concepts/Events#Sessions). A session is an event on your conference's calendar that contains one or more [presentations](/organizer-guides/concepts/Events#Presentations). Please refer to [this article](/organizer-guides/concepts/Events/) to learn more about sessions and events in a conference.
 
-Midspace's import template enables you to use popular tools, such as Excel or
-Google Sheets, to quickly bulk-enter your existing conference program and import
-it into Midspace. This page provides the template and explanations of the column
-meanings, ways to use it and how to use the options provided by Midspace's importer.
+Midspace's import template enables you to use popular tools, such as Excel
+or Google Sheets, to quickly bulk-import your existing conference program
+into Midspace. This page provides the template and explanations of the
+column meanings, ways to use it, and how to use the options provided by
+Midspace's importer.
 
 The template spreadsheet and importer provide a range of options to enable you
 to import your program in the configuration you desire. For example, whether to
@@ -39,8 +40,9 @@ Content.
   conference.
   - Authors are not able to upload content for presentations.
 - **Content:** Additional information associated with a presentation.
-  - Content may include an abstract, text, videos, images, slides or a website link.
-    - More content types are available after importing your program.
+  - Content may include an abstract, text, videos, images, slides or a
+    website link.  (More content types are available after importing your
+    program.) 
   - You may optionally allow speakers to edit the abstracts of their
     presentations within Midspace.
   - Content is typically uploaded to Midspace by speakers using Midspace's
@@ -174,9 +176,9 @@ See the session titled "Presentations on Sleep Science" in the example import ta
    You should add the following information to each presentation:
    - **Title**: the name of your presentation
    - **Type**: a label which describes what type on content is being presented
-   	- For more information on types, see [Content](../Midspace%20Concepts/Content.md)
+    - For more information on types, see [Content](../Midspace%20Concepts/Content.md)
    - **Duration**: the length of the presentation in minutes
-   	- The durations of all presentations in a session must be equal to the total time length of that session
+    - The durations of all presentations in a session must be equal to the total time length of that session
    - **Abstract** (optional)
 
     If you decide to change any of this information later, you can edit it after you import your program to Midspace.
@@ -505,17 +507,17 @@ required.
 
 ### Overview
 
-**Documentation regarding using the importer will be made available soon.**
+_Coming soon._
 
 ### Preparing for import
 
 To prepare your spreadsheet for use with Midspace's importer, you must save it
 as a .CSV file (Comma-separated Values).
 
-**Note:** The file _must_ be a _comma_ separated values file. Some tools
+**Important:** The file must be _comma_ separated.  Some tools
 incorrectly export CSV files separated by semicolons. The Midspace importer will
 not correctly process such files. Values which contain commas must be escaped
-using double quotation marks.
+using double quote marks.
 
 #### Google Sheets
 
@@ -535,7 +537,7 @@ using double quotation marks.
 
 ### Using the importer
 
-**Documentation regarding using the importer will be made available soon.**
+_Coming soon._
 
 ### Options
 
@@ -549,11 +551,11 @@ using double quotation marks.
 
 ### Identifying changes
 
-**Documentation regarding using the importer will be made available soon.**
+_Coming soon._
 
 ### Errors
 
-**Documentation regarding using the importer will be made available soon.**
+_Coming soon_
 
 - **"Presentations exceed session duration"**
 
@@ -563,7 +565,7 @@ using double quotation marks.
 
 ### FAQ
 
-**Documentation regarding using the importer will be made available soon.**
+_Coming soon_
 
 - **How can I schedule presentations for my sponsors?**
 

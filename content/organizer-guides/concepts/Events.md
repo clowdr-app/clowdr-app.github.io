@@ -6,9 +6,11 @@ description: A conference's program schedule is made up of events.
 author: Kelly Kresge
 ---
 
-# What is an Event?
+A conference's program schedule is made up of events.
 
-A conference's program schedule is made up of events. Events are shown as blocks on your conference's calendar.
+# What is an Event? 
+
+Events are shown as blocks on your conference's calendar.
 
 ![image-20220310172819189](/images/event/image-20220310172819189.png)
 
@@ -95,7 +97,7 @@ An exhibition doesn't have to be part of a scheduled event, but you can optional
 
 ![](/images/event/image-20220311135944927.png)
 
-Where a session is a collection of one or more events, **an exhibition** is a *collection of content*, where each content item can have its own associated discussion room. 
+Where a session is a collection of one or more events, **an exhibition** is a *collection of content*, where each content item can have its own associated discussion room.
 
 ### Shuffle Period
 
@@ -123,7 +125,7 @@ Then, select "Manage Event People".
 
 ![](/images/event/image-20220312182202919.png)
 
-## Sessions 
+## Sessions
 
 A conference's program schedule is made up of events that are shown as blocks on your conference's calendar. An event at a conference is often comprised of a series of related presentations that are scheduled back-to-back in an auditorium. In common language, this would be called a "session". Sessions typically focus on particular topics, research areas or social activities. Because of the common usage of this term, we often refer to a block on the conference calendar as a "session" instead of an event.
 

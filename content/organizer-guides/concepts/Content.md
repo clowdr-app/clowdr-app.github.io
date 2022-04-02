@@ -11,8 +11,10 @@ author: Kelly Kresge
 Content is additional information associated with a presentation.
 
 - Content can be an abstract, text, videos, images, slides, or a website link.
-- You can add some limited types of content using the importer, but after importing your program you can add more content types using the Midspace manage menu.
-	- See: [Importing your program](https://resources.midspace.app/organizer-guides/getting-started/import/#Overview)
+- You can add some limited types of content using the importer; after
+  importing your program, you can add further content types using the
+  Midspace manage menu.
+    - See: [Importing your program](https://resources.midspace.app/organizer-guides/getting-started/import/#Overview)
 -  You may optionally allow speakers to edit the abstracts of their presentations within Midspace.
 - Content is typically uploaded to Midspace by speakers using Midspace’s purpose-built submissions system.
 
@@ -30,7 +32,7 @@ Example of several content items, with properties (such as Title) shown in their
 
 ![](/images/content/20220309184634.png)
 
-### Types 
+### Types
 
 The content type is a label which describes what type of content is being presented. The type does not affect how people interact with your content. It is simply a label to help your attendees better understand your schedule.
 
@@ -112,7 +114,7 @@ Documentation will be added later.
 
 People are treated as uploaders of all elements within a content item. All roles have access to upload content.
 
-Related: 
+Related:
 - [Managing People](https://resources.midspace.app/organizer-guides/conference-setup/people/)
 - [How to add a person to your program](https://resources.midspace.app/organizer-guides/conference-setup/people/#You-can-also-follow-these-brief-instructions-to-add-a-person-to-your-program)
 
@@ -166,4 +168,3 @@ See [Rooms](/organizer-guides/concepts/Rooms/)
 See [Exhibition](/organizer-guides/concepts/Events/#Exhibition):
 
 > Where a session is a collection of events, an exhibition is a collection of content, where each content item can have its own associated discussion room.
-
