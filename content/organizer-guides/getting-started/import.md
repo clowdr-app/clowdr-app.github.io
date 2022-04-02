@@ -7,10 +7,13 @@ author: Ed Nutting
 isFeatured: false
 ---
 
-Midspace's import template enables you to use popular tools, such as Excel or
-Google Sheets, to quickly bulk-enter your existing conference program and import
-it into Midspace. This page provides the template and explanations of the column
-meanings, ways to use it and how to use the options provided by Midspace's importer.
+A conference's program schedule is made up of [sessions](/organizer-guides/concepts/Events#Sessions). A session is an event on your conference's calendar that contains one or more [presentations](/organizer-guides/concepts/Events#Presentations). Please refer to [this article](/organizer-guides/concepts/Events/) to learn more about sessions and events in a conference.
+
+Midspace's import template enables you to use popular tools, such as Excel
+or Google Sheets, to quickly bulk-import your existing conference program
+into Midspace. This page provides the template and explanations of the
+column meanings, ways to use it, and how to use the options provided by
+Midspace's importer.
 
 The template spreadsheet and importer provide a range of options to enable you
 to import your program in the configuration you desire. For example, whether to
@@ -37,8 +40,9 @@ Content.
   conference.
   - Authors are not able to upload content for presentations.
 - **Content:** Additional information associated with a presentation.
-  - Content may include an abstract, text, videos, images, slides or a website link.
-    - More content types are available after importing your program.
+  - Content may include an abstract, text, videos, images, slides or a
+    website link.  (More content types are available after importing your
+    program.) 
   - You may optionally allow speakers to edit the abstracts of their
     presentations within Midspace.
   - Content is typically uploaded to Midspace by speakers using Midspace's
@@ -140,6 +144,13 @@ template here:
      in that chair or speaker being unable to access or properly manage their
      session or presentation.
 
+Example:
+![](/images/importer/image-20220322134912436.png)
+
+See the session titled "Presentations on Sleep Science" in the example import table below.
+
+![](/images/importer/image-20220322135135941.png)
+
 2. **Create presentations**
 
    Presentations within a given session, start from the beginning of that
@@ -162,6 +173,17 @@ template here:
    has no affiliation (or you are not aware of it), you may leave the
    affiliation blank.
 
+   You should add the following information to each presentation:
+   - **Title**: the name of your presentation
+   - **Type**: a label which describes what type on content is being presented
+    - For more information on types, see [Content](../Midspace%20Concepts/Content.md)
+   - **Duration**: the length of the presentation in minutes
+    - The durations of all presentations in a session must be equal to the total time length of that session
+   - **Abstract** (optional)
+
+    If you decide to change any of this information later, you can edit it after you import your program to Midspace.
+
+    Formatting Guidelines:
    - Use semicolons (;) to separate names, email addresses and affiliations of
      multiple speakers.
    - If you have multiple speakers and do not know one of their affliations,
@@ -174,6 +196,7 @@ template here:
    - Be careful to list speaker's names, email addresses and affiliations in the
      same order or they will become mismatched.
    - By default, speakers will be listed in the program before "other authors"
+   - The presentation type can be selected from the dropdown menu.
 
    During initial testing, we recommend you add a single speaker with your name
    or the name of one of your co-organizers while you test things out. You will
@@ -181,10 +204,18 @@ template here:
 
    During initial testing, we recommend you leave the remaining columns blank.
 
+   Example presentation import:
+
+   ![](/images/importer/image-20220325170123478.png)
+
 3. You now have a simple test program to try importing.
 
    **Please follow the [Preparing the file for import](#Preparing-for-import)
    steps** below as you must save your import data in a specific file format.
+
+After importing this table, the session will appear as a block on your conference's calendar.
+
+![](/images/importer/image-20220328171753173.png)
 
 ### Types of presentation
 
@@ -476,17 +507,17 @@ required.
 
 ### Overview
 
-**Documentation regarding using the importer will be made available soon.**
+_Coming soon._
 
 ### Preparing for import
 
 To prepare your spreadsheet for use with Midspace's importer, you must save it
 as a .CSV file (Comma-separated Values).
 
-**Note:** The file _must_ be a _comma_ separated values file. Some tools
+**Important:** The file must be _comma_ separated.  Some tools
 incorrectly export CSV files separated by semicolons. The Midspace importer will
 not correctly process such files. Values which contain commas must be escaped
-using double quotation marks.
+using double quote marks.
 
 #### Google Sheets
 
@@ -506,7 +537,7 @@ using double quotation marks.
 
 ### Using the importer
 
-**Documentation regarding using the importer will be made available soon.**
+_Coming soon._
 
 ### Options
 
@@ -520,11 +551,11 @@ using double quotation marks.
 
 ### Identifying changes
 
-**Documentation regarding using the importer will be made available soon.**
+_Coming soon._
 
 ### Errors
 
-**Documentation regarding using the importer will be made available soon.**
+_Coming soon_
 
 - **"Presentations exceed session duration"**
 
@@ -534,7 +565,7 @@ using double quotation marks.
 
 ### FAQ
 
-**Documentation regarding using the importer will be made available soon.**
+_Coming soon_
 
 - **How can I schedule presentations for my sponsors?**
 
