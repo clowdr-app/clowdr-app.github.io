@@ -1,16 +1,17 @@
 import {
   Box,
   Button,
-  ButtonGroup,
   Container,
   Flex,
   Heading,
+  HStack,
   Image,
   Text,
   VStack,
 } from "@chakra-ui/react";
 import { Link as GatsbyLink } from "gatsby";
 import React from "react";
+import { EventFeatures } from "../components/event-features";
 import { Layout } from "../components/layout";
 import Title from "../components/title";
 
@@ -29,19 +30,40 @@ export default function Home() {
               support academic conferences.
             </Text>
             <Box py={5}>
-              <Image src="/images/2022-05 - Demo Conf Screenshot.png" />
+              <Image
+                src="/images/2022-05 - Demo Conf Screenshot.png"
+                h="50vh"
+              />
             </Box>
           </VStack>
         </Container>
-        <Container mt="9vh" textAlign="center">
-          <ButtonGroup size="lg">
-            <Button as={GatsbyLink} to="/host">
+        <Container
+          mt="9vh"
+          justifyContent="center"
+          display={{ base: "none", md: "flex" }}
+        >
+          <HStack>
+            <Button as={GatsbyLink} to="/host" size="lg">
               🎓 Host a conference
             </Button>
-            <Button as={GatsbyLink} to="/sponsor">
+            <Button as={GatsbyLink} to="/sponsor" size="lg">
               ⭐ Sponsor development
             </Button>
-          </ButtonGroup>
+          </HStack>
+        </Container>
+        <Container
+          mt="2vh"
+          justifyContent="center"
+          display={{ base: "flex", md: "none" }}
+        >
+          <VStack alignItems="stretch">
+            <Button as={GatsbyLink} to="/host" size="lg">
+              🎓 Host a conference
+            </Button>
+            <Button as={GatsbyLink} to="/sponsor" size="lg">
+              ⭐ Sponsor development
+            </Button>
+          </VStack>
         </Container>
         <VStack mt={40} alignItems="center" spacing={7} pt={3} pb={10} w="100%">
           <Heading as="h2" size="xl">
@@ -77,6 +99,7 @@ export default function Home() {
             Find out more about conferences we&apos;ve hosted
           </Button>
         </VStack>
+        <EventFeatures mt={40} />
         <Container mt={20} textAlign="center"></Container>
       </Layout>
     </>
