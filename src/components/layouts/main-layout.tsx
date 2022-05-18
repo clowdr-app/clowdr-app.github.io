@@ -19,7 +19,7 @@ export function Layout({
           <MobileMenu />
         </Box>
       </chakra.header>
-      <Box as="main" p={2} w="100vw" overflow="none">
+      <Box as="main" p={2} w="100%" overflow="none">
         {children}
       </Box>
       <Footer />
