@@ -10,7 +10,7 @@ export function FeatureSection({
 }: React.PropsWithChildren<
   {
     title: string;
-    description: string;
+    description: string | React.ReactNode;
   } & ContainerProps
 >): JSX.Element {
   return (

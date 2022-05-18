@@ -12,6 +12,7 @@ import {
 import { Link as GatsbyLink } from "gatsby";
 import React from "react";
 import { EventFeatures } from "../components/home-page/event-features";
+import { ScalabilityFeatures } from "../components/home-page/scalability-features";
 import { Layout } from "../components/layouts/main-layout";
 import Title from "../components/title";
 
@@ -99,8 +100,8 @@ export default function Home() {
             Find out more about conferences we&apos;ve hosted
           </Button>
         </VStack>
-        <EventFeatures mt={40} />
-        <EventFeatures mt={40} />
+        <EventFeatures mt={40} minH="80vh" />
+        <ScalabilityFeatures mt={40} minH="80vh" />
         <Container mt={20} textAlign="center"></Container>
       </Layout>
     </>

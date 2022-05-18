@@ -18,7 +18,6 @@ export function EventFeatures(props: ContainerProps): JSX.Element {
     support any conference design, whether that's using our
     video-chat and live-streaming or any external tool, such as Zoom and
     GatherTown."
-      minH="80vh"
       {...props}
     >
       <FeatureTabs>
