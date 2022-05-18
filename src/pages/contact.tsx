@@ -6,11 +6,11 @@ import Title from "../components/title";
 export default function Contact() {
   return (
     <>
-      <Title title="Contact Us" />
+      <Title title="Contact us" />
       <Layout>
         <Container my={8}>
           <Heading as="h1" size="3xl">
-            Contact Us
+            Contact us
           </Heading>
         </Container>
         <Container my={8}>
