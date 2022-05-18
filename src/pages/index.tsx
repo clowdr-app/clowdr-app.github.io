@@ -4,15 +4,18 @@ import {
   Container,
   Flex,
   Heading,
-  HStack,
   Image,
   Text,
   VStack,
 } from "@chakra-ui/react";
 import { Link as GatsbyLink } from "gatsby";
 import React from "react";
+import { EnablingResearch } from "../components/home-page/enabling-research";
 import { EventFeatures } from "../components/home-page/event-features";
+import { ExpertlySupported } from "../components/home-page/expertly-supported";
+import { InteractiveFeatures } from "../components/home-page/interactive-features";
 import { ScalabilityFeatures } from "../components/home-page/scalability-features";
+import { HostOrSponsorButtons } from "../components/host-or-sponsor-buttons";
 import { Layout } from "../components/layouts/main-layout";
 import Title from "../components/title";
 
@@ -33,39 +36,17 @@ export default function Home() {
             <Box py={5}>
               <Image
                 src="/images/2022-05 - Demo Conf Screenshot.png"
-                h="50vh"
+                maxH="50vh"
               />
             </Box>
           </VStack>
         </Container>
-        <Container
-          mt="9vh"
-          justifyContent="center"
-          display={{ base: "none", md: "flex" }}
-        >
-          <HStack>
-            <Button as={GatsbyLink} to="/host" size="lg">
-              🎓 Host a conference
-            </Button>
-            <Button as={GatsbyLink} to="/sponsor" size="lg">
-              ⭐ Sponsor development
-            </Button>
-          </HStack>
-        </Container>
-        <Container
-          mt="2vh"
-          justifyContent="center"
-          display={{ base: "flex", md: "none" }}
-        >
-          <VStack alignItems="stretch">
-            <Button as={GatsbyLink} to="/host" size="lg">
-              🎓 Host a conference
-            </Button>
-            <Button as={GatsbyLink} to="/sponsor" size="lg">
-              ⭐ Sponsor development
-            </Button>
-          </VStack>
-        </Container>
+        <HostOrSponsorButtons
+          desktopProps={{
+            mt: "9vh",
+          }}
+          mobileProps={{ mt: "2vh" }}
+        />
         <VStack mt={40} alignItems="center" spacing={7} pt={3} pb={10} w="100%">
           <Heading as="h2" size="xl">
             We&apos;ve hosted events big and small
@@ -96,13 +77,33 @@ export default function Home() {
               m={8}
             />
           </Flex>
-          <Button as={GatsbyLink} to="/past-conferences" size="lg">
+          <Button
+            as={GatsbyLink}
+            to="/past-conferences"
+            whiteSpace="normal"
+            size="md"
+          >
             Find out more about conferences we&apos;ve hosted
           </Button>
         </VStack>
         <EventFeatures mt={40} minH="80vh" />
         <ScalabilityFeatures mt={40} minH="80vh" />
-        <Container mt={20} textAlign="center"></Container>
+        <InteractiveFeatures mt={40} minH="80vh" />
+        <HostOrSponsorButtons
+          desktopProps={{
+            mt: 40,
+          }}
+          mobileProps={{ mt: 40 }}
+        />
+        <ExpertlySupported mt="max(var(--chakra-space-40), 15vh)" minH="80vh" />
+        <EnablingResearch mt={40} minH="80vh" />
+        <HostOrSponsorButtons
+          desktopProps={{
+            mt: 40,
+          }}
+          mobileProps={{ mt: 40 }}
+        />
+        <Container mt={40} textAlign="center"></Container>
       </Layout>
     </>
   );

@@ -1,14 +1,16 @@
 import type { TabsProps } from "@chakra-ui/react";
-import { HStack, Tabs } from "@chakra-ui/react";
+import { HStack, Tabs, VStack } from "@chakra-ui/react";
 import React from "react";
+import { useIsNarrow } from "../../hooks/useIsNarrow";
 
 export function FeatureTabs({ children, ...props }: TabsProps): JSX.Element {
+  const isNarrow = useIsNarrow();
   return (
     <Tabs
-      as={HStack}
+      as={isNarrow ? VStack : HStack}
       {...props}
       spacing={8}
-      alignItems="flex-start"
+      alignItems={isNarrow ? "center" : "flex-start"}
       justifyContent="flex-start"
       display="flex"
     >

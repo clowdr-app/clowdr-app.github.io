@@ -19,7 +19,11 @@ export function FeatureSection({
         <Heading as="h2" size="2xl">
           {title}
         </Heading>
-        <Text>{description}</Text>
+        {typeof description === "string" ? (
+          <Text>{description}</Text>
+        ) : (
+          description
+        )}
         {children}
       </VStack>
     </Container>
