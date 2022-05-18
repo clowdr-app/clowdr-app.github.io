@@ -7,6 +7,7 @@ description: >
   Features and guidelines to help ensure a safe community space on Midspace.
 author: Cristal Mojica
 isFeatured: false
+isComprehensive: true
 ---
 
 # Code of Conduct & Reporting Violations

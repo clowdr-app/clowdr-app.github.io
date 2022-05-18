@@ -5,6 +5,7 @@ index: 1
 description: Learn how to run your presentation in video chat.
 author: Ross Gardiner
 isFeatured: false
+isComprehensive: true
 ---
 
 This guide is designed to help presenters of video chat events. If you are presenting in a livestream, please see [Joining a Livestream](../joining-a-live-stream-in-midspace)

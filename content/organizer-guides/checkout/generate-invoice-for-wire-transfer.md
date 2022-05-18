@@ -7,6 +7,7 @@ description:
   checkout.
 author: Ed Nutting
 isFeatured: false
+isComprehensive: true
 ---
 
 How to generate an invoice for a wire transfer payment using our FastSpring checkout.

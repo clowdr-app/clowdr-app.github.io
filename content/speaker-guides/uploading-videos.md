@@ -6,6 +6,7 @@ description:
   Preparing, uploading and editing video captions for pre-recorded and
   live videos.
 author: Ross Gardiner
+isComprehensive: true
 ---
 
 Video captioning is a significant part of Midspace's commitment to

@@ -3,26 +3,33 @@ import {
   AccordionButton,
   AccordionItem,
   AccordionPanel,
+  Alert,
+  AlertDescription,
+  AlertIcon,
+  AlertTitle,
   Badge,
   chakra,
   Container,
   Heading,
+  HStack,
   Icon,
+  Link,
+  VStack,
   Wrap,
 } from "@chakra-ui/react";
 import type { PageProps } from "gatsby";
 import { graphql } from "gatsby";
-import React from "react";
+import React, { useMemo } from "react";
 import { AiOutlineUser } from "react-icons/ai";
-import { Breadcrumbs } from "../components/breadcrumbs";
-import { FeaturedBadge } from "../components/featured-badge";
-import { RenderHtml } from "../components/render-html";
-import type { HeadingNode } from "../components/resources-layout";
+import type { HeadingNode } from "../components/layouts/resources-layout";
 import {
   buildingHeadingsTree,
   ResourcesLayout,
   TOC,
-} from "../components/resources-layout";
+} from "../components/layouts/resources-layout";
+import { RenderHtml } from "../components/render-html";
+import { Breadcrumbs } from "../components/resources/breadcrumbs";
+import { FeaturedBadge } from "../components/resources/featured-badge";
 import Title from "../components/title";
 import type { ResourcePageBySlugQuery } from "../generated/graphql-types";
 import type { ResourcePageContext } from "../misc/resource-page-context";
@@ -67,6 +74,21 @@ export default function ResourcePageBySlug({
     headings = buildingHeadingsTree(headingValues, { idx: 0 }, 1);
   }
 
+  const isUpToDate = useMemo(() => {
+    const updatedAt = post?.frontmatter?.isoUpdatedDate;
+    if (!updatedAt) {
+      return false;
+    }
+    try {
+      const updatedAtMs = Date.parse(updatedAt);
+      const diff = Date.now() - updatedAtMs;
+      return diff < 60 * 24 * 60 * 60 * 1000;
+    } catch {
+      return false;
+    }
+  }, [post?.frontmatter?.isoUpdatedDate]);
+  const isComprehensive = Boolean(post?.frontmatter?.isComprehensive);
+
   return (
     <>
       <Title title={post?.frontmatter?.title ?? "Post"} />
@@ -103,6 +125,56 @@ export default function ResourcePageBySlug({
               {post?.frontmatter?.isFeatured ? <FeaturedBadge /> : undefined}
             </Wrap>
           </chakra.header>
+          {!isUpToDate ? (
+            <Alert
+              status="warning"
+              as={VStack}
+              alignItems="flex-start"
+              mt={8}
+              mb={isComprehensive ? 8 : 0}
+            >
+              <HStack>
+                <AlertIcon />
+                <AlertTitle>This page may be out of date</AlertTitle>
+              </HStack>
+              <AlertDescription>
+                This page has not been updated in the last 60 days and is likely
+                out of date. Although the information may be useful, the
+                instructions, images, videos or other descriptions of Midspace
+                might not match the current design of Midspace. If you would
+                like to help keep the documentation of Midspace up to date,
+                please make a pull request to this site&apos;s{" "}
+                <Link href="https://github.com/clowdr-app/clowdr-app.github.io/">
+                  GitHub pages repository
+                </Link>
+                .
+              </AlertDescription>
+            </Alert>
+          ) : undefined}
+          {!isComprehensive ? (
+            <Alert
+              status="info"
+              as={VStack}
+              alignItems="flex-start"
+              mt={isUpToDate ? 8 : 0}
+              mb={8}
+            >
+              <HStack>
+                <AlertIcon />
+                <AlertTitle>Incomplete documentation</AlertTitle>
+              </HStack>
+              <AlertDescription>
+                We are gradually working on expanding the documentation of
+                Midspace. The information here is currently marked as
+                incomplete. If you would like help expand the documentation,
+                please make a pull request to this site&apos;s{" "}
+                <Link href="https://github.com/clowdr-app/clowdr-app.github.io/">
+                  GitHub pages repository
+                </Link>
+                .
+              </AlertDescription>
+            </Alert>
+          ) : undefined}
           {headings.length ? (
             <Accordion
               display={{ base: "block", lg: "none" }}
@@ -149,6 +221,7 @@ export const query = graphql`
         description
         author
         isFeatured
+        isComprehensive
       }
     }
   }

@@ -25,7 +25,6 @@ export function Card({
   title,
   author,
   descriptionHtml,
-  isFeatured,
   type,
   ...props
 }: {
@@ -33,7 +32,7 @@ export function Card({
   title: string;
   author?: string;
   descriptionHtml: string;
-  isFeatured: boolean;
+  isFeatured?: boolean;
   type: "category" | "resource";
 } & BoxProps): JSX.Element {
   const borderColour = useToken("colors", "brand.600");

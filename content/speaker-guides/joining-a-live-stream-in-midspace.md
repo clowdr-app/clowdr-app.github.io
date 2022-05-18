@@ -5,6 +5,7 @@ index: 0
 description: Learn how to join a livestream and backstage as a presenter or chair.
 author: Ed Nutting
 isFeatured: true
+isComprehensive: true
 ---
 
 This tutorial includes detailed instructions (in text, video and screenshots) for how to prepare for and join into a Midspace livestream event with a backstage.

@@ -5,6 +5,7 @@ index: 2
 description: Review the minimum technical requirements for using Midspace.
 author: Cristal Mojica
 isFeatured: true
+isComprehensive: true
 ---
 
 ## Getting Ready to Use Midspace?

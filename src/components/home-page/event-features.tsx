@@ -1,11 +1,5 @@
-import {
-  Box,
-  ContainerProps,
-  Heading,
-  Image,
-  TabPanelProps,
-  useTabPanel,
-} from "@chakra-ui/react";
+import type { ContainerProps, TabPanelProps } from "@chakra-ui/react";
+import { Container, Heading, Image, Text, useTabPanel } from "@chakra-ui/react";
 import React from "react";
 import {
   FeatureSection,
@@ -13,7 +7,7 @@ import {
   FeatureTabList,
   FeatureTabPanels,
   FeatureTabs,
-} from "./features";
+} from "../features";
 
 export function EventFeatures(props: ContainerProps): JSX.Element {
   return (
@@ -24,6 +18,7 @@ export function EventFeatures(props: ContainerProps): JSX.Element {
     support any conference design, whether that's using our
     video-chat and live-streaming or any external tool, such as Zoom and
     GatherTown."
+      minH="80vh"
       {...props}
     >
       <FeatureTabs>
@@ -34,7 +29,17 @@ export function EventFeatures(props: ContainerProps): JSX.Element {
           <FeatureTab>Networking</FeatureTab>
         </FeatureTabList>
         <FeatureTabPanels>
-          <FeaturePanel text="Video-chat" />
+          <FeaturePanel text="Video-chat">
+            <Text>
+              Video-chat is built-in and only requires a web browser. You can
+              present in video-chat sessions or join a social room at any time
+              to give presentations, meet others and form new friendships.
+            </Text>
+            <Text>
+              A persistent text chat accompanies every video room and includes
+              messaging, Q&amp;A, polling, reactions, floating emoji and more.
+            </Text>
+          </FeaturePanel>
           <FeaturePanel text="Live-streaming" />
           <FeaturePanel text="Off-platform events" />
           <FeaturePanel text="Networking" />
@@ -46,16 +51,23 @@ export function EventFeatures(props: ContainerProps): JSX.Element {
 
 const FeaturePanel = React.forwardRef<
   HTMLDivElement,
-  TabPanelProps & { text: string }
->(function FeaturePanel({ text, ...props }, ref): JSX.Element {
+  TabPanelProps & React.PropsWithChildren<{ text: string; imageSrc?: string }>
+>(function FeaturePanel(
+  { text, children, imageSrc, ...props },
+  ref
+): JSX.Element {
   const tabPanelProps = useTabPanel({ ...props, ref });
 
   return (
-    <Box {...tabPanelProps}>
-      <Image src="" fallbackSrc="https://via.placeholder.com/800x600" />
+    <Container maxW="800px" {...tabPanelProps}>
+      <Image
+        src=""
+        fallbackSrc={imageSrc ?? "https://via.placeholder.com/800x600"}
+      />
       <Heading as="h3" pt={0}>
         {text}
       </Heading>
-    </Box>
+      {children}
+    </Container>
   );
 });

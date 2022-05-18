@@ -6,6 +6,7 @@ description:
   A brief training for organizers and volunteers on providing tech support
   for live-streams
 author: Cristal Mojica
+isComprehensive: true
 ---
 
 **Volunteering to assist with speaker tech support for your event on Midspace? Watch this 15 minute resource to learn how to:**

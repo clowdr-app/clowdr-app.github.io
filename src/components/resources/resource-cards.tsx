@@ -1,5 +1,4 @@
-import type {
-  HTMLChakraProps} from "@chakra-ui/react";
+import type { HTMLChakraProps } from "@chakra-ui/react";
 import {
   chakra,
   Heading,
@@ -8,17 +7,18 @@ import {
   VisuallyHidden,
 } from "@chakra-ui/react";
 import React from "react";
-import type { NodeSummaryFragment } from "../generated/graphql-types";
-import { Card } from "./card";
+import type { NodeSummaryFragment } from "../../generated/graphql-types";
+import { Card } from "../card";
 
 export function ResourceCards({
   resourceNodes,
+  ...props
 }: {
   resourceNodes: NodeSummaryFragment[];
 } & HTMLChakraProps<"section">): JSX.Element {
   const resourcesHeadingId = useId();
   return (
-    <chakra.section aria-labelledby={resourcesHeadingId}>
+    <chakra.section aria-labelledby={resourcesHeadingId} {...props}>
       <VisuallyHidden>
         <Heading as="h2" id={resourcesHeadingId}>
           Resources

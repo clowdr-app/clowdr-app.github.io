@@ -4,6 +4,7 @@ title: Exporting videos to YouTube
 index: 0
 description: Instructions for exporting your videos from Midspace directly into YouTube.
 author: Cristal Mojica
+isComprehensive: true
 ---
 
 ## Ready to Archive Your Conference's Videos?

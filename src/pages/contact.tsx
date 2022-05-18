@@ -1,6 +1,6 @@
 import { Container, Heading, Link, Text } from "@chakra-ui/react";
 import React from "react";
-import { Layout } from "../components/layout";
+import { Layout } from "../components/layouts/main-layout";
 import Title from "../components/title";
 
 export default function Contact() {

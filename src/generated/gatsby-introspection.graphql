@@ -817,6 +817,7 @@ type Frontmatter {
   index: Int
   author: String
   isFeatured: Boolean
+  isComprehensive: Boolean
 }
 
 type Fields {
@@ -1019,6 +1020,7 @@ input FrontmatterFilterInput {
   index: IntQueryOperatorInput
   author: StringQueryOperatorInput
   isFeatured: BooleanQueryOperatorInput
+  isComprehensive: BooleanQueryOperatorInput
 }
 
 input FieldsFilterInput {
@@ -1257,6 +1259,7 @@ enum FileFieldsEnum {
   childrenMarkdownRemark___frontmatter___index
   childrenMarkdownRemark___frontmatter___author
   childrenMarkdownRemark___frontmatter___isFeatured
+  childrenMarkdownRemark___frontmatter___isComprehensive
   childrenMarkdownRemark___fields___slug
   childrenMarkdownRemark___fields___collection
   childrenMarkdownRemark___fields___isCategoryIndex
@@ -1321,6 +1324,7 @@ enum FileFieldsEnum {
   childMarkdownRemark___frontmatter___index
   childMarkdownRemark___frontmatter___author
   childMarkdownRemark___frontmatter___isFeatured
+  childMarkdownRemark___frontmatter___isComprehensive
   childMarkdownRemark___fields___slug
   childMarkdownRemark___fields___collection
   childMarkdownRemark___fields___isCategoryIndex
@@ -2711,6 +2715,7 @@ enum MarkdownRemarkFieldsEnum {
   frontmatter___index
   frontmatter___author
   frontmatter___isFeatured
+  frontmatter___isComprehensive
   fields___slug
   fields___collection
   fields___isCategoryIndex

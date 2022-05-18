@@ -1,11 +1,11 @@
 import { Box, Container, Heading, Link, Text } from "@chakra-ui/react";
 import { graphql, Link as GatsbyLink, useStaticQuery } from "gatsby";
 import React from "react";
-import { CategoryCards } from "../components/category-cards";
-import { FeaturedCards } from "../components/featured-cards";
-import { ResourceCards } from "../components/resource-cards";
-import { ResourcesLayout } from "../components/resources-layout";
-import { Search } from "../components/search";
+import { ResourcesLayout } from "../components/layouts/resources-layout";
+import { CategoryCards } from "../components/resources/category-cards";
+import { FeaturedCards } from "../components/resources/featured-cards";
+import { ResourceCards } from "../components/resources/resource-cards";
+import { Search } from "../components/resources/search";
 import Title from "../components/title";
 import type { ResourcesQuery } from "../generated/graphql-types";
 

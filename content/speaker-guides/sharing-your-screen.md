@@ -7,6 +7,7 @@ description:
   audio.
 author: Ross Gardiner
 isFeatured: true
+isComprehensive: true
 ---
 
 Midspace supports sharing your screen whenever you are using video chat - whether that be in a social room; presenting from a backstage or visiting a sponsor booth.

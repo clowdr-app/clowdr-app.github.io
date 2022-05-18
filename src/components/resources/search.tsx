@@ -11,11 +11,11 @@ import {
   ListItem,
   Text,
 } from "@chakra-ui/react";
-import type { FocusEvent} from "react";
+import type { FocusEvent } from "react";
 import React, { useCallback, useEffect, useState } from "react";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { useLunr } from "react-lunr";
-import { Card } from "./card";
+import { Card } from "../card";
 
 export function Search({
   index,

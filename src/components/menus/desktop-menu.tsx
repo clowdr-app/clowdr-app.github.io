@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { Link as GatsbyLink } from "gatsby";
 import React from "react";
-import { menuItems } from "../misc/menu-items";
+import { menuItems } from "../../misc/menu-items";
 
 export function DesktopMenu(): JSX.Element {
   return (

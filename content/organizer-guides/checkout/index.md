@@ -5,4 +5,5 @@ index: 2
 description: Guides for using Midspace's checkout.
 author: ""
 isFeatured: false
+isComprehensive: true
 ---

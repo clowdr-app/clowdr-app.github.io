@@ -11,8 +11,8 @@ import {
 } from "@chakra-ui/react";
 import { Link as GatsbyLink } from "gatsby";
 import React from "react";
-import { EventFeatures } from "../components/event-features";
-import { Layout } from "../components/layout";
+import { EventFeatures } from "../components/home-page/event-features";
+import { Layout } from "../components/layouts/main-layout";
 import Title from "../components/title";
 
 export default function Home() {
@@ -99,6 +99,7 @@ export default function Home() {
             Find out more about conferences we&apos;ve hosted
           </Button>
         </VStack>
+        <EventFeatures mt={40} />
         <EventFeatures mt={40} />
         <Container mt={20} textAlign="center"></Container>
       </Layout>

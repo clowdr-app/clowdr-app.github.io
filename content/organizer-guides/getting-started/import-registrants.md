@@ -5,6 +5,7 @@ index: 0
 description: Using the template spreadsheet to bulk-import your existing registrants.
 author: Nate Micinski
 isFeatured: false
+isComprehensive: true
 ---
 
 Midspace's import template enables you to use popular tools, such as Excel or
@@ -103,13 +104,16 @@ using double quotation marks.
 6. Save the file to your computer
 
 ### Using the importer
+
 The importer will walk you through the following steps to upload your list of conference registrants:
+
 - Data
 - Configure
 - Review
 - Import
 
 #### Data
+
 Drag and drop your files, or click to select files for upload.
 
 **Advanced:** Once selected you can access advanced options from the "File format options" button including specifying your CSV delimiter, escape character, and encoding.
@@ -119,11 +123,13 @@ Pick your file from the “Select a file” dropdown to preview your data.
 Click "Configure" to proceed.
 
 #### Configure
+
 **Advanced:** Pick your file from the "Select a file" dropdown to preview the parser script. You can edit this script directly in the on-screen editor to suit your data-structure needs. In most cases, our default script should suffice.
 
 Click "Review" to proceed.
 
 #### Review
+
 Displays a final preview of your data import in JSON format.
 
 **Advanced:** By clicking the JSONata Query Tool button you may enter a custom JSONata script to query a relevant part of your data to ensure accuracy.
@@ -131,6 +137,7 @@ Displays a final preview of your data import in JSON format.
 Click "Import" to proceed.
 
 #### Import
+
 Displays a table representing your import. Information will also be provided about the number of new registrants to be imported and the number of existing registrants that will be added to more groups.
 
 Any errors in your data such as missing names or emails will be displayed here, including the first line of offending data.
@@ -144,7 +151,7 @@ Once ready, press “Import” to complete your registrants import.
   Yes! Registrants will be matched and de-duplicated by email addresses. If your import resulted in unexpected duplicate registrants, we suggest checking your list to ensure all email addresses were typed accurately.
 
 - **Do I need to assign my registrants to a group?**
-  
+
   No! Adding a group is entirely optional.
 
 - **I’ve added groups to my registrants—why won’t the importer accept them?**

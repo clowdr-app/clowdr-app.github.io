@@ -4,4 +4,5 @@ title: Technical Guides
 index: 0
 description: Technical requirements, guides for providing technical support and guides to troubleshoot common technical problems.
 author: Ross Gardiner
+isComprehensive: true
 ---

@@ -6,6 +6,7 @@ description:
   Learn about Midspace's Social Rooms feature - an important part of the
   attendee social experience!
 author: Cristal Mojica
+isComprehensive: true
 ---
 
 ## Wondering about the social experience on Midspace?

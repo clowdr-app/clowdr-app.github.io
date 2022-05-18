@@ -2,8 +2,8 @@ import { Box, Container, Heading, Text } from "@chakra-ui/react";
 import type { PageProps } from "gatsby";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
-import { Layout } from "../components/layout";
-import { Search } from "../components/search";
+import { Layout } from "../components/layouts/main-layout";
+import { Search } from "../components/resources/search";
 import Title from "../components/title";
 import type { Page404Query } from "../generated/graphql-types";
 

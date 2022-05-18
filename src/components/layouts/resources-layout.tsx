@@ -8,9 +8,9 @@ import {
   ListItem,
 } from "@chakra-ui/react";
 import React from "react";
-import { DesktopMenu } from "./desktop-menu";
-import Footer from "./footer";
-import { MobileMenu } from "./mobile-menu";
+import Footer from "../footer";
+import { DesktopMenu } from "../menus/desktop-menu";
+import { MobileMenu } from "../menus/mobile-menu";
 
 export function ResourcesLayout({
   children,

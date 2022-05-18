@@ -7,6 +7,7 @@ description:
   platforms.
 author: Ed Nutting
 isFeatured: true
+isComprehensive: true
 ---
 
 Please use the information linked to from this page to diagnose and fix your camera and microphone permissions on supported platforms.

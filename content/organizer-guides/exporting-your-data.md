@@ -4,6 +4,7 @@ title: Exporting your data
 index: 0
 description: Instructions for exporting your data from Midspace.
 author: Ed Nutting
+isComprehensive: true
 ---
 
 ## Ready to archive your conference's program?
