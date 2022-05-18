@@ -23,7 +23,6 @@ export function MobileMenu(): JSX.Element {
         alignItems="center"
         mx="auto"
         flexWrap="wrap"
-        bgColor="brand.900"
         justifyContent="space-between"
         px={4}
       >
@@ -49,10 +48,10 @@ export function MobileMenu(): JSX.Element {
             aria-label="Open menu"
             fontSize="20px"
             variant="ghost"
-            color="white"
             icon={<AiOutlineMenu />}
             onClick={mobileNav.onOpen}
             disabled={mobileNav.isOpen}
+            colorScheme="purple"
           />
         </Box>
 
@@ -66,14 +65,19 @@ export function MobileMenu(): JSX.Element {
           p={2}
           pb={4}
           my={2}
-          bg="brand.900"
+          bg="white"
           layerStyle="hero"
           spacing={3}
           rounded="sm"
           shadow="sm"
           textAlign="center"
         >
-          <CloseButton aria-label="Close menu" onClick={mobileNav.onClose} />
+          <CloseButton
+            aria-label="Close menu"
+            onClick={mobileNav.onClose}
+            colorScheme="purple"
+            variant="solid"
+          />
 
           {menuItems.map((menuItem, i) => (
             <Link
