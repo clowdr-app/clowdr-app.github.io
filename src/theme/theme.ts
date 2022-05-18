@@ -94,7 +94,7 @@ export const theme = extendTheme({
     },
     Container: {
       baseStyle: {
-        maxW: "100ch",
+        maxW: "130ch",
       },
     },
     Link: {
@@ -180,18 +180,6 @@ export const theme = extendTheme({
     "10": "2.5rem",
   },
   layerStyles: {
-    header: {
-      // color: "#ffffff",
-      // _hover: {
-      //   color: "#ffffff",
-      // },
-      // a: {
-      //   color: "#ffffff",
-      //   _hover: {
-      //     color: "#ffffff",
-      //   },
-      // },
-    },
     footer: {
       color: "#ffffff",
       _hover: {
@@ -206,14 +194,14 @@ export const theme = extendTheme({
       },
     },
     hero: {
-      color: "#ffffff",
+      color: "purple.700",
       _hover: {
         color: "#ffffff",
       },
       a: {
-        color: "white",
+        color: "purple.700",
         _hover: {
-          color: "gray.100",
+          color: "gray.400",
           textDecoration: "none",
         },
       },

@@ -46,10 +46,13 @@ export default function Footer() {
         </Box>
         <Box w="40%" minW="30ch">
           <Heading as="h4" size="sm">
-            © Clowdr CIC 2021
+            © Clowdr CIC 2022
           </Heading>
+          <Text>
+            Midspace is a social enterprise dedicated to creating sustainable,
+            inclusive, and engaging conferences.
+          </Text>
           <Text>Midspace is the new name of Clowdr.</Text>
-          <Text>In Midspace is a trademark of Clowdr CIC.</Text>
           <Text>
             Clowdr is a UK Community Interest Company, number{" "}
             <Link
@@ -59,6 +62,14 @@ export default function Footer() {
               12984216
             </Link>
             .
+          </Text>
+          <Text>
+            Social Enterprise UK: Certified Member We’re a certified social
+            enterprise and a member of the national trade body, Social
+            Enterprise UK. To find out more about social enterprise, visit “What
+            its all about“ Clowdr’s early development was supported by the US
+            National Science Foundation under awards CCF-2035003, CCF-2035101
+            and CCF-203500 and by Twilio.org.
           </Text>
         </Box>
       </HStack>

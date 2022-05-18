@@ -5,8 +5,8 @@ import React from "react";
 import { AiOutlineFolderOpen } from "react-icons/ai";
 import { Breadcrumbs } from "../components/breadcrumbs";
 import { CategoryCards } from "../components/category-cards";
-import { Layout } from "../components/layout";
 import { ResourceCards } from "../components/resource-cards";
+import { ResourcesLayout } from "../components/resources-layout";
 import Title from "../components/title";
 import type { ResourceCategoryBySlugQuery } from "../generated/graphql-types";
 import type { ResourcePageContext } from "../misc/resource-page-context";
@@ -34,7 +34,7 @@ export default function ResourceCategoryBySlug({
   return (
     <>
       <Title title={post?.frontmatter?.title ?? "Category"} />
-      <Layout>
+      <ResourcesLayout>
         <Container
           my={8}
           as="article"
@@ -89,7 +89,7 @@ export default function ResourceCategoryBySlug({
             </Text>
           ) : undefined}
         </Container>
-      </Layout>
+      </ResourcesLayout>
     </>
   );
 }

@@ -14,7 +14,6 @@ import { Link as GatsbyLink } from "gatsby";
 import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { menuItems } from "../misc/menu-items";
-import { BackToClowdrButton } from "./back-to-clowdr-button";
 
 export function MobileMenu(): JSX.Element {
   const mobileNav = useDisclosure();
@@ -87,7 +86,6 @@ export function MobileMenu(): JSX.Element {
               {menuItem.text}
             </Link>
           ))}
-          <BackToClowdrButton />
         </VStack>
       </Flex>
     </nav>

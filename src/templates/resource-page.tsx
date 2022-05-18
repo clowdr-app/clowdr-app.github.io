@@ -16,9 +16,13 @@ import React from "react";
 import { AiOutlineUser } from "react-icons/ai";
 import { Breadcrumbs } from "../components/breadcrumbs";
 import { FeaturedBadge } from "../components/featured-badge";
-import type { HeadingNode } from "../components/layout";
-import { buildingHeadingsTree, Layout, TOC } from "../components/layout";
 import { RenderHtml } from "../components/render-html";
+import type { HeadingNode } from "../components/resources-layout";
+import {
+  buildingHeadingsTree,
+  ResourcesLayout,
+  TOC,
+} from "../components/resources-layout";
 import Title from "../components/title";
 import type { ResourcePageBySlugQuery } from "../generated/graphql-types";
 import type { ResourcePageContext } from "../misc/resource-page-context";
@@ -38,7 +42,7 @@ function headingLink(htmlAst: any): string | undefined {
   if (htmlAst.tagName === "a") {
     return htmlAst.properties.href;
   } else if (htmlAst.children) {
-    return htmlAst.children.map(headingLink).filter(x => !!x)[0];
+    return htmlAst.children.map(headingLink).filter((x: any) => !!x)[0];
   }
   return undefined;
 }
@@ -66,7 +70,7 @@ export default function ResourcePageBySlug({
   return (
     <>
       <Title title={post?.frontmatter?.title ?? "Post"} />
-      <Layout headings={headings}>
+      <ResourcesLayout headings={headings}>
         <Container
           my={8}
           as="article"
@@ -113,7 +117,7 @@ export default function ResourcePageBySlug({
               <AccordionItem>
                 <AccordionButton>Table of Contents</AccordionButton>
                 <AccordionPanel>
-                  <TOC nodes={headings} />
+                  <TOC nodes={headings} noLeftMargin />
                 </AccordionPanel>
               </AccordionItem>
             </Accordion>
@@ -122,7 +126,7 @@ export default function ResourcePageBySlug({
             <RenderHtml htmlAst={post?.htmlAst} />
           </chakra.section>
         </Container>
-      </Layout>
+      </ResourcesLayout>
     </>
   );
 }

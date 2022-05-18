@@ -1,4 +1,5 @@
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from "@chakra-ui/react";
+import { Link as GatsbyLink } from "gatsby";
 import React from "react";
 
 export function Breadcrumbs({
@@ -8,10 +9,12 @@ export function Breadcrumbs({
 }): JSX.Element {
   return (
     <Breadcrumb>
-      <BreadcrumbItem key="home" px={0} mx={0}>
-        <BreadcrumbLink href={"/"}>Home</BreadcrumbLink>
+      <BreadcrumbItem key="resources" px={0} mx={0}>
+        <BreadcrumbLink as={GatsbyLink} to="/resources">
+          Resources
+        </BreadcrumbLink>
       </BreadcrumbItem>
-      {breadcrumbs.map((breadcrumb, i) => (
+      {breadcrumbs.slice(1).map((breadcrumb, i) => (
         <BreadcrumbItem
           px={0}
           mx={0}
@@ -19,11 +22,13 @@ export function Breadcrumbs({
           isCurrentPage={i === breadcrumbs.length - 1}
         >
           <BreadcrumbLink
+            as={GatsbyLink}
             {...(i === breadcrumbs.length - 1
               ? {
                   __css: {},
+                  to: "",
                 }
-              : { href: `${breadcrumb.url}` })}
+              : { to: `${breadcrumb.url}` })}
           >
             {breadcrumb.title}
           </BreadcrumbLink>

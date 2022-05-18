@@ -5,7 +5,10 @@ export default function Title(props: { title: string }) {
   return (
     <Helmet htmlAttributes={{ lang: "en" }}>
       <meta charSet="utf-8" />
-      <title>{props.title} | Midspace</title>
+      <title>
+        {props.title}
+        {props.title.length > 0 ? " | Midspace" : ""}
+      </title>
     </Helmet>
   );
 }
