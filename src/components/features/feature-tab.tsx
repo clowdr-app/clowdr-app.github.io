@@ -1,4 +1,4 @@
-import { ChevronRightIcon } from "@chakra-ui/icons";
+import { ChevronDownIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import type { TabProps } from "@chakra-ui/react";
 import { Button, chakra, useTab } from "@chakra-ui/react";
 import React from "react";
@@ -30,7 +30,11 @@ export const FeatureTab = React.forwardRef<
       {...tabProps}
     >
       <chakra.span mr="auto">{tabProps.children}</chakra.span>
-      <ChevronRightIcon aria-hidden ml={2} />
+      {isNarrow ? (
+        <ChevronDownIcon aria-hidden ml={2} />
+      ) : (
+        <ChevronRightIcon aria-hidden ml={2} />
+      )}
     </Button>
   );
 });
