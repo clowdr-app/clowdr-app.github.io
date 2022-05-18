@@ -61,18 +61,18 @@ export const theme = extendTheme({
       },
       variants: {
         solid: {
-          bg: "purple.500",
+          bg: "purple.600",
           color: "white",
           _hover: {
-            bg: "purple.700",
+            bg: "purple.800",
             color: "white",
             textDecoration: "none",
           },
           _active: {
-            bg: "purple.800",
+            bg: "purple.900",
           },
           _focus: {
-            bg: "purple.700",
+            bg: "purple.800",
           },
         },
         "solid-2": {
