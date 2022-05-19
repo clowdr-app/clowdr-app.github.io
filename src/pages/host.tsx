@@ -8,10 +8,17 @@ import {
   HStack,
   Link,
   Stat,
+  StatHelpText,
   StatLabel,
   StatNumber,
+  Table,
   TabPanel,
+  Tbody,
+  Td,
   Text,
+  Th,
+  Thead,
+  Tr,
   VStack,
 } from "@chakra-ui/react";
 import { Link as GatsbyLink } from "gatsby";
@@ -160,7 +167,15 @@ export default function HostAConference() {
             Midspace, these examples should give you a suitable guide to
             estimating the cost of your conference.
           </Text>
-          <FeatureTabs>
+          <Text>
+            Larger conferences typically benefit from the increased efficiency
+            of larger cloud infrastructure. The costs below are representative
+            as of May 2022. If Midspace is able to host more conferences per
+            month on a regular basis, the average cost per conference will go
+            down as all conferences benefit from the efficiency gains. If this
+            happens, we will update our estimates accordingly.
+          </Text>
+          <FeatureTabs mt={8} defaultIndex={2}>
             <FeatureTabList>
               <FeatureTab>Small conference</FeatureTab>
               <FeatureTab>Medium conference</FeatureTab>
@@ -176,26 +191,71 @@ export default function HostAConference() {
                 w="100%"
               >
                 <Text mt={0} fontStyle="italic">
-                  Example based on RE 2021.
+                  Example based on FPGA 2022.
                 </Text>
                 <HStack alignItems="flex-start">
                   <Stat>
                     <StatLabel fontSize="xl">Registrants</StatLabel>
-                    <StatNumber fontSize="4xl">200</StatNumber>
+                    <StatNumber fontSize="4xl">450</StatNumber>
                   </Stat>
                   <Stat>
                     <StatLabel fontSize="xl">Days</StatLabel>
-                    <StatNumber fontSize="4xl">2</StatNumber>
+                    <StatNumber fontSize="4xl">3</StatNumber>
                   </Stat>
                   <Stat>
                     <StatLabel fontSize="xl">Tracks/day</StatLabel>
                     <StatNumber fontSize="4xl">1</StatNumber>
+                    <StatHelpText>Estimated average</StatHelpText>
                   </Stat>
                   <Stat>
-                    <StatLabel fontSize="xl">Total cost</StatLabel>
+                    <StatLabel fontSize="xl">Hours/track</StatLabel>
+                    <StatNumber fontSize="4xl">4</StatNumber>
+                    <StatHelpText>Estimated average</StatHelpText>
+                  </Stat>
+                </HStack>
+                <HStack>
+                  <Stat>
+                    <StatLabel fontSize="xl">Session hours/day</StatLabel>
+                    <StatNumber fontSize="4xl">4</StatNumber>
+                    <StatHelpText>
+                      Estimated average. Tracks/day * hours/track
+                    </StatHelpText>
+                  </Stat>
+                  <Stat>
+                    <StatLabel fontSize="xl">Session hours total</StatLabel>
+                    <StatNumber fontSize="4xl">12</StatNumber>
+                    <StatHelpText>
+                      Estimated total. Hours/day * days
+                    </StatHelpText>
+                  </Stat>
+                </HStack>
+                <HStack>
+                  <Stat>
+                    <StatLabel fontSize="xl">Cost</StatLabel>
                     <StatNumber fontSize="4xl">
-                      $500&nbsp;<chakra.span fontSize="md">USD</chakra.span>
+                      $1,230&nbsp;<chakra.span fontSize="md">USD</chakra.span>
                     </StatNumber>
+                    <StatHelpText>
+                      Excluding support and development
+                    </StatHelpText>
+                  </Stat>
+                  <Stat>
+                    <StatLabel fontSize="xl">Cost/registrant</StatLabel>
+                    <StatNumber fontSize="4xl">
+                      $2.69&nbsp;<chakra.span fontSize="md">USD</chakra.span>
+                    </StatNumber>
+                    <StatHelpText>
+                      Excluding support and development
+                    </StatHelpText>
+                  </Stat>
+                  <Stat>
+                    <StatLabel fontSize="xl">Cost/registrant/day</StatLabel>
+                    <StatNumber fontSize="4xl">
+                      $0.90&nbsp;<chakra.span fontSize="md">USD</chakra.span>
+                    </StatNumber>
+                    <StatHelpText>
+                      Excluding support and development
+                    </StatHelpText>
                   </Stat>
                 </HStack>
               </TabPanel>
@@ -208,26 +268,84 @@ export default function HostAConference() {
                 w="100%"
               >
                 <Text mt={0} fontStyle="italic">
-                  Example based on FPGA 2022.
+                  Example based on RE 2021.
                 </Text>
                 <HStack alignItems="flex-start">
                   <Stat>
                     <StatLabel fontSize="xl">Registrants</StatLabel>
-                    <StatNumber fontSize="4xl">1,000</StatNumber>
+                    <StatNumber fontSize="4xl">350</StatNumber>
                   </Stat>
                   <Stat>
                     <StatLabel fontSize="xl">Days</StatLabel>
-                    <StatNumber fontSize="4xl">4</StatNumber>
+                    <StatNumber fontSize="4xl">5</StatNumber>
                   </Stat>
                   <Stat>
                     <StatLabel fontSize="xl">Tracks/day</StatLabel>
                     <StatNumber fontSize="4xl">2</StatNumber>
+                    <StatHelpText>Estimated average</StatHelpText>
                   </Stat>
                   <Stat>
-                    <StatLabel fontSize="xl">Total cost</StatLabel>
+                    <StatLabel fontSize="xl">Hours/track</StatLabel>
+                    <StatNumber fontSize="4xl">5</StatNumber>
+                    <StatHelpText>Estimated average</StatHelpText>
+                  </Stat>
+                </HStack>
+                <HStack>
+                  <Stat>
+                    <StatLabel fontSize="xl">Session hours/day</StatLabel>
+                    <StatNumber fontSize="4xl">10</StatNumber>
+                    <StatHelpText>
+                      Estimated average. Tracks/day * hours/track
+                    </StatHelpText>
+                  </Stat>
+                  <Stat>
+                    <StatLabel fontSize="xl">Session hours total</StatLabel>
+                    <StatNumber fontSize="4xl">50</StatNumber>
+                    <StatHelpText>
+                      Estimated total. Hours/day * days
+                    </StatHelpText>
+                  </Stat>
+                  <Stat>
+                    <StatLabel fontSize="xl">
+                      Session hours compared to small conference
+                    </StatLabel>
+                    <StatNumber fontSize="4xl">4.17x</StatNumber>
+                  </Stat>
+                </HStack>
+                <HStack>
+                  <Stat>
+                    <StatLabel fontSize="xl">Cost</StatLabel>
                     <StatNumber fontSize="4xl">
-                      $1,000&nbsp;<chakra.span fontSize="md">USD</chakra.span>
+                      $1,940&nbsp;<chakra.span fontSize="md">USD</chakra.span>
                     </StatNumber>
+                    <StatHelpText>
+                      Excluding support and development
+                    </StatHelpText>
+                    <StatHelpText>1.58x cost of small conference</StatHelpText>
+                  </Stat>
+                  <Stat>
+                    <StatLabel fontSize="xl">Cost/registrant</StatLabel>
+                    <StatNumber fontSize="4xl">
+                      $6.47&nbsp;<chakra.span fontSize="md">USD</chakra.span>
+                    </StatNumber>
+                    <StatHelpText>
+                      Excluding support and development
+                    </StatHelpText>
+                    <StatHelpText>
+                      2.41x cost/registrant of small conference
+                    </StatHelpText>
+                  </Stat>
+                  <Stat>
+                    <StatLabel fontSize="xl">Cost/registrant/day</StatLabel>
+                    <StatNumber fontSize="4xl">
+                      $1.29&nbsp;<chakra.span fontSize="md">USD</chakra.span>
+                    </StatNumber>
+                    <StatHelpText>
+                      Excluding support and development
+                    </StatHelpText>
+                    <StatHelpText>
+                      1.43x cost/registrant/day of small conference
+                    </StatHelpText>
                   </Stat>
                 </HStack>
               </TabPanel>
@@ -245,7 +363,7 @@ export default function HostAConference() {
                 <HStack alignItems="flex-start">
                   <Stat>
                     <StatLabel fontSize="xl">Registrants</StatLabel>
-                    <StatNumber fontSize="4xl">2,000</StatNumber>
+                    <StatNumber fontSize="4xl">2,100</StatNumber>
                   </Stat>
                   <Stat>
                     <StatLabel fontSize="xl">Days</StatLabel>
@@ -254,12 +372,70 @@ export default function HostAConference() {
                   <Stat>
                     <StatLabel fontSize="xl">Tracks/day</StatLabel>
                     <StatNumber fontSize="4xl">8</StatNumber>
+                    <StatHelpText>Estimated average</StatHelpText>
                   </Stat>
                   <Stat>
-                    <StatLabel fontSize="xl">Total cost</StatLabel>
+                    <StatLabel fontSize="xl">Hours/track</StatLabel>
+                    <StatNumber fontSize="4xl">6</StatNumber>
+                    <StatHelpText>Estimated average</StatHelpText>
+                  </Stat>
+                </HStack>
+                <HStack>
+                  <Stat>
+                    <StatLabel fontSize="xl">Session hours/day</StatLabel>
+                    <StatNumber fontSize="4xl">48</StatNumber>
+                    <StatHelpText>
+                      Estimated average. Tracks/day * hours/track
+                    </StatHelpText>
+                  </Stat>
+                  <Stat>
+                    <StatLabel fontSize="xl">Session hours total</StatLabel>
+                    <StatNumber fontSize="4xl">672</StatNumber>
+                    <StatHelpText>
+                      Estimated total. Hours/day * days
+                    </StatHelpText>
+                  </Stat>
+                  <Stat>
+                    <StatLabel fontSize="xl">
+                      Session hours compared to medium conference
+                    </StatLabel>
+                    <StatNumber fontSize="4xl">13.44x</StatNumber>
+                  </Stat>
+                </HStack>
+                <HStack>
+                  <Stat>
+                    <StatLabel fontSize="xl">Cost</StatLabel>
                     <StatNumber fontSize="4xl">
-                      $6,000&nbsp;<chakra.span fontSize="md">USD</chakra.span>
+                      $8,800&nbsp;<chakra.span fontSize="md">USD</chakra.span>
                     </StatNumber>
+                    <StatHelpText>
+                      Excluding support and development
+                    </StatHelpText>
+                    <StatHelpText>4.53x cost of medium conference</StatHelpText>
+                  </Stat>
+                  <Stat>
+                    <StatLabel fontSize="xl">Cost/registrant</StatLabel>
+                    <StatNumber fontSize="4xl">
+                      $4.14&nbsp;<chakra.span fontSize="md">USD</chakra.span>
+                    </StatNumber>
+                    <StatHelpText>
+                      Excluding support and development
+                    </StatHelpText>
+                    <StatHelpText>
+                      63% of the cost/registrant of medium conference
+                    </StatHelpText>
+                  </Stat>
+                  <Stat>
+                    <StatLabel fontSize="xl">Cost/registrant/day</StatLabel>
+                    <StatNumber fontSize="4xl">
+                      $0.30&nbsp;<chakra.span fontSize="md">USD</chakra.span>
+                    </StatNumber>
+                    <StatHelpText>
+                      Excluding support and development
+                    </StatHelpText>
+                    <StatHelpText>
+                      23% of the cost/registrant/day of medium conference
+                    </StatHelpText>
                   </Stat>
                 </HStack>
               </TabPanel>
@@ -272,8 +448,19 @@ export default function HostAConference() {
           <Heading as="h3" size="xl" mt={16}>
             Billing in detail
           </Heading>
-          <Text>TODO</Text>
-          <FeatureTabs>
+          <Text>
+            The following section describe what we will bill you for and at what
+            rate. These prices are subject to change from month to month and we
+            will bill you for your usage at the price set at the beginning of
+            the month in which that usage occurs. We expect these prices will go
+            down as we scale up our services.
+          </Text>
+          <Text>
+            All prices are given in USD, though you can pay in other currencies.
+            Fractional quantities will be rounded up to their nearest whole
+            unit.
+          </Text>
+          <FeatureTabs mt={8}>
             <FeatureTabList>
               <FeatureTab>Baseline service</FeatureTab>
               <FeatureTab>Video-chat</FeatureTab>
@@ -292,7 +479,119 @@ export default function HostAConference() {
                 justifyContent="flex-start"
                 w="100%"
               >
-                <Text mt={0}>TODO</Text>
+                <Table>
+                  <Thead>
+                    <Tr>
+                      <Th>Item</Th>
+                      <Th>Includes</Th>
+                      <Th>Units</Th>
+                      <Th>Accrual basis</Th>
+                      <Th>Minimum billable quantity</Th>
+                      <Th>Price per unit</Th>
+                    </Tr>
+                  </Thead>
+                  <Tbody>
+                    <Tr>
+                      <Td>Static hosting</Td>
+                      <Td>
+                        Hosting of files including our frontend code, backend
+                        code, built-in images and videos, resources website and
+                        similar.
+                      </Td>
+                      <Td>Days</Td>
+                      <Td>Daily</Td>
+                      <Td>1</Td>
+                      <Td>$1</Td>
+                    </Tr>
+                    <Tr>
+                      <Td>Email</Td>
+                      <Td>
+                        Automated emails sent by us as part of running your
+                        conference. For example, invitation emails, submission
+                        requests and custom emails.
+                      </Td>
+                      <Td>Days</Td>
+                      <Td>Daily</Td>
+                      <Td>1</Td>
+                      <Td>$1.50</Td>
+                    </Tr>
+                    <Tr>
+                      <Td>GraphQL API</Td>
+                      <Td>
+                        Provision and data transfer of our GraphQL API - a core
+                        part of our services.
+                      </Td>
+                      <Td>Days</Td>
+                      <Td>Daily</Td>
+                      <Td>1</Td>
+                      <Td>$3</Td>
+                    </Tr>
+                    <Tr>
+                      <Td>Database</Td>
+                      <Td>
+                        Provision and operation of our main database - a core
+                        part of our services.
+                      </Td>
+                      <Td>Days</Td>
+                      <Td>Daily</Td>
+                      <Td>1</Td>
+                      <Td>$25</Td>
+                    </Tr>
+                    <Tr>
+                      <Td>Queuing and Real-time services</Td>
+                      <Td>
+                        Provision and operation of essential queuing and
+                        real-time processing services - a core part of our
+                        services.
+                      </Td>
+                      <Td>Days</Td>
+                      <Td>Daily</Td>
+                      <Td>1</Td>
+                      <Td>$5.30</Td>
+                    </Tr>
+                    <Tr>
+                      <Td>Monitoring</Td>
+                      <Td>
+                        Automated monitoring of our cloud infrastructure - a
+                        core part of our services.
+                      </Td>
+                      <Td>Days</Td>
+                      <Td>Daily</Td>
+                      <Td>1</Td>
+                      <Td>$5</Td>
+                    </Tr>
+                    <Tr>
+                      <Td>Micro-services</Td>
+                      <Td>
+                        Compute-time for our various micro-services that power
+                        everything from authentication to caching to video
+                        processing to chat - these are core parts of our
+                        services.
+                      </Td>
+                      <Td>Days</Td>
+                      <Td>Daily</Td>
+                      <Td>1</Td>
+                      <Td>$25</Td>
+                    </Tr>
+                    <Tr>
+                      <Td>Service-provider support</Td>
+                      <Td>
+                        Support and Service Level Agreements with our service
+                        providers to provide up time guarantees and quality of
+                        service levels. Although not essential to operating
+                        Midspace, these do help keep the platform running
+                        smoothly by reducing outages, glitches, downtime and
+                        ensuring support is on hand in the moments when
+                        it&apos;s needed and an issue is outside of
+                        Midspace&apos;s control.
+                      </Td>
+                      <Td>Days</Td>
+                      <Td>Daily</Td>
+                      <Td>1</Td>
+                      <Td>$10</Td>
+                    </Tr>
+                  </Tbody>
+                </Table>
               </TabPanel>
               <TabPanel
                 as={VStack}
@@ -302,7 +601,41 @@ export default function HostAConference() {
                 justifyContent="flex-start"
                 w="100%"
               >
-                <Text mt={0}>TODO</Text>
+                <Table>
+                  <Thead>
+                    <Tr>
+                      <Th>Item</Th>
+                      <Th>Includes</Th>
+                      <Th>Units</Th>
+                      <Th>Accrual basis</Th>
+                      <Th>Minimum billable quantity</Th>
+                      <Th>Price per unit</Th>
+                    </Tr>
+                  </Thead>
+                  <Tbody>
+                    <Tr>
+                      <Td>Participation</Td>
+                      <Td>
+                        Participation in a video-chat whether in a session, a
+                        social room, a direct-message video-chat, a networking
+                        event, a backstage of a live-stream or another form of
+                        video-chat.
+                      </Td>
+                      <Td>Registrants * Minutes</Td>
+                      <Td>Per registrant each minute</Td>
+                      <Td>1</Td>
+                      <Td>$0.004</Td>
+                    </Tr>
+                    <Tr>
+                      <Td>Recording</Td>
+                      <Td>Recording of a video-chat.</Td>
+                      <Td>Minutes</Td>
+                      <Td>Each minute</Td>
+                      <Td>5 per recording</Td>
+                      <Td>$0.04</Td>
+                    </Tr>
+                  </Tbody>
+                </Table>
               </TabPanel>
               <TabPanel
                 as={VStack}
@@ -312,7 +645,44 @@ export default function HostAConference() {
                 justifyContent="flex-start"
                 w="100%"
               >
-                <Text mt={0}>TODO</Text>
+                <Table>
+                  <Thead>
+                    <Tr>
+                      <Th>Item</Th>
+                      <Th>Includes</Th>
+                      <Th>Units</Th>
+                      <Th>Accrual basis</Th>
+                      <Th>Minimum billable quantity</Th>
+                      <Th>Price per unit</Th>
+                    </Tr>
+                  </Thead>
+                  <Tbody>
+                    <Tr>
+                      <Td>Backstage capture</Td>
+                      <Td>
+                        Streaming of a &ldquo;Midspace backstage&rdquo;
+                        video-chat to an RTMP destination.
+                      </Td>
+                      <Td>Minutes</Td>
+                      <Td>Each minute</Td>
+                      <Td>5 per stream</Td>
+                      <Td>$0.1</Td>
+                    </Tr>
+                    <Tr>
+                      <Td>Streaming</Td>
+                      <Td>
+                        Everything you need to stream privately within Midspace.
+                        Ingestion of an RTMP stream (e.g. from a Midspace
+                        backstage), packaging the stream, content delivery, and
+                        recording. Up to 5,000 simultaneous viewers.
+                      </Td>
+                      <Td>Minutes</Td>
+                      <Td>Each minute</Td>
+                      <Td>5 per stream</Td>
+                      <Td>$0.45</Td>
+                    </Tr>
+                  </Tbody>
+                </Table>
               </TabPanel>
               <TabPanel
                 as={VStack}
@@ -322,7 +692,46 @@ export default function HostAConference() {
                 justifyContent="flex-start"
                 w="100%"
               >
-                <Text mt={0}>TODO</Text>
+                <Table>
+                  <Thead>
+                    <Tr>
+                      <Th>Item</Th>
+                      <Th>Includes</Th>
+                      <Th>Units</Th>
+                      <Th>Accrual basis</Th>
+                      <Th>Minimum billable quantity</Th>
+                      <Th>Price per unit</Th>
+                    </Tr>
+                  </Thead>
+                  <Tbody>
+                    <Tr>
+                      <Td>Pre-recorded video files</Td>
+                      <Td>
+                        Ingestion, storage, transcoding, transcription and
+                        content delivery of video files uploaded to Midspace
+                        (usually by authors).
+                      </Td>
+                      <Td>Minutes</Td>
+                      <Td>Duration of video file</Td>
+                      <Td>5 per video</Td>
+                      <Td>$0.04</Td>
+                    </Tr>
+                    <Tr>
+                      <Td>Recordings</Td>
+                      <Td>
+                        Storage, transcription and and content delivery of
+                        recordings made of sessions within Midspace (via
+                        video-chat or live-streaming). Please see Video-chat and
+                        Live-streaming sections for the price of creating a
+                        recording.
+                      </Td>
+                      <Td>Minutes</Td>
+                      <Td>Duration of video file</Td>
+                      <Td>5 per video</Td>
+                      <Td>$0.04</Td>
+                    </Tr>
+                  </Tbody>
+                </Table>
               </TabPanel>
               <TabPanel
                 as={VStack}
@@ -332,7 +741,43 @@ export default function HostAConference() {
                 justifyContent="flex-start"
                 w="100%"
               >
-                <Text mt={0}>TODO</Text>
+                <Table>
+                  <Thead>
+                    <Tr>
+                      <Th>Item</Th>
+                      <Th>Includes</Th>
+                      <Th>Units</Th>
+                      <Th>Accrual basis</Th>
+                      <Th>Minimum billable quantity</Th>
+                      <Th>Price per unit</Th>
+                    </Tr>
+                  </Thead>
+                  <Tbody>
+                    <Tr>
+                      <Td>Authentication</Td>
+                      <Td>
+                        Our authentication provider (Auth0) charges per active
+                        user per month.
+                      </Td>
+                      <Td>Users * Months</Td>
+                      <Td>Per created registrant</Td>
+                      <Td>1</Td>
+                      <Td>$0.02</Td>
+                    </Tr>
+                    <Tr>
+                      <Td>User-load</Td>
+                      <Td>
+                        Users generate a computational workload on our services
+                        which we must scale to meet. As such, we charge larger
+                        conferences for their increased load.
+                      </Td>
+                      <Td>Users * Months</Td>
+                      <Td>Per accepted invitation</Td>
+                      <Td>1</Td>
+                      <Td>$1</Td>
+                    </Tr>
+                  </Tbody>
+                </Table>
               </TabPanel>
               <TabPanel
                 as={VStack}
@@ -342,7 +787,49 @@ export default function HostAConference() {
                 justifyContent="flex-start"
                 w="100%"
               >
-                <Text mt={0}>TODO</Text>
+                <Text mt={0}>
+                  Our free support only includes assisting users with their
+                  camera, microphone or screenshare and their login for the
+                  platform (but does not extend to managing registration for
+                  your conference). We provide a 2-working-day response time
+                  promise, but please don&apos;t expect our two-person team to
+                  respond to a presenter&apos;s last-minute issue. We work to
+                  normal UK working hours and are not available on weekends,
+                  national holidays and at certain other times of the year.
+                </Text>
+                <Text>
+                  We provide additional support upon request when agreed in
+                  advance. This can encompass anything from managing
+                  registration to setting up your conference to chairing live
+                  sessions and much more. We are experts at running conferences
+                  so please ask for our assistance if you need it.
+                </Text>
+                <Text fontWeight="bold">
+                  Additional support is charged at a rate of $150/hour.
+                </Text>
+                <Box>
+                  <Text fontStyle="italic" mt={0}>
+                    Why is our support fee so high?
+                  </Text>
+                  <Text fontStyle="italic" mt={2}>
+                    Our hope is Midspace is easy enough to use that you
+                    won&apos;t need our assistance with the technology.
+                    Therefore, you&apos;re drawing upon our combined experience
+                    running conferences over the last 10 years.
+                  </Text>
+                  <Text fontStyle="italic" mt={2}>
+                    Every hour we spend on support we are not working on the
+                    platform - this is a big opportunity cost, so our support
+                    fees cover the cost of the support person as well as the
+                    cost of an additional person to continue the tasks that
+                    would otherwise not be worked on.
+                  </Text>
+                  <Text fontStyle="italic" mt={2}>
+                    In addition, our support typically exends outside of normal
+                    working hours (often into the early AM!) so we provide
+                    compensation to our team for this.
+                  </Text>
+                </Box>
               </TabPanel>
               <TabPanel
                 as={VStack}
@@ -352,7 +839,10 @@ export default function HostAConference() {
                 justifyContent="flex-start"
                 w="100%"
               >
-                <Text mt={0}>TODO</Text>
+                <Text mt={0}>
+                  TODO: Bring in the sponsorship packages components, along with
+                  conference-size suggestions
+                </Text>
               </TabPanel>
             </FeatureTabPanels>
           </FeatureTabs>
