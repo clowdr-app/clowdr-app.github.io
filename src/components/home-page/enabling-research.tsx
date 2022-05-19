@@ -45,7 +45,7 @@ export function EnablingResearch(props: ContainerProps): JSX.Element {
           <FeaturePanel text="UX Research" />
           <FeaturePanel text="Accessibility" />
           <FeaturePanel text="Students" />
-          <FeaturePanel text="HCI Researchers" />
+          <FeaturePanel text="Researchers" />
         </FeatureTabPanels>
       </FeatureTabs>
     </FeatureSection>

@@ -14,7 +14,11 @@ export function FeatureSection({
   } & ContainerProps
 >): JSX.Element {
   return (
-    <Container {...props}>
+    <Container
+      as="section"
+      id={title.replace(/\s/g, "-").toLowerCase()}
+      {...props}
+    >
       <VStack alignItems="flex-start" spacing={8}>
         <Heading as="h2" size="2xl">
           {title}

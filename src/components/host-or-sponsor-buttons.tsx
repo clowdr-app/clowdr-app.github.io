@@ -22,7 +22,7 @@ export function HostOrSponsorButtons({
             🎓 Host a conference
           </Button>
           <Button as={GatsbyLink} to="/sponsor" size="lg">
-            ⭐ Sponsor us
+            ⭐ Sponsor this project
           </Button>
         </HStack>
       </Container>
@@ -36,7 +36,7 @@ export function HostOrSponsorButtons({
             🎓 Host a conference
           </Button>
           <Button as={GatsbyLink} to="/sponsor" size="lg">
-            ⭐ Sponsor us
+            ⭐ Sponsor this project
           </Button>
         </VStack>
       </Container>

@@ -1,5 +1,14 @@
 import type { ContainerProps, TabPanelProps } from "@chakra-ui/react";
-import { Container, Heading, Image, Text, useTabPanel } from "@chakra-ui/react";
+import {
+  Button,
+  Container,
+  Flex,
+  Heading,
+  Image,
+  Link,
+  Text,
+  useTabPanel,
+} from "@chakra-ui/react";
 import React from "react";
 import {
   FeatureSection,
@@ -8,6 +17,7 @@ import {
   FeatureTabPanels,
   FeatureTabs,
 } from "../features";
+import { HybridReadyText } from "./text/hybrid-ready";
 
 export function EventFeatures(props: ContainerProps): JSX.Element {
   return (
@@ -15,7 +25,7 @@ export function EventFeatures(props: ContainerProps): JSX.Element {
       title="Your conference, your way"
       description="Midspace has everything you need to host a successful conference.
     But every conference is different, so Midspace is flexible enough to
-    support any conference design, whether that's using our
+    support any conference design, whether that's using Midspace's
     video-chat and live-streaming or any external tool, such as Zoom and
     GatherTown."
       {...props}
@@ -26,6 +36,7 @@ export function EventFeatures(props: ContainerProps): JSX.Element {
           <FeatureTab>Live-streaming</FeatureTab>
           <FeatureTab>Zoom or any other</FeatureTab>
           <FeatureTab>Networking</FeatureTab>
+          <FeatureTab>Hybrid</FeatureTab>
         </FeatureTabList>
         <FeatureTabPanels>
           <FeaturePanel text="Video-chat">
@@ -38,10 +49,29 @@ export function EventFeatures(props: ContainerProps): JSX.Element {
               A persistent text chat accompanies every video room and includes
               messaging, Q&amp;A, polling, reactions, floating emoji and more.
             </Text>
+            <Button as={Link} href="#interactive-and-engaging">
+              Find out more
+            </Button>
           </FeaturePanel>
           <FeaturePanel text="Live-streaming" />
           <FeaturePanel text="Off-platform events" />
           <FeaturePanel text="Networking" />
+          <FeaturePanel text="Hybrid">
+            <HybridReadyText />
+            <Flex flexWrap="wrap">
+              <Button as={Link} href="#hybrid-ready" mr={2} mb={2}>
+                Find out more
+              </Button>
+              <Button
+                as={Link}
+                href="#virtual-conference-research"
+                mr={2}
+                mb={2}
+              >
+                Research opportunities
+              </Button>
+            </Flex>
+          </FeaturePanel>
         </FeatureTabPanels>
       </FeatureTabs>
     </FeatureSection>

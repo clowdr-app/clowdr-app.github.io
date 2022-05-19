@@ -7,6 +7,7 @@ import {
   Text,
   UnorderedList,
   useTabPanel,
+  VStack,
 } from "@chakra-ui/react";
 import React from "react";
 import {
@@ -22,7 +23,7 @@ export function ScalabilityFeatures(props: ContainerProps): JSX.Element {
     <FeatureSection
       title="Management that scales"
       description={
-        <>
+        <VStack alignItems="flex-start">
           <Text>
             Midspace is specifically designed to handle the scale and complexity
             of academic conferences.
@@ -31,7 +32,7 @@ export function ScalabilityFeatures(props: ContainerProps): JSX.Element {
             For example, ICSE 2022 used Midspace to host a 2-week virtual
             conference for over 2,000 registrants, consisting of:
           </Text>
-          <UnorderedList>
+          <UnorderedList pt={0}>
             <ListItem>the main conference,</ListItem>
             <ListItem>
               32 co-located events and workshops (each with their own organizing
@@ -44,7 +45,7 @@ export function ScalabilityFeatures(props: ContainerProps): JSX.Element {
               live-streaming, Zoom, MS Teams and GatherTown.
             </ListItem>
           </UnorderedList>
-        </>
+        </VStack>
       }
       {...props}
     >
@@ -55,8 +56,10 @@ export function ScalabilityFeatures(props: ContainerProps): JSX.Element {
           <FeatureTab>Pre-recorded videos</FeatureTab>
           <FeatureTab>Poster exhibitions</FeatureTab>
           <FeatureTab>Registration</FeatureTab>
+          <FeatureTab>Automatic recording</FeatureTab>
           <FeatureTab>Sponsor booths</FeatureTab>
           <FeatureTab>Multiple organizing teams</FeatureTab>
+          <FeatureTab>Export to YouTube</FeatureTab>
         </FeatureTabList>
         <FeatureTabPanels>
           <FeaturePanel text="Conference programme" />
@@ -64,8 +67,10 @@ export function ScalabilityFeatures(props: ContainerProps): JSX.Element {
           <FeaturePanel text="Pre-recorded videos" />
           <FeaturePanel text="Poster exhibitions" />
           <FeaturePanel text="Registration" />
+          <FeaturePanel text="Automatic recording" />
           <FeaturePanel text="Sponsors" />
           <FeaturePanel text="Multiple organizing teams" />
+          <FeaturePanel text="Export to YouTube" />
         </FeatureTabPanels>
       </FeatureTabs>
     </FeatureSection>

@@ -15,7 +15,7 @@ export function InteractiveFeatures(props: ContainerProps): JSX.Element {
       title="Interactive and engaging"
       description="Midspace offers an interactive, collaborative environment designed
       to engage people with the session and with each other. We also use
-      our platform as a vehicle for user experience research, led by
+      the platform as a vehicle for user experience research, led by
       members of the academic communities we support.
       "
       {...props}

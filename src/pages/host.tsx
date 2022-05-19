@@ -29,6 +29,7 @@ import {
   FeatureTabPanels,
   FeatureTabs,
 } from "../components/features";
+import { CostCalculator } from "../components/host-a-conference-page/cost-calculator";
 import { Layout } from "../components/layouts/main-layout";
 import Title from "../components/title";
 
@@ -39,8 +40,41 @@ export default function HostAConference() {
       <Layout>
         <Container my={8}>
           <Heading as="h1" size="3xl">
-            Host a conference
+            Host a conference using Midspace
           </Heading>
+        </Container>
+        <Container my={16}>
+          <Heading as="h2" size="2xl">
+            Self-host or use our hosted service
+          </Heading>
+          <Text fontSize="xl">
+            Midspace is open-source software that you can host yourself on
+            public cloud services. Alternatively, we offer a hosted version of
+            Midspace.
+          </Text>
+          <Text>
+            There are no limitations to the open-source software and
+            there&apos;s no &ldquo;enterprise upgrade&rdquo; option. We would
+            love it if you are able to contribute by fixing any bugs you
+            encounter or sponsoring the cost of continued development.
+          </Text>
+          <Text>
+            We offer a hosted version of Midspace if you would like to benefit
+            from the cost-savings of shared cloud infrastructure
+            (&ldquo;operation at scale&rdquo;) or don&apos;t feel comfortable
+            hosting the software yourself.
+          </Text>
+          <Text fontSize="sm">
+            Please note: To host Midspace yourself, you are going to need
+            someone on your team that is comfortable deploying and operating AWS
+            cloud services (including MediaLive) and various other cloud
+            infrastructure. This is not for the faint of heart and requires
+            continuous monitoring throughout your conference to keep the
+            platform operational. In addition, this person will need to spend
+            time learning how the platform works to resolve any issues that may
+            arise - for example, a user forgetting their login or an AWS
+            Live-stream failing to start correctly.
+          </Text>
         </Container>
         <Container my={16}>
           <Heading as="h2" size="2xl">
@@ -104,9 +138,9 @@ export default function HostAConference() {
           </Text>
           <Text fontSize="md">
             Midspace is a social, open-source project. You can use our hosted
-            service or, if you have the expertise, you can run our cloud-based
-            software yourself. Either way, it will cost you the same because we
-            only charge you for what you use - at cost, no markup.
+            service or, if you have the expertise, you can run the software
+            yourself in the cloud. Either way, it will cost you the same because
+            we only charge you for what you use - at cost, no markup.
           </Text>
           <HStack
             justifyContent="space-evenly"
@@ -158,7 +192,7 @@ export default function HostAConference() {
             </Box>
           </HStack>
           <Heading as="h3" size="xl" mt={16}>
-            Example costs
+            Examples
           </Heading>
           <Text>
             Below are some representative examples from conferences we hosted in
@@ -442,25 +476,37 @@ export default function HostAConference() {
             </FeatureTabPanels>
           </FeatureTabs>
           <Heading as="h3" size="xl" mt={16}>
-            Cost calculator
+            Cost estimator
           </Heading>
-          <Text>TODO</Text>
+          <Text>
+            Get a quick or detailed estimate of how much your conference will
+            cost.
+          </Text>
+          <Text fontSize="sm">
+            This produces an indication of the cost of your conference that you
+            can use for budgeting but not a quote or legally binding figure.
+            This estimate is based on our hosted version of Midspace - if you
+            choose to self-host the software, please expect costs to be rather
+            higher as you will not be benefitting from the economy-of-scale that
+            comes from shared cloud infrastructure.
+          </Text>
+          <CostCalculator />
           <Heading as="h3" size="xl" mt={16}>
             Billing in detail
           </Heading>
           <Text>
-            The following section describe what we will bill you for and at what
-            rate. These prices are subject to change from month to month and we
-            will bill you for your usage at the price set at the beginning of
-            the month in which that usage occurs. We expect these prices will go
-            down as we scale up our services.
+            The following section describes what we will bill you for and at
+            what rate. These prices are subject to change from month to month
+            and we will bill you for your usage at the price set at the
+            beginning of the month in which that usage occurs. We expect these
+            prices will go down as we scale up our hosted version of Midspace.
           </Text>
           <Text>
             All prices are given in USD, though you can pay in other currencies.
             Fractional quantities will be rounded up to their nearest whole
             unit.
           </Text>
-          <FeatureTabs mt={8}>
+          <FeatureTabs mt={8} defaultIndex={1}>
             <FeatureTabList>
               <FeatureTab>Baseline service</FeatureTab>
               <FeatureTab>Video-chat</FeatureTab>
@@ -494,7 +540,7 @@ export default function HostAConference() {
                     <Tr>
                       <Td>Static hosting</Td>
                       <Td>
-                        Hosting of files including our frontend code, backend
+                        Hosting of files including the frontend code, backend
                         code, built-in images and videos, resources website and
                         similar.
                       </Td>
@@ -518,8 +564,8 @@ export default function HostAConference() {
                     <Tr>
                       <Td>GraphQL API</Td>
                       <Td>
-                        Provision and data transfer of our GraphQL API - a core
-                        part of our services.
+                        Provision and data transfer of the GraphQL API - a core
+                        part of Midspace.
                       </Td>
                       <Td>Days</Td>
                       <Td>Daily</Td>
@@ -530,7 +576,7 @@ export default function HostAConference() {
                       <Td>Database</Td>
                       <Td>
                         Provision and operation of our main database - a core
-                        part of our services.
+                        part of midspace.
                       </Td>
                       <Td>Days</Td>
                       <Td>Daily</Td>
@@ -553,7 +599,7 @@ export default function HostAConference() {
                       <Td>Monitoring</Td>
                       <Td>
                         Automated monitoring of our cloud infrastructure - a
-                        core part of our services.
+                        core part of midspace.
                       </Td>
                       <Td>Days</Td>
                       <Td>Daily</Td>
@@ -767,7 +813,7 @@ export default function HostAConference() {
                     <Tr>
                       <Td>User-load</Td>
                       <Td>
-                        Users generate a computational workload on our services
+                        Users generate a computational workload on midspace
                         which we must scale to meet. As such, we charge larger
                         conferences for their increased load.
                       </Td>
@@ -825,7 +871,7 @@ export default function HostAConference() {
                     would otherwise not be worked on.
                   </Text>
                   <Text fontStyle="italic" mt={2}>
-                    In addition, our support typically exends outside of normal
+                    In addition, our support typically extends outside of normal
                     working hours (often into the early AM!) so we provide
                     compensation to our team for this.
                   </Text>
