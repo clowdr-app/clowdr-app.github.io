@@ -107,7 +107,7 @@ export default function Sponsor() {
                   </HStack>
                   <VStack alignItems="flex-start">
                     <Heading as="h4" size="xl" fontWeight="bold" pt={0}>
-                      The Volunteer
+                      The Student
                     </Heading>
                     <Text fontWeight={600} fontSize="lg">
                       USD $1k+ / year

@@ -32,8 +32,14 @@ export function HybridReady(props: ContainerProps): JSX.Element {
           <FeatureTab>Zoom Room Connector</FeatureTab>
         </FeatureTabList>
         <FeatureTabPanels>
-          <FeaturePanel text="Present: Physical to virtual" />
-          <FeaturePanel text="Present: Virtual to physical" />
+          <FeaturePanel
+            text="Present: Physical to virtual"
+            imageSrc="/images/screenshots/present-physical-to-virtual.jpg"
+          />
+          <FeaturePanel
+            text="Present: Virtual to physical"
+            imageSrc="/images/screenshots/present-virtual-to-physical.jpg"
+          />
           <FeaturePanel text="Q&amp;A" />
           <FeaturePanel text="Recording" />
           <FeaturePanel text="Mirroring" />

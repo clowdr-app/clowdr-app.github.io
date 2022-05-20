@@ -35,16 +35,46 @@ export function InteractiveFeatures(props: ContainerProps): JSX.Element {
           <FeatureTab>Add your own feature?</FeatureTab>
         </FeatureTabList>
         <FeatureTabPanels>
-          <FeaturePanel text="Sessions" />
-          <FeaturePanel text="Social rooms" />
-          <FeaturePanel text="Floating emotes" />
-          <FeaturePanel text="Messaging" />
-          <FeaturePanel text="Q&amp;A" />
-          <FeaturePanel text="Polls" />
-          <FeaturePanel text="Reactions" />
-          <FeaturePanel text="Networking" />
-          <FeaturePanel text="Announcements" />
-          <FeaturePanel text="Sponsor booths" />
+          <FeaturePanel
+            text="Sessions"
+            imageSrc="/images/screenshots/live-stream.jpg"
+          />
+          <FeaturePanel
+            text="Social rooms"
+            imageSrc="/images/screenshots/video-chat.jpg"
+          />
+          <FeaturePanel
+            text="Floating emotes"
+            imageSrc="/images/screenshots/floating-emoji.jpg"
+          />
+          <FeaturePanel
+            text="Messaging"
+            imageSrc="/images/screenshots/messaging.jpg"
+          />
+          <FeaturePanel
+            text="Q&amp;A"
+            imageSrc="/images/screenshots/q-and-a.jpg"
+          />
+          <FeaturePanel
+            text="Polls"
+            imageSrc="/images/screenshots/create-poll.jpg"
+          />
+          <FeaturePanel
+            text="Reactions"
+            imageSrc="/images/screenshots/reactions.jpg"
+          />
+          <FeaturePanel
+            text="Networking"
+            imageSrc="/images/screenshots/networking.jpg"
+          />
+          <FeaturePanel
+            text="Announcements"
+            imageSrc="/images/screenshots/announcement.jpg"
+          />
+          <FeaturePanel
+            text="Sponsor booths"
+            imageSrc="/images/screenshots/sponsors.jpg"
+          />
           <FeaturePanel text="Add your own feature?" />
         </FeatureTabPanels>
       </FeatureTabs>

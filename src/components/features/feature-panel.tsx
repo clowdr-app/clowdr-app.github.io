@@ -52,7 +52,7 @@ export const FeaturePanel = React.forwardRef<
         <Modal
           isOpen={isOpen}
           onClose={onClose}
-          size="3xl"
+          size="5xl"
           isCentered
           blockScrollOnMount={false}
         >

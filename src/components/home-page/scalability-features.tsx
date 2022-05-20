@@ -70,7 +70,10 @@ export function ScalabilityFeatures(props: ContainerProps): JSX.Element {
             text="Poster exhibitions"
             imageSrc="/images/screenshots/poster-exhibition.jpg"
           />
-          <FeaturePanel text="Registration" />
+          <FeaturePanel
+            text="Registration"
+            imageSrc="/images/screenshots/use-invite.jpg"
+          />
           <FeaturePanel
             text="Automatic recording"
             imageSrc="/images/screenshots/a-recording.jpg"
