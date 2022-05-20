@@ -1,16 +1,8 @@
-import type { ContainerProps, TabPanelProps } from "@chakra-ui/react";
-import {
-  Button,
-  Container,
-  Flex,
-  Heading,
-  Image,
-  Link,
-  Text,
-  useTabPanel,
-} from "@chakra-ui/react";
+import type { ContainerProps } from "@chakra-ui/react";
+import { Button, Flex, Link, Text } from "@chakra-ui/react";
 import React from "react";
 import {
+  FeaturePanel,
   FeatureSection,
   FeatureTab,
   FeatureTabList,
@@ -39,7 +31,10 @@ export function EventFeatures(props: ContainerProps): JSX.Element {
           <FeatureTab>Hybrid</FeatureTab>
         </FeatureTabList>
         <FeatureTabPanels>
-          <FeaturePanel text="Video-chat">
+          <FeaturePanel
+            text="Video-chat"
+            imageSrc="/images/screenshots/video-chat.jpg"
+          >
             <Text>
               Video-chat is built-in and only requires a web browser. You can
               present in video-chat sessions or join a social room at any time
@@ -53,10 +48,22 @@ export function EventFeatures(props: ContainerProps): JSX.Element {
               Find out more
             </Button>
           </FeaturePanel>
-          <FeaturePanel text="Live-streaming" />
-          <FeaturePanel text="Off-platform events" />
-          <FeaturePanel text="Networking" />
-          <FeaturePanel text="Hybrid">
+          <FeaturePanel
+            text="Live-streaming"
+            imageSrc="/images/screenshots/live-stream.jpg"
+          />
+          <FeaturePanel
+            text="Off-platform events"
+            imageSrc="/images/screenshots/zoom-event.jpg"
+          />
+          <FeaturePanel
+            text="Networking"
+            imageSrc="/images/screenshots/networking.jpg"
+          />
+          <FeaturePanel
+            text="Hybrid"
+            imageSrc="/images/screenshots/live-stream.jpg"
+          >
             <HybridReadyText />
             <Flex flexWrap="wrap">
               <Button as={Link} href="#hybrid-ready" mr={2} mb={2}>
@@ -77,26 +84,3 @@ export function EventFeatures(props: ContainerProps): JSX.Element {
     </FeatureSection>
   );
 }
-
-const FeaturePanel = React.forwardRef<
-  HTMLDivElement,
-  TabPanelProps & React.PropsWithChildren<{ text: string; imageSrc?: string }>
->(function FeaturePanel(
-  { text, children, imageSrc, ...props },
-  ref
-): JSX.Element {
-  const tabPanelProps = useTabPanel({ ...props, ref });
-
-  return (
-    <Container maxW="800px" {...tabPanelProps}>
-      <Image
-        src=""
-        fallbackSrc={imageSrc ?? "https://via.placeholder.com/800x600"}
-      />
-      <Heading as="h3" pt={0}>
-        {text}
-      </Heading>
-      {children}
-    </Container>
-  );
-});

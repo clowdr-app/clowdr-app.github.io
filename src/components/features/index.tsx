@@ -1,3 +1,4 @@
+import { FeaturePanel } from "./feature-panel";
 import { FeatureSection } from "./feature-section";
 import { FeatureTab } from "./feature-tab";
 import { FeatureTabList } from "./feature-tab-list";
@@ -10,4 +11,5 @@ export {
   FeatureTabs,
   FeatureTabList,
   FeatureTabPanels,
+  FeaturePanel,
 };

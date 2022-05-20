@@ -1,7 +1,8 @@
-import type { ContainerProps, TabPanelProps } from "@chakra-ui/react";
-import { Container, Heading, Image, Text, useTabPanel } from "@chakra-ui/react";
+import type { ContainerProps } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
 import React from "react";
 import {
+  FeaturePanel,
   FeatureSection,
   FeatureTab,
   FeatureTabList,
@@ -51,26 +52,3 @@ export function EnablingResearch(props: ContainerProps): JSX.Element {
     </FeatureSection>
   );
 }
-
-const FeaturePanel = React.forwardRef<
-  HTMLDivElement,
-  TabPanelProps & React.PropsWithChildren<{ text: string; imageSrc?: string }>
->(function FeaturePanel(
-  { text, children, imageSrc, ...props },
-  ref
-): JSX.Element {
-  const tabPanelProps = useTabPanel({ ...props, ref });
-
-  return (
-    <Container maxW="800px" {...tabPanelProps}>
-      <Image
-        src=""
-        fallbackSrc={imageSrc ?? "https://via.placeholder.com/800x600"}
-      />
-      <Heading as="h3" pt={0}>
-        {text}
-      </Heading>
-      {children}
-    </Container>
-  );
-});
