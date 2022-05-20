@@ -35,9 +35,13 @@ export default function Footer() {
               <UnorderedList styleType="none" ml={0}>
                 {menuItems.map((menuItem, i) => (
                   <ListItem key={i}>
-                    <Link as={GatsbyLink} to={menuItem.link}>
-                      {menuItem.text}
-                    </Link>
+                    {menuItem.link.startsWith("http") ? (
+                      <Link href={menuItem.link}>{menuItem.text}</Link>
+                    ) : (
+                      <Link as={GatsbyLink} to={menuItem.link}>
+                        {menuItem.text}
+                      </Link>
+                    )}
                   </ListItem>
                 ))}
               </UnorderedList>

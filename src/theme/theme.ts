@@ -195,6 +195,7 @@ export const theme = extendTheme({
     },
     hero: {
       color: "purple.700",
+      fontSize: "md",
       a: {
         color: "purple.700",
         _hover: {

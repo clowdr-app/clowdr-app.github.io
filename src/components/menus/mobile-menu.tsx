@@ -33,11 +33,9 @@ export function MobileMenu(): JSX.Element {
             alignItems="center"
             ml={4}
           >
-            <Image alt="" src="/midspace-wordmark.svg" maxW="200" h="100" />
+            <Image alt="" src="/midspace-wordmark.svg" maxW="150" h="100" />
             <VisuallyHidden>
-              <chakra.h1 fontSize="3xl" fontWeight="400">
-                Midspace
-              </chakra.h1>
+              <chakra.h1>Midspace</chakra.h1>
             </VisuallyHidden>
           </chakra.a>
         </Flex>
@@ -79,17 +77,23 @@ export function MobileMenu(): JSX.Element {
             variant="solid"
           />
 
-          {menuItems.map((menuItem, i) => (
-            <Link
-              as={GatsbyLink}
-              to={menuItem.link}
-              w="full"
-              key={i}
-              fontSize="lg"
-            >
-              {menuItem.text}
-            </Link>
-          ))}
+          {menuItems.map((menuItem, i) =>
+            menuItem.link.startsWith("http") ? (
+              <Link href={menuItem.link} w="full" key={i} fontSize="lg">
+                {menuItem.text}
+              </Link>
+            ) : (
+              <Link
+                as={GatsbyLink}
+                to={menuItem.link}
+                w="full"
+                key={i}
+                fontSize="lg"
+              >
+                {menuItem.text}
+              </Link>
+            )
+          )}
         </VStack>
       </Flex>
     </nav>

@@ -138,7 +138,7 @@ export default function Home() {
           }}
           mobileProps={{ mt: 40 }}
         />
-        <Container mt={40} textAlign="center"></Container>
+        <Container h={40} textAlign="center"></Container>
       </Layout>
     </>
   );

@@ -36,8 +36,8 @@ export default function Contact() {
             We are only able to assist with conferences hosted on our service.
             We are not able to help attendees, speakers or other users of
             self-hosted instances of the Midspace software. If you are unable to
-            resolve your problem via your conference organizers and accessing a
-            conference hosted on our services, please contact us via{" "}
+            resolve your problem via your conference organizers and are
+            accessing a conference hosted on our services, please contact us via{" "}
             <Link href="https://support.midspace.app/">our support desk</Link>.
           </Text>
         </Container>

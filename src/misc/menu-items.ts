@@ -6,4 +6,5 @@ export const menuItems: {
   { link: "/sponsor", text: "Sponsorship" },
   { link: "/resources", text: "Resources" },
   { link: "/contact", text: "Contact Us" },
+  { link: "https://github.com/clowdr-app/clowdr", text: "GitHub" },
 ];

@@ -25,7 +25,7 @@ export function DesktopMenu(): JSX.Element {
         overflowX="auto"
       >
         <HStack flexWrap="wrap" columnGap={0} layerStyle="hero" py={2}>
-          <HStack fontSize="large" justifyContent="flex-start" flex={1}>
+          <HStack justifyContent="flex-start" flex={1}>
             <chakra.a
               as={GatsbyLink}
               to="/"
@@ -33,26 +33,34 @@ export function DesktopMenu(): JSX.Element {
               alignItems="center"
               ml={4}
             >
-              <Image alt="" src="/midspace-wordmark.svg" maxW="200" h="100" />
+              <Image alt="" src="/midspace-wordmark.svg" maxW="150" h="100" />
               <VisuallyHidden>
-                <chakra.h1 fontSize="3xl" fontWeight="400">
-                  Midspace
-                </chakra.h1>
+                <chakra.h1>Midspace</chakra.h1>
               </VisuallyHidden>
             </chakra.a>
             <Spacer />
-            {menuItems.map((menuItem, i) => (
-              <Link
-                as={GatsbyLink}
-                to={menuItem.link}
-                key={i}
-                flexBasis="max-content"
-                fontSize="xl"
-                p={4}
-              >
-                {menuItem.text}
-              </Link>
-            ))}
+            {menuItems.map((menuItem, i) =>
+              menuItem.link.startsWith("http") ? (
+                <Link
+                  href={menuItem.link}
+                  key={i}
+                  flexBasis="max-content"
+                  p={4}
+                >
+                  {menuItem.text}
+                </Link>
+              ) : (
+                <Link
+                  as={GatsbyLink}
+                  to={menuItem.link}
+                  key={i}
+                  flexBasis="max-content"
+                  p={4}
+                >
+                  {menuItem.text}
+                </Link>
+              )
+            )}
           </HStack>
         </HStack>
       </Container>
