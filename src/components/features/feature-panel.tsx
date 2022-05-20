@@ -4,15 +4,20 @@ import React from "react";
 
 export const FeaturePanel = React.forwardRef<
   HTMLDivElement,
-  TabPanelProps & React.PropsWithChildren<{ text: string; imageSrc?: string }>
+  TabPanelProps &
+    React.PropsWithChildren<{
+      text: string;
+      imageSrc?: string;
+      imageMaxWidth?: number;
+    }>
 >(function FeaturePanel(
-  { text, children, imageSrc, ...props },
+  { text, children, imageSrc, imageMaxWidth = 800, ...props },
   ref
 ): JSX.Element {
   const tabPanelProps = useTabPanel({ ...props, ref });
 
   return (
-    <Container maxW="800px" {...tabPanelProps}>
+    <Container maxW={`${imageMaxWidth}px`} {...tabPanelProps}>
       <Image
         src=""
         fallbackSrc={imageSrc ?? "https://via.placeholder.com/800x600"}

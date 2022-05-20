@@ -54,15 +54,39 @@ export function ScalabilityFeatures(props: ContainerProps): JSX.Element {
           <FeatureTab>Export to YouTube</FeatureTab>
         </FeatureTabList>
         <FeatureTabPanels>
-          <FeaturePanel text="Conference programme" />
-          <FeaturePanel text="Speakers &amp; authors" />
-          <FeaturePanel text="Pre-recorded videos" />
-          <FeaturePanel text="Poster exhibitions" />
+          <FeaturePanel
+            text="Conference programme"
+            imageSrc="/images/screenshots/manage-schedule.jpg"
+          />
+          <FeaturePanel
+            text="Speakers &amp; authors"
+            imageSrc="/images/screenshots/manage-people.jpg"
+          />
+          <FeaturePanel
+            text="Pre-recorded videos"
+            imageSrc="/images/screenshots/video-submission.jpg"
+          />
+          <FeaturePanel
+            text="Poster exhibitions"
+            imageSrc="/images/screenshots/poster-exhibition.jpg"
+          />
           <FeaturePanel text="Registration" />
-          <FeaturePanel text="Automatic recording" />
-          <FeaturePanel text="Sponsors" />
-          <FeaturePanel text="Multiple organizing teams" />
-          <FeaturePanel text="Export to YouTube" />
+          <FeaturePanel
+            text="Automatic recording"
+            imageSrc="/images/screenshots/a-recording.jpg"
+          />
+          <FeaturePanel
+            text="Sponsors"
+            imageSrc="/images/screenshots/dragon-testing-sponsor-booth.jpg"
+          />
+          <FeaturePanel
+            text="Multiple organizing teams"
+            imageSrc="/images/screenshots/manage-subconferences.jpg"
+          />
+          <FeaturePanel
+            text="Export to YouTube"
+            imageSrc="/images/screenshots/export-to-youtube.jpg"
+          />
         </FeatureTabPanels>
       </FeatureTabs>
     </FeatureSection>
