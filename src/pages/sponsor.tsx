@@ -51,8 +51,8 @@ export default function Sponsor() {
             <Text>
               However, virtual conferences pose challenges for accessibility,
               interactivity and long-term viability. The Midspace project is
-              tackling each of these through development of its platform,
-              offering that platform as hosted service at-cost and through
+              tackling each of these through development of the platform,
+              offering the platform at-cost as a hosted service, and through
               researching user experience.
             </Text>
           </Container>

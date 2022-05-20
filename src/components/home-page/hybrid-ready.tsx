@@ -40,10 +40,10 @@ export function HybridReady(props: ContainerProps): JSX.Element {
             text="Present: Virtual to physical"
             imageSrc="/images/screenshots/present-virtual-to-physical.jpg"
           />
-          <FeaturePanel text="Q&amp;A" />
+          <FeaturePanel text="Hybrid Q&amp;A" />
           <FeaturePanel text="Recording" />
           <FeaturePanel text="Mirroring" />
-          <FeaturePanel text="Socials" />
+          <FeaturePanel text="Hybrid Socials" />
           <FeaturePanel text="Zoom Room Connector" />
         </FeatureTabPanels>
       </FeatureTabs>

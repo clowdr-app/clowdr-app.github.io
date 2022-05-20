@@ -63,11 +63,11 @@ export default function Home() {
                   student or researcher can afford to attend conferences
                 </ListItem>
                 <ListItem>
-                  <chakra.span fontWeight="bold">climate-friendly</chakra.span>,
+                  <chakra.span fontWeight="bold">climate friendly</chakra.span>,
                   to reduce the impact of academic events on our climate
                 </ListItem>
                 <ListItem>
-                  <chakra.span fontWeight="bold">open-source</chakra.span>, to
+                  <chakra.span fontWeight="bold">open source</chakra.span>, to
                   enable self-hosting for conferences and to pursue research
                   into virtual interactions and environments
                 </ListItem>
@@ -130,13 +130,13 @@ export default function Home() {
           }}
           mobileProps={{ mt: 40 }}
         />
-        <ExpertlySupported mt="max(var(--chakra-space-40), 15vh)" minH="80vh" />
-        <EnablingResearch mt={40} minH="80vh" />
+        <ExpertlySupported mt="max(var(--chakra-space-40), 20vh)" minH="60vh" />
+        <EnablingResearch mt={20} minH="60vh" />
         <HostOrSponsorButtons
           desktopProps={{
-            mt: 40,
+            mt: 20,
           }}
-          mobileProps={{ mt: 40 }}
+          mobileProps={{ mt: 20 }}
         />
         <Container h={40} textAlign="center"></Container>
       </Layout>

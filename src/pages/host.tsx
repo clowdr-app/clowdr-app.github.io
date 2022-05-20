@@ -120,7 +120,7 @@ export default function HostAConference() {
             mb={2}
           >
             <InfoIcon />
-            &nbsp;&nbsp;Conferences we&apos;ve hosted
+            &nbsp;&nbsp;See conferences using Midspace
           </Button>
         </Container>
         <Container my={40}>
