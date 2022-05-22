@@ -46,7 +46,7 @@ export function EnablingResearch(props: ContainerProps): JSX.Element {
           <FeaturePanel text="Virtual Presence Institute">
             <Text>Information coming soon!</Text>
             <Text>
-              This feature exists in Midspace today but this website is
+              Midspace is actively involved in this today but this website is
               currently being brought up to date. Please subscribe to be
               notified when information is added or check back again soon.
             </Text>
@@ -55,7 +55,7 @@ export function EnablingResearch(props: ContainerProps): JSX.Element {
           <FeaturePanel text="UX Research">
             <Text>Information coming soon!</Text>
             <Text>
-              This feature exists in Midspace today but this website is
+              Midspace is actively involved in this today but this website is
               currently being brought up to date. Please subscribe to be
               notified when information is added or check back again soon.
             </Text>
@@ -64,7 +64,7 @@ export function EnablingResearch(props: ContainerProps): JSX.Element {
           <FeaturePanel text="Accessibility">
             <Text>Information coming soon!</Text>
             <Text>
-              This feature exists in Midspace today but this website is
+              Midspace is actively involved in this today but this website is
               currently being brought up to date. Please subscribe to be
               notified when information is added or check back again soon.
             </Text>
@@ -73,7 +73,7 @@ export function EnablingResearch(props: ContainerProps): JSX.Element {
           <FeaturePanel text="Students">
             <Text>Information coming soon!</Text>
             <Text>
-              This feature exists in Midspace today but this website is
+              Midspace is actively involved in this today but this website is
               currently being brought up to date. Please subscribe to be
               notified when information is added or check back again soon.
             </Text>
@@ -82,7 +82,7 @@ export function EnablingResearch(props: ContainerProps): JSX.Element {
           <FeaturePanel text="Researchers">
             <Text>Information coming soon!</Text>
             <Text>
-              This feature exists in Midspace today but this website is
+              Midspace is actively involved in this today but this website is
               currently being brought up to date. Please subscribe to be
               notified when information is added or check back again soon.
             </Text>

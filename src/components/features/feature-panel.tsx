@@ -30,7 +30,7 @@ export const FeaturePanel = React.forwardRef<
   const { isOpen, onClose, onOpen } = useDisclosure();
 
   return (
-    <Container maxW={`${imageMaxWidth}px`} {...tabPanelProps}>
+    <Container {...tabPanelProps} w="100%">
       {imageSrc?.length ? (
         <Image
           src={imageSrc}
@@ -42,6 +42,7 @@ export const FeaturePanel = React.forwardRef<
           onClick={onOpen}
           cursor="zoom-in"
           aria-hidden
+          maxW={`${imageMaxWidth}px`}
         />
       ) : undefined}
       <Heading as="h3" pt={0} mt={imageSrc?.length ? undefined : 0}>

@@ -35,11 +35,11 @@ export function ExpertlySupported(props: ContainerProps): JSX.Element {
             imageSrc="/images/team/ed-nutting.jpg"
             imageMaxWidth={300}
           >
-            <Text>Information coming soon!</Text>
+            <Text w="100%">Information coming soon!</Text>
             <Text>
-              This feature exists in Midspace today but this website is
-              currently being brought up to date. Please subscribe to be
-              notified when information is added or check back again soon.
+              This website is currently being brought up to date. Please
+              subscribe to be notified when information is added or check back
+              again soon.
             </Text>
             <SubscribeButton />
           </FeaturePanel>
@@ -48,11 +48,11 @@ export function ExpertlySupported(props: ContainerProps): JSX.Element {
             imageSrc="/images/team/crista-lopes.jpg"
             imageMaxWidth={300}
           >
-            <Text>Information coming soon!</Text>
+            <Text w="100%">Information coming soon!</Text>
             <Text>
-              This feature exists in Midspace today but this website is
-              currently being brought up to date. Please subscribe to be
-              notified when information is added or check back again soon.
+              This website is currently being brought up to date. Please
+              subscribe to be notified when information is added or check back
+              again soon.
             </Text>
             <SubscribeButton />
           </FeaturePanel>
@@ -61,11 +61,11 @@ export function ExpertlySupported(props: ContainerProps): JSX.Element {
             imageSrc="/images/team/benjamin-pierce.jpg"
             imageMaxWidth={300}
           >
-            <Text>Information coming soon!</Text>
+            <Text w="100%">Information coming soon!</Text>
             <Text>
-              This feature exists in Midspace today but this website is
-              currently being brought up to date. Please subscribe to be
-              notified when information is added or check back again soon.
+              This website is currently being brought up to date. Please
+              subscribe to be notified when information is added or check back
+              again soon.
             </Text>
             <SubscribeButton />
           </FeaturePanel>
@@ -74,11 +74,11 @@ export function ExpertlySupported(props: ContainerProps): JSX.Element {
             imageSrc="/images/team/jonathan-bell.jpeg"
             imageMaxWidth={300}
           >
-            <Text>Information coming soon!</Text>
+            <Text w="100%">Information coming soon!</Text>
             <Text>
-              This feature exists in Midspace today but this website is
-              currently being brought up to date. Please subscribe to be
-              notified when information is added or check back again soon.
+              This website is currently being brought up to date. Please
+              subscribe to be notified when information is added or check back
+              again soon.
             </Text>
             <SubscribeButton />
           </FeaturePanel>
