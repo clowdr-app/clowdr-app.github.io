@@ -16,6 +16,30 @@ export default function Contact() {
         </Container>
         <Container my={8}>
           <Heading as="h2" size="2xl">
+            Sponsorship and Donations
+          </Heading>
+          <Text fontSize="xl">
+            Thank you for your interest! Please refer to the information on our{" "}
+            <Link as={GatsbyLink} to="/sponsor">
+              Sponsorship page
+            </Link>
+            .
+          </Text>
+        </Container>
+        <Container my={8}>
+          <Heading as="h2" size="2xl">
+            Bookings
+          </Heading>
+          <Text fontSize="xl">
+            Thank you for your interest! Please refer to the information on our{" "}
+            <Link as={GatsbyLink} to="/host">
+              Host a conference page
+            </Link>
+            .
+          </Text>
+        </Container>
+        <Container my={8}>
+          <Heading as="h2" size="2xl">
             Need support?
           </Heading>
           <Text fontSize="xl">
@@ -35,9 +59,10 @@ export default function Contact() {
           <Text>
             We are only able to assist with conferences hosted on our service.
             We are not able to help attendees, speakers or other users of
-            self-hosted instances of the Midspace software. If you are unable to
-            resolve your problem via your conference organizers and are
-            accessing a conference hosted on our services, please contact us via{" "}
+            self-hosted instances of the Midspace software (as we don&apos;t
+            have access to such systems!) If you are unable to resolve your
+            problem via your conference organizers and are accessing a
+            conference hosted on our services, please contact us via{" "}
             <Link href="https://support.midspace.app/">our support desk</Link>.
           </Text>
         </Container>
@@ -59,7 +84,7 @@ export default function Contact() {
           <Text>
             The Midspace (formerly Clowdr) platform is 100% open source: your
             contributions are welcome! If you&apos;d like to build it yourself,
-            you are welcome to clone{" "}
+            please clone{" "}
             <Link href="https://github.com/clowdr-app/clowdr">
               our GitHub repo
             </Link>

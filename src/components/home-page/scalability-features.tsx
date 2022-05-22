@@ -9,6 +9,7 @@ import {
   FeatureTabPanels,
   FeatureTabs,
 } from "../features";
+import { SubscribeButton } from "../subscribe-button";
 
 export function ScalabilityFeatures(props: ContainerProps): JSX.Element {
   return (
@@ -57,39 +58,111 @@ export function ScalabilityFeatures(props: ContainerProps): JSX.Element {
           <FeaturePanel
             text="Conference programme"
             imageSrc="/images/screenshots/manage-schedule.jpg"
-          />
+          >
+            <Text>Information coming soon!</Text>
+            <Text>
+              This feature exists in Midspace today but this website is
+              currently being brought up to date. Please subscribe to be
+              notified when information is added or check back again soon.
+            </Text>
+            <SubscribeButton />
+          </FeaturePanel>
           <FeaturePanel
             text="Speakers &amp; authors"
             imageSrc="/images/screenshots/manage-people.jpg"
-          />
+          >
+            <Text>Information coming soon!</Text>
+            <Text>
+              This feature exists in Midspace today but this website is
+              currently being brought up to date. Please subscribe to be
+              notified when information is added or check back again soon.
+            </Text>
+            <SubscribeButton />
+          </FeaturePanel>
           <FeaturePanel
             text="Pre-recorded videos"
             imageSrc="/images/screenshots/video-submission.jpg"
-          />
+          >
+            <Text>Information coming soon!</Text>
+            <Text>
+              This feature exists in Midspace today but this website is
+              currently being brought up to date. Please subscribe to be
+              notified when information is added or check back again soon.
+            </Text>
+            <SubscribeButton />
+          </FeaturePanel>
           <FeaturePanel
             text="Poster exhibitions"
             imageSrc="/images/screenshots/poster-exhibition.jpg"
-          />
+          >
+            <Text>Information coming soon!</Text>
+            <Text>
+              This feature exists in Midspace today but this website is
+              currently being brought up to date. Please subscribe to be
+              notified when information is added or check back again soon.
+            </Text>
+            <SubscribeButton />
+          </FeaturePanel>
           <FeaturePanel
             text="Registration"
             imageSrc="/images/screenshots/use-invite.jpg"
-          />
+          >
+            <Text>Information coming soon!</Text>
+            <Text>
+              This feature exists in Midspace today but this website is
+              currently being brought up to date. Please subscribe to be
+              notified when information is added or check back again soon.
+            </Text>
+            <SubscribeButton />
+          </FeaturePanel>
           <FeaturePanel
             text="Automatic recording"
             imageSrc="/images/screenshots/a-recording.jpg"
-          />
+          >
+            <Text>Information coming soon!</Text>
+            <Text>
+              This feature exists in Midspace today but this website is
+              currently being brought up to date. Please subscribe to be
+              notified when information is added or check back again soon.
+            </Text>
+            <SubscribeButton />
+          </FeaturePanel>
           <FeaturePanel
             text="Sponsors"
             imageSrc="/images/screenshots/dragon-testing-sponsor-booth.jpg"
-          />
+          >
+            <Text>Information coming soon!</Text>
+            <Text>
+              This feature exists in Midspace today but this website is
+              currently being brought up to date. Please subscribe to be
+              notified when information is added or check back again soon.
+            </Text>
+            <SubscribeButton />
+          </FeaturePanel>
           <FeaturePanel
             text="Multiple organizing teams"
             imageSrc="/images/screenshots/manage-subconferences.jpg"
-          />
+          >
+            <Text>Information coming soon!</Text>
+            <Text>
+              This feature exists in Midspace today but this website is
+              currently being brought up to date. Please subscribe to be
+              notified when information is added or check back again soon.
+            </Text>
+            <SubscribeButton />
+          </FeaturePanel>
           <FeaturePanel
             text="Export to YouTube"
             imageSrc="/images/screenshots/export-to-youtube.jpg"
-          />
+          >
+            <Text>Information coming soon!</Text>
+            <Text>
+              This feature exists in Midspace today but this website is
+              currently being brought up to date. Please subscribe to be
+              notified when information is added or check back again soon.
+            </Text>
+            <SubscribeButton />
+          </FeaturePanel>
         </FeatureTabPanels>
       </FeatureTabs>
     </FeatureSection>

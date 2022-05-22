@@ -1,4 +1,5 @@
 import type { ContainerProps } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
 import React from "react";
 import {
   FeaturePanel,
@@ -8,6 +9,7 @@ import {
   FeatureTabPanels,
   FeatureTabs,
 } from "../features";
+import { SubscribeButton } from "../subscribe-button";
 
 export function ExpertlySupported(props: ContainerProps): JSX.Element {
   return (
@@ -32,22 +34,54 @@ export function ExpertlySupported(props: ContainerProps): JSX.Element {
             text="Ed Nutting"
             imageSrc="/images/team/ed-nutting.jpg"
             imageMaxWidth={300}
-          />
+          >
+            <Text>Information coming soon!</Text>
+            <Text>
+              This feature exists in Midspace today but this website is
+              currently being brought up to date. Please subscribe to be
+              notified when information is added or check back again soon.
+            </Text>
+            <SubscribeButton />
+          </FeaturePanel>
           <FeaturePanel
             text="Crista Lopes"
             imageSrc="/images/team/crista-lopes.jpg"
             imageMaxWidth={300}
-          />
+          >
+            <Text>Information coming soon!</Text>
+            <Text>
+              This feature exists in Midspace today but this website is
+              currently being brought up to date. Please subscribe to be
+              notified when information is added or check back again soon.
+            </Text>
+            <SubscribeButton />
+          </FeaturePanel>
           <FeaturePanel
             text="Benjamin Pierce"
             imageSrc="/images/team/benjamin-pierce.jpg"
             imageMaxWidth={300}
-          />
+          >
+            <Text>Information coming soon!</Text>
+            <Text>
+              This feature exists in Midspace today but this website is
+              currently being brought up to date. Please subscribe to be
+              notified when information is added or check back again soon.
+            </Text>
+            <SubscribeButton />
+          </FeaturePanel>
           <FeaturePanel
             text="Jon Bell"
             imageSrc="/images/team/jonathan-bell.jpeg"
             imageMaxWidth={300}
-          />
+          >
+            <Text>Information coming soon!</Text>
+            <Text>
+              This feature exists in Midspace today but this website is
+              currently being brought up to date. Please subscribe to be
+              notified when information is added or check back again soon.
+            </Text>
+            <SubscribeButton />
+          </FeaturePanel>
         </FeatureTabPanels>
       </FeatureTabs>
     </FeatureSection>

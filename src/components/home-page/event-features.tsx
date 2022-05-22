@@ -51,15 +51,80 @@ export function EventFeatures(props: ContainerProps): JSX.Element {
           <FeaturePanel
             text="Live-streaming"
             imageSrc="/images/screenshots/live-stream.jpg"
-          />
+          >
+            <Text>
+              Live-streaming through Midspace (using Amazon AWS Media Services)
+              provides a smooth, reliable webinar experience for large audiences
+              - above 1,000 viewers you should consider using live-streaming.
+            </Text>
+            <Text>
+              A persistent text chat accompanies every live-stream and includes
+              messaging, Q&amp;A, polling, reactions, floating emoji and more.
+              Audience members can also raise their hand to be admitted by a
+              chair to join the stream and ask a question or participate in
+              discussion.
+            </Text>
+            <Text>
+              Our unique backstage feature enables presenters, chairs and A/V
+              pros to prepare behind the scenes from 20 minutes before the
+              session - separate from any other speaker that may already be
+              presenting in the stream.
+            </Text>
+            <Text>
+              Live-streaming is also a key part of any hybrid setup. You can
+              stream into and out of Midspace, for example to connect Zoom as an
+              input from a physical room, and YouTube as an output for public
+              audiences.
+            </Text>
+            <Button as={Link} href="#hybrid-ready">
+              Find out more
+            </Button>
+          </FeaturePanel>
           <FeaturePanel
             text="Off-platform events"
             imageSrc="/images/screenshots/zoom-event.jpg"
-          />
+          >
+            <Text>
+              Midspace is unopinionated about how to run your event - you can
+              use any meeting platform whether that&apos;s the built-in
+              video-chat or live-streaming, or an external tool such as Zoom, MS
+              Teams, GatherTown, Slack, Discord, YouTube, Facebook or any other
+              service. All you need is a joining link!
+            </Text>
+            <Text>
+              Off-platform events scheduled in Midspace show a big
+              &ldquo;Join&rdquo; button. You set the name of the external
+              service and provide the joining link when configuring your
+              schedule.
+            </Text>
+            <Text>
+              This has a few advantages over the traditional approach of
+              emailing links to users. It&apos;s easy to find - attendees log in
+              and click to join the session. If the link changes (as frequently
+              happens) you can update it without emailing everyone new links.
+              There&apos;s no confusion over the timing and it cuts down on the
+              number of people forwarding links via email. It also makes it
+              easier to mix-and-match different tools for different sessions (a
+              common occurrence with co-located events and workshops), without
+              attendees needing to worry quite so much about which link and tool
+              was for which session.
+            </Text>
+          </FeaturePanel>
           <FeaturePanel
             text="Networking"
             imageSrc="/images/screenshots/networking.jpg"
-          />
+          >
+            <Text>
+              Midspace has randomised networking built-in - not just one-to-one
+              but also groups and flexible time limits!
+            </Text>
+            <Text>
+              You schedule &ldquo;shuffle queues&rdquo; with a conversation
+              time-limit, target and maximum group sizes and extra configuration
+              if you require it. Attendees join the queue and are randomly
+              matched with other people for a time-limited conversation.
+            </Text>
+          </FeaturePanel>
           <FeaturePanel
             text="Hybrid"
             imageSrc="/images/screenshots/live-stream.jpg"

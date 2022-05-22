@@ -3,7 +3,6 @@ import {
   Button,
   chakra,
   Container,
-  Flex,
   Heading,
   Image,
   ListItem,
@@ -20,6 +19,7 @@ import { HybridReady } from "../components/home-page/hybrid-ready";
 import { InteractiveFeatures } from "../components/home-page/interactive-features";
 import { ScalabilityFeatures } from "../components/home-page/scalability-features";
 import { HostOrSponsorButtons } from "../components/host-or-sponsor-buttons";
+import { LogoList } from "../components/hosted-conferences/logo-list";
 import { Layout } from "../components/layouts/main-layout";
 import Title from "../components/title";
 
@@ -79,32 +79,7 @@ export default function Home() {
           <Heading as="h2" size="xl">
             Events big and small have used Midspace
           </Heading>
-          <Flex
-            justifyContent="space-evenly"
-            flexWrap="wrap"
-            w="100%"
-            px={10}
-            py={4}
-          >
-            <Image src="/images/logos/acm.png" h="7vh" minH="80px" m={8} />
-            <Image src="/images/logos/ibm.svg" h="7vh" minH="80px" m={8} />
-            <Image src="/images/logos/ieee.svg" h="7vh" minH="70px" m={8} />
-            <Image src="/images/logos/clsummit.png" h="7vh" minH="70px" m={8} />
-            <Image
-              src="/images/logos/4s.png"
-              h="7vh"
-              maxH="50px"
-              minH="50px"
-              m={8}
-            />
-            <Image
-              src="/images/logos/ismir.png"
-              h="7vh"
-              maxH="50px"
-              minH="50px"
-              m={8}
-            />
-          </Flex>
+          <LogoList />
           <Button
             as={GatsbyLink}
             to="/past-conferences"

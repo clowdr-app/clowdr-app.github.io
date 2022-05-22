@@ -11,14 +11,8 @@ import {
   StatHelpText,
   StatLabel,
   StatNumber,
-  Table,
   TabPanel,
-  Tbody,
-  Td,
   Text,
-  Th,
-  Thead,
-  Tr,
   VStack,
 } from "@chakra-ui/react";
 import { Link as GatsbyLink } from "gatsby";
@@ -29,8 +23,8 @@ import {
   FeatureTabPanels,
   FeatureTabs,
 } from "../components/features";
-import { CostCalculator } from "../components/host-a-conference-page/cost-calculator";
 import { Layout } from "../components/layouts/main-layout";
+import { SubscribeButton } from "../components/subscribe-button";
 import Title from "../components/title";
 
 export default function HostAConference() {
@@ -82,13 +76,31 @@ export default function HostAConference() {
           </Heading>
           <Text fontSize="xl">
             We&apos;ll be back in September! Our team needed a short break from
-            hosting conferences. When we return, we will have limited
-            availability, so if you&apos;d like to secure your booking, please{" "}
-            <Link href="mailto:hello@midspace.app">contact us</Link>.
+            hosting conferences and we&apos;re working on a fully-self-service
+            online checkout and onboarding. Get subscribed to be notified when
+            our online checkout goes live!
           </Text>
-          <Button as={Link} href="mailto:hello@midspace.app" size="lg">
+          <Text>
+            When we return, we will have limited availability for additional
+            support. Please contact us as early as possible to book support
+            hours (this can be done prior to our online checkout becoming
+            available).
+          </Text>
+          <SubscribeButton
+            text="Subscribe to be notified"
+            size="lg"
+            mr={2}
+            mb={2}
+          />
+          <Button
+            as={Link}
+            href="mailto:hello@midspace.app"
+            size="lg"
+            mr={2}
+            mb={2}
+          >
             <CalendarIcon />
-            &nbsp;&nbsp;Make a booking
+            &nbsp;&nbsp;Book additional support
           </Button>
         </Container>
         <Container my={40}>
@@ -97,21 +109,15 @@ export default function HostAConference() {
           </Heading>
           <Text fontSize="xl">
             We are working on providing free-trial access to Midspace for anyone
-            to try out the platform. In the meantime, please{" "}
-            <Link href="mailto:hello@midspace.app">contact us</Link> if you are
-            interested in trying out the platform and we will set up a demo
-            space for you.
+            to try out the platform. Get subscribed to be notified when free
+            trials are available!
           </Text>
-          <Button
-            as={Link}
-            href="mailto:hello@midspace.app"
+          <SubscribeButton
+            text="Subscribe to be notified"
             size="lg"
             mr={2}
             mb={2}
-          >
-            <EmailIcon />
-            &nbsp;&nbsp;Request a demo
-          </Button>
+          />
           <Button
             as={GatsbyLink}
             to="/past-conferences"
@@ -479,10 +485,10 @@ export default function HostAConference() {
             Cost estimator
           </Heading>
           <Text>
-            Get a quick or detailed estimate of how much your conference will
-            cost.
+            Coming soon! Get a quick or detailed estimate of how much your
+            conference will cost.
           </Text>
-          <Text fontSize="sm">
+          {/* <Text fontSize="sm">
             This produces an indication of the cost of your conference that you
             can use for budgeting but not a quote or legally binding figure.
             This estimate is based on our hosted version of Midspace - if you
@@ -490,11 +496,17 @@ export default function HostAConference() {
             higher as you will not be benefitting from the economy-of-scale that
             comes from shared cloud infrastructure.
           </Text>
-          <CostCalculator />
+            <CostCalculator />*/}
           <Heading as="h3" size="xl" mt={16}>
             Billing in detail
           </Heading>
           <Text>
+            Coming soon! We&apos;re in the process of finalising our prices for
+            2022 and 2023. Get subscribed for updates about our pricing over the
+            next few months!
+          </Text>
+          <SubscribeButton text="Subscribe to be notified" size="lg" />
+          {/* <Text>
             The following section describes what we will bill you for and at
             what rate. These prices are subject to change from month to month
             and we will bill you for your usage at the price set at the
@@ -891,7 +903,7 @@ export default function HostAConference() {
                 </Text>
               </TabPanel>
             </FeatureTabPanels>
-          </FeatureTabs>
+          </FeatureTabs> */}
         </Container>
         <Container my={40}>
           <Heading as="h2" size="2xl">

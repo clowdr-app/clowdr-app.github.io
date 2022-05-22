@@ -9,6 +9,7 @@ import {
   FeatureTabPanels,
   FeatureTabs,
 } from "../features";
+import { SubscribeButton } from "../subscribe-button";
 
 export function EnablingResearch(props: ContainerProps): JSX.Element {
   return (
@@ -42,11 +43,51 @@ export function EnablingResearch(props: ContainerProps): JSX.Element {
           <FeatureTab>Researchers</FeatureTab>
         </FeatureTabList>
         <FeatureTabPanels>
-          <FeaturePanel text="Virtual Presence Institute" />
-          <FeaturePanel text="UX Research" />
-          <FeaturePanel text="Accessibility" />
-          <FeaturePanel text="Students" />
-          <FeaturePanel text="Researchers" />
+          <FeaturePanel text="Virtual Presence Institute">
+            <Text>Information coming soon!</Text>
+            <Text>
+              This feature exists in Midspace today but this website is
+              currently being brought up to date. Please subscribe to be
+              notified when information is added or check back again soon.
+            </Text>
+            <SubscribeButton />
+          </FeaturePanel>
+          <FeaturePanel text="UX Research">
+            <Text>Information coming soon!</Text>
+            <Text>
+              This feature exists in Midspace today but this website is
+              currently being brought up to date. Please subscribe to be
+              notified when information is added or check back again soon.
+            </Text>
+            <SubscribeButton />
+          </FeaturePanel>
+          <FeaturePanel text="Accessibility">
+            <Text>Information coming soon!</Text>
+            <Text>
+              This feature exists in Midspace today but this website is
+              currently being brought up to date. Please subscribe to be
+              notified when information is added or check back again soon.
+            </Text>
+            <SubscribeButton />
+          </FeaturePanel>
+          <FeaturePanel text="Students">
+            <Text>Information coming soon!</Text>
+            <Text>
+              This feature exists in Midspace today but this website is
+              currently being brought up to date. Please subscribe to be
+              notified when information is added or check back again soon.
+            </Text>
+            <SubscribeButton />
+          </FeaturePanel>
+          <FeaturePanel text="Researchers">
+            <Text>Information coming soon!</Text>
+            <Text>
+              This feature exists in Midspace today but this website is
+              currently being brought up to date. Please subscribe to be
+              notified when information is added or check back again soon.
+            </Text>
+            <SubscribeButton />
+          </FeaturePanel>
         </FeatureTabPanels>
       </FeatureTabs>
     </FeatureSection>
