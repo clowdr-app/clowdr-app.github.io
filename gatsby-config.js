@@ -123,7 +123,7 @@ const localSearchOptions = {
 /** @type import("gatsby").GatsbyConfig */
 module.exports = {
     siteMetadata: {
-        siteUrl: "https://resources.midspace.app/",
+        siteUrl: "https://midspace.app/",
     },
     plugins: [
         "gatsby-plugin-typescript",

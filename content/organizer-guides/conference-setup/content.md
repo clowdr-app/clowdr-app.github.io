@@ -14,7 +14,7 @@ Midspace makes it easy to manage content, and empowers organizers to delegate an
 
 Common scenarios are identified and advice for how to tackle them is provided!
 
-_To learn about linking content to the schedule, see our_ [_managing your schedule with Midspace_](https://resources.midspace.app/schedule) _resource, and to learn about assigning people to manage content, view our_ [_managing people within Midspace_](https://resources.midspace.app/people) _resource._
+_To learn about linking content to the schedule, see our_ [_managing your schedule with Midspace_](https://midspace.app/resources/schedule) _resource, and to learn about assigning people to manage content, view our_ [_managing people within Midspace_](https://midspace.app/resources/people) _resource._
 
 \[Video Coming Shortly\]
 

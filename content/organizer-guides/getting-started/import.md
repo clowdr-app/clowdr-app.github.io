@@ -92,7 +92,7 @@ To start using it, [_Download_ a copy](#Using-Excel) or [_Make a
 Copy_](#Using-Google-Sheets) of the template. Open your copy in Google Sheets,
 Excel or your preferred spreadsheet editor.
 
-- **Top tip:** If you already downloaded or copied the [Registrants Importer Template](https://resources.midspace.app/organizer-guides/getting-started/import-registrants/) you do not need to duplicate this step. You will find the Program template as a sheet titled "Program" within that spreadsheet.
+- **Top tip:** If you already downloaded or copied the [Registrants Importer Template](https://midspace.app/resources/organizer-guides/getting-started/import-registrants/) you do not need to duplicate this step. You will find the Program template as a sheet titled "Program" within that spreadsheet.
 
 #### Using Excel
 

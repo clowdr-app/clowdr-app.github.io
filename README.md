@@ -1,6 +1,6 @@
-# resources.midspace.app
+# Midspace.app
 
-This is the Midspace (formerly Clowdr) Resources website. It contains a collection of help resources for using Midspace - both as an organiser and an attendee.
+This is the Midspace (formerly Clowdr) website. It contains the Midspace project&apos;s main website including resources.
 
 - [Getting started as a developer](./docs/CONTRIBUTING.md)
 - [Getting started as an editor](./docs/AUTHORS.md)

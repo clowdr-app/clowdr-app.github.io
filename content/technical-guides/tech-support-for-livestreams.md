@@ -19,4 +19,4 @@ isComprehensive: true
 
 For detailed written instructions on how to manage camera and microphone permissions, view the **Troubleshooting Microphone & Camera Permissions** resource next!
 
-_READ NEXT_: [https://resources.midspace.app/mic-cam-permissions](https://resources.midspace.app/mic-cam-permissions "https://resources.midspace.app/mic-cam-permissions")
+_READ NEXT_: [https://midspace.app/resources/mic-cam-permissions](https://midspace.app/resources/mic-cam-permissions "https://midspace.app/resources/mic-cam-permissions")

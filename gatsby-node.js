@@ -74,7 +74,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                     ?.node?.frontmatter?.title ?? breadcrumb.name,
         }));
         createPage({
-            path: `${edge.node.fields.slug}`,
+            path: `/resources${edge.node.fields.slug}`,
             component: edge.node.fields.isCategoryIndex
                 ? path.resolve("./src/templates/resource-category-page.tsx")
                 : path.resolve("./src/templates/resource-page.tsx"),

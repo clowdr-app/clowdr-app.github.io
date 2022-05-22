@@ -69,7 +69,7 @@ export function Card({
           <Heading as="h4" m={0} p={0}>
             <LinkOverlay
               as={GatsbyLink}
-              to={`${indexUrl}`}
+              to={`/resources${indexUrl}`}
               itemProp="url"
               display="block"
               color={"gray.800"}
