@@ -1,5 +1,6 @@
-import { StarIcon } from "@chakra-ui/icons";
+import { ChatIcon, StarIcon } from "@chakra-ui/icons";
 import {
+  Button,
   Container,
   Heading,
   HStack,
@@ -13,6 +14,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { Layout } from "../components/layouts/main-layout";
+import { SubscribeButton } from "../components/subscribe-button";
 import Title from "../components/title";
 
 export default function Sponsor() {
@@ -65,6 +67,7 @@ export default function Sponsor() {
               able to make one-off or recurring donations to the project. Please
               check back in a week or two!
             </Text>
+            <SubscribeButton text="Subscribe for updates" />
           </Container>
           <Container my={8} maxW="4xl">
             <Heading as="h2" size="2xl">
@@ -84,6 +87,24 @@ export default function Sponsor() {
               <Link href="mailto:hello@midspace.app">hello@midspace.app</Link>{" "}
               to start the conversation.
             </Text>
+            <Button
+              as={Link}
+              href="mailto:hello@midspace.app"
+              size="lg"
+              mt={4}
+              mr={2}
+              mb={2}
+            >
+              <ChatIcon />
+              &nbsp;&nbsp;Discuss sponsorship
+            </Button>
+            <SubscribeButton
+              text="Subscribe for updates"
+              size="lg"
+              mt={4}
+              mr={2}
+              mb={2}
+            />
           </Container>
           <Container my={8} maxW="8xl">
             <Wrap py={16} w="100%" justify="center" spacing={8}>
