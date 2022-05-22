@@ -21,6 +21,7 @@ export function FeatureTabs({
       alignItems={isNarrow ? "center" : "flex-start"}
       justifyContent="flex-start"
       display="flex"
+      w="100%"
     >
       {children}
     </Tabs>

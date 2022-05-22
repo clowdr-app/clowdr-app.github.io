@@ -42,6 +42,7 @@ export const FeaturePanel = React.forwardRef<
           onClick={onOpen}
           cursor="zoom-in"
           aria-hidden
+          w="100%"
           maxW={`${imageMaxWidth}px`}
         />
       ) : undefined}
