@@ -46,6 +46,7 @@ export default function Home() {
               <Image
                 src="/images/2022-05 - Demo Conf Screenshot.png"
                 maxH="50vh"
+                alt="Screenshot of a demo conference in Midspace"
               />
             </Box>
             <Container maxW="3xl" fontSize="lg">
