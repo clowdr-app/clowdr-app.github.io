@@ -9,6 +9,10 @@ export const FeatureTabList = React.forwardRef<HTMLDivElement, TabListProps>(
 
     const isNarrow = useIsNarrow();
 
+    if (isNarrow === null) {
+      return <></>;
+    }
+
     return (
       <TabList
         as={isNarrow ? Flex : VStack}

@@ -8,6 +8,11 @@ export function FeatureTabs({
   ...props
 }: React.PropsWithChildren<TabsProps>): JSX.Element {
   const isNarrow = useIsNarrow();
+
+  if (isNarrow === null) {
+    return <></>;
+  }
+
   return (
     <Tabs
       as={isNarrow ? VStack : HStack}

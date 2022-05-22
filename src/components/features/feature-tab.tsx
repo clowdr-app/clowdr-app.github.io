@@ -14,6 +14,10 @@ export const FeatureTab = React.forwardRef<
   const isSelected = !!tabProps["aria-selected"];
   const isNarrow = useIsNarrow();
 
+  if (isNarrow === null) {
+    return <></>;
+  }
+
   return (
     <Button
       size={isNarrow ? "sm" : "lg"}
