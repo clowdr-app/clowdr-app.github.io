@@ -14,6 +14,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { Layout } from "../components/layouts/main-layout";
+import { SponsorOnGitHub } from "../components/sponsor/github-button";
 import { SubscribeButton } from "../components/subscribe-button";
 import Title from "../components/title";
 
@@ -63,11 +64,27 @@ export default function Sponsor() {
               Donations
             </Heading>
             <Text>
-              We are have applied to GitHub Sponsors through which you will be
-              able to make one-off or recurring donations to the project. Please
-              check back in a week or two!
+              We are delighted to receive donations through GitHub Sponsors,
+              both one-off and recurring monthly sponsorships are available. If
+              you would like to donate a different amount or discuss something
+              different from our packages, please contact us at
+              <Link href="mailto:hello@midspace.app">
+                hello@midspace.app
+              </Link>{" "}
+              to start the conversation.
             </Text>
-            <SubscribeButton text="Subscribe for updates" />
+            <SponsorOnGitHub size="lg" mt={4} mr={2} mb={2} />
+            <Button
+              as={Link}
+              href="mailto:hello@midspace.app"
+              size="lg"
+              mt={4}
+              mr={2}
+              mb={2}
+            >
+              <ChatIcon />
+              &nbsp;&nbsp;Discuss sponsorship
+            </Button>
           </Container>
           <Container my={8} maxW="4xl">
             <Heading as="h2" size="2xl">
