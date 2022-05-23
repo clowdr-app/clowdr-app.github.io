@@ -77,10 +77,39 @@ export function MobileMenu(): JSX.Element {
             variant="solid"
           />
 
-          {menuItems.map((menuItem, i) =>
-            menuItem.link.startsWith("http") ? (
+          {menuItems.map((menuItem, i) => {
+            const contents = menuItem.image ? (
+              menuItem.image.showText?.mobile ? (
+                <>
+                  <Image
+                    src={menuItem.image.src}
+                    w={menuItem.image.w}
+                    h={menuItem.image.h}
+                    mr={2}
+                    aria-hidden
+                    display="inline-block"
+                    verticalAlign="middle"
+                  />
+                  <chakra.span verticalAlign="middle">
+                    {menuItem.text}
+                  </chakra.span>
+                </>
+              ) : (
+                <Image
+                  src={menuItem.image.src}
+                  w={menuItem.image.w}
+                  h={menuItem.image.h}
+                  alt={menuItem.text}
+                  display="inline-block"
+                  verticalAlign="middle"
+                />
+              )
+            ) : (
+              menuItem.text
+            );
+            return menuItem.link.startsWith("http") ? (
               <Link href={menuItem.link} w="full" key={i} fontSize="lg">
-                {menuItem.text}
+                {contents}
               </Link>
             ) : (
               <Link
@@ -90,10 +119,10 @@ export function MobileMenu(): JSX.Element {
                 key={i}
                 fontSize="lg"
               >
-                {menuItem.text}
+                {contents}
               </Link>
-            )
-          )}
+            );
+          })}
         </VStack>
       </Flex>
     </nav>

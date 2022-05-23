@@ -39,15 +39,44 @@ export function DesktopMenu(): JSX.Element {
               </VisuallyHidden>
             </chakra.a>
             <Spacer />
-            {menuItems.map((menuItem, i) =>
-              menuItem.link.startsWith("http") ? (
+            {menuItems.map((menuItem, i) => {
+              const contents = menuItem.image ? (
+                menuItem.image.showText?.desktop ? (
+                  <>
+                    <Image
+                      src={menuItem.image.src}
+                      w={menuItem.image.w}
+                      h={menuItem.image.h}
+                      mr={2}
+                      aria-hidden
+                      display="inline-block"
+                      verticalAlign="middle"
+                    />
+                    <chakra.span verticalAlign="middle">
+                      {menuItem.text}
+                    </chakra.span>
+                  </>
+                ) : (
+                  <Image
+                    src={menuItem.image.src}
+                    w={menuItem.image.w}
+                    h={menuItem.image.h}
+                    alt={menuItem.text}
+                    display="inline-block"
+                    verticalAlign="middle"
+                  />
+                )
+              ) : (
+                menuItem.text
+              );
+              return menuItem.link.startsWith("http") ? (
                 <Link
                   href={menuItem.link}
                   key={i}
                   flexBasis="max-content"
                   p={4}
                 >
-                  {menuItem.text}
+                  {contents}
                 </Link>
               ) : (
                 <Link
@@ -57,10 +86,10 @@ export function DesktopMenu(): JSX.Element {
                   flexBasis="max-content"
                   p={4}
                 >
-                  {menuItem.text}
+                  {contents}
                 </Link>
-              )
-            )}
+              );
+            })}
           </HStack>
         </HStack>
       </Container>
