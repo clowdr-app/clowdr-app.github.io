@@ -158,11 +158,12 @@ export function InteractiveFeatures(props: ContainerProps): JSX.Element {
             <SubscribeButton />
           </FeaturePanel>
           <FeaturePanel text="Add your own feature?">
-            <Text>Information coming soon!</Text>
             <Text>
-              This feature exists in Midspace today but this website is
-              currently being brought up to date. Please subscribe to be
-              notified when information is added or check back again soon.
+              It is possible to add your own features to Midspace via
+              open-source contributions. We are also working on introducing a
+              plugins system for easier development of new interactions. Please
+              subscribe to be notified when information is added or check back
+              again soon.
             </Text>
             <SubscribeButton />
           </FeaturePanel>
